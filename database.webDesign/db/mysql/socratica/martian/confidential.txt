@@ -1,0 +1,14 @@
+martian_id	first_name	last_name	base_id	super_id	salary	dna_id
+1	Ray	Bradbury	1		155900	fgctabacftgbatgfcbtagfcb
+2	John	Black	4	10	120100	tagbtacfgactfgacbgtafgdg
+3	Samuel	Hinkston	4	2	110000	bgtatcagcbtgatfcgtgagfga
+4	Jeff	Spender	1	9	10000	tagtbacfbgafcbgtgtbgtaf
+5	Samuel	Parkhill	2	12	125000	tagtbbgcafgtfaggacggbacf
+6	Elma	Parkhill	3	8	137000	cgbgtactbfgafcbgtgaccagbtac
+7	Melissa	Lewis	1	1	145250	acbgyatbgacfbgtasctgafgtbc
+8	Mark	Watney	3		121100	acfacbafcydfgatadyfgyagf
+9	Beth	Johanssen	1	1	130000	afyafgafghafgygachgyarg
+10	Chris	Beck	4		125000	afgcadcrchagrhcaghagcrha
+11	Nathaniel	York	4	2	105000	acrgahcrgahrcgahgrcharrcar
+12	Elon	Musk	2		155800	attraeqwdcasetqcdfcasgcerv
+13	John	Carter		8	129500	acravecagsdradcaveragrcea

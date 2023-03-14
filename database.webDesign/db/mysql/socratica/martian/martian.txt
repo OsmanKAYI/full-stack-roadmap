@@ -1,0 +1,14 @@
+martian_id	first_name	last_name	base_id	super_id
+1	Ray	Bradbury	1	
+2	John	Black	4	10
+3	Samuel	Hinkston	4	2
+4	Jeff	Spender	1	9
+5	Samuel	Parkhill	2	12
+6	Elma	Parkhill	3	8
+7	Melissa	Lewis	1	1
+8	Mark	Watney	3	
+9	Beth	Johanssen	1	1
+10	Chris	Beck	4	
+11	Nathaniel	York	4	2
+12	Elon	Musk	2	
+13	John	Carter		8

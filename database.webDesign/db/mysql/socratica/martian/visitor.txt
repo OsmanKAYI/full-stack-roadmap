@@ -1,0 +1,8 @@
+visitor_id	host_id	first_name	last_name
+1	7	George	Ambrose
+2	1	Kris	Cardenas
+3	9	Priscilla	Lane
+4	11	Jane	Thornton
+5		Doug	Stavenger
+6		Jamie	Waterman
+7	8	Martin	Humphries

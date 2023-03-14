@@ -1,0 +1,33 @@
+#socialmedia {
+  padding: 10px;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 5px;
+  font-size: 1px;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo1 {
+  position: absolute;
+  left: 5px;
+  bottom: 110px;
+}
+
+.logo2 {
+  position: absolute;
+  left: 5px;
+  bottom: 75px;
+}
+
+.logo3 {
+  position: absolute;
+  left: 5px;
+  bottom: 40px;
+}
+
+.logo4 {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+}

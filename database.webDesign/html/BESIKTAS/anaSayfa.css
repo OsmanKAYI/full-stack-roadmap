@@ -1,0 +1,24 @@
+.baslik1 {
+  background-color: black;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  width: auto;
+  height: 60px;
+}
+
+#white {
+  background-color: gray;
+  padding: 10px;
+  border: 10px solid gainsboro;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 300px;
+  font-size: 30px;
+  color: black;
+}
+
+.box1 {
+  width: auto;
+  height: auto;
+}

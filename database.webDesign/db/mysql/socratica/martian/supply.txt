@@ -1,0 +1,11 @@
+supply_id	name	description	quantity
+1	Solar Panel	Standard 1x1 meter cell	912
+2	Water Filter	This takes things out of your water so it’s drinkable.	6
+3	Duct Tape	A 10 meters roll of duct tape for ALL your repairs.	951
+4	Ketchup	It’s ketchup…	206
+5	Battery Cell	Standard 1000 kAh battery cell for power grid (heavy item).	17
+6	USB 6.0 Cable	Carbon fiber coated / 15 TBps spool	42
+7	Fuzzy Duster	It gets dusty around here. Be prepared!	19
+8	Mars Bars	The ORIGINAL nutrient bar made with the finest bioengineered ingredients.	3801
+9	Air Filter	Removes 99% of all Martian dust from your ventilation unit.	23
+10	Famous Ray’s Frozen Pizza	This Martian favorite is covered in all your favorite toppings. 1 flavor only.	823

@@ -1,0 +1,6 @@
+base_id	base_name	founded
+1	Tharsisland	2037-06-03
+2	Valles Marineris 2.0	2040-12-01
+3	Gale Cratertown	2041-08-15
+4	New New New York	2042-02-10
+5	Olympus Mons Spa & Casino	
