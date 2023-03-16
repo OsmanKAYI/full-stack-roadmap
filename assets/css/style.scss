@@ -2,3 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
+
+.container {
+  line-height: 150%;
+}
