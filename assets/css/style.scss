@@ -2,3 +2,11 @@
 ---
 
 @import "{{ site.theme }}";
+
+.body {
+  line-height: 200%;
+}
+
+.li {
+  line-height: 250%;
+}
