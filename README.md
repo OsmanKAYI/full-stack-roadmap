@@ -4,13 +4,16 @@ Welcome to **osmankayi.com** which will help you to improve your knowledge about
 
 Computer notes are a collection of useful information, tips, and tricks related to computers and technology. These notes can be used to help troubleshoot common issues, learn new skills, and stay up-to-date with the latest trends and developments in the technology industry.
 
+- [Linux (Ubuntu)](./linux)
 - [Internet](./internet)
 - [IP](./ip)
-- [Linux (Ubuntu)](./linux)
 - [Markdown](./markdown)
 - [Git](./git)
 - [Visual Studio Code](./vscode)
-- [Database and Web Design](./database.webDesign)
+- [Database (DB)](./db)
+- [HTML](./html)
+- [PHP](./php)
+- [Vue](./vue)
 - [API](./api)
 - [Hosting](./hosting)
 - [Dart](./dart)
