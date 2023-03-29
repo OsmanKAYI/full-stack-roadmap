@@ -14,6 +14,11 @@ To get started with Vue, you can follow these steps:
 
 ## Documentation
 
+Before diving into Vue, you shoul have some basic knowledge about JavaScript whcih will be vital to benefit from these notes.
+
+- [JavaScript Tutorial](https://www.koderhq.com/tutorial/javascript/)
+- [Modern Javascript (ES6+) Video Series](https://www.youtube.com/watch?v=4ynLm0TaK1w&list=PLFAU47Id44XElZTM3G8S8YydhPbfAJ-N0)
+
 The Vue documentation is available online at [vuejs.org](vuejs.org). This documentation includes guides, tutorials, and reference material for learning Vue and using it effectively.
 
 - [What is Single File Component (SFC)](./00.single.file.components.md)
@@ -21,6 +26,7 @@ The Vue documentation is available online at [vuejs.org](vuejs.org). This docume
 - [Database Connection (PHP File)](./02.db.connection.php)
 - [How to Use Bootstrap5 with Vue3](./03.using.bootstrap5.with.vue3.md)
 - [Interesting Cheatsheet for Anatomy of Vue Component](https://miro.medium.com/v2/resize:fit:1200/1*C4A0g1KYpa_olbSJcxAEBA.png)
+- [A Türkçe Source for VueJs](https://medium.com/kocsistem/vue-js-t%C3%BCrk%C3%A7e-kaynak-cbb1d0d73490)
 
 ### Vue CLI
 
