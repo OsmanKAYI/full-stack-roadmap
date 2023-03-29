@@ -7,7 +7,7 @@ Dart is a client-optimized programming language developed by Google. It is used 
 To get started with Dart, you can follow these steps:
 
 - Download and install the Dart SDK from [dart.dev/get-dart](https://dart.dev/get-dart).
-- Set up your editor or IDE. Dart has plugins for popular editors like VS Code, IntelliJ IDEA, and Android Studio.
+- Set up your editor or IDE. Dart has plugins for popular editors like VSCode, IntelliJ IDEA, and Android Studio.
 - Create a new Dart project using the `dart create` command.
 - Write your Dart code, and run it using the `dart run` command.
 
