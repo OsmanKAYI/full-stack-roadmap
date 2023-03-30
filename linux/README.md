@@ -28,3 +28,6 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Copy Commands (tar, cp) & Copy Between Servers](./15.copy.with.tar.cp.md)
 - [Creating RAMDisk](./16.creating.ramdisk.md)
 - [Linux Blank Screen While Opening (Manual fsck Required)](./17.duplicate.or.bad.block.fsck.md)
+- [Site Mirroring Using _wget_](./18.site.mirroring.md)
+- [Logical Volume Manager (LVM)](./19.lvm.md)
+- [Data Recovery](./20.data.recovery.md)
