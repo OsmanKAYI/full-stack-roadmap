@@ -33,3 +33,5 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Forensic Data Recovery Tools](./20.forensic.data.recovery.tools.md)
 - [Data Recovery](./21.data.recovery.md)
 - [Repair Damaged Video Files](./22.repairing.damaged.videos.md)
+- [Install Office Programs on Linux](./23.office.on.linux.md)
+- [Translate Websites with GTranslate](./24.website.translation.md)
