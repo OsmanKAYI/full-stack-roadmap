@@ -13,6 +13,6 @@ Web development refers to the process of creating websites and web applications.
 ## Documentation
 
 - [What is Web?](./00.what.is.web.md)
-- [How Internet Works](./01.internet.nasil.calisir.md)
+- [How Internet Works](./01.how.internet.works.md)
 - [Hard & Soft Links](./02.hard.and.soft.links.md)
 - [Session & Token](./03.session.and.token.md)
