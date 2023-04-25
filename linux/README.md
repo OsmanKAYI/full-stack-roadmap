@@ -36,3 +36,4 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Install Office Programs on Linux](./23.office.on.linux.md)
 - [Translate Websites with GTranslate](./24.website.translation.md)
 - [Synchronize GooglePhotos to Local](./25.sync.googlephotos.md)
+- [PDF Compression](./26.compress.pdf.md)
