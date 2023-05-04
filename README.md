@@ -8,6 +8,7 @@ Computer notes are a collection of useful information, tips, and tricks related 
 - [Internet](./internet)
 - [IP](./ip)
 - [Markdown](./markdown)
+- [Jupyter Notebook](./jupyter.notebook)
 - [Git](./git)
 - [Visual Studio Code](./vscode)
 - [Database (DB)](./db)
