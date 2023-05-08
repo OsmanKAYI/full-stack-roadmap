@@ -6,6 +6,8 @@ Linux is a free and open-source operating system based on the Unix operating sys
 
 Linux uses a package management system to install and manage software packages. Each distribution has its own package manager, such as apt for Ubuntu and Debian, and dnf for Fedora. These package managers allow you to easily install, update, and remove software packages.
 
+**If you want to try and learn Linux Operating Systems, you can visit [cmdchallenge.com](https://cmdchallenge.com/).**
+
 ## Documentation
 
 This documentation includes guides, tutorials, and reference material for learning Linux (Ubuntu) and using it effectively.
