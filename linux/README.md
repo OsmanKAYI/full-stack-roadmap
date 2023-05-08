@@ -30,6 +30,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Install Office Programs on Linux](./23.office.on.linux.md)
 - [Ubuntu Second Monitor Problem](./11.second.monitor.problem.md)
 - [Screen Capture & Record](./12.screen.capture.md)
+- [Cut Video Silence](./29.delete.slience.from.video.md)
 - [Configure System Time & Timezone](./13.set.system.time.md)
 - [Linux Blank Screen While Opening (Manual fsck Required)](./17.duplicate.or.bad.block.fsck.md)
 - [Synchronize GooglePhotos to Local](./25.sync.googlephotos.md)
