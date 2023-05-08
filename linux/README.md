@@ -23,6 +23,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Data Gathering with Linux Terminal](./08.linux.terminal.ile.veri.toplama.md)
 - [Linux Zip Commands](./09.linux.zip.komutlari.md)
 - [Copy Commands (tar, cp) & Copy Between Servers](./15.copy.with.tar.cp.md)
+- [Linux Paste Command](./28.paste.command.md)
 - [Uniq Command Examples](./27.uniq.command.examples.md)
 - [PDF Compression](./26.compress.pdf.md)
 - [Appimage Files on Ubuntu](./10.how.to.use.appimage.files.md)
