@@ -14,6 +14,7 @@ Web development refers to the process of creating websites and web applications.
 
 - [What is Web?](./00.what.is.web.md)
 - [How Internet Works](./01.how.internet.works.md)
+- [Recursive & Authoritative DNS](./05.recursive.and.authoritative.dns.md)
 - [Hard & Soft Links](./02.hard.and.soft.links.md)
 - [Session & Token](./03.session.and.token.md)
 - [What is R57 & C99](./04.r57.c99.md)
