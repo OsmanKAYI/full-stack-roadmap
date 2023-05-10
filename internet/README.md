@@ -10,6 +10,12 @@ The web is built on a set of technologies including HTML, CSS, and JavaScript th
 
 Web development refers to the process of creating websites and web applications. This can include front-end development, which involves designing and building the user interface, as well as back-end development, which involves building and maintaining the server-side components that power a website or application.
 
+## Web Security
+
+Web security refers to protecting networks and computer systems from damage to or the theft of software, hardware, or data. It also includes protecting computer systems from misdirecting or disrupting the services they are designed to provide.
+
+**You can find usefull educative Türkçe videos and articles about cyber security in [mdisec-twitch-yayinlari](https://github.com/mdisec/mdisec-twitch-yayinlari).**
+
 ## Documentation
 
 - [What is Web?](./00.what.is.web.md)
