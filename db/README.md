@@ -34,6 +34,7 @@ MySQL is an open-source relational database management system. Its name is a com
 - [MySQL Engines](./mysql/09.mysql.engines.md)
 - [Import Text File to MySQL](./mysql/10.import.text.file.to.mysql.md)
 - [CLI Connection Without Password](./mysql/11.cli.connection.without.password.md)
+- [Merge Rows in MySQL](./mysql/12.group.concat.md)
 
 #### Basic MySQL
 
