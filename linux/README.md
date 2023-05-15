@@ -44,3 +44,17 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Repair Damaged Video Files](./22.repairing.damaged.videos.md)
 - [Site Mirroring Using _wget_](./18.site.mirroring.md)
 - [Translate Websites with GTranslate](./24.website.translation.md)
+
+## Linux Command Line Tutorials
+
+1. [find](https://javarevisited.blogspot.com/2018/08/10-example-of-find-command-in-unix-linux.html)
+2. [grep](https://javarevisited.blogspot.com/2011/06/10-examples-of-grep-command-in-unix-and.html)
+3. [tar](https://javarevisited.blogspot.com/2011/11/tar-command-in-unix-linux-example.html)
+4. [chmod](https://javarevisited.blogspot.com/2012/03/10-example-of-chmod-command-in-unix.html)
+5. [netstat](https://www.java67.com/2022/08/10-examples-of-netstat-command-in-linux.html)
+6. [nslookup](https://www.java67.com/2012/12/unix-command-to-find-ip-address-from-hostname.html)
+7. [crontab](https://www.java67.com/2017/08/how-to-backup-and-load-crontab-from-file-Linux-example.html)
+
+<img src="https://pbs.twimg.com/media/FvxSYknagAEzE1F?format=jpg&name=4096x4096" title="Cron Cheatsheet">
+
+**Ref:** https://twitter.com/javinpaul/status/1656289356641079296?t=F1BAGnJZ-PaVwX2_i6CcBg&s=35
