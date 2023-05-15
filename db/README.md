@@ -22,12 +22,14 @@ Each database management system will have its own documentation and support reso
 
 MySQL is an open-source relational database management system. Its name is a combination of "My", the name of co-founder Michael Widenius's daughter My, and "SQL", the acronym for Structured Query Language.
 
+- [SQL Tutorial for Beginners](https://www.youtube.com/watch?v=-fW2X7fh7Yg)
 - [Increase Maximum Upload File Size](./mysql/00.increase.max.upload.file.size.md)
 - [What is SQL](./mysql/01.sql.md)
 - [Basic MySQL Command Examples](./mysql/02.temel.mysql.komutlari.ornekleri.md)
 - [MySQL String Commands](./mysql/03.mysql.string.komutlari.md)
 - [MySQL Time Functions](./mysql/04.mysql.tarih.fonksiyonlari.md)
 - [MySQL Funtions](./mysql/05.mysql.functions.md)
+- [Top 27 SQL Syntax for Developers](https://morioh.com/p/27dd41b0d365?f=5c21fb01c16e2556b555ab32)
 - [SQLi (SQL Injection Weakness)](./mysql/06.sqli.sql.injection.zaafiyeti.md)
 - [SQL Foreign Key Constraint](./mysql/07.sql.foreign.key.constraint.md)
 - [MySQL Foreign Key](./mysql/08.mysql.foreign.key.md)
