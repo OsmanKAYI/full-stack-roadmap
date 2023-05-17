@@ -1,0 +1,29 @@
+# Use root/example user/password credentials
+version: "3.1"
+
+services:
+  php:
+    image: php:7.0-apache
+    ports:
+      - 80:80
+    volumes:
+      - ./:/var/www/html/
+  db:
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: "test"
+      MYSQL_PASS: "test"
+    ports:
+      - 3306:3306
+  #    volumes:
+  #      - $volumename:/var/lib/mysql
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+#volumes:
+#  $volumename:
