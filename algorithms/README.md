@@ -1,4 +1,4 @@
-# Algorithms
+# ALGORITHMS
 
 Algorithms are a set of instructions designed to perform a specific task. They are used in a variety of fields, including computer science, mathematics, and engineering, to solve problems and improve efficiency.
 

@@ -1,4 +1,4 @@
-# Dart Programming Language
+# DART PROGRAMMING LANGUAGE
 
 Dart is a client-optimized programming language developed by Google. It is used to build high-performance, web, mobile, desktop, and server applications. This repository contains the official Dart SDK, tools, and packages.
 

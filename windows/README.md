@@ -1,4 +1,4 @@
-# Windows
+# WINDOWS
 
 Windows is a series of operating systems developed by Microsoft. It is one of the most widely used operating systems in the world and is used on desktops, laptops, servers, and mobile devices.
 

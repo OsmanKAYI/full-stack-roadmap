@@ -1,4 +1,4 @@
-# IP Address
+# IP
 
 An IP (Internet Protocol) address is a unique identifier for devices connected to a network. It is used to identify the device and to communicate with other devices on the network.
 IP Versions

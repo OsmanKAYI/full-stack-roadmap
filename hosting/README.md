@@ -1,4 +1,4 @@
-# Hosting
+# HOSTING
 
 Hosting refers to the process of making a website or application available on the internet. There are a variety of hosting options available, including shared hosting, virtual private servers, and cloud hosting.
 

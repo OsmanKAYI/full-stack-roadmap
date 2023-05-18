@@ -1,4 +1,4 @@
-# Visual Studio Code
+# VISUAL STUDIO CODE
 
 Visual Studio Code is a free and open-source code editor developed by Microsoft. It is used by developers to write, debug, and deploy applications for a variety of platforms.
 

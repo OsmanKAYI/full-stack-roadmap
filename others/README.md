@@ -1,4 +1,4 @@
-# Others
+# OTHERS
 
 Here, you will find out some usefull informations which I cannot group them in a specific topic. They are listed as below.
 

@@ -1,4 +1,4 @@
-# Computer Notes
+# COMPUTER NOTES
 
 Welcome to **osmankayi.com** which will help you to improve your knowledge about internet, web, web design and other computer related topics. I've been working on web development and anything you see in this repository since February, 2022. I wish all the visitors will be finding something beneficial for him/her.
 

@@ -1,4 +1,4 @@
-# Internet
+# INTERNET
 
 The internet is a global network of interconnected devices and computers that allows for the transfer of data and communication between users around the world. The web is a subset of the internet that refers to the collection of websites and web pages that can be accessed through a web browser.
 

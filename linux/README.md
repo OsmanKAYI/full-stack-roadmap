@@ -1,4 +1,4 @@
-# Linux (Ubuntu)
+# LINUX (UBUNTU)
 
 Linux is a free and open-source operating system based on the Unix operating system. It is known for its stability, security, and flexibility, and is used by millions of people around the world.
 

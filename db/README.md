@@ -1,4 +1,4 @@
-# Database (DB)
+# DATABASE (DB)
 
 A database is an organized collection of data that is stored and accessed electronically. Databases are used to store and manage data for a variety of applications, including websites, mobile apps, and enterprise systems.
 
