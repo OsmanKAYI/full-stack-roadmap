@@ -24,3 +24,8 @@ Web security refers to protecting networks and computer systems from damage to o
 - [Hard & Soft Links](./02.hard.and.soft.links.md)
 - [Session & Token](./03.session.and.token.md)
 - [What is R57 & C99](./04.r57.c99.md)
+
+## Useful Links
+
+- [What is Base64](https://www.youtube.com/watch?v=8qkxeZmKmOY)
+- [Base64 Encoding](https://www.youtube.com/watch?v=aUdKd0IFl34)
