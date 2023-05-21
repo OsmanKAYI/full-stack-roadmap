@@ -28,7 +28,7 @@ The Vue documentation is available online at [vuejs.org](vuejs.org). This docume
 
 ## Useful Links
 
-- [The Power of Vue.js](https://www.addwebsolution.com/blog/vuejs-frontend-development?_branch_match_id=1173993856628422450&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9bLTU3JLM3VS87P1fcONwkL8PVxC65MAgBhWUKKIwAAAA%3D%3D)
+- [The Power of Vue.js](https://www.addwebsolution.com/blog/vuejs-frontend-development)
 - [Interesting Cheatsheet for Anatomy of Vue Component](https://miro.medium.com/v2/resize:fit:1200/1*C4A0g1KYpa_olbSJcxAEBA.png)
 - [Vue3 Full Course - 10 Apps in 10 Hours](https://morioh.com/p/e60283635986?f=5c21fb01c16e2556b555ab32)
 - [A Türkçe Source for VueJs](https://medium.com/kocsistem/vue-js-t%C3%BCrk%C3%A7e-kaynak-cbb1d0d73490)
