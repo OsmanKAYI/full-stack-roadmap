@@ -29,6 +29,7 @@ MySQL is an open-source relational database management system. Its name is a com
 - [MySQL String Commands](./mysql/03.mysql.string.komutlari.md)
 - [MySQL Time Functions](./mysql/04.mysql.tarih.fonksiyonlari.md)
 - [MySQL Funtions](./mysql/05.mysql.functions.md)
+- [What is Union?](./mysql/13.union.md)
 - [Top 27 SQL Syntax for Developers](https://morioh.com/p/27dd41b0d365?f=5c21fb01c16e2556b555ab32)
 - [SQLi (SQL Injection Weakness)](./mysql/06.sqli.sql.injection.zaafiyeti.md)
 - [SQL Foreign Key Constraint](./mysql/07.sql.foreign.key.constraint.md)
