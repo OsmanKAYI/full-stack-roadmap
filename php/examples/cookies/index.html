@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie Example</title>
+</head>
+<body>
+    <h1>Cookie Example</h1>
+    
+    <p><a href='listCookie.php'> List Cookies </a></p>
+        
+    <h2>Set Cookie</h2>
+    <form method="post" action="setCookie.php">
+        <label for="cookie_name">Cookie Name:</label>
+        <input type="text" id="cookie_name" name="cookie_name" required><br>
+
+        <label for="cookie_value">Cookie Value:</label>
+        <input type="text" id="cookie_value" name="cookie_value" required><br>
+
+        <select name='interval'>
+          <option value='' selected>*** Choose ***</option>  
+          <option value='20s'>20 second</option>
+          <option value='1m'>1 minute</option>
+          <option value='1y'>1 year</option>
+        </select>
+        <input type="submit" value="Set Cookie!">
+    </form>
+
+    <h2>Clear Cookie</h2>
+    <form method="post" action="clearCookie.php">
+        <label for="cookie_name">Cookie Name:</label>
+        <input type="text" id="cookie_name" name="cookie_name" required><br>
+
+        <input type="submit" name="clear_cookie" value="Clear Cookie">
+    </form>
+</body>
+</html>
