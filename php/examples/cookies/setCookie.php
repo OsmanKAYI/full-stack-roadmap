@@ -16,6 +16,12 @@ switch ($_POST['interval']) {
     break;
 }
 
-setcookie($cookie_name, $cookie_value, time() + $Time);
+setcookie($cookie_name, $cookie_value, [
+  'expires' => time() + $Time,
+  'path' => '/',
+  'httponly' => true,
+  'secure' => true,
+  'samesite' => 'None',
+]);
 
 header('location: success.html');

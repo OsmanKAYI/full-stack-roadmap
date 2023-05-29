@@ -13,4 +13,3 @@ if (isset($_GET['cookiename'])) {
 }
 
 header('location: success.html');
-
