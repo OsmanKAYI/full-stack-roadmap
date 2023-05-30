@@ -31,7 +31,8 @@ The Vue documentation is available online at [vuejs.org](vuejs.org). This docume
 - [The Power of Vue.js](https://www.addwebsolution.com/blog/vuejs-frontend-development)
 - [Interesting Cheatsheet for Anatomy of Vue Component](https://miro.medium.com/v2/resize:fit:1200/1*C4A0g1KYpa_olbSJcxAEBA.png)
 - [Vue3 Full Course - 10 Apps in 10 Hours](https://morioh.com/p/e60283635986?f=5c21fb01c16e2556b555ab32)
-- [A Türkçe Source for VueJs](https://medium.com/kocsistem/vue-js-t%C3%BCrk%C3%A7e-kaynak-cbb1d0d73490)
+- [Türkçe Source for VueJs](https://medium.com/kocsistem/vue-js-t%C3%BCrk%C3%A7e-kaynak-cbb1d0d73490)
+- [Türkçe Source for Design Patterns (Java & C# Examples)](https://github.com/yusufyilmazfr/tasarim-desenleri-turkce-kaynak)
 
 ### Vue CLI
 
