@@ -2,7 +2,7 @@
 
 The internet is a global network of interconnected devices and computers that allows for the transfer of data and communication between users around the world. The web is a subset of the internet that refers to the collection of websites and web pages that can be accessed through a web browser.
 
-## How the Web Works
+## How Web Works
 
 The web is built on a set of technologies including HTML, CSS, and JavaScript that work together to create and display web pages. Web pages are stored on web servers and can be accessed by users through a web browser. Websites can be created using a variety of tools and frameworks, and can be hosted on a variety of platforms.
 
@@ -24,6 +24,7 @@ Web security refers to protecting networks and computer systems from damage to o
 - [Hard & Soft Links](./02.hard.and.soft.links.md)
 - [Session & Token](./03.session.and.token.md)
 - [What is R57 & C99](./04.r57.c99.md)
+- [How to Create VPN Server](./06.create.vpn.md)
 
 ## Useful Links
 
