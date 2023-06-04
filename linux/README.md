@@ -8,6 +8,8 @@ Linux uses a package management system to install and manage software packages. 
 
 **If you want to try and learn Linux Operating Systems, you can visit [cmdchallenge.com](https://cmdchallenge.com/).**
 
+_If you want to see a website that explains what the commands you use in the Linux terminal do by breaking them down into parts, you can visit [explainshell.com](https://explainshell.com/)._
+
 _You can find Türkçe documentation for linux in [linux-dersleri](https://linux-dersleri.github.io/menu.html) which has a [github page](https://github.com/Linux-Dersleri/linux-dersleri.github.io) and its usage is explained in a [video](https://www.youtube.com/watch?v=RyDpMx6NLnI)._
 
 ## Documentation
