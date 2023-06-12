@@ -27,3 +27,8 @@ The HTML specification is maintained by the W3C (World Wide Web Consortium) and 
 - [HTML Comments](./10.comments.md)
 - [HTML Colors](./11.colors.md)
 - [A Starter Example](https://github.com/OsmanKAYI/osmankayi.com/tree/main/html/BESIKTAS)
+
+## Useful Links
+
+- [Reveal JS](https://revealjs.com/)
+  - Reveal.js is an open source HTML presentation framework. It's a tool that enables anyone with a web browser to create fully-featured and beautiful presentations for free.
