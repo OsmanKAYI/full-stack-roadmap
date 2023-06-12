@@ -24,3 +24,7 @@ This documentation gives reference material and guides for learning the basics o
 - [Remote Server Connection](./01.sunucuya.baglanma.md)
 - [What is GitHub Hosting](./02.github.hosting.md)
 - [Create a Backdoor with Ncat](./03.ncat.backdoor.md)
+
+## Useful Links
+
+- [Netlify Drop](https://app.netlify.com/drop)
