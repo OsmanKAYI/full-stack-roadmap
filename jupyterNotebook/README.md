@@ -25,3 +25,8 @@ Jupyter Notebook has a wide range of extensions that can be used to enhance its 
 - [Pima Indians Diabetes Analysis](./example.diabetes/pima.indians.diabetes.analysis.ipynb)
   - [Diabetes.csv](./example.diabetes/diabetes.csv)
   - [Pima Indian Diabetes Analysis with MLs (kaggle.com)](https://www.kaggle.com/code/siykim/pima-indian-diabetes-analysis-with-mls/notebook?scriptVersionId=20681301)
+
+## Useful Links
+
+- [LinkedInDumper](https://www.kitploit.com/2023/06/linkedindumper-tool-to-dump-company.html)
+  - LinkedInDumper is a Python 3 script that dumps employee data from the LinkedIn social networking platform. The results contain firstname, lastname, position (title), location and a user's profile link.
