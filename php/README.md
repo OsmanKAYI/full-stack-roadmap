@@ -24,3 +24,8 @@ The PHP documentation is available online at [php.net](php.net/docs). This docum
 - [PHP Debug (xdebug)](./09.xdebug.md)
 - [PHP Cookie)](./10.php.cookie.md)
 - [PHP Session)](./11.php.session.md)
+
+## Useful Links
+
+- [PHP The Right Way](https://phptherightway.com/)
+  - The Right Way is an easy-to-read, quick reference for PHP popular coding standards, links to authoritative tutorials around the Web, and what the contributors consider to be best practices at present.
