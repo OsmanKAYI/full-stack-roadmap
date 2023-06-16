@@ -16,3 +16,4 @@ IPv6 addresses are 128-bit numbers represented in hexadecimal notation (e.g. 200
 ## Documentation
 
 - [Learn IP Address of Your Device](./01.get.ip.address.md)
+- [IPv4 vs IPv6](./02.ipv4.vs.ipv6.md)
