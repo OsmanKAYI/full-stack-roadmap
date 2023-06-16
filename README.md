@@ -19,6 +19,7 @@ Computer notes are a collection of useful information, tips, and tricks related 
 - [Docker](./docker)
 - [Hosting](./hosting)
 - [Algorithms](./algorithms)
+- [RevealJS](./reveal.js/)
 - [Dart](./dart)
 - [Windows](./windows)
 - [Others](./others)
