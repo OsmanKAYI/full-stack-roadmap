@@ -19,5 +19,8 @@ Visual Studio Code has a large and active extension marketplace, which allows de
 
 The Visual Studio Code documentation is available online at [code.visualstudio.com](https://code.visualstudio.com/docs). This documentation includes guides, tutorials, and reference material for learning Visual Studio Code and using it effectively.
 
-- [Introduction to Visual Studio(VS) Code](./00.vscode.md)
-- [Usefull VSCode Extensions and Settings](./01.vscode.extensions.md)
+- [Introduction to Visual Studio Code (VSCode) ](./00.vscode.md)
+- [Usefull VSCode Extensions](./01.vscode.extensions.md)
+- [Settings](./02.setting.md)
+- [Keybindings](./03.keybindings.md)
+- [Keyboard Shortcuts](./04.shortcuts.md)
