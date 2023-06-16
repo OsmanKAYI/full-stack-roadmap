@@ -2,7 +2,7 @@
 
 reveal.js is an open source HTML presentation framework. It's a tool that enables anyone with a web browser to create fully-featured and beautiful presentations for free.
 
-Presentations made with reveal.js are built on open web technologies. That means anything you can do on the web, you can do in your presentation. Change styles with CSS, include an external web page using an <iframe> or add your own custom behavior using our [JavaScript API](https://revealjs.com/api/).
+Presentations made with reveal.js are built on open web technologies. That means anything you can do on the web, you can do in your presentation. Change styles with CSS, include an external web page using an `<iframe>` or add your own custom behavior using our [JavaScript API](https://revealjs.com/api/).
 
 ## Getting Started
 
@@ -36,3 +36,7 @@ For more examples and contents visit [revealjs.com](https://revealjs.com/)
 
 - [Reveal JS Tutorial](https://revealjs.com/)
   - [Example index.html File](./index.html)
+
+## Useful Links
+
+- [Picsum Photos](https://picsum.photos/) which provides stylish placeholders being easy to use.
