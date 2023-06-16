@@ -7,3 +7,4 @@ This repository contains the source code and documentation for the API. The API 
 This documentation provides a reference for the available endpoints, parameters, and responses.
 
 - [Introduction to API](./00.api.md)
+- [Create API](./01.creating.api.md)
