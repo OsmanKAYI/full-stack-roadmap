@@ -40,6 +40,8 @@ For more examples and contents visit [revealjs.com](https://revealjs.com/)
 - [Reveal JS Tutorial](https://revealjs.com/)
   - [Example index.html File](./index.html)
 - [Plugins & Tools & Hardware](https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware)
+  - [CopyCode](https://github.com/Martinomagnifico/reveal.js-copycode) which is a simple plugin for Reveal.js that automatically shows a 'copy' button in code blocks.
+  - [reveal-css-snippet](https://github.com/soluml/reveal-css-snippet) which is a Reveal.js plugin that allows live CSS editing in code blocks.
 
 ## Useful Links
 
