@@ -36,6 +36,7 @@ For more examples and contents visit [revealjs.com](https://revealjs.com/)
 
 - [Reveal JS Tutorial](https://revealjs.com/)
   - [Example index.html File](./index.html)
+- [Plugins & Tools & Hardware](https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware)
 
 ## Useful Links
 
