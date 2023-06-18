@@ -4,7 +4,7 @@ reveal.js is an open source HTML presentation framework. It's a tool that enable
 
 Presentations made with reveal.js are built on open web technologies. That means anything you can do on the web, you can do in your presentation. Change styles with CSS, include an external web page using an `<iframe>` or add your own custom behavior using our [JavaScript API](https://revealjs.com/api/).
 
-- **VSCode Extension for Reveal (vscode-reveal)**
+- **VSCode Extension for Reveal JS (vscode-reveal)**
   - This extension lets you to display a reveal.js presentation directly from an opened markdown document.
 
 ## Getting Started
