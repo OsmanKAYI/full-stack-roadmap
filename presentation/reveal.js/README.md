@@ -42,7 +42,7 @@ For more examples and contents visit [revealjs.com](https://revealjs.com/)
 - [Markdown HTML](./index.markdown.html)
 - [Starter Markdown](./index.starter.md)
 - [Plugin Markdown](./index.plugin.md)
-- [Code Highlight Markdows](./index.code.md)
+- [Code Highlight Markdown](./index.code.md)
 - [Math Operations Markdown](./index.math.md)
 
 ## Useful Links
