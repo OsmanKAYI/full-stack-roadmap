@@ -20,7 +20,7 @@ After that
 - Say `y` to `Install and start it now?`
 - Choose `npm` and press <kbd>Enter</kbd>.
 
-- Open [http://localhost:3030](http://localhost:3030/) to view your presentation.
+  - Open [http://localhost:3030](http://localhost:3030/) to view your presentation.
 
 - To work on presentation for second time
 
