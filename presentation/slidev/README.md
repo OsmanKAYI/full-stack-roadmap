@@ -16,7 +16,7 @@ npm init slidev -y
 
 After that
 
-- Give a name to your project.
+- Give a name to your project (default is `slides`).
 - Say `y` to `Install and start it now?`
 - Choose `npm` and press <kbd>Enter</kbd>.
 
@@ -33,7 +33,9 @@ npm run dev
 - To export your presentation
 
 ```BASH
+npm i -D playwright-chromium
 npm run export
+# exported to ./slides-export.pdf
 ```
 
 ## Documentation
