@@ -22,6 +22,20 @@ After that
 
 - Open [http://localhost:3030](http://localhost:3030/) to view your presentation.
 
+- To work on presentation for second time
+
+```BASH
+npm run dev
+# visit http://localhost:3030
+# or http://localhost:3030/presenter
+```
+
+- To export your presentation
+
+```BASH
+npm run export
+```
+
 ## Documentation
 
 For more examples and contents visit [sli.dev](https://sli.dev/)
