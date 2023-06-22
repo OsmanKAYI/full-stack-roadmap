@@ -28,6 +28,7 @@ Web security refers to protecting networks and computer systems from damage to o
 
 ## Useful Links
 
+- [Temel İnternet Kavramları](https://learnreactui.dev/contents/temel-internet-kavramlari)
 - [What is Base64](https://www.youtube.com/watch?v=8qkxeZmKmOY)
 - [Base64 Encoding](https://www.youtube.com/watch?v=aUdKd0IFl34)
 - [10 Key Data Structures](https://www.youtube.com/watch?v=ouipSd_5ivQ)
