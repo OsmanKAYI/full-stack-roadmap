@@ -75,3 +75,13 @@ SQLite is a database engine written in the C programming language. It is not a s
 - [Install SQLite Browser on Ubuntu](./sqlite/00.install.sqlite.browser.ubuntu.md)
 - [How to Change Date Format (SQL File)](./sqlite/01.change.date.format.sql)
 - [Lux Temperature Humidity Example](https://github.com/OsmanKAYI/osmankayi.com/tree/main/db/sqlite/lux-temperature-humidity)
+
+## Useful Links
+
+- [Intro to SQL - KhanAcademy](https://www.khanacademy.org/computing/computer-programming/sql)
+- [SQL Tutorial - SQLZOO](https://sqlzoo.net/wiki/SQL_Tutorial)
+- [Introduction to SQL - SQLBolt](https://sqlbolt.com/lesson/introduction)
+- [Select Start SQL](https://selectstarsql.com/)
+- [Schemaverse](https://schemaverse.com/)
+- [Intro to Relational Databases - Udacity](https://www.udacity.com/course/intro-to-relational-databases--ud197)
+- [Uygulamalarla SQL Öğreniyorum - BTK Akademi](https://www.btkakademi.gov.tr/portal/course/uygulamalarla-sql-ogreniyorum-8249)
