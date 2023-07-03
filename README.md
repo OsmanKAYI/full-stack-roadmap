@@ -24,6 +24,23 @@ Computer notes are a collection of useful information, tips, and tricks related 
 - [Windows](./windows)
 - [Others](./others)
 
+## Useful Links
+
+- The sites where you can improve coding and algorithm knowledge
+
+  - [HackerRank](https://www.hackerrank.com/)
+    - HackerRank is a technology company that focuses on competitive programming challenges for both consumers and businesses.
+  - [Codewars](https://www.codewars.com/)
+    - Codewars is an educational community for computer programming. On the platform, software developers train on programming challenges known as kata. These discrete programming exercises train a range of skills in a variety of programming languages, and are completed within an online integrated development environment.
+  - [CoderByte](https://coderbyte.com/)
+    - Coderbyte is a web application built to help you practice programming and improve your coding skills.
+  - [TopCoder](https://www.topcoder.com/)
+    - Topcoder is a crowdsourcing company with an open global community of designers, developers, data scientists, and competitive programmers.
+  - [Leetcode](https://leetcode.com/)
+    - LeetCode is a platform to help you enhance your skills, expand your knowledge and prepare for technical interviews.
+  - [Exercism](https://exercism.org/)
+    - Exercism is an online, open-source, free coding platform that offers code practice and mentorship on 66 different programming languages.
+
 ## Contributing
 
 This project have been created by [Osman KAYI](https://github.com/OsmanKAYI), who is a civil engineer and a PhD student at Ankara Yildirim Beyazit University, and [Nuri AKMAN](https://github.com/nuriakman), who is a computer programmer experienced at web based programming with PHP and MySQL.
