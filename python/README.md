@@ -27,3 +27,7 @@ To install a package using pip, you can use the command `pip install $package_na
 - [Pandas Package](https://github.com/pandas-dev/pandas)
   - pandas is a Python package that provides fast, flexible, and expressive data structures designed to make working with "relational" or "labeled" data both easy and intuitive. It aims to be the fundamental high-level building block for doing practical, real world data analysis in Python. Additionally, it has the broader goal of becoming the most powerful and flexible open source data analysis / manipulation tool available in any language.
   - [Pandas Cheatsheet](https://github.com/pandas-dev/pandas/blob/main/doc/cheatsheet/Pandas_Cheat_Sheet.pdf) is a cheatsheet for creating, cleaning, reshaping, summarizing, selecting, combining, grouping, windowing, plotting, and querying.
+
+## Useful Links
+
+- [Python Web Kazıma Dersleri](https://github.com/urazakgul/python-web-kazima-dersleri)
