@@ -28,6 +28,7 @@ The Vue documentation is available online at [vuejs.org](vuejs.org). This docume
 
 ## Useful Links
 
+- [Chatbot Being Trained Using Vue.js Docs](https://chatthing.ai/bots/a2625c1a-8012-42dc-b87d-10e3f0196306)
 - [The Power of Vue.js](https://www.addwebsolution.com/blog/vuejs-frontend-development)
 - [Interesting Cheatsheet for Anatomy of Vue Component](https://miro.medium.com/v2/resize:fit:1200/1*C4A0g1KYpa_olbSJcxAEBA.png)
 - [Vue.js State Management](https://icarusgk.hashnode.dev/state-management-in-vue-3)
