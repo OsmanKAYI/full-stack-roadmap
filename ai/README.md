@@ -7,3 +7,4 @@ AI, or Artificial Intelligence, refers to the development of computer systems th
 This repository is dedicated to exploring and developing AI solutions. It includes code, models, and resources related to AI research and applications.
 
 - [AI Tools](./ai.tools.md)
+- [Best AI Extensions](./extensions.md)
