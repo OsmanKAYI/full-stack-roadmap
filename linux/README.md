@@ -62,4 +62,9 @@ This documentation includes guides, tutorials, and reference material for learni
 
 <img src="https://pbs.twimg.com/media/FvxSYknagAEzE1F?format=jpg&name=4096x4096" title="Cron Cheatsheet">
 
+## Useful Links
+
+- [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)
+  - A repo with notes and tricks on using the command line, useful when working in Linux, with an emphasis on flexibility and fluency
+
 **Ref:** https://twitter.com/javinpaul/status/1656289356641079296?t=F1BAGnJZ-PaVwX2_i6CcBg&s=35
