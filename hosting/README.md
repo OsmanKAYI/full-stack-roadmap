@@ -28,3 +28,5 @@ This documentation gives reference material and guides for learning the basics o
 ## Useful Links
 
 - [Netlify Drop](https://app.netlify.com/drop)
+- [CloudPanel](https://www.cloudpanel.io/)
+  - CloudPanel is a free web hosting control panel with advanced features for server management. It offers a fast technology stack built with lightweight components for maximum performance. The control panel provides a suite of tools to strengthen security at the server level.
