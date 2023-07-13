@@ -18,13 +18,13 @@ Web security refers to protecting networks and computer systems from damage to o
 
 ## Documentation
 
-- [What is Web?](./00.what.is.web.md)
-- [How Internet Works](./01.how.internet.works.md)
-- [Recursive & Authoritative DNS](./05.recursive.and.authoritative.dns.md)
-- [Hard & Soft Links](./02.hard.and.soft.links.md)
-- [Session & Token](./03.session.and.token.md)
-- [What is R57 & C99](./04.r57.c99.md)
-- [How to Create VPN Server](./06.create.vpn.md)
+- [What is Web?](./what.is.web.md)
+- [How Internet Works](./how.internet.works.md)
+- [Recursive & Authoritative DNS](./recursive.and.authoritative.dns.md)
+- [Hard & Soft Links](./hard.and.soft.links.md)
+- [Session & Token](./session.and.token.md)
+- [What is R57 & C99](./r57.c99.md)
+- [How to Create VPN Server](./create.vpn.md)
 
 ## Useful Links
 

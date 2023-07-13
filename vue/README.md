@@ -21,11 +21,11 @@ Before diving into Vue, you shoul have some basic knowledge about JavaScript whc
 
 The Vue documentation is available online at [vuejs.org](vuejs.org). This documentation includes guides, tutorials, and reference material for learning Vue and using it effectively.
 
-- [What is Single File Component (SFC)](./00.single.file.components.md)
-- [Vue3 Getting Start](./01.vue3.md)
-- [Database Connection (PHP File)](./02.db.connection.php)
-- [How to Use Bootstrap5 with Vue3](./03.using.bootstrap5.with.vue3.md)
-- [How to Use Vuetify, Axios and Material Design Icons with Vue3](./04.using.vuetify.axios.and.mdi.with.vue3.md)
+- [What is Single File Component (SFC)](./single.file.components.md)
+- [Vue3 Getting Start](./vue3.md)
+- [Database Connection (PHP File)](./db.connection.php)
+- [How to Use Bootstrap5 with Vue3](./using.bootstrap5.with.vue3.md)
+- [How to Use Vuetify, Axios and Material Design Icons with Vue3](./using.vuetify.axios.and.mdi.with.vue3.md)
 
 ## Useful Links
 
@@ -105,4 +105,4 @@ Overall, the Options API is still a useful and valid approach for building Vue 3
 
 Vue Router is a powerful routing library for Vue that allows you to create complex, multi-page applications. It provides features like nested routes, route guards, and dynamic route matching. You can learn more about Vue Router in the [official documentation](https://router.vuejs.org/).
 
-- [Introduction to Vue Router](./router/00.what.is.vue.router.md)
+- [Introduction to Vue Router](./router/what.is.vue.router.md)

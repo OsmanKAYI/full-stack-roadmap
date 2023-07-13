@@ -16,6 +16,6 @@ To get started with Markdown, you can follow these steps:
 
 The official Markdown documentation is available at [daringfireball.net](https://daringfireball.net/projects/markdown/). This documentation includes a detailed explanation of Markdown syntax and examples of how to use it.
 
-- [Introduction to Markdown](./00.markdown.md)
-- [Markdown - HTML](./01.markdown.html.md)
-- [Basic Markdown Commands](./02.markdown.commands.md)
+- [Introduction to Markdown](./markdown.md)
+- [Markdown - HTML](./markdown.html.md)
+- [Basic Markdown Commands](./markdown.commands.md)

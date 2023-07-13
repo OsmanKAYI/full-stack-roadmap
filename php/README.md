@@ -10,20 +10,20 @@ PHP has a variety of frameworks available that can be used to build web applicat
 
 The PHP documentation is available online at [php.net](php.net/docs). This documentation includes guides, tutorials, and reference material for learning PHP and using it effectively.
 
-- [How to Use Two Different PHP Versions](./00.how.to.use.two.different.php.versions.md)
-- [Database connection v1 (PHP File)](./00.php.db.connection.v1.php)
-- [Database connection v2 (PHP File)](./00.php.db.connection.v2.php)
-- [PHP GET & POST Methods](./01.php.get.post.methods.md)
-- [PHP Forms](./02.php.form.introduction.md)
-- [PHP Form Handling](./03.php.form.handling.md)
-- [PHP Form Validation](./04.php.form.validation.md)
-- [PHP Form Required](./05.php.form.required.md)
-- [PHP Form URL and Email](./06.php.form.url.and.email.md)
-- [PHP Form Complete](./07.php.form.complete.md)
-- [PHP MySQL Login](./08.php.mysql.login.md)
-- [PHP Debug (xdebug)](./09.xdebug.md)
-- [PHP Cookie)](./10.php.cookie.md)
-- [PHP Session)](./11.php.session.md)
+- [How to Use Two Different PHP Versions](./how.to.use.two.different.php.versions.md)
+- [Database connection v1 (PHP File)](./php.db.connection.v1.php)
+- [Database connection v2 (PHP File)](./php.db.connection.v2.php)
+- [PHP GET & POST Methods](./php.get.post.methods.md)
+- [PHP Forms](./php.form.introduction.md)
+- [PHP Form Handling](./php.form.handling.md)
+- [PHP Form Validation](./php.form.validation.md)
+- [PHP Form Required](./php.form.required.md)
+- [PHP Form URL and Email](./php.form.url.and.email.md)
+- [PHP Form Complete](./php.form.complete.md)
+- [PHP MySQL Login](./php.mysql.login.md)
+- [PHP Debug (xdebug)](./xdebug.md)
+- [PHP Cookie)](./php.cookie.md)
+- [PHP Session)](./php.session.md)
 
 ## Useful Links
 

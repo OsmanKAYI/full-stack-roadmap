@@ -20,10 +20,10 @@ Security is an important consideration when hosting a website or application. Yo
 
 This documentation gives reference material and guides for learning the basics of hosting.
 
-- [Assignment for Remote Server Connection](./00.sunucuya.baglanma.odev.md)
-- [Remote Server Connection](./01.sunucuya.baglanma.md)
-- [What is GitHub Hosting](./02.github.hosting.md)
-- [Create a Backdoor with Ncat](./03.ncat.backdoor.md)
+- [Assignment for Remote Server Connection](./sunucuya.baglanma.odev.md)
+- [Remote Server Connection](./sunucuya.baglanma.md)
+- [What is GitHub Hosting](./github.hosting.md)
+- [Create a Backdoor with Ncat](./ncat.backdoor.md)
 
 ## Useful Links
 

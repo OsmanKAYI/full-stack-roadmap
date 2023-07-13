@@ -23,34 +23,34 @@ Each database management system will have its own documentation and support reso
 MySQL is an open-source relational database management system. Its name is a combination of "My", the name of co-founder Michael Widenius's daughter My, and "SQL", the acronym for Structured Query Language.
 
 - [SQL Tutorial for Beginners](https://www.youtube.com/watch?v=-fW2X7fh7Yg)
-- [Increase Maximum Upload File Size](./mysql/00.increase.max.upload.file.size.md)
-- [What is SQL](./mysql/01.sql.md)
-- [Basic MySQL Command Examples](./mysql/02.temel.mysql.komutlari.ornekleri.md)
-- [MySQL String Commands](./mysql/03.mysql.string.komutlari.md)
-- [MySQL Time Functions](./mysql/04.mysql.tarih.fonksiyonlari.md)
-- [MySQL Funtions](./mysql/05.mysql.functions.md)
-- [What is Union?](./mysql/13.union.md)
+- [Increase Maximum Upload File Size](./mysql/increase.max.upload.file.size.md)
+- [What is SQL](./mysql/sql.md)
+- [Basic MySQL Command Examples](./mysql/temel.mysql.komutlari.ornekleri.md)
+- [MySQL String Commands](./mysql/mysql.string.komutlari.md)
+- [MySQL Time Functions](./mysql/mysql.tarih.fonksiyonlari.md)
+- [MySQL Funtions](./mysql/mysql.functions.md)
+- [What is Union?](./mysql/union.md)
 - [Top 27 SQL Syntax for Developers](https://morioh.com/p/27dd41b0d365?f=5c21fb01c16e2556b555ab32)
-- [SQLi (SQL Injection Weakness)](./mysql/06.sqli.sql.injection.zaafiyeti.md)
-- [SQL Foreign Key Constraint](./mysql/07.sql.foreign.key.constraint.md)
-- [MySQL Foreign Key](./mysql/08.mysql.foreign.key.md)
-- [MySQL Engines](./mysql/09.mysql.engines.md)
-- [Import Text File to MySQL](./mysql/10.import.text.file.to.mysql.md)
-- [CLI Connection Without Password](./mysql/11.cli.connection.without.password.md)
-- [Merge Rows in MySQL](./mysql/12.group.concat.md)
-- [Union in MySQL](./mysql/13.union.md)
+- [SQLi (SQL Injection Weakness)](./mysql/sqli.sql.injection.zaafiyeti.md)
+- [SQL Foreign Key Constraint](./mysql/sql.foreign.key.constraint.md)
+- [MySQL Foreign Key](./mysql/mysql.foreign.key.md)
+- [MySQL Engines](./mysql/mysql.engines.md)
+- [Import Text File to MySQL](./mysql/import.text.file.to.mysql.md)
+- [CLI Connection Without Password](./mysql/cli.connection.without.password.md)
+- [Merge Rows in MySQL](./mysql/group.concat.md)
+- [Union in MySQL](./mysql/union.md)
 
 #### Basic MySQL
 
-- [Basic SQL Commands](./mysql/socratica/01.create.alter.drop.insert.select.update.delete.sql)
-- [Select](./mysql/socratica/02.select.sql)
-- [Inser Into](./mysql/socratica/03.insert.into.sql)
-- [Update](./mysql/socratica/04.update.sql)
-- [Delete](./mysql/socratica/05.delete.sql)
-- [Join](./mysql/socratica/06.join.sql)
-- [Join Examples](./mysql/socratica/07.join.examples.sql)
-- [View Concat Coalesce](./mysql/socratica/08.view.concat.coalesce.sql)
-- [Index](./mysql/socratica/09.index.sql)
+- [Basic SQL Commands](./mysql/socratica/create.alter.drop.insert.select.update.delete.sql)
+- [Select](./mysql/socratica/select.sql)
+- [Inser Into](./mysql/socratica/insert.into.sql)
+- [Update](./mysql/socratica/update.sql)
+- [Delete](./mysql/socratica/delete.sql)
+- [Join](./mysql/socratica/join.sql)
+- [Join Examples](./mysql/socratica/join.examples.sql)
+- [View Concat Coalesce](./mysql/socratica/view.concat.coalesce.sql)
+- [Index](./mysql/socratica/index.sql)
 
 #### Examples
 
@@ -72,8 +72,8 @@ MySQL is an open-source relational database management system. Its name is a com
 
 SQLite is a database engine written in the C programming language. It is not a standalone app; rather, it is a library that software developers embed in their apps. As such, it belongs to the family of embedded databases.
 
-- [Install SQLite Browser on Ubuntu](./sqlite/00.install.sqlite.browser.ubuntu.md)
-- [How to Change Date Format (SQL File)](./sqlite/01.change.date.format.sql)
+- [Install SQLite Browser on Ubuntu](./sqlite/install.sqlite.browser.ubuntu.md)
+- [How to Change Date Format (SQL File)](./sqlite/change.date.format.sql)
 - [Lux Temperature Humidity Example](https://github.com/OsmanKAYI/osmankayi.com/tree/main/db/sqlite/lux-temperature-humidity)
 
 ## Useful Links
