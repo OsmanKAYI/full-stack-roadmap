@@ -246,3 +246,7 @@ history
 `gunzip -c /path/to/file/*.gz | pv | mysql -f -D $dbname` <br>
 
 - Unzip all the files and import them into mysql in local with showing the progress (pv).
+
+`for file in [0-9]*; do git mv "$file" "${file:3}"; done` <br>
+
+- Deletes the first 3 characters of the files (without harming its history) starting with any number.
