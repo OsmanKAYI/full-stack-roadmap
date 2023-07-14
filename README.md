@@ -15,7 +15,7 @@ Computer notes are a collection of useful information, tips, and tricks related 
 - [PHP](./php)
 - [API](./api)
 - [Vue](./vue)
-- [Jupyter Notebook](./jupyter.notebook)
+- [Jupyter Notebook](./jupyterNotebook)
 - [Python](./python)
 - [Docker](./docker)
 - [Hosting](./hosting)
