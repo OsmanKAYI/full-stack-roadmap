@@ -28,6 +28,10 @@
 
   - Copy is an AI powered copywriting platform that creates your best-performing customer-facing content. It helps you write blogs, emails, sales copy, headlines and social media posts that convert. It also automates and scales your marketing tasks with Workflows & do more with less.
 
+- [Text Cortex AI](https://app.textcortex.com/user/dashboard)
+
+  - Employ the force of TextCortex's browser extension to create content in any textbox. Combine the potency of reworking with the latest AI generation capabilities.
+
 - [RYTR](https://rytr.me/)
 
   - Rytr is an AI writing assistant that helps you create high-quality content, in just a few seconds, at a fraction of the cost!
@@ -36,6 +40,22 @@
 
   - ChatPDF is an AI-powered chatbot that accepts PDFs as 'prompts' (inputs) and can summarize, answer questions, analyze for a quick extraction (find a particular text or paragraph), and is able to translate PDFs. You do not even need to create an account if you do not wish to; you can head to the website and get started.
 
+- [Guidde](https://app.guidde.com/home)
+
+  - Guidde is the generative AI platform enabling teams to deliver know-how 11x faster for easy sharing with customers or employees.
+
+- [tldv.io](https://tldv.io/app/library/meetings)
+
+  - tldv.io is an AI-powered meeting recorder specifically designed for Zoom and Google Meet. It allows users to record meetings, automatically transcribe them in more than 30 languages, and instantly access these transcripts in their meetings library.
+
+- [Scispace](https://typeset.io/)
+
+  - SciSpace is a writing and collaboration tool for your research papers and thesis documents.
+
+- [Guidde](https://app.askcodi.com/home/)
+
+  - AskCodi is a complete tool that can be used by developers during the development process. It includes features like Time Complexity, which provides insights into the performance of the code, and JS One Liner, regex generator, and HTML/CSS generator, which assist programmers with fast coding based on their needs.
+
 - [Humata AI](https://app.humata.ai/)
 
   - Humata AI is an AI-powered tool developed by Tilda Technologies that helps users analyze, understand, and work with various types of documents faster and more efficiently.
@@ -43,6 +63,10 @@
 - [Wepik AI](https://wepik.com/)
 
   - Wepik, the online design platform, has a tool that will revolutionize the way we create presentations. Thanks to its integrated Artificial Intelligence technology, this new AI Presentation Maker allows users to generate attractive and professional presentations in just a few minutes.
+
+- [Prezo AI](https://app.prezo.ai/home/decks)
+
+  - Prezo is an AI-powered software platform designed to help users build professional-grade slide decks ten times faster than traditional methods. Developed by Barrel Through Inc, Prezo utilizes powerful natural language processing to quickly and accurately translate user input into visually appealing, dynamic slides.
 
 - [ChainGPT](https://www.chaingpt.org/)
 
