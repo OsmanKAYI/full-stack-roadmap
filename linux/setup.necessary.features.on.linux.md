@@ -13,7 +13,6 @@ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap re
 ```BASH
 # to set timezone as Istanbul
 sudo timedatectl set-timezone Europe/Istanbul
-
 # to choose timezone manually: sudo dpkg-reconfigure tzdata
 
 # to setup auxiliary packages
@@ -52,25 +51,6 @@ gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windo
 ```
 
 **NOTE:** To see more configurations about dock [visit](https://github.com/micheleg/dash-to-dock/blob/master/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml)
-
-## TUXEDO Control Center
-
-- The TUXEDO Control Center (short: TCC) gives TUXEDO laptop users full control over their hardware like CPU cores, fan speed and more. To get more information about the project visit [TUXEDO Control Center Project](https://github.com/tuxedocomputers/tuxedo-control-center) on GitHub.
-
-```BASH
-# add repositories in apt list (my case it is "jammy" but it may subject to change depending on your condition)
-echo -e "deb https://deb.tuxedocomputers.com/ubuntu jammy main" | sudo tee -a /etc/apt/sources.list.d/tuxedocomputers.list
-
-# dive into source directory
-cd /etc/apt/trusted.gpg.d/
-
-# dowload the programm
-sudo wget https://deb.tuxedocomputers.com/0x54840598.pub.asc
-
-# update and install the program
-sudo apt update
-sudo apt install tuxedo-control-center -y
-```
 
 ## Guake
 
@@ -184,6 +164,25 @@ sudo apt install gimp -y
 
 ```BASH
 sudo apt install lynx -y
+```
+
+## TUXEDO Control Center
+
+- The TUXEDO Control Center (short: TCC) gives TUXEDO laptop users full control over their hardware like CPU cores, fan speed and more. To get more information about the project visit [TUXEDO Control Center Project](https://github.com/tuxedocomputers/tuxedo-control-center) on GitHub.
+
+```BASH
+# add repositories in apt list (my case it is "jammy" but it may subject to change depending on your condition)
+echo -e "deb https://deb.tuxedocomputers.com/ubuntu jammy main" | sudo tee -a /etc/apt/sources.list.d/tuxedocomputers.list
+
+# dive into source directory
+cd /etc/apt/trusted.gpg.d/
+
+# dowload the programm
+sudo wget https://deb.tuxedocomputers.com/0x54840598.pub.asc
+
+# update and install the program
+sudo apt update
+sudo apt install tuxedo-control-center -y
 ```
 
 ## Firefox
