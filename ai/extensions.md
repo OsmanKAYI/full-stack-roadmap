@@ -20,13 +20,17 @@
 
   - ChatGPT based web page summariser.
 
-- [ChatGPT for YouTube]()
+- [ChatGPT for YouTube](https://chrome.google.com/webstore/detail/chatgpt-for-youtube/ocbklpkcikpidkleacbohkobinlilgbd)
 
   - ChatGPT for YouTube uses ChatGPT's AI to quickly summarize the main points of a video. It increases the efficiency of extracting important information from videos and reduces the risk of wasting time watching irrelevant content. Suitable for videos such as courses or trainings, News, Product feature demos, Interviews, Academic seminars.
 
-- [YouTube & Article Summary powered by ChatGPT]()
+- [YouTube & Article Summary powered by ChatGPT](https://chrome.google.com/webstore/detail/youtube-article-summary-p/nmmicjeknamkfloonkhhcjmomieiodli)
 
   - ChatGPT tarafından desteklenen bu uzantıyla YouTube videolarını ve web makalelerini özetleyin ve zamandan tasarruf edin. ChatGPT tarafından desteklenen YouTube ve Makale Özeti, hem YouTube videolarının hem de tükettiğiniz web makalelerinin özetine hızlı bir şekilde erişmenizi sağlayan ücretsiz bir Chrome Uzantısıdır. Zamandan tasarruf etmek ve daha hızlı öğrenmek için bu uzantıyı kullanın.
+
+- [Guidde](https://chrome.google.com/webstore/detail/guidde-magically-create-v/oacmmmjedhheaijfjidilonpngccnhdl)
+
+  - Guidde is the generative AI platform enabling teams to deliver know-how 11x faster for easy sharing with customers or employees.
 
 - [Engage AI](https://chrome.google.com/webstore/detail/engage-ai-openai-gpt-for/nelhhkchoapcbpcgpmmiahfkcdhgecaf/related)
 
