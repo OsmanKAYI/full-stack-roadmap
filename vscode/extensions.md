@@ -100,90 +100,13 @@
 
 ```BASH
 [
-	{
-		"name": "00.gayrimenkul",
-		"rootPath": "~/source/gayrimenkul",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	},
-	{
-		"name": "01.computerNotes",
-		"rootPath": "~/source/computerNotes",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	},
-	{
-		"name": "02.osmankayi.com",
-		"rootPath": "~/source/osmankayi.com",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	},
-	{
-		"name": "03.PHP-Egitimi",
-		"rootPath": "~/source/PHP-Egitimi",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	},
-	{
-		"name": "04.php_mysql_notlari",
-		"rootPath": "/var/www/html/php_mysql_notlari",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	},
-	{
-		"name": "05.html",
-		"rootPath": "/var/www/html",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	},
-	{
-		"name": "06.presentation",
-		"rootPath": "~/source/presentation",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	},
-	{
-		"name": "07.projects",
-		"rootPath": "~/source/projects",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	},
-	{
-		"name": "08.vue3",
-		"rootPath": "/var/www/html/vue3",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	},
-	{
-		"name": "09.apartman",
-		"rootPath": "/var/www/html/apartman",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	},
-	{
-		"name": "10.ebilet",
-		"rootPath": "~/source/ebilet",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	},
-	{
-		"name": "11.vue_ebilet",
-		"rootPath": "/var/www/html/vue_ebilet",
-		"paths": [],
-		"tags": [],
-		"enabled": true
-	}
+  {
+    "name": "osmankayi.com",
+    "rootPath": "~/source/osmankayi.com",
+    "paths": [],
+    "tags": [],
+    "enabled": true
+  }
 ]
 ```
 
