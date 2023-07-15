@@ -28,3 +28,6 @@ This documentation provides a reference for the available resources and examples
 - [How to Send a Secret Message](https://www.youtube.com/watch?v=I6Unxb-PFhs)
 - [How Dijkstra's Algorithm Works](https://www.youtube.com/watch?v=EFg3u_E6eHU)
 - [How Do You Calculate a Minimum Spanning Tree?](https://www.youtube.com/watch?v=Yldkh0aOEcg)
+- [Built a Ball Balancing Robot](https://www.youtube.com/watch?v=v4F-cGDGiEw&list=PLKy1C_D0ZQ5Xk2T7sujcwjW5CbecdtYXc&index=10)
+  - [Project Info](https://www.aaedmusa.com/projects/project-three-sng7y-gaslp)
+  - [Step by Step Instructions](https://www.instructables.com/Ball-Balancer/)
