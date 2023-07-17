@@ -340,9 +340,9 @@ sudo apt install php7.4-fpm php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php
 sudo service apache2 restart
 ```
 
-**NOTE:** Two different verisons of php can be used with following the instructions [here](https://github.com/OsmanKAYI/osmankayi.com/blob/main/php/00.how.to.use.two.different.php.versions.md)
+**NOTE:** Two different verisons of php can be used with following the instructions [here](https://github.com/OsmanKAYI/osmankayi.com/blob/main/php/how.to.use.two.different.php.versions.md)
 
-**NOTE:** The max uploaded file size can be increased from [here](https://github.com/OsmanKAYI/osmankayi.com/blob/main/db/mysql/00.increase.max.upload.file.size.md)
+**NOTE:** The max uploaded file size can be increased from [here](https://github.com/OsmanKAYI/osmankayi.com/blob/main/db/mysql/increase.max.upload.file.size.md)
 
 ## Xdebug
 
@@ -371,7 +371,7 @@ sudo systemctl restart apache2
 
 ##### How To Use Xdebug with VSCode
 
-- You can follow the steps described in [Xdebug Configuration for VSCode](https://github.com/OsmanKAYI/osmankayi.com/blob/main/php/09.xdebug.md)
+- You can follow the steps described in [Xdebug Configuration for VSCode](https://github.com/OsmanKAYI/osmankayi.com/blob/main/php/xdebug.md)
 
 ## Composer
 
