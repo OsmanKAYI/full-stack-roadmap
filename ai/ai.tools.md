@@ -16,6 +16,10 @@
 
     - TaskMatrix connects ChatGPT and a series of Visual Foundation Models to enable sending and receiving images during chatting.
 
+- [Durable AI](https://durable.co/)
+
+  - The AI website builder that generates an entire website with images and copy in seconds.
+
 - [Stability AI](https://stability.ai/)
 
   - Stability AI is the world's one of the leading open source artificial intelligence company.
