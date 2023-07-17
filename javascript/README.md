@@ -29,6 +29,10 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - Express.js: A minimalist web application framework for Node.js.
 - jQuery: A fast and feature-rich library for DOM manipulation and AJAX requests.
 
+## Documentation
+
+- [JavaScript Project Ideas](./project.ideas.md)
+
 ## Useful Links
 
 - **Array Methods**
