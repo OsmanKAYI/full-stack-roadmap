@@ -11,6 +11,7 @@ Computer notes are a collection of useful information, tips, and tricks related 
 - [Git](./git)
 - [Visual Studio Code](./vscode)
 - [Database (DB)](./db)
+- [DB Monitoring](./dbMonitoring)
 - [HTML](./html)
 - [PHP](./php)
 - [API](./api)
