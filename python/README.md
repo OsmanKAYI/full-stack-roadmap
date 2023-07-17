@@ -18,6 +18,8 @@ sudo apt install python3
 
 The official Python documentation is an excellent resource for learning the language and exploring its features. It can be found at [docs.python.org](https://docs.python.org/). The documentation includes tutorials, guides, and a comprehensive library reference.
 
+- [Object Oriented Programming (OOP)](./oop.md)
+
 ## Package Management
 
 Python has a rich ecosystem of third-party libraries and packages that extend its functionality. The most popular package manager for Python is pip. You can use pip to install, manage, and update packages from the Python Package Index (PyPI).
