@@ -31,3 +31,4 @@ To install a package using pip, you can use the command `pip install $package_na
 ## Useful Links
 
 - [Python Web Kazıma Dersleri](https://github.com/urazakgul/python-web-kazima-dersleri)
+- [Object Oriented Programming (OOP) in Python](https://www.freecodecamp.org/news/crash-course-object-oriented-programming-in-python/)
