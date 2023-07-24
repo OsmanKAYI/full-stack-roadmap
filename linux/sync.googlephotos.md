@@ -104,10 +104,16 @@ gphotos-sync ~/gphotos-sync/$accountname/ --progress --rescan --retry-download
 gphotos-sync ~/gphotos-sync/$accountname/ --progress --omit-album-date
 ```
 
+### Dowload Photos on Your Account Without Albums
+
+```BASH
+gphotos-sync ~/gphotos-sync/$accountname/ --progress --skip-albums
+```
+
 **NOTE:** If you face any problem like `OSError: [Errno 98] Address already in use`, rearrange the command as follows:
 
 ```BASH
-gphotos-sync ~/gphotos-sync/$accountname/ --progress --rescan --retry-download --omit-album-date --port 8081
+gphotos-sync ~/gphotos-sync/$accountname/ --progress --rescan --retry-download --skip-albums --port 8081
 ```
 
 **Ref:** https://www.linuxuprising.com/2019/06/how-to-backup-google-photos-to-your.html
