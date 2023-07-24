@@ -6,6 +6,7 @@
 - `net user "username" "password" /add` command lets you to create a new user with password.
 
 **NOTE:** `net user "username" newpass` command lets you to change the password of an existed user when you start the **Windows Command Processor** as an administrator.
+
 **NOTE:** `net user "username" /delete` command lets you to delete an existed user.
 
 - Create a folder in any place on your computer.
