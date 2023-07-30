@@ -20,6 +20,7 @@ Web security refers to protecting networks and computer systems from damage to o
 
 - [What is Web?](./what.is.web.md)
 - [How Internet Works](./how.internet.works.md)
+- [What is DNS?](./dns.md)
 - [Recursive & Authoritative DNS](./recursive.and.authoritative.dns.md)
 - [Hard & Soft Links](./hard.and.soft.links.md)
 - [Session & Token](./session.and.token.md)
