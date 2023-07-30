@@ -8,3 +8,4 @@ This repository is dedicated to exploring and developing AI solutions. It includ
 
 - [AI Tools](./ai.tools.md)
 - [Best AI Extensions](./extensions.md)
+- [ChatGPT Prompts](./extensions.md)
