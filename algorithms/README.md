@@ -25,6 +25,7 @@ This documentation provides a reference for the available resources and examples
 
 ### Usefull Links
 
+- [Algorithms by Jeff Erickson (PDF Book)](https://jeffe.cs.illinois.edu/teaching/algorithms/#book)
 - [How to Send a Secret Message](https://www.youtube.com/watch?v=I6Unxb-PFhs)
 - [How Dijkstra's Algorithm Works](https://www.youtube.com/watch?v=EFg3u_E6eHU)
 - [How Do You Calculate a Minimum Spanning Tree?](https://www.youtube.com/watch?v=Yldkh0aOEcg)
