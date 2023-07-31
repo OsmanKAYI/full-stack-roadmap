@@ -37,3 +37,4 @@ To install a package using pip, you can use the command `pip install $package_na
   - Object-oriented programming is a way of writing code that relies on the concepts of objects & classes which helps make your code simple and readable.
 - [Python SQLite Tutorial](https://morioh.com/a/b1659981d685/python-sqlite-tutorial-create-a-database-table-and-run-queries-with-python-and-sqlite)
   - Create a Database, Table, and Run Queries with Python and SQLite
+- [5 Ways To Use Python (Pandas) as a Data Analyst](https://pbs.twimg.com/media/F2TM9tdXMAAI35P?format=jpg&name=medium)
