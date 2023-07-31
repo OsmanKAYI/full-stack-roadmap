@@ -220,6 +220,17 @@ sudo apt install firefox -y
 sudo apt install chromium-browser -y
 ```
 
+## Cockpit
+
+Cockpit is an interactive server admin interface. It is easy to use and very lightweight.
+
+```BASH
+. /etc/os-release
+sudo apt install -t ${VERSION_CODENAME}-backports cockpit
+```
+
+After that, type `localhost:9090` on your browser and login with your system's username and password.
+
 ## Visual Studio Code
 
 - Visual Studio Code, also commonly referred to as VSCode, is a source-code editor made by Microsoft with the Electron Framework, for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.
