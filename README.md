@@ -18,6 +18,7 @@ Computer notes are a collection of useful information, tips, and tricks related 
 - [JavaScript](./javascript)
 - [Jupyter Notebook](./jupyter.notebook)
 - [Python](./python)
+- [Data Analysis](./data.analysis)
 - [Docker](./docker)
 - [Hosting](./hosting)
 - [Artificial Intelligence (AI)](./ai)
