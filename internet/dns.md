@@ -9,7 +9,7 @@ People use URL's daily to share videos, pictures, sites, articles – almost any
 URL is an acronym for **Uniform Resource Locator**, and we can break them down into multiple smaller "pieces". Here's what makes up a standard URL:
 
 <div style="text-align: center;">
-  <img text-align:center src="https://www.freecodecamp.org/news/content/images/2023/02/image-264.png">
+  <img src="https://www.freecodecamp.org/news/content/images/2023/02/image-264.png">
 </div>
 
 A **URL** is just an address for a resource. The resources differ like we discussed, but they're just pointers all over the internet to take you to content you want to view.
@@ -35,7 +35,7 @@ An IP address is a series of standardised numbers that range from 0 to 255 – s
 If you want to see IP addresses in action, and are familiar with terminals, you can type `ping google.com` in whichever terminal you like and you can see the IP address of Google.com.
 
 <div style="text-align: center;">
-  <img text-align:center src="https://www.freecodecamp.org/news/content/images/2023/03/image-56.png">
+  <img src="https://www.freecodecamp.org/news/content/images/2023/03/image-56.png">
 </div>
 
 You can test this further by typing 216.58.212.206 directly into your browser and seeing if it takes you to Google.
@@ -87,7 +87,7 @@ The authoritative nameserver now can return the IP address for the requested hos
 **Example Request**
 
 <div style="text-align: center;">
-  <img text-align:center src="https://www.freecodecamp.org/news/content/images/2023/07/image-168.png">
+  <img src="https://www.freecodecamp.org/news/content/images/2023/07/image-168.png">
 </div>
 
 **Ref:** https://www.freecodecamp.org/news/what-is-dns-for-beginners/
