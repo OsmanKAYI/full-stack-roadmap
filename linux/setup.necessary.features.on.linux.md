@@ -423,10 +423,10 @@ sudo mysql_secure_installation
 
 #### MySQL Password Reset
 
-- Below commands can be used just in the first experience since after the first usage, password will not be emty ("").
+- Below commands can be used just in the first experience since after the first usage, password will not be emty ('').
 
 ```BASH
-sudo service mysql  stop
+sudo service mysql stop
 sudo service mysqld stop
 sudo mysqld_safe --skip-grant-tables --skip-networking &
 mysql -u root
@@ -448,7 +448,7 @@ mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost'
 #### MariaDB Password Reset
 
 ```BASH
-sudo service mariadb  stop
+sudo service mariadb vstop
 sudo mysqld_safe --skip-grant-tables --skip-networking --skip-networking &
 mysql -u root
   use mysql;
