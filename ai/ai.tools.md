@@ -20,6 +20,14 @@
 
     - TaskMatrix connects ChatGPT and a series of Visual Foundation Models to enable sending and receiving images during chatting.
 
+- [ZeroGPT](https://www.zerogpt.com/)
+
+  - ZeroGPT is one of the most advanced and reliable Chat GPT, GPT4 & AI content detector.
+
+- [Content at Scale](https://contentatscale.ai/ai-content-detector/)
+
+  - AI Detector is to see if your text is human or AI generated from ChatGPT, GPT4, & Bard.
+
 - [Durable AI](https://durable.co/)
 
   - The AI website builder that generates an entire website with images and copy in seconds.
