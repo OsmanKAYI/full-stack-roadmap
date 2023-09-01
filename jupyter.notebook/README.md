@@ -16,8 +16,7 @@ To get started with Jupyter Notebook, you can follow these steps:
 
 The Jupyter Notebook documentation is available online at [jupyter-notebook.readthedocs](https://jupyter-notebook.readthedocs.io/en/stable/). This documentation includes guides, tutorials, and reference material for learning how to use Jupyter Notebook effectively.
 
-- [JupySQL](https://github.com/ploomber/jupysql) which runs SQL in Jupyter/IPython via a `%sql` and `%%sql` magics.
-  - [Example Usage of JupySQL](https://twitter.com/Sumanth_077/status/1675499731454406656?t=jxksa2sWC0B19gPxeQ4w5Q&s=35) which explains JupySQL with an example.
+- [Magic Commands for Jupyter Notebook](./magic.commands.md)
 
 ## Extensions
 
@@ -31,5 +30,7 @@ Jupyter Notebook has a wide range of extensions that can be used to enhance its 
 
 ## Useful Links
 
+- [JupySQL](https://github.com/ploomber/jupysql) which runs SQL in Jupyter/IPython via a `%sql` and `%%sql` magics.
+  - [Example Usage of JupySQL](https://twitter.com/Sumanth_077/status/1675499731454406656?t=jxksa2sWC0B19gPxeQ4w5Q&s=35) which explains JupySQL with an example.
 - [LinkedInDumper](https://www.kitploit.com/2023/06/linkedindumper-tool-to-dump-company.html)
   - LinkedInDumper is a Python3 script that dumps employee data from the LinkedIn social networking platform. The results contain firstname, lastname, position (title), location and a user's profile link.
