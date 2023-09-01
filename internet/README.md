@@ -36,4 +36,5 @@ Web security refers to protecting networks and computer systems from damage to o
 - [Base64 Encoding](https://www.youtube.com/watch?v=aUdKd0IFl34)
 - [10 Key Data Structures](https://www.youtube.com/watch?v=ouipSd_5ivQ)
 - [Cache Systems Every Developer Should Know](https://www.youtube.com/watch?v=dGAgxozNWFE)
+- [How DNS Works](https://messwithdns.net/)
 - [Server Types for Cybersecurity Learners](https://pbs.twimg.com/media/F2IcQLMXoAAUcWR?format=jpg&name=small)
