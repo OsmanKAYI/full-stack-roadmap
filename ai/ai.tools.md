@@ -4,6 +4,10 @@
 
   - TopApps directory provides businesses of all kinds with a database of the best and most recently developed AI tools.
 
+- [Elicit AI](https://elicit.org/)
+
+  - Elicit is a research assistant using language models like GPT-3 to automate parts of researchers’ workflows. Currently, the main workflow in Elicit is Literature Review. If you ask a question, Elicit will show relevant papers and summaries of key information about those papers in an easy-to-use table.
+
 - [Open AI](https://open.ai/)
 
   - OpenAI is a private research laboratory that aims to develop and direct artificial intelligence (AI) in ways that benefit humanity as a whole. You give a brief definition and ai will generate you a beautiful! image.
