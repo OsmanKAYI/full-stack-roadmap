@@ -76,6 +76,10 @@
 
   - Humata AI is an AI-powered tool developed by Tilda Technologies that helps users analyze, understand, and work with various types of documents faster and more efficiently.
 
+- [SlidesGo](https://app.prezo.ai/home/decks)
+
+  - From business meetings to weather reports and 5-minute presentations, it will grant you wishes for your special requests. Just tell the AI and watch the magic happen.
+
 - [Wepik AI](https://wepik.com/)
 
   - Wepik, the online design platform, has a tool that will revolutionize the way we create presentations. Thanks to its integrated Artificial Intelligence technology, this new AI Presentation Maker allows users to generate attractive and professional presentations in just a few minutes.
