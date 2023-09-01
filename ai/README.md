@@ -10,3 +10,4 @@ This repository is dedicated to exploring and developing AI solutions. It includ
 - [Best AI Extensions](./extensions.md)
 - [ChatGPT Prompts](./chatgpt.prompts.md)
 - [AI Courses](./ai.courses.md)
+- [Create Logo](./create.logo.md)
