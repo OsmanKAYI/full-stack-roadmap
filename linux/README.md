@@ -60,6 +60,8 @@ This documentation includes guides, tutorials, and reference material for learni
 6. [nslookup](https://www.java67.com/2012/12/unix-command-to-find-ip-address-from-hostname.html)
 7. [crontab](https://www.java67.com/2017/08/how-to-backup-and-load-crontab-from-file-Linux-example.html)
 
+<img src="https://pbs.twimg.com/media/F5L5PnmWAAAje7k?format=jpg&name=900x900" title="Linux Commands Cheatsheet"><br>
+
 <img src="https://pbs.twimg.com/media/FvxSYknagAEzE1F?format=jpg&name=4096x4096" title="Cron Cheatsheet">
 
 ## Useful Links
