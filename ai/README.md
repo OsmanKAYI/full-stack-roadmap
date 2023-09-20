@@ -11,3 +11,9 @@ This repository is dedicated to exploring and developing AI solutions. It includ
 - [ChatGPT Prompts](./chatgpt.prompts.md)
 - [AI Courses](./ai.courses.md)
 - [Create Logo](./create.logo.md)
+
+## Useful Links
+
+- [Machine Learning Lecture Notes from Stanford University](https://github.com/afshinea/stanford-cs-229-machine-learning/tree/master)
+- [Deep Learning Lecture Notes from Stanford University](https://github.com/afshinea/stanford-cs-230-deep-learning)
+- [Artificial Intelligence Lecture Notes from Stanford University](https://github.com/afshinea/stanford-cs-221-artificial-intelligence)
