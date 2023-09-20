@@ -28,6 +28,18 @@
 
   - AI Detector is to see if your text is human or AI generated from ChatGPT, GPT4, & Bard.
 
+- [Leonardo AI](https://durable.co/)
+
+  - Leonardo AI is a generative AI platform that empowers users to effortlessly generate captivating images and artwork, with a specific emphasis on game assets.
+
+- [Nightcafe AI](https://durable.co/)
+
+  - NightCafe Creator is an AI Art Generator app with multiple methods of AI art generation. Using neural style transfer you can turn your photo into a masterpiece.
+
+- [Vectorizer AI](https://durable.co/)
+
+  - Vectorizer.AI is a website dedicated to helping you convert bitmap images to vector images.
+
 - [Durable AI](https://durable.co/)
 
   - The AI website builder that generates an entire website with images and copy in seconds.
