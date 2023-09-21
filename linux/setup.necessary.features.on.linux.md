@@ -616,6 +616,34 @@ vim ~/.bashrc
 - Navigate to the end of the file and remove the Anaconda environment configuration.
 - Press <kbd>ESC</kbd> and type `:wq` and then press <kbd>ENTER</kbd> to save file.
 
+## GPT4All
+
+- GPT4All is an open-source software ecosystem that allows anyone to train and deploy powerful and customized large language models (LLMs) on everyday hardware. Nomic AI oversees contributions to the open-source ecosystem ensuring quality, security and maintainability.
+
+```BASH
+cd ~/source/
+mkdir gpt4all/
+cd gpt4all/
+wget https://gpt4all.io/installers/gpt4all-installer-linux.run
+chmod +x gpt4all-installer-linux.run
+./gpt4all-installer-linux.run
+```
+
+- After that,
+
+  - Click on `Next`, three times
+  - Check the box of `I accept the licence` and press `Next`
+  - Click on `Install` button and press `Finish`
+
+- To execute the program,
+
+```BASH
+cd ~/gpt4all/bin
+# run the file called "chat"
+```
+
+- In first execution, one of the available models should be downloaded according to your operating system's condition.
+
 ## gphotos-sync
 
 - gphotos-sync is a command line python application that uses the Google Photos API.
