@@ -33,6 +33,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Uniq Command Examples](./uniq.command.examples.md)
 - [PDF Compression](./compress.pdf.md)
 - [Appimage Files on Ubuntu](./how.to.use.appimage.files.md)
+- [Execute .run Files on Ubuntu](./execute..run.files.md)
 - [Install Office Programs on Linux](./office.on.linux.md)
 - [Ubuntu Second Monitor Problem](./second.monitor.problem.md)
 - [Screen Capture & Record](./screen.capture.md)
