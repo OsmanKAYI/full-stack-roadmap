@@ -24,6 +24,7 @@ There are many algorithms that are commonly used in computer science, including:
 This documentation provides a reference for the available resources and examples.
 
 - [What is an Algorithm?](./what.is.algorithm.md)
+- [Load Balancing Algortihms](./load-balancing.algorithms.md)
 
 ### Usefull Links
 
