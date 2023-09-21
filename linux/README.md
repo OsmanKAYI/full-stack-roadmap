@@ -62,11 +62,15 @@ This documentation includes guides, tutorials, and reference material for learni
 
 **Linux Commands**
 
-<img src="https://pbs.twimg.com/media/F5L5PnmWAAAje7k?format=jpg&name=900x900" title="Linux Commands Cheatsheet"><br>
+<div style="text-align: center;">
+  <img src="https://pbs.twimg.com/media/F5L5PnmWAAAje7k?format=jpg&name=900x900" title="Linux Commands Cheatsheet"><br>
+</div>
 
 **Cron Cheatsheet**
 
-<img src="https://pbs.twimg.com/media/FvxSYknagAEzE1F?format=jpg&name=4096x4096" title="Cron Cheatsheet">
+<div style="text-align: center;">
+  <img src="https://pbs.twimg.com/media/FvxSYknagAEzE1F?format=jpg&name=4096x4096" title="Cron Cheatsheet">
+</div>
 
 ## Useful Links
 
