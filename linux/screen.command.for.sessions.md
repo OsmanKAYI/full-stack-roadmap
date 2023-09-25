@@ -42,7 +42,7 @@ If there are more than one screen sessions, you will not be able to do 'screen -
 
 ## Screen Window Management
 
-The best thing about screen is, it’s ability to spawn of more than one TTY. In the same session, you can start off may windows. Screen starts one window when you create a session. After this you can use `C-a c` to create another. And move between those windows by using `C-a C-a`.
+The best thing about screen is, it’s ability to spawn of more than one TTY (TeleTYpewriter which is the command of the linux terminal and basically prints the file name of the terminal connected to standard input). In the same session, you can start off may windows. Screen starts one window when you create a session. After this you can use `C-a c` to create another. And move between those windows by using `C-a C-a`.
 
 Now you can be in one directory in one and another in the other window. To see the list of windows, you hit `C-a "` and move up and down in the list to choose one. Once you are done, you can kill that window with `C-a k`, you will be asked for a confirmation to kill the current window. Here is a small subset of key bindings that you need to know to get started with screen.
 
