@@ -31,6 +31,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Copy Commands (tar, cp) & Copy Between Servers](./copy.with.tar.cp.md)
 - [Linux Paste Command](./paste.command.md)
 - [Uniq Command Examples](./uniq.command.examples.md)
+- [Screen Command to Keep SSH Sessions Alive](./screen.command.for.sessions.md)
 - [PDF Compression](./compress.pdf.md)
 - [Appimage Files on Ubuntu](./how.to.use.appimage.files.md)
 - [Execute .run Files on Ubuntu](./execute..run.files.md)
