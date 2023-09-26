@@ -21,6 +21,6 @@ The Visual Studio Code documentation is available online at [code.visualstudio.c
 
 - [Introduction to Visual Studio Code (VSCode)](./vscode.md)
 - [Usefull VSCode Extensions](./extensions.md)
-- [Settings](./setting.md)
+- [Settings](./settings.md)
 - [Keybindings](./keybindings.md)
 - [Keyboard Shortcuts](./shortcuts.md)
