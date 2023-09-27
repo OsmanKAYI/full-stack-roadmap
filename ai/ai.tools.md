@@ -28,6 +28,10 @@
 
   - AI Detector is to see if your text is human or AI generated from ChatGPT, GPT4, & Bard.
 
+- [Collov AI](https://collov.ai/)
+
+  - Collov.ai uses artificial intelligence to transforms your interior aspirations into stunning, visionary design renderings, merging convenience with aesthetics.
+
 - [Leonardo AI](https://durable.co/)
 
   - Leonardo AI is a generative AI platform that empowers users to effortlessly generate captivating images and artwork, with a specific emphasis on game assets.
