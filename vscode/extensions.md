@@ -2,6 +2,8 @@
 
 ## Usefull VSCode Extensions
 
+- **Alignment**
+  - Align chars in selection. It helps creating clean, formatted code.
 - **Auto Close Tag**
   - Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text.
 - **Auto Rename Tag**
@@ -102,8 +104,8 @@
 ```BASH
 [
   {
-    "name": "osmankayi.com",
-    "rootPath": "~/source/osmankayi.com",
+    "name": "full-stack-roadmap",
+    "rootPath": "~/source/full-stack-roadmap",
     "paths": [],
     "tags": [],
     "enabled": true
