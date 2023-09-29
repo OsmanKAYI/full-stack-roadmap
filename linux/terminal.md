@@ -250,3 +250,7 @@ history
 `for file in [0-9]*; do git mv "$file" "${file:3}"; done` <br>
 
 - Deletes the first 3 characters of the files (without harming its history) starting with any number.
+
+`sed -i 's/old-text/new-text/g' input.txt` <br>
+
+- Finds all occurrences of ‘old-text‘ and replace with ‘new-text‘ in a file named input.txt.
