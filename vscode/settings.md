@@ -38,7 +38,7 @@ My prefered extensions and special settings for them in VSCode.
   "alignment.chars": {
     ":": {
       "spaceBefore": 0,
-      "spaceAfter": 1
+      "spaceAfter": 0
     },
     "::": {
       "spaceBefore": 0,
