@@ -21,3 +21,4 @@ If you are interested in developing for embedded systems, consider the following
 ## Documentation
 
 - [What is an Embedded System](./what.is.embedded.system.md)
+- [Steps to Learn Embedded System](./steps.to.learn.embedded.systems.md)
