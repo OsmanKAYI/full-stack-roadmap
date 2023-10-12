@@ -70,11 +70,11 @@
 
 - [ChatPDF](https://www.chatpdf.com/)
 
-  - ChatPDF is an AI-powered chatbot that accepts PDFs as 'prompts' (inputs) and can summarize, answer questions, analyze for a quick extraction (find a particular text or paragraph), and is able to translate PDFs. You do not even need to create an account if you do not wish to; you can head to the website and get started. You have some limits on free version like 2 files/day, 20 pages/file, and etc.
+  - ChatPDF is an AI-powered chatbot that accepts PDFs as 'prompts' (inputs) and can summarize, answer questions, analyze for a quick extraction (find a particular text or paragraph), and is able to translate PDFs. You do not even need to create an account if you do not wish to; you can head to the website and get started.
 
 - [ChatDOC](https://chatdoc.com/chatdoc)
 
-  - ChatDOC is a ChatGPT-based file-reading assistant that can quickly extract, locate, and summarize information from documents (.pdf, .doc, .docx, .md, .epub, .txt, website, scanned file).
+  - ChatDOC is a ChatGPT-based file-reading assistant that can quickly extract, locate, and summarize information from documents (.pdf, .doc, .docx, .md, .epub, .txt, website, scanned file). It gives you the page number of the information. You have some limits on free version like 2 files/day, 20 pages/file, and etc.
 
 - [Guidde](https://app.guidde.com/home)
 
