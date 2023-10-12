@@ -76,6 +76,10 @@
 
   - ChatDOC is a ChatGPT-based file-reading assistant that can quickly extract, locate, and summarize information from documents (.pdf, .doc, .docx, .md, .epub, .txt, website, scanned file). It gives you the page number of the information. You have some limits on free version like 2 files/day, 20 pages/file, and etc.
 
+- [Explainpaper](https://www.explainpaper.com/)
+
+  - Upload a paper, highlight confusing text, get an explanation. It makes research papers easy to read.
+
 - [Guidde](https://app.guidde.com/home)
 
   - Guidde is the generative AI platform enabling teams to deliver know-how 11x faster for easy sharing with customers or employees.
