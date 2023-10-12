@@ -76,6 +76,10 @@
 
   - ChatDOC is a ChatGPT-based file-reading assistant that can quickly extract, locate, and summarize information from documents (.pdf, .doc, .docx, .md, .epub, .txt, website, scanned file). It gives you the page number of the information. You have some limits on free version like 2 files/day, 20 pages/file, and etc.
 
+- [Paper-Digest](https://www.paper-digest.com/)
+
+  - Paper Digest is for students who want to read more papers in less time, researchers who want to communicate his/her research quickly, science communicators who want to effectively summarize a research.
+
 - [Wordtune](https://app.wordtune.com/read)
 
   - Wordtune is an AI powered reading and writing companion capable of fixing grammatical errors, understanding context and meaning, suggesting paraphrases or alternative writing tones, and generating written text based on context.
@@ -91,6 +95,10 @@
 - [SpinBot](https://spinbot.com/)
 
   - Spinbot is a free, automatic article spinner that will rewrite human readable text into additional, intelligent, readable text. Similarly, if you need a paraphrasing tool, Spinbot will get the job done for you for that purpose as well.
+
+- [GPT-Minus1](https://www.gptminus1.com/)
+
+  - GPT-Minus1 replaces random words with synonyms to throw of the AI detectors like GPT-Zero (they currently rely on looking for certain word distribution patterns that are more likely in AI generated content).
 
 - [Guidde](https://app.guidde.com/home)
 
