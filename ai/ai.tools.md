@@ -98,7 +98,7 @@
 
 - [Humata AI](https://app.humata.ai/)
 
-  - Humata AI is an AI-powered tool developed by Tilda Technologies that helps users analyze, understand, and work with various types of documents faster and more efficiently.
+  - Humata AI is an AI-powered tool developed by Tilda Technologies that helps users analyze, understand, and work with various types of documents faster and more efficiently. Ask findings, methodology, content, and etc.
 
 - [SlidesGo](https://app.prezo.ai/home/decks)
 
