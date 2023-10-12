@@ -78,7 +78,7 @@
 
 - [Paper-Digest](https://www.paper-digest.com/)
 
-  - Paper Digest is for students who want to read more papers in less time, researchers who want to communicate his/her research quickly, science communicators who want to effectively summarize a research.
+  - Paper Digest is for students who want to read more papers in less time, researchers who want to communicate his/her research quickly, science communicators who want to effectively summarize a research. Give it a DOI number or link or even directly the pdf and get the summary.
 
 - [Wordtune](https://app.wordtune.com/read)
 
