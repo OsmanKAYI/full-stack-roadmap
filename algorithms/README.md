@@ -28,6 +28,7 @@ This documentation provides a reference for the available resources and examples
 
 ### Usefull Links
 
+- [Free Algorithm Books](https://github.com/cjbt/Free-Algorithm-Books)
 - [Algorithms by Jeff Erickson (PDF Book)](https://jeffe.cs.illinois.edu/teaching/algorithms/#book)
 - [Easy Algorithms with JavaScript (Türkçe)](https://www.youtube.com/playlist?list=PL0Au88Qum4UmiN0WHD6NKrZNpQqiUwwqe)
 - [How to Send a Secret Message](https://www.youtube.com/watch?v=I6Unxb-PFhs)
