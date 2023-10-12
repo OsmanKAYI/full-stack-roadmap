@@ -100,6 +100,10 @@
 
   - GPT-Minus1 replaces random words with synonyms to throw of the AI detectors like GPT-Zero (they currently rely on looking for certain word distribution patterns that are more likely in AI generated content).
 
+- [Cite Fast](https://www.citefast.com/?s=APA7#_Webpage)
+
+  - Citefast is a FREE APA7 citation generator. Generate and manage your references, in-text citations and title pages in APA 7th edition.
+
 - [Guidde](https://app.guidde.com/home)
 
   - Guidde is the generative AI platform enabling teams to deliver know-how 11x faster for easy sharing with customers or employees.
