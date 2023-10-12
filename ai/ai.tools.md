@@ -100,6 +100,10 @@
 
   - GPT-Minus1 replaces random words with synonyms to throw of the AI detectors like GPT-Zero (they currently rely on looking for certain word distribution patterns that are more likely in AI generated content).
 
+- [MyBib](https://www.mybib.com/#/projects/Q3BwkW/citations)
+
+  - MyBib is a FREE bibliography and citation generator that makes accurate citations for you to copy straight into your academic assignments and papers.
+
 - [Cite Fast](https://www.citefast.com/?s=APA7#_Webpage)
 
   - Citefast is a FREE APA7 citation generator. Generate and manage your references, in-text citations and title pages in APA 7th edition.
