@@ -84,6 +84,10 @@
 
   - Upload a paper, highlight confusing text, get an explanation. It makes research papers easy to read.
 
+- [Quillbot](https://quillbot.com/)
+
+  - QuillBot is an AI-powered writing tool that helps users improve their writing once they simply enter the text and explore the suggestions.
+
 - [Guidde](https://app.guidde.com/home)
 
   - Guidde is the generative AI platform enabling teams to deliver know-how 11x faster for easy sharing with customers or employees.
