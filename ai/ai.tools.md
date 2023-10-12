@@ -88,6 +88,10 @@
 
   - QuillBot is an AI-powered writing tool that helps users improve their writing once they simply enter the text and explore the suggestions.
 
+- [SpinBot](https://spinbot.com/)
+
+  - Spinbot is a free, automatic article spinner that will rewrite human readable text into additional, intelligent, readable text. Similarly, if you need a paraphrasing tool, Spinbot will get the job done for you for that purpose as well.
+
 - [Guidde](https://app.guidde.com/home)
 
   - Guidde is the generative AI platform enabling teams to deliver know-how 11x faster for easy sharing with customers or employees.
