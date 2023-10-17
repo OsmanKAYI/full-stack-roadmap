@@ -15,6 +15,9 @@ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap re
 sudo timedatectl set-timezone Europe/Istanbul
 # to choose timezone manually: sudo dpkg-reconfigure tzdata
 
+# to show the seconds on desktop clock
+gsettings set org.gnome.desktop.interface clock-show-seconds true
+
 # to setup auxiliary packages
 sudo apt-get install ntp ntpdate -y
 
