@@ -3,6 +3,7 @@
 Here, you will find out some usefull informations which I cannot group them in a specific topic. They are listed as below.
 
 - [Important Links for Education](./onemli.linkler.md)
+- [Free Certification Courses from Google](./courses.from.google.md)
 - [Bluetooth](./bluetooth.md)
 - [Excel](./excel.md)
 - [vim Editor](./vim.md)
