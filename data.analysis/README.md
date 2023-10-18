@@ -14,11 +14,12 @@ To get started with data analysis using this repository, follow these steps:
 
 Include any additional resources, tutorials, or guides that might be useful for data analysis in this section. For example:
 
-- [DataCamp - Data Analysis with Python](https://campus.datacamp.com/courses/exploratory-data-analysis-in-python/getting-to-know-a-dataset?ex=1)
-- [Kaggle - Data Analysis Tutorials](https://www.kaggle.com/learn)
+- [Free Data Analytics Course](./data.analytics.course.md)
 
 ## Useful Links
 
+- [DataCamp - Data Analysis with Python](https://campus.datacamp.com/courses/exploratory-data-analysis-in-python/getting-to-know-a-dataset?ex=1)
+- [Kaggle - Data Analysis Tutorials](https://www.kaggle.com/learn)
 - [Thread of Data Visualization](https://pbs.twimg.com/media/F2Rv0sGXMAAEITp?format=jpg&name=900x900)
   - To describe a single variable - **BAR CHART**
   - To visualize the distribution of a variable - **HISTOGRAM**
