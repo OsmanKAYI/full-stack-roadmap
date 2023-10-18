@@ -42,3 +42,7 @@ To install a package using pip, you can use the command `pip install $package_na
   - Create a Database, Table, and Run Queries with Python and SQLite
 - [Pandas Dersleri - Python ile Veri Analizi](https://www.youtube.com/playlist?list=PLfMRLSpipmfsLoyO-deGWkJ0RAQf9gU20)
 - [5 Ways To Use Python (Pandas) as a Data Analyst](https://pbs.twimg.com/media/F2TM9tdXMAAI35P?format=jpg&name=medium)
+
+<div style="text-align: center;">
+  <img src="https://pbs.twimg.com/media/F6vwZgBWUAAm01E?format=jpg&name=medium">
+</div>
