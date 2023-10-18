@@ -79,6 +79,7 @@ SQLite is a database engine written in the C programming language. It is not a s
 ## Useful Links
 
 - [Intro to SQL - KhanAcademy](https://www.khanacademy.org/computing/computer-programming/sql)
+- [Introduction to SQL](https://developer.android.com/courses/pathways/android-basics-compose-unit-6-pathway-1)
 - [SQL Tutorial - SQLZOO](https://sqlzoo.net/wiki/SQL_Tutorial)
 - [Introduction to SQL - SQLBolt](https://sqlbolt.com/lesson/introduction)
 - [Select Start SQL](https://selectstarsql.com/)
