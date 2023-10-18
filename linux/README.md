@@ -47,6 +47,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [External Harddisk Mounting Problem](./mounting.external.harddisk.md)
 - [Creating RAMDisk](./creating.ramdisk.md)
 - [Logical Volume Manager (LVM)](./lvm.md)
+- [Manage Disk Storage with LVM](./manage.storage.with.lvm.md)
 - [Forensic Data Recovery Tools](./forensic.data.recovery.tools.md)
 - [Data Recovery](./data.recovery.md)
 - [Repair Damaged Video Files](./repairing.damaged.videos.md)
