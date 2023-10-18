@@ -20,6 +20,7 @@ These notes are a collection of useful information, tips, and tricks related to 
 - [Python](./python)
 - [Data Analysis](./data.analysis)
 - [Docker](./docker)
+- [Embedded Systems](./embedded.systems/)
 - [Hosting](./hosting)
 - [Artificial Intelligence (AI)](./ai)
 - [Algorithms](./algorithms)
