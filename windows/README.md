@@ -10,3 +10,5 @@ The Windows documentation is available online at [docs.microsoft.com](https://le
 - [Transfer Files Between Windows PC & Iphone](./transfer.files.btw.windows.iphone.md)
 - [Git & GitHub Installation](./git.github.installation.md)
 - [Xampp Installation](./xampp.installation.md)
+- [Windows Download History Cleaner](./down.hist.cleaner.bat)
+  - Intall this .bat file and run it. It will clean up your system's unnecessary files and your system will be fast.
