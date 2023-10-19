@@ -25,7 +25,7 @@ There are numerous resources available to learn and enhance your JavaScript skil
 JavaScript has a rich ecosystem of frameworks and libraries that can streamline development and provide additional functionality. Some popular ones include:
 
 - React: A JavaScript library for building user interfaces.
-- Vue.js: A progressive framework for building interactive web interfaces.
+- [Vue.js](./vue): A progressive framework for building interactive web interfaces.
 - Express.js: A minimalist web application framework for Node.js.
 - jQuery: A fast and feature-rich library for DOM manipulation and AJAX requests.
 

@@ -2,6 +2,8 @@
 
 ## Usefull VSCode Extensions
 
+- **Alignment**
+  - Align chars in selection. It helps creating clean, formatted code.
 - **Auto Close Tag**
   - Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text.
 - **Auto Rename Tag**
@@ -66,6 +68,7 @@
   - This extension contains code snippets for PHP and other frameworks to help you to type faster.
 - **Prettier-Code formatter**
   - An opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.
+    **NOTE:** If extension is not working properly, follow [instructions for Prettier](https://bobbyhadz.com/blog/fix-prettier-not-working-in-vs-code).
 - **Project Manager**
   - It helps you to easily access your projects, no matter where they are located. Don't miss those important projects anymore.
 - **Pylance**
@@ -101,8 +104,8 @@
 ```BASH
 [
   {
-    "name": "osmankayi.com",
-    "rootPath": "~/source/osmankayi.com",
+    "name": "full-stack-roadmap",
+    "rootPath": "~/source/full-stack-roadmap",
     "paths": [],
     "tags": [],
     "enabled": true

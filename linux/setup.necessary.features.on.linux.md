@@ -15,6 +15,9 @@ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap re
 sudo timedatectl set-timezone Europe/Istanbul
 # to choose timezone manually: sudo dpkg-reconfigure tzdata
 
+# to show the seconds on desktop clock
+gsettings set org.gnome.desktop.interface clock-show-seconds true
+
 # to setup auxiliary packages
 sudo apt-get install ntp ntpdate -y
 
@@ -220,6 +223,17 @@ sudo apt install firefox -y
 sudo apt install chromium-browser -y
 ```
 
+## Cockpit
+
+Cockpit is an interactive server admin interface. It is easy to use and very lightweight.
+
+```BASH
+. /etc/os-release
+sudo apt install -t ${VERSION_CODENAME}-backports cockpit
+```
+
+After that, type `localhost:9090` on your browser and login with your system's username and password.
+
 ## Visual Studio Code
 
 - Visual Studio Code, also commonly referred to as VSCode, is a source-code editor made by Microsoft with the Electron Framework, for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.
@@ -340,9 +354,9 @@ sudo apt install php7.4-fpm php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php
 sudo service apache2 restart
 ```
 
-**NOTE:** Two different verisons of php can be used with following the instructions [here](https://github.com/OsmanKAYI/osmankayi.com/blob/main/php/how.to.use.two.different.php.versions.md)
+**NOTE:** Two different verisons of php can be used with following the instructions 🚩[here](https://github.com/OsmanKAYI/osmankayi.com/blob/main/php/how.to.use.two.different.php.versions.md)🚩
 
-**NOTE:** The max uploaded file size can be increased from [here](https://github.com/OsmanKAYI/osmankayi.com/blob/main/db/mysql/increase.max.upload.file.size.md)
+**NOTE:** The max uploaded file size can be increased from [here](https://github.com/OsmanKAYI/osmankayi.com/blob/main/db/mysql/increase.max.upload.file.size.md)🚩
 
 ## Xdebug
 
@@ -412,10 +426,10 @@ sudo mysql_secure_installation
 
 #### MySQL Password Reset
 
-- Below commands can be used just in the first experience since after the first usage, password will not be emty ("").
+- Below commands can be used just in the first experience since after the first usage, password will not be emty ('').
 
 ```BASH
-sudo service mysql  stop
+sudo service mysql stop
 sudo service mysqld stop
 sudo mysqld_safe --skip-grant-tables --skip-networking &
 mysql -u root
@@ -437,7 +451,7 @@ mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost'
 #### MariaDB Password Reset
 
 ```BASH
-sudo service mariadb  stop
+sudo service mariadb vstop
 sudo mysqld_safe --skip-grant-tables --skip-networking --skip-networking &
 mysql -u root
   use mysql;
@@ -604,6 +618,34 @@ vim ~/.bashrc
 
 - Navigate to the end of the file and remove the Anaconda environment configuration.
 - Press <kbd>ESC</kbd> and type `:wq` and then press <kbd>ENTER</kbd> to save file.
+
+## GPT4All
+
+- GPT4All is an open-source software ecosystem that allows anyone to train and deploy powerful and customized large language models (LLMs) on everyday hardware. Nomic AI oversees contributions to the open-source ecosystem ensuring quality, security and maintainability.
+
+```BASH
+cd ~/source/
+mkdir gpt4all/
+cd gpt4all/
+wget https://gpt4all.io/installers/gpt4all-installer-linux.run
+chmod +x gpt4all-installer-linux.run
+./gpt4all-installer-linux.run
+```
+
+- After that,
+
+  - Click on `Next`, three times
+  - Check the box of `I accept the licence` and press `Next`
+  - Click on `Install` button and press `Finish`
+
+- To execute the program,
+
+```BASH
+cd ~/gpt4all/bin
+# run the file called "chat"
+```
+
+- In first execution, one of the available models should be downloaded according to your operating system's condition.
 
 ## gphotos-sync
 

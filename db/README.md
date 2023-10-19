@@ -18,6 +18,8 @@ Security is an important consideration when using databases. You should take ste
 
 Each database management system will have its own documentation and support resources available. This site mostly cover the MySQL Database.
 
+- [What are KEYS?](./keys.md)
+
 ### MySQL
 
 MySQL is an open-source relational database management system. Its name is a combination of "My", the name of co-founder Michael Widenius's daughter My, and "SQL", the acronym for Structured Query Language.
@@ -79,6 +81,7 @@ SQLite is a database engine written in the C programming language. It is not a s
 ## Useful Links
 
 - [Intro to SQL - KhanAcademy](https://www.khanacademy.org/computing/computer-programming/sql)
+- [Introduction to SQL](https://developer.android.com/courses/pathways/android-basics-compose-unit-6-pathway-1)
 - [SQL Tutorial - SQLZOO](https://sqlzoo.net/wiki/SQL_Tutorial)
 - [Introduction to SQL - SQLBolt](https://sqlbolt.com/lesson/introduction)
 - [Select Start SQL](https://selectstarsql.com/)

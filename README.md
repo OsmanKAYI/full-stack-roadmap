@@ -1,8 +1,8 @@
-# COMPUTER NOTES
+# Full-Stack Roadmap
 
-Welcome to **osmankayi.com** which will help you to improve your knowledge about internet, web, web design and other computer related topics. I've been working on web development and anything you see in this repository since February, 2022. I wish all the visitors will be finding something beneficial for him/her.
+Welcome to **full-stack-roadmap** which will help you to improve your knowledge about internet, web, web design and other computer related topics. I've been working on web development and anything you see in this repository since February, 2022. I wish all the visitors will be finding something beneficial for him/her.
 
-Computer notes are a collection of useful information, tips, and tricks related to computers and technology. These notes can be used to help troubleshoot common issues, learn new skills, and stay up-to-date with the latest trends and developments in the technology industry.
+These notes are a collection of useful information, tips, and tricks related to computers and technology. These notes can be used to help troubleshoot common issues, learn new skills, and stay up-to-date with the latest trends and developments in the technology industry.
 
 - [Linux (Ubuntu)](./linux)
 - [Internet](./internet)
@@ -11,15 +11,16 @@ Computer notes are a collection of useful information, tips, and tricks related 
 - [Git](./git)
 - [Visual Studio Code](./vscode)
 - [Database (DB)](./db)
-- [DB Monitoring](./dbMonitoring)
+- [DB Monitoring](./db.monitoring)
 - [HTML](./html)
 - [PHP](./php)
 - [API](./api)
 - [JavaScript](./javascript)
-- [Vue](./vue)
-- [Jupyter Notebook](./jupyterNotebook)
+- [Jupyter Notebook](./jupyter.notebook)
 - [Python](./python)
+- [Data Analysis](./data.analysis)
 - [Docker](./docker)
+- [Embedded Systems](./embedded.systems/)
 - [Hosting](./hosting)
 - [Artificial Intelligence (AI)](./ai)
 - [Algorithms](./algorithms)

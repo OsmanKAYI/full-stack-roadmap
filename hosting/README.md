@@ -23,6 +23,7 @@ This documentation gives reference material and guides for learning the basics o
 - [Assignment for Remote Server Connection](./sunucuya.baglanma.odev.md)
 - [Remote Server Connection](./sunucuya.baglanma.md)
 - [What is GitHub Hosting](./github.hosting.md)
+- [Cockpit Server Admin Interface](./cockpit.md)
 - [Create a Backdoor with Ncat](./ncat.backdoor.md)
 
 ## Useful Links

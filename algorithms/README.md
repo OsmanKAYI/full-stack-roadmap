@@ -23,8 +23,15 @@ There are many algorithms that are commonly used in computer science, including:
 
 This documentation provides a reference for the available resources and examples.
 
+- [What is an Algorithm?](./what.is.algorithm.md)
+- [Load Balancing Algortihms](./load-balancing.algorithms.md)
+
 ### Usefull Links
 
+- [Free Algorithm Books](https://github.com/cjbt/Free-Algorithm-Books)
+- [Algorithms by Jeff Erickson (PDF Book)](https://jeffe.cs.illinois.edu/teaching/algorithms/#book)
+- [Algoritmik Düşünmeye Giriş](https://www.youtube.com/playlist?list=PL98DQy3xBiLeSd09fMyp31dm3DO0l3f7I)
+- [Easy Algorithms with JavaScript (Türkçe)](https://www.youtube.com/playlist?list=PL0Au88Qum4UmiN0WHD6NKrZNpQqiUwwqe)
 - [How to Send a Secret Message](https://www.youtube.com/watch?v=I6Unxb-PFhs)
 - [How Dijkstra's Algorithm Works](https://www.youtube.com/watch?v=EFg3u_E6eHU)
 - [How Do You Calculate a Minimum Spanning Tree?](https://www.youtube.com/watch?v=Yldkh0aOEcg)

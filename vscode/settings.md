@@ -31,6 +31,57 @@ My prefered extensions and special settings for them in VSCode.
     "tab.activeBackground": "#009688"
   },
 
+  ///////////////////////// Alignment /////////////////////////
+  ///////////////////////// Alignment /////////////////////////
+  ///////////////////////// Alignment /////////////////////////
+  // Chars to align
+  "alignment.chars": {
+    ":": {
+      "spaceBefore": 0,
+      "spaceAfter": 0
+    },
+    "::": {
+      "spaceBefore": 0,
+      "spaceAfter": 0
+    },
+    "=": {
+      "spaceBefore": 1,
+      "spaceAfter": 1
+    },
+    "===": {
+      "spaceBefore": 1,
+      "spaceAfter": 1
+    },
+    "==": {
+      "spaceBefore": 1,
+      "spaceAfter": 1
+    },
+    "=>": {
+      "spaceBefore": 1,
+      "spaceAfter": 1
+    },
+    "+=": {
+      "spaceBefore": 1,
+      "spaceAfter": 1
+    },
+    "-=": {
+      "spaceBefore": 1,
+      "spaceAfter": 1
+    },
+    "*=": {
+      "spaceBefore": 1,
+      "spaceAfter": 1
+    },
+    "/=": {
+      "spaceBefore": 1,
+      "spaceAfter": 1
+    },
+    ",": {
+      "spaceBefore": 1,
+      "spaceAfter": 1
+    }
+  },
+
   ///////////////////////// Code Runner /////////////////////////
   ///////////////////////// Code Runner /////////////////////////
   ///////////////////////// Code Runner /////////////////////////

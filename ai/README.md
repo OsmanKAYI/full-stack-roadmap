@@ -8,3 +8,14 @@ This repository is dedicated to exploring and developing AI solutions. It includ
 
 - [AI Tools](./ai.tools.md)
 - [Best AI Extensions](./extensions.md)
+- [ChatGPT Prompts](./chatgpt.prompts.md)
+- [AI Courses](./ai.courses.md)
+- [Create Logo](./create.logo.md)
+
+## Useful Links
+
+- [Ebeveynlere Yapay Zeka ile İlgili Tavsiyeler (2023-2024)](https://cbddo.gov.tr/arastirma-raporlari/)
+- [Machine Learning Lecture Notes from Stanford University](https://github.com/afshinea/stanford-cs-229-machine-learning/tree/master)
+- [Deep Learning Lecture Notes from Stanford University](https://github.com/afshinea/stanford-cs-230-deep-learning)
+- [Artificial Intelligence Lecture Notes from Stanford University](https://github.com/afshinea/stanford-cs-221-artificial-intelligence)
+- [Stable Diffusion ile Görsel Üretmek](https://www.youtube.com/watch?v=DcwH_95F_pU)

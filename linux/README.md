@@ -20,6 +20,7 @@ This documentation includes guides, tutorials, and reference material for learni
 
 - [Dual Boot Ubuntu 22.04.LTS and Windows 10](./dual.boot.ubuntu.22.04.1.lts.and.windows10.md)
 - [Setup Necessary Features on Linux](./setup.necessary.features.on.linux.md)
+- [Setup Linux for PHP Class](./setup.linux.for.php.class.sh)
 - [Educator Notes](./egitmen.notlari.md)
 - [Basic Linux Commands I](./temel.linux.komutlari1.md)
 - [Basic Linux Commands II](./temel.linux.komutlari2.md)
@@ -31,8 +32,10 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Copy Commands (tar, cp) & Copy Between Servers](./copy.with.tar.cp.md)
 - [Linux Paste Command](./paste.command.md)
 - [Uniq Command Examples](./uniq.command.examples.md)
+- [Screen Command to Keep SSH Sessions Alive](./screen.command.for.sessions.md)
 - [PDF Compression](./compress.pdf.md)
 - [Appimage Files on Ubuntu](./how.to.use.appimage.files.md)
+- [Execute .run Files on Ubuntu](./execute..run.files.md)
 - [Install Office Programs on Linux](./office.on.linux.md)
 - [Ubuntu Second Monitor Problem](./second.monitor.problem.md)
 - [Screen Capture & Record](./screen.capture.md)
@@ -44,6 +47,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [External Harddisk Mounting Problem](./mounting.external.harddisk.md)
 - [Creating RAMDisk](./creating.ramdisk.md)
 - [Logical Volume Manager (LVM)](./lvm.md)
+- [Manage Disk Storage with LVM](./manage.storage.with.lvm.md)
 - [Forensic Data Recovery Tools](./forensic.data.recovery.tools.md)
 - [Data Recovery](./data.recovery.md)
 - [Repair Damaged Video Files](./repairing.damaged.videos.md)
@@ -60,11 +64,23 @@ This documentation includes guides, tutorials, and reference material for learni
 6. [nslookup](https://www.java67.com/2012/12/unix-command-to-find-ip-address-from-hostname.html)
 7. [crontab](https://www.java67.com/2017/08/how-to-backup-and-load-crontab-from-file-Linux-example.html)
 
-<img src="https://pbs.twimg.com/media/FvxSYknagAEzE1F?format=jpg&name=4096x4096" title="Cron Cheatsheet">
+**Linux Commands**
+
+<div style="text-align: center;">
+  <img src="https://pbs.twimg.com/media/F5L5PnmWAAAje7k?format=jpg&name=900x900" title="Linux Commands Cheatsheet"><br>
+</div>
+
+**Cron Cheatsheet**
+
+<div style="text-align: center;">
+  <img src="https://pbs.twimg.com/media/FvxSYknagAEzE1F?format=jpg&name=4096x4096" title="Cron Cheatsheet">
+</div>
 
 ## Useful Links
 
 - [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)
   - A repo with notes and tricks on using the command line, useful when working in Linux, with an emphasis on flexibility and fluency
+- [Grep Cheatsheet for Sysadmins](https://pbs.twimg.com/media/F4AiJA1XAAEGdKN?format=jpg&name=4096x4096)
+- [File Permissions Cheatsheet](https://pbs.twimg.com/media/F4jI5nxawAIgI00?format=jpg&name=medium)
 
 **Ref:** https://twitter.com/javinpaul/status/1656289356641079296?t=F1BAGnJZ-PaVwX2_i6CcBg&s=35

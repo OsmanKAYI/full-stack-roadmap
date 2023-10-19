@@ -29,11 +29,13 @@ The Vue documentation is available online at [vuejs.org](vuejs.org). This docume
 
 ## Useful Links
 
+- [What's New in Vue 3](https://laracasts.com/series/whats-new-in-vue-3)
 - [Chatbot Being Trained Using Vue.js Docs](https://chatthing.ai/bots/a2625c1a-8012-42dc-b87d-10e3f0196306)
 - [The Power of Vue.js](https://www.addwebsolution.com/blog/vuejs-frontend-development)
 - [Interesting Cheatsheet for Anatomy of Vue Component](https://miro.medium.com/v2/resize:fit:1200/1*C4A0g1KYpa_olbSJcxAEBA.png)
 - [Vue.js State Management](https://icarusgk.hashnode.dev/state-management-in-vue-3)
 - [Cheatsheet for Vue.js State Management](https://pbs.twimg.com/media/F0e5OsoWAAEMqnm?format=jpg&name=medium)
+- [Learn Vue 3: Step by Step](https://laracasts.com/series/learn-vue-3-step-by-step)
 - [Vue3 Full Course - 10 Apps in 10 Hours](https://morioh.com/p/e60283635986?f=5c21fb01c16e2556b555ab32)
 - [Türkçe Source for VueJs](https://medium.com/kocsistem/vue-js-t%C3%BCrk%C3%A7e-kaynak-cbb1d0d73490)
 - [Türkçe Source for Design Patterns (Java & C# Examples)](https://github.com/yusufyilmazfr/tasarim-desenleri-turkce-kaynak)

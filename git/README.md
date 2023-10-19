@@ -16,6 +16,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Republish and Existing Git Project with a New Name](./republish.git.project.with.newname.md)
 - [Navigate Through Git Commits](./navigate.through.git.commits.md)
 - [Git Branch](./git.branch.md)
+- [Git Merge vs. Git Rebase](./git.merge.vs.rebase.md)
 
 ## Useful Links
 

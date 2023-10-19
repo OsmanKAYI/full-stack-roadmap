@@ -250,3 +250,25 @@ history
 `for file in [0-9]*; do git mv "$file" "${file:3}"; done` <br>
 
 - Deletes the first 3 characters of the files (without harming its history) starting with any number.
+
+`sed -i 's/old-text/new-text/g' input.txt` <br>
+
+- Finds all occurrences of ‘old-text‘ and replace with ‘new-text‘ in a file named input.txt.
+
+```BASH
+for file in *.jpg; do
+    # Extract the base file name without extension
+    filename=$(basename -- "$file" .jpg)
+    # Convert the base file name to lowercase and replace underscores with dots
+    newname=$(echo "$filename" | tr '[:upper:]' '[:lower:]' | sed 's/_/./g').jpg
+    # Rename the file
+    mv "$file" "$newname"
+done
+```
+
+- Above code
+  - loops through all .jpg files in the directory.
+  - extracts the base file name without extension, for each file.
+  - converts the base file name to lowercase and replaces underscores with dots.
+  - renames the file using the new name.
+  - **Ex:** It transforms `DreamShaper_v7_Civil_Engineering_Contemporary_Realist_Art_Styl_0.jpg` into `dreamshaper.v7.civil.engineering.contemporary.realist.art.styl.0.jpg`
