@@ -172,6 +172,10 @@
 
   - The easiest way to clarify scattered thoughts and turn them into text. This AI-powered tool will keep you organized and will be your biggest help when brainstorming.
 
+- [ElevenLabs](https://elevenlabs.io/)
+
+  - AI Voice Generator and Research Lab. Generate high-quality text to speech in any voice, style and language with the most powerful AI speech tool ever.
+
 - [Lovo AI](https://lovo.ai/)
 
   - LOVO is the go-to AI Voice Generator & Text to Speech platform for thousands of creators. Create realistic AI voices in your social media posts to captivate your audience.
