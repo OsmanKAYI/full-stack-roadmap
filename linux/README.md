@@ -36,6 +36,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [PDF Compression](./compress.pdf.md)
 - [Appimage Files on Ubuntu](./how.to.use.appimage.files.md)
 - [Execute .run Files on Ubuntu](./execute..run.files.md)
+- [Execute .exe Programs on Ubuntu](./run.windows.programs.on.ubuntu.md)
 - [Install Office Programs on Linux](./office.on.linux.md)
 - [Ubuntu Second Monitor Problem](./second.monitor.problem.md)
 - [Screen Capture & Record](./screen.capture.md)
