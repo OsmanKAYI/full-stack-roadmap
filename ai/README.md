@@ -11,6 +11,7 @@ This repository is dedicated to exploring and developing AI solutions. It includ
 - [ChatGPT Prompts](./chatgpt.prompts.md)
 - [AI Courses](./ai.courses.md)
 - [Create Logo](./create.logo.md)
+- [Create a Virtual Employee with Droxy AI](./create.virtual.employee.with.droxy.md)
 
 ## Useful Links
 

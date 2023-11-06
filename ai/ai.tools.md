@@ -31,6 +31,7 @@
 - [Droxy AI](https://app.droxy.ai/)
 
   - Droxy is an AI tool that helps users create chatbots without coding. It uses ChatGPT, a large language model, to generate text for your chatbot so that users can customize the chatbot's personality, behavior, and appearance.
+    - [How to Create a Virtual Employee with Droxy AI](./create.virtual.employee.with.droxy.md)
 
 - [Collov AI](https://collov.ai/)
 
