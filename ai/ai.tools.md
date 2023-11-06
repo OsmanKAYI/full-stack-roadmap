@@ -40,6 +40,14 @@
 
   - NightCafe Creator is an AI Art Generator app with multiple methods of AI art generation. Using neural style transfer you can turn your photo into a masterpiece.
 
+- [Leap AI](https://www.tryleap.ai)
+
+  - Leap AI is a platform that lets you generate images (e.g., art, avatars, logos) using pre-trained, open-source models like Openjourney and [Stable Diffusion](https://zapier.com/blog/how-to-use-stable-diffusion).
+
+- [Artguru AI](https://www.artguru.ai/)
+
+  - Artguru AI is an online platform that uses AI to provide a variety of creative tools for users. It offers a range of AI-powered features, including text-to-image generation, photo-to-art transformation, avatar creation, face swapping, background removal, portrait enhancement, and character generation. Gives you 6 credits/day.
+
 - [Vectorizer AI](https://durable.co/)
 
   - Vectorizer.AI is a website dedicated to helping you convert bitmap images to vector images.
@@ -155,10 +163,6 @@
 - [Designs AI](https://designs.ai/)
 
   - Designs AI is an integrated Agency-as-a-Service platform that uses A.I. technology to allow users to create, edit, and scale content.
-
-- [Leap AI](https://www.tryleap.ai)
-
-  - Leap AI is a platform that lets you generate images (e.g., art, avatars, logos) using pre-trained, open-source models like Openjourney and [Stable Diffusion](https://zapier.com/blog/how-to-use-stable-diffusion).
 
 - [Vidyo AI](https://vidyo.ai/)
 
