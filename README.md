@@ -46,6 +46,8 @@ These notes are a collection of useful information, tips, and tricks related to 
   - [Exercism](https://exercism.org/)
     - Exercism is an online, open-source, free coding platform that offers code practice and mentorship on 66 different programming languages.
 
+- _[9 Open-Source Repos That Will Make Your SaaS Gold](https://dev.to/nathan_tarbert/9-open-source-repos-that-will-make-your-saas-gold-54h7)_
+
 ## Contributing
 
 This project have been created by [Osman KAYI](https://github.com/OsmanKAYI), who is a civil engineer and a PhD student at Ankara Yildirim Beyazit University, and [Nuri AKMAN](https://github.com/nuriakman), who is a computer programmer experienced at web based programming with PHP and MySQL.
