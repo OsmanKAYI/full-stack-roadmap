@@ -28,6 +28,10 @@
 
   - AI Detector is to see if your text is human or AI generated from ChatGPT, GPT4, & Bard.
 
+- [Droxy AI](https://app.droxy.ai/)
+
+  - Droxy is an AI tool that helps users create chatbots without coding. It uses ChatGPT, a large language model, to generate text for your chatbot so that users can customize the chatbot's personality, behavior, and appearance.
+
 - [Collov AI](https://collov.ai/)
 
   - Collov.ai uses artificial intelligence to transforms your interior aspirations into stunning, visionary design renderings, merging convenience with aesthetics.
