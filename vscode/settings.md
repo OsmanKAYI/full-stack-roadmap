@@ -31,6 +31,9 @@ My prefered extensions and special settings for them in VSCode.
     "tab.activeBackground": "#009688"
   },
 
+  // VSCode Session Protection Settings
+  "files.hotExit": "onExitAndWindowClose",
+
   ///////////////////////// Alignment /////////////////////////
   ///////////////////////// Alignment /////////////////////////
   ///////////////////////// Alignment /////////////////////////
