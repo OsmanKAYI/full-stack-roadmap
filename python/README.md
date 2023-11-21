@@ -35,6 +35,7 @@ To install a package using pip, you can use the command `pip install $package_na
 
 ## Useful Links
 
+- [Introduction to Python - datacamp](https://app.datacamp.com/learn/courses/intro-to-python-for-data-science)
 - [Python Web Kazıma Dersleri](https://github.com/urazakgul/python-web-kazima-dersleri)
 - [Object Oriented Programming (OOP) in Python](https://www.freecodecamp.org/news/crash-course-object-oriented-programming-in-python/)
   - Object-oriented programming is a way of writing code that relies on the concepts of objects & classes which helps make your code simple and readable.
