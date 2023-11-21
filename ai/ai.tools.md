@@ -73,6 +73,10 @@
 
   - Elicit is a research assistant using language models like GPT-3 to automate parts of researchers’ workflows. Currently, the main workflow in Elicit is Literature Review. If you ask a question, Elicit will show relevant papers and summaries of key information about those papers in an easy-to-use table.
 
+- [SciSummary](https://scisummary.com/)
+
+  - SciSummary is an AI-driven tool that specializes in summarizing scientific articles. It was founded in 2023 with the goal of making scientific articles more digestible for users.
+
 - [Copy AI](https://app.copy.ai/)
 
   - Copy is an AI powered copywriting platform that creates your best-performing customer-facing content. It helps you write blogs, emails, sales copy, headlines and social media posts that convert. It also automates and scales your marketing tasks with Workflows & do more with less.
