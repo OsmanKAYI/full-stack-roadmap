@@ -25,6 +25,8 @@ The Vue documentation is available online at [vuejs.org](vuejs.org). This docume
 - [Vue3 Getting Start](./vue3.md)
 - [Database Connection (PHP File)](./db.connection.php)
 - [How to Use Bootstrap5 with Vue3](./using.bootstrap5.with.vue3.md)
+  - [Bootstrap Table](https://bootstrap-table.com/)
+    - An extended table to the integration with some of the most widely used CSS frameworks. (Supports Bootstrap, Semantic UI, Bulma, Material Design, Foundation)
 - [How to Use Vuetify, Axios and Material Design Icons with Vue3](./using.vuetify.axios.and.mdi.with.vue3.md)
 
 ## Useful Links
