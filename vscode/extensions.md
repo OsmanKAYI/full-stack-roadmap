@@ -14,6 +14,8 @@
   - Chronicler is a cross-platform plugin for recording screens (windows) within VS Code. The application relies upon FFmpeg as the base for recording.
 - **Code Runner**
   - Run code snippet or code file for multiple languages.
+- **Codeium**
+  - Codeium is the modern coding superpower, a free code acceleration toolkit built on cutting edge AI technology. Currently, Codeium provides autocomplete, chat, and search capabilities in 70+ languages, with lightning fast speeds and state-of-the-art suggestion quality.
 - **CodeSnap**
   - Take beautiful screenshots of your code in VS Code!.
 - **Community Material Theme**
@@ -80,6 +82,10 @@
   - It makes your codes, writings, files, and etc. more readable with making them colorful.
 - **Remote Explorer**
   - Complements the Remote - SSH and Remote Tunnels extensions by enabling the Remote Explorer view that shows a list of remote machines available to connect to.
+- **TODO Highlight**
+  - Highlight TODO, FIXME and other annotations within your code.Sometimes you forget to review the TODOs you've added while coding before you publish the code to production. So I've been wanting an extension for a long time that highlights them and reminds me that there are notes or things not done yet. Hope this extension helps you as well.
+- **Todo Tree**
+  - This extension quickly searches (using ripgrep) your workspace for comment tags like TODO and FIXME, and displays them in a tree view in the activity bar. The view can be dragged out of the activity bar into the explorer pane (or anywhere else you would prefer it to be).
 - **Vetur**
   - Vue tooling for VSCode.
 - **vscode-pdf**
@@ -92,10 +98,6 @@
   - Code snippets for rapid and fast development of user interface using vuetifyjs
 - **WakaTime**
   - An open source VSCode plugin for metrics, insights, and time tracking automatically generated from your programming activity.
-- **TODO Highlight**
-  - Highlight TODO, FIXME and other annotations within your code.Sometimes you forget to review the TODOs you've added while coding before you publish the code to production. So I've been wanting an extension for a long time that highlights them and reminds me that there are notes or things not done yet. Hope this extension helps you as well.
-- **Todo Tree**
-  - This extension quickly searches (using ripgrep) your workspace for comment tags like TODO and FIXME, and displays them in a tree view in the activity bar. The view can be dragged out of the activity bar into the explorer pane (or anywhere else you would prefer it to be).
 
 #### Content of projects.json File for Project Manager
 
