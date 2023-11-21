@@ -272,3 +272,7 @@ done
   - converts the base file name to lowercase and replaces underscores with dots.
   - renames the file using the new name.
   - **Ex:** It transforms `DreamShaper_v7_Civil_Engineering_Contemporary_Realist_Art_Styl_0.jpg` into `dreamshaper.v7.civil.engineering.contemporary.realist.art.styl.0.jpg`
+
+`pdftk 1.pdf 2.pdf cat output combined.pdf`
+
+- Combines multiple pdf's into a single pdf file.
