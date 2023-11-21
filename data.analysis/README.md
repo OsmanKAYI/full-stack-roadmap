@@ -24,4 +24,6 @@ Include any additional resources, tutorials, or guides that might be useful for 
   - To describe a single variable - **BAR CHART**
   - To visualize the distribution of a variable - **HISTOGRAM**
   - To compare the strength of association between 2 variables - **SCATTER PLOT**
+- [Information is Beautiful](https://informationisbeautiful.net/)
+  - Data, information, knowledge: it transform them into beautiful, useful graphics & diagrams.
 - [Guide for Choosing Appropriate Charts](https://pbs.twimg.com/media/F2SjlH2WMAALYtZ?format=jpg&name=medium)
