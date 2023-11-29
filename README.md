@@ -13,6 +13,7 @@ These notes are a collection of useful information, tips, and tricks related to 
 - [Database (DB)](./db)
 - [DB Monitoring](./db.monitoring)
 - [HTML](./html)
+- [How to Become a Backend Engineer](./how.to.become.backend.eng.md)
 - [PHP](./php)
 - [API](./api)
 - [JavaScript](./javascript)
