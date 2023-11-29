@@ -19,4 +19,5 @@ This repository is dedicated to exploring and developing AI solutions. It includ
 - [Machine Learning Lecture Notes from Stanford University](https://github.com/afshinea/stanford-cs-229-machine-learning/tree/master)
 - [Deep Learning Lecture Notes from Stanford University](https://github.com/afshinea/stanford-cs-230-deep-learning)
 - [Artificial Intelligence Lecture Notes from Stanford University](https://github.com/afshinea/stanford-cs-221-artificial-intelligence)
+- [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g)
 - [Stable Diffusion ile Görsel Üretmek](https://www.youtube.com/watch?v=DcwH_95F_pU)
