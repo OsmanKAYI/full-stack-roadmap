@@ -65,6 +65,10 @@
 
   - You AI is an AI chatbot to search the web.
 
+- [Text2SQL AI](https://www.text2sql.ai/app)
+
+  - Text2SQL is an AI-powered text-to-sql translator.
+
 - [Consensus AI](https://consensus.app/)
 
   - Consensus is a search engine that uses AI to find insights in research papers.
