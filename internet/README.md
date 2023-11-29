@@ -6,6 +6,10 @@ The internet is a global network of interconnected devices and computers that al
 
 The web is built on a set of technologies including HTML, CSS, and JavaScript that work together to create and display web pages. Web pages are stored on web servers and can be accessed by users through a web browser. Websites can be created using a variety of tools and frameworks, and can be hosted on a variety of platforms.
 
+**REMEMBER:** Every problem is a DNS problem until it is resolved.
+
+- When solving problems, look for the simplest answer. To do this, we must know how systems work. To get started, you can start from there by knowing that DNS addresses have IP equivalents.
+
 ## Web Development
 
 Web development refers to the process of creating websites and web applications. This can include front-end development, which involves designing and building the user interface, as well as back-end development, which involves building and maintaining the server-side components that power a website or application.
