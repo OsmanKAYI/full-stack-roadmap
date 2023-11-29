@@ -100,13 +100,13 @@ My prefered extensions and special settings for them in VSCode.
     "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
   },
 
-  ///////////////////////// Community Material Theme /////////////////////////
-  ///////////////////////// Community Material Theme /////////////////////////
-  ///////////////////////// Community Material Theme /////////////////////////
+  ///////////////////////// Material Theme /////////////////////////
+  ///////////////////////// Material Theme /////////////////////////
+  ///////////////////////// Material Theme /////////////////////////
   "git.confirmSync": false,
   "workbench.iconTheme": "material-icon-theme",
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.colorTheme": "Community Material Theme Darker High Contrast",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
   //"editor.lineHeight": 25,
 
   ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
