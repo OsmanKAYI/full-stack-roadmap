@@ -69,6 +69,10 @@
 
   - Consensus is a search engine that uses AI to find insights in research papers.
 
+- [Semantic Scholar](https://www.semanticscholar.org/)
+
+  - Semantic scholar is a free, AI-powered research tool for scientific literature.
+
 - [Elicit AI](https://elicit.org/)
 
   - Elicit is a research assistant using language models like GPT-3 to automate parts of researchers’ workflows. Currently, the main workflow in Elicit is Literature Review. If you ask a question, Elicit will show relevant papers and summaries of key information about those papers in an easy-to-use table.
