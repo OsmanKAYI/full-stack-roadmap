@@ -105,6 +105,58 @@
 - **WakaTime**
   - An open source VSCode plugin for metrics, insights, and time tracking automatically generated from your programming activity.
 
+```BASH
+code --install-extension formulahendry.auto-close-tag
+code --install-extension formulahendry.auto-rename-tag
+code --install-extension alefragnani.bookmarks
+code --install-extension maeganwilson.chronicler
+code --install-extension formulahendry.code-runner
+code --install-extension Codeium.codeium
+code --install-extension filipesabella.codesnap
+code --install-extension Equinusocio.vsc-material-theme
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension gistpad.gistpad
+code --install-extension mhutchie.git-graph
+code --install-extension donjayamanne.githistory
+code --install-extension github.vscode-pull-request-github
+code --install-extension kisstkondoros.vscode-gutter-preview
+code --install-extension CoenraadS.bracket-pair-colorizer-2
+code --install-extension hnw.vscode-auto-open-markdown-preview
+code --install-extension mathiasfrohlich.kotlin
+code --install-extension ms-toolsai.jupyter
+code --install-extension jupyter.cell-tags
+code --install-extension donjayamanne.jupyter-keymap
+code --install-extension ms-toolsai.jupyter-renderers
+code --install-extension ms-toolsai.jupyter-slideshow
+code --install-extension ms-vscode.vscode-typescript-tslint-plugin
+code --install-extension ritwickdey.LiveServer
+code --install-extension MS-vsliveshare.vsliveshare
+code --install-extension shd101wyy.markdown-preview-enhanced
+code --install-extension marp-team.marp-vscode
+code --install-extension PKief.material-icon-theme
+code --install-extension johnpapa.vscode-peacock
+code --install-extension felixfbecker.php-debug
+code --install-extension bmewburn.vscode-intelephense-client
+code --install-extension felixfbecker.php-intellisense
+code --install-extension SirTori.indenticator
+code --install-extension aaron-bond.better-comments
+code --install-extension ritwickdey.project-manager
+code --install-extension ms-python.python
+code --install-extension mechatroner.rainbow-csv
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension TabNine.tabnine-vscode
+code --install-extension wayou.vscode-todo-highlight
+code --install-extension gruntfuggly.todo-tree
+code --install-extension octref.vetur
+code --install-extension tomoki1207.pdf
+code --install-extension cmstead.jsrefactor
+code --install-extension yzhang.markdown-all-in-one
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension ms-dotnettools.vscode-dotnet-runtime
+code --install-extension k--kato.intellij-idea-keybindings
+```
+
 #### Content of projects.json File for Project Manager
 
 - To configure your settings, click on the `Project Manager: Edit Projects` (its like a pen) and arrange the below codes according to circumtances.
