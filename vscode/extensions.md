@@ -98,6 +98,8 @@
   - This extension lets you to display a reveal.js presentation directly from an opened markdown document.
 - **Vue Language Features (Volar)**
   - A language support extension built for Vue, Vitepress and petite-vue. This is based on @vue/reactivity to calculate everything on-demand, to implement native TypeScript language service level performance.
+- **Vue VSCode Snippets**
+  - Snippets that will supercharge your Vue workflow.
 - **vuetify-snippets**
   - Code snippets for rapid and fast development of user interface using vuetifyjs.
 - **WakaTime**
