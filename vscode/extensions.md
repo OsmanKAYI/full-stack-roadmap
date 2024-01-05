@@ -32,6 +32,8 @@
   - Views git log, file history, compare branches or commits.
 - **Github Pull Requests and Issues**
   - This extension allows you to review and manage GitHub pull requests and issues in Visual Studio Code.
+- **Image preview**
+  - Shows image preview in the gutter and on hover.
 - **Incrementor**
   - Advanced increment / decrement actions for numbers, enumerators, or just about anything else!
 - **indent-rainbow**
@@ -97,7 +99,7 @@
 - **Vue Language Features (Volar)**
   - A language support extension built for Vue, Vitepress and petite-vue. This is based on @vue/reactivity to calculate everything on-demand, to implement native TypeScript language service level performance.
 - **vuetify-snippets**
-  - Code snippets for rapid and fast development of user interface using vuetifyjs
+  - Code snippets for rapid and fast development of user interface using vuetifyjs.
 - **WakaTime**
   - An open source VSCode plugin for metrics, insights, and time tracking automatically generated from your programming activity.
 
