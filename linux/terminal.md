@@ -276,3 +276,7 @@ done
 `pdftk 1.pdf 2.pdf cat output combined.pdf`
 
 - Combines multiple pdf's into a single pdf file.
+
+`dos2unix -r *.php`
+
+- Converts all of the .php files in the current directory to unix format.
