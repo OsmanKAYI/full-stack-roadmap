@@ -24,6 +24,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Educator Notes](./egitmen.notlari.md)
 - [Basic Linux Commands I](./temel.linux.komutlari1.md)
 - [Basic Linux Commands II](./temel.linux.komutlari2.md)
+- [Find Command on Linux](./find.command.md)
 - [Linux File Permissions](./linux.dosya.izinleri.md)
 - [Changing Disk Permissions](./changing.disk.permissions.md)
 - [Terminal](./terminal.md)
