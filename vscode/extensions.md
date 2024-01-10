@@ -18,8 +18,6 @@
   - Codeium is the modern coding superpower, a free code acceleration toolkit built on cutting edge AI technology. Currently, Codeium provides autocomplete, chat, and search capabilities in 70+ languages, with lightning fast speeds and state-of-the-art suggestion quality.
 - **CodeSnap**
   - Take beautiful screenshots of your code in VS Code!.
-- **Material Theme**
-  - Manage pull requests and conduct code reviews in your IDE with full source-tree context. Comment on any line, not just the diffs. Use jump-to-definition, your favorite keybindings, and code intelligence with more of your workflow.
 - **Docker**
   - Makes it easy to build, manage, and deploy containerized applications from Visual Studio Code. It also provides one-click debugging of Node.js, Python, and .NET inside a container.
 - **ESLint**
@@ -62,6 +60,8 @@
   - This extension creates slide deck written in Marp Markdown on VSCode.
 - **Material Icon Theme**
   - This extension enables you to change the color, theme, and etc. of the default folder icon using the command palette or via user settings.
+- **Material Theme**
+  - Manage pull requests and conduct code reviews in your IDE with full source-tree context. Comment on any line, not just the diffs. Use jump-to-definition, your favorite keybindings, and code intelligence with more of your workflow.
 - **Peacock**
   - Subtly change the color of your Visual Studio Code workspace. Ideal when you have multiple VSCode instances, use VS Live Share, or use VSCode's Remote features, and you want to quickly identify your editor.
 - **PHP Debug**
@@ -113,7 +113,6 @@ code --install-extension maeganwilson.chronicler
 code --install-extension formulahendry.code-runner
 code --install-extension Codeium.codeium
 code --install-extension filipesabella.codesnap
-code --install-extension Equinusocio.vsc-material-theme
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension gistpad.gistpad
@@ -135,6 +134,7 @@ code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension shd101wyy.markdown-preview-enhanced
 code --install-extension marp-team.marp-vscode
 code --install-extension PKief.material-icon-theme
+code --install-extension Equinusocio.vsc-material-theme
 code --install-extension johnpapa.vscode-peacock
 code --install-extension felixfbecker.php-debug
 code --install-extension bmewburn.vscode-intelephense-client
