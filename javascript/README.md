@@ -33,6 +33,7 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 
 - [JavaScript Project Ideas](./project.ideas.md)
 - [AJAX Method](./ajax.md)
+- [Vue](./vue/README.md)
 
 ## Useful Links
 
