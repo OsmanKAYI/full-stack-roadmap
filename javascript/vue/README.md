@@ -21,6 +21,7 @@ Before diving into Vue, you shoul have some basic knowledge about JavaScript whc
 
 The Vue documentation is available online at [vuejs.org](vuejs.org). This documentation includes guides, tutorials, and reference material for learning Vue and using it effectively.
 
+- [Which One to Choose (Options or Composition)](./options.or.composition.md)
 - [What is Single File Component (SFC)](./single.file.components.md)
 - [Vue3 Getting Start](./vue3.md)
 - [Database Connection (PHP File)](./db.connection.php)
