@@ -100,15 +100,6 @@ My prefered extensions and special settings for them in VSCode.
     "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
   },
 
-  ///////////////////////// Material Theme /////////////////////////
-  ///////////////////////// Material Theme /////////////////////////
-  ///////////////////////// Material Theme /////////////////////////
-  "git.confirmSync": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "security.workspace.trust.untrustedFiles": "open",
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
-  //"editor.lineHeight": 25,
-
   ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
   ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
   ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
@@ -203,6 +194,15 @@ My prefered extensions and special settings for them in VSCode.
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "workbench.startupEditor": "none",
   "editor.mouseWheelZoom": true,
+
+  ///////////////////////// Material Theme /////////////////////////
+  ///////////////////////// Material Theme /////////////////////////
+  ///////////////////////// Material Theme /////////////////////////
+  "git.confirmSync": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  //"editor.lineHeight": 25,
 
   ///////////////////////// PHP Debug /////////////////////////
   ///////////////////////// PHP Debug /////////////////////////
