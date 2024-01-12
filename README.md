@@ -13,8 +13,6 @@ These notes are a collection of useful information, tips, and tricks related to 
 - [Database (DB)](./db)
 - [DB Monitoring](./db.monitoring)
 - [HTML](./html)
-- [How to Become a Backend Engineer](./how.to.become.backend.eng.md)
-- [What is Business Logic?](./business.logic.md)
 - [PHP](./php)
 - [API](./api)
 - [JavaScript](./javascript)
@@ -30,6 +28,12 @@ These notes are a collection of useful information, tips, and tricks related to 
 - [Dart](./dart)
 - [Windows](./windows)
 - [Others](./others)
+
+## Documentation
+
+- [What is Business Logic?](./business.logic.md)
+- [Semantic Versioning](./semantic.versioning.mdmd)
+- [How to Become a Backend Engineer](./how.to.become.backend.eng.md)
 
 ## Useful Links
 
