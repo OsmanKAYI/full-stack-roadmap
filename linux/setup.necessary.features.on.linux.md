@@ -90,7 +90,7 @@ sudo apt-get install guake -y
 - **pv** shows the progress of data through a pipeline by giving information such as time elapsed, percentage completed (with progress bar), current throughput rate, total data transferred, and ETA.
 
 ```BASH
-sudo apt install vim bat meld xclip axel gnome-tweaks net-tools hardinfo gpustat nvtop testdisk unrar caffeine magic-wormhole hashcat pv -y
+sudo apt install vim bat pdftk meld xclip axel gnome-tweaks net-tools hardinfo gpustat nvtop testdisk unrar caffeine magic-wormhole hashcat pv -y
 ```
 
 - `batcat $fileName` # to see and arrange the content of any file.
