@@ -29,6 +29,7 @@ Web security refers to protecting networks and computer systems from damage to o
 - [What's a Webhook in Web Development?](./what.is.webhook.md)
 - [What is Intranet and Extranet?](./intranet.and.extranet.md)
 - [Hard & Soft Links](./hard.and.soft.links.md)
+- [What is Session?](./session.md)
 - [Session & Token](./session.and.token.md)
 - [MIME Types](./mime.types.md)
 - [Network Security with Wireshark](./network.security.md)
