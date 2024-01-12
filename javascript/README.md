@@ -37,6 +37,7 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 
 ## Useful Links
 
+- [The Modern JavaScript Tutorial](https://tr.javascript.info/)
 - **Array Methods**
 
   - [Part 1](https://pbs.twimg.com/media/F1JMuvIWwAA6bIj?format=jpg&name=900x900)
