@@ -14,6 +14,7 @@ These notes are a collection of useful information, tips, and tricks related to 
 - [DB Monitoring](./db.monitoring)
 - [HTML](./html)
 - [How to Become a Backend Engineer](./how.to.become.backend.eng.md)
+- [What is Business Logic?](./business.logic.md)
 - [PHP](./php)
 - [API](./api)
 - [JavaScript](./javascript)
