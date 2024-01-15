@@ -26,3 +26,4 @@ To start using CSS, you need to link your CSS file to your HTML document. Here's
 Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML. It enables the separation of document content from its presentation, allowing for greater flexibility and control in styling web pages.
 
 - [Classless CSS](./classless.css.md)
+  - [Pico](./classless.css.pico.md)
