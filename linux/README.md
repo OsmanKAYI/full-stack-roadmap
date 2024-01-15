@@ -33,6 +33,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Linux Zip Commands](./linux.zip.komutlari.md)
 - [Copy Commands (tar, cp) & Copy Between Servers](./copy.with.tar.cp.md)
 - [Linux Paste Command](./paste.command.md)
+- [Character Encoding and Line Ending Conversion Commands in Bash](./char.encoding.conversion.md)
 - [Uniq Command Examples](./uniq.command.examples.md)
 - [f3write & f3read Commands](./f3write.f3read.md)
 - [Screen Command to Keep SSH Sessions Alive](./screen.command.for.sessions.md)
