@@ -20,6 +20,7 @@ The PHP documentation is available online at [php.net](php.net/docs). This docum
 - [PHP Form Validation](./php.form.validation.md)
 - [PHP Form Required](./php.form.required.md)
 - [PHP Form URL and Email](./php.form.url.and.email.md)
+- [Handling URL Parameters in PHP](./handling.url.parameter.md)
 - [PHP Form Complete](./php.form.complete.md)
 - [PHP MySQL Login](./php.mysql.login.md)
 - [Null Coalescing Assignment](./null.coalescing.assignment.md)
