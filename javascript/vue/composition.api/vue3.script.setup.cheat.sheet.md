@@ -14,10 +14,10 @@ function getParam(param) {
   return param;
 }
 </script>
+```
 
-<template>
-  {{ getParam(1) }}
-</template>
+```html
+<template> {{ getParam(1) }} </template>
 ```
 
 ### Reactive Data Declaration
