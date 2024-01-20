@@ -56,6 +56,10 @@ In the Composition API, you write your component logic as a series of functions 
 
 Overall, the Composition API provides a more flexible and powerful way of writing Vue components that can make your code easier to maintain and reuse.
 
+- [Vue3 Script Setup Cheat Sheet](./composition.api/vue3.script.setup.cheat.sheet.md)
+
+#### Examples
+
 - [Vue3 (Composition Api) Template](./composition.api/examples/00.vue3.template.vue)
 - [Hello World!](./composition.api/examples/01.hello.world.vue)
 - [Declarative Rendering](./composition.api/examples/02.declarative.rendering.vue)
@@ -82,6 +86,8 @@ Overall, the Composition API provides a more flexible and powerful way of writin
 The Options API is a way of defining Vue.js components using a simple JavaScript object that specifies various options such as data, computed properties, methods, and lifecycle hooks. This is the traditional and simpler way of defining Vue components, and it is still supported in the latest version of Vue.
 
 Overall, the Options API is still a useful and valid approach for building Vue 3 components, but the Composition API provides more advanced features and flexibility.
+
+#### Examples
 
 - [Vue2 (Options Api) Template](./options.api/examples/00.vue2.template.vue)
 - [Hello World!](./options.api/examples/01.hello.world.vue)
