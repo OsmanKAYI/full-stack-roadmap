@@ -56,6 +56,7 @@ In the Composition API, you write your component logic as a series of functions 
 
 Overall, the Composition API provides a more flexible and powerful way of writing Vue components that can make your code easier to maintain and reuse.
 
+- [10 Mistakes to Avoid When Starting with Vue 3](./composition.api/common.mistakes.md)
 - [Vue3 Script Setup Cheat Sheet](./composition.api/vue3.script.setup.cheat.sheet.md)
 
 #### Examples
