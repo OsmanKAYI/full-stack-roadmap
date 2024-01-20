@@ -1,5 +1,12 @@
 # Ref vs Reactive - Vue 3 Reactive Data Declaration
 
+**TL;DR:**
+
+- In Vue 3's Composition API, declaring reactive data requires using `ref` for primitive types and top-level properties, and `reactive` for objects and arrays.
+- There's an experimental reactivity transform to simplify code.
+- Non-reactive data can be declared directly.
+- `readonly` prevents mutations.
+
 Declaring Reactive Data while working with the Options API was straightforward. Everything inside the `data` option was automatically made reactive and was available in the template. The only caveat was to make `data` a function and prevent sharing state across all component instances.
 
 With Composition API things are not that simple. State declaration has to be done explicitly, using the two available utility functions (`ref` and `reactive`), and there are multiple quirks that you need to be aware of in the beginning.
