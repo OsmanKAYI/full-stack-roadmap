@@ -1,5 +1,15 @@
 # 10 Mistakes to Avoid When Starting with Vue 3
 
+**TLDR:**
+
+- Use `reactive` for Object, Array, Map, Set
+- Use `ref` for String, Number, Boolean
+- Using reactive for a primitive (string, number, boolean) will result in a warning, and the value will not be made reactive.
+- Using ref for declaring an Array will internally call reactive instead.
+- Ref takes a value and returns a reactive object. The value is available inside the object under the `.value` property.
+- Another thing to keep in mind is that neither `defineEmits` nor `defineProps` (used to declare props) need to be imported. They are **automatically available** when using `script setup`.
+- Since Vue 3, async components need to be explicitly defined with thedefineAsyncComponent helper.
+
 Vue 3 has been stable for quite some time now. Many codebases are using it in production, and everyone else will have to migrate eventually. I had the opportunity to work with it and kept track of my mistakes, which you probably want to avoid.
 
 **1. Using the Reactive Helper for Declaring Primitives**
@@ -251,13 +261,11 @@ All of the component lifecycle events got renamed, either by adding the `on` pre
 
 **10. Skipping the Documentation**
 
-Lastly, the official documentation has been revamped to reflect the new APIs and include many valuable notes, guides, and best practices. Even if you are a seasoned Vue 2 engineer, you will definitely learn something new by reading it.
+Lastly, the [official documentation](https://vuejs.org/guide/introduction.html) has been revamped to reflect the new APIs and include many valuable notes, guides, and best practices. Even if you are a seasoned Vue 2 engineer, you will definitely learn something new by reading it.
 
 **Conclusion**
 
-Every framework has a learning curve, and Vue 3’s is unquestionably steeper than Vue 2's. I’m still not convinced that the migration effort between the versions is justified, but the composition API is much cleaner and feels natural after you get the hang of it.
-
-If you have any advice or insights to share, please leave a comment below. And remember:
+Every framework has a learning curve, and Vue 3’s is unquestionably steeper than Vue 2's. The composition API is much cleaner and feels natural after you get the hang of it.
 
 > **Making mistakes is a lot better than not doing anything.**
 
