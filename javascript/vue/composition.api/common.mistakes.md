@@ -1,6 +1,6 @@
 # 10 Mistakes to Avoid When Starting with Vue 3
 
-**TLDR:**
+**TL;DR:**
 
 - Use `reactive` for Object, Array, Map, Set
 - Use `ref` for String, Number, Boolean

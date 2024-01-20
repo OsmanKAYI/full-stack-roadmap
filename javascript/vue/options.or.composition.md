@@ -1,6 +1,6 @@
 # Which to Choose?
 
-**TLDR:** If you use terminal to build a vue application, use the `Composition API`, otherwise use the `Options API`.
+**TL;DR:** If you use terminal to build a vue application, use the `Composition API`, otherwise use the `Options API`.
 
 Both API styles are fully capable of covering common use cases. They are different interfaces powered by the exact same underlying system. In fact, the Options API is implemented on top of the Composition API! The fundamental concepts and knowledge about Vue are shared across the two styles.
 
