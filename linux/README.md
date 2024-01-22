@@ -20,6 +20,7 @@ This documentation includes guides, tutorials, and reference material for learni
 
 - [Dual Boot Ubuntu 22.04.LTS and Windows 10](./dual.boot.ubuntu.22.04.1.lts.and.windows10.md)
 - [Setup Necessary Features on Linux](./setup.necessary.features.on.linux.md)
+- [Setup Basics on Linux](./setup.basics.sh)
 - [Setup Linux for PHP Class](./setup.linux.for.php.class.sh)
 - [Educator Notes](./egitmen.notlari.md)
 - [Basic Linux Commands I](./temel.linux.komutlari1.md)
