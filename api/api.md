@@ -38,6 +38,8 @@ CORS is an HTTP-based mechanism that lets you request data from one URL to a dif
 
 <img src="https://pbs.twimg.com/media/FNlfmXTXEAMx1h_?format=jpg&name=large">
 
+For more information, see the following article: [Understanding CORS](https://itnext.io/understanding-cors-4157bf640e11).
+
 ## API Key
 
 To make API requests, you need an API key to establish a communication path between software.
