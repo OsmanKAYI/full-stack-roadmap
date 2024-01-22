@@ -1,4 +1,4 @@
-# Setup Basics on Linux
+# Setup Basics for Front-End Developer on Linux
 
 ## System Update Installation
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap refresh
@@ -64,10 +64,9 @@ git config --global user.name "seymaakman"
 #### GitHub Configurations
 cd ~/.ssh
 ssh-keygen -o -t rsa -C "fatmaakman@gmail.com"
-# Public name will be saved as osmankayi instead of id_rsa
-ssh-add ~/.ssh/osmankayi
-
-`cat osmankayi.pub`
+# Public name will be saved as seyma instead of id_rsa
+ssh-add ~/.ssh/seyma
+cat seyma.pub
 # Copy the Github SSh key starting with "sss-rsa" and ending with ".com".
 # After that go to "Settings > SSH and GPG keys > New SSH key".
 # Give it a unique name and paste the copied Github ssh key here.
@@ -82,54 +81,8 @@ sudo service apache2 restart
 sudo adduser seyma www-data
 sudo chown -R seyma:www-data /var/www/html/
 
-## PHP
-sudo apt install php7.4-fpm php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl php7.4-xmlrpc php7.4-sqlite3 php7.4-gd php7.4-mysql php7.4-mbstring php7.4-xml libapache2-mod-php7.4 -y
-sudo service apache2 restart
-
 ##### Restart Apache Service
 sudo systemctl restart apache2
-
-## MariaDB
-sudo apt install mariadb-server mariadb-client -y
-sudo systemctl enable mariadb
-sudo service mariadb restart
-sudo mysql -u root
-  show databases;
-  use mysql;
-  update user set plugin='' where User='root';
-  flush privileges;
-  exit;
-sudo mysql_secure_installation
-
-#### MySQL Password Reset
-sudo service mysql stop
-sudo service mysqld stop
-sudo mysqld_safe --skip-grant-tables --skip-networking &
-mysql -u root
-  use mysql;
-  update user set password=PASSWORD("root") where User='root';
-  flush privileges;
-  quit;
-sudo kill `sudo cat /var/run/mysqld/mysqld.pid`
-sudo service mysql  start
-sudo service mysqld start
-
-#### MariaDB Password Reset
-sudo service mariadb vstop
-sudo mysqld_safe --skip-grant-tables --skip-networking --skip-networking &
-mysql -u root
-  use mysql;
-  update user set password=PASSWORD("root") where User='root';
-  flush privileges;
-  quit;
-sudo kill `sudo cat /var/run/mysqld/mysqld.pid`
-sudo service mariadb start
-
-## Restart Services
-sudo service apache2 restart
-sudo service mariadb restart
-sudo systemctl enable mariadb
-sudo systemctl enable apache2
 
 ## html Configurations
 sudo adduser seyma www-data
@@ -138,12 +91,6 @@ cd ~
 cd ~/Desktop
 ln -s /var/www/html/
 sudo rm -f /var/www/html/index.html
-
-## Adminer
-cd /var/www/html
-mkdir adminer
-cd adminer
-wget -O index.php https://www.adminer.org/latest.php
 
 ## VLC Media Player
 sudo apt install vlc -y
