@@ -26,6 +26,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Basic Linux Commands I](./temel.linux.komutlari1.md)
 - [Basic Linux Commands II](./temel.linux.komutlari2.md)
 - [Find Command on Linux](./find.command.md)
+- [Create New User & Delete the Old One](./create.new.user.md)
 - [Linux File Permissions](./linux.dosya.izinleri.md)
 - [Changing Disk Permissions](./changing.disk.permissions.md)
 - [Terminal](./terminal.md)
