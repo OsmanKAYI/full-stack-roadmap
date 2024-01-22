@@ -73,6 +73,7 @@ sudo apt-get install guake -y
 
 - **vim** is a free and open-source, screen-based text editor program.
 - **bat**, is a cat command written in Rust programming language, comes with syntax highlighting, git integration, and works as is a drop-in cat command replacement.
+- **ranger**, is a console file manager with VI key bindings.
 - **pdftk**, is a PDF toolkit. It allows you to manipulate PDF files. It also allows you to extract text from PDF files.
 - **meld**, is the visual diff and merge tool, targeted at developers. It allows users to compare two or three files or directories visually, color-coding the different lines.
 - **xclip** is X11 clipboard manipulation tool, similar to xsel.Handles the X primary and secondary selections, plus the system clipboard ( <kbd>CTRL</kbd> + <kbd>C</kbd> / <kbd>CTRL</kbd> + <kbd>V</kbd> ).
@@ -90,7 +91,7 @@ sudo apt-get install guake -y
 - **pv** shows the progress of data through a pipeline by giving information such as time elapsed, percentage completed (with progress bar), current throughput rate, total data transferred, and ETA.
 
 ```BASH
-sudo apt install vim bat pdftk meld xclip axel gnome-tweaks net-tools hardinfo gpustat nvtop testdisk unrar caffeine magic-wormhole hashcat pv -y
+sudo apt install vim ranger bat pdftk meld xclip axel gnome-tweaks net-tools hardinfo gpustat nvtop testdisk unrar caffeine magic-wormhole hashcat pv -y
 ```
 
 - `batcat $fileName` # to see and arrange the content of any file.
