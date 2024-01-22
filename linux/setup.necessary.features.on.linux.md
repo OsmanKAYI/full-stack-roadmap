@@ -242,19 +242,14 @@ After that, type `localhost:9090` on your browser and login with your system's u
 
 ```BASH
 sudo apt install software-properties-common apt-transport-https wget -y
-wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg
+wget -O vscode.gpg https://packages.microsoft.com/keys/microsoft.asc
+sudo gpg --dearmor -o /usr/share/keyrings/vscode.gpg vscode.gpg
 echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
+sudo apt update
 sudo apt install code -y
 ```
 
 **Ref:** https://linuxhint.com/install-visual-studio-code-ubuntu22-04/
-
-#### Update VSCode
-
-- Install the latest version of [VSCode](https://code.visualstudio.com/).
-- Then use the following command.
-
-`sudo apt install ~/Downloads/$FILE` # default download directory choosen as ~/Downloads
 
 #### WakaTime for VSCode
 
