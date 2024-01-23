@@ -142,7 +142,7 @@ code --install-extension Equinusocio.vsc-material-theme
 code --install-extension johnpapa.vscode-peacock
 code --install-extension felixfbecker.php-debug
 code --install-extension bmewburn.vscode-intelephense-client
-code --install-extension felixfbecker.php-intellisense
+code --install-extension zobo.php-intellisense
 code --install-extension SirTori.indenticator
 code --install-extension aaron-bond.better-comments
 code --install-extension ritwickdey.project-manager
