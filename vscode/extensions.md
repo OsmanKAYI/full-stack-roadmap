@@ -106,6 +106,7 @@
   - An open source VSCode plugin for metrics, insights, and time tracking automatically generated from your programming activity.
 
 ```BASH
+code --install-extension annsk.alignment
 code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension alefragnani.bookmarks
