@@ -100,6 +100,14 @@ My prefered extensions and special settings for them in VSCode.
     "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
   },
 
+  ///////////////////////// Community Material Theme /////////////////////////
+  ///////////////////////// Community Material Theme /////////////////////////
+  ///////////////////////// Community Material Theme /////////////////////////
+  "git.confirmSync": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.lineHeight": 30,
+
   ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
   ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
   ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
@@ -194,15 +202,6 @@ My prefered extensions and special settings for them in VSCode.
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "workbench.startupEditor": "none",
   "editor.mouseWheelZoom": true,
-
-  ///////////////////////// Material Theme /////////////////////////
-  ///////////////////////// Material Theme /////////////////////////
-  ///////////////////////// Material Theme /////////////////////////
-  "git.confirmSync": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "security.workspace.trust.untrustedFiles": "open",
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
-  //"editor.lineHeight": 25,
 
   ///////////////////////// PHP Debug /////////////////////////
   ///////////////////////// PHP Debug /////////////////////////
@@ -328,6 +327,16 @@ My prefered extensions and special settings for them in VSCode.
   "explorer.confirmDragAndDrop": false,
   "vetur.validation.template": false,
   "git.suggestSmartCommit": false,
-  "chronicler.ffmpeg-binary": "/usr/bin/ffmpeg"
+  "chronicler.ffmpeg-binary": "/usr/bin/ffmpeg",
+  "editor.minimap.enabled": false,
+  "githubPullRequests.createOnPublishBranch": "never",
+  "tabnine.experimentalAutoImports": true,
+  "codeium.enableConfig": {
+    "*": true,
+    "markdown": true
+  },
+  "codeium.enableCodeLens": false,
+  "terminal.integrated.env.linux": {},
+  "console-ninja.featureSet": "Community"
 }
 ```
