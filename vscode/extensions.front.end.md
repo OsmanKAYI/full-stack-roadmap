@@ -94,7 +94,7 @@ code --install-extension Equinusocio.vsc-material-theme
 code --install-extension johnpapa.vscode-peacock
 code --install-extension SirTori.indenticator
 code --install-extension aaron-bond.better-comments
-code --install-extension ritwickdey.project-manager
+code --install-extension alefragnani.project-manager
 code --install-extension mechatroner.rainbow-csv
 code --install-extension ms-vscode-remote.remote-ssh
 code --install-extension wayou.vscode-todo-highlight
