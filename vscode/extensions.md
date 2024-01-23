@@ -112,7 +112,7 @@ code --install-extension annsk.alignment
 code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension alefragnani.bookmarks
-code --install-extension maeganwilson.chronicler
+code --install-extension arcsine.chronicler
 code --install-extension formulahendry.code-runner
 code --install-extension Codeium.codeium
 code --install-extension filipesabella.codesnap
