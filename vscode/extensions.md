@@ -18,6 +18,8 @@
   - Codeium is the modern coding superpower, a free code acceleration toolkit built on cutting edge AI technology. Currently, Codeium provides autocomplete, chat, and search capabilities in 70+ languages, with lightning fast speeds and state-of-the-art suggestion quality.
 - **CodeSnap**
   - Take beautiful screenshots of your code in VS Code!.
+- **Console Ninja**
+  - Console Ninja is a VS Code extension that displays console.log output and runtime errors directly in your editor from your running browser or node application.
 - **Docker**
   - Makes it easy to build, manage, and deploy containerized applications from Visual Studio Code. It also provides one-click debugging of Node.js, Python, and .NET inside a container.
 - **ESLint**
@@ -114,6 +116,7 @@ code --install-extension maeganwilson.chronicler
 code --install-extension formulahendry.code-runner
 code --install-extension Codeium.codeium
 code --install-extension filipesabella.codesnap
+code --install-extension wallabyjs.console-ninja
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension gistpad.gistpad
