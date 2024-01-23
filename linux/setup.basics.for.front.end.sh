@@ -60,18 +60,8 @@ sudo apt install code -y
 
 ## Git
 sudo apt-get install git -y
-git config --global user.email "fatmaakman@gmail.com"
-git config --global user.name "seymaakman"
-
-#### GitHub Configurations
-cd ~/.ssh
-ssh-keygen -o -t rsa -C "fatmaakman@gmail.com"
-# Public name will be saved as seyma instead of id_rsa
-ssh-add ~/.ssh/seyma
-cat seyma.pub
-# Copy the Github SSh key starting with "sss-rsa" and ending with ".com".
-# After that go to "Settings > SSH and GPG keys > New SSH key".
-# Give it a unique name and paste the copied Github ssh key here.
+git config --global user.email "example@gmail.com"
+git config --global user.name "example"
 
 ## Apache
 sudo apt install apache2 apache2-utils -y
@@ -80,15 +70,15 @@ sudo systemctl enable apache2
 sudo service apache2 restart
 
 #### Apache Configurations
-sudo adduser seyma www-data
-sudo chown -R seyma:www-data /var/www/html/
+sudo adduser example www-data
+sudo chown -R example:www-data /var/www/html/
 
 ##### Restart Apache Service
 sudo systemctl restart apache2
 
 ## html Configurations
-sudo adduser seyma www-data
-sudo chown -R seyma:www-data /var/www/html/
+sudo adduser example www-data
+sudo chown -R example:www-data /var/www/html/
 cd ~
 cd ~/Desktop
 ln -s /var/www/html/
@@ -96,3 +86,13 @@ sudo rm -f /var/www/html/index.html
 
 ## VLC Media Player
 sudo apt install vlc -y
+
+#### GitHub Configurations
+cd ~/.ssh
+ssh-keygen -o -t rsa -C "example@gmail.com"
+# Public name will be saved as example instead of id_rsa
+ssh-add ~/.ssh/example
+cat example.pub
+# Copy the Github SSh key starting with "sss-rsa" and ending with ".com".
+# After that go to "Settings > SSH and GPG keys > New SSH key".
+# Give it a unique name and paste the copied Github ssh key here.
