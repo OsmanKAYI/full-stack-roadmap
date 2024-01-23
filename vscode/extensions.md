@@ -115,7 +115,7 @@ code --install-extension alefragnani.bookmarks
 code --install-extension arcsine.chronicler
 code --install-extension formulahendry.code-runner
 code --install-extension Codeium.codeium
-code --install-extension filipesabella.codesnap
+code --install-extension adpyke.codesnap
 code --install-extension wallabyjs.console-ninja
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension dbaeumer.vscode-eslint

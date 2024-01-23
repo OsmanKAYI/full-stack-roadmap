@@ -74,7 +74,7 @@ code --install-extension alefragnani.bookmarks
 code --install-extension arcsine.chronicler
 code --install-extension formulahendry.code-runner
 code --install-extension Codeium.codeium
-code --install-extension filipesabella.codesnap
+code --install-extension adpyke.codesnap
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension gistpad.gistpad
 code --install-extension mhutchie.git-graph
