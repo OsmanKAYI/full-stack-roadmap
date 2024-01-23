@@ -119,7 +119,7 @@ code --install-extension adpyke.codesnap
 code --install-extension wallabyjs.console-ninja
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension dbaeumer.vscode-eslint
-code --install-extension gistpad.gistpad
+code --install-extension vsls-contrib.gistfs
 code --install-extension mhutchie.git-graph
 code --install-extension donjayamanne.githistory
 code --install-extension github.vscode-pull-request-github

@@ -76,7 +76,7 @@ code --install-extension formulahendry.code-runner
 code --install-extension Codeium.codeium
 code --install-extension adpyke.codesnap
 code --install-extension dbaeumer.vscode-eslint
-code --install-extension gistpad.gistpad
+code --install-extension vsls-contrib.gistfs
 code --install-extension mhutchie.git-graph
 code --install-extension donjayamanne.githistory
 code --install-extension github.vscode-pull-request-github
