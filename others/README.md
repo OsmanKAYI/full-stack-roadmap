@@ -6,7 +6,6 @@ Here, you will find out some usefull informations which I cannot group them in a
 - [Free Certification Courses from Google](./courses.from.google.md)
 - [Bluetooth](./bluetooth.md)
 - [Excel](./excel.md)
-- [vim Editor](./vim.md)
 
 ## Useful Links
 
