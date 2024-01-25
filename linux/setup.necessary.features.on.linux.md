@@ -322,7 +322,7 @@ sudo chown -R $USER:www-data /var/www/html/
 - PHP is a general-purpose scripting language geared toward web development.
 
 ```BASH
-sudo apt install php7.4-fpm php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl php7.4-xmlrpc php7.4-sqlite3 php7.4-gd php7.4-mysql php7.4-mbstring php7.4-xml libapache2-mod-php7.4 -y
+sudo apt install php -y
 sudo service apache2 restart
 ```
 
@@ -420,7 +420,7 @@ sudo service mysqld start
 mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');"
 ```
 
-#### MariaDB Password Reset
+#### MariaDB Password Reset (if you forgot your password)
 
 ```BASH
 sudo service mariadb vstop
@@ -480,7 +480,6 @@ sudo systemctl enable apache2
 ```BASH
 sudo adduser $USER www-data
 sudo chown -R $USER:www-data /var/www/html/
-cd ~
 cd ~/Desktop
 ln -s /var/www/html/
 sudo rm -f /var/www/html/index.html
@@ -680,12 +679,7 @@ echo 'export PATH="$PATH:/usr/bin/Postman"' >> ~/.bashrc
 source ~/.bashrc
 
 # create launcher shortcut
-sudo vi /usr/share/applications/Postman.desktop
-# copy and past the following lines
-```
-
-```
-[Desktop Entry]
+echo "[Desktop Entry]
 Name=Postman API Tool
 GenericName=Postman
 Comment=Testing API
@@ -695,7 +689,7 @@ X-MultipleArgs=false
 Type=Application
 Icon=/usr/bin/Postman/app/resources/app/assets/icon.png
 StartupWMClass=Postman
-StartupNotify=true
+StartupNotify=true" | sudo tee /usr/share/applications/Postman.desktop
 ```
 
 #### Completely Remove Postman
@@ -760,8 +754,7 @@ sudo apt install virtualbox -y
 ```BASH
 sudo apt update
 sudo apt install build-essential dkms linux-headers-$(uname -r) -y
-cd
-cd /media/$USER/VBox_GAs_6.1.381
+cd ~/media/$USER/VBox_GAs_6.1.381
 ./autorun.sh
 reboot
 ```
