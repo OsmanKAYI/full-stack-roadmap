@@ -245,26 +245,7 @@ sudo apt install code -y
 
 **Ref:** https://linuxhint.com/install-visual-studio-code-ubuntu22-04/
 
-#### WakaTime for VSCode
-
-- It is an open source plugin for productivity metrics, goals, leaderboards, and automatic time tracking.
-
-1. Press <kbd>F1</kbd> and type `install`. Pick `Extensions: Install Extension`
-2. Type `wakatime` and hit <kbd>ENTER</kbd>.
-3. Install WakaTime.
-4. Enter your [API Key](https://wakatime.com/settings/api-key).
-5. Use VSCode like you normally do and your coding activity will be displayed on your [WakaTime Dashboard](https://wakatime.com/dashboard).
-
-**NOTE:** Other useful VSCode extensions and related setting.json file can be found from [here](https://github.com/OsmanKAYI/computerNotes/blob/master/09.vscode.extensions.md)
-
-#### Completely Remove VSCode
-
-```BASH
-sudo apt purge code
-sudo apt autoremove
-rm-rf /home/$USER/.vscode/
-rm -rf /home/$USER/.config/Code/
-```
+**NOTE:** Other useful VSCode extensions and related setting.json file can be found from [here](https://github.com/OsmanKAYI/full-stack-roadmap/blob/master/vscode/extensions.md)
 
 ## WPS Office
 
