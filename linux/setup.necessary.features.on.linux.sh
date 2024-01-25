@@ -1,8 +1,8 @@
 clear
 
-#### COLORS
-#### COLORS
-#### COLORS
+## cOLORS
+## cOLORS
+## cOLORS
 BLACK='\033[0;30m'
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -52,16 +52,16 @@ echo ""
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap refresh
 
 ## Set System Time
-### to set timezone as Istanbul
+# to set timezone as Istanbul
 sudo timedatectl set-timezone Europe/Istanbul
-### to choose timezone manually: sudo dpkg-reconfigure tzdata
-### to show the seconds on desktop clock
+# to choose timezone manually: sudo dpkg-reconfigure tzdata
+# to show the seconds on desktop clock
 gsettings set org.gnome.desktop.interface clock-show-seconds true
-### to setup auxiliary packages
+# to setup auxiliary packages
 sudo apt-get install ntp ntpdate -y
-### to setup NTP server
+# to setup NTP server
 sudo ntpdate ntp.ubuntu.com
-### to get timezone and current time
+# to get timezone and current time
 timedatectl status
 
 ## Set Keyboard Setting for Türkçe
@@ -71,11 +71,11 @@ setxkbmap tr
 sudo ubuntu-drivers autoinstall
 
 ## Desktop Configurations
-### to set the position of the dock to the left
+# to set the position of the dock to the left
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
-### to minimize/extend all windows of a folder/program with one click
+# to minimize/extend all windows of a folder/program with one click
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
-### to switch between windows of a folder/program with mouse rolling
+# to switch between windows of a folder/program with mouse rolling
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
 ## Guake
@@ -96,14 +96,14 @@ sudo apt install gnome-sushi -y
 
 ## GNOME Screenshot
 sudo apt install gnome-screenshot xclip -y
-### Set up custom shortcut for taking screenshots with Windows key + Shift + S
+# set up custom shortcut for taking screenshots with Windows key + Shift + S
 gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot '<Super><Shift>s'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'Take a Screenshot'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Super><Shift>s'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "sh -c 'gnome-screenshot -af ~/Pictures/$(date "+%Y.%m.%d-%H.%M.%S").png'"
-### Add the custom shortcut to the list of custom shortcuts
+# add the custom shortcut to the list of custom shortcuts
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[ '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/' ]"
-### Add the necessary permissions to the custom shortcut
+# add the necessary permissions to the custom shortcut
 sudo chmod ugo+rwx /home/$USER/Pictures/*
 
 ## GIMP Image Editor
@@ -113,23 +113,20 @@ sudo apt install gimp -y
 sudo apt install lynx -y
 
 ## TUXEDO Control Center
-### add repositories in apt list (my case it is "jammy" but it may subject to change depending on your condition)
+# add repositories in apt list (my case it is "jammy" but it may subject to change depending on your condition)
 echo -e "deb https://deb.tuxedocomputers.com/ubuntu jammy main" | sudo tee -a /etc/apt/sources.list.d/tuxedocomputers.list
-
-### dive into source directory
+# dive into source directory
 cd /etc/apt/trusted.gpg.d/
-
-### dowload the programm
+# dowload the programm
 sudo wget https://deb.tuxedocomputers.com/0x54840598.pub.asc
-
-### update and install the program
+# update and install the program
 sudo apt update
 sudo apt install tuxedo-control-center -y
 
 ## Firefox
-### Add Mozilla PPA
+# add Mozilla PPA
 sudo add-apt-repository -y ppa:mozillateam/ppa
-### Create preferences file for apt
+# create preferences file for apt
 PREFERENCES=$(cat <<EOF
 Package: *
 Pin: release o=LP-PPA-mozillateam
@@ -141,11 +138,11 @@ Pin-Priority: -1
 EOF
 )
 echo "$PREFERENCES" | sudo tee /etc/apt/preferences.d/mozilla-firefox
-### Remove existing Firefox Snap package
+# remove existing Firefox Snap package
 sudo snap remove firefox
-### Configure unattended-upgrades for the Mozilla PPA
+# configure unattended-upgrades for the Mozilla PPA
 echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
-### Install Firefox from the PPA
+# install Firefox from the PPA
 sudo apt update
 sudo apt install firefox -y
 
@@ -163,15 +160,15 @@ sudo gpg --dearmor -o /usr/share/keyrings/vscode.gpg vscode.gpg
 echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
 sudo apt update
 sudo apt install code -y
-### install extesions
-bash ./vscode.extensions.sh
+# install extesions
+bash ../vscode/extensions.sh
 
 ## WPS Office
-### dive into download directory (since it downloads to 'Downloads/' folder)
+# dive into download directory (since it downloads to 'Downloads/' folder)
 cd ~/Downloads/
-### install downloaded file
+# install downloaded file
 sudo apt install ./wps-office_*_amd64.deb
-### press 'OK' and 'YES', one after another
+# press 'OK' and 'YES', one after another
 
 ## Notion
 echo "deb [trusted=yes] https://apt.fury.io/notion-repackaged/ /" | sudo tee /etc/apt/sources.list.d/notion-repackaged.list
@@ -188,14 +185,14 @@ sudo apt install apache2 apache2-utils -y
 sudo rm -f /var/www/html/index.html
 sudo systemctl enable apache2
 sudo service apache2 restart
-#### Apache Configurations
+## apache Configurations
 sudo adduser $USER www-data
 sudo chown -R $USER:www-data /var/www/html/
 
 ## PHP
 sudo apt install php
 sudo service apache2 restart
-#### Restart Apache Service
+## restart Apache Service
 sudo systemctl restart apache2
 
 ## Composer
@@ -203,9 +200,9 @@ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
-### put the composer.phar into a directory on your PATH, so you can simply call composer from any directory (Global install)
+# put the composer.phar into a directory on your PATH, so you can simply call composer from any directory (Global install)
 sudo mv composer.phar /usr/local/bin/composer
-#### watch errors real-time
+## watch errors real-time
 sudo tail -f /var/log/apache2/error.log
 
 ## MariaDB
@@ -213,15 +210,15 @@ sudo apt install mariadb-server mariadb-client -y
 sudo systemctl enable mariadb
 sudo service mariadb restart
 sudo mysql --user="root" --password="root" --execute="use mysql; update user set plugin='' where User='root'; flush privileges;"
-##### sudo mysql_secure_installation
-#### MySQL Password Reset
+### sudo mysql_secure_installation
+## mySQL Password Reset
 sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');"
 
 ## Redis
 sudo apt install redis-server php-redis -y
 systemctl enable redis-server
 systemctl start redis-server
-#### Change Redis Password
+## change Redis Password
 redis-cli
 #if exists
 AUTH oldpassword
@@ -249,11 +246,11 @@ wget -O index.php https://www.adminer.org/latest.php
 
 ## gphotos-sync
 apt install python3-pip
-### install gphotos-sync wih pip:
+# install gphotos-sync wih pip:
 python3 -m pip install gphotos-sync
-### export ~/.local/bin in PATH if you haven't already (that's where the executables for packages installed using pip3 are stored)
+# export ~/.local/bin in PATH if you haven't already (that's where the executables for packages installed using pip3 are stored)
 echo "export PATH=\"\$PATH:\$HOME/.local/bin\"" >> ~/.bashrc
-### run .bashrc for updated PATH
+# run .bashrc for updated PATH
 source ~/.bashrc
 
 ## OpenSSH
@@ -286,13 +283,13 @@ StartupNotify=true" | sudo tee /usr/share/applications/Postman.desktop
 sudo apt install autokey-gtk
 
 ## Knime
-### use "wget" to download the Knime tool
+# use "wget" to download the Knime tool
 wget https://download.knime.org/analytics-platform/linux/knime-latest-linux.gtk.x86_64.tar.gz
-### extract the compressed file
+# extract the compressed file
 tar -xvzf knime-latest-linux.gtk.x86_64.tar.gz
-### change the directory and move into the extracted folder
+# change the directory and move into the extracted folder
 cd knime_*/
-### run the executable file in the folder
+# run the executable file in the folder
 ./knime
 
 ## VirtualBox
@@ -321,7 +318,7 @@ flatpak install flathub com.sweethome3d.Sweethome3d -y
 flatpak update com.sweethome3d.Sweethome3d
 sudo apt install sweethome3d -y
 
-#### GitHub Configurations
+## gitHub Configurations
 cd ~/.ssh
 if [ -n "$SSH_FILENAME" ]; then
   ssh-keygen -f $SSH_FILENAME -C $GIT_EMAIL
