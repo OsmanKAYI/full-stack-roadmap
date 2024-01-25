@@ -387,37 +387,9 @@ sudo tail -f /var/log/apache2/error.log
 sudo apt install mariadb-server mariadb-client -y
 sudo systemctl enable mariadb
 sudo service mariadb restart
-sudo mysql -u root
-  show databases;
-  use mysql;
-  update user set plugin='' where User='root';
-  flush privileges;
-  exit;
-sudo mysql_secure_installation
-```
-
-#### MySQL Password Reset
-
-- Below commands can be used just in the first experience since after the first usage, password will not be emty ('').
-
-```BASH
-sudo service mysql stop
-sudo service mysqld stop
-sudo mysqld_safe --skip-grant-tables --skip-networking &
-mysql -u root
-  use mysql;
-  update user set password=PASSWORD("root") where User='root';
-  flush privileges;
-  quit;
-sudo kill `sudo cat /var/run/mysqld/mysqld.pid`
-sudo service mysql  start
-sudo service mysqld start
-```
-
-- or simply
-
-```BASH
-mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');"
+### sudo mysql_secure_installation
+## mysql password reset
+mysql --user="root" --password="" --execute="use mysql; SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root'); flush privileges;"
 ```
 
 #### MariaDB Password Reset (if you forgot your password)

@@ -205,14 +205,13 @@ sudo mv composer.phar /usr/local/bin/composer
 ## watch errors real-time
 sudo tail -f /var/log/apache2/error.log
 
-## MariaDB
+## MySQL
 sudo apt install mariadb-server mariadb-client -y
 sudo systemctl enable mariadb
 sudo service mariadb restart
-sudo mysql --user="root" --password="root" --execute="use mysql; update user set plugin='' where User='root'; flush privileges;"
 ### sudo mysql_secure_installation
-## mySQL Password Reset
-sudo mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');"
+## mysql password reset
+mysql --user="root" --password="" --execute="use mysql; SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root'); flush privileges;"
 
 ## Redis
 sudo apt install redis-server php-redis -y

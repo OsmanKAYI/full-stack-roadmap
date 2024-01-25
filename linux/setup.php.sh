@@ -53,15 +53,9 @@ sudo service apache2 restart
 sudo apt install mariadb-server mariadb-client -y
 sudo systemctl enable mariadb
 sudo service mariadb restart
-sudo mysql -u root
-  show databases;
-  use mysql;
-  update user set plugin='' where User='root';
-  flush privileges;
-  exit;
-sudo mysql_secure_installation
+### sudo mysql_secure_installation
 ## mysql password reset
-mysql --user="root" --password="" --execute="SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');"
+mysql --user="root" --password="" --execute="use mysql; SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root'); flush privileges;"
 
 ## restart services
 sudo service apache2 restart
