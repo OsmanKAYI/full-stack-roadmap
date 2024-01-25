@@ -26,6 +26,8 @@ sudo gpg --dearmor -o /usr/share/keyrings/vscode.gpg vscode.gpg
 echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
 sudo apt update
 sudo apt install code -y
+### install extesions
+bash ../vscode/extensions.php.sh
 
 ## apache
 sudo apt install apache2 apache2-utils -y
