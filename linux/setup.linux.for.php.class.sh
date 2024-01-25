@@ -1,4 +1,4 @@
-# Setup Linux for PHP Class
+# SETUP LINUX FOR PHP CLASS
 
 ## update & upgrade & autoremove & snap refresh
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap refresh
