@@ -20,9 +20,9 @@ This documentation includes guides, tutorials, and reference material for learni
 
 - [Dual Boot Ubuntu 22.04.LTS and Windows 10](./dual.boot.ubuntu.22.04.1.lts.and.windows10.md)
 - [Setup Necessary Features on Linux](./setup.necessary.features.on.linux.md)
-- [Setup Basics for Front-End Developer on Linux](./setup.basics.for.front.end.sh)
-  **Change each 'example' word as username, gmail, and github username, according to the situation.**
-- [Setup Linux for PHP Class](./setup.linux.for.php.class.sh)
+- [Setup Necessary Features on Linux](./setup.necessary.features.on.linux.sh)
+- [Setup Basics for Front-End Developer on Linux](./setup.front.end.sh)
+- [Setup Basics for PHP Developer on Linux](./setup.php.sh)
 - [Educator Notes](./egitmen.notlari.md)
 - [Basic Linux Commands I](./temel.linux.komutlari1.md)
 - [Basic Linux Commands II](./temel.linux.komutlari2.md)
