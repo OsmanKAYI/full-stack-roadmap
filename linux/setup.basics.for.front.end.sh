@@ -1,4 +1,46 @@
-# Setup Basics for Front-End Developer on Linux
+clear
+
+#### COLORS
+#### COLORS
+#### COLORS
+BLACK='\033[0;30m'
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BROWNORANGE='\033[0;33m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+CYAN='\033[0;36m'
+LIGHTGRAY='\033[0;37m'
+
+DARKGREY='\033[1;30m'
+LIGHTRED='\033[1;31m'
+LIGHTGREEN='\033[1;32m'
+YELLOW='\033[1;33m'
+LIGHTBLUE='\033[1;34m'
+LIGHTPURPLE='\033[1;35m'
+LIGHTCYAN='\033[1;36m'
+WHITE='\033[1;37m'
+
+NC='\033[0m' # No Color
+
+echo "Please fulfill the instructions for GIT"
+echo ""
+
+echo -e -n "Enter your ${LIGHTCYAN}name${NC} and ${LIGHTCYAN}surname${NC}: "
+read GIT_NAME_SURNAME
+
+echo -e -n "Enter your ${LIGHTCYAN}git email${NC}: "
+read GIT_EMAIL
+
+echo -e -n "Enter your ${LIGHTCYAN}filename${NC} for ~/.ssh/: "
+read SSH_FILENAME
+
+echo ""
+echo ""
+echo -e  "$LIGHTGREEN !!! INSTALLATION STARTED !!! $NC"
+echo ""
+
+# SETUP BASICS FOR FRONT-END DEVELOPER ON LINUX
 
 ## System Update Installation
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap refresh
@@ -40,7 +82,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windo
 sudo apt-get install guake -y
 
 ## Necessary Packages
-sudo apt install vim   pdftk meld xclip axel gnome-tweaks net-tools hardinfo gpustat nvtop  unrar caffeine magic-wormhole  pv -y
+sudo apt install vim pdftk meld xclip axel gnome-tweaks net-tools hardinfo gpustat nvtop unrar caffeine magic-wormhole pv -y
 
 ## TLDR
 sudo apt install tldr -y
@@ -60,8 +102,13 @@ sudo apt install code -y
 
 ## Git
 sudo apt-get install git -y
-git config --global user.email "example@gmail.com"
-git config --global user.name "example"
+
+if [ -n "$GIT_EMAIL" ]; then
+  git config --global user.email $GIT_EMAIL
+fi
+if [ -n "$GIT_NAME_SURNAME" ]; then
+  git config --global user.name $GIT_NAME_SURNAME
+fi
 
 ## Apache
 sudo apt install apache2 apache2-utils -y
@@ -70,16 +117,15 @@ sudo systemctl enable apache2
 sudo service apache2 restart
 
 #### Apache Configurations
-sudo adduser example www-data
-sudo chown -R example:www-data /var/www/html/
+sudo adduser $USER www-data
+sudo chown -R $USER:www-data /var/www/html/
 
 ##### Restart Apache Service
 sudo systemctl restart apache2
 
 ## html Configurations
-sudo adduser example www-data
-sudo chown -R example:www-data /var/www/html/
-cd ~
+sudo adduser $USER www-data
+sudo chown -R $USER:www-data /var/www/html/
 cd ~/Desktop
 ln -s /var/www/html/
 sudo rm -f /var/www/html/index.html
@@ -89,10 +135,13 @@ sudo apt install vlc -y
 
 #### GitHub Configurations
 cd ~/.ssh
-ssh-keygen -o -t rsa -C "example@gmail.com"
-# Public name will be saved as example instead of id_rsa
-ssh-add ~/.ssh/example
-cat example.pub
-# Copy the Github SSh key starting with "sss-rsa" and ending with ".com".
-# After that go to "Settings > SSH and GPG keys > New SSH key".
-# Give it a unique name and paste the copied Github ssh key here.
+if [ -n "$SSH_FILENAME" ]; then
+  ssh-keygen -f $SSH_FILENAME -C $GIT_EMAIL
+  # Public name will be saved as $SSH_FILENAME instead of id_rsa
+  ssh-add ~/.ssh/$SSH_FILENAME
+  echo "Here is your public ssh key: "
+  echo "Copy the Github SSH key starting with 'sss-rsa' and ending with '.com'."
+  cat $SSH_FILENAME.pub
+  # After that go to "Settings > SSH and GPG keys > New SSH key".
+  # Give it a unique name and paste the copied Github ssh key here.
+fi
