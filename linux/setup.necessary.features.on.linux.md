@@ -132,26 +132,19 @@ sudo apt install gnome-sushi -y
 - GNOME Screenshot is a desktop environment-agnostic utility for taking screenshots. When you bind any key to gnome-screenshot, you can use this key combination to take screenshot.
 
 ```BASH
-sudo apt install gnome-screenshot -y
-sudo apt install xclip -y
+# Install required packages
+sudo apt install gnome-screenshot xclip -y
+
+### Set up custom shortcut for taking screenshots with Windows key + Shift + S
+gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot '<Super><Shift>s'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'Take a Screenshot'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Super><Shift>s'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "sh -c 'gnome-screenshot -af ~/Pictures/$(date "+%Y.%m.%d-%H.%M.%S").png'"
+### Add the custom shortcut to the list of custom shortcuts
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[ '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/' ]"
+### Add the necessary permissions to the custom shortcut
+sudo chmod ugo+rwx /home/$USER/Pictures/*
 ```
-
-- Then go to `Settings | Keyboard Shortcuts | View and Customize Shortcuts | Custom Shortcuts`
-- And create a new shortcut by clicking on `+` symbol
-- Give it a `Name` and paste the following command into `Command`.
-
-`sh -c 'gnome-screenshot -af /home/$USER/Pictures/$(date "+%Y.%m.%d-%H.%M.%S").png'`
-
-- Click on `Set Shortcut...` and give it a key combination (in my case <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>S</kbd> ).
-- Then click on `Add`.
-
-**NOTE:** If you face some problems to save the screenshot into selected location (in my case it is Pictures folder), try to change permissions with the following command.
-
-`sudo chmod ugo+rwx /home/$USER/Pictures/*`
-
-- To revert the changes you've done, use the following.
-
-`sudo chmod ugo-rwx /home/$USER/Pictures/*`
 
 ## GIMP Image Editor
 
