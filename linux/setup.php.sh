@@ -27,7 +27,7 @@ echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.
 sudo apt update
 sudo apt install code -y
 ### install extesions
-bash ../vscode/extensions.php.sh
+wget https://raw.githubusercontent.com/OsmanKAYI/full-stack-roadmap/main/vscode/extensions.php.sh -O - | sh
 
 ## apache
 sudo apt install apache2 apache2-utils -y

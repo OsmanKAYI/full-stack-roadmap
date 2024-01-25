@@ -133,7 +133,7 @@ sudo gpg --dearmor -o /usr/share/keyrings/vscode.gpg vscode.gpg
 echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
 sudo apt update
 sudo apt install code -y
-bash ../vscode/extensions.front.end.sh
+wget https://raw.githubusercontent.com/OsmanKAYI/full-stack-roadmap/main/vscode/extensions.front.end.sh -O - | sh
 
 ## Git
 sudo apt-get install git -y
