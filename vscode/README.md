@@ -21,7 +21,9 @@ The Visual Studio Code documentation is available online at [code.visualstudio.c
 
 - [Introduction to Visual Studio Code (VSCode)](./vscode.md)
 - [Usefull VSCode Extensions](./extensions.md)
-- [Usefull VSCode Extensions for Front-End Developers](./extensions.front.end.md)
+- [Usefull VSCode Extensions](./extensions.md)
+- [Usefull VSCode Extensions for Front-End Developers](./extensions.front.end.sh)
+- [Usefull VSCode Extensions for PHP Developers](./extensions.php.sh)
 - [Settings](./settings.md)
 - [Settings for Front-End Developers](./settings.front.end.md)
 - [Keybindings](./keybindings.md)
