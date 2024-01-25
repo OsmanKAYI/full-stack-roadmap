@@ -1,6 +1,5 @@
 # VSCode Extensions for Front End Development
 
-```BASH
 # Alignment
 ## align chars in selection. It helps creating clean, formatted code.
 code --install-extension annsk.alignment
@@ -109,4 +108,3 @@ code --install-extension gruntfuggly.todo-tree
 # WakaTime
 ## an open source VSCode plugin for metrics, insights, and time tracking automatically generated from your programming activity.
 code --install-extension wakatime.vscode-wakatime
-```
