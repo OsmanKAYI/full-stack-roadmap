@@ -89,8 +89,42 @@ sudo apt install tldr -y
 tldr -u
 
 ## GNOME Sushi
-
 sudo apt install gnome-sushi -y
+
+## GNOME Screenshot
+sudo apt install gnome-screenshot xclip -y
+### Set up custom shortcut for taking screenshots with Windows key + Shift + S
+gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot '<Super><Shift>s'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'Take a Screenshot'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Super><Shift>s'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "sh -c 'gnome-screenshot -af ~/Pictures/$(date "+%Y.%m.%d-%H.%M.%S").png'"
+### Add the custom shortcut to the list of custom shortcuts
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[ '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/' ]"
+### Add the necessary permissions to the custom shortcut
+sudo chmod ugo+rwx /home/$USER/Pictures/*
+
+## Firefox
+### Add Mozilla PPA
+sudo add-apt-repository -y ppa:mozillateam/ppa
+### Create preferences file for apt
+PREFERENCES=$(cat <<EOF
+Package: *
+Pin: release o=LP-PPA-mozillateam
+Pin-Priority: 1001
+
+Package: firefox
+Pin: version 1:1snap1-0ubuntu2
+Pin-Priority: -1
+EOF
+)
+echo "$PREFERENCES" | sudo tee /etc/apt/preferences.d/mozilla-firefox
+### Remove existing Firefox Snap package
+sudo snap remove firefox
+### Configure unattended-upgrades for the Mozilla PPA
+echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
+### Install Firefox from the PPA
+sudo apt update
+sudo apt install firefox -y
 
 ## Visual Studio Code
 sudo apt install software-properties-common apt-transport-https wget -y
@@ -99,10 +133,10 @@ sudo gpg --dearmor -o /usr/share/keyrings/vscode.gpg vscode.gpg
 echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
 sudo apt update
 sudo apt install code -y
+bash ../vscode/extensions.front.end.sh
 
 ## Git
 sudo apt-get install git -y
-
 if [ -n "$GIT_EMAIL" ]; then
   git config --global user.email $GIT_EMAIL
 fi
@@ -115,11 +149,9 @@ sudo apt install apache2 apache2-utils -y
 sudo rm -f /var/www/html/index.html
 sudo systemctl enable apache2
 sudo service apache2 restart
-
 #### Apache Configurations
 sudo adduser $USER www-data
 sudo chown -R $USER:www-data /var/www/html/
-
 ##### Restart Apache Service
 sudo systemctl restart apache2
 
