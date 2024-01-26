@@ -22,7 +22,7 @@ My prefered extensions and special settings for them in VSCode.
   "editor.fontSize": 18,
 
   // Shows the nested current scopes during the scroll at the top of the editor.
-  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.enabled": false,
 
   // Defines the border of focused and unfocused tabs and background of focused tab
   "workbench.colorCustomizations": {
