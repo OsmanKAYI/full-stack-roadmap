@@ -5,3 +5,5 @@
 # Thumbnails
 ._*
 
+# PDF
+*.pdf
