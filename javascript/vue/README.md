@@ -24,6 +24,7 @@ The Vue documentation is available online at [vuejs.org](vuejs.org). This docume
 - [Which One to Choose (Options or Composition)](./options.or.composition.md)
 - [What is Single File Component (SFC)](./single.file.components.md)
 - [Vue3 Getting Start](./vue3.md)
+- [Composition Pattern, Composition API, and Composables](./composition.pattern.&.composition.api.&.composables.md)
 - [Database Connection (PHP File)](./db.connection.php)
 - [How to Use Bootstrap5 with Vue3](./using.bootstrap5.with.vue3.md)
   - [Bootstrap Table](https://bootstrap-table.com/)
