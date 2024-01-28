@@ -43,6 +43,8 @@ The Vue documentation is available online at [vuejs.org](vuejs.org). This docume
 - [Türkçe Source for VueJs](https://medium.com/kocsistem/vue-js-t%C3%BCrk%C3%A7e-kaynak-cbb1d0d73490)
 - [Türkçe Source for Design Patterns (Java & C# Examples)](https://github.com/yusufyilmazfr/tasarim-desenleri-turkce-kaynak)
 - [Pinia Cheatsheet](https://pbs.twimg.com/media/FrgsHvqWcAEN9Ka?format=jpg&name=900x900)
+- [VueUse](https://vueuse.org/)
+  - Collection of essential vue composition utilities
 
 ### Vue CLI
 
