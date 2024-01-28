@@ -40,6 +40,8 @@ These notes are a collection of useful information, tips, and tricks related to 
 
 - The sites where you can improve coding and algorithm knowledge
 
+  - [FlavioCopes](https://flaviocopes.com/books/)
+    - Flavio Copes is a software engineer and try to help people to learn code basics or improve their knowledge. This site has lots of usefull books.
   - [HackerRank](https://www.hackerrank.com/)
     - HackerRank is a technology company that focuses on competitive programming challenges for both consumers and businesses.
   - [Codewars](https://www.codewars.com/)
