@@ -48,6 +48,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Install Office Programs on Linux](./office.on.linux.md)
 - [Ubuntu Second Monitor Problem](./second.monitor.problem.md)
 - [Screen Capture & Record](./screen.capture.md)
+- [Capture Photos Using fswebcam](./capture.photo.using.fswebcam.md)
 - [Cut Video Silence](./delete.video.silence.md)
 - [Trim White Spaces From an Image](./image.operations.md)
 - [Configure System Time & Timezone](./set.system.time.md)
