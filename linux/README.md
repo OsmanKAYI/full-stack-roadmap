@@ -49,7 +49,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Ubuntu Second Monitor Problem](./second.monitor.problem.md)
 - [Screen Capture & Record](./screen.capture.md)
 - [Cut Video Silence](./delete.video.silence.md)
-- [Trim White Spaces From an Image](./trim.image.md)
+- [Trim White Spaces From an Image](./image.operations.md)
 - [Configure System Time & Timezone](./set.system.time.md)
 - [Linux Blank Screen While Opening (Manual fsck Required)](./duplicate.or.bad.block.fsck.md)
 - [Synchronize GooglePhotos to Local](./sync.googlephotos.md)
