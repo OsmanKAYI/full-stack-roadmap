@@ -47,6 +47,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Execute .exe Programs on Ubuntu](./run.windows.programs.on.ubuntu.md)
 - [Install Office Programs on Linux](./office.on.linux.md)
 - [Ubuntu Second Monitor Problem](./second.monitor.problem.md)
+- [How to Track Changes on a Directory](./track.changes.on.directory.md)
 - [Screen Capture & Record](./screen.capture.md)
 - [Capture Photos Using fswebcam](./capture.photo.using.fswebcam.md)
 - [Cut Video Silence](./delete.video.silence.md)
