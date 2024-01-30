@@ -50,3 +50,8 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 <div style="text-align: center;">
   <img src="https://pbs.twimg.com/media/F92zI0pXcAAV3IV?format=jpg&name=large">
 </div>
+
+- **Debug**
+
+  - [Debug Code Like a Pro](https://www.youtube.com/watch?v=uUDRh7D5Z0c)
+    - How to debug JavaScript Code in VsCode and Chrome. Learn VsCode Debugger and Chrome Debugger. Debugging with a VsCode Extension: [Console Ninja](https://console-ninja.com/)
