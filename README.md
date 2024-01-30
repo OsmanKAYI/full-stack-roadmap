@@ -16,6 +16,7 @@ These notes are a collection of useful information, tips, and tricks related to 
 - [CSS](./css)
 - [PHP](./php)
 - [API](./api)
+- [TypeScript](./typescript)
 - [JavaScript](./javascript)
 - [Jupyter Notebook](./jupyter.notebook)
 - [Python](./python)
