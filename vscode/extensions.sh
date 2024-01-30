@@ -76,6 +76,10 @@ code --install-extension oderwat.indent-rainbow
 ## VSCode Inline Fold extension mimics VSCode's folding experience for inline code.
 code --install-extension moalamri.inline-fold
 
+# JavaScript and TypeScript Nightly
+## Enables typescript@next to power VS Code's built-in JavaScript and TypeScript support
+code --install-extension ms-vscode.vscode-typescript-next
+
 # Jupyter
 ## jupyter notebook support, interactive programming and computing that supports Intellisense, debugging and more.
 code --install-extension ms-toolsai.jupyter
@@ -148,6 +152,10 @@ code --install-extension vsc-snippets.vsc-php-snippets
 ## an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.
     **NOTE:** If extension is not working properly, follow [instructions for Prettier](https://bobbyhadz.com/blog/fix-prettier-not-working-in-vs-code).
 code --install-extension esbenp.prettier-vscode
+
+# Pretty TypeScript Errors
+## make TypeScript errors prettier and more human-readable in VSCode
+code --install-extension yoavbls.pretty-ts-errors
 
 # Project Manager
 ## it helps you to easily access your projects, no matter where they are located. Don't miss those important projects anymore.
