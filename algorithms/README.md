@@ -26,7 +26,7 @@ This documentation provides a reference for the available resources and examples
 - [What is an Algorithm?](./what.is.algorithm.md)
 - [Load Balancing Algortihms](./load-balancing.algorithms.md)
 
-### Usefull Links
+### Useful Links
 
 - [Free Algorithm Books](https://github.com/cjbt/Free-Algorithm-Books)
 - [Algorithms by Jeff Erickson (PDF Book)](https://jeffe.cs.illinois.edu/teaching/algorithms/#book)

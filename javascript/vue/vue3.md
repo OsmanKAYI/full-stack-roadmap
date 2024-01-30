@@ -12,7 +12,7 @@ npm run dev
 
 **NOTE:** Run `npm run build` when you ready to ship your app to production.
 
-## Usefull Links
+## Useful Links
 
 - [Vue.js 3 Masterclass Course](https://vueschool.io/courses/the-vuejs-3-master-class)
 - [Some Dummy Data For Exercises](https://jsonplaceholder.typicode.com/)

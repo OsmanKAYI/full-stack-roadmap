@@ -47,6 +47,6 @@ When we want to go to www.$domainname.com in our browser, the following steps ar
 
 **NOTE:** The `dig www.osmankayi.com` command allows us to query the domain name. As a result, it shows us the "CNAME" and "A" record(s), if any.
 
-- See the usefull links below:
+- See the useful links below:
   - [How DNS Works](https://pbs.twimg.com/media/FvD11GHXwBwyk4d?format=jpg&name=900x900)
   - [DNS System Hierarchy](https://pbs.twimg.com/media/FvM3S0VWcAA4B8C?format=jpg&name=large)
