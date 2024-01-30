@@ -79,6 +79,10 @@ code --install-extension oderwat.indent-rainbow
 ## VSCode Inline Fold extension mimics VSCode's folding experience for inline code.
 code --install-extension moalamri.inline-fold
 
+# Pretty TypeScript Errors
+## make TypeScript errors prettier and more human-readable in VSCode
+code --install-extension yoavbls.pretty-ts-errors
+
 # Jupyter
 ## jupyter notebook support, interactive programming and computing that supports Intellisense, debugging and more.
 code --install-extension ms-toolsai.jupyter
