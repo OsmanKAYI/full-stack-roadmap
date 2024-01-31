@@ -50,6 +50,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [How to Track Changes on a Directory](./track.changes.on.directory.md)
 - [Screen Capture & Record](./screen.capture.md)
 - [Capture Photos Using fswebcam](./capture.photo.using.fswebcam.md)
+- [Video Capture And Take Photo Using Cli](./capture.video.and.take.photo.using.cli.md)
 - [Cut Video Silence](./delete.video.silence.md)
 - [Trim White Spaces From an Image](./image.operations.md)
 - [Configure System Time & Timezone](./set.system.time.md)
