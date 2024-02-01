@@ -326,3 +326,24 @@ router.afterEach((to) => {
 
 export default router;
 ```
+
+## PHP - Web Server - WebSocket Server - Vue.js Reactivity Diagram
+
+```mermaid
+graph TD
+  subgraph Server
+    A[Web Server]
+    B[PHP]
+    C[WebSocket Server]
+  end
+
+  subgraph Client
+    D[Vue.js]
+  end
+
+  A -->|HTTP Requests| B
+  B -->|Database Interaction| A
+  B -->|WebSocket Communication| C
+  C -->|WebSocket Communication| D
+  D -->|HTTP Requests| A
+```
