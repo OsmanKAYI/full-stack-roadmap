@@ -17,21 +17,21 @@ $redis->connect('127.0.0.1', 6379);
 
 $i = 1;
 
-$CEVAP = array();
+$RESULT = array();
 while (true) {
   $time = date('Y-m-d H:i:s');
-  $CEVAP['channel'] = "CHANNEL";
-  $CEVAP['data']['count'] = $i;
-  $CEVAP['data']['time'] = $time;
-  $redis->publish('LIVESTREAM', json_encode($CEVAP, JSON_UNESCAPED_UNICODE));
+  $RESULT['channel'] = "CHANNEL";
+  $RESULT['data']['count'] = $i;
+  $RESULT['data']['time'] = $time;
+  $redis->publish('LIVESTREAM', json_encode($RESULT, JSON_UNESCAPED_UNICODE));
 
   if($i % 5 == 0) {
-      $CEVAP['channel'] = "CHANNEL_5";
-      $redis->publish('LIVESTREAM', json_encode($CEVAP, JSON_UNESCAPED_UNICODE));
+      $RESULT['channel'] = "CHANNEL_5";
+      $redis->publish('LIVESTREAM', json_encode($RESULT, JSON_UNESCAPED_UNICODE));
   }
   if($i % 2 == 0) {
-      $CEVAP['channel'] = "CHANNEL_2";
-      $redis->publish('LIVESTREAM', json_encode($CEVAP, JSON_UNESCAPED_UNICODE));
+      $RESULT['channel'] = "CHANNEL_2";
+      $redis->publish('LIVESTREAM', json_encode($RESULT, JSON_UNESCAPED_UNICODE));
   }
   echo "CHANNEL :: $time -- Counter: $i \n";
   if($i % 5 == 0) echo "CHANNEL_5 :: $time -- Counter: $i \n";
@@ -45,9 +45,9 @@ while (true) {
 
 ```bash
 # nodemon is a Node.js package that will watch for changes in a set of files and automatically restart a node application
-npm -i g nodemon
+npm -i -g nodemon
 # wscat is a WebSocket client
-npm -i g wscat
+npm -i -g wscat
 ```
 
 ## Create WebSocket Server
@@ -71,7 +71,7 @@ npm install --save-dev @types/express @types/ws
 - Create `server.ts` file in `ws-server` which will run the server.
 
 ```typescript
-// server.ts
+// ws-server/server.ts
 import express, { Request, Response } from "express";
 import http from "http";
 import WebSocket from "ws";
@@ -208,7 +208,7 @@ php publisher.php
 
 - Create a view named `RedisView` in `src/views` directory.
 
-```javascript
+```typescript
 // src/views/RedisView.vue
 <script setup lang="ts">
 import redisChannel from '@/components/redisChannel.vue';
@@ -228,43 +228,53 @@ import redisChannel from '@/components/redisChannel.vue';
 
 - Create a component named `redisChannel` in `src/components` directory.
 
-```javascript
+```typescript
 // src/components/redisChannel.vue
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount } from 'vue';
-import { defineProps } from 'vue';
+import { ref, onMounted, onBeforeUnmount, defineProps } from 'vue';
 
-interface wsData {
+// Define the expected structure of WebSocket data
+interface WsData {
   count: number;
   time: string;
 }
 
+// Get the 'channelName' prop
 const propChannelName = defineProps(['channelName'] as const);
 const channelName = propChannelName.channelName;
 console.log(channelName);
 
-const data = ref<wsData | null>(null);
+// Initialize the reactive variable for WebSocket data
+const data = ref<WsData | null>(null);
+
+// Create a WebSocket instance connecting to 'ws://localhost:3000'
 const socket = new WebSocket('ws://localhost:3000');
 
-// Bileşenin oluşturulduğu anda WebSocket bağlantısını başlatma
+// When the component is mounted, start listening for WebSocket messages
 onMounted(() => {
-  // Vue bileşeni oluşturulduğunda WebSocket bağlantısı kurulur ve verileri dinlemeye başlar.
-  // WebSocket'ten gelen veriyi işleme
+  // Handle incoming WebSocket messages
   socket.onmessage = (event) => {
     try {
+      // Parse the received JSON data
       const eventData = JSON.parse(event.data);
       const wsChannelName = eventData.redisData.channel;
       const wsChannelData = eventData.redisData.data;
-      //console.table(eventData);
+
+      // Log the parsed data (optional)
+      // console.table(eventData);
+
+      // Check if the WebSocket channel name matches the prop channel name
       if (wsChannelName != channelName) return;
+
+      // Update the reactive data with WebSocket channel data
       data.value = wsChannelData;
     } catch (error) {
-      console.error('Veri parse edilemedi. Hata:', error);
+      console.error('Data could not be parsed. Error:', error);
     }
   };
 });
 
-// Bileşenin yok edildiği anda WebSocket bağlantısını kapatma
+// When the component is about to be unmounted, close the WebSocket connection
 onBeforeUnmount(() => {
   socket.close();
 });
