@@ -207,7 +207,7 @@ kv# Terminal Usage
 
 - Creates a 16 GB of one file called 16G.img.
 
-```BASH
+```bash
 for i in *.sql; do echo "Importing: $i"; mysql -u root -proot ozlem2 < $i; done;
 # if the content of '~/.my.cnf' is set as
 # [client]
@@ -218,7 +218,7 @@ for i in *.sql; do echo "Importing: $i"; mysql ozlem2 < $i; done;
 
 - Runs more than one sql at the same time.
 
-```BASH
+```bash
 echo willBeShown
  echo willNotBeShown
 echo willBeShown
@@ -255,7 +255,7 @@ history
 
 - Finds all occurrences of ‘old-text‘ and replace with ‘new-text‘ in a file named input.txt.
 
-```BASH
+```bash
 for file in *.jpg; do
     # Extract the base file name without extension
     filename=$(basename -- "$file" .jpg)

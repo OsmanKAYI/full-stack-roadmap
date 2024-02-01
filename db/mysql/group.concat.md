@@ -4,7 +4,7 @@ To merge rows in MySQL, use `GROUP_CONCAT()`.
 
 - First, create a table.
 
-```SQL
+```sql
 create table DemoTable123 (
    Id int,
    Name varchar(100)
@@ -13,7 +13,7 @@ create table DemoTable123 (
 
 - Insert some records in the table using `insert` command.
 
-```SQL
+```sql
 insert into DemoTable123 values(101,'Osman');
 insert into DemoTable123 values(102,'Osman');
 insert into DemoTable123 values(103,'Furkan');
@@ -28,7 +28,7 @@ insert into DemoTable123 values(110,'Nuri');
 
 - Display all records from the table using `select` command.
 
-```SQL
+```sql
 select * from DemoTable123;
 ```
 
@@ -53,7 +53,7 @@ select * from DemoTable123;
 
 - Following is the query to merge rows.
 
-```SQL
+```sql
 select Name,group_concat(Distinct Id SEPARATOR ',') from DemoTable123 group by Name;
 ```
 

@@ -34,7 +34,7 @@ Among these programs, TestDisk and PhotoRec are the most popular. Besides these,
 
 ## TestDisk & PhotoRec
 
-```BASH
+```bash
 # testdisk package contains PhotoRec and TestDisk packages
 sudo apt install testdisk
 ```
@@ -43,7 +43,7 @@ sudo apt install testdisk
 
 I have used foremost to recover damaged hard disk both under NTFS (windows), FAT32 (Flashcard from a Nokia phone), and ext3 with great results. Command-line only, but quite it's easy, something like this:
 
-```BASH
+```bash
 # Installing the package
 sudo apt install foremost
 
@@ -70,7 +70,7 @@ sudo foremost -v -t png,mp4,pdf -i /dev/sda1  -o /path/to/output/diretory/direct
 
 - You can find **Scalpel Type Signatures** [here](https://gist.github.com/cfgnunes/134c0e9bf6553fad62770f82a3c1e652).
 
-```BASH
+```bash
 # create the .IMG file of the USB content that we will recover
 sudo dd if=/dev/sdb of=~/$filename.img status=progress
 

@@ -38,7 +38,7 @@ The following SQL creates a FOREIGN KEY on the `PersonID` column when the `Order
 
 ### MySQL:
 
-```SQL
+```sql
 CREATE TABLE Orders (
     OrderID int NOT NULL,
     OrderNumber int NOT NULL,
@@ -52,7 +52,7 @@ To allow naming of a FOREIGN KEY constraint, and for defining a FOREIGN KEY cons
 
 ### MySQL / SQL Server / Oracle / MS Access:
 
-```SQL
+```sql
 CREATE TABLE Orders (
     OrderID int NOT NULL,
     OrderNumber int NOT NULL,
@@ -69,7 +69,7 @@ To create a FOREIGN KEY constraint on the `PersonID` column when the `Orders` ta
 
 ### MySQL / SQL Server / Oracle / MS Access:
 
-```SQL
+```sql
 ALTER TABLE Orders
 ADD FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
 ```
@@ -78,7 +78,7 @@ To allow naming of a FOREIGN KEY constraint, and for defining a FOREIGN KEY cons
 
 ### MySQL / SQL Server / Oracle / MS Access:
 
-```SQL
+```sql
 ALTER TABLE Orders
 ADD CONSTRAINT FK_PersonOrder
 FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
@@ -89,7 +89,7 @@ To drop a FOREIGN KEY constraint, use the following SQL:
 
 ### MySQL:
 
-```SQL
+```sql
 ALTER TABLE Orders
 DROP FOREIGN KEY FK_PersonOrder;
 ```

@@ -2,7 +2,7 @@
 
 ## Usefull VSCode Extensions
 
-```BASH
+```bash
 # Alignment
 ## align chars in selection. It helps creating clean, formatted code.
 code --install-extension annsk.alignment
@@ -222,7 +222,7 @@ code --install-extension wakatime.vscode-wakatime
 
 - To configure your settings, click on the `Project Manager: Edit Projects` (its like a pen) and arrange the below codes according to circumtances.
 
-```BASH
+```bash
 [
   {
     "name": "full-stack-roadmap",

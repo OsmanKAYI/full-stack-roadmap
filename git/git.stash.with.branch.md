@@ -1,6 +1,6 @@
 # Git Stash with Branch
 
-```BASH
+```bash
 # create a stash
 git stash save "git stash example"
 # create a branch

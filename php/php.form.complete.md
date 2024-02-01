@@ -4,7 +4,7 @@ To show the values in the input fields after the user hits the submit button, we
 
 Then, we also need to show which radio button that was checked. For this, we must manipulate the checked attribute (not the value attribute for radio buttons):
 
-```PHP
+```php
 Name: <input type="text" name="name" value="<?php echo $name;?>">
 
 E-mail: <input type="text" name="email" value="<?php echo $email;?>">
@@ -27,7 +27,7 @@ value="other">Other
 
 ### PHP - Complete Form Example
 
-```PHP
+```php
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -95,7 +95,7 @@ function test_input($data) {
 ?>
 ```
 
-```HTML
+```html
 <h2>PHP Form Validation Example</h2>
 <p><span class="error">* required field</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">

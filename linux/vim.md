@@ -30,7 +30,7 @@
 
 ### Example: Add Domain To Apache Config File
 
-```BASH
+```bash
 ssh root@IPADDRESS
 ssh root@domain.name
 ssh [user]@[server]

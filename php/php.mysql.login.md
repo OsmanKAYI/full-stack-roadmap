@@ -2,7 +2,7 @@
 
 Config.php file is having information about MySQL Data base configuration.
 
-```PHP
+```php
 <?php
    define('DB_SERVER', 'localhost:3036');
    define('DB_USERNAME', 'root');
@@ -16,7 +16,7 @@ Config.php file is having information about MySQL Data base configuration.
 
 Login PHP is having information about php script and HTML script to do login.
 
-```PHP
+```php
 <?php
    include("config.php");
    session_start();
@@ -99,7 +99,7 @@ Login PHP is having information about php script and HTML script to do login.
 
 After successful login, it will display welcome page.
 
-```PHP
+```php
 <?php
    include('session.php');
 ?>
@@ -122,7 +122,7 @@ After successful login, it will display welcome page.
 
 Logout page is having information about how to logout from login session.
 
-```PHP
+```php
 <?php
    session_start();
 
@@ -136,7 +136,7 @@ Logout page is having information about how to logout from login session.
 
 Session.php will verify the session, if there is no session it will redirect to login page.
 
-```PHP
+```php
 <?php
    include('config.php');
    session_start();

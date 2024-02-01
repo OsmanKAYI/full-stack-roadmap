@@ -2,7 +2,7 @@
 
 ## Before Start
 
-```BASH
+```bash
 npm init vue@latest
 cd <your-project-name>
 npm install

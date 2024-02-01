@@ -8,12 +8,8 @@ HTML contains several elements for defining text with a special meaning.
 
 ### Example
 
-```HTML
-**This text is bold**
-
-_This text is italic_
-
-This is subscript and superscript
+```html
+**This text is bold** _This text is italic_ This is subscript and superscript
 ```
 
 ---
@@ -41,7 +37,7 @@ The HTML `<b>` element defines bold text, without any extra importance.
 
 ### Example
 
-```HTML
+```html
 <b>This text is bold</b>
 ```
 
@@ -49,7 +45,7 @@ The HTML `<strong>` element defines text with strong importance. The content ins
 
 ### Example
 
-```HTML
+```html
 <strong>This text is important!</strong>
 ```
 
@@ -65,7 +61,7 @@ The HTML `<i>` element defines a part of text in an alternate voice or mood. The
 
 ### Example
 
-```HTML
+```html
 <i>This text is italic</i>
 ```
 
@@ -75,7 +71,7 @@ The HTML `<em>` element defines emphasized text. The content inside is typically
 
 ### Example
 
-```HTML
+```html
 <em>This text is emphasized</em>
 ```
 
@@ -87,7 +83,7 @@ The HTML `<small>` element defines smaller text:
 
 ### Example
 
-```HTML
+```html
 <small>This is some smaller text.</small>
 ```
 
@@ -99,7 +95,7 @@ The HTML `<mark>` element defines text that should be marked or highlighted:
 
 ### Example
 
-```HTML
+```html
 <p>Do not forget to buy <mark>milk</mark> today.</p>
 ```
 
@@ -111,7 +107,7 @@ The HTML `<del>` element defines text that has been deleted from a document. Bro
 
 ### Example
 
-```HTML
+```html
 <p>My favorite color is <del>blue</del> red.</p>
 ```
 
@@ -123,7 +119,7 @@ The HTML `<ins>` element defines a text that has been inserted into a document. 
 
 ### Example
 
-```HTML
+```html
 <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
 ```
 
@@ -135,7 +131,7 @@ The HTML `<sub>` element defines subscript text. Subscript text appears half a c
 
 ### Example
 
-```HTML
+```html
 <p>This is <sub>subscripted</sub> text.</p>
 ```
 
@@ -147,6 +143,6 @@ The HTML `<sup>` element defines superscript text. Superscript text appears half
 
 ### Example
 
-```HTML
+```html
 <p>This is <sup>superscripted</sup> text.</p>
 ```

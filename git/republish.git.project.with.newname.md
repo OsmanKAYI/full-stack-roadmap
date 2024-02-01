@@ -1,6 +1,6 @@
 # How to Republish Existing Git Project Without Harming Old One
 
-```BASH
+```bash
 # Copy existing project with a new name
 cp -r ~/source/computerNotes/ ~/source/osmankayi.com/
 
@@ -14,7 +14,7 @@ rm -rf .git
 - After this step, you can arrange project as you wish and continue.
 - Before jumping to next step, create a repository in github with chosen new name (in my case _osmankayi.com_).
 
-```BASH
+```bash
 # Start git in this project
 git init
 

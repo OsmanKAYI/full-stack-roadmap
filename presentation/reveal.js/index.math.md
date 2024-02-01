@@ -90,7 +90,7 @@ A paragraph with some text and a [link](https://hakim.se).
 
 ## Slide 8 - Code Highlight
 
-```PHP
+```php
 echo "Hello World!";
 ```
 

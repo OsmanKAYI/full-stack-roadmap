@@ -2,7 +2,7 @@
 
 Wine is as a kind of tool to execute .exe programs on ubuntu.
 
-```BASH
+```bash
 #install dependencies for wine32
 sudo apt install libgd3:i386 -y
 #install wine32
@@ -40,7 +40,7 @@ Removing libgd3:amd64 (2.3.3-9+ubuntu22.04.1+deb.sury.org+1)
 
 **NOTE 2:** To remove wine32 and install wine64 again with all packages, use the following
 
-```BASH
+```bash
 sudo apt purge wine*
 sudo apt install ubuntu-desktop ubuntu-desktop-minimal gnome-control-center colord gimp graphviz gvfs-backends hplip libc-devtools php7.4-gd wine wine64 libwine:amd64 libgvc6 simple-scan sane-utils libsane1:amd64 shotwell libgphoto2-6:amd64 libgd3:amd64 -y
 ```

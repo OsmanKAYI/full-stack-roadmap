@@ -7,7 +7,7 @@ There are two ways the browser client can send information to the web server.
 
 Before the browser sends the information, it encodes it using a scheme called URL encoding. In this scheme, name/value pairs are joined with equal signs and different pairs are separated by the ampersand.
 
-```PHP
+```php
 name1=value1&name2=value2&name3=value3
 ```
 
@@ -17,7 +17,7 @@ Spaces are removed and replaced with the + character and any other nonalphanumer
 
 The GET method sends the encoded user information appended to the page request. The page and the encoded information are separated by the ? character.
 
-```PHP
+```php
 http://www.test.com/index.htm?name1=value1&name2=value2
 ```
 
@@ -35,7 +35,7 @@ http://www.test.com/index.htm?name1=value1&name2=value2
 
 ### Example
 
-```PHP
+```php
 <?php
    if( $_GET["name"] || $_GET["age"] ) {
       echo "Welcome ". $_GET['name']. "<br />";
@@ -71,7 +71,7 @@ The POST method transfers information via HTTP headers. The information is encod
 
 ### Example
 
-```PHP
+```php
 <?php
    if( $_POST["name"] || $_POST["age"] ) {
       if (preg_match("/[^A-Za-z'-]/",$_POST['name'] )) {
@@ -103,7 +103,7 @@ The PHP $\_REQUEST variable can be used to get the result from form data sent wi
 
 ### Example
 
-```PHP
+```php
 <?php
    if( $_REQUEST["name"] || $_REQUEST["age"] ) {
       echo "Welcome ". $_REQUEST['name']. "<br />";

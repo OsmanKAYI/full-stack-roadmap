@@ -2,7 +2,7 @@
 
 The code below shows a simple way to check if the name field only contains letters, dashes, apostrophes and whitespaces. If the value of the name field is not valid, then store an error message:
 
-```PHP
+```php
 $name = test_input($_POST["name"]);
 if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
   $nameErr = "Only letters and white space allowed";
@@ -17,7 +17,7 @@ The easiest and safest way to check whether an email address is well-formed is t
 
 In the code below, if the e-mail address is not well-formed, then store an error message:
 
-```PHP
+```php
 $email = test_input($_POST["email"]);
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   $emailErr = "Invalid email format";
@@ -28,7 +28,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
 The code below shows a way to check if a URL address syntax is valid (this regular expression also allows dashes in the URL). If the URL address syntax is not valid, then store an error message:
 
-```PHP
+```php
 $website = test_input($_POST["website"]);
 if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
   $websiteErr = "Invalid URL";
@@ -37,7 +37,7 @@ if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-
 
 ### Example
 
-```PHP
+```php
  <?php
 // define variables and set to empty values
 $nameErr = $emailErr = $genderErr = $websiteErr = "";

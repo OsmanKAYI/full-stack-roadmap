@@ -2,7 +2,7 @@
 
 In Linux, we can use the uniq command that comes in handy when we want to list or remove duplicate lines that present adjacently. Apart from this, we can also use the uniq command to count duplicate entries. It is important to note that, the uniq command works only when duplicate entries are adjacent.
 
-```BASH
+```bash
 uniq [OPTIONS] [INPUT] [OUTPUT]
 ```
 
@@ -12,7 +12,7 @@ All the options and parameters of the uniq command are optional.
 
 To begin, first, let’s create a simple text file with a vi editor and add the following duplicate contents located in the adjacent lines.
 
-```BASH
+```bash
 vi linux-distributions.txt
 ```
 
@@ -34,7 +34,7 @@ Rocky Linux
 Rocky Linux
 ```
 
-```BASH
+```bash
 # remove duplicate lines from a text file
 uniq linux-distributions.txt
 

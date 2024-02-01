@@ -2,7 +2,7 @@
 
 If you have a text file that contains non-ASCII characters, you can convert it from one character set to another in Bash using the `iconv` command.
 
-```BASH
+```bash
 # List available character sets on the system
 iconv -l
 

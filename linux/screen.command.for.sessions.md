@@ -10,7 +10,7 @@ Screen is not installed by default in most distributions, so you must use apt or
 
 Not surprisingly, you start a screen session by using the screen command on a shell.
 
-```BASH
+```bash
 screen
 ```
 
@@ -24,7 +24,7 @@ For example, to detach from the session, you will have to press <kbd>Ctrl</kbd> 
 
 You can use `screen -ls` to see the screen sessions that are active. Since we have started only one session so far, your output will list only one session. The following is an example of a screen listing.
 
-```BASH
+```bash
 There is a screen on:
 	22137.pts-1.osmankayi	(25-09-2023 10:48:06)	(Detached)
 1 Sockets in /run/screen/S-osman.
@@ -34,7 +34,7 @@ Currently there is only one screen running in my computer, so the listing return
 
 To reattach to the session we earlier detached from, you can do,
 
-```BASH
+```bash
 screen -x
 ```
 
@@ -66,7 +66,7 @@ Like vim and bash, the runtime behavior of screen can be customized with a scree
 
 If you are a screen beginner, then this is a good starting point. Copy the following lines to `~/.screenrc` and checkout its effects.
 
-```CONFIG
+```config
 startup_message off
 term screen-256color
 setenv LC_CTYPE en_US.UTF-8
@@ -96,7 +96,7 @@ As you familiarize yourself with screen, you will notice that most of the time `
 
 Alternatively, you could add the machine details to your `~/.ssh/config` and add a `RemoteCommand` section to indicate that you would like to attach-to/create a screen session after login.
 
-```CONFIG
+```config
 host my_machine
 	HostName 10.10.10.1
 	User sid

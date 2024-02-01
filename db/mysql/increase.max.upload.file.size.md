@@ -12,7 +12,7 @@
 
 3. Paste the following lines at the end of `php.ini` file,
 
-```BASH
+```bash
     display_startup_errors = On
     display_errors         = On
     short_open_tag         = On

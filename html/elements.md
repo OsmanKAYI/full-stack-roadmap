@@ -10,7 +10,7 @@ An HTML element is defined by a start tag, some content, and an end tag.
 
 The HTML **element** is everything from the start tag to the end tag:
 
-```HTML
+```html
 <tagname>Content goes here...</tagname>
 
 Examples of some HTML elements:
@@ -30,15 +30,13 @@ The following example contains four HTML elements (`<html>`, `<body>`, `<h1>` an
 
 ### Example
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
-<body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
-</body>
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+  </body>
 </html>
 ```
 
@@ -69,8 +67,11 @@ The `<br>` tag defines a line break, and is an empty element without a closing t
 
 ### Example
 
-```HTML
-<p>This is a <br> paragraph with a line break.</p>
+```html
+<p>
+  This is a <br />
+  paragraph with a line break.
+</p>
 ```
 
 ## HTML is Not Case Sensitive

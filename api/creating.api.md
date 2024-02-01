@@ -6,7 +6,7 @@
 
 - Api to collect all the cities
 
-```PHP
+```php
 <?php
 
 require_once('db.php');
@@ -34,7 +34,7 @@ echo json_encode($arr, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 
 - Api to collect all the towns
 
-```PHP
+```php
 <?php
 
 require_once('db.php');

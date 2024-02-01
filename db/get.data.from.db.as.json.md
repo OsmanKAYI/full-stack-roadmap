@@ -1,6 +1,6 @@
 # Get Data From Database as a JSON Object
 
-```BASH
+```bash
 SELECT JSON_ARRAYAGG(JSON_OBJECT("user_id", user_id, "user_name", user_name)) FROM ref_users;
 
 SELECT JSON_OBJECT('name', user_name, 'phone', user_phone) FROM ref_users;

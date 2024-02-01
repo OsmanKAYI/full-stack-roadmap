@@ -4,7 +4,7 @@ Handling URL parameters in PHP are useful for handling incoming parameters from 
 
 **Long Version**
 
-```PHP
+```php
 // Check the 'id' parameter from $_GET
 if (isset($_GET['id'])) {
     // If it exists, convert its value to an integer and assign it to the $id variable
@@ -26,7 +26,7 @@ if (isset($_GET['filter_year'])) {
 
 **Short Version**
 
-```PHP
+```php
 // Check if the 'id' parameter is present in the $_GET array
 // If yes, convert its value to an integer and assign it to the $id variable; otherwise, set $id to 0
 $id  = (isset($_GET['id'])) ? intval($_GET['id']) : 0;
@@ -38,7 +38,7 @@ $year = (isset($_GET['filter_year'])) ? intval($_GET['filter_year']) : date('Y')
 
 **Shorter Version**
 
-```PHP
+```php
 // Check and convert the 'id' parameter from $_GET to an integer, or set it to 0 if it doesn't exist
 $id = intval($_GET['id'] ?? 0);
 

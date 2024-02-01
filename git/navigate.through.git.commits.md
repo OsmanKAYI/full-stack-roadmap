@@ -1,6 +1,6 @@
 # How to Navigate Through Git Commits (TimeMachine)
 
-```BASH
+```bash
 # clones the project
 git clone $projectSSHKey
 

@@ -4,7 +4,7 @@ A VPN is a mechanism for creating a secure connection between a computing device
 
 - **Step 1:** You need to have a remote server and connect it as follows.
 
-```BASH
+```bash
 ssh $username@$ipAdress -D 8080
 ```
 

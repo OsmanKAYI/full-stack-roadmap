@@ -2,7 +2,7 @@
 
 If you connect any external harddisk and get an errorof 'External harddisk detected but not mounting', you can solve it by following the commands below.
 
-```BASH
+```bash
 # Install ntfs-3g
 sudo apt install ntfs-3g -y
 

@@ -2,7 +2,7 @@
 
 **This will cause "settings" to be deleted in 64 bit PC!!!**
 
-```BASH
+```bash
 # check whether you have wine installed on your system or not.
 wine
 
@@ -13,7 +13,7 @@ sudo apt purge wine
 - Using **Transmission** program which is already installed on Ubuntu 22.04, dowload the preferred version of office from [1337x.to](https://1337x.to/)
 - In my case I've used [MS Office 2010](https://1337x.to/search/Microsoft+Office+Enterprise+2010+Corporate+Final+no+activation+required+Bellatrix/1/)
 
-```BASH
+```bash
 # install GD Graphics Library
 sudo apt install libgd3:i386
 # The following packages will be REMOVED:
@@ -41,7 +41,7 @@ wine setup.exe
 
 ## How To Backup the First Stage
 
-```BASH
+```bash
 # uninstall wine32, 32bit Office 2010
 sudo apt purge wine winbind wine32 libgd3:i386 -y
 sudo apt autoremove -y
@@ -53,7 +53,7 @@ sudo apt install colord gnome-control-center gvfs-backends hplip libc-devtools l
 
 ## Uninstall Programs
 
-```BASH
+```bash
 # for wine32
 wine uninstaller
 # for wine64

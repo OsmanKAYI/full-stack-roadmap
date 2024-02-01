@@ -1,6 +1,6 @@
 # HTML is Only This Much
 
-```HTML
+```html
 
 <!-- Document Structure -->
 - <!DOCTYPE>

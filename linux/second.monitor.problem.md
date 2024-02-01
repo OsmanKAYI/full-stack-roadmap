@@ -1,6 +1,6 @@
 # Install NVIDIA Drivers on Ubuntu 22.04
 
-```BASH
+```bash
 ubuntu-drivers devices              # to detect the model of nvidia graphic card
 sudo ubuntu-drivers autoinstall     # to autoinstall recommended drivers
 sudo apt install nvidia-driver-495  # to install specific version of nvidia drivers

@@ -8,7 +8,7 @@ Several of these sample commands assume that the [MySQL employee sample database
 
 # BASIC USAGE OF SQL
 
-````SQL
+````sql
 -- Comments start with two hyphens. End each command with a semicolon.
 
 -- SQL is not case-sensitive about keywords. The sample commands here
@@ -90,7 +90,7 @@ INSERT INTO tablename1 VALUES('Richard','Mutt');
 UPDATE tablename1 SET fname='John' WHERE lname='Mutt';
 
 -- an example which updates all the vat either with 20 or 10 according to its initial value
-```SQL
+```sql
 UPDATE products
 SET vat = CASE
     WHEN vat = 18 THEN 20

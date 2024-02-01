@@ -2,7 +2,7 @@
 
 The find command is used in Linux and Unix-based operating systems to search for files and directories. The `-name` option is particularly used to search for files based on specific criteria, specifically, to search for file names matching a certain pattern. For instance, to find files containing the words "log" or "archive" in their names, you can use a command like this:
 
-```BASH
+```bash
 find /path/to/search -type f \( -name "*log*" -o -name "*archive*" \)
 ```
 

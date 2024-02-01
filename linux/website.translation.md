@@ -16,7 +16,7 @@ Processes will be explained with details in the following.
 
 ## Download Website
 
-```BASH
+```bash
 wget -A html --random-wait --convert-links --adjust-extension --page-requisites --no-clobber --no-parent --no-check-certificate --level 1 -U "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0a2) Gecko/20110613 Firefox/6.0a2" -r https://www.website.com/
 
 # or simply
@@ -25,7 +25,7 @@ wget -mkEpnp --level 1 --no-check-certificate -r https://www.website.com/
 
 ## Copy Files to DirectAdmin (Client Server)
 
-```BASH
+```bash
 cd /path/of/downloaded/files/
 scp -r ./* $username@$ip:/home/$username/domains/$domainname/public_html/
 ```
@@ -47,15 +47,42 @@ scp -r ./* $username@$ip:/home/$username/domains/$domainname/public_html/
 
 **Sample html content to add flags and dropdown which will be added to index.html for Türkçe, English, and Hindi should be:**
 
-```HTML
+```html
 <!-- GTranslate: https://gtranslate.io/ -->
-<a href="#" onclick="doGTranslate('en|en');return false;" title="English" class="gflag nturl"
-  style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16"
-    alt="English" /></a><a href="#" onclick="doGTranslate('en|hi');return false;" title="Hindi" class="gflag nturl"
-  style="background-position:-500px -100px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16"
-    alt="Hindi" /></a><a href="#" onclick="doGTranslate('en|tr');return false;" title="Turkish" class="gflag nturl"
-  style="background-position:-100px -500px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16"
-    alt="Turkish" /></a>
+<a
+  href="#"
+  onclick="doGTranslate('en|en');return false;"
+  title="English"
+  class="gflag nturl"
+  style="background-position:-0px -0px;"
+  ><img
+    src="//gtranslate.net/flags/blank.png"
+    height="16"
+    width="16"
+    alt="English" /></a
+><a
+  href="#"
+  onclick="doGTranslate('en|hi');return false;"
+  title="Hindi"
+  class="gflag nturl"
+  style="background-position:-500px -100px;"
+  ><img
+    src="//gtranslate.net/flags/blank.png"
+    height="16"
+    width="16"
+    alt="Hindi" /></a
+><a
+  href="#"
+  onclick="doGTranslate('en|tr');return false;"
+  title="Turkish"
+  class="gflag nturl"
+  style="background-position:-100px -500px;"
+  ><img
+    src="//gtranslate.net/flags/blank.png"
+    height="16"
+    width="16"
+    alt="Turkish"
+/></a>
 
 <style type="text/css">
   <!--
@@ -86,8 +113,28 @@ scp -r ./* $username@$ip:/home/$username/domains/$domainname/public_html/
 
 <script type="text/javascript">
   /* <![CDATA[ */
-  function doGTranslate(lang_pair) { if (lang_pair.value) lang_pair = lang_pair.value; if (lang_pair == '') return; var lang = lang_pair.split('|')[1]; var plang = location.hostname.split('.')[0]; if (plang.length != 2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw') plang = 'en'; location.href = location.protocol + '//' + (lang == 'en' ? '' : lang + '.') + location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '') + location.pathname + location.search; }
-/* ]]> */
+  function doGTranslate(lang_pair) {
+    if (lang_pair.value) lang_pair = lang_pair.value;
+    if (lang_pair == "") return;
+    var lang = lang_pair.split("|")[1];
+    var plang = location.hostname.split(".")[0];
+    if (
+      plang.length != 2 &&
+      plang.toLowerCase() != "zh-cn" &&
+      plang.toLowerCase() != "zh-tw"
+    )
+      plang = "en";
+    location.href =
+      location.protocol +
+      "//" +
+      (lang == "en" ? "" : lang + ".") +
+      location.hostname
+        .replace("www.", "")
+        .replace(RegExp("^" + plang + "\\."), "") +
+      location.pathname +
+      location.search;
+  }
+  /* ]]> */
 </script>
 ```
 
@@ -95,7 +142,7 @@ scp -r ./* $username@$ip:/home/$username/domains/$domainname/public_html/
 
 - To enable URL translation feature for your website you need to add the following code into the head tag of your pages and make sure it is on top of other tags inside head tag.
 
-```HTML
+```html
 <meta name="uri-translation" content="on" />
 ```
 
@@ -104,7 +151,7 @@ scp -r ./* $username@$ip:/home/$username/domains/$domainname/public_html/
 - In order to edit the translations you need to go to the language you want to edit and then add **?language_edit=1** to the URL. If you already have **?** in the URL you need to add **&language_edit=1** to the URL.
 - For example to edit a text on home page in Türkçe language you need to go to **http://tr.$domainname.com/?language_edit=1** which will open the edit interface.
 
-```HTML
+```html
 <meta name="uri-translation" content="on" />
 ```
 
@@ -112,7 +159,7 @@ For more information, visit the [GTranslate's Documentation](https://gtranslate.
 
 ## Translate with LibreTranslate (Free But Poor Results)
 
-```BASH
+```bash
 sudo apt install python3-pip -y
 pip install libretranslate
 reboot
@@ -122,7 +169,7 @@ libretranslate --host $IP --port 5000
 # at the end, you will be able to connect from your local computer in browser with "$IP:5000"
 ```
 
-```BASH
+```bash
 # check the connection on client server
 telnet $IP $port
 # if the result is 'connected' then there is no problem

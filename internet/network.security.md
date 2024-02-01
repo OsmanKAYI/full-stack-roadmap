@@ -24,7 +24,7 @@ Here are the steps to use Wireshark:
 
 - **Download and Install Wireshark**: Download Wireshark from the official website and choose the version that matches your operating system. Once the download is complete, follow the installation wizard to install Wireshark on your computer. On Ubuntu, you can install it with the following code.
 
-```BASH
+```bash
 sudo apt install wireshark
 # click on "YES" in the opening window
 ```

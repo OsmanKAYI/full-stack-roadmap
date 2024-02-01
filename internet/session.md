@@ -75,7 +75,7 @@ Session information is typically stored on the server side, and several methods 
 
 **Example:** In PHP, you can configure session using the session_save_path function or session_set_save_handler functions.
 
-```PHP
+```php
 // Configuring session using the file system on the server side
 session_save_path("/path/to/session/directory");
 session_start();

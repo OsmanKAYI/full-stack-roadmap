@@ -8,7 +8,7 @@ You can decrease the size of an pdf file with using `gs` command. It has lots of
 
 Compression's results of 17.7 MB pdf file are as follows
 
-```BASH
+```bash
 # -dPDFSETTINGS=/default: selects output intended to be useful across a wide variety of uses, possibly at the expense of a larger output file
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.default.pdf input.pdf
 # 17.9 MB

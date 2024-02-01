@@ -2,7 +2,7 @@
 
 ## MySQL FOREIGN KEY syntax
 
-```SQL
+```sql
 [CONSTRAINT constraint_name]
 FOREIGN KEY [foreign_key_name] (column_name, ...)
 REFERENCES parent_table(colunm_name,...)
@@ -40,7 +40,7 @@ If you don’t specify the `ON DELETE` and `ON UPDATE` clause, the default actio
 
 ## Drop MySQL foreign key constraints
 
-```SQL
+```sql
 ALTER TABLE table_name
 DROP FOREIGN KEY constraint_name;
 ```
@@ -55,7 +55,7 @@ created or added the foreign key constraint to the table.
 
 To obtain the generated constraint name of a table, you use the SHOW CREATE TABLE statement:
 
-```SQL
+```sql
 SHOW CREATE TABLE table_name;
 ```
 
@@ -66,13 +66,13 @@ proper order i.e., you have to load data into parent tables first and then child
 
 To disable foreign key checks, you use the following statement:
 
-```SQL
+```sql
 SET foreign_key_checks = 0;
 ```
 
 And you can enable it by using the following statement:
 
-```SQL
+```sql
 SET foreign_key_checks = 1;
 ```
 

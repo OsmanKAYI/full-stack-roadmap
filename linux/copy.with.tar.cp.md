@@ -2,7 +2,7 @@
 
 ## Copy Files with tar
 
-```BASH
+```bash
 # Create a target folder
 mkdir [/target/path/]
 
@@ -20,7 +20,7 @@ tar cf - . | tar xvf - -C [/target/path/]
 
 ## Copy Files with cp
 
-```BASH
+```bash
 cp -unvr [/source/path/] [/target/path/]
 # u: copy only when the SOURCE file is newer than the destination file or when the destination file is missing
 # n: do not overwrite an existing file
@@ -32,7 +32,7 @@ cp -unvr [/source/path/] [/target/path/]
 
 - This way is ideal for too many files with small sizes.
 
-```BASH
+```bash
 # WARNING: Requires netcat (or ncat) on both servers
 # DİKKAT: Her iki bilgisayarda da netcat (veya ncat) kurulu olmalıdır
 

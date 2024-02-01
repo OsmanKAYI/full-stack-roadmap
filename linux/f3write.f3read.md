@@ -4,7 +4,7 @@ It tests real flash memory capacity.
 
 ## Synopsis
 
-```BASH
+```bash
 f3write [--start-at=NUM] <PATH>
 f3read [--start-at=NUM] <PATH>
 ```
@@ -19,14 +19,14 @@ f3read [--start-at=NUM] <PATH>
 
 ## Options
 
-```BASH
+```bash
 --start-at=NUM
 # initial number to files names. Default value is 1.
 ```
 
 ## Example
 
-```BASH
+```bash
 # to write over a flash drive mounted at /media/TEST:
 f3write /media/TEST
 

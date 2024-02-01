@@ -7,7 +7,7 @@
 
 ## On Server Side
 
-```BASH
+```bash
 curl http://icanhazip.com
 ncat -l -p 4444 -e /bin/bash
 ```

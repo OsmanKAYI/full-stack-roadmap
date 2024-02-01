@@ -14,7 +14,7 @@ A paragraph always starts on a new line, and browsers automatically add some whi
 
 ### Example
 
-```HTML
+```html
 <p>This is a paragraph.</p>
 <p>This is another paragraph.</p>
 ```
@@ -33,21 +33,15 @@ The browser will automatically remove any extra spaces and lines when the page i
 
 ### Example
 
-```HTML
+```html
 <p>
-This paragraph
-contains a lot of lines
-in the source code,
-but the browser
-ignores it.
+  This paragraph contains a lot of lines in the source code, but the browser
+  ignores it.
 </p>
 
 <p>
-This paragraph
-contains a lot of spaces
-in the source code,
-but the browser
-ignores it.
+  This paragraph contains a lot of spaces in the source code, but the browser
+  ignores it.
 </p>
 ```
 
@@ -63,13 +57,13 @@ The `<hr>` element is used to separate content (or define a change) in an HTML p
 
 ### Example
 
-```HTML
+```html
 <h1>This is heading 1</h1>
 <p>This is some text.</p>
-<hr>
+<hr />
 <h2>This is heading 2</h2>
 <p>This is some other text.</p>
-<hr>
+<hr />
 ```
 
 The `<hr>` tag is an empty tag, which means that it has no end tag.
@@ -84,8 +78,8 @@ Use `<br>` if you want a line break (a new line) without starting a new paragrap
 
 ### Example
 
-```HTML
-<p>This is<br>a paragraph<br>with line breaks.</p>
+```html
+<p>This is<br />a paragraph<br />with line breaks.</p>
 ```
 
 The `<br>` tag is an empty tag, which means that it has no end tag.
@@ -98,15 +92,10 @@ This poem will display on a single line:
 
 ### Example
 
-```HTML
+```html
 <p>
-My Bonnie lies over the ocean.
-
-My Bonnie lies over the sea.
-
-My Bonnie lies over the ocean.
-
-Oh, bring back my Bonnie to me.
+  My Bonnie lies over the ocean. My Bonnie lies over the sea. My Bonnie lies
+  over the ocean. Oh, bring back my Bonnie to me.
 </p>
 ```
 
@@ -120,7 +109,7 @@ The text inside a `<pre>` element is displayed in a fixed-width font (usually Co
 
 ### Example
 
-```HTML
+```html
 <pre>
 My Bonnie lies over the ocean.
 

@@ -55,7 +55,7 @@ After completing these steps, you will have created a single logical unit consis
 
 #### Commands Required for This Process:
 
-```BASH
+```bash
 sudo fdisk -l # Identifying disks
 sudo pvcreate /dev/sda /dev/sdb /dev/sdc   # Creating physical units
 sudo vgcreate myvg /dev/sda /dev/sdb /dev/sdc    # Combining physical units

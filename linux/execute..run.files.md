@@ -1,6 +1,6 @@
 # How To Execute .run Files on Ubuntu
 
-```BASH
+```bash
 # dive into file's folder
 cd ~/path/to/file
 

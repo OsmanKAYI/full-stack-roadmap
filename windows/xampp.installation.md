@@ -8,7 +8,7 @@
 
 ### Appended to the End of `php.ini` File
 
-```PHP
+```php
 display_startup_errors = On
 display_errors         = On
 upload_max_filesize    = 128M
@@ -35,7 +35,7 @@ mbstring.internal_encoding = UTF-8
 
 ### Change Password of User `root` in MySQL
 
-```SQL
+```sql
 mysql -u root -p
   SET PASSWORD FOR 'root'@'localhost' = PASSWORD("root");
   exit;
@@ -43,7 +43,7 @@ mysql -u root -p
 
 ### Add New User in MySQL
 
-```SQL
+```sql
 CREATE USER 'dbadmin'@'localhost' IDENTIFIED BY 'dbadmin';
 GRANT ALL PRIVILEGES ON *.* TO 'dbadmin'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;

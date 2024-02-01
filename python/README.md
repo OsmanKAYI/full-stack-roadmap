@@ -6,7 +6,7 @@ Python is a versatile and powerful programming language known for its simplicity
 
 To get started with Python, you can follow these steps:
 
-```BASH
+```bash
 sudo apt install python3
 ```
 

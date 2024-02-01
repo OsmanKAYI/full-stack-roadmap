@@ -4,7 +4,7 @@ The **null coalescing operator (??)** is a shorthand operator in many programmin
 
 The **null coalescing assignment operator (??=)** is a shorthand syntax in programming languages that allows you to assign a default value to a variable only if the variable is currently null or undefined. It's a combination of the nullish coalescing operator (??) and the assignment operator (=).
 
-```PHP
+```php
 //// Usage of the ?? operator instead of isset()
 
 $var = $_GET['var'] ??= 2023; // CASE 1

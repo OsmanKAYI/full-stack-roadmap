@@ -2,7 +2,7 @@
 
 A RAM disk is a representation of a hard disk using RAM resources, and it can take the form of a hardware device or a virtual disk. In software, it is basically a block of memory that is being treated as if it were a hard disk drive through the use of dedicated software, which takes a block from the RAM pool and uses it as a dedicated storage area as if it were a hard drive, but with exceedingly faster performance compared to a hard disk.
 
-```BASH
+```bash
 # Create a folder which RamDisk will be mounted
 sudo mkdir -p /media/ramdiskk
 
@@ -30,7 +30,7 @@ dd if=/dev/urandom bs=1M count=1500 | split -a 4 -b 1m - file
 
 ## Unmount and Remove RAM Disk
 
-```BASH
+```bash
 # Unmount RamDisk from the system
 sudo umount /mnt/ramdiskk
 

@@ -1,6 +1,6 @@
 # Changing Disk Permissions in Linux
 
-```BASH
+```bash
 lsblk
 sudo mount -o remount,rwx <mountpoint>
 ```

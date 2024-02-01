@@ -2,7 +2,7 @@
 
 The name, email, and website fields are text input elements, and the comment field is a textarea. The HTML code looks like this:
 
-```PHP
+```php
 Name: <input type="text" name="name">
 E-mail: <input type="text" name="email">
 Website: <input type="text" name="website">
@@ -13,7 +13,7 @@ Comment: <textarea name="comment" rows="5" cols="40"></textarea>
 
 The gender fields are radio buttons and the HTML code looks like this:
 
-```PHP
+```php
 Gender:
 <input type="radio" name="gender" value="female">Female
 <input type="radio" name="gender" value="male">Male
@@ -24,7 +24,7 @@ Gender:
 
 The HTML code of the form looks like this:
 
-```PHP
+```php
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 ```
 
@@ -46,13 +46,15 @@ The htmlspecialchars() function converts special characters to HTML entities. Th
 
 - When we use the htmlspecialchars() function; then if a user tries to submit the following in a text field:
 
-```HTML
-<script>location.href('http://www.hacked.com')</script>
+```html
+<script>
+  location.href("http://www.hacked.com");
+</script>
 ```
 
 - this would not be executed, because it would be saved as HTML escaped code, like this:
 
-```HTML
+```html
 &lt;script&gt;location.href('http://www.hacked.com')&lt;/script&gt;
 ```
 
@@ -71,7 +73,7 @@ The htmlspecialchars() function converts special characters to HTML entities. Th
 
 ### Example
 
-```PHP
+```php
 <?php
 // define variables and set to empty values
 $name = $email = $gender = $comment = $website = "";

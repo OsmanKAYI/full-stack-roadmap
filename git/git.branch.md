@@ -4,7 +4,7 @@
 
 - Common options in git branch are as follows
 
-```BASH
+```bash
 # list all of the branches in your repository. This is synonymous with "git branch --list"
 git branch
 
@@ -34,7 +34,7 @@ git checkout $branchName
 
 - How to merge the changes done to the main
 
-```BASH
+```bash
 # start a new $branchName
 git checkout -b $branchName main
 

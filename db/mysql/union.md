@@ -9,7 +9,7 @@ Unions combine the results from multiple SELECT queries into a consolidated resu
 
 Let’s now create a UNION query to combines both tables using DISTINCT
 
-```SQL
+```sql
 SELECT column1, column2 FROM `table1`
 UNION DISTINCT
 SELECT  column1,column2  FROM `table2`;
@@ -21,7 +21,7 @@ SELECT  column1,column2  FROM `table2`;
 
 Let’s now create a UNION query to combines both tables using ALL
 
-```SQL
+```sql
 SELECT `column1`,` column2` FROM `table1`
 UNION ALL
 SELECT ` column1`,` column2`  FROM `table2`;

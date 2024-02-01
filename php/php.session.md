@@ -10,27 +10,27 @@ Here's a basic example of how to use PHP sessions:
 
 1. Start a session using the `session_start()` function at the beginning of your PHP script.
 
-```PHP
+```php
 session_start();
 ```
 
 2. Store data in the session by assigning values to `$_SESSION` array keys.
 
-```PHP
+```php
 $_SESSION['username'] = 'osmankayi';
 $_SESSION['cart'] = ['item1', 'item2', 'item3'];
 ```
 
 3. Retrieve session data on subsequent pages by accessing the `$_SESSION` array.
 
-```PHP
+```php
 echo $_SESSION['username'];  // Output: osmankayi
 print_r($_SESSION['cart']);  // Output: Array ( [0] => item1 [1] => item2 [2] => item3 )
 ```
 
 4. Destroy the session and clear session data using `session_destroy()` when the user logs out or the session is no longer needed.
 
-```PHP
+```php
 session_destroy();
 ```
 

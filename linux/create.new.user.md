@@ -6,7 +6,7 @@ To change the username on Ubuntu, you'll need to create a new user with the desi
 
 - Open a terminal and run the following command to create a new user. Replace "newusername" with the desired username.
 
-```BASH
+```bash
 sudo adduser newusername
 ```
 
@@ -16,7 +16,7 @@ sudo adduser newusername
 
 - If you want the new user to have administrative privileges (sudo access), add them to the sudo group.
 
-```BASH
+```bash
 sudo usermod -aG sudo newusername
 ```
 
@@ -32,7 +32,7 @@ sudo usermod -aG sudo newusername
 
 - If you also want to change the home directory name, you can do so, but be cautious and make sure you update any references to the old home directory.
 
-```BASH
+```bash
 sudo usermod -d /home/newusername -m newusername
 ```
 
@@ -40,7 +40,7 @@ sudo usermod -d /home/newusername -m newusername
 
 - Verify that the new user has the appropriate permissions and ownership for their home directory.
 
-```BASH
+```bash
 sudo chown -R newusername:newusername /home/newusername
 ```
 
@@ -48,13 +48,13 @@ sudo chown -R newusername:newusername /home/newusername
 
 - Before deleting the old user, make sure to back up any important data associated with that user. If you're sure, you can delete the old user.
 
-```BASH
+```bash
 sudo deluser oldusername
 ```
 
 This command removes the user but leaves the home directory untouched. If you want to remove the home directory as well, use:
 
-```BASH
+```bash
 sudo deluser --remove-home oldusername
 ```
 

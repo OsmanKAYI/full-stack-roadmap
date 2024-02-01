@@ -28,7 +28,7 @@ HTML headings are defined with the `<h1>` to `<h6>` tags.
 
 ### Example
 
-```HTML
+```html
 <h1>This is heading 1</h1>
 <h2>This is heading 2</h2>
 <h3>This is heading 3</h3>
@@ -40,7 +40,7 @@ HTML paragraphs are defined with the `<p>` tag:
 
 ### Example
 
-```HTML
+```html
 <p>This is a paragraph.</p>
 <p>This is another paragraph.</p>
 ```
@@ -51,7 +51,7 @@ HTML links are defined with the `<a>` tag:
 
 ### Example
 
-```HTML
+```html
 <a href="https://www.w3schools.com">This is a link</a>
 ```
 
@@ -67,6 +67,6 @@ The source file (`src`), alternative text (`alt`), `width`, and `height` are pro
 
 ### Example
 
-```HTML
-<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+```html
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142" />
 ```

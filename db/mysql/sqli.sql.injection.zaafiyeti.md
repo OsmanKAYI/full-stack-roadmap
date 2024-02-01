@@ -27,7 +27,7 @@ Parametreli sorgular, WHERE, INSERT, UPDATE ifadesindeki değerler de dahil olma
 
 SQLi Açığı İçeren Kod:
 
-```PHP
+```php
 $insert = mysql_query("INSERT INTO uyeler SET
 uye_kadi  = 'Kemal',
 uye_sifre = '123456',
@@ -40,7 +40,7 @@ if ( $insert ){
 
 SQLi İçermeyen GÜVENLİ Kod:
 
-```PHP
+```php
 $query = $db->prepare("INSERT INTO uyeler SET
 uye_kadi = ?,
 uye_sifre = ?,

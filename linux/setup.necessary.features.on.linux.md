@@ -4,13 +4,13 @@
 
 - Below commands are used to make the system up to date. Both commands should be run before installing any app.
 
-```BASH
+```bash
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap refresh
 ```
 
 ## Set System Time
 
-```BASH
+```bash
 # to set timezone as Istanbul
 sudo timedatectl set-timezone Europe/Istanbul
 # to choose timezone manually: sudo dpkg-reconfigure tzdata
@@ -30,19 +30,19 @@ timedatectl status
 
 ## Set Keyboard Setting for Türkçe
 
-```BASH
+```bash
 setxkbmap tr
 ```
 
 ## Check Drivers
 
-```BASH
+```bash
 sudo ubuntu-drivers autoinstall
 ```
 
 ## Desktop Configurations
 
-```BASH
+```bash
 # to set the position of the dock to the left
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
 
@@ -59,7 +59,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windo
 
 - Guake is a dropdown terminal made for the GNOME desktop environment.
 
-```BASH
+```bash
 sudo apt-get install guake -y
 ```
 
@@ -90,7 +90,7 @@ sudo apt-get install guake -y
 - **hashcat** is a password recovery tool. It had a proprietary code base until 2015, but was then released as open source software.
 - **pv** shows the progress of data through a pipeline by giving information such as time elapsed, percentage completed (with progress bar), current throughput rate, total data transferred, and ETA.
 
-```BASH
+```bash
 sudo apt install vim ranger bat pdftk meld xclip axel gnome-tweaks net-tools hardinfo gpustat nvtop testdisk unrar caffeine magic-wormhole hashcat pv -y
 ```
 
@@ -104,7 +104,7 @@ sudo apt install vim ranger bat pdftk meld xclip axel gnome-tweaks net-tools har
 
 - **TLDR** is an internet slang for a summary of a long text. Its name comes from the acronym (or initialism) TL;DR, which stands for too long; didn't read. In the same spirit, the tldr command-line tool summarizes a lengthy man page and consists mainly of examples.
 
-```BASH
+```bash
 sudo apt install tldr -y
 tldr -u
 ```
@@ -115,7 +115,7 @@ tldr -u
 
 - Midnight Commander, a terminal based file manager.Navigate the directory structure using the arrow keys, the mouse or by typing the commands into the terminal.
 
-```BASH
+```bash
 sudo apt install mc -y
 ```
 
@@ -123,7 +123,7 @@ sudo apt install mc -y
 
 - It is a file previewer. To use it hit Space Bar on keyboard to quick preview selected file in a pop-up window. And, hit the Space Bar again will close it.
 
-```BASH
+```bash
 sudo apt install gnome-sushi -y
 ```
 
@@ -131,7 +131,7 @@ sudo apt install gnome-sushi -y
 
 - GNOME Screenshot is a desktop environment-agnostic utility for taking screenshots. When you bind any key to gnome-screenshot, you can use this key combination to take screenshot.
 
-```BASH
+```bash
 # Install required packages
 sudo apt install gnome-screenshot xclip -y
 
@@ -150,7 +150,7 @@ sudo chmod ugo+rwx /home/$USER/Pictures/*
 
 - GIMP is a free and open-source raster graphics editor used for image manipulation and image editing, free-form drawing, transcoding between different image file formats, and more specialized tasks.
 
-```BASH
+```bash
 sudo apt install gimp -y
 ```
 
@@ -160,7 +160,7 @@ sudo apt install gimp -y
 
 - Command-line web browser.
 
-```BASH
+```bash
 sudo apt install lynx -y
 ```
 
@@ -168,7 +168,7 @@ sudo apt install lynx -y
 
 - The TUXEDO Control Center (short: TCC) gives TUXEDO laptop users full control over their hardware like CPU cores, fan speed and more. To get more information about the project visit [TUXEDO Control Center Project](https://github.com/tuxedocomputers/tuxedo-control-center) on GitHub.
 
-```BASH
+```bash
 # add repositories in apt list (my case it is "jammy" but it may subject to change depending on your condition)
 echo -e "deb https://deb.tuxedocomputers.com/ubuntu jammy main" | sudo tee -a /etc/apt/sources.list.d/tuxedocomputers.list
 
@@ -187,7 +187,7 @@ sudo apt install tuxedo-control-center -y
 
 - Mozilla Firefox, or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. It uses the Gecko rendering engine to display web pages, which implements current and anticipated web standards.
 
-```BASH
+```bash
 ### Add Mozilla PPA
 sudo add-apt-repository -y ppa:mozillateam/ppa
 ### Create preferences file for apt
@@ -215,7 +215,7 @@ sudo apt install firefox -y
 
 - Chromium is a free and open-source web browser project, mainly developed and maintained by Google. This codebase provides the vast majority of code for the Google Chrome browser, which is proprietary software and has some additional features.
 
-```BASH
+```bash
 sudo apt install chromium-browser -y
 ```
 
@@ -223,7 +223,7 @@ sudo apt install chromium-browser -y
 
 Cockpit is an interactive server admin interface. It is easy to use and very lightweight.
 
-```BASH
+```bash
 . /etc/os-release
 sudo apt install -t ${VERSION_CODENAME}-backports cockpit
 ```
@@ -234,7 +234,7 @@ After that, type `localhost:9090` on your browser and login with your system's u
 
 - Visual Studio Code, also commonly referred to as VSCode, is a source-code editor made by Microsoft with the Electron Framework, for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.
 
-```BASH
+```bash
 sudo apt install software-properties-common apt-transport-https wget -y
 wget -O vscode.gpg https://packages.microsoft.com/keys/microsoft.asc
 sudo gpg --dearmor -o /usr/share/keyrings/vscode.gpg vscode.gpg
@@ -251,7 +251,7 @@ sudo apt install code -y
 
 - As one of the best Microsoft Office alternatives of 2021, WPS Office is fully compatible with main Linux distributions, including Ubuntu and Linux Mint. Download [WPS Office](https://www.wps.com/) for Linux. After downloading latest version, follow the steps below.
 
-```BASH
+```bash
 # dive into download directory (since it downloads to 'Downloads/' folder)
 cd Downloads/
 
@@ -264,7 +264,7 @@ sudo apt install ./wps-office_*_amd64.deb
 
 - Notion is a freemium productivity and note-taking web application developed by Notion Labs Inc. It offers organizational tools including task management, project tracking, to-do lists, bookmarking, and more.
 
-```BASH
+```bash
 echo "deb [trusted=yes] https://apt.fury.io/notion-repackaged/ /" | sudo tee /etc/apt/sources.list.d/notion-repackaged.list
 sudo apt update
 sudo apt install notion-app
@@ -274,7 +274,7 @@ sudo apt install notion-app
 
 - Git is a distributed version control system developed by Linus Torvalds, the creator of the Linux Kernel.
 
-```BASH
+```bash
 sudo apt-get install git -y
 git config --global user.email "osmankayi06@gmail.com"
 git config --global user.name "OsmanKAYI"
@@ -282,7 +282,7 @@ git config --global user.name "OsmanKAYI"
 
 #### GitHub Configurations
 
-```BASH
+```bash
 cd ~/.ssh
 ssh-keygen -o -t rsa -C "osmankayi06@gmail.com"
 # Public name will be saved as osmankayi instead of id_rsa
@@ -303,7 +303,7 @@ ssh-add ~/.ssh/osmankayi
 
 - Apache is the most commonly used Web server on Linux systems. Web servers are used to serve Web pages requested by client computers.
 
-```BASH
+```bash
 sudo apt install apache2 apache2-utils -y
 sudo rm -f /var/www/html/index.html
 sudo systemctl enable apache2
@@ -312,7 +312,7 @@ sudo service apache2 restart
 
 #### Apache Configurations
 
-```BASH
+```bash
 sudo adduser $USER www-data
 sudo chown -R $USER:www-data /var/www/html/
 ```
@@ -321,7 +321,7 @@ sudo chown -R $USER:www-data /var/www/html/
 
 - PHP is a general-purpose scripting language geared toward web development.
 
-```BASH
+```bash
 sudo apt install php -y
 sudo service apache2 restart
 ```
@@ -334,7 +334,7 @@ sudo service apache2 restart
 
 - Xdebug is a PHP extension which provides debugging and profiling capabilities. It uses the DBGp debugging protocol.
 
-```BASH
+```bash
 sudo find /usr/ -name xdebug.so
 sudo apt-get purge php7.4-xdebug
 sudo apt-get install php7.4-xdebug
@@ -351,7 +351,7 @@ xdebug.start_with_request=yes
 
 ##### Restart Apache Service
 
-```BASH
+```bash
 sudo systemctl restart apache2
 ```
 
@@ -363,7 +363,7 @@ sudo systemctl restart apache2
 
 - Composer is a dependency manager made for the PHP programming language. It allows users to easily manage and integrate external dependencies and libraries for PHP software development.
 
-```BASH
+```bash
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 php composer-setup.php
@@ -375,7 +375,7 @@ sudo mv composer.phar /usr/local/bin/composer
 
 ##### How To Watch Errors Real-time
 
-```BASH
+```bash
 sudo tail -f /var/log/apache2/error.log
 ```
 
@@ -383,7 +383,7 @@ sudo tail -f /var/log/apache2/error.log
 
 - MariaDB is a community-developed, commercially supported fork of the MySQL relational database management system, intended to remain free and open-source software under the GNU General Public License.
 
-```BASH
+```bash
 sudo apt install mariadb-server mariadb-client -y
 sudo systemctl enable mariadb
 sudo service mariadb restart
@@ -394,7 +394,7 @@ mysql --user="root" --password="" --execute="use mysql; SET PASSWORD FOR 'root'@
 
 #### MariaDB Password Reset (if you forgot your password)
 
-```BASH
+```bash
 sudo service mariadb vstop
 sudo mysqld_safe --skip-grant-tables --skip-networking --skip-networking &
 mysql -u root
@@ -410,7 +410,7 @@ sudo service mariadb start
 
 - Redis is an in-memory data structure store, used as a distributed, in-memory key–value database, cache and message broker, with optional durability.
 
-```BASH
+```bash
 sudo apt install redis-server php-redis -y
 systemctl enable redis-server
 systemctl start redis-server
@@ -418,7 +418,7 @@ systemctl start redis-server
 
 #### Start Redis With Password
 
-```BASH
+```bash
 sudo vim /etc/redis/redis.conf
 ```
 
@@ -426,7 +426,7 @@ sudo vim /etc/redis/redis.conf
 
 #### Change Redis Password
 
-```BASH
+```bash
 redis-cli
 #if exists
 AUTH oldpassword
@@ -438,7 +438,7 @@ CONFIG REWRITE
 
 - Almost every change needs a restart to be activated.
 
-```BASH
+```bash
 sudo service apache2 restart
 sudo service mariadb restart
 sudo systemctl enable mariadb
@@ -449,7 +449,7 @@ sudo systemctl enable apache2
 
 - The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.
 
-```BASH
+```bash
 sudo adduser $USER www-data
 sudo chown -R $USER:www-data /var/www/html/
 cd ~/Desktop
@@ -461,7 +461,7 @@ sudo rm -f /var/www/html/index.html
 
 - Adminer is a tool for managing content in databases. It natively supports MySQL, MariaDB, PostgreSQL, SQLite, MS SQL, Oracle, Elasticsearch and MongoDB. Adminer is distributed under Apache license in a form of a single PHP file.
 
-```BASH
+```bash
 cd /var/www/html
 mkdir adminer
 cd adminer
@@ -472,12 +472,12 @@ wget -O index.php https://www.adminer.org/latest.php
 
 - [Vue.js](https://vuejs.org/) is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You.
 
-```BASH
+```bash
 # choose a $projectname, after that, choose `No` unless you know what you are doing
 npm init vue@latest
 ```
 
-```BASH
+```bash
 cd $projectname
 
 # project setup
@@ -489,14 +489,14 @@ npm run dev
 
 - When the project is ready to publish, run the following to have the last product.
 
-```BASH
+```bash
 # compile and minify for production
 npm run build
 ```
 
 **NOTE:** If you face with some problems in `npm init vue@latest`, which is generally because of node version installed in machine, run the following.
 
-```BASH
+```bash
 sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
@@ -510,7 +510,7 @@ sudo n stable
 
 - Checkout the latest version from [download page](https://repo.anaconda.com/archive/) and run the following command.
 
-  ```BASH
+  ```bash
   curl --output anaconda.sh https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
   bash anaconda.sh
   ```
@@ -520,7 +520,7 @@ sudo n stable
 - Verify the directory location for Anaconda installation. Just hit <kbd>ENTER</kbd> to continue installer to that directory.
 - Type “yes” to initialize the Anaconda installer on your system.
 
-  ```BASH
+  ```bash
   # activate the installation
   source ~/.bashrc
 
@@ -537,7 +537,7 @@ sudo n stable
 
 - Project Jupyter is a project to develop open-source software, open standards, and services for interactive computing across multiple programming languages.
 
-```BASH
+```bash
 jupyter notebook # to start jupyter notebook while you are in the conda terminal
 ```
 
@@ -545,14 +545,14 @@ jupyter notebook # to start jupyter notebook while you are in the conda terminal
 
 - If you want to export notebook to PDF in VSCode, below packages should be installed.
 
-```BASH
+```bash
 sudo apt install texlive-xetex texlive-fonts-recommended texlive-plain-generic # install texlive packages
 sudo apt install pandoc # install pandoc package
 ```
 
 #### Completely Remove Anaconda
 
-```BASH
+```bash
 rm -rf ~/anaconda3 ~/.conda
 
 # to edit the ~/.bashrc file
@@ -566,7 +566,7 @@ vim ~/.bashrc
 
 - GPT4All is an open-source software ecosystem that allows anyone to train and deploy powerful and customized large language models (LLMs) on everyday hardware. Nomic AI oversees contributions to the open-source ecosystem ensuring quality, security and maintainability.
 
-```BASH
+```bash
 cd ~/source/
 mkdir gpt4all/
 cd gpt4all/
@@ -583,7 +583,7 @@ chmod +x gpt4all-installer-linux.run
 
 - To execute the program,
 
-```BASH
+```bash
 cd ~/gpt4all/bin
 # run the file called "chat"
 ```
@@ -594,7 +594,7 @@ cd ~/gpt4all/bin
 
 - gphotos-sync is a command line python application that uses the Google Photos API.
 
-```BASH
+```bash
 apt install python3-pip
 # install gphotos-sync wih pip:
 python3 -m pip install gphotos-sync
@@ -610,7 +610,7 @@ source ~/.bashrc
 
 - OpenSSH is a suite of secure networking utilities based on the Secure Shell protocol, which provides a secure channel over an unsecured network in a client–server architecture.
 
-```BASH
+```bash
 sudo apt-get install openssh-server -y
 sudo systemctl enable ssh
 sudo systemctl start ssh
@@ -618,19 +618,19 @@ sudo systemctl start ssh
 
 #### Copy SSH Public Key To Remote Server
 
-```BASH
+```bash
 ssh-copy-id -i ~/.ssh/id_rsa user@server
 ```
 
 #### How To Copy Files Within SSH Servers
 
-```BASH
+```bash
 scp -r user@server:/file/to/path ./local/path/to/copy
 ```
 
 #### Securely Stop SSH Server
 
-```BASH
+```bash
 sudo service sshd stop
 sudo systemctl disable sshd
 ```
@@ -639,7 +639,7 @@ sudo systemctl disable sshd
 
 - Postman is an API Platform for developers to design, build, test and iterate their APIs.
 
-```BASH
+```bash
 # download postman app on ubuntu
 wget https://dl.pstmn.io/download/latest/linux64
 
@@ -666,7 +666,7 @@ StartupNotify=true" | sudo tee /usr/share/applications/Postman.desktop
 
 #### Completely Remove Postman
 
-```BASH
+```bash
 sudo rm -r /usr/bin/Postman
 sudo rm -r /usr/share/applications/Postman.desktop
 sudo rm -r ~/Desktop/Postman.desktop
@@ -680,7 +680,7 @@ sudo rm -r ~/Desktop/Postman.desktop
 
 - Visit [https://www.soapui.org/downloads/soapui/](SoapUI) and click on _Download SoapUI Open Source_.
 
-```BASH
+```bash
 cd Downloads/
 bash SoapUI-*
 ```
@@ -691,7 +691,7 @@ bash SoapUI-*
 
 - AutoKey is a free, open-source scripting application for Linux. AutoKey allows the user to define hotkeys and trigger phrases which expand to predefined text, automating frequent or repetitive tasks such as correcting typographical errors or common spelling mistakes and inserting boiler plate sections of text.
 
-```BASH
+```bash
 sudo apt install autokey-gtk
 ```
 
@@ -699,7 +699,7 @@ sudo apt install autokey-gtk
 
 - Knime is an open-source analytics platform that provides its users with the opportunity to learn as they build. The unique design pipeline that it offers lets the users better understand their own requirements which resultantly ensures a more logical solution coming to fruition.
 
-```BASH
+```bash
 # use "wget" to download the Knime tool
 wget https://download.knime.org/analytics-platform/linux/knime-latest-linux.gtk.x86_64.tar.gz
 
@@ -717,13 +717,13 @@ cd knime_*/
 
 - VirtualBox is a general purpose virtualiser that is available across Linux, Mac OS and Windows.
 
-```BASH
+```bash
 sudo apt install virtualbox -y
 ```
 
 ### VirtualBox Full-Screen Configurations
 
-```BASH
+```bash
 sudo apt update
 sudo apt install build-essential dkms linux-headers-$(uname -r) -y
 cd ~/media/$USER/VBox_GAs_6.1.381
@@ -735,7 +735,7 @@ reboot
 
 - VLC media player is a free and open-source, portable, cross-platform media player software and streaming media server developed by the VideoLAN project.
 
-```BASH
+```bash
 sudo apt install vlc -y
 ```
 
@@ -743,7 +743,7 @@ sudo apt install vlc -y
 
 - AnyDesk is a remote desktop application distributed by AnyDesk Software GmbH. The proprietary software program provides platform independent remote access to personal computers and other devices running the host application. It offers remote control, file transfer, and VPN functionality.
 
-```BASH
+```bash
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
 echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
 cd ~/Downloads/
@@ -752,7 +752,7 @@ sudo apt install anydesk -y
 
 **NOTE:** If the screen share is not working, use following commands.
 
-```BASH
+```bash
 echo $XDG_SESSION_TYPE
 sudo vi /etc/gdm3/custom.conf
 # uncomment this line   ===>    WaylandEnable=false
@@ -779,7 +779,7 @@ sudo vi /etc/gdm3/custom.conf
 
 - Telegram Messenger is a globally accessible freemium, cross-platform, encrypted, cloud-based and centralized instant messaging service. The application also provides optional end-to-end encrypted chats, popularly known as secret chat and video calling, VoIP, file sharing and several other features.
 
-```BASH
+```bash
 sudo apt install telegram-desktop
 ```
 
@@ -787,7 +787,7 @@ sudo apt install telegram-desktop
 
 - Steam is a video game digital distribution service and storefront from Valve. It was launched as a software client in September 2003 as a way for Valve to provide automatic updates for their games, and expanded to distributing third-party game publishers' titles in late 2005.
 
-```BASH
+```bash
 sudo add-apt-repository multiverse
 sudo apt install steam -y
 ```
@@ -796,7 +796,7 @@ sudo apt install steam -y
 
 - Sweet Home 3D is a free architectural design software that helps users create a 2D plan of a house, with a 3D preview, and decorate exterior and interior views, including ability to place furniture and home appliances. In Sweet Home 3D, furniture can be imported and arranged to create a virtual environment.
 
-```BASH
+```bash
 sudo apt install flatpak -y
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub com.sweethome3d.Sweethome3d -y

@@ -1,6 +1,6 @@
 # PHP-Apache Example
 
-```BASH
+```bash
 cd
 cd /var/www/html/
 mkdir docker
@@ -69,7 +69,7 @@ services:
 
 ## Docker Compose Up
 
-```PHP
+```php
 docker compose up -d
 ```
 
@@ -85,7 +85,7 @@ docker compose up -d
 
 To stop running docker images:
 
-```PHP
+```php
 docker compose down
 ```
 

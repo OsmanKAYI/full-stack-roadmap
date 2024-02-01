@@ -4,7 +4,7 @@
 
   - Screen resolutioon can be found as follows:
 
-  ```BASH
+  ```bash
   X=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1)
   Y=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f2)
   echo "$X" x "$Y"
@@ -24,7 +24,7 @@
 
 ## With System Sounds
 
-```BASH
+```bash
 ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :1.0+0,0 -f pulse -ac 2 -i 1 -c:v libx264 `date '+%Y.%m.%d-%H.%M.%S'`.mp4
 
 
@@ -33,7 +33,7 @@ ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :1.0+0,0 -f pulse -ac 2
 
 ## With Microphone
 
-```BASH
+```bash
 ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :1.0+0,0 -f pulse -ac 2 -i 2 `date '+%Y.%m.%d-%H.%M.%S'`.mp4
 ```
 
@@ -43,13 +43,13 @@ ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :1.0+0,0 -f pulse -ac 2
 
 ## With System Sounds
 
-```BASH
+```bash
 ffmpeg -f pulse -i alsa_output.pci-0000_00_1f.3.analog-stereo.monitor -ac 2 `date '+%Y.%m.%d-%H.%M.%S'`.m4a
 ```
 
 ## With Microphone
 
-```BASH
+```bash
 ffmpeg -f pulse -i alsa_input.pci-0000_00_1f.3.analog-stereo -ac 2 `date '+%Y.%m.%d-%H.%M.%S'`.m4a
 ```
 

@@ -21,18 +21,16 @@ HTML is the standard markup language for creating Web pages.
 
 ### Example
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
-</body>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+  </body>
 </html>
 ```
 
@@ -52,7 +50,7 @@ HTML is the standard markup language for creating Web pages.
 
 An HTML element is defined by a start tag, some content, and an end tag:
 
-```HTML
+```html
 <tagname>Content goes here...</tagname>
 
 The HTML **element** is everything from the start tag to the end tag:
@@ -61,29 +59,15 @@ The HTML **element** is everything from the start tag to the end tag:
 
 <p>My first paragraph.</p>
 
-Start tag
+Start tag Element content End tag
 
-Element content
+<h1>My First Heading</h1>
 
-End tag
+<p>My first paragraph.</p>
 
-<h1>
+<br />
 
-My First Heading
-
-</h1>
-
-<p>
-
-My first paragraph.
-
-</p>
-
-<br>
-
-_none_
-
-_none_
+_none_ _none_
 ```
 
 **Note:** Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!

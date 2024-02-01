@@ -10,7 +10,7 @@ A tool for removing silences from a video is the [python-video-silence-cutter](h
 
 ### Install Dependencies
 
-```BASH
+```bash
 sudo apt install python3 -y
 sudo apt install ffmpeg -y
 sudo apt install ffprobe -y
@@ -18,7 +18,7 @@ sudo apt install ffprobe -y
 
 ## Example Usage
 
-```BASH
+```bash
 # easiest command:
 python3 silence_cutter.py [your video]
 

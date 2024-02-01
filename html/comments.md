@@ -10,7 +10,7 @@ HTML comments are not displayed in the browser, but they can help document your 
 
 You can add comments to your HTML source by using the following syntax:
 
-```HTML
+```html
 <!-- Write your comments here -->
 ```
 
@@ -26,7 +26,7 @@ With comments you can place notifications and reminders in your HTML code:
 
 ### Example
 
-```HTML
+```html
 <!-- This is a comment -->
 
 <p>This is a paragraph.</p>
@@ -44,7 +44,7 @@ Which can be helpful if you hide content temporarily:
 
 ### Example
 
-```HTML
+```html
 <p>This is a paragraph.</p>
 
 <!-- <p>This is another paragraph </p> -->
@@ -58,7 +58,7 @@ You can also hide more than one line, everything between the `<!--` and the `-->
 
 Hide a section of HTML code:
 
-```HTML
+```html
 <p>This is a paragraph.</p>
 <!--
 <p>Look at this cool image:</p>
@@ -81,6 +81,10 @@ Comments can be used to hide parts in the middle of the HTML code.
 
 Hide a part of a paragaph:
 
-```HTML
-<p>This <!-- great text --> is a paragraph.</p>
+```html
+<p>
+  This
+  <!-- great text -->
+  is a paragraph.
+</p>
 ```

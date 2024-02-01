@@ -15,7 +15,7 @@
 
 # MySQL Sunucusuna Bağlanma
 
-```PHP
+```php
 ## Veritabanına bağlantı kuralım...
 ## Veritabanına bağlantı kuralım...
 $host     = "localhost";
@@ -29,7 +29,7 @@ $temp = mysqli_query($DB, "set names 'utf8'"); // Türkçe karakterlerle ilgili 
 
 # Fonksiyon Kullanimi
 
-```PHP
+```php
 function Temizle($DB, $val) {
   $val = mysqli_real_escape_string($DB, $val);
   return $val;
@@ -38,7 +38,7 @@ function Temizle($DB, $val) {
 
 # Kayıt Ekleme
 
-```PHP
+```php
 ## Veritabanına kayıt ekleme
 ## Veritabanına kayıt ekleme
 $val1 = "AAA";
@@ -63,7 +63,7 @@ echo "Yeni araç, tabloya $EklenenID kayıt numarası ile eklenmiştir.";
 
 # Kayıt Güncelleme
 
-```PHP
+```php
 ## Veritabanına kayıt güncelleme
 ## Veritabanına kayıt güncelleme
 $val1 = "AaAaAa";
@@ -86,7 +86,7 @@ $rows = mysqli_query($DB, $SQL);
 
 # Kayıt Silme
 
-```PHP
+```php
 ## Veritabanından kayıt silme
 $SQL = "DELETE FROM araclar WHERE id = 1";
 $rows = mysqli_query($DB, $SQL);
@@ -96,14 +96,14 @@ $rows = mysqli_query($DB, $SQL);
 
 150 nci kayıttan itibaren 20 kayıt getir.
 
-```PHP
+```php
 $SQL = "SELECT * FROM araclar LIMIT 20 OFFSET 150";
 $rows = mysqli_query($DB, $SQL);
 ```
 
 # Kayıt Listeleme - Örnek 1
 
-```PHP
+```php
 ## Veritabanından kayıt çekme ve listeleme örneği
 ## Veritabanından kayıt çekme ve listeleme örneği
 
@@ -125,7 +125,7 @@ if($RowCount == 0) { // Kayıt yok...
 
 # Kayıt Listeleme - Örnek 2
 
-```PHP
+```php
 ## Veritabanından kayıt çekme ve TABLE ile listeleme örneği
 ## Veritabanından kayıt çekme ve TABLE ile listeleme örneği
 
@@ -159,7 +159,7 @@ if($RowCount == 0) { // Kayıt yok...
 
 # Kayıt Listeleme - Örnek 3
 
-```PHP
+```php
 <?php
 $SQL = "SELECT marka, model, fiyat FROM araclar LIMIT 20";
 $rows = mysqli_query($DB, $SQL);
@@ -182,7 +182,7 @@ $rows = mysqli_query($DB, $SQL);
 
 # HTML SELECT İçini Veritabanından Doldurma
 
-```PHP
+```php
 <?php
 ## html select etiketi için tek sutun verinin çekilmesi
 
@@ -210,7 +210,7 @@ MODELİ : <select name='model_sec'> <?php echo $MODELLER; ?> </select>
 
 Kullanıcıdan gelen değerin özel bir işleme tabi tutulup güvenli hale getirilmemesi durumunda oluşan güvenlik açığına `SQL injection` adı verilir.
 
-```PHP
+```php
 // GET paramteresi olan gelen değeri alalım:
 $KullaniciID = $_GET["id"];
 
@@ -238,7 +238,7 @@ $KullaniciID = mysqli_real_escape_string($DB, $_GET['id']);
 
 ## Yöntem 1 TODO: Test Edilmeli!
 
-```PHP
+```php
 function GUVENLI_VERI($array, $DB) {
    foreach($array as $key=>$value) {
       if(is_array($value)) { GUVENLI_VERI($value); }
@@ -254,7 +254,7 @@ GUVENLI_VERI($_POST, $DB);
 
 ## Yöntem 2 TODO: Test Edilmeli!
 
-```PHP
+```php
 array_walk($_POST, function(&$string) use ($DB) {
   $string = mysqli_real_escape_string($DB, $string);
 });
@@ -264,7 +264,7 @@ TODO: POST verisi içinde dizi değişkenleri varsa durumunda nasıl davranıyor
 
 ## Yöntem 3 TODO: Test Edilmeli!
 
-```PHP
+```php
 $post = array_map('mysqli_real_escape_string', $_POST);
 $POST = $post;
 ```
@@ -273,7 +273,7 @@ TODO: POST verisi içinde dizi değişkenleri varsa durumunda nasıl davranıyor
 
 ## Yöntem 4 TODO: Test Edilmeli!
 
-```PHP
+```php
 foreach($_POST as $k => $v) {
     $_POST[$k] = mysqli_real_escape_string($DB, $v);
 }
@@ -343,7 +343,7 @@ It can be placed in any PHP script, at anytime, and when the mysql extension dis
 
 ## mysqli Nesne Yönelimli Kullanım Örneği
 
-```PHP
+```php
 <?php
 $DB = new mysqli("localhost", "my_user", "my_password", "world");
 
@@ -375,7 +375,7 @@ $DB->close();
 
 ## mysqli Yordamsal Kullanım Örneği
 
-```PHP
+```php
 <?php
 $DB = mysqli_connect("localhost", "my_user", "my_password", "world");
 
@@ -409,7 +409,7 @@ mysqli_close($DB);
 
 - `AY_ADET` adlı sütuna her bir ay değerinde en az bir (1) adet satış varsa bir (1) ekleme komutu:
 
-```SQL
+```sql
 update stat set AY_ADET = if(ay_1>0,1 , 0)
  + if(ay_2>0,1 , 0)
  + if(ay_3>0,1 , 0)

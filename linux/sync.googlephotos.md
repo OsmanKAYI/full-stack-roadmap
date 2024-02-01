@@ -4,7 +4,7 @@
 
 gphotos-sync is a command line python application that uses the Google Photos API. Installation is not very complex since there is a pip package. First make sure you have pip installed:
 
-```BASH
+```bash
 apt install python3-pip
 
 # install gphotos-sync wih pip:
@@ -33,14 +33,14 @@ The gphotos-sync manual has an up to date version of these instructions. At the 
 
 I saved it in my _~/Downloads_ folder and then moved it to the correct folder for gphotos-sync, creating it if it does not exist:
 
-```BASH
+```bash
 mkdir -p ~/.config/gphotos-sync/
 cp ~/Downloads/client_secret*.json ~/.config/gphotos-sync/client_secret.json
 ```
 
 ## gphotos-sync Usage
 
-```BASH
+```bash
 # create a folder where your pictures are going to be synced to:
 mkdir -p ~/gphotos-sync/
 
@@ -88,31 +88,31 @@ Some of the gphotos-sync features/options are as follows:
 
 ### Dowload Latest Photos on Your Account
 
-```BASH
+```bash
 gphotos-sync ~/gphotos-sync/$accountname/ --progress
 ```
 
 ### Dowload Photos on Your Account With Controlling Any Change
 
-```BASH
+```bash
 gphotos-sync ~/gphotos-sync/$accountname/ --progress --rescan --retry-download
 ```
 
 ### Dowload Photos on Your Account Without Dates of Albums
 
-```BASH
+```bash
 gphotos-sync ~/gphotos-sync/$accountname/ --progress --omit-album-date
 ```
 
 ### Dowload Photos on Your Account Without Albums
 
-```BASH
+```bash
 gphotos-sync ~/gphotos-sync/$accountname/ --progress --skip-albums
 ```
 
 **NOTE:** If you face any problem like `OSError: [Errno 98] Address already in use`, rearrange the command as follows:
 
-```BASH
+```bash
 gphotos-sync ~/gphotos-sync/$accountname/ --progress --rescan --retry-download --skip-albums --port 8081
 ```
 

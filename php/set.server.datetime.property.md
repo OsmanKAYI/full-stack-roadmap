@@ -1,6 +1,6 @@
 # Set Server Date Time Property on PHP
 
-```BASH
+```bash
 # optional chaining (?.) ve nullish coalescing operator (??)
 GLOBAL_SETTINGS.SERVER_TIME = result?.serverDateTime ?? "";
 

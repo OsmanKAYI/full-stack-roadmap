@@ -8,7 +8,7 @@ It uses a feature-rich markdown file to generate beautiful slides with an instan
 
 To get started with Slidev, follow these steps:
 
-```BASH
+```bash
 sudo apt install nodejs -y
 sudo apt install npm -y
 npm init slidev -y
@@ -24,7 +24,7 @@ After that
 
 - To work on presentation for second time
 
-```BASH
+```bash
 npm run dev
 # visit http://localhost:3030
 # or http://localhost:3030/presenter
@@ -32,7 +32,7 @@ npm run dev
 
 - To export your presentation
 
-```BASH
+```bash
 npm i -D playwright-chromium
 npm run export
 # exported to ./slides-export.pdf

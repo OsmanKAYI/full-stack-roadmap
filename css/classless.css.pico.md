@@ -26,13 +26,13 @@ Alternatively, you can use [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@
 
 ### Install with NPM
 
-```BASH
+```bash
 npm install @picocss/pico
 ```
 
 ### Install with Composer
 
-```BASH
+```bash
 composer require picocss/pico
 ```
 
@@ -59,7 +59,7 @@ composer require picocss/pico
 
 - Run the following command inside of your project folder.
 
-```BASH
+```bash
 npm i @picocss/pico
 ```
 

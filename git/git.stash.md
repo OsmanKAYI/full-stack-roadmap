@@ -6,7 +6,7 @@
 
 1. Stash your Changes:
 
-```BASH
+```bash
 git stash save "Your stash message"
 ```
 
@@ -14,7 +14,7 @@ This command will save your changes (both staged and unstaged) into a new stash.
 
 2. Apply the Stash:
 
-```BASH
+```bash
 git stash apply
 ```
 
@@ -26,7 +26,7 @@ If you want to remove the changes from the stash after applying, you can use `gi
 
 - List all stashes:
 
-```BASH
+```bash
 git stash list
 ```
 
@@ -34,7 +34,7 @@ This will show you a list of all stashes you've created.
 
 - Apply a Specific Stash:
 
-```BASH
+```bash
 git stash apply stash@{n}
 ```
 
@@ -42,7 +42,7 @@ Replace `n` with the index of the stash you want to apply.
 
 - Delete a Stash:
 
-```BASH
+```bash
 git stash drop stash@{n}
 ```
 

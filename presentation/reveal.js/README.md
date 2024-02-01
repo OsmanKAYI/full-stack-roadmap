@@ -11,7 +11,7 @@ Presentations made with reveal.js are built on open web technologies. That means
 
 To get started with reveal.js, follow these steps:
 
-```BASH
+```bash
 # install node.js (10.0.0 or later) and npm
 sudo apt install nodejs -y
 sudo apt install npm -y
@@ -29,7 +29,7 @@ npm start
 
 The development server defaults to port 8000. You can use the port argument to switch to a different one:
 
-```BASH
+```bash
 npm start -- --port=8001
 ```
 

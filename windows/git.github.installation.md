@@ -16,7 +16,7 @@
 - Give it a `Title` and paste the content of `sshKeygenName.pub` file under the nameof `Key`.
 - Run the following commands in Git Bash to present yourself to your computer.
 
-```BASH
+```bash
 git config --global user.name "$username"
 git config --global user.email "$email"
 git config --global user.password "$password"
@@ -25,7 +25,7 @@ git config --global credential.helper store
 
 - Activate your ssh-agent by using
 
-```BASH
+```bash
 eval `ssh-agent -s`
 ```
 
@@ -36,7 +36,7 @@ eval `ssh-agent -s`
 **Note:**Use Git Bash as your terminal to run the commands.
 **Note2:**If these steps were successfull and you have some problem after a period of time, rerun the commands below.
 
-```BASH
+```bash
 eval `ssh-agent`
 ssh-add -l
 ssh-add ~/.ssh/id_rsa

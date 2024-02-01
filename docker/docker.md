@@ -8,7 +8,7 @@ Docker is among the most popular platforms for developing and deploying containe
 
 ### Step 1: Before Start
 
-```BASH
+```bash
 # lder versions of Docker went by the names of docker, docker.io, or docker-engine
 # you might also have installations of containerd or runc
 # uninstall any such older versions before attempting to install a new version
@@ -31,14 +31,14 @@ echo \
 
 ### Step 2: Install Latest Version
 
-```BASH
+```bash
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
 ### Step 3: Verify Docker Installation
 
-```BASH
+```bash
 sudo docker run hello-world
 ```
 

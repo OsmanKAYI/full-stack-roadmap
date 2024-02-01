@@ -6,7 +6,7 @@ You can [install Cockpit](https://cockpit-project.org/running.html) on many Linu
 
 ## Ubuntu Installation
 
-```BASH
+```bash
 . /etc/os-release
 sudo apt install -t ${VERSION_CODENAME}-backports cockpit
 ```

@@ -12,7 +12,7 @@ In the following code we have added some new variables: `$nameErr`, `$emailErr`,
 
 ### Example
 
-```PHP
+```php
  <?php
 // define variables and set to empty values
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ### Example
 
-```HTML
+```html
  <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
 Name: <input type="text" name="name">

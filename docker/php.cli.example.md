@@ -2,7 +2,7 @@
 
 ## Content of index.php:
 
-```PHP
+```php
 <?php
 
 echo "<h1>Hello from Docker !!!</h1>";
@@ -21,7 +21,7 @@ CMD [ "php", "./index.php" ]
 
 ## Step 1
 
-```BASH
+```bash
 docker build -t $imagename .
 # After each modification of the dockerfile
 # the docker image needs to be recreated by running this code
@@ -37,7 +37,7 @@ docker build -t $imagename .
 
 ## Step 2
 
-```BASH
+```bash
 docker run -it --rm --name $containername $imagename
 # Running the Docker image file
 ```

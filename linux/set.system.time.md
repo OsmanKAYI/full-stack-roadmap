@@ -1,6 +1,6 @@
 # How to Fix Broken System Time on Linux
 
-```BASH
+```bash
 # to set timezone as Istanbul
 sudo timedatectl set-timezone Europe/Istanbul
 

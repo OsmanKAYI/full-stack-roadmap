@@ -73,7 +73,7 @@
 
 - To see and check the browser version of php and Xdebug, `phpinfo.php` file content should be
 
-```PHP
+```php
 <?php
 phpinfo();
 xdebug_info();

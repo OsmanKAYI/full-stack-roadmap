@@ -8,18 +8,9 @@ HTML headings are titles or subtitles that you want to display on a webpage.
 
 ### Example
 
-```HTML
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
+```html
+# Heading 1 ## Heading 2 ### Heading 3 #### Heading 4 ##### Heading 5 ######
+Heading 6
 ```
 
 ---
@@ -32,7 +23,7 @@ HTML headings are defined with the `<h1>` to `<h6>` tags.
 
 ### Example
 
-```HTML
+```html
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
@@ -63,6 +54,6 @@ Each HTML heading has a default size. However, you can specify the size for any 
 
 ### Example
 
-```HTML
+```html
 <h1 style="font-size:60px;">Heading 1</h1>
 ```

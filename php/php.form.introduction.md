@@ -8,7 +8,7 @@ A Document that containing black fields, that the user can fill the data or user
 
 ### Example
 
-```HTML
+```html
 <html>
 
    <head>

@@ -21,7 +21,7 @@ The `<a>` tag defines a hyperlink. The `href` attribute specifies the URL of the
 
 ### Example
 
-```HTML
+```html
 <a href="https://www.w3schools.com">Visit W3Schools</a>
 ```
 
@@ -31,8 +31,8 @@ The `<img>` tag is used to embed an image in an HTML page. The `src` attribute s
 
 ### Example
 
-```HTML
-<img src="img_girl.jpg">
+```html
+<img src="img_girl.jpg" />
 ```
 
 There are two ways to specify the URL in the `src` attribute:
@@ -53,8 +53,8 @@ The `<img>` tag should also contain the `width` and `height` attributes, which s
 
 ### Example
 
-```HTML
-<img src="img_girl.jpg" width="500" height="600">
+```html
+<img src="img_girl.jpg" width="500" height="600" />
 ```
 
 ---
@@ -65,16 +65,16 @@ The required `alt` attribute for the `<img>` tag specifies an alternate text for
 
 ### Example
 
-```HTML
-<img src="img_girl.jpg" alt="Girl with a jacket">
+```html
+<img src="img_girl.jpg" alt="Girl with a jacket" />
 ```
 
 ### Example
 
 See what happens if we try to display an image that does not exist:
 
-```HTML
-<img src="img_typo.jpg" alt="Girl with a jacket">
+```html
+<img src="img_typo.jpg" alt="Girl with a jacket" />
 ```
 
 ## The style Attribute
@@ -83,7 +83,7 @@ The `style` attribute is used to add styles to an element, such as color, font, 
 
 ### Example
 
-```HTML
+```html
 <p style="color:red;">This is a red paragraph.</p>
 ```
 
@@ -93,12 +93,12 @@ You should always include the `lang` attribute inside the `<html>` tag, to decla
 
 The following example specifies English as the language:
 
-```HTML
+```html
 <!DOCTYPE html>
 <html lang="en">
-<body>
-...
-</body>
+  <body>
+    ...
+  </body>
 </html>
 ```
 
@@ -106,12 +106,12 @@ Country codes can also be added to the language code in the `lang` attribute. So
 
 The following example specifies English as the language and United States as the country:
 
-```HTML
+```html
 <!DOCTYPE html>
 <html lang="en-US">
-<body>
-...
-</body>
+  <body>
+    ...
+  </body>
 </html>
 ```
 
@@ -123,7 +123,7 @@ The value of the title attribute will be displayed as a tooltip when you mouse o
 
 ### Example
 
-```HTML
+```html
 <p title="I'm a tooltip">This is a paragraph.</p>
 ```
 
@@ -141,13 +141,13 @@ However, W3C **recommends** quotes in HTML, and **demands** quotes for stricter 
 
 ### Good:
 
-```HTML
+```html
 <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
 ```
 
 ### Bad:
 
-```HTML
+```html
 <a href=https://www.w3schools.com/html/>Visit our HTML tutorial</a>
 ```
 
@@ -155,8 +155,8 @@ Sometimes you have to use quotes. This example will not display the title attrib
 
 ### Example
 
-```HTML
-<p title=About W3Schools>
+```html
+<p title="About" W3Schools></p>
 ```
 
 ## Single or Double Quotes?
@@ -165,14 +165,14 @@ Double quotes around attribute values are the most common in HTML, but single qu
 
 In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:
 
-```HTML
-<p title='John "ShotGun" Nelson'>
+```html
+<p title='John "ShotGun" Nelson'></p>
 ```
 
 Or vice versa:
 
-```HTML
-<p title="John 'ShotGun' Nelson">
+```html
+<p title="John 'ShotGun' Nelson"></p>
 ```
 
 ## Chapter Summary

@@ -20,7 +20,7 @@ In this page, there are few examples (not cover all the topics).
 
 ## Codec Changing (Fast)
 
-```BASH
+```bash
 # both lines produce the same result file
 ffmpeg -i 1.mp4 -c:v libx264 -crf 23 -preset fast $filename.mp4
 ffmpeg -i 1.mp4 -c:v libx264 -preset fast $filename2.mp4
@@ -28,7 +28,7 @@ ffmpeg -i 1.mp4 -c:v libx264 -preset fast $filename2.mp4
 
 ## Extracting Photo Frames of Every Second of a Video File into a Separate Directory
 
-```BASH
+```bash
 mkdir videoFrames
 ffmpeg -i $filename.mp4 -q:v 1 -vf fps=1 videoFrames/v%04d.jpg
 ```

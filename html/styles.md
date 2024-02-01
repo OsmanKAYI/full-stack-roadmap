@@ -8,12 +8,8 @@ The HTML `style` attribute is used to add styles to an element, such as color, f
 
 ### Example
 
-```HTML
-I am Red
-
-I am Blue
-
-I am Big
+```html
+I am Red I am Blue I am Big
 ```
 
 ---
@@ -24,10 +20,9 @@ Setting the style of an HTML element, can be done with the `style` attribute.
 
 The HTML `style` attribute has the following syntax:
 
-```HTML
-<_tagname_ style="_property_:_value;_">
-
-The _**property**_ is a CSS property. The _**value**_ is a CSS value.
+```html
+<_tagname_ style="_property_:_value;_"> The _**property**_ is a CSS property.
+The _**value**_ is a CSS value.
 ```
 
 ---
@@ -40,12 +35,10 @@ The CSS `background-color` property defines the background color for an HTML ele
 
 Set the background color for a page to powderblue:
 
-```HTML
+```html
 <body style="background-color:powderblue;">
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-
+  <h1>This is a heading</h1>
+  <p>This is a paragraph.</p>
 </body>
 ```
 
@@ -53,12 +46,10 @@ Set the background color for a page to powderblue:
 
 Set background color for two different elements:
 
-```HTML
+```html
 <body>
-
-<h1 style="background-color:powderblue;">This is a heading</h1>
-<p style="background-color:tomato;">This is a paragraph.</p>
-
+  <h1 style="background-color:powderblue;">This is a heading</h1>
+  <p style="background-color:tomato;">This is a paragraph.</p>
 </body>
 ```
 
@@ -72,7 +63,7 @@ The CSS `color` property defines the text color for an HTML element:
 
 ### Example
 
-```HTML
+```html
 <h1 style="color:blue;">This is a heading</h1>
 <p style="color:red;">This is a paragraph.</p>
 ```
@@ -85,7 +76,7 @@ The CSS `font-family` property defines the font to be used for an HTML element:
 
 ### Example
 
-```HTML
+```html
 <h1 style="font-family:verdana;">This is a heading</h1>
 <p style="font-family:courier;">This is a paragraph.</p>
 ```
@@ -98,7 +89,7 @@ The CSS `font-size` property defines the text size for an HTML element:
 
 ### Example
 
-```HTML
+```html
 <h1 style="font-size:300%;">This is a heading</h1>
 <p style="font-size:160%;">This is a paragraph.</p>
 ```
@@ -111,7 +102,7 @@ The CSS `text-align` property defines the horizontal text alignment for an HTML 
 
 ### Example
 
-```HTML
+```html
 <h1 style="text-align:center;">Centered Heading</h1>
 <p style="text-align:center;">Centered paragraph.</p>
 ```

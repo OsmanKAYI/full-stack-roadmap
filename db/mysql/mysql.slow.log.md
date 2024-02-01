@@ -10,7 +10,7 @@ For websites and applications using databases, database performance is crucial f
 
 To gain an overview of MySQL's current operational status, inspecting the process list is a straightforward approach. The process list provides details about currently executing operations and their states.
 
-```BASH
+```bash
 SHOW FULL PROCESSLIST;
 
 # Output: Displays the current processes, including information about user, host, command, time, state, and query details.
@@ -22,7 +22,7 @@ Look at the `Time` and `State` columns to identify potentially problematic proce
 
 Inspecting the storage engine's status provides insights into the underlying tables.
 
-```BASH
+```bash
 SHOW CREATE TABLE <database>.<table>\G;
 SHOW CREATE TABLE mysql.time_zone`\G;
 
@@ -31,7 +31,7 @@ SHOW CREATE TABLE mysql.time_zone`\G;
 
 Identifying the storage engine in use is crucial for understanding database performance.
 
-```BASH
+```bash
 SHOW ENGINE INNODB STATUS\G;
 
 # Output: Presents detailed information about InnoDB engine status, including transactions, file I/O, buffer pool, and more.
@@ -41,7 +41,7 @@ SHOW ENGINE INNODB STATUS\G;
 
 Enabling slow query logging helps identify queries surpassing a defined execution threshold. Configure and manage slow query logging based on specific requirements.
 
-```BASH
+```bash
 SHOW GLOBAL VARIABLES LIKE 'slow_query_log%';
 
 # Output: Checks the current state of slow query logging.
@@ -61,7 +61,7 @@ Fine-tune settings like `long_query_time` and `min_examined_row_limit` based on 
 
 The `mysqldumpslow` utility is included in MySQL installations and provides a simple analysis of the slow query log.
 
-```BASH
+```bash
 mysqldumpslow /var/log/mysql/mysql-slow.log;
 
 # Output: Summarizes slow queries, including counts, execution times, and query details.
@@ -73,7 +73,7 @@ Adjust options like `-t` and `-s` to control result limits and sorting criteria.
 
 The `pt-query-digest` tool from Percona Toolkit offers a comprehensive analysis of the slow query log.
 
-```BASH
+```bash
 pt-query-digest /var/log/mysql/mysql-slow.log;
 
 # Output: Generates detailed statistics, execution times, and distribution of slow queries.
