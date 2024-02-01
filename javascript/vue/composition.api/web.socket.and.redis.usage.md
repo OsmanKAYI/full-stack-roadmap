@@ -329,21 +329,45 @@ export default router;
 
 ## PHP - Web Server - WebSocket Server - Vue.js Reactivity Diagram
 
-```mermaid
-graph TD
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
+    </head>
+	 
+<body>
+
+<div class="mermaid">graph TD
   subgraph Server
     A[Web Server]
     B[PHP]
     C[WebSocket Server]
   end
 
-  subgraph Client
-    D[Vue.js]
-  end
+subgraph Client
+D[Vue.js]
+end
 
-  A -->|HTTP Requests| B
-  B -->|Database Interaction| A
-  B -->|WebSocket Communication| C
-  C -->|WebSocket Communication| D
-  D -->|HTTP Requests| A
-```
+A -->|HTTP Requests| B
+B -->|Database Interaction| A
+B -->|WebSocket Communication| C
+C -->|WebSocket Communication| D
+D -->|HTTP Requests| A
+
+</div>
+	
+</body>
+<script>
+var config = {
+    startOnLoad:true,
+    theme: 'forest',
+    flowchart:{
+            useMaxWidth:false,
+            htmlLabels:true
+        }
+};
+mermaid.initialize(config);
+window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+</script>
+
+</html>
