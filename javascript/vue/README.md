@@ -63,6 +63,7 @@ Overall, the Composition API provides a more flexible and powerful way of writin
 - [Vue3 Script Setup Cheat Sheet](./composition.api/vue3.script.setup.cheat.sheet.md)
 - [Ref vs Reactive](./composition.api/ref.vs.reactive.md)
 - [Mutation in Vuejs Composition API](./composition.api/mutation.md)
+- [Force Vue to Rerender a Component](./composition.api/force.vue.to.rerender.component.md)
 - [Web Socket and Redis Usage with Vue3](./composition.api/web.socket.and.redis.usage.md)
 
 #### Examples
