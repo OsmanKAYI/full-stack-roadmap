@@ -198,6 +198,10 @@ code --install-extension wayou.vscode-todo-highlight
 ## this extension quickly searches (using ripgrep) your workspace for comment tags like TODO and FIXME, and displays them in a tree view in the activity bar. The view can be dragged out of the activity bar into the explorer pane (or anywhere else you would prefer it to be).
 code --install-extension gruntfuggly.todo-tree
 
+# Quarto
+## extension for the Quarto scientific and technical publishing system.
+code --install-extension quarto.quarto
+
 # vscode-pdf
 ## helps you to display pdf in VSCode.
 code --install-extension tomoki1207.pdf
