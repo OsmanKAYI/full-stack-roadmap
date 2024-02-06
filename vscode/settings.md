@@ -112,6 +112,15 @@ My prefered extensions and special settings for them in VSCode.
   "security.workspace.trust.untrustedFiles": "open",
   "editor.lineHeight": 30,
 
+  ///////////////////////// Draw.io Integration /////////////////////////
+  ///////////////////////// Draw.io Integration /////////////////////////
+  ///////////////////////// Draw.io Integration /////////////////////////
+  // by default, this extension only handles `*.drawio.svg` files
+  // add this if you want to associate it with `.svg` files
+  "workbench.editorAssociations": {
+    "*.svg": "hediet.vscode-drawio-text"
+  },
+
   ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
   ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
   ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
@@ -341,6 +350,7 @@ My prefered extensions and special settings for them in VSCode.
   },
   "codeium.enableCodeLens": false,
   "terminal.integrated.env.linux": {},
-  "console-ninja.featureSet": "Community"
+  "console-ninja.featureSet": "Community",
+  "console-ninja.showWhatsNew": false
 }
 ```
