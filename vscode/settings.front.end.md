@@ -34,6 +34,10 @@ My prefered extensions and special settings for them in VSCode.
   // VSCode Session Protection Settings
   "files.hotExit": "onExitAndWindowClose",
 
+  // Enable bracket pair colorization and highlighting
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+
   ///////////////////////// Alignment /////////////////////////
   ///////////////////////// Alignment /////////////////////////
   ///////////////////////// Alignment /////////////////////////
