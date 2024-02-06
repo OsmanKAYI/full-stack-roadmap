@@ -24,6 +24,7 @@ The PHP documentation is available online at [php.net](php.net/docs). This docum
 - [PHP Form Complete](./php.form.complete.md)
 - [PHP MySQL Login](./php.mysql.login.md)
 - [Null Coalescing Assignment](./null.coalescing.assignment.md)
+- [Remove .php From URL](./remove.php.from.url.md)
 - [PHP Debug (xdebug)](./xdebug.md)
 - [PHP Cookie)](./php.cookie.md)
 - [PHP Session)](./php.session.md)
