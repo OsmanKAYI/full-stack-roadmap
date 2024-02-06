@@ -1,5 +1,7 @@
 # ChatGPT Prompts
 
+- To see much more examples, visit [awesome-chatgpt-prompts](https://github.com/OsmanKAYI/awesome-chatgpt-prompts)
+
 1. **Analyze and Improve Pricing Strategy**
 
 Prompt: "Analyze my current pricing strategy for [insert product or service]. Suggest improvements and help me develop a new pricing strategy that maximizes profitability and customer satisfaction."
