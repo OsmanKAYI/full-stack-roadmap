@@ -61,6 +61,7 @@ Overall, the Composition API provides a more flexible and powerful way of writin
 
 - [10 Mistakes to Avoid When Starting with Vue 3](./composition.api/common.mistakes.md)
 - [Vue3 Script Setup Cheat Sheet](./composition.api/vue3.script.setup.cheat.sheet.md)
+- [General Notes for Vue3](./composition.api/vue3.general.notes.md)
 - [Ref vs Reactive](./composition.api/ref.vs.reactive.md)
 - [Mutation in Vuejs Composition API](./composition.api/mutation.md)
 - [Force Vue to Rerender a Component](./composition.api/force.vue.to.rerender.component.md)
