@@ -123,6 +123,10 @@ code --install-extension ms-vsliveshare.vsliveshare
 ## all you need to write Markdown (keyboard shortcuts, table of contents, auto preview and more)
 code --install-extension yzhang.markdown-all-in-one
 
+# Markdown Preview Mermaid Support
+## adds Mermaid diagram and flowchart support to VS Code's builtin markdown preview
+code --install-extension bierner.markdown-mermaid
+
 # Marp
 ## this extension creates slide deck written in Marp Markdown on VSCode.
 code --install-extension marp-team.marp-vscode

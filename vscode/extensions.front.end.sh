@@ -64,6 +64,10 @@ code --install-extension ms-vsliveshare.vsliveshare
 ## all you need to write Markdown (keyboard shortcuts, table of contents, auto preview and more)
 code --install-extension yzhang.markdown-all-in-one
 
+# Markdown Preview Mermaid Support
+## adds Mermaid diagram and flowchart support to VS Code's builtin markdown preview
+code --install-extension bierner.markdown-mermaid
+
 # Material Icon Theme
 ## this extension enables you to change the color, theme, and etc. of the default folder icon using the command palette or via user settings.
 code --install-extension pkief.material-icon-theme
