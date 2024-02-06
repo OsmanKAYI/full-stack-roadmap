@@ -468,6 +468,22 @@ cd adminer
 wget -O index.php https://www.adminer.org/latest.php
 ```
 
+## Node with NVM
+
+- NVM is a Node.js version manager. It allows you to install and switch between different versions of Node.js.
+- To see what is the latest version, visit [nvm-sh on Github](https://github.com/nvm-sh/nvm/releases).
+
+```bash
+# install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+# start nvm
+source ~/.bashrc
+# list remote versions
+nvm ls-remote
+# install latest node version
+nvm install node  # "node" is an alias for the latest version
+```
+
 ## Vue
 
 - [Vue.js](https://vuejs.org/) is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You.
@@ -497,9 +513,9 @@ npm run build
 **NOTE:** If you face with some problems in `npm init vue@latest`, which is generally because of node version installed in machine, run the following.
 
 ```bash
-sudo npm cache clean -f
-sudo npm install -g n
-sudo n stable
+npm cache clean -f
+npm install -g n
+n stable
 ```
 
 **NOTE:** If you see a warning about `spoof.js`, it can be beacuse of one of the firefox extensions (ex: `Mobile simulator`).

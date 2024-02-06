@@ -243,6 +243,16 @@ mkdir adminer
 cd adminer
 wget -O index.php https://www.adminer.org/latest.php
 
+## Node with NVM
+# install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+# start nvm
+source ~/.bashrc
+# list remote versions
+nvm ls-remote
+# install latest node version
+nvm install node  # "node" is an alias for the latest version
+
 ## gphotos-sync
 apt install python3-pip
 # install gphotos-sync wih pip:
