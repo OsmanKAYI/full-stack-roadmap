@@ -116,9 +116,9 @@ code --install-extension ritwickdey.liveserver
 ## a real-time collaborative development from the comfort of your favorite tools.
 code --install-extension ms-vsliveshare.vsliveshare
 
-# Markdown Preview Enhanced
-## an extension that provides you with many useful functionalities such as automatic scroll sync, math typesetting, mermaid, PlantUML, pandoc, PDF export, code chunk, presentation writer, etc.
-code --install-extension shd101wyy.markdown-preview-enhanced
+# Markdown All in One
+## all you need to write Markdown (keyboard shortcuts, table of contents, auto preview and more)
+code --install-extension yzhang.markdown-all-in-one
 
 # Marp
 ## this extension creates slide deck written in Marp Markdown on VSCode.
