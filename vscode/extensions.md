@@ -35,6 +35,10 @@ code --install-extension codeium.codeium
 ## take beautiful screenshots of your code in VS Code!.
 code --install-extension adpyke.codesnap
 
+# Draw.io Integration
+## unofficial extension integrates Draw.io into VS Code.
+code --install-extension hediet.vscode-drawio
+
 # Console Ninja
 ## console Ninja is a VS Code extension that displays console.log output and runtime errors directly in your editor from your running browser or node application.
 code --install-extension wallabyjs.console-ninja

@@ -24,6 +24,10 @@ code --install-extension codeium.codeium
 ## take beautiful screenshots of your code in VS Code!.
 code --install-extension adpyke.codesnap
 
+# Draw.io Integration
+## unofficial extension integrates Draw.io into VS Code.
+code --install-extension hediet.vscode-drawio
+
 # GistPad
 ## a Visual Studio Code extension that allows you to edit GitHub Gists and repositories from the comfort of your favorite editor.
 code --install-extension vsls-contrib.gistfs
