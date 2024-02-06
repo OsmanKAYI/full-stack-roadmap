@@ -40,6 +40,10 @@ code --install-extension wallabyjs.console-ninja
 ## makes it easy to build, manage, and deploy containerized applications from Visual Studio Code. It also provides one-click debugging of Node.js, Python, and .NET inside a container.
 code --install-extension ms-azuretools.vscode-docker
 
+# EditorConfig for VS Code
+##  attempts to override user/workspace settings with settings found in .editorconfig files.
+code --install-extension editorconfig.editorconfig
+
 # ESLint
 ## integrates JavaScript into VSCode.
 code --install-extension dbaeumer.vscode-eslint
