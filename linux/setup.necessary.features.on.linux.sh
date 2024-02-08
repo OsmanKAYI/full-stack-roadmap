@@ -253,6 +253,10 @@ nvm ls-remote
 # install latest node version
 nvm install node  # "node" is an alias for the latest version
 
+### Degit
+# install degit to download and install Git repositories
+npm i degit -g
+
 ## gphotos-sync
 apt install python3-pip
 # install gphotos-sync wih pip:

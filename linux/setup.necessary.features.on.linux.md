@@ -484,6 +484,16 @@ nvm ls-remote
 nvm install node  # "node" is an alias for the latest version
 ```
 
+### Degit
+
+- Degit is a tool that allows you to download and install Git repositories from GitHub, GitLab, Bitbucket, and other Git hosting services without including their commit history. So the fastest and lightest way to install Git projects.
+
+```bash
+npm i degit -g
+```
+
+**Example Usage:** `degit $username/$projectname`
+
 ## Vue
 
 - [Vue.js](https://vuejs.org/) is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You.
