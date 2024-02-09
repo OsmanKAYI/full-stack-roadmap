@@ -530,6 +530,15 @@ n stable
 
 **NOTE:** If you see a warning about `spoof.js`, it can be beacuse of one of the firefox extensions (ex: `Mobile simulator`).
 
+## Draw.io
+
+- [Draw.io](https://www.draw.io/) is a modern diagramming and collaboration tool for teams, individuals, and organizations.
+
+```bash
+curl -s https://api.github.com/repos/jgraph/drawio-desktop/releases/latest | grep browser_download_url | grep '\.deb' | cut -d '"' -f 4 | wget -i -
+sudo apt -f install ./drawio-amd64-*.deb
+```
+
 ## Anaconda
 
 - Anaconda is a distribution of the Python and R programming languages for scientific computing, that aims to simplify package management and deployment.

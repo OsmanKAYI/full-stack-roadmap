@@ -257,6 +257,11 @@ nvm install node  # "node" is an alias for the latest version
 # install degit to download and install Git repositories
 npm i degit -g
 
+## Draw.io
+# install drawio to design diagrams and webpages
+curl -s https://api.github.com/repos/jgraph/drawio-desktop/releases/latest | grep browser_download_url | grep '\.deb' | cut -d '"' -f 4 | wget -i -
+sudo apt -f install ./drawio-amd64-*.deb
+
 ## gphotos-sync
 apt install python3-pip
 # install gphotos-sync wih pip:
