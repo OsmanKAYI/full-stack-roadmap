@@ -35,6 +35,7 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - [21 Tricks Every Coder Should Master!](./21.tricks.md)
 - [String, Array, and DOM Methods](./string.array.dom.methods.md)
 - [filter() Array Function](./filter.array.function.md)
+- [Console Commands](./console.commands.md)
 - [AJAX Method](./ajax.md)
 - [Vue Framework](./vue/README.md)
 
