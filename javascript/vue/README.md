@@ -121,3 +121,7 @@ Overall, the Options API is still a useful and valid approach for building Vue 3
 Vue Router is a powerful routing library for Vue that allows you to create complex, multi-page applications. It provides features like nested routes, route guards, and dynamic route matching. You can learn more about Vue Router in the [official documentation](https://router.vuejs.org/).
 
 - [Introduction to Vue Router](./router/what.is.vue.router.md)
+
+### Pinia
+
+Pinia is a state management library for Vue. It is inspired by Redux, but it provides more features and flexibility. Pinia works for both Vue 2 and Vue 3 and doesn't require you to use the composition API. The API is the same for both except for installation and SSR. You can learn more about Pinia in the [official documentation](https://pinia.vuejs.org/).
