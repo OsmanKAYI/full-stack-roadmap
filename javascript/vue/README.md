@@ -125,3 +125,53 @@ Vue Router is a powerful routing library for Vue that allows you to create compl
 ### Pinia
 
 Pinia is a state management library for Vue. It is inspired by Redux, but it provides more features and flexibility. Pinia works for both Vue 2 and Vue 3 and doesn't require you to use the composition API. The API is the same for both except for installation and SSR. You can learn more about Pinia in the [official documentation](https://pinia.vuejs.org/).
+
+### Vuelidate
+
+Vuelidate is a validation library for Vue. It provides built-in validation rules and reactive validation. 
+
+Vuelidate is considered model-based because the validation rules are defined next to your data, and the validation tree structure matches the data model structure. You can learn more about Vuelidate in the [official documentation](https://vuelidate.js.org/).
+
+**Installation**
+```bash
+npm install @vuelidate/core @vuelidate/validators
+```
+
+**Example Usage**
+```js
+<script setup lang="ts">
+import { reactive } from 'vue' // "from '@vue/composition-api'" if you are using Vue <2.7
+import { useVuelidate } from '@vuelidate/core'
+import { required, email } from '@vuelidate/validators'
+
+const state = reactive({
+  firstName: '',
+  lastName: '',
+  contact: {
+    email: ''
+      }
+})
+const rules = {
+  firstName: { required }, // Matches state.firstName
+  lastName: { required }, // Matches state.lastName
+  contact: {
+    email: { required, email } // Matches state.contact.email
+  }
+}
+
+const v$ = useVuelidate(rules, state)
+</script>
+```
+
+```html
+<template>
+  <div :class="{ error: v$.firstName.$errors.length }">
+    <input v-model="state.firstName">
+    <div class="input-errors" v-for="error of v$.firstName.$errors" :key="error.$uid">
+      <div class="error-msg">{{ error.$message }}</div>
+    </div>
+  </div>
+</template>
+```
+
+- This approach will dynamically cover any number of validators that were applied to our input.
