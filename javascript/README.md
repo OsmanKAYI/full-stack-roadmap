@@ -39,6 +39,11 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - [AJAX Method](./ajax.md)
 - [Vue Framework](./vue/README.md)
 
+### Examples
+  - [Create Demo API with JSON Server](./demo-server/README.md)
+    - [db.json file](./demo-server/db.json)
+    - [generate.js file](./demo-server/generate.js)
+
 ## Useful Links
 
 - [JavaScript Tutorial](https://www.koderhq.com/tutorial/javascript/)
