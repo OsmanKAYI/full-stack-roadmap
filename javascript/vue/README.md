@@ -14,11 +14,6 @@ To get started with Vue, you can follow these steps:
 
 ## Documentation
 
-Before diving into Vue, you should have some basic knowledge about JavaScript whcih will be vital to benefit from these notes.
-
-- [JavaScript Tutorial](https://www.koderhq.com/tutorial/javascript/)
-- [Modern Javascript (ES6+) Video Series](https://www.youtube.com/watch?v=4ynLm0TaK1w&list=PLFAU47Id44XElZTM3G8S8YydhPbfAJ-N0)
-
 The Vue documentation is available online at [vuejs.org](vuejs.org). This documentation includes guides, tutorials, and reference material for learning Vue and using it effectively.
 
 - [Which One to Choose (Options or Composition)](./options.or.composition.md)
