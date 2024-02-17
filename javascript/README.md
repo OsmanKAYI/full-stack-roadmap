@@ -42,8 +42,10 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 
 ### Examples
   - [Create Demo API with JSON Server](./demo-server/README.md)
-    - [db.json file](./demo-server/db.json)
-    - [generate.js file](./demo-server/generate.js)
+    - [db.json](./demo-server/db.json)
+    - [generate.js](./demo-server/generate.js)
+  - [Create Real-Time Chart with Plotly.js](./real-time-chart/README.md)
+    - [index.html](./real-time-chart/index.html)
 
 ## Useful Links
 
