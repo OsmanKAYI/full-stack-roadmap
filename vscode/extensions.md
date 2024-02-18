@@ -42,6 +42,8 @@ code --install-extension hediet.vscode-drawio
 # Console Ninja
 ## console Ninja is a VS Code extension that displays console.log output and runtime errors directly in your editor from your running browser or node application.
 code --install-extension wallabyjs.console-ninja
+### Console Ninja VSCode Extension - Coding in Public
+### https://www.youtube.com/watch?v=OC-_fcJyz_c
 
 # Docker
 ## makes it easy to build, manage, and deploy containerized applications from Visual Studio Code. It also provides one-click debugging of Node.js, Python, and .NET inside a container.
