@@ -53,7 +53,6 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - [The Modern JavaScript Tutorial](https://tr.javascript.info/)
 - [Modern Javascript (ES6+) Video Series](https://www.youtube.com/watch?v=4ynLm0TaK1w&list=PLFAU47Id44XElZTM3G8S8YydhPbfAJ-N0)
 - **Array Methods**
-
   - [Part 1](https://pbs.twimg.com/media/F1JMuvIWwAA6bIj?format=jpg&name=900x900)
   - [Part 2](https://pbs.twimg.com/media/F1JMvocWcAIDozh?format=jpg&name=small)
   - [Part 3](https://pbs.twimg.com/media/F1JMwXcXsAAoowX?format=jpg&name=small)
@@ -64,6 +63,9 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 </div>
 
 - **Debug**
-
   - [Debug Code Like a Pro](https://www.youtube.com/watch?v=uUDRh7D5Z0c)
     - How to debug JavaScript Code in VsCode and Chrome. Learn VsCode Debugger and Chrome Debugger. Debugging with a VsCode Extension: [Console Ninja](https://console-ninja.com/)
+
+- [JavaScript Chart Demos - ApexCharts](https://apexcharts.com/javascript-chart-demos/)
+  -  ApexCharts is a modern charting library that helps developers to create beautiful and interactive visualizations for web pages. It is an open-source project licensed under MIT and is free to use in commercial applications.
+  -  Besides [JavaScript](https://apexcharts.com/javascript-chart-demos/), it is also available for both [Angular](https://apexcharts.com/angular-chart-demos/), [React](https://apexcharts.com/react-chart-demos/), and [Vue](https://apexcharts.com/vue-chart-demos/).
