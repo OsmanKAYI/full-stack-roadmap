@@ -69,6 +69,15 @@ sudo apt-get install guake -y
 - In `General` fulfill the checkbox for `Start Guake at login`.
 - In `Main Window` fulfill the checkbox for `Place tabs on top`.
 
+## The Fuck
+
+- The Fuck is a magnificent app that corrects errors in previous console commands.
+
+```bash
+sudo apt install python3-dev python3-pip python3-setuptools
+pip3 install thefuck --user
+```
+
 ## Necessary Packages
 
 - **vim** is a free and open-source, screen-based text editor program.

@@ -81,6 +81,10 @@ gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windo
 ## Guake
 sudo apt-get install guake -y
 
+## The Fuck
+sudo apt install python3-dev python3-pip python3-setuptools
+pip3 install thefuck --user
+
 ## Necessary Packages
 sudo apt install vim ranger bat pdftk meld xclip axel gnome-tweaks net-tools hardinfo gpustat nvtop testdisk unrar caffeine magic-wormhole hashcat pv figlet lolcat boxes-y
 
