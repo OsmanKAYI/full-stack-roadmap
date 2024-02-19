@@ -292,3 +292,7 @@ done
 `echo "Hello World" | pv -L 4 -q` <br>
 
 - Prints the text (Hello World) with a progress bar.
+
+`echo "Hello World" | boxes -d dog -a c` <br>
+
+- Prints the text (Hello World) with a box with a dog.
