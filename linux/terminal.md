@@ -288,3 +288,7 @@ done
 `telnet mapscii.me` <br>
 
 - Shows the ascii map of the world
+
+`echo "Hello World" | pv -L 4 -q` <br>
+
+- Prints the text (Hello World) with a progress bar.
