@@ -273,10 +273,14 @@ done
   - renames the file using the new name.
   - **Ex:** It transforms `DreamShaper_v7_Civil_Engineering_Contemporary_Realist_Art_Styl_0.jpg` into `dreamshaper.v7.civil.engineering.contemporary.realist.art.styl.0.jpg`
 
-`pdftk 1.pdf 2.pdf cat output combined.pdf`
+`pdftk 1.pdf 2.pdf cat output combined.pdf` <br>
 
 - Combines multiple pdf's into a single pdf file.
 
-`dos2unix -r *.php`
+`dos2unix -r *.php` <br>
 
 - Converts all of the .php files in the current directory to unix format.
+
+`curl wttr.in/Ankara` <br>
+
+- Shows the weather in Ankara
