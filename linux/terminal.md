@@ -284,3 +284,7 @@ done
 `curl wttr.in/Ankara` <br>
 
 - Shows the weather in Ankara
+
+`telnet mapscii.me` <br>
+
+- Shows the ascii map of the world
