@@ -89,9 +89,11 @@ sudo apt-get install guake -y
 - **wormhole** lets you share files with end-to-end encryption and a link that automatically expires. So you can keep what you share private and make sure your stuff doesn't stay online forever.
 - **hashcat** is a password recovery tool. It had a proprietary code base until 2015, but was then released as open source software.
 - **pv** shows the progress of data through a pipeline by giving information such as time elapsed, percentage completed (with progress bar), current throughput rate, total data transferred, and ETA.
+- **figlet** is a a computer program that generates text banners, in a variety of typefaces, composed of letters made up of conglomerations of smaller ASCII characters.
+- **lolcat** is a program that concatenates files, or standard input, to standard output (like the generic cat), and adds rainbow coloring to it.
 
 ```bash
-sudo apt install vim ranger bat pdftk meld xclip axel gnome-tweaks net-tools hardinfo gpustat nvtop testdisk unrar caffeine magic-wormhole hashcat pv -y
+sudo apt install vim ranger bat pdftk meld xclip axel gnome-tweaks net-tools hardinfo gpustat nvtop testdisk unrar caffeine magic-wormhole hashcat pv figlet lolcat -y
 ```
 
 - `batcat $fileName` # to see and arrange the content of any file.
@@ -99,6 +101,7 @@ sudo apt install vim ranger bat pdftk meld xclip axel gnome-tweaks net-tools har
 - `xclip -sel clip -o` # to paste
 - `gpustat -i 0.20` # to follow GPU usage as 5 measurements / second (or 1 measurement / milisecond)
 - `wormhole send "fileName"` # to send file
+- `figlet Osman Kayi|lolcat` # to see piped and colored text of "Osman Kayi" 
 
 ## TLDR
 
