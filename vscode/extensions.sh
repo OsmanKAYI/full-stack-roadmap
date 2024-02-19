@@ -32,13 +32,13 @@ code --install-extension codeium.codeium
 ## take beautiful screenshots of your code in VS Code!.
 code --install-extension adpyke.codesnap
 
-# Draw.io Integration
-## unofficial extension integrates Draw.io into VS Code.
-code --install-extension hediet.vscode-drawio
-
 # Console Ninja
 ## console Ninja is a VS Code extension that displays console.log output and runtime errors directly in your editor from your running browser or node application.
 code --install-extension wallabyjs.console-ninja
+
+# Draw.io Integration
+## unofficial extension integrates Draw.io into VS Code.
+code --install-extension hediet.vscode-drawio
 
 # Docker
 ## makes it easy to build, manage, and deploy containerized applications from Visual Studio Code. It also provides one-click debugging of Node.js, Python, and .NET inside a container.
@@ -127,6 +127,10 @@ code --install-extension yzhang.markdown-all-in-one
 # Markdown Preview Mermaid Support
 ## adds Mermaid diagram and flowchart support to VS Code's builtin markdown preview
 code --install-extension bierner.markdown-mermaid
+
+# Markmap
+## visualizes your markdown files as markmap in VSCode
+code --install-extension gera2ld.markmap-vscode
 
 # Marp
 ## this extension creates slide deck written in Marp Markdown on VSCode.
