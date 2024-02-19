@@ -33,7 +33,12 @@ Wrap console.log() arguments with curly brackets to see variable names:
 
 ```js
 const myNumber = 123;
-console.log({ myNumber }); // myNumber: 123
+// Instead of doing this:
+console.log('myNumber', myNumber);
+// myNumber: 123
+// Do this:
+console.log({ myNumber });
+// myNumber: 123
 ```
 
 ### Get min/max value from an array
@@ -108,6 +113,18 @@ condition && doSomething();
 Use the optional "columns" parameter to select a subset of columns to display in console.table():
 
 ```js
+function Person (name, age) {
+  this.name = name;
+  this.age = age;
+}
+const person1 = new Person('Osman', 25);
+const person2 = new Person('Veysel', 48);
+const person3 = new Person('Nuri', 51);
+
+// logging all properties
+comsole.table([person1, person2, person3]);
+
+// logging only age
 console.table([person1, person2, person3], ['age']);
 ```
 
@@ -143,8 +160,8 @@ console.log(myNumber + ''); // '403'
 Use the `filter()` method with the `Boolean` constructor to remove all falsy values from an array:
 
 ```js
-const myArray = [1, undefined, NaN, 2, null, '@denicmarko', true, 3, false];
-console.log(myArray.filter(Boolean)); // [1, 2, "@denicmarko", true, 3]
+const myArray = [1, undefined, NaN, 2, null, '@osmankayi', true, 3, false];
+console.log(myArray.filter(Boolean)); // [1, 2, "@osmankayi", true, 3]
 ```
 
 ### DRY
@@ -155,9 +172,15 @@ Don't repeat yourself. Use includes() method to check if a value exists in an ar
 const myTech = 'JavaScript';
 const techs = ['HTML', 'CSS', 'JavaScript'];
 
-if (techs.includes(myTech)) {
-    // do something 
+// Instead of:
+if (myTech === 'HTML' || myTech === 'CSS' || myTech === 'JavaScript') {
+	// do something
 }
+
+// You can:
+if (techs.includes(myTech)) {
+ 	// do something 
+}   
 ```
 
 ### Sum an array
@@ -176,6 +199,11 @@ Style console.log() output using CSS format specifier:
 
 ```js
 console.log('%c Success', 'color: green; font-weight: 1.5em;');
+// Success will be green
+console.log('%c Warning', 'color: orange; font-weight: 1.5em;');
+// Warning will be orange
+console.log('%c Error', 'color: red; font-weight: 1.5em;');
+// Error will be red
 ```
 
 ### Element's dataset
@@ -183,11 +211,16 @@ console.log('%c Success', 'color: green; font-weight: 1.5em;');
 Access element's custom data attributes using the dataset property:
 
 ```html
-<div id="user" data-name="John Doe" data-age="29" data-something="Some Data">John Doe</div>
+<div id="user" data-name="Osman KAYI" data-age="25" data-something="Some Data">Osman KAYI</div>
 
 <script>
   const user = document.getElementById('user');
   console.log(user.dataset);
+    // { name: "Osman KAYI", age: "25", something: "Some Data" }
+  
+  console.log(user.dataset.name); // "Osman KAYI"
+  console.log(user.dataset.age); // "25"
+  console.log(user.dataset.something); // "Some Data"
 </script>
 ```
 
