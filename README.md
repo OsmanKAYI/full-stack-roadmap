@@ -18,6 +18,7 @@ These notes are a collection of useful information, tips, and tricks related to 
 - [API](./api)
 - [TypeScript](./typescript)
 - [JavaScript](./javascript)
+- [Node.js](./node.js)
 - [Jupyter Notebook](./jupyter.notebook)
 - [Python](./python)
 - [Data Analysis](./data.analysis)
