@@ -43,6 +43,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [OpenSSH Command](./openssh.command.md)
 - [f3write & f3read Commands](./f3write.f3read.md)
 - [Screen Command to Keep SSH Sessions Alive](./screen.command.for.sessions.md)
+- [Monitor Linux Hardware Temperature with PSensor](./psensor.md)
 - [PDF Compression](./compress.pdf.md)
 - [Appimage Files on Ubuntu](./how.to.use.appimage.files.md)
 - [Execute .run Files on Ubuntu](./execute..run.files.md)
