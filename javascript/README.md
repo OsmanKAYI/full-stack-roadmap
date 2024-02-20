@@ -41,6 +41,7 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - [21 Pro Tricks](./21.pro.tricks.md)
 - [AJAX Method](./ajax.md)
 - [Vue Framework](./vue/README.md)
+- [Quasar Framework](./quasar/README.md)
 
 ### Examples
   - [Create Demo API with JSON Server](./demo-server/README.md)
