@@ -69,6 +69,9 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
   - [Debug Code Like a Pro](https://www.youtube.com/watch?v=uUDRh7D5Z0c)
     - How to debug JavaScript Code in VsCode and Chrome. Learn VsCode Debugger and Chrome Debugger. Debugging with a VsCode Extension: [Console Ninja](https://console-ninja.com/)
 
+- [Sharp Image Editor](https://github.com/lovell/sharp)
+  - The typical use case for this high speed Node-API module is to convert large images in common formats to smaller, web-friendly JPEG, PNG, WebP, GIF and AVIF images of varying dimensions.
+
 - [JavaScript Chart Demos - ApexCharts](https://apexcharts.com/javascript-chart-demos/)
   -  ApexCharts is a modern charting library that helps developers to create beautiful and interactive visualizations for web pages. It is an open-source project licensed under MIT and is free to use in commercial applications.
   -  Besides [JavaScript](https://apexcharts.com/javascript-chart-demos/), it is also available for both [Angular](https://apexcharts.com/angular-chart-demos/), [React](https://apexcharts.com/react-chart-demos/), and [Vue](https://apexcharts.com/vue-chart-demos/).
