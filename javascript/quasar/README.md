@@ -38,3 +38,7 @@ quasar dev
 5. Open your browser and navigate to [http://localhost:8080](http://localhost:8080) to see your Quasar application running.
 
 For more detailed instructions and documentation, please visit the [Quasar documentation](https://quasar.dev/).
+
+## Documentation
+
+- [What is Quasar?](./what.is.quasar.md)
