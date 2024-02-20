@@ -32,6 +32,8 @@ The PHP documentation is available online at [php.net](php.net/docs). This docum
 
 ## Useful Links
 
+- [LAMP Stack Built with Docker Compose](https://github.com/sprintcube/docker-compose-lamp)
+  - It is a local development environment for PHP. This Docker Stack is build for local development and not for production usage.
 - [PHP The Right Way](https://phptherightway.com/)
   - The Right Way is an easy-to-read, quick reference for PHP popular coding standards, links to authoritative tutorials around the Web, and what the contributors consider to be best practices at present.
 - [Sweet PHP Debugging in Four Minutes](https://laracasts.com/series/visual-studio-code-for-php-developers/episodes/13)
