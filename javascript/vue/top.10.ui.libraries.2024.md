@@ -2,7 +2,7 @@
 
 Vue.js is a popular JavaScript framework that has been gaining traction among front-end developers. It’s known for its simplicity, flexibility, and ease of use.
 
-    One of the reasons why Vue.js is so popular is because of its vast ecosystem of UI libraries.
+- One of the reasons why Vue.js is so popular is because of its vast ecosystem of UI libraries.
 
 These libraries provide developers with pre-built components and tools to help them build beautiful and responsive user interfaces quickly and efficiently.
 
@@ -128,7 +128,7 @@ Mint UI is a collection of pre-built UI components specifically designed for bui
 
 This article explored ten Vue.js libraries that can help you boost your development productivity. However, it’s important to understand that not all of these libraries will be right for you.
 
-    To select the best library, always evaluate your project requirement and learning curve within your team by building POCs with each library.
+- To select the best library, always evaluate your project requirement and learning curve within your team by building POCs with each library.
 
 By doing so, you ensure that you select the most optimal library for your next Vue.js project.
 
