@@ -18,8 +18,9 @@ Include any additional resources, tutorials, or guides that might be useful for 
 
 ## Useful Links
 
-- [DataCamp - Data Analysis with Python](https://campus.datacamp.com/courses/exploratory-data-analysis-in-python/getting-to-know-a-dataset?ex=1)
-- [Kaggle - Data Analysis Tutorials](https://www.kaggle.com/learn)
+- [Data Analysis with Python - DataCamp](https://campus.datacamp.com/courses/exploratory-data-analysis-in-python/getting-to-know-a-dataset?ex=1)
+- [Data Analysis Tutorials - Kaggle](https://www.kaggle.com/learn)
+- [101 DATA SCIENCE with Cheat Sheets - Medium](https://medium.com/@anushka.datascoop/101-data-science-cheat-sheets-ml-dl-scraping-python-r-sql-maths-statistics-ef30b4d786eb)
 - [Information is Beautiful](https://informationisbeautiful.net/)
   - Data, information, knowledge: it transform them into beautiful, useful graphics & diagrams.
 - [Infogram](https://infogram.com/)
