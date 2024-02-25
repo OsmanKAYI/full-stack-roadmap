@@ -45,11 +45,11 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - [Quasar Framework](./quasar/README.md)
 
 ### Examples
-  - [Create Demo API with JSON Server](./demo-server/README.md)
-    - [db.json](./demo-server/db.json)
-    - [generate.js](./demo-server/generate.js)
-  - [Create Real-Time Chart with Plotly.js](./real-time-chart/README.md)
-    - [index.html](./real-time-chart/index.html)
+  - [Create Demo API with JSON Server](./examples/demo-server/README.md)
+    - [db.json](./examples/demo-server/db.json)
+    - [generate.js](./examples/demo-server/generate.js)
+  - [Create Real-Time Chart with Plotly.js](./examples/real-time-chart/README.md)
+    - [index.html](./examples/real-time-chart/index.html)
 
 ## Useful Links
 
