@@ -48,11 +48,11 @@ BootstrapVue is a comprehensive UI component library based on the popular Bootst
 
 **Features**
 
-Ex**tensive component library:** Includes essential UI elements like buttons, forms, tables, cards, modals, navbars, and more.
-Bu**ilt on Bootstrap v4.6:** Provides familiar Bootstrap classes and styles, ensuring consistency and ease of use for developers familiar with Bootstrap.
-Mo**bile-first design:** Components are responsive and adapt seamlessly to different screen sizes, delivering a great user experience on all devices.
-Ea**sy customization:** Components can be customized through props and slots, allowing you to tailor them to your specific needs and design preferences.
-Ac**cessibility:** Focused on accessibility and WCAG compliance, making your web applications usable by everyone.
+- **Extensive component library:** Includes essential UI elements like buttons, forms, tables, cards, modals, navbars, and more.
+- **Built on Bootstrap v4.6:** Provides familiar Bootstrap classes and styles, ensuring consistency and ease of use for developers familiar with Bootstrap.
+- **Mobile-first design:** Components are responsive and adapt seamlessly to different screen sizes, delivering a great user experience on all devices.
+- **Easy customization:** Components can be customized through props and slots, allowing you to tailor them to your specific needs and design preferences.
+- **Accessibility:** Focused on accessibility and WCAG compliance, making your web applications usable by everyone.
 
 5. iView
 
