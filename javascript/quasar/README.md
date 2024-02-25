@@ -42,3 +42,8 @@ For more detailed instructions and documentation, please visit the [Quasar docum
 ## Documentation
 
 - [What is Quasar?](./what.is.quasar.md)
+
+## Useful Links
+
+- [Building a Cross-Platform Note App](https://www.youtube.com/watch?v=qPkSwo8QyoA)
+  - Quasar Framework is an open-source Vue JS framework for building apps, with a single codebase, and deploy it on to Mobile, Web, or Desktop. This app is using the Quasar Framework with the Vue 3 composition API to create a note-taking app. This app will allow users to create, update and delete notes using a rich text editor that comes preconfigured with quasar. I'll also show you how you can run the app on the web, desktop, and mobile app.
