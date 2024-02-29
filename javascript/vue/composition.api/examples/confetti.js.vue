@@ -1,4 +1,5 @@
 <script setup>
+// REF: https://github.com/loonywizard/js-confetti
 import JSConfetti from 'js-confetti'
 
 const confetti = new JSConfetti()
