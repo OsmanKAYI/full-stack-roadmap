@@ -36,6 +36,7 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - [filter() Array Function](./filter.array.function.md)
 - [Console Commands](./console.commands.md)
 - [JavaScript Tips](./js.tips.md)
+- [18 JavaScript Tips for Clean and Efficient Code](./18.tips.for.clean.code.md)
 - [21 Tricks Every Coder Should Master!](./21.tricks.md)
 - [10 Tricks You Don't Know](./10.tricks.md)
 - [21 Pro Tricks](./21.pro.tricks.md)
