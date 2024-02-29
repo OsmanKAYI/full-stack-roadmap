@@ -67,6 +67,9 @@ Overall, the Composition API provides a more flexible and powerful way of writin
 
 #### Examples
 
+- [Confetti.js with Vue3](./composition.api/examples/confetti.js.vue)
+
+**Vue 3 Tutorials**
 - [Vue3 (Composition Api) Template](./composition.api/examples/00.vue3.template.vue)
 - [Hello World!](./composition.api/examples/01.hello.world.vue)
 - [Declarative Rendering](./composition.api/examples/02.declarative.rendering.vue)
