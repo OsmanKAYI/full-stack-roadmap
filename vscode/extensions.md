@@ -96,22 +96,11 @@ code --install-extension ms-vscode.vscode-typescript-next
 # Jupyter
 ## jupyter notebook support, interactive programming and computing that supports Intellisense, debugging and more.
 code --install-extension ms-toolsai.jupyter
-
-# Jupyter Cell Tags
-## this extension provides support for notebook cell tags in Visual Studio Code for workng with tools like papermill, nbconvert, nbgrader and many more.
-code --install-extension ms-toolsai.vscode-jupyter-cell-tags
-
-# Jupyter Keymap
-## this extension provides keymaps for notebooks in Visual Studio Code to match the keybindings in Jupyter Notebook. This extension comes with the Jupyter extension for Visual Studio Code and can be disabled or uninstalled.
-code --install-extension ms-toolsai.jupyter-keymap
-
-# Jupyter Notebook Renderers
-## a Visual Studio Code extension that provides renderers for outputs of Jupyter Notebooks.
-code --install-extension ms-toolsai.jupyter-renderers
-
-# Jupyter Slide Show
-## jupyter Slide Show support for VSCode.
-code --install-extension ms-toolsai.vscode-jupyter-slideshow
+## this extension has the following extensions installed
+### Jupyter Cell Tags, which provides support for notebook cell tags in Visual Studio Code for workng with tools like papermill, nbconvert, nbgrader and many more.
+### Jupyter Keymap, which provides keymaps for notebooks in Visual Studio Code to match the keybindings in Jupyter Notebook. This extension comes with the Jupyter extension for Visual Studio Code and can be disabled or uninstalled.
+### Jupyter Notebook Renderers, which is a Visual Studio Code extension that provides renderers for outputs of Jupyter Notebooks.
+### Jupyter Slide Show, which is a jupyter Slide Show support for VSCode.
 
 # Linter
 ## extension for code linting, all in one package. New linters can be easily added through an extension framework.
