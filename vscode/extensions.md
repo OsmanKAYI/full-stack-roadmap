@@ -137,10 +137,8 @@ code --install-extension pkief.material-icon-theme
 # Material Theme
 ## manage pull requests and conduct code reviews in your IDE with full source-tree context. Comment on any line, not just the diffs. Use jump-to-definition, your favorite keybindings, and code intelligence with more of your workflow.
 code --install-extension equinusocio.vsc-material-theme
-
-# Material Theme Icons
-## Material Theme Icons, the most epic icons theme for Visual Studio Code and Material Theme.
-code --install-extension equinusocio.vsc-material-theme-icons
+## this extension has the following extension installed
+### Material Theme Icons, which is the most epic icons theme for Visual Studio Code and Material Theme.
 
 # Peacock
 ## subtly change the color of your Visual Studio Code workspace. Ideal when you have multiple VSCode instances, use VS Live Share, or use VSCode's Remote features, and you want to quickly identify your editor.
