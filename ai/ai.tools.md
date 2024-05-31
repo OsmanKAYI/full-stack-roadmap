@@ -36,13 +36,13 @@
 - [ElevenLabs](https://elevenlabs.io/): AI Voice Generator and Research Lab.
 - [Lovo AI](https://lovo.ai/): AI Voice Generator & Text to Speech platform.
 
-# Website Generator
+## Website Generator
 
 - [Durable AI](https://app.durable.co/business-selector?origin=login): AI website builder.
 - [Dora AI](https://www.dora.run/ai): Code-free website builder.
 - [Seodity](https://seodity.com/): Website optimization tool.
 
-# Presentation
+## Presentation
 
 - [SlidesGo](https://slidesgo.com/): AI tool for creating professional-grade slide decks.
 - [Wepik AI](https://wepik.com/): AI Presentation Maker for generating presentations.
@@ -50,7 +50,7 @@
 - [ChainGPT](https://www.chaingpt.org/): AI model for code-free smart contract programming.
 - [Dora AI](https://www.dora.run/ai): AI-powered tool for building, customizing, and publishing websites.
 
-# Architectural Design
+## Architectural Design
 
 - [Finch3D](https://www.finch3d.com/): AI tool for architectural design.
 - [Evolvelab](https://www.evolvelab.io/veras): AI platform for architectural design.
@@ -58,8 +58,9 @@
 - [Collov AI](https://collov.ai/): Uses AI for transforming interior aspirations into design renderings.
 - [Droxy AI](https://app.droxy.ai/dashboard/chatbots): AI tool for creating chatbots without coding.
 
-# Research Assistant
+## Research Assistant
 
+- [Neuro Mermaid AI](https://neuromermaid.ai/pages/): Research and visualise new ideas using Generative AI
 - [Consensus AI](https://consensus.app/): Search engine using AI to find insights in research papers.
 - [Semantic Scholar](https://www.semanticscholar.org/): AI-powered research tool for scientific literature.
 - [Elicit AI](https://elicit.org/): Research assistant using language models like GPT-3.
@@ -67,7 +68,7 @@
 - [Text Cortex AI](https://app.textcortex.com/user/dashboard): Employs AI to create content in any textbox.
 - [RYTR](https://app.rytr.me/create): AI writing assistant for creating high-quality content.
 
-# AI Prompt
+## AI Prompt
 
 - [MyBib](https://www.mybib.com/#/projects/Q3BwkW/citations): Free bibliography and citation generator.
 - [Cite Fast](https://www.citefast.com/?s=APA7#_Webpage): Free APA7 citation generator.
