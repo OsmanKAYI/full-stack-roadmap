@@ -19,6 +19,7 @@ sudo apt install python3
 The official Python documentation is an excellent resource for learning the language and exploring its features. It can be found at [docs.python.org](https://docs.python.org/). The documentation includes tutorials, guides, and a comprehensive library reference.
 
 - [Object Oriented Programming (OOP)](./oop.md)
+- [Streamlit](./streamlit.io.md)
 
 ## Package Management
 
