@@ -26,6 +26,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Educator Notes](./egitmen.notlari.md)
 - [Basic Linux Commands I](./temel.linux.komutlari1.md)
 - [Basic Linux Commands II](./temel.linux.komutlari2.md)
+- [Basic Commands and Command Line Shortcuts](./basic.commands.and.shortcuts.md)
 - [Find Command on Linux](./find.command.md)
 - [Create New User & Delete the Old One](./create.new.user.md)
 - [How to Install a Desktop (GUI) on an Ubuntu Server](./install.desktop.gui.md)
