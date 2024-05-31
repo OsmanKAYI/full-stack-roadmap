@@ -122,6 +122,10 @@ code --install-extension yzhang.markdown-all-in-one
 ## adds Mermaid diagram and flowchart support to VS Code's builtin markdown preview
 code --install-extension bierner.markdown-mermaid
 
+# markdownlint
+## markdown linting and style checking for Visual Studio Code
+code --install-extension davidanson.vscode-markdownlint
+
 # Markmap
 ## visualizes your markdown files as markmap in VSCode
 code --install-extension gera2ld.markmap-vscode

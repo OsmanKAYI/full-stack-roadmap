@@ -72,6 +72,10 @@ code --install-extension yzhang.markdown-all-in-one
 ## adds Mermaid diagram and flowchart support to VS Code's builtin markdown preview
 code --install-extension bierner.markdown-mermaid
 
+# markdownlint
+## markdown linting and style checking for Visual Studio Code
+code --install-extension davidanson.vscode-markdownlint
+
 # Material Icon Theme
 ## this extension enables you to change the color, theme, and etc. of the default folder icon using the command palette or via user settings.
 code --install-extension pkief.material-icon-theme
