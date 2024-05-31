@@ -95,6 +95,7 @@ This documentation includes guides, tutorials, and reference material for learni
 
 ## Useful Links
 
+- [Ubuntu Tutorials](https://ubuntu.com/tutorials)
 - [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)
   - A repo with notes and tricks on using the command line, useful when working in Linux, with an emphasis on flexibility and fluency
 - [Grep Cheatsheet for Sysadmins](https://pbs.twimg.com/media/F4AiJA1XAAEGdKN?format=jpg&name=4096x4096)
