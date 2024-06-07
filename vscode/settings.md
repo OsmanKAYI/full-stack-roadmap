@@ -26,7 +26,7 @@ My prefered extensions and special settings for them in VSCode.
 
   // Defines the border of focused and unfocused tabs and background of focused tab
   "workbench.colorCustomizations": {
-    "tab.activeBorder": "#ff0000",
+    "tab.activeBorder": "#04eb17",
     "tab.unfocusedActiveBorder": "#000000",
     "tab.activeBackground": "#009688"
   },
@@ -117,9 +117,9 @@ My prefered extensions and special settings for them in VSCode.
   ///////////////////////// Draw.io Integration /////////////////////////
   // by default, this extension only handles `*.drawio.svg` files
   // add this if you want to associate it with `.svg` files
-  "workbench.editorAssociations": {
-    "*.svg": "hediet.vscode-drawio-text"
-  },
+  //"workbench.editorAssociations": {
+  //  "*.svg": "hediet.vscode-drawio-text"
+  //},
 
   ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
   ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
@@ -200,9 +200,9 @@ My prefered extensions and special settings for them in VSCode.
     "./themes/your-theme.css"
   ],
 
-  ///////////////////////// Matertial Icon Theme /////////////////////////
-  ///////////////////////// Matertial Icon Theme /////////////////////////
-  ///////////////////////// Matertial Icon Theme /////////////////////////
+  ///////////////////////// Material Icon Theme /////////////////////////
+  ///////////////////////// Material Icon Theme /////////////////////////
+  ///////////////////////// Material Icon Theme /////////////////////////
   "material-icon-theme.folders.color": "#ef5350",
   "material-icon-theme.folders.theme": "specific",
   "material-icon-theme.opacity": 1,
@@ -254,8 +254,8 @@ My prefered extensions and special settings for them in VSCode.
       "text": "TODO:",
       "color": "red",
       "border": "1px solid red",
-      "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
-      "backgroundColor": "rgba(0,0,0,.2)"
+      "borderRadius": "5px", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "rgba(0,255,0,0.2)"
       //other styling properties goes here ...
     }
   ],
@@ -263,12 +263,12 @@ My prefered extensions and special settings for them in VSCode.
   //add following :|\\(([^)]+)\\) code after FIXME to highlight the content between parentheses
   "todohighlight.defaultStyle": {
     "color": "red",
-    "backgroundColor": "#00BCD4",
+    "backgroundColor": "#E0E0E0",
     "overviewRulerColor": "#ffab00",
     "cursor": "pointer",
     "border": "1px solid #006064",
-    "borderRadius": "2px",
-    "isWholeLine": true
+    "borderRadius": "10px",
+    "isWholeLine": false
     //other styling properties goes here ...
   },
   "todohighlight.include": [
@@ -302,10 +302,10 @@ My prefered extensions and special settings for them in VSCode.
   "todo-tree.highlights.defaultHighlight": {
     "icon": "alert",
     "type": "text",
-    "foreground": "#ff0000",
-    "background": "#fdfdfd",
-    "opacity": 50,
-    "iconColour": "#004cff"
+    "foreground": "#00ff00",
+    "background": "#000000",
+    "opacity": 100,
+    "iconColour": "#ff0000"
   },
   "todo-tree.highlights.customHighlight": {
     "TODO": {
@@ -318,6 +318,11 @@ My prefered extensions and special settings for them in VSCode.
       "gutterIcon": true
     }
   },
+
+  ///////////////////////// END /////////////////////////
+  ///////////////////////// END /////////////////////////
+  ///////////////////////// END /////////////////////////
+
   "editor.linkedEditing": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.formatOnType": true,
@@ -341,7 +346,6 @@ My prefered extensions and special settings for them in VSCode.
   "vetur.validation.template": false,
   "git.suggestSmartCommit": false,
   "chronicler.ffmpeg-binary": "/usr/bin/ffmpeg",
-  "editor.minimap.enabled": false,
   "githubPullRequests.createOnPublishBranch": "never",
   "tabnine.experimentalAutoImports": true,
   "codeium.enableConfig": {
@@ -351,6 +355,11 @@ My prefered extensions and special settings for them in VSCode.
   "codeium.enableCodeLens": false,
   "terminal.integrated.env.linux": {},
   "console-ninja.featureSet": "Community",
-  "console-ninja.showWhatsNew": false
+  "console-ninja.showWhatsNew": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "hediet.vscode-drawio.resizeImages": null,
+  "editor.minimap.enabled": false
 }
 ```
