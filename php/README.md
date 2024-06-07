@@ -14,6 +14,7 @@ The PHP documentation is available online at [php.net](php.net/docs). This docum
 - [How to Use Two Different PHP Versions](./how.to.use.two.different.php.versions.md)
 - [Database connection v1 (PHP File)](./php.db.connection.v1.php)
 - [Database connection v2 (PHP File)](./php.db.connection.v2.php)
+- [PHP Array Functions](./php.array.functions.md)
 - [PHP GET & POST Methods](./php.get.post.methods.md)
 - [PHP Forms](./php.form.introduction.md)
 - [PHP Form Handling](./php.form.handling.md)
