@@ -20,6 +20,7 @@
 
 - [RunwayML](https://app.runwayml.com/video-tools/teams/osmankayi06/dashboard): AI model for image and video generation.
 - [Leonardo AI](https://app.leonardo.ai/): Generates captivating images and artwork.
+- [Mokker AI](https://app.mokker.ai/): Upload a photo of a product and Mokker AI magically replaces the background in a realistic way.
 - [NightCafe AI](https://creator.nightcafe.studio/studio?open=todos): AI Art Generator app.
 - [Leap AI](https://www.tryleap.ai/projects/0190ff25-50ec-4989-af05-10434b123be7/generate/playground): Platform for generating images (art, avatars, logos).
 - [Artguru AI](https://www.artguru.ai/): AI platform with creative tools like text-to-image, photo-to-art, and more.
