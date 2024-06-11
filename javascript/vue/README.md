@@ -62,6 +62,7 @@ Overall, the Composition API provides a more flexible and powerful way of writin
 - [General Notes for Vue3](./composition.api/vue3.general.notes.md)
 - [Ref vs Reactive](./composition.api/ref.vs.reactive.md)
 - [Mutation in Vuejs Composition API](./composition.api/mutation.md)
+- [Vue3 Reactivity Hacks: The Key-Changing Technique](./composition.api/vue.reactivity.hacks.md)
 - [Force Vue to Rerender a Component](./composition.api/force.vue.to.rerender.component.md)
 - [Web Socket and Redis Usage with Vue3](./composition.api/web.socket.and.redis.usage.md)
 
