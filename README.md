@@ -30,7 +30,7 @@ These notes are a collection of useful information, tips, and tricks related to 
 - [Presentation Tools](./presentation)
 - [Dart](./dart)
 - [Windows](./windows)
-- [Others](./others)
+- [Useful Tips](./useful.tips/)
 
 ## Documentation
 
