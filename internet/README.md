@@ -40,7 +40,6 @@ Web security refers to protecting networks and computer systems from damage to o
 - [JSON Web Token](./jwt.md)
 - [How to Create VPN Server](./create.vpn.md)
 - [Reviving Expired Domains](./reviving.expired.domains.md)
-- [10 Work-Life Hacks for a Developer](./10.worklife-hacks.md)
 
 ## Useful Links
 
