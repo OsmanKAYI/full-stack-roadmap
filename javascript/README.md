@@ -36,6 +36,7 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - [filter() Array Function](./filter.array.function.md)
 - [Console Commands](./console.commands.md)
 - [JavaScript Tips](./js.tips.md)
+- [Most Essential JavaScript Functions and Usages](./most.essential.js.functions.md)
 - [18 JavaScript Tips for Clean and Efficient Code](./18.tips.for.clean.code.md)
 - [21 Tricks Every Coder Should Master!](./21.tricks.md)
 - [10 Tricks You Don't Know](./10.tricks.md)
@@ -46,11 +47,12 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - [Quasar Framework](./quasar/README.md)
 
 ### Examples
-  - [Create Demo API with JSON Server](./examples/demo-server/README.md)
-    - [db.json](./examples/demo-server/db.json)
-    - [generate.js](./examples/demo-server/generate.js)
-  - [Create Real-Time Chart with Plotly.js](./examples/real-time-chart/README.md)
-    - [index.html](./examples/real-time-chart/index.html)
+
+- [Create Demo API with JSON Server](./examples/demo-server/README.md)
+  - [db.json](./examples/demo-server/db.json)
+  - [generate.js](./examples/demo-server/generate.js)
+- [Create Real-Time Chart with Plotly.js](./examples/real-time-chart/README.md)
+  - [index.html](./examples/real-time-chart/index.html)
 
 ## Useful Links
 
@@ -75,5 +77,5 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
   - The typical use case for this high speed Node-API module is to convert large images in common formats to smaller, web-friendly JPEG, PNG, WebP, GIF and AVIF images of varying dimensions.
 
 - [JavaScript Chart Demos - ApexCharts](https://apexcharts.com/javascript-chart-demos/)
-  -  ApexCharts is a modern charting library that helps developers to create beautiful and interactive visualizations for web pages. It is an open-source project licensed under MIT and is free to use in commercial applications.
-  -  Besides [JavaScript](https://apexcharts.com/javascript-chart-demos/), it is also available for both [Angular](https://apexcharts.com/angular-chart-demos/), [React](https://apexcharts.com/react-chart-demos/), and [Vue](https://apexcharts.com/vue-chart-demos/).
+  - ApexCharts is a modern charting library that helps developers to create beautiful and interactive visualizations for web pages. It is an open-source project licensed under MIT and is free to use in commercial applications.
+  - Besides [JavaScript](https://apexcharts.com/javascript-chart-demos/), it is also available for both [Angular](https://apexcharts.com/angular-chart-demos/), [React](https://apexcharts.com/react-chart-demos/), and [Vue](https://apexcharts.com/vue-chart-demos/).
