@@ -34,6 +34,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Changing Disk Permissions](./changing.disk.permissions.md)
 - [Terminal](./terminal.md)
 - [Vim Editor](./vim.md)
+- [Viewing and Monitoring Log Files](./view.and.monitor.logs.md)
 - [Log Parsing Commands](./log.parsing.md)
 - [Data Gathering with Linux Terminal](./linux.terminal.ile.veri.toplama.md)
 - [Linux Zip Commands](./linux.zip.komutlari.md)
