@@ -20,6 +20,8 @@ This documentation includes guides, tutorials, and reference material for learni
 
 ## Useful Links
 
+- [Pro Git Book (TR)](https://git-scm.com/book/tr/v2) - [Pro Git Book (EN)](https://git-scm.com/book/en/v2)
+  - One of the best resources for learning Git even for beginners
 - [Git Tutorial for Absolute Beginners](https://www.youtube.com/watch?v=CvUiKWv2-C0)
 - [How to Use Git Branch Successfully](https://medium.com/@muratcanbur/ba%C5%9Far%C4%B1l%C4%B1-bir-git-branch-modeli-nas%C4%B1l-olu%C5%9Fturulur-e026e5cc24c2)
 - [GitHub Issues](https://medium.com/@noteCe/5-github-g%C3%B6rev-y%C3%B6netimi-i%CC%87ssues-ve-organizasyon-1277ef74b409)
