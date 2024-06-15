@@ -32,12 +32,6 @@ These notes are a collection of useful information, tips, and tricks related to 
 - [Windows](./windows)
 - [Useful Tips](./useful.tips/)
 
-## Documentation
-
-- [What is Business Logic?](./business.logic.md)
-- [Semantic Versioning](./semantic.versioning.mdmd)
-- [How to Become a Backend Engineer](./how.to.become.backend.eng.md)
-
 ## Useful Links
 
 - The sites where you can improve coding and algorithm knowledge
