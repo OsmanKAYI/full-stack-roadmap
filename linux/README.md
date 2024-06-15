@@ -97,9 +97,8 @@ This documentation includes guides, tutorials, and reference material for learni
 ## Useful Links
 
 - [Ubuntu Tutorials](https://ubuntu.com/tutorials)
+- [Ubuntu Tutorial (Türkçe)](https://turkce-linux.gitbook.io/anasayfa)
 - [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)
   - A repo with notes and tricks on using the command line, useful when working in Linux, with an emphasis on flexibility and fluency
 - [Grep Cheatsheet for Sysadmins](https://pbs.twimg.com/media/F4AiJA1XAAEGdKN?format=jpg&name=4096x4096)
 - [File Permissions Cheatsheet](https://pbs.twimg.com/media/F4jI5nxawAIgI00?format=jpg&name=medium)
-
-**Ref:** https://twitter.com/javinpaul/status/1656289356641079296?t=F1BAGnJZ-PaVwX2_i6CcBg&s=35
