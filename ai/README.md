@@ -20,6 +20,7 @@ This repository is dedicated to exploring and developing AI solutions. It includ
 - [Ebeveynlere Yapay Zeka ile İlgili Tavsiyeler (2023-2024)](https://cbddo.gov.tr/arastirma-raporlari/)
 - [Machine Learning Lecture Notes from Stanford University](https://github.com/afshinea/stanford-cs-229-machine-learning/tree/master)
 - [Deep Learning Lecture Notes from Stanford University](https://github.com/afshinea/stanford-cs-230-deep-learning)
+- [MIT 6.S191: Introduction to Deep Learning](https://www.youtube.com/watch?v=ErnWZxJovaM&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&t=29s)
 - [Artificial Intelligence Lecture Notes from Stanford University](https://github.com/afshinea/stanford-cs-221-artificial-intelligence)
 - [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g)
 - [Stable Diffusion ile Görsel Üretmek](https://www.youtube.com/watch?v=DcwH_95F_pU)
