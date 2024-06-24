@@ -36,6 +36,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Terminal](./terminal.md)
 - [Vim Editor](./vim.md)
 - [Viewing and Monitoring Log Files](./view.and.monitor.logs.md)
+- [Track File and Directory Changes in Linux with fswatch](./fswatch.md)
 - [Log Parsing Commands](./log.parsing.md)
 - [Data Gathering with Linux Terminal](./linux.terminal.ile.veri.toplama.md)
 - [Linux Zip Commands](./linux.zip.komutlari.md)
