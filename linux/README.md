@@ -102,5 +102,6 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Ubuntu Tutorial (Türkçe)](https://turkce-linux.gitbook.io/anasayfa)
 - [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)
   - A repo with notes and tricks on using the command line, useful when working in Linux, with an emphasis on flexibility and fluency
+- [A Guide to Installing Applications on Linux (Ebook)](https://opensource.com/sites/default/files/gated-content/osdc_installing_applications_on_linux.pdf)
 - [Grep Cheatsheet for Sysadmins](https://pbs.twimg.com/media/F4AiJA1XAAEGdKN?format=jpg&name=4096x4096)
 - [File Permissions Cheatsheet](https://pbs.twimg.com/media/F4jI5nxawAIgI00?format=jpg&name=medium)
