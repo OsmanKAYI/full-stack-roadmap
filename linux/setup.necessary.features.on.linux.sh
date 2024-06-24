@@ -88,6 +88,9 @@ pip3 install thefuck --user
 ## Necessary Packages
 sudo apt install vim ranger bat pdftk meld xclip axel gnome-tweaks net-tools hardinfo gpustat nvtop testdisk unrar caffeine magic-wormhole hashcat pv figlet lolcat boxes-y
 
+## Ulauncher
+sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher
+
 ## TLDR
 sudo apt install tldr -y
 tldr -u

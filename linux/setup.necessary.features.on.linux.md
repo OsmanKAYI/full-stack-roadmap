@@ -83,6 +83,7 @@ pip3 install thefuck --user
 - **vim** is a free and open-source, screen-based text editor program.
 - **bat**, is a cat command written in Rust programming language, comes with syntax highlighting, git integration, and works as is a drop-in cat command replacement.
 - **ranger**, is a console file manager with VI key bindings.
+- **locate**, is a powerful tool in Linux used for finding files and directories in your system. It uses a database that stores the path of every file and directory, making the search process significantly faster than searching through each directory manually.
 - **pdftk**, is a PDF toolkit. It allows you to manipulate PDF files. It also allows you to extract text from PDF files.
 - **meld**, is the visual diff and merge tool, targeted at developers. It allows users to compare two or three files or directories visually, color-coding the different lines.
 - **xclip** is X11 clipboard manipulation tool, similar to xsel.Handles the X primary and secondary selections, plus the system clipboard ( <kbd>CTRL</kbd> + <kbd>C</kbd> / <kbd>CTRL</kbd> + <kbd>V</kbd> ).
@@ -103,7 +104,7 @@ pip3 install thefuck --user
 - **boxes** is a text filter which can draw any kind of box around its input text. Box design choices range from simple boxes to complex ASCII art.
 
 ```bash
-sudo apt install vim ranger bat pdftk meld xclip axel gnome-tweaks net-tools hardinfo gpustat nvtop testdisk unrar caffeine magic-wormhole hashcat pv figlet lolcat boxes -y
+sudo apt install vim ranger bat locate pdftk meld xclip axel gnome-tweaks net-tools hardinfo gpustat nvtop testdisk unrar caffeine magic-wormhole hashcat pv figlet lolcat boxes -y
 ```
 
 - `batcat $fileName` # to see and arrange the content of any file.
@@ -112,6 +113,16 @@ sudo apt install vim ranger bat pdftk meld xclip axel gnome-tweaks net-tools har
 - `gpustat -i 0.20` # to follow GPU usage as 5 measurements / second (or 1 measurement / milisecond)
 - `wormhole send "fileName"` # to send file
 - `figlet Osman Kayi|lolcat` # to see piped and colored text of "Osman Kayi" 
+
+## Ulauncher
+
+- **Ulauncher** is an application launcher for Linux
+
+```bash
+sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher
+```
+
+- <kbd>CTRL</kbd> + <kbd>SPACE BAR</kbd> to use Ulauncher.
 
 ## TLDR
 
