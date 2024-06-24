@@ -8,6 +8,7 @@ This repository is dedicated to exploring and developing AI solutions. It includ
 
 - [AI Courses](./ai.courses.md)
 - [AI Tools](./ai.tools.md)
+- [Useful AI Tools](./useful.ai.tools.md)
 - [Best AI Extensions](./extensions.md)
 - [ChatGPT Prompts](./chatgpt.prompts.md)
 - [Use Uncensored AI on Your Local Machine](./uncensored.ai.md)
