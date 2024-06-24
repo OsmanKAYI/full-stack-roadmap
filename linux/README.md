@@ -27,6 +27,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Basic Linux Commands I](./temel.linux.komutlari1.md)
 - [Basic Linux Commands II](./temel.linux.komutlari2.md)
 - [Basic Commands and Command Line Shortcuts](./basic.commands.and.shortcuts.md)
+- [Awk Command [ or Language :) ] on Linux](./awk.command.md)
 - [Find Command on Linux](./find.command.md)
 - [Create New User & Delete the Old One](./create.new.user.md)
 - [How to Install a Desktop (GUI) on an Ubuntu Server](./install.desktop.gui.md)
@@ -82,13 +83,13 @@ This documentation includes guides, tutorials, and reference material for learni
 6. [nslookup](https://www.java67.com/2012/12/unix-command-to-find-ip-address-from-hostname.html)
 7. [crontab](https://www.java67.com/2017/08/how-to-backup-and-load-crontab-from-file-Linux-example.html)
 
-**Linux Commands**
+- **Linux Commands**
 
 <div style="text-align: center;">
   <img src="https://pbs.twimg.com/media/F5L5PnmWAAAje7k?format=jpg&name=900x900" title="Linux Commands Cheatsheet"><br>
 </div>
 
-**Cron Cheatsheet**
+- **Cron Cheatsheet**
 
 <div style="text-align: center;">
   <img src="https://pbs.twimg.com/media/FvxSYknagAEzE1F?format=jpg&name=4096x4096" title="Cron Cheatsheet">
