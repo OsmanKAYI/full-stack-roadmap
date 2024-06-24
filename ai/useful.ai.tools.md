@@ -20,4 +20,6 @@
 
 - **Create avatars** → Anime AI
 
+- **Generate roadmaps** → Roadmap AI
+
 **Ref:** [Ali Tekin - X](https://x.com/alitekintr/status/1799818593913475425)
