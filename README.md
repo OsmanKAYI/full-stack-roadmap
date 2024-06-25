@@ -56,7 +56,7 @@ These notes are a collection of useful information, tips, and tricks related to 
 
 ## Contributing
 
-This project have been created by [Osman KAYI](https://github.com/OsmanKAYI), who is a civil engineer and a PhD student at Ankara Yildirim Beyazit University, and [Nuri AKMAN](https://github.com/nuriakman), who is a computer programmer experienced at web based programming with PHP and MySQL.
+This project have been created by [Osman KAYI](https://github.com/OsmanKAYI), who is a civil engineer and a PhD student at Ankara Yildirim Beyazit University, and [Nuri AKMAN](https://github.com/nuriakman), who is a web developer experienced at web based programming with JavaScript, PHP and MySQL.
 
 We welcome contributions from the community. If you find a bug, have a feature request, or would like to contribute code, please open an issue or pull request.
 
