@@ -5,7 +5,7 @@ Here, you will find out some usefull informations which I cannot group them in a
 - [How to Become a Backend Engineer](./how.to.become.backend.eng.md)
 - [Important Links for Education](./onemli.linkler.md)
 - [Free Certification Courses from Google](./courses.from.google.md)
-- [10 Work-Life Hacks](./10.work.life.hacks.md)
+- [10 Work-Life Hacks](./10.worklife.hacks.md)
 - [Business Logic](./business.logic.md)
 - [Semantic Versioning](./semantic.versioning.md)
 - [Bluetooth](./bluetooth.md)
