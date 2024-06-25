@@ -103,6 +103,9 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 ### Add the necessary permissions to the custom shortcut
 sudo chmod ugo+rwx /home/$USER/Pictures/*
 
+## Master PDF Editor
+sudo snap install master-pdf-editor-5 -y
+
 ## Firefox
 ### Add Mozilla PPA
 sudo add-apt-repository -y ppa:mozillateam/ppa

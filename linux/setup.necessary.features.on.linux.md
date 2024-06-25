@@ -171,6 +171,14 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 sudo chmod ugo+rwx /home/$USER/Pictures/*
 ```
 
+## Master PDF Editor
+
+- Master PDF Editor is the optimal solution for editing PDF files in Linux. It enables you to create, edit, view, encrypt, sign and print interactive PDF documents.
+
+```bash
+sudo snap install master-pdf-editor-5 -y
+```
+
 ## GIMP Image Editor
 
 - GIMP is a free and open-source raster graphics editor used for image manipulation and image editing, free-form drawing, transcoding between different image file formats, and more specialized tasks.

@@ -113,6 +113,9 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 # add the necessary permissions to the custom shortcut
 sudo chmod ugo+rwx /home/$USER/Pictures/*
 
+## Master PDF Editor
+sudo snap install master-pdf-editor-5 -y
+
 ## GIMP Image Editor
 sudo apt install gimp -y
 
