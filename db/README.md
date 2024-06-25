@@ -63,7 +63,7 @@ MySQL is an open-source relational database management system. Its name is a com
 
 #### Examples with Socratica
 
-[Socratica](https://www.youtube.com/@Socratica) is a kind of usefull channel which can be followed by anyone who wants to learn something. You can watch the video series prepared for [SQL](<[Socratica](https://www.youtube.com/watch?v=nWyyDHhTxYU&list=PLi01XoE8jYojRqM4qGBF1U90Ee1Ecb5tt)>).
+[Socratica](https://www.youtube.com/@Socratica) is a kind of usefull channel which can be followed by anyone who wants to learn something. You can watch the video series prepared for [SQL](https://www.youtube.com/watch?v=nWyyDHhTxYU&list=PLi01XoE8jYojRqM4qGBF1U90Ee1Ecb5tt).
 
 - [Earthquake](https://github.com/OsmanKAYI/osmankayi.com/tree/main/db/mysql/socratica/earthquake)
 - [Martian](https://github.com/OsmanKAYI/osmankayi.com/tree/main/db/mysql/socratica/martian)

@@ -13,7 +13,7 @@ To get started with HTML, you can follow these steps:
 
 ## Documentation
 
-The HTML specification is maintained by the W3C (World Wide Web Consortium) and is available online at [w3.org](w3.org/TR/html/). This documentation includes a detailed reference of HTML tags, attributes, and syntax.
+The HTML specification is maintained by the W3C (World Wide Web Consortium) and is available online at [w3.org](https://html.spec.whatwg.org/multipage/). This documentation includes a detailed reference of HTML tags, attributes, and syntax.
 
 - [Introduction to HTML](./introduction.md)
 - [Basic Examples](./basic.examples.md)

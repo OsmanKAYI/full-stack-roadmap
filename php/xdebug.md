@@ -2,7 +2,7 @@
 
 ### Step 0: Install Xdebug
 
-- Follow [Install Xdebug](../linux/01.setup.necessary.features.on.linux.md#xdebug) page for instructions.
+- Follow [Install Xdebug](../linux/setup.necessary.features.on.linux.md#xdebug) page for instructions.
 
 ### Step 1: Install Xdebug Extension in VSCode
 

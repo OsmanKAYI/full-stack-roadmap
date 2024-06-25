@@ -7,7 +7,7 @@
 
 ## ChatGPT
 
-- [Open AI](https://open.ai/): Private research lab for AI development.
+- [Open AI](https://openai.com/): Private research lab for AI development.
   - [ChatGPT](https://chat.openai.com/): Chatbot with user-steering capabilities.
   - [TaskMatrix](https://github.com/microsoft/visual-chatgpt): Connects ChatGPT and Visual Foundation Models for image exchange.
 

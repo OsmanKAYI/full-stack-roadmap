@@ -12,7 +12,7 @@ _System project [instantbox](https://github.com/instantbox/instantbox) where you
 
 _If you want to see a website that explains what the commands you use in the Linux terminal do by breaking them down into parts, you can visit [explainshell.com](https://explainshell.com/)._
 
-_You can find Türkçe documentation for linux in [linux-dersleri](https://linux-dersleri.github.io/menu.html) which has a [github page](https://github.com/Linux-Dersleri/linux-dersleri.github.io) and its usage is explained in a [video](https://www.youtube.com/watch?v=RyDpMx6NLnI)._
+_You can find Türkçe documentation for linux in [linux-dersleri](https://github.com/Linux-Dersleri/linux-dersleri.github.io)._
 
 ## Documentation
 
@@ -31,7 +31,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Find Command on Linux](./find.command.md)
 - [Create New User & Delete the Old One](./create.new.user.md)
 - [How to Install a Desktop (GUI) on an Ubuntu Server](./install.desktop.gui.md)
-- [Linux File Permissions](./linux.dosya.izinleri.md)
+- [Linux File Permissions](./linux.permissions.md)
 - [Changing Disk Permissions](./changing.disk.permissions.md)
 - [Terminal](./terminal.md)
 - [Vim Editor](./vim.md)
@@ -66,7 +66,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Synchronize GooglePhotos to Local](./sync.googlephotos.md)
 - [External Harddisk Mounting Problem](./mounting.external.harddisk.md)
 - [Creating RAMDisk](./creating.ramdisk.md)
-- [Logical Volume Manager (LVM)](./lvm.md)
+- [Logical Volume Manager (LVM)](./nas.raid.lvm.md)
 - [Manage Disk Storage with LVM](./manage.storage.with.lvm.md)
 - [Forensic Data Recovery Tools](./forensic.data.recovery.tools.md)
 - [Data Recovery](./data.recovery.md)

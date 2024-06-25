@@ -8,7 +8,7 @@ PHP has a variety of frameworks available that can be used to build web applicat
 
 ## Documentation
 
-The PHP documentation is available online at [php.net](php.net/docs). This documentation includes guides, tutorials, and reference material for learning PHP and using it effectively.
+The PHP documentation is available online at [php.net](https://www.php.net/). This documentation includes guides, tutorials, and reference material for learning PHP and using it effectively.
 
 - [What is PHP](./what.is.php.md)
 - [How to Use Two Different PHP Versions](./how.to.use.two.different.php.versions.md)

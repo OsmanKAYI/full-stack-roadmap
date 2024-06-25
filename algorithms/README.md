@@ -31,7 +31,6 @@ This documentation provides a reference for the available resources and examples
 - [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer)
   - Algorithm Visualizer is an interactive online platform designed to bring algorithms to life through visualization. Whether you're a student, teacher, or professional, our platform provides an engaging way to explore and understand various algorithms.
   - [Live Demo](https://algorithm-visualizer.org/)
-- [Free Algorithm Books](https://github.com/cjbt/Free-Algorithm-Books)
 - [Algorithms by Jeff Erickson (PDF Book)](https://jeffe.cs.illinois.edu/teaching/algorithms/#book)
 - [Algoritmik Düşünmeye Giriş](https://www.youtube.com/playlist?list=PL98DQy3xBiLeSd09fMyp31dm3DO0l3f7I)
 - [Easy Algorithms with JavaScript (Türkçe)](https://www.youtube.com/playlist?list=PL0Au88Qum4UmiN0WHD6NKrZNpQqiUwwqe)
