@@ -63,5 +63,3 @@ We welcome contributions from the community. If you find a bug, have a feature r
 ## License
 
 This project is licensed under the **MIT License**.
-
-- [Sitemap](https://osmankayi.com/sitemap.html)
