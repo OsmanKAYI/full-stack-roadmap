@@ -86,7 +86,7 @@ sudo apt install python3-dev python3-pip python3-setuptools
 pip3 install thefuck --user
 
 ## Necessary Packages
-sudo apt install vim ranger bat locate tree pdftk meld xclip axel gnome-tweaks net-tools hardinfo gpustat nvtop testdisk unrar caffeine magic-wormhole hashcat pv figlet lolcat boxes-y
+sudo apt install axel bat boxes caffeine figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tree unrar vim magic-wormhole xclip -y
 
 ## Ulauncher
 sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher

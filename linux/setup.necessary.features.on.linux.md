@@ -80,32 +80,32 @@ pip3 install thefuck --user
 
 ## Necessary Packages
 
-- **vim** is a free and open-source, screen-based text editor program.
-- **bat**, is a cat command written in Rust programming language, comes with syntax highlighting, git integration, and works as is a drop-in cat command replacement.
-- **ranger**, is a console file manager with VI key bindings.
-- **locate**, is a powerful tool in Linux used for finding files and directories in your system. It uses a database that stores the path of every file and directory, making the search process significantly faster than searching through each directory manually.
-- **tree**, is  used to display the directory structure in a tree-like format.
-- **pdftk**, is a PDF toolkit. It allows you to manipulate PDF files. It also allows you to extract text from PDF files.
-- **meld**, is the visual diff and merge tool, targeted at developers. It allows users to compare two or three files or directories visually, color-coding the different lines.
-- **xclip** is X11 clipboard manipulation tool, similar to xsel.Handles the X primary and secondary selections, plus the system clipboard ( <kbd>CTRL</kbd> + <kbd>C</kbd> / <kbd>CTRL</kbd> + <kbd>V</kbd> ).
 - **axel** is a program that downloads a file from a FTP or HTTP server through multiple connection, each connection downloads its own part of the file.
-- **gnome Tweak Tool** is software that allows us to change the general appearance and behavior of components in the Gnome Desktop Environment.
-- **net-tools** package is a collection of programs for controlling the network subsystem of the Linux kernel. This package is known to build and work properly using an LFS-10.1 platform. This package includes `ifconfig`.
-- **hardInfo** (in short for “hardware information“) is a system profiler and benchmark graphical tool for Linux systems, that is able to gather information from both hardware and some software and organize it in an easy to use GUI tool.
-- **gpustat** is a GPU monitoring tool, capable of displaying a multitude of information from multiple GPU nodes on one page.
-- **nvtop** is a ncurses-based GPU status viewer for NVIDIA GPUs.
-- **testdisk** checks and recovers lost partitions.
-- **unrar** extracts RAR file archives.
-- **caffeine** prevents the desktop from becoming idle when an application is running full-screen. A desktop indicator ‘caffeine-indicator’ supplies a manual toggle, and the command ‘caffeinate’ can be used to prevent idleness for the duration of any command.
-- **wormhole** lets you share files with end-to-end encryption and a link that automatically expires. So you can keep what you share private and make sure your stuff doesn't stay online forever.
-- **hashcat** is a password recovery tool. It had a proprietary code base until 2015, but was then released as open source software.
-- **pv** shows the progress of data through a pipeline by giving information such as time elapsed, percentage completed (with progress bar), current throughput rate, total data transferred, and ETA.
-- **figlet** is a a computer program that generates text banners, in a variety of typefaces, composed of letters made up of conglomerations of smaller ASCII characters.
-- **lolcat** is a program that concatenates files, or standard input, to standard output (like the generic cat), and adds rainbow coloring to it.
+- **bat**, is a cat command written in Rust programming language, comes with syntax highlighting, git integration, and works as is a drop-in cat command replacement.
 - **boxes** is a text filter which can draw any kind of box around its input text. Box design choices range from simple boxes to complex ASCII art.
+- **caffeine** prevents the desktop from becoming idle when an application is running full-screen. A desktop indicator ‘caffeine-indicator’ supplies a manual toggle, and the command ‘caffeinate’ can be used to prevent idleness for the duration of any command.
+- **figlet** is a a computer program that generates text banners, in a variety of typefaces, composed of letters made up of conglomerations of smaller ASCII characters.
+- **gnome Tweak Tool** is software that allows us to change the general appearance and behavior of components in the Gnome Desktop Environment.
+- **gpustat** is a GPU monitoring tool, capable of displaying a multitude of information from multiple GPU nodes on one page.
+- **hardInfo** (in short for “hardware information“) is a system profiler and benchmark graphical tool for Linux systems, that is able to gather information from both hardware and some software and organize it in an easy to use GUI tool.
+- **hashcat** is a password recovery tool. It had a proprietary code base until 2015, but was then released as open source software.
+- **locate**, is a powerful tool in Linux used for finding files and directories in your system. It uses a database that stores the path of every file and directory, making the search process significantly faster than searching through each directory manually.
+- **lolcat** is a program that concatenates files, or standard input, to standard output (like the generic cat), and adds rainbow coloring to it.
+- **meld**, is the visual diff and merge tool, targeted at developers. It allows users to compare two or three files or directories visually, color-coding the different lines.
+- **net-tools** package is a collection of programs for controlling the network subsystem of the Linux kernel. This package is known to build and work properly using an LFS-10.1 platform. This package includes `ifconfig`.
+- **nvtop** is a ncurses-based GPU status viewer for NVIDIA GPUs.
+- **pdftk**, is a PDF toolkit. It allows you to manipulate PDF files. It also allows you to extract text from PDF files.
+- **pv** shows the progress of data through a pipeline by giving information such as time elapsed, percentage completed (with progress bar), current throughput rate, total data transferred, and ETA.
+- **ranger**, is a console file manager with VI key bindings.
+- **testdisk** checks and recovers lost partitions.
+- **tree**, is  used to display the directory structure in a tree-like format.
+- **unrar** extracts RAR file archives.
+- **vim** is a free and open-source, screen-based text editor program.
+- **wormhole** lets you share files with end-to-end encryption and a link that automatically expires. So you can keep what you share private and make sure your stuff doesn't stay online forever.
+- **xclip** is X11 clipboard manipulation tool, similar to xsel.Handles the X primary and secondary selections, plus the system clipboard ( <kbd>CTRL</kbd> + <kbd>C</kbd> / <kbd>CTRL</kbd> + <kbd>V</kbd> ).
 
 ```bash
-sudo apt install vim ranger bat locate tree pdftk meld xclip axel gnome-tweaks net-tools hardinfo gpustat nvtop testdisk unrar caffeine magic-wormhole hashcat pv figlet lolcat boxes -y
+sudo apt install axel bat boxes caffeine figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tree unrar vim magic-wormhole xclip -y
 ```
 
 - `batcat $fileName` # to see and arrange the content of any file.
