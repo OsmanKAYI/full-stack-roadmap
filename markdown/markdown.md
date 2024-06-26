@@ -55,7 +55,7 @@ To embed the video, you can use the following code:
 
 `[![videoName](http://img.youtube.com/vi/VIDEOID/0.jpg)](http://www.youtube.com/watch?v=VIDEOID)`
 
-[![videoName](http://img.youtube.com/vi/OluD-GW8cRM/0.jpg)](http://www.youtube.com/watch?v=OluD-GW8cRM)
+[![ Quasar & Vue 3: Design & Prototyping (Real World App #1)](http://img.youtube.com/vi/OluD-GW8cRM/0.jpg)](http://www.youtube.com/watch?v=OluD-GW8cRM 'Click to Watch!!!')
 
 ## Making List Having Checkbox
 
