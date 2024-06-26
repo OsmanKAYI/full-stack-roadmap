@@ -10,10 +10,6 @@ Embedded third-party tracking technologies, used on many websites and applicatio
 
 As all tracking activities occur when users access a web page through their browsers, I'll first touch on browsers. A web browser is a program that displays web pages and enables users to access them.
 
-<div style="text-align: center;">
-  <img src="https://media.licdn.com/dms/image/D5612AQHJV0M7SHQZOQ/article-inline_image-shrink_1500_2232/0/1658396682338?e=1713398400&v=beta&t=BX8kkPrZlU6uNGKc_2ocFJRGQr4emMcOnR17Zs4YCP0">
-</div>
-
 With HTML5, web pages can now store data within the browser itself. This advancement allows for much more data to be stored than was possible with just cookies, enabling more complex data processing activities.
 
 ## Local Storage
@@ -64,19 +60,11 @@ const customerData = [
 
 Canvas, an HTML5 API used for drawing graphics and animations on web pages, is employed to identify and track users. This technique relies on the fact that the same graphics and animations are rendered differently on different computers. By combining various user device or browser characteristics, unique tokens can be generated to identify users across different sites.
 
-<div style="text-align: center;">
-  <img src="https://media.licdn.com/dms/image/D5612AQGGbWIhhXb-Fw/article-inline_image-shrink_1500_2232/0/1658397199661?e=1713398400&v=beta&t=EQCY7uo78ez5MqvVSTx5hbdZazpHMhDVQa_sDGZZoYA">
-</div>
-
 When all these data points are combined, our digital footprints contain approximately three thousand different data points. When combined, these data points can violate users' privacy in a much more dangerous way compared to cookies or the methods mentioned above, often without their knowledge.
 
 ## Pixel
 
 Pixels are HTML code snippets that enable a website to collect information about its visitors. Unlike cookies, they can work without being loaded into the user's browser. They can directly send acquired information to the web server, and it's not as easy for users to disable this tracking technology as it is with cookies.
-
-<div style="text-align: center;">
-  <img src="https://media.licdn.com/dms/image/D5612AQH_mklYfPBknQ/article-inline_image-shrink_1500_2232/0/1658397700252?e=1713398400&v=beta&t=ZG2A7zVWiWrocJ3TC1px9KyK02t4gJTZNY5tReFjshI">
-</div>
 
 Facebook Pixel poses a particular issue. Data collected from Facebook's pixel feature is not anonymous and can often be associated with individual users, usually by their names, leading to serious data breaches.
 
@@ -112,10 +100,6 @@ Below is an example tracking code for Facebook Pixel:
 ## Email Tracking
 
 Email tracking does not mean someone reads all of our personal emails. Today, almost all emails are sent and read in HTML. An HTML email can be thought of as a static web page with text formatting, custom fonts, and most importantly, embedded images. Therefore, the pixel technology mentioned above means that when you open an email, depending on your email client, your device may send a request to the pixel server.
-
-<div style="text-align: center;">
-  <img src="https://media.licdn.com/dms/image/D5612AQExgeoFotW2RA/article-inline_image-shrink_1500_2232/0/1658397690179?e=1713398400&v=beta&t=--4AarK8Kj39uvvy4kGdlcNjqrspAdQhv0yA3NG8wOk">
-</div>
 
 Usually, they contain information about which email was opened and originally sent to which email address. However, the real risk here is that approximately 30% of emails leak this information to third-party tracking technologies. Moreover, approximately 80% of leaked data occurs over unreliable, unencrypted HTTP.
 

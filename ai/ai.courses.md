@@ -4,10 +4,6 @@
 
   - This is an introductory level microlearning course aimed at explaining what Generative AI is, how it is used, and how it differs from traditional machine learning methods. It also covers Google Tools to help you develop your own Gen AI apps.This course is estimated to take approximately 45 minutes to complete.
 
-- [Generative AI Fundamentals](https://www.cloudskillsboost.google/course_templates/556)
-
-  - Earn a skill badge by completing the Introduction to Generative AI, Introduction to Large Language Models and Introduction to Responsible AI courses. By passing the final quiz, you'll demonstrate your understanding of foundational concepts in generative AI.
-
 - [Introduction to Image Generation](https://www.cloudskillsboost.google/course_templates/541)
 
   - This course introduces diffusion models, a family of machine learning models that recently showed promise in the image generation space. Diffusion models draw inspiration from physics, specifically thermodynamics. Within the last few years, diffusion models became popular in both research and industry. Diffusion models underpin many state-of-the-art image generation models and tools on Google Cloud. This course introduces you to the theory behind diffusion models and how to train and deploy them on Vertex AI.

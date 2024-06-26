@@ -107,7 +107,7 @@ Bash, zsh, sh vb. GNU işletim sistemi için bir kabuk ya da başka bir deyişle
 - `less dosya` Önceki komuta eşdeğerdir, biraz daha fazla özellikleri vardır
 - `vim]] dosya` Bir metin dosyasını düzenlemek için kullanılır. Aynı türden nano, joe, mcedit gibi metin düzenleyicileri de kullanabilirsiniz, ancak vim ile UTF-8 kodlu metinleri de düzenleyebilirsiniz. Diğerleri bunu yapamaz.
 - `find]] / -name "dosya"` dosya adlı dosyayı en üst dizinden itibaren aramaya başlar. Dosya ismi,ve&nbsp gibi arama karakterleri de içerebilir. Örneğin benim sistemimde "fazlames" dizgesi ile fazlamesai.net.txt ve fazlamesai.org.txt dosyaları bulunuyor.
-- `locate  dosyaismi` [find](https://wiki.ubuntu-tr.net/index.php?title=Find "Find") gibidir, fakat düzenli olarak oluşturulan bir veritabanına bağlıdır, sistemdeki son değişikliklerden haberi olmayabilir.
+- `locate  dosyaismi` [find](https://wiki.ubuntu-tr.net/index.php?title=Find) gibidir, fakat düzenli olarak oluşturulan bir veritabanına bağlıdır, sistemdeki son değişikliklerden haberi olmayabilir.
 - `touch deneme.txt` 'deneme' isimli dosyanın oluşturulma ve düzenleme tarih bilgilerini şu anki tarihe değiştirir. Eğer böyle bir dosya yoksa sıfır bayt uzunluğunda deneme.txt isimli dosya oluşturur.
 - `xinit` Pencere yöneticisi olmayan bir X oturumu açar.
 - `startx` Pencere yöneticili bir X oturumu açar. DOS'daki win komutu gibidir.
@@ -295,7 +295,7 @@ Bash, zsh, sh vb. GNU işletim sistemi için bir kabuk ya da başka bir deyişle
 
 - `last` Sisteme son kayit olan kisileri göster
 - `less` Herhangi bir çıktıyı monitörde sayfa sayfa göster
-- `lilo` [GRUB](https://wiki.ubuntu-tr.net/index.php?title=GRUB "GRUB") benzeri bir Linux açılış yükleyicisi
+- `lilo` [GRUB](https://wiki.ubuntu-tr.net/index.php?title=GRUB) benzeri bir Linux açılış yükleyicisi
 - `ln` Dosyalar ya da dizinler arasinda link olustur
 - `logname` Oturum adını göster
 - `logout` Sistemden ayril (eger oturum kabuğuyla girildiyse)
@@ -374,12 +374,12 @@ Codename:	 utopic
 - `sh` Bourne kabuğu
 - `[shift]` K[a]ydir
 - `[s]hutdown` Sistemi kapat (bknz. init 0)
-- `[s]leep` Belli bir süre ara ver
+- `sleep` Belli bir süre ara ver
 - `sort` Siralayarak göster
-- [`]split` Bir dosyayi parcalara ayir`
-- [B]startx` X-Server baslat
-- `[s]u` Baska bir kullanici adiyla gir ( option verilmezse root sifresi vermek gerekir)
-- `[s]udo` Bir komutu [root](https://wiki.ubuntu-tr.net/index.php?title=Root "Root") (yetkili kullanıcı) gib[i] calistir (tabii "sudoers" dosyasi buna izin veriyorsa normal bir kullanicinin sudoers'i okumaya hakki yoktur)[.[]]
+- `split` Bir dosyayi parcalara ayir`
+- Bstartx` X-Server baslat
+- `su` Baska bir kullanici adiyla gir ( option verilmezse root sifresi vermek gerekir)
+- `sudo` Bir komutu [root](https://wiki.ubuntu-tr.net/index.php?title=Root) (yetkili kullanıcı) gibi calistir (tabii "sudoers" dosyasi buna izin veriyorsa normal bir kullanicinin sudoers'i okumaya hakki yoktur).
 
 \*_[T]_]\*
 

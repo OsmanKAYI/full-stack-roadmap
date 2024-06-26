@@ -672,7 +672,7 @@ echo "export PATH=\"\$PATH:\$HOME/.local/bin\"" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-- For more information visit [Get Photos on GooglePhotos Using gPhoto](./25.sync.googlephotos.md).
+- For more information visit [Get Photos on GooglePhotos Using gPhoto](./sync.googlephotos.md).
 
 ## OpenSSH
 
@@ -746,7 +746,7 @@ sudo rm -r ~/Desktop/Postman.desktop
 
 **Intallation:**
 
-- Visit [https://www.soapui.org/downloads/soapui/](SoapUI) and click on _Download SoapUI Open Source_.
+- Visit [SoapUI](https://www.soapui.org/downloads/soapui/) and click on _Download SoapUI Open Source_.
 
 ```bash
 cd Downloads/

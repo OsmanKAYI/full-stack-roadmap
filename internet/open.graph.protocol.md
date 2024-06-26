@@ -35,5 +35,5 @@ By integrating Open Graph tags, content creators enjoy several benefits:
 Implementing the Open Graph Protocol empowers content control, enhances engagement, reinforces branding, and potentially boosts website visibility in search results.
 
 **Refs:**
+
 - [The Open Graph Protocol](https://ogp.me/)
-- [miladev95 - Medium](https://medium.com/@miladev95/open-graph-541b6be00808)

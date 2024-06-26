@@ -14,7 +14,7 @@ To get started with Vue, you can follow these steps:
 
 ## Documentation
 
-The Vue documentation is available online at [vuejs.org](vuejs.org). This documentation includes guides, tutorials, and reference material for learning Vue and using it effectively.
+The Vue documentation is available online at [vuejs.org](https://www.vuejs.org). This documentation includes guides, tutorials, and reference material for learning Vue and using it effectively.
 
 - [Which One to Choose (Options or Composition)](./options.or.composition.md)
 - [What is Single File Component (SFC)](./single.file.components.md)

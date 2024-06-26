@@ -3,7 +3,6 @@
 ## Extensions
 
 - [Eightify](https://eightify.app/): ChatGPT plugins and updates.
-- [TopApps](https://www.businessedge.co/p/chatgpt-plugins-updated): AI tools database.
 
 ## ChatGPT
 
@@ -22,7 +21,7 @@
 - [Leonardo AI](https://app.leonardo.ai/): Generates captivating images and artwork.
 - [Mokker AI](https://app.mokker.ai/): Upload a photo of a product and Mokker AI magically replaces the background in a realistic way.
 - [NightCafe AI](https://creator.nightcafe.studio/studio?open=todos): AI Art Generator app.
-- [Leap AI](https://www.tryleap.ai/projects/0190ff25-50ec-4989-af05-10434b123be7/generate/playground): Platform for generating images (art, avatars, logos).
+- [Leap AI](https://www.tryleap.ai/): Platform for generating images (art, avatars, logos).
 - [Artguru AI](https://www.artguru.ai/): AI platform with creative tools like text-to-image, photo-to-art, and more.
 - [Vectorizer AI](https://vectorizer.ai/): Converts bitmap images to vector images.
 - [Durable AI](https://www.durable.co/): AI website builder for generating entire websites.
@@ -75,7 +74,7 @@
 - [Cite Fast](https://www.citefast.com/?s=APA7#_Webpage): Free APA7 citation generator.
 - [Guidde](https://app.guidde.com/home): Generative AI platform for easy sharing of know-how.
 - [tldv.io](https://tldv.io/app/library/meetings): AI-powered meeting recorder for Zoom and Google Meet.
-- [Scispace](https://typeset.io/): Writing and collaboration tool for research papers.
+- [Scispace](https://typeset.io): Writing and collaboration tool for research papers.
 - [Guidde](https://app.askcodi.com/home/): Complete tool for developers, includes Time Complexity, regex generator, HTML/CSS generator, and more.
 - [Humata AI](https://app.humata.ai/): AI-powered tool for analyzing and working with various types of documents.
 - [SlidesGo](https://app.prezo.ai/home/decks): AI platform for building professional-grade slide decks.

@@ -529,10 +529,6 @@ select[multiple] {
 
 - Beautiful diagram of vue lifecycle hooks shown below which most commonly used being `onMounted`, `onUpdated`, and `onUnmounted`.
 
-<div style="text-align: center;">
-  <img src="https://vuejs.org/assets/lifecycle.DLmSwRQE.png">
-</div>
-
 ## Watchers
 
 - With Composition API, we can use the watch function to trigger a callback whenever a piece of reactive state changes:

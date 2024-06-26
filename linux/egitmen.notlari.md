@@ -59,7 +59,6 @@ apt, apt-get ve apt-cache komutlarının alt kümesidir.
 - snap paketleri program deposu [https://snapcraft.io/store](https://snapcraft.io/store)
 - .deb dosyasını yüklemek için: `sudo dpkg -i  DOSYAADI.deb`
 - Ubuntu'da 80 portunu açmak için: `sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT; sudo apt-get install iptables-persistent`
-- Ubuntu'da bozuk [paket onarımı](https://www.techbrown.com/fix-broken-packages-ubuntu-16-04/)
 - Ubuntu Görünüm İnce Ayarları (Tweak) `sudo apt-get install gnome-tweak-tool`
 - Ubuntu Başlat çubuğundaki program ikonlarına tıklayınca açılır/kapanır özelliği `gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'`
 - Ubuntu Başlat çubuğundaki program ikonu üzerinde farenin tekeri çevrilince pencerelerini göstermesi `gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'`

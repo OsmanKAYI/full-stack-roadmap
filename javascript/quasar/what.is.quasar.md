@@ -46,7 +46,7 @@ quasar dev
 
 Finally:
 
-- **Official Website:** [quasar.dev](quasar.dev)
+- **Official Website:** [quasar.dev](https://quasar.dev/)
 - **Github Repository:** [quasarframework/quasar](https://github.com/quasarframework/quasar)
 - **YouTube Channel with nice and explanatory projects:** [MakeAppswithDanny/videos](https://www.youtube.com/c/MakeAppswithDanny/videos)
 

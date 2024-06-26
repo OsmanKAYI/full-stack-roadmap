@@ -161,4 +161,4 @@
 
   **Note that** If you send JWT tokens through HTTP headers, you should try to prevent them from getting too big. Some servers don't accept more than 8 KB in headers. If you are trying to embed too much information in a JWT token, like by including all the user's permissions, you may need an alternative solution, like Auth0 Fine-Grained Authorization.
 
-- For more information visit [JWT](https://jwt.io/introduction) and [akana](https://jwt.io/introductionhttps://www.akana.com/blog/what-is-jwt).
+- For more information visit [JWT](https://jwt.io/introduction) and [akana](https://www.akana.com/blog/what-is-jwt).

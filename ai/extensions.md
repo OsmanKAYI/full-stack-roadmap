@@ -12,9 +12,9 @@
 
   - Show ChatGPT answer with search engine resultsThis is an extension that shows responses from ChatGPT along with Google, Bing, DuckDuckGo and all other search engines. You can also start chatting with ChatGPT immediately after receiving an answer.
 
-- [Talk-to-ChatGPT](https://chrome.google.com/webstore/detail/talk-to-chatgpt/hodadfhfagpiemkeoliaelelfbboamlk)
+- [SonicGPT](https://chromewebstore.google.com/detail/sonicgpt-talk-to-chatgpt/mbhplhbpobkpnggnalabldfdjdcgnkie)
 
-  -Talk to ChatGPT through your microphone and receive voice responses.
+  -Talk to ChatGPT in multilanguage.
 
 - [ReaderGPT](https://chrome.google.com/webstore/detail/readergpt-chatgpt-based-w/ohgodjgnfedgikkgcjdkomkadbfedcjd/related)
 

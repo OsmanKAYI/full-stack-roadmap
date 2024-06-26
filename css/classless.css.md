@@ -5,6 +5,7 @@
 ## Contents
 
 - [Classless CSS](#classless-css)
+  - [Contents](#contents)
   - [Classless](#classless)
     - [Almond.CSS](#almondcss)
     - [attriCSS](#attricss)
@@ -167,7 +168,7 @@
 ### no-class.css
 
 - [Repository](https://github.com/davidpaulsson/no-class) ![GitHub stars](https://img.shields.io/github/stars/davidpaulsson/no-class?style=flat-square) ![GitHub contributors](https://img.shields.io/github/contributors-anon/davidpaulsson/no-class?style=flat-square) ![Last commit](https://img.shields.io/github/last-commit/davidpaulsson/no-class?style=flat-square) ![GitHub open issues](https://img.shields.io/github/issues-raw/davidpaulsson/no-class?style=flat-square) ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/davidpaulsson/no-class?style=flat-square)
-- [Demo](https://davidpaulsson.se/no-class/)
+- [Demo](https://davidpaulsson.se/)
 
 ### Pico.css
 
@@ -197,7 +198,7 @@
 ### style.css
 
 - [Repository](https://github.com/css-pkg/style.css) ![GitHub stars](https://img.shields.io/github/stars/css-pkg/style.css?style=flat-square) ![GitHub contributors](https://img.shields.io/github/contributors-anon/css-pkg/style.css?style=flat-square) ![Last commit](https://img.shields.io/github/last-commit/css-pkg/style.css?style=flat-square) ![GitHub open issues](https://img.shields.io/github/issues-raw/css-pkg/style.css?style=flat-square) ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/css-pkg/style.css?style=flat-square)
-- [Demo](https://css-pkg.github.io/style.css/)
+- [Demo](https://css-pkg.github.io/)
 
 ### Stylize.css
 
@@ -259,7 +260,7 @@ These are frameworks that do not force you to apply their classes to many elemen
 ### mini.css
 
 - [Repository](https://github.com/Chalarangelo/mini.css) ![GitHub stars](https://img.shields.io/github/stars/Chalarangelo/mini.css?style=flat-square) ![GitHub contributors](https://img.shields.io/github/contributors-anon/Chalarangelo/mini.css?style=flat-square) ![Last commit](https://img.shields.io/github/last-commit/Chalarangelo/mini.css?style=flat-square) ![GitHub open issues](https://img.shields.io/github/issues-raw/Chalarangelo/mini.css?style=flat-square) ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Chalarangelo/mini.css?style=flat-square)
-- [Demo](https://minicss.org/docs)
+- [Demo](https://minicss.us/docs.htm)
 
 ### Picnic CSS
 

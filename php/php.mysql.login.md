@@ -1,4 +1,6 @@
-# Config.php
+# PHP MySQL Login
+
+## Config.php
 
 Config.php file is having information about MySQL Data base configuration.
 
@@ -12,7 +14,7 @@ Config.php file is having information about MySQL Data base configuration.
 ?>
 ```
 
-# Login.php
+## Login.php
 
 Login PHP is having information about php script and HTML script to do login.
 
@@ -48,6 +50,7 @@ Login PHP is having information about php script and HTML script to do login.
 ?>
 ```
 
+```html
 <html>
    
    <head>
@@ -94,8 +97,9 @@ Login PHP is having information about php script and HTML script to do login.
 
    </body>
 </html>
+```
 
-# welcome.php
+## welcome.php
 
 After successful login, it will display welcome page.
 
@@ -105,7 +109,8 @@ After successful login, it will display welcome page.
 ?>
 ```
 
-<html">
+```html
+<html>
 
    <head>
       <title>Welcome </title>
@@ -113,12 +118,13 @@ After successful login, it will display welcome page.
    
    <body>
       <h1>Welcome <?php echo $login_session; ?></h1> 
-      <h2><a href = "logout.php">Sign Out</a></h2>
+      <!-- <h2><a href = "logout.php">Sign Out</a></h2> -->
    </body>
    
 </html>
+```
 
-# Logout page
+## Logout page
 
 Logout page is having information about how to logout from login session.
 
@@ -132,7 +138,7 @@ Logout page is having information about how to logout from login session.
 ?>
 ```
 
-# session.php
+## session.php
 
 Session.php will verify the session, if there is no session it will redirect to login page.
 
@@ -156,4 +162,4 @@ Session.php will verify the session, if there is no session it will redirect to 
 ?>
 ```
 
-**Ref:** https://www.tutorialspoint.com/php/php_mysql_login.htm
+**Ref:** [PHP - MySQL Login](https://www.tutorialspoint.com/php/php_mysql_login.htm)
