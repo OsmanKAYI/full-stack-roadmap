@@ -49,7 +49,13 @@ LiaScript is a Markdown dialect that was designed to create interactive educatio
 
 ## Embedding a YouTube Video into Markdown
 
-[![videoName](http://img.youtube.com/vi/VIDEONUNKODUBURAYA/0.jpg)](http://www.youtube.com/watch?v=VIDEONUNKODUBURAYA)
+As an example, in this link `https://www.youtube.com/watch?v=OluD-GW8cRM`, the ID of the video is `OluD-GW8cRM`.
+
+To embed the video, you can use the following code:
+
+`[![videoName](http://img.youtube.com/vi/VIDEOID/0.jpg)](http://www.youtube.com/watch?v=VIDEOID)`
+
+[![videoName](http://img.youtube.com/vi/OluD-GW8cRM/0.jpg)](http://www.youtube.com/watch?v=OluD-GW8cRM)
 
 ## Making List Having Checkbox
 
@@ -72,16 +78,14 @@ date: "2020-03-23"
 tags: ["php", "symfony", "configure"]
 description: Sometimes, we mess up the basic rules of code style. So we need a friend to cover our back! With PHP we are using PHP CS Fixer by to configure it we follow the steps below.
 ---
-```
 
 ---
-
 title: Configure PHP CS Fixer
 category: Back-End
 date: "2020-03-23"
 tags: ['php', 'symfony', 'configure']
 description: Sometimes, we mess up the basic rules of code style. So we need a friend to cover our back! With PHP we are using PHP CS Fixer by to configure it we follow the steps below.
-
 ---
+```
 
 **Ref:** https://github.com/nuriakman/PHP-Egitimi/blob/master/konular/Markdown.kodlama.md
