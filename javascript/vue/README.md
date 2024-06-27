@@ -68,6 +68,15 @@ Overall, the Composition API provides a more flexible and powerful way of writin
 
 #### Composition Examples
 
+Below are the templates and examples from Vue3 Composition Api (script setup).
+
+**NOTE:** If you cannot start some of the project be sure that `node_modules` is properly installed. To install node_modules properly, run the following command in the project's folder.
+
+```bash
+npm install
+```
+
+- [Vue3 Template with TypeScript](./composition.api/examples/vue3-template-ts/)
 - [Confetti.js with Vue3](./composition.api/examples/confetti.js.vue)
 - [Vue3 v-model Example](./composition.api/examples/vue3-v-model-example/)
 
