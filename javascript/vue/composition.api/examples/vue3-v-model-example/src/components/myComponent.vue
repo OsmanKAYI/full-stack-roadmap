@@ -26,3 +26,9 @@ const stationFrom = defineModel('stationFrom', { type: String, default: '' })
 const stationTo = defineModel('stationTo', { type: String, default: '' })
 const user = defineModel('user', { type: Object, default: '' })
 </script>
+
+<style scoped>
+input {
+  border: 2px solid cyan;
+}
+</style>
