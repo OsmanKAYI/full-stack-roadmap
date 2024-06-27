@@ -66,31 +66,33 @@ Overall, the Composition API provides a more flexible and powerful way of writin
 - [Force Vue to Rerender a Component](./composition.api/force.vue.to.rerender.component.md)
 - [Web Socket and Redis Usage with Vue3](./composition.api/web.socket.and.redis.usage.md)
 
-#### Examples
+#### Composition Examples
 
 - [Confetti.js with Vue3](./composition.api/examples/confetti.js.vue)
+- [Vue3 v-model Example](./composition.api/examples/vue3-v-model-example/)
 
-**Vue 3 Tutorials**
-- [Vue3 (Composition Api) Template](./composition.api/examples/00.vue3.template.vue)
-- [Hello World!](./composition.api/examples/01.hello.world.vue)
-- [Declarative Rendering](./composition.api/examples/02.declarative.rendering.vue)
-- [Attribute Bindings](./composition.api/examples/03.attribute.bindings.vue)
-- [Event Listeners](./composition.api/examples/04.event.listeners.vue)
-- [Form Bindings](./composition.api/examples/05.form.bindings.vue)
-- [Conditional Rendering](./composition.api/examples/06.conditional.rendering.vue)
-- [List Rendering](./composition.api/examples/07.list.rendering.vue)
-- [Computed Property](./composition.api/examples/08.computed.property.vue)
-- [Lifecycle and Template Refs](./composition.api/examples/09.lifecycle.and.template.refs.vue)
-- [Watchers](./composition.api/examples/10.watchers.vue)
-- [Components](./composition.api/examples/11.components.vue)
-- [Components (Child Component)](./composition.api/examples/11.child.comp.vue)
-- [Props](./composition.api/examples/12.props.vue)
-- [Props (Child Component)](./composition.api/examples/12.child.comp.vue)
-- [Emits](./composition.api/examples/13.emits.vue)
-- [Emits (Child Component)](./composition.api/examples/13.child.comp.vue)
-- [Slots](./composition.api/examples/14.slots.vue)
-- [Slots (Child Component)](./composition.api/examples/14.child.comp.vue)
-- [You Did It!!!](./composition.api/examples/15.you.did.it.vue)
+- **Vue 3 Tutorials**
+
+  - [Vue3 (Composition Api) Template](./composition.api/examples/00.vue3.template.vue)
+  - [Hello World!](./composition.api/examples/01.hello.world.vue)
+  - [Declarative Rendering](./composition.api/examples/02.declarative.rendering.vue)
+  - [Attribute Bindings](./composition.api/examples/03.attribute.bindings.vue)
+  - [Event Listeners](./composition.api/examples/04.event.listeners.vue)
+  - [Form Bindings](./composition.api/examples/05.form.bindings.vue)
+  - [Conditional Rendering](./composition.api/examples/06.conditional.rendering.vue)
+  - [List Rendering](./composition.api/examples/07.list.rendering.vue)
+  - [Computed Property](./composition.api/examples/08.computed.property.vue)
+  - [Lifecycle and Template Refs](./composition.api/examples/09.lifecycle.and.template.refs.vue)
+  - [Watchers](./composition.api/examples/10.watchers.vue)
+  - [Components](./composition.api/examples/11.components.vue)
+  - [Components (Child Component)](./composition.api/examples/11.child.comp.vue)
+  - [Props](./composition.api/examples/12.props.vue)
+  - [Props (Child Component)](./composition.api/examples/12.child.comp.vue)
+  - [Emits](./composition.api/examples/13.emits.vue)
+  - [Emits (Child Component)](./composition.api/examples/13.child.comp.vue)
+  - [Slots](./composition.api/examples/14.slots.vue)
+  - [Slots (Child Component)](./composition.api/examples/14.child.comp.vue)
+  - [You Did It!!!](./composition.api/examples/15.you.did.it.vue)
 
 ### Options Api
 
@@ -98,7 +100,7 @@ The Options API is a way of defining Vue.js components using a simple JavaScript
 
 Overall, the Options API is still a useful and valid approach for building Vue 3 components, but the Composition API provides more advanced features and flexibility.
 
-#### Examples
+#### Options Examples
 
 - [Vue2 (Options Api) Template](./options.api/examples/00.vue2.template.vue)
 - [Hello World!](./options.api/examples/01.hello.world.vue)
@@ -135,16 +137,18 @@ Pinia is a state management library for Vue. It is inspired by Redux, but it pro
 
 ### Vuelidate
 
-Vuelidate is a validation library for Vue. It provides built-in validation rules and reactive validation. 
+Vuelidate is a validation library for Vue. It provides built-in validation rules and reactive validation.
 
 Vuelidate is considered model-based because the validation rules are defined next to your data, and the validation tree structure matches the data model structure. You can learn more about Vuelidate in the [official documentation](https://vuelidate.js.org/).
 
-**Installation**
+- **Installation**
+
 ```bash
 npm install @vuelidate/core @vuelidate/validators
 ```
 
-**Example Usage**
+- **Example Usage**
+
 ```js
 <script setup lang="ts">
 import { reactive } from 'vue' // "from '@vue/composition-api'" if you are using Vue <2.7
