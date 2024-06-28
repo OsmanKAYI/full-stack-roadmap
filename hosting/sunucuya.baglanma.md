@@ -2,7 +2,7 @@
 
 Oluşturacağınız YENİ bir **SUNUCU** üzerinde
 
-- 3 adet alan adının host edilecektir
+- 3 adet alan adı host edilecektir
 - Host edilecek her bir sitenin dosyaları kendi isminde bir klasörde durmaktadır
 - İşlem adımları aşağıdadır
 
