@@ -252,6 +252,21 @@ sudo apt install firefox -y
 sudo apt install chromium-browser -y
 ```
 
+## Syncthing
+
+- Syncthing is an open-source application that enables you to transfer your files directly between two (or more) devices.
+
+```bash
+# Add the release PGP keys
+sudo mkdir -p /etc/apt/keyrings
+sudo curl -L -o /etc/apt/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
+# Add the "stable" channel to your APT sources
+echo "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
+# Update and install syncthing:
+sudo apt-get update
+sudo apt-get install syncthing -y
+```
+
 ## Cockpit
 
 Cockpit is an interactive server admin interface. It is easy to use and very lightweight.
@@ -313,7 +328,7 @@ git config --global user.email "osmankayi06@gmail.com"
 git config --global user.name "OsmanKAYI"
 ```
 
-#### GitHub Configurations
+### GitHub Configurations
 
 ```bash
 cd ~/.ssh
@@ -343,7 +358,7 @@ sudo systemctl enable apache2
 sudo service apache2 restart
 ```
 
-#### Apache Configurations
+### Apache Configurations
 
 ```bash
 sudo adduser $USER www-data
@@ -374,7 +389,7 @@ sudo apt-get install php7.4-xdebug
 sudo vi /etc/php/7.4/apache2/conf.d/20-xdebug.ini
 ```
 
-##### Add following 3 lines in 20-xdebug.ini
+### Add following 3 lines in 20-xdebug.ini
 
 ```
 zend_extension=xdebug.so
@@ -382,13 +397,13 @@ xdebug.mode=develop,debug
 xdebug.start_with_request=yes
 ```
 
-##### Restart Apache Service
+### Restart Apache Service
 
 ```bash
 sudo systemctl restart apache2
 ```
 
-##### How To Use Xdebug with VSCode
+### How To Use Xdebug with VSCode
 
 - You can follow the steps described in [Xdebug Configuration for VSCode](https://github.com/OsmanKAYI/osmankayi.com/blob/main/php/xdebug.md)
 
@@ -406,7 +421,7 @@ php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
 ```
 
-##### How To Watch Errors Real-time
+### How To Watch Errors Real-time
 
 ```bash
 sudo tail -f /var/log/apache2/error.log
@@ -425,7 +440,7 @@ sudo service mariadb restart
 mysql --user="root" --password="" --execute="use mysql; SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root'); flush privileges;"
 ```
 
-#### MariaDB Password Reset (if you forgot your password)
+### MariaDB Password Reset (if you forgot your password)
 
 ```bash
 sudo service mariadb vstop
@@ -449,7 +464,7 @@ systemctl enable redis-server
 systemctl start redis-server
 ```
 
-#### Start Redis With Password
+### Start Redis With Password
 
 ```bash
 sudo vim /etc/redis/redis.conf
@@ -601,7 +616,7 @@ sudo apt -f install ./drawio-amd64-*.deb
   `conda update --all -y` # to upgrade the Anaconda on your system
   `conda deactivate` # to exit from conda terminal
 
-#### Jupyter Notebook
+### Jupyter Notebook
 
 - Project Jupyter is a project to develop open-source software, open standards, and services for interactive computing across multiple programming languages.
 
@@ -684,19 +699,19 @@ sudo systemctl enable ssh
 sudo systemctl start ssh
 ```
 
-#### Copy SSH Public Key To Remote Server
+### Copy SSH Public Key To Remote Server
 
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa user@server
 ```
 
-#### How To Copy Files Within SSH Servers
+### How To Copy Files Within SSH Servers
 
 ```bash
 scp -r user@server:/file/to/path ./local/path/to/copy
 ```
 
-#### Securely Stop SSH Server
+### Securely Stop SSH Server
 
 ```bash
 sudo service sshd stop
@@ -732,7 +747,7 @@ StartupWMClass=Postman
 StartupNotify=true" | sudo tee /usr/share/applications/Postman.desktop
 ```
 
-#### Completely Remove Postman
+### Completely Remove Postman
 
 ```bash
 sudo rm -r /usr/bin/Postman

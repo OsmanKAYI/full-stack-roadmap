@@ -129,6 +129,17 @@ echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codenam
 sudo apt update
 sudo apt install firefox -y
 
+## Syncthing
+
+# add the release PGP keys
+sudo mkdir -p /etc/apt/keyrings
+sudo curl -L -o /etc/apt/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
+# add the "stable" channel to your APT sources
+echo "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
+# update and install syncthing:
+sudo apt-get update
+sudo apt-get install syncthing -y
+
 ## Visual Studio Code
 sudo apt install software-properties-common apt-transport-https wget -y
 wget -O vscode.gpg https://packages.microsoft.com/keys/microsoft.asc
