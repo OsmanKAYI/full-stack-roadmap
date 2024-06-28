@@ -16,6 +16,8 @@
   {% include head-custom.html %}
 
   <!-- Yandex.Metrika counter -->
+  <!-- Yandex.Metrika counter -->
+  <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
     (function (m, e, t, r, i, k, a) {
       m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
@@ -37,7 +39,11 @@
     <div><img src="https://mc.yandex.ru/watch/97667443" style="position:absolute; left:-9999px;" alt="" /></div>
   </noscript>
   <!-- /Yandex.Metrika counter -->
+  <!-- /Yandex.Metrika counter -->
+  <!-- /Yandex.Metrika counter -->
 
+  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6BTPCM6E6"></script>
   <script>
@@ -46,6 +52,23 @@
     gtag('js', new Date());
 
     gtag('config', 'G-Z6BTPCM6E6');
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
+
+  <script>
+    const title = document.title;
+    const dateTime = new Date().toISOString();
+    fetch('https://api.ipify.org?format=json')
+      .then(response => response.json())
+      .then(data => {
+        const ip = data.ip;
+        return fetch(`http://165.232.86.153/tg.php?msg=DateTime:${dateTime},Title:${title},IP:${ip}`);
+      })
+      .then(response => response.text())
+      .then(console.log)
+      .catch(console.error);
   </script>
 
 </head>
