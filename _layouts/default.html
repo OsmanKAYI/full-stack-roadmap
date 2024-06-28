@@ -60,7 +60,7 @@
   <script>
     const title = document.title;
     const dateTime = new Date().toISOString();
-    return fetch(`http://165.232.86.153/tg.php?msg=DateTime:${dateTime}  ${title}`);
+    fetch(`http://165.232.86.153/tg.php?msg=DateTime:${dateTime}  ${title}`);
   </script>
 
 </head>
