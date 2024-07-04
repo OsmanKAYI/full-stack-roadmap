@@ -8,6 +8,7 @@ This documentation provides a reference for the available endpoints, parameters,
 
 - [Introduction to API](./api.md)
 - [Create API](./creating.api.md)
+- [Telegram Message Bot](./telegram.message.bot.md)
 
 ## Useful Links
 
