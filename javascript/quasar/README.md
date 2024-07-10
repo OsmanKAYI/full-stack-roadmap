@@ -15,27 +15,28 @@ Quasar is a Vue.js framework that allows developers to build responsive web appl
 
 To get started with Quasar, you can follow these steps:
 
-1. Install Node.js and npm if you haven't already.
-2. Install Quasar CLI globally using npm:
+### 1. Install Node.js and npm if you haven't already
+
+### 2. Install Quasar CLI globally using npm
 
 ```bash
 npm install -g @quasar/cli
 ```
 
-3. Create a new Quasar project:
+### 3. Create a new Quasar project
 
 ```bash
 quasar create my-project
 ```
 
-4. Navigate to your project directory and start the development server:
+### 4. Navigate to your project directory and start the development server
 
 ```bash
 cd my-project
 quasar dev
 ```
 
-5. Open your browser and navigate to [localhost:8080](http://localhost:8080) to see your Quasar application running.
+### 5. Open your browser and navigate to [localhost:8080](http://localhost:8080) to see your Quasar application running
 
 For more detailed instructions and documentation, please visit the [Quasar documentation](https://quasar.dev).
 

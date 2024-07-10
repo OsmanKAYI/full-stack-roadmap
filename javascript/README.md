@@ -65,9 +65,8 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
   - [Part 3](https://pbs.twimg.com/media/F1JMwXcXsAAoowX?format=jpg&name=small)
 
 - **String Methods**
-<div style="text-align: center;">
-  <img src="https://pbs.twimg.com/media/F92zI0pXcAAV3IV?format=jpg&name=large">
-</div>
+
+![String Methods](https://pbs.twimg.com/media/F92zI0pXcAAV3IV?format=jpg&name=large)
 
 - **Debug**
   - [Debug Code Like a Pro](https://www.youtube.com/watch?v=uUDRh7D5Z0c)

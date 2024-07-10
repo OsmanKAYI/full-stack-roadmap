@@ -12,7 +12,7 @@
 
 Vue 3 has been stable for quite some time now. Many codebases are using it in production, and everyone else will have to migrate eventually. I had the opportunity to work with it and kept track of my mistakes, which you probably want to avoid.
 
-**1. Using the Reactive Helper for Declaring Primitives**
+## 1. Using the Reactive Helper for Declaring Primitives
 
 Data declaration used to be straightforward, but now multiple helpers are available. The general rule now is:
 
@@ -26,7 +26,7 @@ Using `reactive` for a primitive will result in a warning, and the value will no
 <script setup>import {reactive} from "vue"; const count = reactive(0);</script>
 ```
 
-**2. Destructuring a Reactive value**
+## 2. Destructuring a Reactive value
 
 Let’s imagine you have a reactive object with a counter and a button to increase it.
 
@@ -89,7 +89,7 @@ export default {
 
 Code looks the same and, based on our previous experience, should work, but in fact, Vue’s reactivity tracking works over property access. This means we can’t assign or destructure a reactive object because the reactivity connection to the first reference is lost. This is one of the limitations of using the reactive helper.
 
-**3. Getting Confused with `.value`**
+## 3. Getting Confused with `.value`
 
 On a similar note, one of the quirks of using ref can be hard to get used to.
 
@@ -148,7 +148,7 @@ const object = { foo: ref(1) };
 
 Using `.value` correctly requires time. Although I occasionally forgot about it, I first found myself using it more frequently than needed.
 
-**4. Emitted Events**
+## 4. Emitted Events
 
 Since the initial release of Vue, a child component can communicate with the parent using emits. You only needed to add a custom listener to listen for an event.
 
@@ -181,7 +181,7 @@ const emit = defineEmits(['change', 'delete']);
 
 Lastly, because the events now have to be declared, the usage of the `.native` modifier is not needed, and it's, in fact, been removed.
 
-**5. Declaring Additional Options**
+## 5. Declaring Additional Options
 
 There are a few properties of the Options API method that are not supported from the script setup:
 
@@ -205,11 +205,11 @@ The solution is to have 2 different scripts in the same component as defined in 
 <script setup>// script setup logic</script>
 ```
 
-**6. Using Reactivity Transform**
+## 6. Using Reactivity Transform
 
 Reactivity Transform was one experimental but controversial feature of Vue 3 that was aiming to simplify the way of declaring a component. The idea was to leverage compile-time transforms to automatically unwrap a ref and make `.value` obsolete. But it is now dropped and will be removed in Vue 3.3. It will be still available as a package, but since it's not part of the Vue core, it's better not to invest time in it.
 
-**7. Defining Async Components**
+## 7. Defining Async Components
 
 Async components were formerly declared by enclosing them in a function.
 
@@ -225,7 +225,7 @@ import { defineAsyncComponent } from "vue";
 const asyncModal = defineAsyncComponent(() => import("./Modal.vue"));
 ```
 
-**8. Using Unnecessary Wrappers in Templates**
+## 8. Using Unnecessary Wrappers in Templates
 
 A single root element for the component template was required in Vue 2, which sometimes introduced unnecessary wrappers.
 
@@ -251,19 +251,17 @@ This is no longer the case, as multiple root elements are now supported. 🥳
 </template>
 ```
 
-**9. Using the Wrong Lifecycle Event**
+## 9. Using the Wrong Lifecycle Event
 
 All of the component lifecycle events got renamed, either by adding the `on` prefix or by changing name completely. You can check all the changes in the following graphic.
 
-<div style="text-align: center;">
-  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*qzhEL7PQiNpu9dVExQI5QA.png">
-</div>
+![Lifecycle Events](https://miro.medium.com/v2/resize:fit:720/format:webp/1*qzhEL7PQiNpu9dVExQI5QA.png)
 
-**10. Skipping the Documentation**
+## 10. Skipping the Documentation
 
 Lastly, the [official documentation](https://vuejs.org/guide/introduction.html) has been revamped to reflect the new APIs and include many valuable notes, guides, and best practices. Even if you are a seasoned Vue 2 engineer, you will definitely learn something new by reading it.
 
-**Conclusion**
+## Conclusion
 
 Every framework has a learning curve, and Vue 3’s is unquestionably steeper than Vue 2's. The composition API is much cleaner and feels natural after you get the hang of it.
 

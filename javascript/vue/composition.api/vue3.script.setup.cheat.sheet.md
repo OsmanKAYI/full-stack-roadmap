@@ -2,11 +2,9 @@
 
 - Everything that you declared inside script setup will be available in the template
 
-<div style="text-align: center;">
-  <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*37XVZ_Eez4ihx8rZH9NfMw.png">
-</div>
+![Vue3 Script Setup Cheat Sheet](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*37XVZ_Eez4ihx8rZH9NfMw.png)
 
-### Methods
+## Methods
 
 ```js
 <script setup>
@@ -20,7 +18,7 @@ function getParam(param) {
 <template> {{ getParam(1) }} </template>
 ```
 
-### Reactive Data Declaration
+## Reactive Data Declaration
 
 - Use `ref` for primitives and `reactive` for complex types
 
@@ -30,7 +28,7 @@ const enabled = ref(true);
 const object = reactive({ variable: false });
 ```
 
-### Component Declaration
+## Component Declaration
 
 ```js
 import { defineAsyncComponent } from "vue";
@@ -40,7 +38,7 @@ const AsyncComponent = defineAsyncComponent(() =>
 );
 ```
 
-### Computed Value
+## Computed Value
 
 ```js
 import { computed } from "vue";
@@ -50,7 +48,7 @@ const isEmpty = computed(() => {
 });
 ```
 
-### Watcher
+## Watcher
 
 ```js
 import { watch, ref } from "vue";
@@ -60,7 +58,7 @@ watch(counter, () => {
 });
 ```
 
-### Lifecycle Hooks
+## Lifecycle Hooks
 
 ```js
 import { onMounted } from "vue";
@@ -70,7 +68,7 @@ onMounted(() => {
 });
 ```
 
-### Define Emits
+## Define Emits
 
 ```js
 const emit = defineEmits(["event-name"]);
@@ -79,7 +77,7 @@ function emitEvent() {
 }
 ```
 
-### Define Props
+## Define Props
 
 ```js
 defineProps({

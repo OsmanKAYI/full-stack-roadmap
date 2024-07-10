@@ -27,11 +27,8 @@ Include any additional resources, tutorials, or guides that might be useful for 
   - Infogram uses infographics which are graphic visual representations of information, data, or knowledge intended to present information quickly and clearly. They can improve cognition by using graphics to enhance the human visual system's ability to see patterns and trends.
 - [Guide for Choosing Appropriate Charts](https://pbs.twimg.com/media/F2SjlH2WMAALYtZ?format=jpg&name=medium)
 
-  <div style="text-align: center;">
-    <h4>Thread of Data Visualization<h1>
-    <img src="https://pbs.twimg.com/media/F2Rv0sGXMAAEITp?format=jpg&name=900x900">
-  </div>
+![Thread of Data Visualization](https://pbs.twimg.com/media/F2Rv0sGXMAAEITp?format=jpg&name=900x900)
 
-  - To describe a single variable - **BAR CHART**
-  - To visualize the distribution of a variable - **HISTOGRAM**
-  - To compare the strength of association between 2 variables - **SCATTER PLOT**
+- To describe a single variable - **BAR CHART**
+- To visualize the distribution of a variable - **HISTOGRAM**
+- To compare the strength of association between 2 variables - **SCATTER PLOT**

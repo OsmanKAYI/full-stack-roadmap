@@ -40,11 +40,9 @@ To change the permission of a file, the `chmod` command is used.
 
 `sudoc chmod g+rw filename` - adds read ( r ) and write ( w ) permissions to the group to which filename belongs.
 
-<div style="text-align: center;">
-  <img src="https://pbs.twimg.com/media/F8wVTEyaAAAr3oJ?format=jpg&name=4096x4096">
-</div>
+![Linux Permissions](https://pbs.twimg.com/media/F8wVTEyaAAAr3oJ?format=jpg&name=4096x4096)
 
-**Ref:**
+**Refs:**
 
-- https://github.com/nuriakman/PHP-Egitimi/blob/master/konular/dosya.izinleri.md
-- https://twitter.com/ChrisStaud/status/1714769708401218030?t=CQ8Afjhf0MY4zJtCYIkk-w&s=35
+- [nuriakman - GitHub](https://github.com/nuriakman/PHP-Egitimi/blob/master/konular/dosya.izinleri.md)
+- [ChrisStaud - X](https://twitter.com/ChrisStaud/status/1714769708401218030?t=CQ8Afjhf0MY4zJtCYIkk-w&s=35)

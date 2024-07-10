@@ -1,8 +1,10 @@
-# What is an Intranet?
+# Intranet and Extranet
+
+## What is an Intranet?
 
 An intranet is a private and internal network that uses internet technology and protocols to connect and share information within an organization. It is a closed network accessible only to authorized users, typically employees of the organization.
 
-## Use of Intranet
+### Use of Intranet
 
 - Intranets are primarily used for sharing information and resources among employees.
 - This includes documents, databases, company news, and internal communication tools.
@@ -23,11 +25,11 @@ An intranet is a private and internal network that uses internet technology and 
 
 - Security measures, such as firewalls, encryption, and user authentication, are essential to protect the intranet from unauthorized access and external threats.
 
-# What is an Extranet?
+## What is an Extranet?
 
 An extranet is a controlled network that extends beyond the boundaries of an organization to include authorized external users, such as suppliers, partners, customers, or other third parties. It is essentially a private extension of an intranet.
 
-## Use of Extranet
+### Use of Extranet
 
 - Extranets facilitate collaboration and data sharing between an organization and its external stakeholders.
 - This can include sharing product information, inventory data, or project updates with partners.
@@ -48,6 +50,4 @@ An extranet is a controlled network that extends beyond the boundaries of an org
 - Security is crucial in extranets, especially due to the involvement of external parties.
 - Encryption, firewalls, and secure login systems are used to protect data and maintain confidentiality.
 
-<div style="text-align: center;">
-  <img src="https://pbs.twimg.com/media/F9LiclBbsAAi9bS?format=jpg&name=small">
-</div>
+![Security](https://pbs.twimg.com/media/F9LiclBbsAAi9bS?format=jpg&name=small)

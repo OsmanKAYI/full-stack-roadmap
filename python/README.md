@@ -47,6 +47,4 @@ To install a package using pip, you can use the command `pip install $package_na
 - [Diving into Deep Learning with Python](https://twitter.com/mehmetsongur_/status/1751169110820467066?s=20)
   - For those who want to grasp Deep Learning techniques, it is a very good resource with Python application, translated into Türkçe and about 1000 pages.
 
-<div style="text-align: center;">
-  <img src="https://pbs.twimg.com/media/F6vwZgBWUAAm01E?format=jpg&name=medium">
-</div>
+![Data Structure Cheatsheet](https://pbs.twimg.com/media/F6vwZgBWUAAm01E?format=jpg&name=medium)

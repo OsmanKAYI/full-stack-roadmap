@@ -26,6 +26,4 @@ We can insert information, like a username or other data, into the JWT and lock 
 
 The beauty of JWTs lies in their safety and security. Just as only you can unlock the magic box with your special 🔑 key, only the person possessing the secret 🔑 key can unlock the JWT and view the information. This ensures the safety of our data when transmitted over the internet! 🌐🔒😄
 
-<div style="text-align: center;">
-  <img src="https://pbs.twimg.com/media/F1OersHWwAEVioa?format=jpg&name=medium" alt="Centered Image">
-</div>
+![JWT](https://pbs.twimg.com/media/F1OersHWwAEVioa?format=jpg&name=medium)
