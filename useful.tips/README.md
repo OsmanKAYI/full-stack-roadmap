@@ -27,7 +27,7 @@ Here, you will find out some usefull informations which I cannot group them in a
 - [Sisik - APK Analyzer](https://sisik.eu/apk-tool)
 
 - [Gmail Forwarding](https://www.youtube.com/watch?v=Vg3DiBrY0-Y)
-  <div style="text-align: center;">
-    <img src="https://pbs.twimg.com/media/F6DuoZeW4AEKgTT?format=jpg&name=small" title="Email Like a Boss"><br>
-  </div>
+
+![Email Like a Boss](https://pbs.twimg.com/media/F6DuoZeW4AEKgTT?format=jpg&name=small)
+
 - [ChatGPT ile İngilizce Öğren](https://twitter.com/PromptMuhendisi/status/1674837100355518468?t=g5OQGKeX6YtNp7ciTzOTqQ&s=35)
