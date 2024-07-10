@@ -43,6 +43,7 @@ For more detailed instructions and documentation, please visit the [Quasar docum
 ## Documentation
 
 - [What is Quasar?](./what.is.quasar.md)
+- [Quasar vs Android XML: Which UI Technology is More Efficient?](./quasar.vs.android.xml.md)
 
 ## Useful Links
 
