@@ -24,7 +24,10 @@ Here, you will find out some usefull informations which I cannot group them in a
   - A graveyard for discontinued products from Apple, Google and Microsoft.
 
 - [Killed by Google](https://killedbygoogle.com/)
-  - A graveyard for discontinued products from Google. 
+  - A graveyard for discontinued products from Google.
+
+- [AlternativeTo](https://alternativeto.net/)
+  - AlternativeTo is a crowd-sourced and free site that helps you find better apps and services.
 
 - [Beautify QRCode](https://qrbtf.com/)
   - [qrbtf on Github](https://github.com/ciaochaos/qrbtf)
