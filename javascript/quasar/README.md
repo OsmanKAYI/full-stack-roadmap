@@ -43,7 +43,6 @@ For more detailed instructions and documentation, please visit the [Quasar docum
 ## Documentation
 
 - [What is Quasar?](./what.is.quasar.md)
-- [The 5 Most Transformative JavaScript Features from ES8](./5.js.features.es8.md)
 
 ## Useful Links
 

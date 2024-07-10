@@ -42,6 +42,7 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - [10 Tricks You Don't Know](./10.tricks.md)
 - [21 Pro Tricks](./21.pro.tricks.md)
 - [10 Advanced JavaScript Tricks for Experienced Developers](./10.advanced.tricks.md)
+- [The 5 Most Transformative JavaScript Features from ES8](./5.js.features.es8.md)
 - [AJAX Method](./ajax.md)
 - [Vue Framework](./vue/README.md)
 - [Quasar Framework](./quasar/README.md)
