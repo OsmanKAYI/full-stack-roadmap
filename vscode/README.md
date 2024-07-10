@@ -29,3 +29,4 @@ The Visual Studio Code documentation is available online at [Visual Studio Code]
 - [Keybindings](./keybindings.md)
 - [Keyboard Shortcuts](./shortcuts.md)
 - [VSCode Productivity Tips & Hacks](./productivity.tips.md)
+- [10 Essential Tips to Supercharge VSCode and Code Faster](./10.tips.md)
