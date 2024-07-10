@@ -2,6 +2,7 @@
 
 Here, you will find out some usefull informations which I cannot group them in a specific topic. They are listed as below.
 
+- [10 Must-Have Skills to Become a Top 1% Web Developer](./10.must-have.skills.md)
 - [How to Become a Backend Engineer](./how.to.become.backend.eng.md)
 - [Important Links for Education](./onemli.linkler.md)
 - [Free Certification Courses from Google](./courses.from.google.md)
