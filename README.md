@@ -51,6 +51,8 @@ These notes are a collection of useful information, tips, and tricks related to 
     - LeetCode is a platform to help you enhance your skills, expand your knowledge and prepare for technical interviews.
   - [Exercism](https://exercism.org/)
     - Exercism is an online, open-source, free coding platform that offers code practice and mentorship on 66 different programming languages.
+  - [Project Based Learning](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#python)
+    - A list of programming tutorials in which aspiring software developers learn how to build an application from scratch. These tutorials are divided into different primary programming languages. Tutorials may involve multiple technologies and languages.
 
 - _[9 Open-Source Repos That Will Make Your SaaS Gold](https://dev.to/nathan_tarbert/9-open-source-repos-that-will-make-your-saas-gold-54h7)_
 
