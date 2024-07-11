@@ -25,6 +25,8 @@ Here, you will find out some usefull informations which I cannot group them in a
   - A graveyard for discontinued products from Google.
 - [AlternativeTo](https://alternativeto.net/)
   - AlternativeTo is a crowd-sourced and free site that helps you find better apps and services.
+- [Transform](https://transform.tools/)
+  - A polyglot web converter.
 - [Beautify QRCode](https://qrbtf.com/)
   - [qrbtf on Github](https://github.com/ciaochaos/qrbtf)
 - [Turn QRCode Into Images](https://www.tryleap.ai/)
