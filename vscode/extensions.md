@@ -7,10 +7,6 @@
 ## align chars in selection. It helps creating clean, formatted code.
 code --install-extension annsk.alignment
 
-# Auto Close Tag
-## automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text.
-code --install-extension formulahendry.auto-close-tag
-
 # Auto Rename Tag
 ## auto rename paired HTML/XML tag.
 code --install-extension formulahendry.auto-rename-tag
