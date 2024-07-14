@@ -28,3 +28,4 @@ The HTML specification is maintained by the W3C (World Wide Web Consortium) and 
 - [HTML Colors](./colors.md)
 - [A Starter Example](https://github.com/OsmanKAYI/osmankayi.com/tree/main/html/BESIKTAS)
 - [10 Rare HTML Tags That Nobody Ever Uses](./10.html.tags.md)
+- [21 HTML Tips You Must Know About](./21.html.tips.md)
