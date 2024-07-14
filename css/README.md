@@ -27,3 +27,4 @@ Cascading Style Sheets (CSS) is a stylesheet language used to describe the prese
 
 - [Classless CSS](./classless.css.md)
   - [Pico](./classless.css.pico.md)
+- [20 CSS One-Liners Every CSS Expert Needs to Know](./20.css.one-liners.md)
