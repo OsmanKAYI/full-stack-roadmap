@@ -6,23 +6,33 @@ TypeScript is a superset of JavaScript that adds static typing to the language. 
 
 To start using TypeScript, follow these steps:
 
-1. **Installation:** Install TypeScript globally using npm (Node Package Manager).
+### 1. Installation
+
+- Install TypeScript globally using npm (Node Package Manager).
 
 ```bash
 npm install -g typescript
 ```
 
-2. **Create a TypeScript file:** Create a file with a .ts extension, for example, app.ts.
+### 2. Create a TypeScript file
 
-3. **Write TypeScript Code:** Write your TypeScript code using TypeScript features such as static typing, interfaces, and classes.
+- Create a file with a .ts extension, for example, app.ts.
 
-4. **Compile TypeScript to JavaScript:** Compile your TypeScript code to JavaScript using the TypeScript compiler (tsc).
+### 3. Write TypeScript Code
+
+- Write your TypeScript code using TypeScript features such as static typing, interfaces, and classes.
+
+### 4. Compile TypeScript to JavaScript
+
+- Compile your TypeScript code to JavaScript using the TypeScript compiler (tsc).
 
 ```bash
 tsc app.ts
 ```
 
-5. **Run the JavaScript:** Run your JavaScript code in the Node.js environment or a browser.
+### 5. Run the JavaScript
+
+- Run your JavaScript code in the Node.js environment or a browser.
 
 ## Features
 
@@ -35,6 +45,8 @@ tsc app.ts
 **Tooling Support:** TypeScript provides excellent tooling support in modern code editors like Visual Studio Code.
 
 ## Documentation
+
+- [TypeScript Type Narrowing](./type.narrowing.md)
 
 ## Useful Links
 
