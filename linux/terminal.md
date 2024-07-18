@@ -1,4 +1,4 @@
-kv# Terminal Usage
+# Terminal Usage
 
 | Command                                            | Description                                                                                                                                                                                                                                                                                                                               |
 | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -62,150 +62,119 @@ kv# Terminal Usage
 
 ## In Detail
 
-`alias connect1=ssh root@$serverip` <br>
+- `alias connect1=ssh root@$serverip`
+  - Creates an alias for ssh root@$serverip as connect1 if you right that command on .bashrc file.
 
-- Creates an alias for ssh root@$serverip as connect1 if you right that command on .bashrc file.
+- `find "folder name" | wc -l`
+  - Finds the given "folder name" and then counts the number of files in it.
 
-`find "folder name" | wc -l` <br>
+- `mysql -u dbadmin -p < sakila-schema.sql`
+  - Import sql file to MySQL.
 
-- Finds the given "folder name" and then counts the number of files in it.
+- `rsync -ravz --delete root@165.232.80.129:/var/www/html ./`
+  - "./" shows the directory of the copy command as a file which I am currently in.
 
-`mysql -u dbadmin -p < sakila-schema.sql` <br>
+- `scp -r /var/www/html/sitelerim/* root@192.168.1.20:/var/www`
+  - Coppies the files being in the source to the target file. "Source" is /var/www/html/sitelerim and "Target" is root@192.168.1.20:/var/www. "/\*" means all of the files.
 
-- Import sql file to MySQL.
+- `sed 's/./&\n/g' 1.txt | sort | uniq -ic | sort -nr | head -n 6 | tail -n 5`
+  - Finds out the how many times a word is repeated and sorts the result in a descending way and takes the last 5 rows of the first 6 rows.
 
-`rsync -ravz --delete root@165.232.80.129:/var/www/html ./` <br>
+- `seq 10|xargs -I{} touch {}.txt`
+  - Creates a series of files from 1 to 10 and saves them as a .txt file from 1 to 10.
 
-- "./" shows the directory of the copy command as a file which I am currently in.
+- `seq 10|xargs -I{} cp -r "file name" {}/`
+  - Creates 10 copy of the original files in the target directory and names them as {}.txt while copying the given "file name".
 
-`scp -r /var/www/html/sitelerim/* root@192.168.1.20:/var/www` <br>
+- `seq 140|xargs -P 20 -I{} wget -q -O {} "https://quakelogic.net/Pubs/{}.pdf" \;`
+  - Downloads 140 pdf files from specified website with 20 parallel downloads.
 
-- Coppies the files being in the source to the target file. "Source" is /var/www/html/sitelerim and "Target" is root@192.168.1.20:/var/www. "/\*" means all of the files.
+- `upower -i /org/freedesktop/UPower/devices/battery_BAT0`
+  - Shows the battery level of the computer.
 
-`sed 's/./&\n/g' 1.txt | sort | uniq -ic | sort -nr | head -n 6 | tail -n 5` <br>
+- `upower --dump | grep "percentage"`
+  - Shows the battery level of the wireless mouse.
 
-- Finds out the how many times a word is repeated and sorts the result in a descending way and takes the last 5 rows of the first 6 rows.
+- `wget -r --no-parent https://stayyoungwith.com/wp-content/uploads/`
+  - Downloads all of the files in the given website.
 
-`seq 10|xargs -I{} touch {}.txt` <br>
+- `wget -r --no-parent  -A *.mp4 https://stayyoungwith.com/wp-content/uploads/`
+  - Downloads all of the mp4 files in the given website.
 
-- Creates a series of files from 1 to 10 and saves them as a .txt file from 1 to 10.
+- `wget -r --no-parent  -R *.mp4 https://stayyoungwith.com/wp-content/uploads/`
+  - Downloads all of the files (except mp4) in the given website.
 
-`seq 10|xargs -I{} cp -r "file name" {}/` <br>
+- `rename -n 's/ /./g' *`
+  - Changes all of spaces to `.` from all of the existing files and folders (just in terminal).
 
-- Creates 10 copy of the original files in the target directory and names them as {}.txt while copying the given "file name".
-
-`seq 140|xargs -P 20 -I{} wget -q -O {} "https://quakelogic.net/Pubs/{}.pdf" \;` <br>
-
-- Downloads 140 pdf files from specified website with 20 parallel downloads.
-
-`upower -i /org/freedesktop/UPower/devices/battery_BAT0` <br>
-
-- Shows the battery level of the computer.
-
-`upower --dump | grep "percentage"` <br>
-
-- Shows the battery level of the wireless mouse.
-
-`wget -r --no-parent https://stayyoungwith.com/wp-content/uploads/` <br>
-
-- Downloads all of the files in the given website. <br>
-
-`wget -r --no-parent  -A *.mp4 https://stayyoungwith.com/wp-content/uploads/` <br>
-
-- Downloads all of the mp4 files in the given website. <br>
-
-`wget -r --no-parent  -R *.mp4 https://stayyoungwith.com/wp-content/uploads/` <br>
-
-- Downloads all of the files (except mp4) in the given website.
-
-`rename -n 's/ /./g' *` <br>
-
-- Changes all of spaces to `.` from all of the existing files and folders (just in terminal).
-
-`for file in *; do mv "$file" `echo $file | tr -cd '.A-Za-z0-9\_-'` ; done` <br>
-
-- Deletes all of the special characters from all of the existing files and folders.
+- `for file in *; do mv "$file"`echo $file | tr -cd '.A-Za-z0-9\_-'`;done`
+  - Deletes all of the special characters from all of the existing files and folders.
 - Eg: `ॐNámásté Egész-ség.mkv --> NmstEgsz-sg.mkv`
 
-`ffmpeg -i "filename" -ss "start" -t "end" -c copy "newfilename"` <br>
-
-- Crops videoclip and save it as mp4 file on linux terminal.
+- `ffmpeg -i "filename" -ss "start" -t "end" -c copy "newfilename"`
+  - Crops videoclip and save it as mp4 file on linux terminal.
   **NOTE:** If `ffmpeg`is not installed on your system, use `sudo apt install ffmpeg -y`.
 
-`ffmpeg -i "filename.mp4" -vn -acodec copy "newfilename.acc"` <br>
+- `ffmpeg -i "filename.mp4" -vn -acodec copy "newfilename.acc"`
+  - Converts mp4 file to aac (like mp3) file on linux terminal.
 
-- Converts mp4 file to aac (like mp3) file on linux terminal.
+- `ffmpeg -i 1.webm -vf "scale=1920:1080" 1.mp4`
+  - Converts webm file to mp4 file on linux terminal with a resolution of 1920:1080 pixels (can subject to change).
 
-`ffmpeg -i 1.webm -vf "scale=1920:1080" 1.mp4` <br>
+- `ffmpeg -i 1.mp4 -c:v libx264 -preset fast 2.mp4`
+  - Fixes the problematic video (no video or async video/sound) and decreases its size.
 
-- Converts webm file to mp4 file on linux terminal with a resolution of 1920:1080 pixels (can subject to change).
+- `cat "filename.txt" | xclip -sel clip`
+  - Copies the file content directly to the clipboard so you can paste it directly.
 
-`ffmpeg -i 1.mp4 -c:v libx264 -preset fast 2.mp4` <br>
+- `sudo dpkg-reconfigure tzdata`
+  - Configures the date and time correctly if some problem occurs.
 
-- Fixes the problematic video (no video or async video/sound) and decreases its size.
+- `setxkbmap tr`
+  - Sets keyboard settings for Türkçe.
 
-`cat "filename.txt" | xclip -sel clip` <br>
+- `wget -A html --no-clobber --random-wait --no-parent --convert-links --level 1 --no-check-certificate -U "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0a2) Gecko/20110613 Firefox/6.0a2" -r https://www.$domain.com/`
+- `wget -A html --no-clobber --random-wait --no-parent --level 1 --no-check-certificate -U "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0a2) Gecko/20110613 Firefox/6.0a2" -r https://www.$domain.com/`
+  - Installs a web site's files. Its parameters are as follows
+    - `-A` defines which files will be dowloaded
+    - `--no-clobber` prevents file in the new copy to overwrite the old
+    - `--random-wait` waits randomly between the retrievals
+    - `--no-parent` does not ever ascend to the parent directory when retrieving recursively
+    - `--convert-links` after the download is complete, convert the links in the document to make them suitable for local viewing
+    - `--level 1` specifies recursion maximum depth level depth. Use inf as the value for inifinite
+    - `--no-check-certificate` prevents you to be blocked by the certification problems
+    - `-r` turns on recursive retrieving. The default maximum depth is 5. If the website has more levels than 5, then you can specify it with `--level=depth`
 
-- Copies the file content directly to the clipboard so you can paste it directly.
+- `find ./ -type f -exec sed -i 's|https://www\.example\.com/|\./|gI' {} \;`
+  - Changes the `https://www.example.com/` phrase with **./**.
 
-`sudo dpkg-reconfigure tzdata` <br>
+- `pv /dev/sda | dd /dev/sdb`
+  - Copies the files inside of **/dev/sda** to **/dev/sdb** and shows the process level.
 
-- Configures the date and time correctly if some problem occurs.
+- `find ./ -size 0c -delete`
+  - Finds and deletes all the 0 byte files.
 
-`setxkbmap tr` <br>
+- `find . -name "*.html" |wc`
+  - Finds the number of HTML files in current directory.
 
-- Sets keyboard settings for Türkçe.
+- `hashcat 78b6c1cd9f90d2560525966c76d8d398 -a 3 -m 0`
+  - Hacks the md5 format password to get the actual password.
 
-`wget -A html --no-clobber --random-wait --no-parent --convert-links --level 1 --no-check-certificate -U "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0a2) Gecko/20110613 Firefox/6.0a2" -r https://www.$domain.com/` <br>
-`wget -A html --no-clobber --random-wait --no-parent --level 1 --no-check-certificate -U "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0a2) Gecko/20110613 Firefox/6.0a2" -r https://www.$domain.com/` <br>
+- `hashcat -a 3 -m 0 ~/pass.csv`
+  - Hacks the md5 format password inside of **pass.cv** file to get the actual password.
 
-- Installs a web site's files. Its parameters are as follows
-  - `-A` defines which files will be dowloaded
-  - `--no-clobber` prevents file in the new copy to overwrite the old
-  - `--random-wait` waits randomly between the retrievals
-  - `--no-parent` does not ever ascend to the parent directory when retrieving recursively
-  - `--convert-links` after the download is complete, convert the links in the document to make them suitable for local viewing
-  - `--level 1` specifies recursion maximum depth level depth. Use inf as the value for inifinite
-  - `--no-check-certificate` prevents you to be blocked by the certification problems
-  - `-r` turns on recursive retrieving. The default maximum depth is 5. If the website has more levels than 5, then you can specify it with `--level=depth`
+- `$ rsync -av --partial --inplace --append --progress root@server-ip:/file/location .`
+  - Downloads a super large file over SSH using rsync. If the connection interrupts, the download resumes from the same point instead of starting from scratch. And it saves bandwidth.
 
-`find ./ -type f -exec sed -i 's|https://www\.example\.com/|\./|gI' {} \;` <br>
-
-- Changes the **https://www.exmaple.com/** phrase with **./**.
-
-`pv /dev/sda | dd /dev/sdb` <br>
-
-- Copies the files inside of **/dev/sda** to **/dev/sdb** and shows the process level.
-
-`find ./ -size 0c -delete` <br>
-
-- Finds and deletes all the 0 byte files.
-
-`find . -name "*.html" |wc` <br>
-
-- Finds the number of HTML files in current directory.
-
-`hashcat 78b6c1cd9f90d2560525966c76d8d398 -a 3 -m 0` <br>
-
-- Hacks the md5 format password to get the actual password.
-
-`hashcat -a 3 -m 0 ~/pass.csv` <br>
-
-- Hacks the md5 format password inside of **pass.cv** file to get the actual password.
-
-`$ rsync -av --partial --inplace --append --progress root@server-ip:/file/location .` <br>
-
-- Downloads a super large file over SSH using rsync. If the connection interrupts, the download resumes from the same point instead of starting from scratch. And it saves bandwidth.
-  ```
+  ```text
   --inplace : update destination files in-place
   --partial : keep partially transferred files
   --append : append data onto shorter files
   --progress : show progress during transfer
   ```
 
-`dd if=/dev/urandom of=16G.img bs=1G count=16` <br>
-
-- Creates a 16 GB of one file called 16G.img.
+- `dd if=/dev/urandom of=16G.img bs=1G count=16`
+  - Creates a 16 GB of one file called 16G.img.
 
 ```bash
 for i in *.sql; do echo "Importing: $i"; mysql -u root -proot ozlem2 < $i; done;
@@ -227,33 +196,26 @@ history
 
 - Not to show a command in history, just add a <kbd>SPACE</kbd> front of it.
 
-`find ~/Downloads/SQL -type f -name "\*.sql.gz" -cmin -15 | xargs pv | gunzip | mysql test;` <br>
+- `find ~/Downloads/SQL -type f -name "\*.sql.gz" -cmin -15 | xargs pv | gunzip | mysql test;`
+  - Finds the **\*.sql.gz** files that have changed in the last 15 minutes and import them into the test database.
 
-- Finds the **\*.sql.gz** files that have changed in the last 15 minutes and import them into the test database.
+- `pr -F *.md > newfile.md`
+  - Combines all markdown files into single file called 'newFile.md'.
 
-`pr -F *.md > newfile.md` <br>
+- `lowriter --convert-to pdf *.docx`
+  - Converts all of the given files (ex; docx) to PDF documents
 
-- Combines all markdown files into single file called 'newFile.md'.
+- `exiftool -AllDates="2000:01:01 00:00:00" *.jpg`
+  - Changes all dates to 2000:01:01 00:00:00 for `.jpg` files in a directory.
 
-`lowriter --convert-to pdf *.docx` <br>
+- `gunzip -c /path/to/file/*.gz | pv | mysql -f -D $dbname`
+  - Unzip all the files and import them into mysql in local with showing the progress (pv).
 
-- Converts all of the given files (ex; docx) to PDF documents
+- `for file in [0-9]*; do git mv "$file" "${file:3}"; done`
+  - Deletes the first 3 characters of the files (without harming its history) starting with any number.
 
-`exiftool -AllDates="2000:01:01 00:00:00" *.jpg` <br>
-
-- Changes all dates to 2000:01:01 00:00:00 for `.jpg` files in a directory.
-
-`gunzip -c /path/to/file/*.gz | pv | mysql -f -D $dbname` <br>
-
-- Unzip all the files and import them into mysql in local with showing the progress (pv).
-
-`for file in [0-9]*; do git mv "$file" "${file:3}"; done` <br>
-
-- Deletes the first 3 characters of the files (without harming its history) starting with any number.
-
-`sed -i 's/old-text/new-text/g' input.txt` <br>
-
-- Finds all occurrences of ‘old-text‘ and replace with ‘new-text‘ in a file named input.txt.
+- `sed -i 's/old-text/new-text/g' input.txt`
+  - Finds all occurrences of ‘old-text‘ and replace with ‘new-text‘ in a file named input.txt.
 
 ```bash
 for file in *.jpg; do
@@ -273,26 +235,23 @@ done
   - renames the file using the new name.
   - **Ex:** It transforms `DreamShaper_v7_Civil_Engineering_Contemporary_Realist_Art_Styl_0.jpg` into `dreamshaper.v7.civil.engineering.contemporary.realist.art.styl.0.jpg`
 
-`pdftk 1.pdf 2.pdf cat output combined.pdf` <br>
+- `pdftk 1.pdf 2.pdf cat output combined.pdf`
+  - Combines multiple pdf's into a single pdf file.
 
-- Combines multiple pdf's into a single pdf file.
+- `dos2unix -r *.php`
+  - Converts all of the .php files in the current directory to unix format.
 
-`dos2unix -r *.php` <br>
+- `curl wttr.in/Ankara`
+  - Shows the weather in Ankara
 
-- Converts all of the .php files in the current directory to unix format.
+- `telnet mapscii.me`
+  - Shows the ascii map of the world
 
-`curl wttr.in/Ankara` <br>
+- `echo "Hello World" | pv -L 4 -q`
+  - Prints the text (Hello World) with a progress bar.
 
-- Shows the weather in Ankara
+- `echo "Hello World" | boxes -d dog -a c`
+  - Prints the text (Hello World) with a box with a dog.
 
-`telnet mapscii.me` <br>
-
-- Shows the ascii map of the world
-
-`echo "Hello World" | pv -L 4 -q` <br>
-
-- Prints the text (Hello World) with a progress bar.
-
-`echo "Hello World" | boxes -d dog -a c` <br>
-
-- Prints the text (Hello World) with a box with a dog.
+- `lsb_release -a`
+  - Shows the distribution information.
