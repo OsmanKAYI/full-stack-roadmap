@@ -1,92 +1,114 @@
 # Vue 3 Script Setup Cheat Sheet
 
-- Everything that you declared inside script setup will be available in the template
-
-![Vue3 Script Setup Cheat Sheet](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*37XVZ_Eez4ihx8rZH9NfMw.png)
+> Everything declared inside `script setup` is available in the template.
 
 ## Methods
 
-```js
+```vue
 <script setup>
 function getParam(param) {
   return param;
 }
 </script>
-```
 
-```html
-<template> {{ getParam(1) }} </template>
+<template>
+  {{ getParam(1) }}
+</template>
 ```
 
 ## Reactive Data Declaration
 
-- Use `ref` for primitives and `reactive` for complex types
+> Use [ref](https://vuejs.org/api/reactivity-core.html#ref) for primitives and [reactive](https://vuejs.org/api/reactivity-core.html#reactive) for complex types.
 
-```js
-import { ref, reactive } from "vue";
+```vue
+<script setup>
+import { ref, reactive } from 'vue';
+
 const enabled = ref(true);
 const object = reactive({ variable: false });
+</script>
 ```
 
 ## Component Declaration
 
-```js
-import { defineAsyncComponent } from "vue";
-import TheComponent from "./components/TheComponent.vue";
+```vue
+<script setup>
+import { defineAsyncComponent } from 'vue';
+import TheComponent from './components/TheComponent.vue';
+
 const AsyncComponent = defineAsyncComponent(() =>
-  import("./components/AsyncComponent.vue")
+  import('./components/AsyncComponent.vue')
 );
+</script>
 ```
 
 ## Computed Value
 
-```js
-import { computed } from "vue";
+```vue
+<script setup>
+import { computed } from 'vue';
+
 const count = 0;
 const isEmpty = computed(() => {
   return count === 0;
 });
+</script>
 ```
 
 ## Watcher
 
-```js
-import { watch, ref } from "vue";
+```vue
+<script setup>
+import { watch, ref } from 'vue';
+
 const counter = ref(0);
 watch(counter, () => {
-  console.log("Counter value changed");
+  console.log('Counter value changed');
 });
+</script>
 ```
 
 ## Lifecycle Hooks
 
-```js
-import { onMounted } from "vue";
-console.log("Equivalent to created hook");
+```vue
+<script setup>
+import { onMounted } from 'vue';
+
+console.log('Equivalent to created hook');
 onMounted(() => {
-  console.log("Mounted hook called");
+  console.log('Mounted hook called');
 });
+</script>
 ```
 
 ## Define Emits
 
-```js
-const emit = defineEmits(["event-name"]);
+```vue
+<script setup>
+const emit = defineEmits(['event-name']);
+
 function emitEvent() {
-  emit("event-name");
+  emit('event-name');
 }
+</script>
 ```
 
 ## Define Props
 
-```js
-defineProps({
+```vue
+<script setup>
+const props = defineProps({
   elements: Array,
   counter: {
     type: Number,
     default: 0,
   },
 });
+</script>
 ```
 
-**Ref:** [fadamakis.com](https://fadamakis.com/vue-3-script-setup-cheat-sheet-36572c042128)
+![Vue 3 Script Setup Cheat Sheet](https://miro.medium.com/v2/resize:fit:700/1*37XVZ_Eez4ihx8rZH9NfMw.png)
+
+[Download print-friendly PDF](https://drive.google.com/file/d/1UE47WlAm9Re76whHZAUqSRgUqQ-DiCfi/view)
+
+**Ref:** [Fotis Adamakis - Medium](https://fadamakis.com/vue-3-script-setup-cheat-sheet-36572c042128)
