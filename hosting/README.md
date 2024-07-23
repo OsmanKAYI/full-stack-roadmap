@@ -24,6 +24,7 @@ This documentation gives reference material and guides for learning the basics o
 - [Remote Server Connection](./sunucuya.baglanma.md)
 - [What is GitHub Hosting](./github.hosting.md)
 - [Cockpit Server Admin Interface](./cockpit.md)
+- [Step-by-Step Guide to Adding HTTPS with Cloudflare](./https.using.cloudflare.md)
 - [Create a Backdoor with Ncat](./netcat.backdoor.md)
 
 ## Useful Links
