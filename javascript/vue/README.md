@@ -22,6 +22,7 @@ The Vue documentation is available online at [vuejs.org](https://www.vuejs.org).
 - [Clean Layout Architecture for Vue Applications](./clean.layout.for.vue.apps.md)
 - [What is Single File Component (SFC)](./single.file.components.md)
 - [Vue3 Getting Start](./vue3.md)
+- [Some Vue 3 Tricks to Know](./vue3.tricks.md)
 - [Composition Pattern, Composition API, and Composables](./composition.pattern.&.composition.api.&.composables.md)
 - [Vue Render Optimization with v-once and v-memo](./v-once.v-memo.md)
 - [Handling Environment Variables in Vue](./env.variables.md)
