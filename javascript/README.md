@@ -48,6 +48,8 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - [Vue Framework](./vue/README.md)
 - [Quasar Framework](./quasar/README.md)
 
+![0, null, undefined](https://pbs.twimg.com/media/GTYpSkCXkAAlmuc?format=jpg&name=large)
+
 ### Examples
 
 - [Create Demo API with JSON Server](./examples/demo-server/README.md)
