@@ -29,7 +29,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Basic Commands and Command Line Shortcuts](./basic.commands.and.shortcuts.md)
 - [Awk Command [ or Language :) ] on Linux](./awk.command.md)
 - [Find Command on Linux](./find.command.md)
-- [Use Touchpad Like MacOS](./x11.gnome.extension.md)
+- [Use Touchpad Like MacOS](./gnome.extensions.x11.md)
 - [Create New User & Delete the Old One](./create.new.user.md)
 - [How to Install a Desktop (GUI) on an Ubuntu Server](./install.desktop.gui.md)
 - [Linux File Permissions](./linux.permissions.md)
