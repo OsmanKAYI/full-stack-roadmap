@@ -9,7 +9,7 @@ sudo mount -o remount,rwx <mountpoint>
 
 `lsblk`
 
-```
+```bash
 NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
 loop0    7:0    0     4K  1 loop /snap/bare/5
 loop1    7:1    0    55M  1 loop /snap/core18/1705
