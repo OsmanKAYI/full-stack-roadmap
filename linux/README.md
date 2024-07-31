@@ -19,6 +19,7 @@ _You can find Türkçe documentation for linux in [linux-dersleri](https://githu
 This documentation includes guides, tutorials, and reference material for learning Linux (Ubuntu) and using it effectively.
 
 - [Dual Boot Ubuntu 22.04.LTS and Windows 10](./dual.boot.ubuntu.22.04.1.lts.and.windows10.md)
+- [Dual Boot Disk Permission Problem](./dual.boot.disk.permission.problem.md)
 - [Setup Necessary Features on Linux](./setup.necessary.features.on.linux.md)
 - [Setup Necessary Features on Linux(.sh)](./setup.necessary.features.on.linux.sh)
 - [Setup Basics for Front-End Developer on Linux(.sh)](./setup.front.end.sh)
