@@ -20,6 +20,7 @@ The Vue documentation is available online at [vuejs.org](https://www.vuejs.org).
 - [Ref vs. Reactive - Pick One, Kill the Other](./ref.vs.reactive.md)
 - [Which One to Choose (Options or Composition)](./options.or.composition.md)
 - [Clean Layout Architecture for Vue Applications](./clean.layout.for.vue.apps.md)
+- [Refactor Your Vue Application By Using Setup Scripts](./clean.layout.for.vue.apps.md)
 - [What is Single File Component (SFC)](./single.file.components.md)
 - [Vue3 Getting Start](./vue3.md)
 - [Some Vue 3 Tricks to Know](./vue3.tricks.md)
