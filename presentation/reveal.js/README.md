@@ -52,3 +52,5 @@ For more examples and contents visit [revealjs.com](https://revealjs.com/)
   - [CopyCode](https://github.com/Martinomagnifico/reveal.js-copycode) which is a simple plugin for Reveal.js that automatically shows a 'copy' button in code blocks.
   - [reveal-css-snippet](https://github.com/soluml/reveal-css-snippet) which is a Reveal.js plugin that allows live CSS editing in code blocks.
 - [Picsum Photos](https://picsum.photos/) which provides stylish placeholders being easy to use.
+- [Introduction to Quasar - Sample from Divya Sonara](https://github.com/divyasonara7/introduction-to-quasar)
+  - Check the live version of the [presentation](https://divyasonara7.github.io/introduction-to-quasar/)
