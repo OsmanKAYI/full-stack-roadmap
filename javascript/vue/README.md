@@ -29,6 +29,7 @@ The Vue documentation is available online at [vuejs.org](https://www.vuejs.org).
 - [Handling Environment Variables in Vue](./env.variables.md)
 - [Database Connection (PHP File)](./db.connection.php)
 - [Top 10 Vue.js UI Libraries in 2024](./top.10.ui.libraries.2024.md)
+- [Top 6 Vue.js UI Libraries in 2024](./top.6.ui.libraries.2024.md)
 - [How to Use Bootstrap5 with Vue3](./using.bootstrap5.with.vue3.md)
   - [Bootstrap Table](https://bootstrap-table.com/)
     - An extended table to the integration with some of the most widely used CSS frameworks. (Supports Bootstrap, Semantic UI, Bulma, Material Design, Foundation)
