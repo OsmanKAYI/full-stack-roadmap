@@ -38,6 +38,7 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - [JavaScript Tips](./js.tips.md)
 - [Most Essential JavaScript Functions and Usages](./most.essential.js.functions.md)
 - [18 JavaScript Tips for Clean and Efficient Code](./18.tips.for.clean.code.md)
+- [28 JavaScript One-Liners Every Senior Developer Needs to Know](./28.js.one.liners.md)
 - [21 Tricks Every Coder Should Master!](./21.tricks.md)
 - [20 Handy Tips and Tricks for Instant Improvement](./20.handy.tips.md)
 - [10 Tricks You Don't Know](./10.tricks.md)
