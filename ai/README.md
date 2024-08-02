@@ -26,4 +26,5 @@ This repository is dedicated to exploring and developing AI solutions. It includ
 - [Stable Diffusion ile Görsel Üretmek](https://www.youtube.com/watch?v=DcwH_95F_pU)
 - [Building a JavaScript AI Talking Plant 🌱 with Facial Recognition and Real Sensors](https://matemarschalko.medium.com/building-a-javascript-ai-talking-plant-with-facial-recognition-and-real-sensors-74364f005ae5)
 - [AI Car Mechanic — Diagnose Car Issues with new Chat Assistant | OBD Codes, JavaScript, ChatGPT (GPT-3)](https://matemarschalko.medium.com/ai-car-mechanic-diagnose-car-issues-with-new-chat-assistant-obd-codes-javascript-chatgpt-d69b77405c39)
+- [Creating Samantha from “Her” by Fine-tuning GPT-3 on the Movie Script](https://matemarschalko.medium.com/creating-samantha-from-her-by-fine-tuning-gpt-3-on-the-movie-script-dabdbf78b883)
 - [Stable Diffusion ile Görsel Üretmek](https://www.youtube.com/watch?v=DcwH_95F_pU)
