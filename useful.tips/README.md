@@ -12,6 +12,7 @@ Here, you will find out some usefull informations which I cannot group them in a
 - [10 Work-Life Hacks](./10.worklife.hacks.md)
 - [Business Logic](./business.logic.md)
 - [Semantic Versioning](./semantic.versioning.md)
+- [Guide to Earning Money on X](./make.money.on.x.md)
 - [Bluetooth](./bluetooth.md)
 - [Excel](./excel.md)
 
