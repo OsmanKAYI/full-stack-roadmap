@@ -29,8 +29,9 @@ These notes are a collection of useful information, tips, and tricks related to 
 - [Algorithms](./algorithms)
 - [Presentation Tools](./presentation)
 - [Dart](./dart)
-- [Windows](./windows)
 - [Useful Tips](./useful.tips/)
+- [Hobbies](./hobbies/)
+- [Windows](./windows)
 
 ## Useful Links
 
