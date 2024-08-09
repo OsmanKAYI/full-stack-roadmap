@@ -2,9 +2,6 @@
 
 My prefered extensions and special settings for them in VSCode.
 
-```config
-# VSCode Settings
-
 ```json
 ///////////////////////// VISUAL STUDIO CODE /////////////////////////
 ///////////////////////// VISUAL STUDIO CODE /////////////////////////
@@ -29,9 +26,8 @@ My prefered extensions and special settings for them in VSCode.
 
   // Defines the border of focused and unfocused tabs and background of focused tab
   "workbench.colorCustomizations": {
-    "tab.activeBorder": "#04eb17",
-    "tab.unfocusedActiveBorder": "#000000",
-    "tab.activeBackground": "#009688"
+    "tab.activeBorder": "#ffffff",
+    "tab.activeBackground": "#000000"
   },
 
   // VSCode Session Protection Settings
