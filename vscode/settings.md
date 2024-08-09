@@ -3,6 +3,9 @@
 My prefered extensions and special settings for them in VSCode.
 
 ```config
+# VSCode Settings
+
+```json
 ///////////////////////// VISUAL STUDIO CODE /////////////////////////
 ///////////////////////// VISUAL STUDIO CODE /////////////////////////
 ///////////////////////// VISUAL STUDIO CODE /////////////////////////
@@ -37,6 +40,9 @@ My prefered extensions and special settings for them in VSCode.
   // Enable bracket pair colorization and highlighting
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
+
+  // Enable HTML formatter to split html attributes
+  "html.format.wrapAttributes": "force-expand-multiline",
 
   ///////////////////////// Alignment /////////////////////////
   ///////////////////////// Alignment /////////////////////////
@@ -109,7 +115,6 @@ My prefered extensions and special settings for them in VSCode.
   ///////////////////////// Community Material Theme /////////////////////////
   "git.confirmSync": false,
   "workbench.iconTheme": "material-icon-theme",
-  "security.workspace.trust.untrustedFiles": "open",
   "editor.lineHeight": 30,
 
   ///////////////////////// Draw.io Integration /////////////////////////
@@ -211,7 +216,7 @@ My prefered extensions and special settings for them in VSCode.
   "editor.unicodeHighlight.allowedLocales": {
     "tr": true
   },
-  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "workbench.startupEditor": "none",
   "editor.mouseWheelZoom": true,
@@ -360,6 +365,10 @@ My prefered extensions and special settings for them in VSCode.
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
   "hediet.vscode-drawio.resizeImages": null,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.ignoreRebaseWarning": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "explorer.confirmPasteNative": false
 }
 ```

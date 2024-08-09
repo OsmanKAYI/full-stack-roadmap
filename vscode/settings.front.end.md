@@ -38,6 +38,9 @@ My prefered extensions and special settings for them in VSCode.
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
 
+  // Enable HTML formatter to split html attributes
+  "html.format.wrapAttributes": "force-expand-multiline",
+
   ///////////////////////// Alignment /////////////////////////
   ///////////////////////// Alignment /////////////////////////
   ///////////////////////// Alignment /////////////////////////
