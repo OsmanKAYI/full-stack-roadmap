@@ -14,6 +14,7 @@ To get started with data analysis using this repository, follow these steps:
 
 Include any additional resources, tutorials, or guides that might be useful for data analysis in this section. For example:
 
+- [Step-by-Step Learning for Data-Related Roles](./data.related.roles.md)
 - [Free Data Analytics Course](./data.analytics.course.md)
 
 ## Useful Links
