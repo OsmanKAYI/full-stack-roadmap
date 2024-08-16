@@ -13,6 +13,7 @@ Here, you will find out some usefull informations which I cannot group them in a
 - [Business Logic](./business.logic.md)
 - [Semantic Versioning](./semantic.versioning.md)
 - [Guide to Earning Money on X](./make.money.on.x.md)
+- [How to Be Motivated to Study?](./motivate.yourself.md)
 - [Bluetooth](./bluetooth.md)
 - [Excel](./excel.md)
 
