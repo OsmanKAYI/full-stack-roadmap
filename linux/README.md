@@ -30,6 +30,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Basic Commands and Command Line Shortcuts](./basic.commands.and.shortcuts.md)
 - [Awk Command [ or Language :) ] on Linux](./awk.command.md)
 - [Find Command on Linux](./find.command.md)
+- [The Key Features of tmux](./using.tmux.md)
 - [Highlight Cursor Position with Jiggle](./gnome.extensions.jiggle.md)
 - [Use Touchpad Like MacOS](./gnome.extensions.x11.md)
 - [Create New User & Delete the Old One](./create.new.user.md)
