@@ -98,6 +98,7 @@ pip3 install thefuck --user
 - **pv** shows the progress of data through a pipeline by giving information such as time elapsed, percentage completed (with progress bar), current throughput rate, total data transferred, and ETA.
 - **ranger**, is a console file manager with VI key bindings.
 - **testdisk** checks and recovers lost partitions.
+- **tmux** is a terminal multiplexer: it enables a number of terminals to be created, accessed, and controlled from a single screen. tmux may be detached from a screen and continue running in the background, then later reattached..
 - **tree**, is  used to display the directory structure in a tree-like format.
 - **unrar** extracts RAR file archives.
 - **vim** is a free and open-source, screen-based text editor program.
@@ -105,7 +106,7 @@ pip3 install thefuck --user
 - **xclip** is X11 clipboard manipulation tool, similar to xsel.Handles the X primary and secondary selections, plus the system clipboard ( <kbd>CTRL</kbd> + <kbd>C</kbd> / <kbd>CTRL</kbd> + <kbd>V</kbd> ).
 
 ```bash
-sudo apt install axel bat boxes caffeine figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tree unrar vim magic-wormhole xclip -y
+sudo apt install axel bat boxes caffeine figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tmux tree unrar vim magic-wormhole xclip -y
 ```
 
 - `batcat $fileName` # to see and arrange the content of any file.
