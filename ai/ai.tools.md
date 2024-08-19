@@ -25,6 +25,7 @@
 - [Artguru AI](https://www.artguru.ai/): AI platform with creative tools like text-to-image, photo-to-art, and more.
 - [Vectorizer AI](https://vectorizer.ai/): Converts bitmap images to vector images.
 - [Durable AI](https://www.durable.co/): AI website builder for generating entire websites.
+- [BGBye](https://bgbye.fyrean.com/): AI-powered free background removal site.
 
 ## Video & Voice
 
