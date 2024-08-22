@@ -155,6 +155,10 @@ code --install-extension zobo.php-intellisense
 ## this extension contains code snippets for PHP and other frameworks to help you to type faster.
 code --install-extension vsc-snippets.vsc-php-snippets
 
+# PlatformIO IDE
+## your gateway to embedded software development excellence 
+code --install-extension platformio.platformio-ide
+
 # Prettier-Code formatter
 ## an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.
     **NOTE:** If extension is not working properly, follow [instructions for Prettier](https://bobbyhadz.com/blog/fix-prettier-not-working-in-vs-code).
