@@ -30,6 +30,7 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - jQuery: A fast and feature-rich library for DOM manipulation and AJAX requests.
 - [Alpine.js](https://alpinejs.dev/): A lightweight, JavaScript framework.
 - [Turf.js](https://turfjs.org/): Advanced geospatial analysis for browsers and Node.js
+  - [Leaflet.js](https://leafletjs.com/): An open-source JavaScript library for mobile-friendly interactive maps
 
 ## Documentation
 
