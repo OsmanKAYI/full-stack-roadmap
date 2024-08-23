@@ -101,6 +101,7 @@ This documentation includes guides, tutorials, and reference material for learni
 
 - [Ubuntu Tutorials](https://ubuntu.com/tutorials)
 - [Ubuntu Tutorial (Türkçe)](https://turkce-linux.gitbook.io/anasayfa)
+- [101 Linux Commands (eBook)](https://sugatoray.github.io/101-linux-commands-ebook/)
 - [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)
   - A repo with notes and tricks on using the command line, useful when working in Linux, with an emphasis on flexibility and fluency
 - [A Guide to Installing Applications on Linux (Ebook)](https://opensource.com/sites/default/files/gated-content/osdc_installing_applications_on_linux.pdf)
