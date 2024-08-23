@@ -15,3 +15,5 @@ sudo apt remove brltty
 ```
 
 ## Documentation
+
+- [Sample Projects](./sample.projects.md)
