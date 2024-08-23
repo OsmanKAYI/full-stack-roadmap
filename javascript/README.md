@@ -29,6 +29,7 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - Express.js: A minimalist web application framework for Node.js.
 - jQuery: A fast and feature-rich library for DOM manipulation and AJAX requests.
 - [Alpine.js](https://alpinejs.dev/): A lightweight, JavaScript framework.
+- [Turf.js](https://turfjs.org/): Advanced geospatial analysis for browsers and Node.js
 
 ## Documentation
 
