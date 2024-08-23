@@ -22,3 +22,4 @@ sudo apt remove brltty
 ## Dokümantasyon
 
 - [Arduino Temelleri](./arduino.temelleri.md)
+- [Örnek Projeler](./ornek.projeler.md)
