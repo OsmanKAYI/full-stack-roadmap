@@ -16,4 +16,5 @@ sudo apt remove brltty
 
 ## Documentation
 
+- [Arduino Basics](./arduino.basics.md)
 - [Sample Projects](./sample.projects.md)
