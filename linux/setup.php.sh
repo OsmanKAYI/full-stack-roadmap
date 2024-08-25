@@ -6,16 +6,12 @@ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap re
 ## set timezone as Istanbul
 sudo timedatectl set-timezone Europe/Istanbul
 ## choose timezone manually: sudo dpkg-reconfigure tzdata
-
 ## setup auxiliary packages
 sudo apt-get install ntp ntpdate -y
-
 ## setup NTP server
 sudo ntpdate ntp.ubuntu.com
-
 ## get timezone and current time
 timedatectl status
-
 ## set keyboard settings for Türkçe
 setxkbmap tr
 
@@ -76,3 +72,5 @@ cd /var/www/html
 mkdir adminer
 cd adminer
 wget -O index.php https://www.adminer.org/latest.php
+
+sudo apt autoremove -y
