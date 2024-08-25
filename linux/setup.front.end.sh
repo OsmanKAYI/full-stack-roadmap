@@ -25,13 +25,10 @@ NC='\033[0m' # No Color
 
 echo "Please fulfill the instructions for GIT"
 echo ""
-
 echo -e -n "Enter your ${LIGHTCYAN}name${NC} and ${LIGHTCYAN}surname${NC}: "
 read GIT_NAME_SURNAME
-
 echo -e -n "Enter your ${LIGHTCYAN}git email${NC}: "
 read GIT_EMAIL
-
 echo -e -n "Enter your ${LIGHTCYAN}filename${NC} for ~/.ssh/: "
 read SSH_FILENAME
 
@@ -49,16 +46,12 @@ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap re
 # to set timezone as Istanbul
 sudo timedatectl set-timezone Europe/Istanbul
 # to choose timezone manually: sudo dpkg-reconfigure tzdata
-
 # to show the seconds on desktop clock
 gsettings set org.gnome.desktop.interface clock-show-seconds true
-
 # to setup auxiliary packages
 sudo apt-get install ntp ntpdate -y
-
 # to setup NTP server
 sudo ntpdate ntp.ubuntu.com
-
 # to get timezone and current time
 timedatectl status
 
@@ -71,10 +64,8 @@ sudo ubuntu-drivers autoinstall
 ## Desktop Configurations
 # to set the position of the dock to the left
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
-
 # to minimize/extend all windows of a folder/program with one click
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
-
 # to switch between windows of a folder/program with mouse rolling
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
@@ -82,7 +73,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windo
 sudo apt-get install guake -y
 
 ## Necessary Packages
-sudo apt install vim pdftk meld xclip axel gnome-tweaks net-tools hardinfo gpustat nvtop unrar caffeine magic-wormhole pv -y
+sudo apt install axel caffeine curl gnome-tweaks gpustat hardinfo magic-wormhole meld net-tools nvtop pdftk pv unrar vim xclip -y
 
 ## TLDR
 sudo apt install tldr -y
@@ -191,3 +182,5 @@ if [ -n "$SSH_FILENAME" ]; then
   # After that go to "Settings > SSH and GPG keys > New SSH key".
   # Give it a unique name and paste the copied Github ssh key here.
 fi
+
+sudo apt autoremove -y

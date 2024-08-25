@@ -1,8 +1,8 @@
 clear
 
-## cOLORS
-## cOLORS
-## cOLORS
+## COLORS
+## COLORS
+## COLORS
 BLACK='\033[0;30m'
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -42,7 +42,6 @@ read REDIS_PASSWORD
 
 echo ""
 echo ""
-
 echo -e  "$LIGHTGREEN !!! INSTALLATION STARTED !!! $NC"
 echo ""
 
@@ -86,7 +85,7 @@ sudo apt install python3-dev python3-pip python3-setuptools
 pip3 install thefuck --user
 
 ## Necessary Packages
-sudo apt install axel bat boxes caffeine figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tmux tree unrar vim magic-wormhole xclip -y
+sudo apt install axel bat boxes caffeine curl figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tmux tree unrar vim magic-wormhole xclip -y
 
 ## Ulauncher
 sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher
@@ -370,3 +369,5 @@ if [ -n "$SSH_FILENAME" ]; then
   # After that go to "Settings > SSH and GPG keys > New SSH key".
   # Give it a unique name and paste the copied Github ssh key here.
 fi
+
+sudo apt autoremove -y

@@ -84,6 +84,7 @@ pip3 install thefuck --user
 - **bat**, is a cat command written in Rust programming language, comes with syntax highlighting, git integration, and works as is a drop-in cat command replacement.
 - **boxes** is a text filter which can draw any kind of box around its input text. Box design choices range from simple boxes to complex ASCII art.
 - **caffeine** prevents the desktop from becoming idle when an application is running full-screen. A desktop indicator ‘caffeine-indicator’ supplies a manual toggle, and the command ‘caffeinate’ can be used to prevent idleness for the duration of any command.
+- **curl** is a command line tool for transferring data from or to a server.
 - **figlet** is a a computer program that generates text banners, in a variety of typefaces, composed of letters made up of conglomerations of smaller ASCII characters.
 - **gnome Tweak Tool** is software that allows us to change the general appearance and behavior of components in the Gnome Desktop Environment.
 - **gpustat** is a GPU monitoring tool, capable of displaying a multitude of information from multiple GPU nodes on one page.
@@ -101,12 +102,12 @@ pip3 install thefuck --user
 - **tmux** is a terminal multiplexer: it enables a number of terminals to be created, accessed, and controlled from a single screen. tmux may be detached from a screen and continue running in the background, then later reattached..
 - **tree**, is  used to display the directory structure in a tree-like format.
 - **unrar** extracts RAR file archives.
+- **xclip** is X11 clipboard manipulation tool, similar to xsel.Handles the X primary and secondary selections, plus the system clipboard ( <kbd>CTRL</kbd> + <kbd>C</kbd> / <kbd>CTRL</kbd> + <kbd>V</kbd> ).
 - **vim** is a free and open-source, screen-based text editor program.
 - **wormhole** lets you share files with end-to-end encryption and a link that automatically expires. So you can keep what you share private and make sure your stuff doesn't stay online forever.
-- **xclip** is X11 clipboard manipulation tool, similar to xsel.Handles the X primary and secondary selections, plus the system clipboard ( <kbd>CTRL</kbd> + <kbd>C</kbd> / <kbd>CTRL</kbd> + <kbd>V</kbd> ).
 
 ```bash
-sudo apt install axel bat boxes caffeine figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tmux tree unrar vim magic-wormhole xclip -y
+sudo apt install axel bat boxes caffeine curl figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tmux tree unrar xclip vim magic-wormhole -y
 ```
 
 - `batcat $fileName` # to see and arrange the content of any file.
