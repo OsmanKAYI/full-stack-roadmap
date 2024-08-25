@@ -140,6 +140,14 @@ sudo apt update
 sudo apt install code -y
 wget https://raw.githubusercontent.com/OsmanKAYI/full-stack-roadmap/main/vscode/extensions.front.end.sh -O - | sh
 
+## WPS Office
+# dive into download directory
+cd ~/Downloads/
+# download WPS Office
+wget https://wps-community.org/wps-office-11.1.0.11720-1-linux.deb
+# install the downloaded file
+sudo dpkg -i wps-office-11.1.0.11720-1-linux.deb
+
 ## Git
 sudo apt-get install git -y
 if [ -n "$GIT_EMAIL" ]; then
