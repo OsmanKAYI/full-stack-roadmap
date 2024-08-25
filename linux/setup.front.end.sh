@@ -121,7 +121,6 @@ sudo apt update
 sudo apt install firefox -y
 
 ## Syncthing
-
 # add the release PGP keys
 sudo mkdir -p /etc/apt/keyrings
 sudo curl -L -o /etc/apt/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
