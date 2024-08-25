@@ -184,11 +184,12 @@ sudo apt install code -y
 wget https://raw.githubusercontent.com/OsmanKAYI/full-stack-roadmap/main/vscode/extensions.sh -O - | sh
 
 ## WPS Office
-# dive into download directory (since it downloads to 'Downloads/' folder)
+# dive into download directory
 cd ~/Downloads/
-# install downloaded file
-sudo apt install ./wps-office_*_amd64.deb
-# press 'OK' and 'YES', one after another
+# download WPS Office
+wget https://wps-community.org/wps-office-11.1.0.11720-1-linux.deb
+# install the downloaded file
+sudo dpkg -i wps-office-11.1.0.11720-1-linux.deb
 
 ## Notion
 echo "deb [trusted=yes] https://apt.fury.io/notion-repackaged/ /" | sudo tee /etc/apt/sources.list.d/notion-repackaged.list
