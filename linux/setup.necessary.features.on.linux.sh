@@ -394,4 +394,7 @@ echo -e '[Desktop Entry]\nName=TUXEDO Control Center\nComment=Tray icon for TUXE
 ## ulauncher
 echo -e '[Desktop Entry]\nName=Ulauncher\nComment=Application launcher for Linux\nExec=env GDK_BACKEND=x11 /usr/bin/ulauncher --hide-window --hide-window\nIcon=ulauncher\nTerminal=false\nType=Application\nCategories=Utility;Application;' > ~/.config/autostart/ulauncher.desktop
 
+# Favorite Applications
+gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'gnome-system-monitor.desktop', 'virtualbox.desktop', 'thunderbird.desktop', 'firefox.desktop', 'chromium-browser.desktop', 'telegramdesktop.desktop', 'Postman.desktop', 'discord.desktop', 'code.desktop', 'wps-office-prometheus.desktop', 'install4j_108k4me-SoapUI-5.7.0.desktop', 'sweethome3d.desktop']"
+
 sudo apt autoremove -y
