@@ -25,7 +25,7 @@ NC='\033[0m' # No Color
 
 echo "Please fulfill the instructions for GIT"
 echo ""
-echo -e -n "Enter your ${LIGHTCYAN}name${NC} and ${LIGHTCYAN}surname${NC}: "
+echo -e -n "Enter your ${LIGHTCYAN}name and surname${NC}: "
 read GIT_NAME_SURNAME
 echo -e -n "Enter your ${LIGHTCYAN}git email${NC}: "
 read GIT_EMAIL
