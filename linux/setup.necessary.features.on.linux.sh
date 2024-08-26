@@ -384,4 +384,14 @@ if [ -n "$SSH_FILENAME" ]; then
   # Give it a unique name and paste the copied Github ssh key here.
 fi
 
+# Startup Applications
+## guake.desktop
+echo -e '[Desktop Entry]\nName[tr]=Guake Uçbirim\nName=Guake Terminal\nComment=Use the command line in a Quake-like terminal\nTryExec=guake\nExec=guake\nIcon=guake\nType=Application\nCategories=GNOME;GTK;System;Utility;TerminalEmulator;\nStartupNotify=true\nX-Desktop-File-Install-Version=0.22\nX-GNOME-Autostart-enabled=true\nHidden=false\nNoDisplay=false' > ~/.config/autostart/guake.desktop
+## caffeine.desktop
+echo -e '[Desktop Entry]\nIcon=caffeine\nName=Caffeine\nComment=Temporarily deactivate the screensaver and sleep mode\nExec=caffeine-indicator\nTerminal=false\nType=Application\nCategories=Utility;\nKeywords=Screensaver,Power,Saving,Blank\nStartupNotify=false' > ~/.config/autostart/caffeine.desktop
+## tuxedo-control-center-tray.desktop
+echo -e '[Desktop Entry]\nName=TUXEDO Control Center\nComment=Tray icon for TUXEDO Control Center\nExec=/usr/bin/tuxedo-control-center --tray\nHidden=false\nTerminal=false\nType=Application\nIcon=tuxedo-control-center\nCategories=System;TrayIcon' > ~/.config/autostart/tuxedo-control-center-tray.desktop
+## ulauncher
+echo -e '[Desktop Entry]\nName=Ulauncher\nComment=Application launcher for Linux\nExec=env GDK_BACKEND=x11 /usr/bin/ulauncher --hide-window --hide-window\nIcon=ulauncher\nTerminal=false\nType=Application\nCategories=Utility;Application;' > ~/.config/autostart/ulauncher.desktop
+
 sudo apt autoremove -y
