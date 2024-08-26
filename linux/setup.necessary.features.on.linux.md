@@ -335,9 +335,9 @@ sudo apt install code -y
 # dive into download directory
 cd ~/Downloads/
 # download WPS Office
-wget https://wps-community.org/wps-office-11.1.0.11723.XA_amd64.deb
+wget https://wps-community.org/wps-office_11.1.0.11723.XA_amd64.deb
 # install the downloaded file
-sudo dpkg -i wps-office-11.1.0.11723.XA_amd64.deb
+sudo dpkg -i wps-office_11.1.0.11723.XA_amd64.deb
 ```
 
 ## Notion
