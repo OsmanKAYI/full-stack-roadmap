@@ -187,10 +187,10 @@ sudo apt-get install syncthing -y
 sudo apt install -t ${VERSION_CODENAME}-backports cockpit -y
 
 ## Visual Studio Code
-sudo apt install software-properties-common apt-transport-https wget -y
-wget -O vscode.gpg https://packages.microsoft.com/keys/microsoft.asc
-sudo gpg --dearmor -o /usr/share/keyrings/vscode.gpg vscode.gpg
-echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
+sudo rm /etc/apt/sources.list.d/vscode.list
+sudo rm /usr/share/keyrings/vscode.gpg
+sudo wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg > /dev/null
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
 sudo apt update
 sudo apt install code -y
 # install extesions
