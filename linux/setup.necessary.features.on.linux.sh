@@ -66,8 +66,35 @@ timedatectl status
 ## Set Keyboard Setting for Türkçe
 setxkbmap tr
 
+# Ubuntu Settings
+## appearance
+### style
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gsettings set org.gnome.desktop.interface icon-theme  'Yaru-sage'
+### desktop icons
+gsettings set org.gnome.shell.extensions.ding icon-size 'standard'
+gsettings set org.gnome.shell.extensions.ding start-corner 'top-left'
+### dock
+gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 24
+gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
+gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
+gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button true
+## sound
+### system volume
+gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
+## power
+### power saving options
+gsettings set org.gnome.desktop.session idle-delay 900
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 900
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 1200
+### suspend & power button
+gsettings set org.gnome.desktop.interface show-battery-percentage true
+
 ## Check Drivers
-sudo ubuntu-drivers autoinstall
+sudo ubuntu-drivers autoinstall -y
 
 ## Desktop Configurations
 # to set the position of the dock to the left
@@ -81,14 +108,14 @@ gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windo
 sudo apt-get install guake -y
 
 ## The Fuck
-sudo apt install python3-dev python3-pip python3-setuptools
+sudo apt install python3-dev python3-pip python3-setuptools -y
 pip3 install thefuck --user
 
 ## Necessary Packages
 sudo apt install axel bat boxes caffeine curl figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tmux tree unrar vim magic-wormhole xclip -y
 
 ## Ulauncher
-sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher
+sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher -y
 
 ## TLDR
 sudo apt install tldr -y
@@ -143,7 +170,7 @@ sudo apt purge firefox -y
 sudo apt install firefox -y
 
 ## Chromium
-sudo apt install chromium-browser -y
+sudo apt install chromium chromium-browser -y
 
 ## Syncthing
 # add the release PGP keys
@@ -157,7 +184,7 @@ sudo apt-get install syncthing -y
 
 ## Cockpit
 . /etc/os-release
-sudo apt install -t ${VERSION_CODENAME}-backports cockpit
+sudo apt install -t ${VERSION_CODENAME}-backports cockpit -y
 
 ## Visual Studio Code
 sudo apt install software-properties-common apt-transport-https wget -y
@@ -198,7 +225,7 @@ sudo adduser $USER www-data
 sudo chown -R $USER:www-data /var/www/html/
 
 ## PHP
-sudo apt install php
+sudo apt install php -y
 sudo service apache2 restart
 ## restart Apache Service
 sudo systemctl restart apache2
@@ -306,7 +333,7 @@ StartupWMClass=Postman
 StartupNotify=true" | sudo tee /usr/share/applications/Postman.desktop
 
 ## AutoKey
-sudo apt install autokey-gtk
+sudo apt install autokey-gtk -y
 
 ## Knime
 # use "wget" to download the Knime tool
@@ -331,7 +358,7 @@ cd ~/Downloads/
 sudo apt install anydesk -y
 
 ## Telegram
-sudo apt install telegram-desktop
+sudo apt install telegram-desktop -y
 
 ## Steam
 sudo add-apt-repository multiverse
