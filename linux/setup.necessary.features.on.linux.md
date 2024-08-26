@@ -275,7 +275,7 @@ Cockpit is an interactive server admin interface. It is easy to use and very lig
 
 ```bash
 . /etc/os-release
-sudo apt install -t ${VERSION_CODENAME}-backports cockpit
+sudo apt install -t ${VERSION_CODENAME}-backports cockpit -y
 ```
 
 After that, type `localhost:9090` on your browser and login with your system's username and password.
@@ -293,7 +293,7 @@ sudo apt update
 sudo apt install code -y
 ```
 
-**Ref:** https://linuxhint.com/install-visual-studio-code-ubuntu22-04/
+**Ref:** [linuxhint](https://linuxhint.com/install-visual-studio-code-ubuntu22-04/)
 
 **NOTE:** Other useful VSCode extensions and related setting.json file can be found from [here](https://github.com/OsmanKAYI/full-stack-roadmap/blob/master/vscode/extensions.md)
 
@@ -394,7 +394,7 @@ sudo vi /etc/php/7.4/apache2/conf.d/20-xdebug.ini
 
 ### Add following 3 lines in 20-xdebug.ini
 
-```
+```bash
 zend_extension=xdebug.so
 xdebug.mode=develop,debug
 xdebug.start_with_request=yes
@@ -627,7 +627,7 @@ sudo apt -f install ./drawio-amd64-*.deb
 jupyter notebook # to start jupyter notebook while you are in the conda terminal
 ```
 
-##### Convert Output to PDF
+#### Convert Output to PDF
 
 - If you want to export notebook to PDF in VSCode, below packages should be installed.
 
@@ -778,7 +778,7 @@ bash SoapUI-*
 - AutoKey is a free, open-source scripting application for Linux. AutoKey allows the user to define hotkeys and trigger phrases which expand to predefined text, automating frequent or repetitive tasks such as correcting typographical errors or common spelling mistakes and inserting boiler plate sections of text.
 
 ```bash
-sudo apt install autokey-gtk
+sudo apt install autokey-gtk -y
 ```
 
 ## Knime
@@ -866,7 +866,7 @@ sudo vi /etc/gdm3/custom.conf
 - Telegram Messenger is a globally accessible freemium, cross-platform, encrypted, cloud-based and centralized instant messaging service. The application also provides optional end-to-end encrypted chats, popularly known as secret chat and video calling, VoIP, file sharing and several other features.
 
 ```bash
-sudo apt install telegram-desktop
+sudo apt install telegram-desktop -y
 ```
 
 ## Steam
