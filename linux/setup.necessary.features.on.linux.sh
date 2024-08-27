@@ -364,6 +364,9 @@ sudo apt install telegram-desktop -y
 sudo add-apt-repository multiverse
 sudo apt install steam -y
 
+## Fritzing
+sudo apt install fritzing -y
+
 ## Sweet Home 3D
 sudo apt install flatpak -y
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo

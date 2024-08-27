@@ -908,6 +908,14 @@ sudo add-apt-repository multiverse
 sudo apt install steam -y
 ```
 
+## Fritzing
+
+- Fritzing is an open-source electronic design tool focusing on makers, hobbyists, and everyone else interested in getting creative with interactive electronics.
+
+```bash
+sudo apt install fritzing -y
+```
+
 ## Sweet Home 3D
 
 - Sweet Home 3D is a free architectural design software that helps users create a 2D plan of a house, with a 3D preview, and decorate exterior and interior views, including ability to place furniture and home appliances. In Sweet Home 3D, furniture can be imported and arranged to create a virtual environment.
