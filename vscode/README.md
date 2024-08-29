@@ -26,6 +26,7 @@ The Visual Studio Code documentation is available online at [Visual Studio Code]
   - [Usefull VSCode Extensions for PHP Developers(.sh)](./extensions.php.sh)
 - [18 Awesome VSCode Extensions for Front-End Developers 🚀](./18.awesome.vscode.extensions.for.front-end.md)
 - [5 Unnecessary VS Code Extensions You Should Uninstall Now](./5.unnecessary.vscode.extension.md)
+- [Boost Your Productivity with 31 Mind-Blowing Custom VSCode Shortcuts](./31.custom.vscode.shortcuts.md)
 - [Settings](./settings.md)
   - [Settings for Front-End Developers](./settings.front.end.md)
 - [Keybindings](./keybindings.md)
