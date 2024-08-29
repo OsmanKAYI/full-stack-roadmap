@@ -48,3 +48,8 @@ To install a package using pip, you can use the command `pip install $package_na
   - For those who want to grasp Deep Learning techniques, it is a very good resource with Python application, translated into Türkçe and about 1000 pages.
 
 ![Data Structure Cheatsheet](https://pbs.twimg.com/media/F6vwZgBWUAAm01E?format=jpg&name=medium)
+
+## Projects
+
+- [Cafe Time Detection](https://github.com/Deepandreinforcement/Python-Cafe-Time-Detection)
+  - A project that measures how long people have been sitting in a cafe using Python.
