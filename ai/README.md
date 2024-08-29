@@ -34,3 +34,5 @@ This repository is dedicated to exploring and developing AI solutions. It includ
 
 - [LinkedIn Auto Jobs Applier with AI](https://github.com/feder-cr/linkedIn_auto_jobs_applier_with_AI)
   - Your AI-powered job search assistant. Automate applications, get personalized recommendations, and land your dream job faster.
+- [Global AI Regulation Tracker](https://www.techieray.com/GlobalAIRegulationTracker)
+  - An interactive world map that tracks AI law, regulatory and policy developments around the world. Click on a region (or use the search bar) to view its profile. Other features are also available to support your research of AI regulation (including an AI governance library, country comparison tool, live AI newsfeed, chatbot and export report function). This website is updated regularly (including new regions to be added).
