@@ -46,6 +46,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Data Gathering with Linux Terminal](./linux.terminal.ile.veri.toplama.md)
 - [Linux Zip Commands](./linux.zip.komutlari.md)
 - [Copy Commands (`tar`, `cp`) & Copy Between Servers](./copy.with.tar.cp.md)
+- [Backup and Versioning with `cp` Command](./cp.backup.and.versioning.md)
 - [Linux `paste` Command](./paste.command.md)
 - [Character Encoding and Line Ending Conversion Commands in Bash](./char.encoding.conversion.md)
 - [`Uniq` Command Examples](./uniq.command.examples.md)
