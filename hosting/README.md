@@ -23,6 +23,7 @@ This documentation gives reference material and guides for learning the basics o
 - [Assignment for Remote Server Connection](./sunucuya.baglanma.odev.md)
 - [Remote Server Connection](./sunucuya.baglanma.md)
 - [What is GitHub Hosting](./github.hosting.md)
+- [Analyse Web Server Logs with GoAccess](./goaccess.log.analysis.md)
 - [Cockpit Server Admin Interface](./cockpit.md)
 - [Step-by-Step Guide to Adding HTTPS with Cloudflare](./https.using.cloudflare.md)
 - [Scale From Zero to Millions of Users](./scale.or.design.system.for.big.data.md)
