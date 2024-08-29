@@ -30,6 +30,7 @@ The PHP documentation is available online at [php.net](https://www.php.net/). Th
 - [PHP Cookie)](./php.cookie.md)
 - [PHP Session)](./php.session.md)
 - [Set Server Date Time Property](./set.server.datetime.property.md)
+- [Optimizing PHP for High Traffic Websites](./optimize.php.md)
 
 ## Useful Links
 
