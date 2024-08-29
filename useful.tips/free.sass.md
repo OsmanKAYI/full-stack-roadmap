@@ -1,4 +1,4 @@
-# SaaS Alternatives
+# Free SaaS Alternatives
 
 Remember, for every paid SaaS, there is a free open-source self-hosted alternative:
 
