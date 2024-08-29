@@ -11,6 +11,7 @@ This repository is dedicated to exploring and developing AI solutions. It includ
 - [Useful AI Tools](./useful.ai.tools.md)
 - [Best AI Extensions](./extensions.md)
 - [ChatGPT Prompts](./chatgpt.prompts.md)
+- [Improving Accuracy in AI Responses](./improving.ai.accuracy.md)
 - [Use Uncensored AI on Your Local Machine](./uncensored.ai.md)
 - [Create Logo](./create.logo.md)
 - [Create a Virtual Employee with Droxy AI](./create.virtual.employee.with.droxy.md)
