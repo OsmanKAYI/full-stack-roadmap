@@ -94,6 +94,10 @@ This documentation includes guides, tutorials, and reference material for learni
 
 ![Linux Commands](https://pbs.twimg.com/media/F5L5PnmWAAAje7k?format=jpg&name=900x900)
 
+- **Apt Command**
+
+![Apt Command](https://pbs.twimg.com/media/GUIn4A7WkAAOWfj?format=jpg&name=large)
+
 - **Cron Cheatsheet**
 
 ![Cron Cheatsheet](https://pbs.twimg.com/media/FvxSYknagAEzE1F?format=jpg&name=4096x4096)
