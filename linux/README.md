@@ -73,6 +73,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Synchronize GooglePhotos to Local](./sync.googlephotos.md)
 - [External Harddisk Mounting Problem](./mounting.external.harddisk.md)
 - [Creating RAMDisk](./creating.ramdisk.md)
+- [A Beginner's Guide to LVM in Linux](./beginners.guide.to.lvm.md)
 - [Logical Volume Manager (LVM)](./nas.raid.lvm.md)
 - [Manage Disk Storage with LVM](./manage.storage.with.lvm.md)
 - [Forensic Data Recovery Tools](./forensic.data.recovery.tools.md)
