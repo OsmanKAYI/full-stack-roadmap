@@ -12,9 +12,10 @@ This documentation includes guides, tutorials, and reference material for learni
 
 - [Introdution to Git](./git.md)
 - [Perfect Git Tips](./git.tips.md)
+- [Navigate Through Git Commits](./navigate.through.git.commits.md)
+- [11 Expert Tips for Efficient Committing](./expert.tips.for.efficient.committing.md)
 - [20 Superusefull Git Commands](./super.useful.20.git.commands.md)
 - [Republish and Existing Git Project with a New Name](./republish.git.project.with.newname.md)
-- [Navigate Through Git Commits](./navigate.through.git.commits.md)
 - [Git Branch](./git.branch.md)
 - [Git Merge vs. Git Rebase](./git.merge.vs.rebase.md)
 
