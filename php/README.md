@@ -39,3 +39,8 @@ The PHP documentation is available online at [php.net](https://www.php.net/). Th
 - [PHP The Right Way](https://phptherightway.com/)
   - The Right Way is an easy-to-read, quick reference for PHP popular coding standards, links to authoritative tutorials around the Web, and what the contributors consider to be best practices at present.
 - [Sweet PHP Debugging in Four Minutes](https://laracasts.com/series/visual-studio-code-for-php-developers/episodes/13)
+
+## Projects
+
+- [Simple Excel](https://github.com/faisalman/simple-excel-php)
+  - Easily parse / convert / write between Microsoft Excel XML / CSV / TSV / HTML / JSON / etc formats
