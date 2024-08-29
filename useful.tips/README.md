@@ -5,6 +5,7 @@ Here, you will find out some usefull informations which I cannot group them in a
 - [A Comprehensive Guide to Types of Software Development](./types.of.software.development.md)
 - [Understanding the 10 Key Roles in a Software Development Team](./10.key.roles.in.software.dev.team.md)
 - [10 Must-Have Skills to Become a Top 1% Web Developer](./10.must-have.skills.md)
+- [30 Essential Websites for Web Developers](./30.websites.for.web.developers.md)
 - [JSON Tools for Every Developer](./json.tools.md)
 - [How to Become a Backend Engineer](./how.to.become.backend.eng.md)
 - [Free SaaS Alternatives](./free.sass.md)
