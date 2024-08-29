@@ -34,6 +34,10 @@ To get started with the Database Monitoring project, follow these steps:
 
 This repository is dedicated to exploring and developing Database Monitoring solutions. It includes code, models, and resources related to Database Monitoring researches and applications.
 
+- [Monitor Anything with Zabbix](./monitoring.with.zabbix.md)
+  - [Zabbix Overview](./zabbix.overview.md)
+  - [Zabbix Advanced](./zabbix.advanced.md)
+
 ## Useful Links
 
 - [Percona Monitoring and Management (PMM)](https://docs.percona.com/percona-monitoring-and-management/index.html)
