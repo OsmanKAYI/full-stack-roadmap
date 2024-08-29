@@ -23,3 +23,8 @@ sudo apt remove brltty
 
 - [Arduino Temelleri](./arduino.temelleri.md)
 - [Örnek Projeler](./ornek.projeler.md)
+
+## Useful Links
+
+- [Wokwi](https://wokwi.com/)
+  - World's most advanced ESP32 simulator
