@@ -39,6 +39,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Linux File Permissions](./linux.permissions.md)
 - [Changing Disk Permissions](./changing.disk.permissions.md)
 - [Terminal](./terminal.md)
+- [11 Best Linux Console File Managers](./useful.linux.console.managers.md)
 - [Vim Editor](./vim.md)
 - [Viewing and Monitoring Log Files](./view.and.monitor.logs.md)
 - [Track File and Directory Changes in Linux with `fswatch`](./fswatch.md)
