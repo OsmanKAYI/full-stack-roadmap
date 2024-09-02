@@ -45,6 +45,10 @@ code --install-extension hediet.vscode-drawio
 ## makes it easy to build, manage, and deploy containerized applications from Visual Studio Code. It also provides one-click debugging of Node.js, Python, and .NET inside a container.
 code --install-extension ms-azuretools.vscode-docker
 
+# DotENV
+## enables support for dotenv file syntax
+code --install-extension mikestead.dotenv
+
 # EditorConfig for VS Code
 ##  attempts to override user/workspace settings with settings found in .editorconfig files.
 code --install-extension editorconfig.editorconfig
@@ -235,7 +239,7 @@ code --install-extension gaiyaobedmathias.vuetify-snippets
 code --install-extension wakatime.vscode-wakatime
 ```
 
-#### Content of projects.json File for Project Manager
+### Content of projects.json File for Project Manager
 
 - To configure your settings, click on the `Project Manager: Edit Projects` (its like a pen) and arrange the below codes according to circumtances.
 
