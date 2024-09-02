@@ -32,6 +32,8 @@ This documentation provides a reference for the available resources and examples
   - Algorithm Visualizer is an interactive online platform designed to bring algorithms to life through visualization. Whether you're a student, teacher, or professional, our platform provides an engaging way to explore and understand various algorithms.
   - [Live Demo](https://algorithm-visualizer.org/)
 - [Algorithms by Jeff Erickson (PDF Book)](https://jeffe.cs.illinois.edu/teaching/algorithms/#book)
+- [Algorithms for Decision-Making (PDF Book)](https://algorithmsbook.com/decisionmaking/)
+  - This book provides a broad introduction to algorithms for decision making under uncertainty. It covers a wide variety of topics related to decision making, introducing the underlying mathematical problem formulations and the algorithms for solving them.
 - [Algoritmik Düşünmeye Giriş](https://www.youtube.com/playlist?list=PL98DQy3xBiLeSd09fMyp31dm3DO0l3f7I)
 - [Easy Algorithms with JavaScript (Türkçe)](https://www.youtube.com/playlist?list=PL0Au88Qum4UmiN0WHD6NKrZNpQqiUwwqe)
 - [How to Send a Secret Message](https://www.youtube.com/watch?v=I6Unxb-PFhs)
