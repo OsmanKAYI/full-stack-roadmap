@@ -230,6 +230,10 @@ code --install-extension gruntfuggly.todo-tree
 ## extension for the Quarto scientific and technical publishing system.
 code --install-extension quarto.quarto
 
+# Quasar Docs
+## the Quasar Docs - integrated in VSCode!
+code --install-extension codecoaching.quasar-docs
+
 # vscode-pdf
 ## helps you to display pdf in VSCode.
 code --install-extension tomoki1207.pdf

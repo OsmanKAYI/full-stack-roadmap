@@ -132,6 +132,10 @@ code --install-extension wayou.vscode-todo-highlight
 ## this extension quickly searches (using ripgrep) your workspace for comment tags like TODO and FIXME, and displays them in a tree view in the activity bar. The view can be dragged out of the activity bar into the explorer pane (or anywhere else you would prefer it to be).
 code --install-extension gruntfuggly.todo-tree
 
+# Quasar Docs
+## the Quasar Docs - integrated in VSCode!
+code --install-extension codecoaching.quasar-docs
+
 # WakaTime
 ## an open source VSCode plugin for metrics, insights, and time tracking automatically generated from your programming activity.
 code --install-extension wakatime.vscode-wakatime
