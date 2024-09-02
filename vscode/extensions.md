@@ -65,6 +65,10 @@ code --install-extension vsls-contrib.gistfs
 ## views a Git Graph of your repository, and easily perform Git actions from the graph. Configurable to look the way you want!
 code --install-extension mhutchie.git-graph
 
+# Git File History
+## quickly browse the history of a file from any git repository
+code --install-extension pomber.git-file-history
+
 # Git History
 ## views git log, file history, compare branches or commits.
 code --install-extension donjayamanne.githistory
