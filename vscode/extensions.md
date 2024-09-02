@@ -110,6 +110,10 @@ code --install-extension ms-toolsai.jupyter
 ### Jupyter Notebook Renderers, which is a Visual Studio Code extension that provides renderers for outputs of Jupyter Notebooks.
 ### Jupyter Slide Show, which is a jupyter Slide Show support for VSCode.
 
+# json2ts
+## converts a JSON from clipboard to TypeScript interfaces. (Ctrl+Alt+V)
+code --install-extension gregorbiswanger.json2ts
+
 # Linter
 ## extension for code linting, all in one package. New linters can be easily added through an extension framework.
 code --install-extension fnando.linter

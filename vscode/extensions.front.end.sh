@@ -57,6 +57,10 @@ code --install-extension oderwat.indent-rainbow
 ## VSCode Inline Fold extension mimics VSCode's folding experience for inline code.
 code --install-extension moalamri.inline-fold
 
+# json2ts
+## converts a JSON from clipboard to TypeScript interfaces. (Ctrl+Alt+V)
+code --install-extension gregorbiswanger.json2ts
+
 # Linter
 ## extension for code linting, all in one package. New linters can be easily added through an extension framework.
 code --install-extension fnando.linter
