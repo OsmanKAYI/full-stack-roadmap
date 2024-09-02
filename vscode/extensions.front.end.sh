@@ -124,6 +124,10 @@ code --install-extension mechatroner.rainbow-csv
 ## complements the Remote - SSH and Remote Tunnels extensions by enabling the Remote Explorer view that shows a list of remote machines available to connect to.
 code --install-extension ms-vscode.remote-explorer
 
+# tldraw
+## lets you use tldraw inside of VS Code, using offline .tldr files.
+code --install-extension tldraw-org.tldraw-vscode
+
 # TODO Highlight
 ## highlight TODO, FIXME and other annotations within your code.Sometimes you forget to review the TODOs you've added while coding before you publish the code to production. So I've been wanting an extension for a long time that highlights them and reminds me that there are notes or things not done yet. Hope this extension helps you as well.
 code --install-extension wayou.vscode-todo-highlight
