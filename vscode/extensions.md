@@ -254,10 +254,6 @@ code --install-extension vue.volar
 ## snippets that will supercharge your Vue workflow.
 code --install-extension sdras.vue-vscode-snippets
 
-# vuetify-snippets
-## code snippets for rapid and fast development of user interface using vuetifyjs.
-code --install-extension gaiyaobedmathias.vuetify-snippets
-
 # WakaTime
 ## an open source VSCode plugin for metrics, insights, and time tracking automatically generated from your programming activity.
 code --install-extension wakatime.vscode-wakatime
