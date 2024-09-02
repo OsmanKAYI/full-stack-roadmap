@@ -48,6 +48,10 @@ code --install-extension mikestead.dotenv
 ##  attempts to override user/workspace settings with settings found in .editorconfig files.
 code --install-extension editorconfig.editorconfig
 
+# Error Lens
+## improve highlighting of errors, warnings and other language diagnostics.
+code --install-extension usernamehw.errorlens
+
 # ESLint
 ## integrates JavaScript into VSCode.
 code --install-extension dbaeumer.vscode-eslint

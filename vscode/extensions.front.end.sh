@@ -24,6 +24,11 @@ code --install-extension adpyke.codesnap
 ## unofficial extension integrates Draw.io into VS Code.
 code --install-extension hediet.vscode-drawio
 
+# Error Lens
+## improve highlighting of errors, warnings and other language diagnostics.
+code --install-extension usernamehw.errorlens
+
+# ESLint
 # GistPad
 ## a Visual Studio Code extension that allows you to edit GitHub Gists and repositories from the comfort of your favorite editor.
 code --install-extension vsls-contrib.gistfs

@@ -24,6 +24,11 @@ code --install-extension adpyke.codesnap
 ## unofficial extension integrates Draw.io into VS Code.
 code --install-extension hediet.vscode-drawio
 
+# Error Lens
+## improve highlighting of errors, warnings and other language diagnostics.
+code --install-extension usernamehw.errorlens
+
+# ESLint
 # GistPad
 ## a Visual Studio Code extension that allows you to edit GitHub Gists and repositories from the comfort of your favorite editor.
 code --install-extension vsls-contrib.gistfs
@@ -31,6 +36,10 @@ code --install-extension vsls-contrib.gistfs
 # Git Graph
 ## views a Git Graph of your repository, and easily perform Git actions from the graph. Configurable to look the way you want!
 code --install-extension mhutchie.git-graph
+
+# Git File History
+## quickly browse the history of a file from any git repository
+code --install-extension pomber.git-file-history
 
 # Git History
 ## views git log, file history, compare branches or commits.
