@@ -105,6 +105,10 @@ code --install-extension ms-toolsai.jupyter
 ### Jupyter Notebook Renderers, which is a Visual Studio Code extension that provides renderers for outputs of Jupyter Notebooks.
 ### Jupyter Slide Show, which is a jupyter Slide Show support for VSCode.
 
+# JSON Crack
+## visualizes your JSON data instantly into graphs.
+code --install-extension aykutsarac.jsoncrack-vscode
+
 # json2ts
 ## converts a JSON from clipboard to TypeScript interfaces. (Ctrl+Alt+V)
 code --install-extension gregorbiswanger.json2ts
