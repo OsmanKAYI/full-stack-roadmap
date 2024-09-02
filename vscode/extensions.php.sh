@@ -95,6 +95,10 @@ code --install-extension equinusocio.vsc-material-theme
 ## Preserves case when editing with multiple cursors.
 code --install-extension cardinal90.multi-cursor-case-preserve
 
+# Path Intellisense
+## autocompletes filenames.
+code --install-extension christian-kohler.path-intellisense
+
 # Peacock
 ## subtly change the color of your Visual Studio Code workspace. Ideal when you have multiple VSCode instances, use VS Live Share, or use VSCode's Remote features, and you want to quickly identify your editor.
 code --install-extension johnpapa.vscode-peacock
