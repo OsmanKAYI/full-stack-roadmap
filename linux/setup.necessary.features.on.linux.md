@@ -359,6 +359,8 @@ sudo apt install notion-app -y
 sudo apt-get install git -y
 git config --global user.email "osmankayi06@gmail.com"
 git config --global user.name "OsmanKAYI"
+# to set the default branch name as "main"
+git config --global init.defaultBranch main 
 ```
 
 ### GitHub Configurations

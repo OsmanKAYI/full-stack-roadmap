@@ -183,6 +183,9 @@ fi
 if [ -n "$GIT_NAME_SURNAME" ]; then
   git config --global user.name $GIT_NAME_SURNAME
 fi
+# to set the default branch name as "main"
+git config --global init.defaultBranch main 
+
 
 ## Apache
 sudo apt install apache2 apache2-utils -y

@@ -214,6 +214,8 @@ sudo apt install notion-app -y
 sudo apt-get install git -y
 git config --global user.email "GIT_EMAIL"
 git config --global user.name "GIT_USERNAME"
+# to set the default branch name as "main"
+git config --global init.defaultBranch main 
 
 ## Apache
 sudo apt install apache2 apache2-utils -y
