@@ -2,56 +2,138 @@
 
 - Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes.
 
-- Common options in git branch are as follows
+## Git Workflow
+
+### Step 1: Initialize the Repository
 
 ```bash
-# list all of the branches in your repository. This is synonymous with "git branch --list"
-git branch
-
-# create a new branch called $branchName. This does not check out the new branch
-git branch $branchName
-
-# delete the specified branch. This is a “safe” operation in that Git prevents you from deleting the branch if it has unmerged changes
-git branch -d $branchName
-
-# force delete the specified branch, even if it has unmerged changes. This is the command to use if you want to permanently throw away all of the commits associated with a particular line of development
-git branch -D $branchName
-
-#previous two commands will delete a local copy of a branch. The branch may still exist in remote repos. To delete a remote branch execute the following
-git push origin --delete $branchName
-git push origin :$branchName
-# this will push a delete signal to the remote origin repository that triggers a delete of the remote $branchName branch
-
-# rename the current branch to $branchName
-git branch -m $branchName
-
-# list all remote branches
-git branch -a
-
-# witching branches is a straightforward operation. Executing the following will point MAIN to the tip of $branchName
-git checkout $branchName
+mkdir test
+cd test/
+rm -rf .git
+rm -rf *
+git init
+git branch -M main
 ```
 
-- How to merge the changes done to the main
+- **mkdir test**: Creates a new directory named `test`.
+- **cd test/**: Navigates into the `test` directory.
+- **rm -rf .git**: Removes any existing Git repository.
+- **rm -rf \***: Removes all files in the directory.
+- **git init**: Initializes a new Git repository.
+- **git branch -M main**: Renames the default branch to `main`.
+
+### Step 2: Create `readme.md`
 
 ```bash
-# start a new $branchName
-git checkout -b $branchName main
+touch readme.md
+git add .
+git commit -m "added readme.md"
+```
 
-# edit some files
-git add $file
-git commit -m "Start a feature"
+- **touch readme.md**: Creates an empty `readme.md` file.
+- **git add .**: Stages all changes.
+- **git commit -m "added readme.md"**: Commits the changes with a message.
 
-# edit some files
-git add $file
-git commit -m "Finish a feature"
+### Step 3: Create and Merge `feature-hello`
 
-# merge in the $branchName branch
+```bash
+git checkout -b develop main
+git checkout -b feature-hello develop
+touch hello.html
+git add .
+git commit -m "added hello.html"
+touch world.html
+git add .
+git commit -m "added world.html"
+git checkout develop
+git merge --no-ff feature-hello -m "merged feature-hello"
+# git merge feature-hello can be used to not to see the branch tree
+git branch -d feature-hello
+```
+
+- **git checkout -b develop main**: Creates a new branch `develop` from `main`.
+- **git checkout -b feature-hello develop**: Creates `feature-hello` branch from `develop`.
+- **touch hello.html**: Creates an empty `hello.html` file.
+- **touch world.html**: Creates an empty `world.html` file.
+- **git merge --no-ff feature-hello -m "merged feature-hello"**: Merges `feature-hello` into `develop` with a merge commit.
+- **git branch -d feature-hello**: Deletes `feature-hello` branch after merge.
+
+### Step 4: Create and Merge `feature-userinfo`
+
+```bash
+git checkout -b feature-userinfo develop
+touch userpage.html
+git add .
+git commit -m "added userpage.html"
+touch userinfo.html
+git add .
+git commit -m "added userinfo.html"
+git checkout develop
+git merge --no-ff feature-userinfo -m "merged feature-userinfo"
+# git merge feature-userinfo can be used to not to see the branch tree
+git branch -d feature-userinfo
+```
+
+- **git checkout -b feature-userinfo develop**: Creates `feature-userinfo` branch from `develop`.
+- **touch userpage.html**: Creates an empty `userpage.html` file.
+- **touch userinfo.html**: Creates an empty `userinfo.html` file.
+- **git merge --no-ff feature-userinfo -m "merged feature-userinfo"**: Merges `feature-userinfo` into `develop`.
+- **git branch -d feature-userinfo**: Deletes `feature-userinfo` branch after merge.
+
+### Step 5: Merge `develop` into `main`
+
+```bash
 git checkout main
-git merge $branchName
-
-# delete the merged branch
-git branch -d $branchName
+git merge --no-ff develop -m "merged develop"
+# git merge develop can be used to not to see the branch tree
 ```
 
-**Ref:** [Git Tutorials - Atlassian](https://www.atlassian.com/git/tutorials/using-branches)
+- **git checkout main**: Switches to the `main` branch.
+- **git merge --no-ff develop -m "merged develop"**: Merges `develop` into `main`.
+
+### Step 6: Create and Merge `bugfix-login`
+
+```bash
+git checkout -b bugfix-login
+git checkout -b bugfix-login main
+touch login.html
+git add .
+git commit -m "fixed login.html"
+git checkout main
+git merge --no-ff bugfix-login -m "merged bugfix-login"
+# git merge bugfix-login can be used to not to see the branch tree
+git checkout develop
+git merge --no-ff bugfix-login -m "merged bugfix-login"
+# git merge bugfix-login can be used to not to see the branch tree
+git branch -d bugfix-login
+```
+
+- **git checkout -b bugfix-login**: Creates `bugfix-login` branch from `main`.
+- **touch login.html**: Creates an empty `login.html` file.
+- **git merge --no-ff bugfix-login -m "merged bugfix-login"**: Merges `bugfix-login` into `main` and `develop`.
+- **git branch -d bugfix-login**: Deletes `bugfix-login` branch after merge.
+
+### Step 7: Add Success and Continue Pages
+
+```bash
+touch success.html
+git add .
+git commit -m "continued with success.html"
+
+git checkout develop
+touch continue.html
+git add .
+git commit -m "added continue.html"
+
+git checkout main
+```
+
+- **touch success.html**: Creates an empty `success.html` file.
+- **git commit -m "continued with success.html"**: Commits the changes.
+- **touch continue.html**: Creates an empty `continue.html` file on `develop`.
+- **git commit -m "added continue.html"**: Commits the changes.
+
+**Refs:**
+
+- [Vikram Wable - Medium](https://vikramatc.medium.com/git-branching-strategy-and-pull-requests-4a3d63943785)
+- [Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/)
