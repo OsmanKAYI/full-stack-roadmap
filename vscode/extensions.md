@@ -176,6 +176,10 @@ code --install-extension johnpapa.vscode-peacock
 ## this extension is a debug adapter between VSCode and Xdebug by Derick Rethans. Xdebug is a PHP extension (a .so file on Linux and a .dll on Windows) that needs to be installed on your server.
 code --install-extension xdebug.php-debug
 
+# PHP Intelephense
+## is a high performance PHP language server packed full of essential features for productive PHP development.
+code --install-extension bmewburn.vscode-intelephense-client
+
 # PHP IntelliSense
 ## it is an advanced autocompletion and refactoring support for PHP.
 code --install-extension zobo.php-intellisense
@@ -185,7 +189,7 @@ code --install-extension zobo.php-intellisense
 code --install-extension vsc-snippets.vsc-php-snippets
 
 # PlatformIO IDE
-## your gateway to embedded software development excellence 
+## your gateway to embedded software development excellence
 code --install-extension platformio.platformio-ide
 
 # Prettier-Code formatter
