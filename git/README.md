@@ -17,6 +17,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [20 Superusefull Git Commands](./super.useful.20.git.commands.md)
 - [Republish and Existing Git Project with a New Name](./republish.git.project.with.newname.md)
 - [Git Branch](./git.branch.md)
+  - [Git Branch Advanced Example](./git.branch.advanced.md)
 - [Git Merge vs. Git Rebase](./git.merge.vs.rebase.md)
 
 ## Useful Links
