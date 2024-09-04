@@ -43,4 +43,4 @@ git pull -u origin master
 git add .
 ```
 
-**Ref:** https://github.com/nuriakman/PHP-Egitimi/blob/master/konular/komutlar.git.ipuclari.md
+**Ref:** [nuriakman - GitHub](https://github.com/nuriakman/PHP-Egitimi/blob/master/konular/komutlar.git.ipuclari.md)

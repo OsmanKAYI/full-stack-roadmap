@@ -54,4 +54,4 @@ git merge $branchName
 git branch -d $branchName
 ```
 
-**Ref:** https://www.atlassian.com/git/tutorials/using-branches
+**Ref:** [Git Tutorials - Atlassian](https://www.atlassian.com/git/tutorials/using-branches)
