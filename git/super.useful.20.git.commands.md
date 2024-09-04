@@ -22,7 +22,7 @@ Retrieves an entire repository from a hosted location via a valid Git URL.
 
 - git clone [url]
 
-- git clone --branch <name> [url]
+- git clone --branch `name` [url]
 
 ## 4.git add
 
@@ -88,11 +88,11 @@ Show changes between commits.
 
 ## 11.git log
 
-### Shows the commit history for the currently active branch.
+### Shows the commit history for the currently active branch
 
 - git log
 
-### Shows the commits on branchA that are not on branchB.
+### Shows the commits on branchA that are not on branchB
 
 - git log branchB..branchA
 
@@ -144,17 +144,17 @@ Applies any commits of current branch ahead of specified one.
 
 Reverts some existing commits.
 
-- git revert <commit>
+- git revert `commit`
 
 ## 19.git reset
 
 Resets current HEAD to the specified state.
 
-### Unstages a file while retaining the changes in working directory.
+### Unstages a file while retaining the changes in working directory
 
 - git reset [file]
 
-### Clears staging area, rewrite working tree from specified commit.
+### Clears staging area, rewrite working tree from specified commit
 
 - git reset --hard [commit]
 
@@ -178,4 +178,4 @@ Temporarily stores modified, tracked files in order to change branches
 
 - git stash drop
 
-**Ref:** https://twitter.com/swapnakpanda/status/1515198448852619266?t=i_WdzTdmxykedtOgaAidug&s=08
+**Ref:** [swapnakpanda - X](https://x.com/swapnakpanda/status/1515198448852619266?t=i_WdzTdmxykedtOgaAidug&s=08)
