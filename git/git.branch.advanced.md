@@ -1,6 +1,8 @@
 # Git Branch Advanced Example
 
 ```bash
+mkdir test
+cd test/
 rm -rf .git
 rm -rf *
 git init
