@@ -305,30 +305,57 @@ My prefered extensions and special settings for them in VSCode.
       "foreground": "#000000",
       "iconColour": "#e3eb00",
       "gutterIcon": true
-    }
-  },
-  "editor.linkedEditing": true,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "editor.formatOnType": true,
-  "editor.formatOnPaste": true,
-  "projectManager.git.baseFolders": ["/home/osman/source", "/var/www/html"],
-  "editor.formatOnSave": true,
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
-  },
-  "git.openRepositoryInParentFolders": "always",
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.unicodeHighlight.nonBasicASCII": false,
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "right"
-  },
-  "explorer.confirmDragAndDrop": false,
-  "vetur.validation.template": false,
-  "git.suggestSmartCommit": false,
-  "chronicler.ffmpeg-binary": "/usr/bin/ffmpeg"
+    },
+
+    ///////////////////////// END /////////////////////////
+    ///////////////////////// END /////////////////////////
+    ///////////////////////// END /////////////////////////
+
+    "editor.linkedEditing": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "projectManager.git.baseFolders": ["/home/osman/source", "/var/www/html"],
+    "editor.formatOnSave": true,
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[php]": {
+      "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+      "editor.formatOnSave": true
+    },
+    "[vue]": {
+      "editor.defaultFormatter": "Vue.volar"
+    },
+    "git.openRepositoryInParentFolders": "always",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "notebook.cellToolbarLocation": {
+      "default": "right",
+      "jupyter-notebook": "right"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "vetur.validation.template": false,
+    "git.suggestSmartCommit": false,
+    "chronicler.ffmpeg-binary": "/usr/bin/ffmpeg",
+    "githubPullRequests.createOnPublishBranch": "never",
+    "tabnine.experimentalAutoImports": true,
+    "codeium.enableConfig": {
+      "*": true,
+      "markdown": true
+    },
+    "codeium.enableCodeLens": false,
+    "terminal.integrated.env.linux": {},
+    "console-ninja.featureSet": "Community",
+    "console-ninja.showWhatsNew": false,
+    "[markdown]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "hediet.vscode-drawio.resizeImages": null,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "git.ignoreRebaseWarning": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "explorer.confirmPasteNative": false
+  }
 }
 ```

@@ -6,9 +6,6 @@ My prefered extensions and special settings for them in VSCode.
 ///////////////////////// VISUAL STUDIO CODE /////////////////////////
 ///////////////////////// VISUAL STUDIO CODE /////////////////////////
 ///////////////////////// VISUAL STUDIO CODE /////////////////////////
-///////////////////////// VISUAL STUDIO CODE /////////////////////////
-///////////////////////// VISUAL STUDIO CODE /////////////////////////
-///////////////////////// VISUAL STUDIO CODE /////////////////////////
 {
   // Tab Size and Indentation
   "editor.tabSize": 2, // Number of spaces a tab is equal to.
@@ -307,6 +304,10 @@ My prefered extensions and special settings for them in VSCode.
   "editor.formatOnSave": true,
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.formatOnSave": true
   },
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
