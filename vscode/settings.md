@@ -309,6 +309,10 @@ My prefered extensions and special settings for them in VSCode.
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
     "editor.formatOnSave": true
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true
+  },
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
   },
