@@ -6,44 +6,36 @@ My prefered extensions and special settings for them in VSCode.
 ///////////////////////// VISUAL STUDIO CODE /////////////////////////
 ///////////////////////// VISUAL STUDIO CODE /////////////////////////
 ///////////////////////// VISUAL STUDIO CODE /////////////////////////
+///////////////////////// VISUAL STUDIO CODE /////////////////////////
+///////////////////////// VISUAL STUDIO CODE /////////////////////////
+///////////////////////// VISUAL STUDIO CODE /////////////////////////
 {
-  // The number of spaces a tab is equal to. This setting is overridden
-  // based on the file contents when `editor.detectIndentation` is true.
-  "editor.tabSize": 2,
+  // Tab Size and Indentation
+  "editor.tabSize": 2, // Number of spaces a tab is equal to.
+  "editor.insertSpaces": true, // Insert spaces when pressing Tab.
+  "editor.detectIndentation": false, // Detect indentation based on file contents.
+  "editor.fontSize": 18, // Font size in the editor.
 
-  // Insert spaces when pressing Tab. This setting is overriden
-  // based on the file contents when `editor.detectIndentation` is true.
-  "editor.insertSpaces": true,
+  // Editor Behavior
+  "editor.stickyScroll.enabled": false, // Sticky scroll feature.
 
-  // When opening a file, `editor.tabSize` and `editor.insertSpaces`
-  // will be detected based on the file contents. Set to false to keep
-  // the values you've explicitly set, above.
-  "editor.detectIndentation": false,
-  "editor.fontSize": 18,
-
-  // Shows the nested current scopes during the scroll at the top of the editor.
-  "editor.stickyScroll.enabled": false,
-
-  // Defines the border of focused and unfocused tabs and background of focused tab
+  // Workbench Customizations
   "workbench.colorCustomizations": {
-    "tab.activeBorder": "#ffffff",
-    "tab.activeBackground": "#000000"
+    "tab.activeBorder": "#ffffff", // Border color of active tab.
+    "tab.activeBackground": "#000000" // Background color of active tab.
   },
+  "files.hotExit": "onExitAndWindowClose", // VSCode session protection settings.
 
-  // VSCode Session Protection Settings
-  "files.hotExit": "onExitAndWindowClose",
+  // Bracket Pair Colorization
+  "editor.bracketPairColorization.enabled": true, // Enable bracket pair colorization.
+  "editor.guides.bracketPairs": true, // Show bracket guides.
 
-  // Enable bracket pair colorization and highlighting
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": true,
-
-  // Enable HTML formatter to split html attributes
-  "html.format.wrapAttributes": "force-expand-multiline",
+  // HTML Formatter
+  "html.format.wrapAttributes": "force-expand-multiline", // HTML formatter settings.
 
   ///////////////////////// Alignment /////////////////////////
   ///////////////////////// Alignment /////////////////////////
   ///////////////////////// Alignment /////////////////////////
-  // Chars to align
   "alignment.chars": {
     ":": {
       "spaceBefore": 0,
@@ -109,15 +101,14 @@ My prefered extensions and special settings for them in VSCode.
   ///////////////////////// Community Material Theme /////////////////////////
   ///////////////////////// Community Material Theme /////////////////////////
   ///////////////////////// Community Material Theme /////////////////////////
-  "git.confirmSync": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.lineHeight": 30,
+  "git.confirmSync": false, // Git sync confirmation settings.
+  "workbench.iconTheme": "material-icon-theme", // Material icon theme.
+  "editor.lineHeight": 30, // Editor line height.
 
   ///////////////////////// Draw.io Integration /////////////////////////
   ///////////////////////// Draw.io Integration /////////////////////////
   ///////////////////////// Draw.io Integration /////////////////////////
-  // by default, this extension only handles `*.drawio.svg` files
-  // add this if you want to associate it with `.svg` files
+  // Associate `.svg` files with Draw.io extension (uncomment if needed)
   //"workbench.editorAssociations": {
   //  "*.svg": "hediet.vscode-drawio-text"
   //},
@@ -156,29 +147,17 @@ My prefered extensions and special settings for them in VSCode.
   ///////////////////////// indent-rainbow /////////////////////////
   ///////////////////////// indent-rainbow /////////////////////////
   ///////////////////////// indent-rainbow /////////////////////////
-  // For which languages indent-rainbow should be activated (if empty it means all).
-  "indentRainbow.includedLanguages": [], // for example ["nim", "nims", "python"]
-
-  // For which languages indent-rainbow should be deactivated (if empty it means none).
-  "indentRainbow.excludedLanguages": ["plaintext"],
-
-  // The delay in ms until the editor gets updated.
-  "indentRainbow.updateDelay": 100, // 10 makes it super fast but may cost more resources
-
-  // Defining custom colors instead of default "Rainbow" for dark backgrounds.
+  "indentRainbow.includedLanguages": [], // Languages for which indent-rainbow should be activated.
+  "indentRainbow.excludedLanguages": ["plaintext"], // Languages for which indent-rainbow should be deactivated.
+  "indentRainbow.updateDelay": 100, // Delay for editor update.
   "indentRainbow.colors": [
     "rgba(255,255,64,0.07)",
     "rgba(127,255,127,0.07)",
     "rgba(255,127,255,0.07)",
     "rgba(79,236,236,0.07)"
   ],
-
-  // The indent color if the number of spaces is not a multiple of "tabSize".
-  "indentRainbow.errorColor": "rgba(128,32,32,0.6)",
-
-  // The indent color when there is a mix between spaces and tabs.
-  // To be disabled this coloring set this to an empty string.
-  "indentRainbow.tabmixColor": "rgba(128,32,96,0.6)",
+  "indentRainbow.errorColor": "rgba(128,32,32,0.6)", // Color for indent errors.
+  "indentRainbow.tabmixColor": "rgba(128,32,96,0.6)", // Color for mixed tabs and spaces.
 
   ///////////////////////// Inline fold /////////////////////////
   ///////////////////////// Inline fold /////////////////////////
@@ -204,39 +183,38 @@ My prefered extensions and special settings for them in VSCode.
   ///////////////////////// Material Icon Theme /////////////////////////
   ///////////////////////// Material Icon Theme /////////////////////////
   ///////////////////////// Material Icon Theme /////////////////////////
-  "material-icon-theme.folders.color": "#ef5350",
-  "material-icon-theme.folders.theme": "specific",
-  "material-icon-theme.opacity": 1,
-  "material-icon-theme.saturation": 1,
-  "explorer.confirmDelete": false,
+  "material-icon-theme.folders.color": "#ef5350", // Color for folder icons.
+  "material-icon-theme.folders.theme": "specific", // Folder icon theme.
+  "material-icon-theme.opacity": 1, // Icon opacity.
+  "material-icon-theme.saturation": 1, // Icon saturation.
+  "explorer.confirmDelete": false, // Confirm delete action in explorer.
   "editor.unicodeHighlight.allowedLocales": {
-    "tr": true
+    "tr": true // Allow Unicode highlight for Turkish locale.
   },
-  "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "workbench.startupEditor": "none",
-  "editor.mouseWheelZoom": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never", // Terminal multiline paste warning.
+  "terminal.integrated.defaultProfile.windows": "Git Bash", // Default terminal profile on Windows.
+  "workbench.startupEditor": "none", // Startup editor settings.
+  "editor.mouseWheelZoom": true, // Enable mouse wheel zoom.
 
   ///////////////////////// PHP Debug /////////////////////////
   ///////////////////////// PHP Debug /////////////////////////
   ///////////////////////// PHP Debug /////////////////////////
-  "xdebug.mode": "debug",
-  "xdebug.start_with_request": "yes",
+  "xdebug.mode": "debug", // Xdebug mode for PHP.
+  "xdebug.start_with_request": "yes", // Xdebug starts with a request.
 
   ///////////////////////// Prettier-Code formatter /////////////////////////
   ///////////////////////// Prettier-Code formatter /////////////////////////
   ///////////////////////// Prettier-Code formatter /////////////////////////
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Default code formatter.
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Formatter for JavaScript.
   },
 
   ///////////////////////// Todo Highlight /////////////////////////
   ///////////////////////// Todo Highlight /////////////////////////
   ///////////////////////// Todo Highlight /////////////////////////
-  "todohighlight.isEnable": true,
-  "todohighlight.isCaseSensitive": true,
+  "todohighlight.isEnable": true, // Enable TODO highlight.
+  "todohighlight.isCaseSensitive": true, // Case sensitivity for TODO highlight.
   "todohighlight.keywords": [
     "DEBUG:",
     "REVIEW:",
@@ -255,13 +233,11 @@ My prefered extensions and special settings for them in VSCode.
       "text": "TODO:",
       "color": "red",
       "border": "1px solid red",
-      "borderRadius": "5px", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "borderRadius": "5px", // NOTE: using borderRadius along with `border` or you will see nothing change
       "backgroundColor": "rgba(0,255,0,0.2)"
-      //other styling properties goes here ...
     }
   ],
-  "todohighlight.keywordsPattern": "TODO:|FIXME", //highlight `TODO:`,`FIXME`
-  //add following :|\\(([^)]+)\\) code after FIXME to highlight the content between parentheses
+  "todohighlight.keywordsPattern": "TODO:|FIXME", // Highlight TODO: and FIXME.
   "todohighlight.defaultStyle": {
     "color": "red",
     "backgroundColor": "#E0E0E0",
@@ -270,7 +246,6 @@ My prefered extensions and special settings for them in VSCode.
     "border": "1px solid #006064",
     "borderRadius": "10px",
     "isWholeLine": false
-    //other styling properties goes here ...
   },
   "todohighlight.include": [
     "**/*.js",
@@ -294,8 +269,8 @@ My prefered extensions and special settings for them in VSCode.
     "**/*.map",
     "**/.next/**"
   ],
-  "todohighlight.maxFilesForSearch": 5120,
-  "todohighlight.toggleURI": false,
+  "todohighlight.maxFilesForSearch": 5120, // Max files for search.
+  "todohighlight.toggleURI": false, // URI toggle for TODO highlight.
 
   ///////////////////////// Todo Tree /////////////////////////
   ///////////////////////// Todo Tree /////////////////////////
@@ -358,10 +333,9 @@ My prefered extensions and special settings for them in VSCode.
   "console-ninja.featureSet": "Community",
   "console-ninja.showWhatsNew": false,
   "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "hediet.vscode-drawio.resizeImages": null,
-  "editor.minimap.enabled": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "git.ignoreRebaseWarning": true,
   "diffEditor.ignoreTrimWhitespace": false,
