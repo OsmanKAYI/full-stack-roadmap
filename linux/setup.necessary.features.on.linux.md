@@ -130,7 +130,7 @@ pip3 install thefuck --user
 - **ranger**, is a console file manager with VI key bindings.
 - **testdisk** checks and recovers lost partitions.
 - **tmux** is a terminal multiplexer: it enables a number of terminals to be created, accessed, and controlled from a single screen. tmux may be detached from a screen and continue running in the background, then later reattached..
-- **tree**, is  used to display the directory structure in a tree-like format.
+- **tree**, is used to display the directory structure in a tree-like format.
 - **unrar** extracts RAR file archives.
 - **xclip** is X11 clipboard manipulation tool, similar to xsel.Handles the X primary and secondary selections, plus the system clipboard ( <kbd>CTRL</kbd> + <kbd>C</kbd> / <kbd>CTRL</kbd> + <kbd>V</kbd> ).
 - **vim** is a free and open-source, screen-based text editor program.
@@ -145,7 +145,7 @@ sudo apt install axel bat boxes caffeine curl figlet gnome-tweaks gpustat hardin
 - `xclip -sel clip -o` # to paste
 - `gpustat -i 0.20` # to follow GPU usage as 5 measurements / second (or 1 measurement / milisecond)
 - `wormhole send "fileName"` # to send file
-- `figlet Osman Kayi|lolcat` # to see piped and colored text of "Osman Kayi" 
+- `figlet Osman Kayi|lolcat` # to see piped and colored text of "Osman Kayi"
 
 ## Ulauncher
 
@@ -360,7 +360,7 @@ sudo apt-get install git -y
 git config --global user.email "osmankayi06@gmail.com"
 git config --global user.name "OsmanKAYI"
 # to set the default branch name as "main"
-git config --global init.defaultBranch main 
+git config --global init.defaultBranch main
 ```
 
 ### GitHub Configurations
@@ -418,6 +418,8 @@ sudo service apache2 restart
 - Xdebug is a PHP extension which provides debugging and profiling capabilities. It uses the DBGp debugging protocol.
 
 ```bash
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
 sudo find /usr/ -name xdebug.so
 sudo apt-get purge php7.4-xdebug
 sudo apt-get install php7.4-xdebug
