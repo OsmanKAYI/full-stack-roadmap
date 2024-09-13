@@ -893,7 +893,7 @@ sudo vi /etc/gdm3/custom.conf
 
   - Download the DEB installer from [Zoom](https://zoom.us/download?os=linux)
   - Open the dowload location in Terminal and type the following command.<br>
-    `sudo apt install ./zoom_amd64.deb`
+    `sudo dpkg -i install ./zoom_amd64.deb`
 
 ## Telegram
 
