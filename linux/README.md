@@ -20,8 +20,10 @@ This documentation includes guides, tutorials, and reference material for learni
 
 - [Dual Boot Ubuntu 22.04.LTS and Windows 10](./dual.boot.ubuntu.22.04.1.lts.and.windows10.md)
 - [Dual Boot Disk Permission Problem](./dual.boot.disk.permission.problem.md)
-- [Setup Necessary Features on Linux](./setup.necessary.features.on.linux.md)
-- [Setup Necessary Features on Linux(.sh)](./setup.necessary.features.on.linux.sh)
+- [Setup Necessary Features on Linux 24.04](./setup.necessary.features.on.linux.24.04.md)
+- [Setup Necessary Features on Linux 24.04(.sh)](./setup.necessary.features.on.linux.24.04.sh)
+- [Setup Necessary Features on Linux 22.04](./setup.necessary.features.on.linux.22.04.md)
+- [Setup Necessary Features on Linux 22.04(.sh)](./setup.necessary.features.on.linux.22.04.sh)
 - [Setup Basics for Front-End Developer on Linux(.sh)](./setup.front.end.sh)
 - [Setup Basics for PHP Developer on Linux(.sh)](./setup.php.sh)
 - [Educator Notes](./egitmen.notlari.md)
