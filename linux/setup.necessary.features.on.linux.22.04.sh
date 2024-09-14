@@ -45,7 +45,7 @@ echo ""
 echo -e  "$LIGHTGREEN !!! INSTALLATION STARTED !!! $NC"
 echo ""
 
-# SETUP NECESSARY FEATURES ON LINUX
+# SETUP NECESSARY FEATURES ON LINUX 22.04
 
 ## System Update Installation
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap refresh

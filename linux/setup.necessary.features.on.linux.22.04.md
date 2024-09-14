@@ -1,4 +1,4 @@
-# Setup Necessary Features on Linux
+# Setup Necessary Features on Linux 22.04
 
 ## System Update Installation
 
@@ -93,7 +93,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windo
 sudo apt-get install guake -y
 ```
 
-#### Guake Configurations
+### Guake Configurations
 
 - In start menu type `Guake` and press <kbd>ENTER</kbd> to launch Guake Preferences.
 - In `General` fulfill the checkbox for `Start Guake at login`.
