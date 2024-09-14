@@ -253,26 +253,13 @@ sudo apt install tuxedo-control-center -y
 - Mozilla Firefox, or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. It uses the Gecko rendering engine to display web pages, which implements current and anticipated web standards.
 
 ```bash
-### Add Mozilla PPA
-sudo add-apt-repository -y ppa:mozillateam/ppa
-### Create preferences file for apt
-PREFERENCES=$(cat <<EOF
-Package: *
-Pin: release o=LP-PPA-mozillateam
-Pin-Priority: 1001
-
-Package: firefox
-Pin: version 1:1snap1-0ubuntu2
-Pin-Priority: -1
-EOF
-)
-echo "$PREFERENCES" | sudo tee /etc/apt/preferences.d/mozilla-firefox
-### Remove existing Firefox Snap package
+# remove existing Firefox Snap package
 sudo snap remove firefox
-### Configure unattended-upgrades for the Mozilla PPA
-echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
-### Install Firefox from the PPA
+# install Firefox from the PPA
 sudo apt update
+# purge Firefox
+sudo apt purge firefox -y
+# install Firefox
 sudo apt install firefox -y
 ```
 
