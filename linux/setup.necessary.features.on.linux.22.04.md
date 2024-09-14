@@ -95,7 +95,7 @@ sudo apt-get install guake -y
 
 ### Guake Configurations
 
-- In start menu type `Guake` and press <kbd>ENTER</kbd> to launch Guake Preferences.
+- In start menu type `Guake` and press `ENTER` to launch Guake Preferences.
 - In `General` fulfill the checkbox for `Start Guake at login`.
 - In `Main Window` fulfill the checkbox for `Place tabs on top`.
 
@@ -132,7 +132,7 @@ pip3 install thefuck --user
 - **tmux** is a terminal multiplexer: it enables a number of terminals to be created, accessed, and controlled from a single screen. tmux may be detached from a screen and continue running in the background, then later reattached..
 - **tree**, is used to display the directory structure in a tree-like format.
 - **unrar** extracts RAR file archives.
-- **xclip** is X11 clipboard manipulation tool, similar to xsel.Handles the X primary and secondary selections, plus the system clipboard ( <kbd>CTRL</kbd> + <kbd>C</kbd> / <kbd>CTRL</kbd> + <kbd>V</kbd> ).
+- **xclip** is X11 clipboard manipulation tool, similar to xsel.Handles the X primary and secondary selections, plus the system clipboard ( `CTRL` + `C` / `CTRL` + `V` ).
 - **vim** is a free and open-source, screen-based text editor program.
 - **wormhole** lets you share files with end-to-end encryption and a link that automatically expires. So you can keep what you share private and make sure your stuff doesn't stay online forever.
 
@@ -155,7 +155,7 @@ sudo apt install axel bat boxes caffeine curl figlet gnome-tweaks gpustat hardin
 sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher
 ```
 
-- <kbd>CTRL</kbd> + <kbd>SPACE BAR</kbd> to use Ulauncher.
+- `CTRL` + `SPACE BAR` to use Ulauncher.
 
 ## TLDR
 
@@ -635,9 +635,9 @@ sudo apt -f install ./drawio-amd64-*.deb
   bash anaconda.sh
   ```
 
-- Press <kbd>ENTER</kbd> until the yes/no question comes.
+- Press `ENTER` until the yes/no question comes.
 - Then type `yes` to accept the Anaconda licence aggrement to continue.
-- Verify the directory location for Anaconda installation. Just hit <kbd>ENTER</kbd> to continue installer to that directory.
+- Verify the directory location for Anaconda installation. Just hit `ENTER` to continue installer to that directory.
 - Type “yes” to initialize the Anaconda installer on your system.
 
   ```bash
@@ -680,7 +680,7 @@ vim ~/.bashrc
 ```
 
 - Navigate to the end of the file and remove the Anaconda environment configuration.
-- Press <kbd>ESC</kbd> and type `:wq` and then press <kbd>ENTER</kbd> to save file.
+- Press `ESC` and type `:wq` and then press `ENTER` to save file.
 
 ## GPT4All
 
@@ -884,16 +884,18 @@ sudo vi /etc/gdm3/custom.conf
 - Discord is a VoIP and instant messaging social platform. Users have the ability to communicate with voice calls, video calls, text messaging, media and files in private chats or as part of communities called "servers".
 
   - Download the DEB installer from [Discord](https://discord.com/download)
-  - Open the dowload location in Terminal and type the following command.<br>
-    `sudo dpkg -i discord-0.0.22.deb`
+  - Open the dowload location in Terminal and type the following command.
+
+  `sudo dpkg -i discord-0.0.22.deb`
 
 ## Zoom
 
 - Zoom, stylized as zoom or Zoom Meetings is a proprietary videotelephony software program developed by Zoom Video Communications.
 
   - Download the DEB installer from [Zoom](https://zoom.us/download?os=linux)
-  - Open the dowload location in Terminal and type the following command.<br>
-    `sudo dpkg -i install ./zoom_amd64.deb`
+  - Open the dowload location in Terminal and type the following command.
+
+  `sudo dpkg -i install ./zoom_amd64.deb`
 
 ## Telegram
 
