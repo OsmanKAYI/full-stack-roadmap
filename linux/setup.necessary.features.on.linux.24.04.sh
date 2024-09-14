@@ -160,13 +160,12 @@ sudo apt update
 sudo apt install tuxedo-control-center -y
 
 ## Firefox
-# remove existing Firefox Snap package
+### Add Mozilla PPA
+sudo add-apt-repository ppa:mozillateam/ppa
+### Remove existing Firefox Snap package
 sudo snap remove firefox
-# install Firefox from the PPA
+### Install Firefox from the PPA
 sudo apt update
-# purge Firefox
-sudo apt purge firefox -y
-# install Firefox
 sudo apt install firefox -y
 
 ## Chromium

@@ -254,23 +254,9 @@ sudo apt install tuxedo-control-center -y
 
 ```bash
 ### Add Mozilla PPA
-sudo add-apt-repository -y ppa:mozillateam/ppa
-### Create preferences file for apt
-PREFERENCES=$(cat <<EOF
-Package: *
-Pin: release o=LP-PPA-mozillateam
-Pin-Priority: 1001
-
-Package: firefox
-Pin: version 1:1snap1-0ubuntu2
-Pin-Priority: -1
-EOF
-)
-echo "$PREFERENCES" | sudo tee /etc/apt/preferences.d/mozilla-firefox
+sudo add-apt-repository ppa:mozillateam/ppa
 ### Remove existing Firefox Snap package
 sudo snap remove firefox
-### Configure unattended-upgrades for the Mozilla PPA
-echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
 ### Install Firefox from the PPA
 sudo apt update
 sudo apt install firefox -y
