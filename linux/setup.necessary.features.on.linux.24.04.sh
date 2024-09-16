@@ -161,7 +161,7 @@ sudo apt install tuxedo-control-center -y
 
 ## Firefox
 ### Add Mozilla PPA
-sudo add-apt-repository ppa:mozillateam/ppa
+sudo add-apt-repository ppa:mozillateam/ppa -y
 ### Remove existing Firefox Snap package
 sudo snap remove firefox
 ### Install Firefox from the PPA
@@ -364,7 +364,7 @@ sudo apt update
 sudo apt install telegram
 
 ## Steam
-sudo add-apt-repository multiverse
+sudo add-apt-repository multiverse -y
 sudo apt install steam -y
 
 ## Fritzing

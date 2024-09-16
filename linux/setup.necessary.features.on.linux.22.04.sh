@@ -363,7 +363,7 @@ sudo apt install anydesk -y
 sudo apt install telegram-desktop -y
 
 ## Steam
-sudo add-apt-repository multiverse
+sudo add-apt-repository multiverse -y
 sudo apt install steam -y
 
 ## Fritzing

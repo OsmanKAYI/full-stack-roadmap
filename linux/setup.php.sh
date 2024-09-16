@@ -37,7 +37,7 @@ sudo chown -R $USER:www-data /var/www/html/
 ## to install old versions of php
 sudo apt install software-properties-common ca-certificates lsb-release apt-transport-https
 LC_ALL=C.UTF-8
-sudo add-apt-repository -y ppa:ondrej/php
+sudo add-apt-repository ppa:ondrej/php -y
 sudo apt update
 sudo apt upgrade
 

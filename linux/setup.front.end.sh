@@ -126,7 +126,7 @@ sudo snap install master-pdf-editor-5 -y
 
 ## Firefox
 ### Add Mozilla PPA
-sudo add-apt-repository ppa:mozillateam/ppa
+sudo add-apt-repository ppa:mozillateam/ppa -y
 ### Remove existing Firefox Snap package
 sudo snap remove firefox
 ### Install Firefox from the PPA

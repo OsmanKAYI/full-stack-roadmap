@@ -7,7 +7,7 @@ Enable GNOME Shell multi-touch gestures on X11 with this extension.
 [Touchégg](https://github.com/JoseExposito/touchegg) must be installed separately.
 
 ```bash
-sudo add-apt-repository ppa:touchegg/stable
+sudo add-apt-repository ppa:touchegg/stable -y
 sudo apt update
 sudo apt install touchegg
 ```

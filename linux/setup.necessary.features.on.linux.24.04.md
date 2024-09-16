@@ -152,7 +152,7 @@ sudo apt install axel bat boxes caffeine curl figlet gnome-tweaks gpustat hardin
 - **Ulauncher** is an application launcher for Linux
 
 ```bash
-sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher
+sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher -y
 ```
 
 - `CTRL` + `SPACE BAR` to use Ulauncher.
@@ -254,7 +254,7 @@ sudo apt install tuxedo-control-center -y
 
 ```bash
 ### Add Mozilla PPA
-sudo add-apt-repository ppa:mozillateam/ppa
+sudo add-apt-repository ppa:mozillateam/ppa -y
 ### Remove existing Firefox Snap package
 sudo snap remove firefox
 ### Install Firefox from the PPA
@@ -404,7 +404,7 @@ sudo service apache2 restart
 - Xdebug is a PHP extension which provides debugging and profiling capabilities. It uses the DBGp debugging protocol.
 
 ```bash
-sudo add-apt-repository ppa:ondrej/php
+sudo add-apt-repository ppa:ondrej/php -y
 sudo apt-get update
 sudo find /usr/ -name xdebug.so
 sudo apt-get purge php7.4-xdebug
@@ -898,7 +898,7 @@ sudo apt install telegram
 - Steam is a video game digital distribution service and storefront from Valve. It was launched as a software client in September 2003 as a way for Valve to provide automatic updates for their games, and expanded to distributing third-party game publishers' titles in late 2005.
 
 ```bash
-sudo add-apt-repository multiverse
+sudo add-apt-repository multiverse -y
 sudo apt install steam -y
 ```
 
