@@ -389,6 +389,32 @@ if [ -n "$SSH_FILENAME" ]; then
   # Give it a unique name and paste the copied Github ssh key here.
 fi
 
+touch ~/.gitconfig
+echo "
+[user]
+	email = $GIT_EMAIL
+	name = $GIT_NAME_SURNAME
+[credential]
+	helper = store
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+
+[diff]
+        tool = meld
+[core]
+        editor = code --wait
+[color]
+        ui = auto
+[alias]
+        co = checkout
+        br = branch
+        st = status
+        ci = commit
+        lg = log --oneline --graph --all
+" > ~/.gitconfig
+
 # Startup Applications
 ## guake.desktop
 echo -e '[Desktop Entry]\nName[tr]=Guake Uçbirim\nName=Guake Terminal\nComment=Use the command line in a Quake-like terminal\nTryExec=guake\nExec=guake\nIcon=guake\nType=Application\nCategories=GNOME;GTK;System;Utility;TerminalEmulator;\nStartupNotify=true\nX-Desktop-File-Install-Version=0.22\nX-GNOME-Autostart-enabled=true\nHidden=false\nNoDisplay=false' > ~/.config/autostart/guake.desktop
