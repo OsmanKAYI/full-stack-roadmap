@@ -26,6 +26,22 @@ sudo a2enmod php7.4
 sudo service apache2 restart
 ```
 
+## List installed PHP versions
+
+```sh
+# Check the currently active PHP version
+php -v
+
+# List PHP versions with alternatives:
+sudo update-alternatives --display php
+
+# List installed PHP versions and their directories
+ls /usr/bin/php*
+
+# List installed PHP packages with apt
+dpkg --get-selections | grep php
+```
+
 ## CLI Configuration for PHP Version
 
 ```bash
