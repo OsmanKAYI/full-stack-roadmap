@@ -9,8 +9,8 @@ To get started with Jupyter Notebook, you can follow these steps:
 - Download and install Anaconda from [anaconda.com/products/individual](https://www.anaconda.com/download).
 - Launch Jupyter Notebook from the Anaconda Navigator or by running the `jupyter notebook` command in your terminal.
 - Create a new notebook by clicking the `New` button in the upper-right corner and selecting `Notebook: Python 3`.
-- Write code in the code cells and run it using the `Run` button or by pressing <kbd>Shift</kbd> + <kbd>Enter</kbd> .
-- Save your notebook and share it with others by exporting it as an HTML or PDF file. To save as PDF file follow the steps explained [here](../linux/setup.necessary.features.on.linux.md#convert-output-to-pdf)
+- Write code in the code cells and run it using the `Run` button or by pressing `Shift` + `Enter` .
+- Save your notebook and share it with others by exporting it as an HTML or PDF file. To save as PDF file follow the steps explained [here](../linux/setup.necessary.features.on.linux.24.04.md#convert-output-to-pdf)
 
 ## Documentation
 

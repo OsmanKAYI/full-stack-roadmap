@@ -1,14 +1,14 @@
 # Xdebug Configuration for VSCode
 
-### Step 0: Install Xdebug
+## Step 0: Install Xdebug
 
-- Follow [Install Xdebug](../linux/setup.necessary.features.on.linux.md#xdebug) page for instructions.
+- Follow [Install Xdebug](../linux/setup.necessary.features.on.linux.24.04.md#xdebug) page for instructions.
 
-### Step 1: Install Xdebug Extension in VSCode
+## Step 1: Install Xdebug Extension in VSCode
 
 - Download [PHP Debug extension](https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug).
 
-### Step 2:
+## Step 2
 
 - Press the `Run and Debug` button being on the left side in VSCode.
 - Click on `create a launch.json file`.

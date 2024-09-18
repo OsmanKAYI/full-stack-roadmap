@@ -25,8 +25,8 @@ The purpose of this project is to provide a comprehensive database monitoring so
 
 To get started with the Database Monitoring project, follow these steps:
 
-1. Install the necessary dependencies and libraries as mentioned in the [installation guide](https://github.com/OsmanKAYI/osmankayi.com/blob/43195437d2ab7a5d06a99f3d2eabed2235a23854/linux/setup.necessary.features.on.linux.md#L396).
-2. [Configure the connection details and credentials](https://github.com/OsmanKAYI/osmankayi.com/blob/43195437d2ab7a5d06a99f3d2eabed2235a23854/linux/setup.necessary.features.on.linux.md#L413) for the database systems you want to monitor.
+1. Install the necessary dependencies and libraries as mentioned in the [installation guide](https://github.com/OsmanKAYI/osmankayi.com/blob/43195437d2ab7a5d06a99f3d2eabed2235a23854/linux/setup.necessary.features.on.linux.24.04.md#L396).
+2. [Configure the connection details and credentials](https://github.com/OsmanKAYI/osmankayi.com/blob/43195437d2ab7a5d06a99f3d2eabed2235a23854/linux/setup.necessary.features.on.linux.24.04.md#L413) for the database systems you want to monitor.
 3. Customize the monitoring thresholds, alerts, and notifications based on your requirements.
 4. Start the monitoring process and access the dashboard to view real-time metrics and historical data.
 
