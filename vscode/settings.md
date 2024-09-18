@@ -196,8 +196,7 @@ My prefered extensions and special settings for them in VSCode.
   ///////////////////////// PHP Debug /////////////////////////
   ///////////////////////// PHP Debug /////////////////////////
   ///////////////////////// PHP Debug /////////////////////////
-  "xdebug.mode": "debug", // Xdebug mode for PHP.
-  "xdebug.start_with_request": "yes", // Xdebug starts with a request.
+  "debug.allowBreakpointsEverywhere": true, // Allow breakpoints everywhere.
 
   ///////////////////////// Prettier-Code formatter /////////////////////////
   ///////////////////////// Prettier-Code formatter /////////////////////////
