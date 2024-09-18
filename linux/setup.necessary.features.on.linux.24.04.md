@@ -409,12 +409,30 @@ sudo apt-get update
 sudo find /usr/ -name xdebug.so
 sudo apt-get purge php7.4-xdebug
 sudo apt-get install php7.4-xdebug
-sudo vi /etc/php/7.4/apache2/conf.d/20-xdebug.ini
 ```
 
-### Add following 3 lines in 20-xdebug.ini
+### `Unknown sourceReference 0` Error in VSCode XDebug
+
+Since you do not have necessary lines in your .ini file, you get this `Unknown sourceReference 0` error. If you get an error like `Unknown sourceReference 0` in VSCode XDebug, follow the steps below:
+
+#### Add following 3 lines in 20-xdebug.ini
+
+`sudo vi /etc/php/7.4/apache2/conf.d/20-xdebug.ini`
 
 ```bash
+zend_extension=xdebug.so
+xdebug.mode=develop,debug
+xdebug.start_with_request=yes
+```
+
+**_OR_**
+
+#### Add following 3 lines at the end of php.ini
+
+`sudo vi /etc/php/7.4/apache2/php.ini`
+
+```bash
+[XDebug]
 zend_extension=xdebug.so
 xdebug.mode=develop,debug
 xdebug.start_with_request=yes

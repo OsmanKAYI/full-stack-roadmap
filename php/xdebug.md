@@ -8,6 +8,18 @@
 
 - Download [PHP Debug extension](https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug).
 
+### 1. Install using terminal
+
+```bash
+code --install-extension xdebug.php-debug
+```
+
+### 2. Install using VSCode terminal
+
+```bash
+ext install xdebug.php-debug
+```
+
 ## Step 2
 
 - Press the `Run and Debug` button being on the left side in VSCode.
