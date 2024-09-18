@@ -920,3 +920,77 @@ flatpak install flathub com.sweethome3d.Sweethome3d -y
 flatpak update com.sweethome3d.Sweethome3d
 sudo apt install sweethome3d -y
 ```
+
+## Settings
+
+```bash
+## appearance
+### style
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gsettings set org.gnome.desktop.interface icon-theme 'Yaru-sage-dark'
+gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'
+gsettings set org.gnome.desktop.interface font-name 'Ubuntu 11'
+gsettings set org.gnome.desktop.interface document-font-name 'Sans 11'
+gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-sage-dark'
+gsettings set org.gnome.desktop.interface gtk-color-scheme ''
+gsettings set org.gnome.desktop.interface gtk-color-palette 'black:white:gray50:red:purple:blue:light blue:green:yellow:orange:lavender:brown:goldenrod4:dodger blue:pink:light green:gray10:gray30:gray75:gray90'
+gsettings set org.gnome.desktop.interface gtk-enable-primary-paste true
+gsettings set org.gnome.desktop.interface gtk-im-module ''
+gsettings set org.gnome.desktop.interface gtk-im-preedit-style 'callback'
+gsettings set org.gnome.desktop.interface gtk-im-status-style 'callback'
+gsettings set org.gnome.desktop.interface gtk-key-theme 'Default'
+gsettings set org.gnome.desktop.interface font-antialiasing 'rgba'
+gsettings set org.gnome.desktop.interface font-hinting 'slight'
+gsettings set org.gnome.desktop.interface font-rgba-order 'rgb'
+gsettings set org.gnome.desktop.interface enable-animations true
+gsettings set org.gnome.desktop.interface overlay-scrolling true
+gsettings set org.gnome.desktop.interface cursor-size 24
+gsettings set org.gnome.desktop.interface cursor-blink true
+gsettings set org.gnome.desktop.interface cursor-blink-time 1200
+gsettings set org.gnome.desktop.interface cursor-blink-timeout 10
+gsettings set org.gnome.desktop.interface scaling-factor uint32 0
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.0
+
+### desktop icons
+gsettings set org.gnome.shell.extensions.ding icon-size 'standard'
+gsettings set org.gnome.shell.extensions.ding start-corner 'top-left'
+
+### dock
+gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 24
+gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
+gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
+gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button true
+
+## sound
+### system volume
+gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
+
+## power
+### power saving options
+gsettings set org.gnome.desktop.session idle-delay 900
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 900
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 1200
+
+### suspend & power button
+gsettings set org.gnome.desktop.interface show-battery-percentage true
+
+### additional
+gsettings set org.gnome.desktop.interface can-change-accels false
+gsettings set org.gnome.desktop.interface clock-format '24h'
+gsettings set org.gnome.desktop.interface clock-show-date true
+gsettings set org.gnome.desktop.interface clock-show-seconds true
+gsettings set org.gnome.desktop.interface clock-show-weekday true
+gsettings set org.gnome.desktop.interface enable-hot-corners false
+gsettings set org.gnome.desktop.interface locate-pointer true
+gsettings set org.gnome.desktop.interface menubar-accel 'F10'
+gsettings set org.gnome.desktop.interface menubar-detachable false
+gsettings set org.gnome.desktop.interface menus-have-tearoff false
+gsettings set org.gnome.desktop.interface monospace-font-name 'Ubuntu Sans Mono 13'
+gsettings set org.gnome.desktop.interface toolbar-detachable false
+gsettings set org.gnome.desktop.interface toolbar-icons-size 'large'
+gsettings set org.gnome.desktop.interface toolbar-style 'both-horiz'
+gsettings set org.gnome.desktop.interface toolkit-accessibility false
+```
