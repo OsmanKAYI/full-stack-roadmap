@@ -46,6 +46,10 @@ For more detailed instructions and documentation, please visit the [Quasar docum
 - [Quasar as the UI Library for Vue3](./quasar.as.ui.library.for.vue3.md)
 - [Quasar vs Android XML: Which UI Technology is More Efficient?](./quasar.vs.android.xml.md)
 
+## Examples
+
+- [Quasar HTML Ref Example (.vue)](./examples/quasar.html.ref.example.vue)
+
 ## Useful Links
 
 - [Building a Cross-Platform Note App](https://www.youtube.com/watch?v=qPkSwo8QyoA)
