@@ -9,8 +9,7 @@ My prefered extensions and special settings for them in VSCode.
 {
   // Tab Size and Indentation
   "editor.tabSize": 2, // Number of spaces a tab is equal to.
-  "editor.insertSpaces": true, // Insert spaces when pressing Tab.
-  "editor.detectIndentation": false, // Detect indentation based on file contents.
+  "editor.insertSpaces": true, // Detect indentation based on file contents.
   "editor.fontSize": 18, // Font size in the editor.
 
   // Editor Behavior
@@ -202,11 +201,10 @@ My prefered extensions and special settings for them in VSCode.
   ///////////////////////// Prettier-Code formatter /////////////////////////
   ///////////////////////// Prettier-Code formatter /////////////////////////
   "editor.defaultFormatter": "esbenp.prettier-vscode", // Default code formatter.
+  "prettier.tabWidth": 2, // Tab width.
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode" // Formatter for JavaScript.
   },
-
-  ///////////////////////// Todo Highlight /////////////////////////
   ///////////////////////// Todo Highlight /////////////////////////
   ///////////////////////// Todo Highlight /////////////////////////
   "todohighlight.isEnable": true, // Enable TODO highlight.
@@ -312,6 +310,10 @@ My prefered extensions and special settings for them in VSCode.
     "editor.defaultFormatter": "vscode.typescript-language-features",
     "editor.formatOnSave": true
   },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
   },
@@ -343,6 +345,7 @@ My prefered extensions and special settings for them in VSCode.
   "javascript.updateImportsOnFileMove.enabled": "always",
   "git.ignoreRebaseWarning": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "explorer.confirmPasteNative": false
+  "explorer.confirmPasteNative": false,
+  "editor.detectIndentation": false
 }
 ```
