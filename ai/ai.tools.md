@@ -9,6 +9,7 @@
 - [Open AI](https://openai.com/): Private research lab for AI development.
   - [ChatGPT](https://chat.openai.com/): Chatbot with user-steering capabilities.
   - [TaskMatrix](https://github.com/microsoft/visual-chatgpt): Connects ChatGPT and Visual Foundation Models for image exchange.
+  - [Sider AI](https://sider.ai/): ChatGPT Sidebar with o1-preview & o1-mini.
 
 ## AI Content Detector
 
