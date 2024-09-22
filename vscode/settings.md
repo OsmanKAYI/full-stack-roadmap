@@ -7,27 +7,79 @@ My prefered extensions and special settings for them in VSCode.
 ///////////////////////// VISUAL STUDIO CODE /////////////////////////
 ///////////////////////// VISUAL STUDIO CODE /////////////////////////
 {
+  // VSCode session protection settings.
+  "files.hotExit": "onExitAndWindowClose",
+
   // Tab Size and Indentation
   "editor.tabSize": 2, // Number of spaces a tab is equal to.
   "editor.insertSpaces": true, // Detect indentation based on file contents.
   "editor.fontSize": 18, // Font size in the editor.
 
   // Editor Behavior
+  "editor.linkedEditing": true,
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.detectIndentation": false,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.mouseWheelZoom": true, // Enable mouse wheel zoom.
   "editor.stickyScroll.enabled": false, // Sticky scroll feature.
-
-  // Workbench Customizations
-  "workbench.colorCustomizations": {
-    "tab.activeBorder": "#ffffff", // Border color of active tab.
-    "tab.activeBackground": "#000000" // Background color of active tab.
-  },
-  "files.hotExit": "onExitAndWindowClose", // VSCode session protection settings.
+  "diffEditor.ignoreTrimWhitespace": false, // Diff editor trim whitespace.
 
   // Bracket Pair Colorization
   "editor.bracketPairColorization.enabled": true, // Enable bracket pair colorization.
   "editor.guides.bracketPairs": true, // Show bracket guides.
 
-  // HTML Formatter
+  // Explorer
+  "explorer.confirmDelete": false, // Confirm delete action in explorer.
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+
+  // Workbench Customizations
+  "workbench.startupEditor": "none", // Startup editor settings.
+  "workbench.colorCustomizations": {
+    "tab.activeBorder": "#ffffff", // Border color of active tab.
+    "tab.activeBackground": "#02eeff7c" // Background color of active tab.
+  },
+
+  // Format
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "html.format.wrapAttributes": "force-expand-multiline", // HTML formatter settings.
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.formatOnSave": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Formatter for JavaScript.
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+
+  // Terminal
+  "terminal.integrated.env.linux": {},
+  "terminal.integrated.enableMultiLinePasteWarning": "never", // Terminal multiline paste warning.
+  "terminal.integrated.defaultProfile.windows": "Git Bash", // Default terminal profile on Windows.
+
+  // Git
+  "git.openRepositoryInParentFolders": "always",
+  "git.suggestSmartCommit": true,
+  "git.ignoreRebaseWarning": true,
 
   ///////////////////////// Alignment /////////////////////////
   ///////////////////////// Alignment /////////////////////////
@@ -94,12 +146,32 @@ My prefered extensions and special settings for them in VSCode.
     "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
   },
 
+  ///////////////////////// Chronicler /////////////////////////
+  ///////////////////////// Chronicler /////////////////////////
+  ///////////////////////// Chronicler /////////////////////////
+  "chronicler.ffmpeg-binary": "/usr/bin/ffmpeg",
+
+  ///////////////////////// Codeium /////////////////////////
+  ///////////////////////// Codeium /////////////////////////
+  ///////////////////////// Codeium /////////////////////////
+  "codeium.enableConfig": {
+    "*": true,
+    "markdown": true
+  },
+  "codeium.enableCodeLens": false,
+
   ///////////////////////// Community Material Theme /////////////////////////
   ///////////////////////// Community Material Theme /////////////////////////
   ///////////////////////// Community Material Theme /////////////////////////
   "git.confirmSync": false, // Git sync confirmation settings.
   "workbench.iconTheme": "material-icon-theme", // Material icon theme.
   "editor.lineHeight": 30, // Editor line height.
+
+  ///////////////////////// Console Ninja /////////////////////////
+  ///////////////////////// Console Ninja /////////////////////////
+  ///////////////////////// Console Ninja /////////////////////////
+  "console-ninja.featureSet": "Community",
+  "console-ninja.showWhatsNew": false,
 
   ///////////////////////// Draw.io Integration /////////////////////////
   ///////////////////////// Draw.io Integration /////////////////////////
@@ -108,10 +180,12 @@ My prefered extensions and special settings for them in VSCode.
   //"workbench.editorAssociations": {
   //  "*.svg": "hediet.vscode-drawio-text"
   //},
+  //"hediet.vscode-drawio.resizeImages": null,
 
   ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
   ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
   ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
+  "githubPullRequests.createOnPublishBranch": "never",
   "githubPullRequests.queries": [
     {
       "label": "Waiting For My Review",
@@ -168,13 +242,23 @@ My prefered extensions and special settings for them in VSCode.
   "inlineFold.unfoldOnLineSelect": true,
   "inlineFold.autoFold": true,
 
+  ///////////////////////// Jupyter Notebook /////////////////////////
+  ///////////////////////// Jupyter Notebook /////////////////////////
+  ///////////////////////// Jupyter Notebook /////////////////////////
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "right"
+  },
+
+  ///////////////////////// Live Server /////////////////////////
+  ///////////////////////// Live Server /////////////////////////
+  ///////////////////////// Live Server /////////////////////////
+  "liveServer.settings.donotShowInfoMsg": true,
+
   ///////////////////////// Marp for VS Code /////////////////////////
   ///////////////////////// Marp for VS Code /////////////////////////
   ///////////////////////// Marp for VS Code /////////////////////////
-  "markdown.marp.themes": [
-    "https://example.com/foo/bar/custom-theme.css",
-    "./themes/your-theme.css"
-  ],
+  "markdown.marp.themes": ["https://example.com/foo/bar/custom-theme.css", "./themes/your-theme.css"],
 
   ///////////////////////// Material Icon Theme /////////////////////////
   ///////////////////////// Material Icon Theme /////////////////////////
@@ -183,14 +267,9 @@ My prefered extensions and special settings for them in VSCode.
   "material-icon-theme.folders.theme": "specific", // Folder icon theme.
   "material-icon-theme.opacity": 1, // Icon opacity.
   "material-icon-theme.saturation": 1, // Icon saturation.
-  "explorer.confirmDelete": false, // Confirm delete action in explorer.
   "editor.unicodeHighlight.allowedLocales": {
     "tr": true // Allow Unicode highlight for Turkish locale.
   },
-  "terminal.integrated.enableMultiLinePasteWarning": "never", // Terminal multiline paste warning.
-  "terminal.integrated.defaultProfile.windows": "Git Bash", // Default terminal profile on Windows.
-  "workbench.startupEditor": "none", // Startup editor settings.
-  "editor.mouseWheelZoom": true, // Enable mouse wheel zoom.
 
   ///////////////////////// PHP Debug /////////////////////////
   ///////////////////////// PHP Debug /////////////////////////
@@ -202,9 +281,20 @@ My prefered extensions and special settings for them in VSCode.
   ///////////////////////// Prettier-Code formatter /////////////////////////
   "editor.defaultFormatter": "esbenp.prettier-vscode", // Default code formatter.
   "prettier.tabWidth": 2, // Tab width.
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode" // Formatter for JavaScript.
-  },
+  "prettier.printWidth": 120,
+  "prettier.useTabs": false,
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "none",
+  "prettier.bracketSpacing": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+
+  ///////////////////////// Prettier-Code formatter /////////////////////////
+  ///////////////////////// Prettier-Code formatter /////////////////////////
+  ///////////////////////// Prettier-Code formatter /////////////////////////
+  "projectManager.git.baseFolders": ["/home/osman/source", "/var/www/html"],
+
   ///////////////////////// Todo Highlight /////////////////////////
   ///////////////////////// Todo Highlight /////////////////////////
   "todohighlight.isEnable": true, // Enable TODO highlight.
@@ -270,82 +360,26 @@ My prefered extensions and special settings for them in VSCode.
   ///////////////////////// Todo Tree /////////////////////////
   ///////////////////////// Todo Tree /////////////////////////
   "todo-tree.highlights.defaultHighlight": {
-    "icon": "alert",
     "type": "text",
-    "foreground": "#00ff00",
     "background": "#000000",
-    "opacity": 100,
-    "iconColour": "#ff0000"
+    "opacity": 80,
+    "gutterIcon": true
   },
   "todo-tree.highlights.customHighlight": {
     "TODO": {
-      "icon": "check",
-      "type": "line"
+      "icon": "alert",
+      "foreground": "#fbff00",
+      "iconColour": "#fbff00"
     },
     "FIXME": {
-      "foreground": "#000000",
-      "iconColour": "#e3eb00",
-      "gutterIcon": true
+      "icon": "error",
+      "foreground": "#ff0000",
+      "iconColour": "#ff0000"
     }
-  },
+  }
 
   ///////////////////////// END /////////////////////////
   ///////////////////////// END /////////////////////////
   ///////////////////////// END /////////////////////////
-
-  "editor.linkedEditing": true,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "editor.formatOnType": true,
-  "editor.formatOnPaste": true,
-  "projectManager.git.baseFolders": ["/home/osman/source", "/var/www/html"],
-  "editor.formatOnSave": true,
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-    "editor.formatOnSave": true
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features",
-    "editor.formatOnSave": true
-  },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
-    "editor.formatOnSave": true
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
-  },
-  "git.openRepositoryInParentFolders": "always",
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.unicodeHighlight.nonBasicASCII": false,
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "right"
-  },
-  "explorer.confirmDragAndDrop": false,
-  "vetur.validation.template": false,
-  "git.suggestSmartCommit": false,
-  "chronicler.ffmpeg-binary": "/usr/bin/ffmpeg",
-  "githubPullRequests.createOnPublishBranch": "never",
-  "tabnine.experimentalAutoImports": true,
-  "codeium.enableConfig": {
-    "*": true,
-    "markdown": true
-  },
-  "codeium.enableCodeLens": false,
-  "terminal.integrated.env.linux": {},
-  "console-ninja.featureSet": "Community",
-  "console-ninja.showWhatsNew": false,
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "hediet.vscode-drawio.resizeImages": null,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "git.ignoreRebaseWarning": true,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "explorer.confirmPasteNative": false,
-  "editor.detectIndentation": false
 }
 ```
