@@ -29,6 +29,7 @@ The Visual Studio Code documentation is available online at [Visual Studio Code]
 - [Boost Your Productivity with 31 Mind-Blowing Custom VSCode Shortcuts](./31.custom.vscode.shortcuts.md)
 - [Settings](./settings.md)
   - [Settings for Front-End Developers](./settings.front.end.md)
+  - [ESLint and Prettier Settings to Use in Projects](./eslint.prettier.settings.md)
 - [Keybindings](./keybindings.md)
 - [Keyboard Shortcuts](./shortcuts.md)
 - [VSCode Productivity Tips & Hacks](./productivity.tips.md)
