@@ -44,6 +44,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Changing Disk Permissions](./changing.disk.permissions.md)
 - [Vim Editor](./vim.md)
 - [Viewing and Monitoring Log Files](./view.and.monitor.logs.md)
+- [Creating Swap File](./creating.swap.md)
 - [Track File and Directory Changes in Linux with `fswatch`](./fswatch.md)
 - [Log Parsing Commands](./log.parsing.md)
 - [Data Gathering with Linux Terminal](./linux.terminal.ile.veri.toplama.md)
