@@ -372,7 +372,7 @@ My prefered extensions and special settings for them in VSCode.
       "iconColour": "#fbff00"
     },
     "FIXME": {
-      "icon": "error",
+      "icon": "tools",
       "foreground": "#ff0000",
       "iconColour": "#ff0000"
     }
