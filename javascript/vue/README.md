@@ -27,6 +27,7 @@ The Vue documentation is available online at [vuejs.org](https://www.vuejs.org).
 - [Some Vue 3 Tricks to Know](./vue3.tricks.md)
 - [Composition Pattern, Composition API, and Composables](./composition.pattern.&.composition.api.&.composables.md)
 - [Vue Render Optimization with v-once and v-memo](./v-once.v-memo.md)
+- [Working with a Constants Folder](./work.with.constants.file.md)
 - [Handling Environment Variables in Vue](./env.variables.md)
 - [Database Connection (PHP File)](./db.connection.php)
 - [Top 10 Vue.js UI Libraries in 2024](./top.10.ui.libraries.2024.md)
@@ -193,7 +194,7 @@ const v$ = useVuelidate(rules, state)
 ```html
 <template>
   <div :class="{ error: v$.firstName.$errors.length }">
-    <input v-model="state.firstName">
+    <input v-model="state.firstName" />
     <div class="input-errors" v-for="error of v$.firstName.$errors" :key="error.$uid">
       <div class="error-msg">{{ error.$message }}</div>
     </div>
