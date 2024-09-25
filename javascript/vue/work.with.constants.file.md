@@ -18,18 +18,18 @@ For example, you can create a `constants.ts` file in the `src` folder of your pr
 ```typescript
 // src/constants.ts
 export const MYCONSTANTS = {
-  API_BASE_URL = 'https://api.example.com';
-  MAX_SEAT_SELECTION = 4;
-  SEAT_TYPES = {
+  API_BASE_URL: 'https://api.example.com',
+  MAX_SEAT_SELECTION: 4,
+  SEAT_TYPES: {
     AVAILABLE: 'available',
     TAKEN: 'taken',
-    RESERVED: 'reserved',
-  };
-  GENDER = {
+    RESERVED: 'reserved'
+  },
+  GENDER: {
     MALE: 'male',
-    FEMALE: 'female',
-  };
-}
+    FEMALE: 'female'
+  }
+};
 ```
 
 ## 2. Using Constants in the Project
