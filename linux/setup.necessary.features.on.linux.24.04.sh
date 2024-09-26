@@ -406,6 +406,54 @@ echo "
         lg = log --oneline --graph --all
 " > ~/.gitconfig
 
+## PHP & MySQL Configurations
+# get PHP version
+PHP_VERSION=$(php -r 'echo PHP_MAJOR_VERSION.".".PHP_MINOR_VERSION;')
+# create PHP ini file and add settings
+mkdir -p ~/source/
+touch ~/source/$USER.php.ini
+cat <<EOF > ~/source/$USER.php.ini
+display_startup_errors = On
+display_errors = On
+upload_max_filesize = 128M
+upload_max_size = 128M
+post_max_size = 128M
+max_input_vars = 50000
+error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT & ~E_NOTICE & ~E_WARNING
+mbstring.language = Turkish
+mbstring.internal_encoding = UTF-8
+EOF
+ELEPHANT=$(echo -e '\xf0\x9f\x90\x98')
+CHECK=$(echo -e '\xf0\x9f\x97\xb8')
+clear
+echo "$ELEPHANT PHP Settings are being configured..."
+echo " $CHECK $USER.php.ini file created and content added."
+# link PHP ini file to Apache
+if [ -f /etc/php/$PHP_VERSION/apache2/conf.d/$USER.php.ini ]; then
+    sudo rm -f /etc/php/$PHP_VERSION/apache2/conf.d/$USER.php.ini
+fi
+sudo ln -s ~/source/$USER.php.ini /etc/php/$PHP_VERSION/apache2/conf.d/$USER.php.ini
+sudo service apache2 restart
+echo " $CHECK PHP settings completed and Apache restarted."
+echo ""
+
+# create MySQL cnf file and add settings
+touch ~/source/$USER.mysql.cnf
+cat <<EOF > ~/source/$USER.mysql.cnf
+[mysqld]
+sql_mode=""
+EOF
+DOLPHIN=$(echo -e '\xf0\x9f\x90\xac')
+echo "$DOLPHIN MySQL Settings are being configured..."
+echo " $CHECK $USER.mysql.cnf file created and content added."
+# copy MySQL config file and restart MySQL
+if [ -f /etc/mysql/conf.d/$USER.mysql.cnf ]; then
+    sudo rm -f /etc/mysql/conf.d/$USER.mysql.cnf
+fi
+sudo cp ~/source/$USER.mysql.cnf /etc/mysql/conf.d/$USER.mysql.cnf
+sudo service mysql restart
+echo " $CHECK MySQL settings completed and MySQL restarted."
+
 # Startup Applications
 ## create the directory (if it doesn’t exist):
 mkdir -p ~/.config/autostart
@@ -492,7 +540,7 @@ gsettings set org.gnome.desktop.interface toolkit-accessibility false
 sudo apt autoremove -y
 
 clear
-echo -e -n "Remember to go '$USER.bashrc.sh' and 'php&mysql' to setup your new machine"
+echo -e -n "Remember to go '$USER.bashrc.sh' to setup your new machine"
 echo ""
 echo ""
 read -n 1 -s -r -p "Press any key to continue and reboot your machine"
