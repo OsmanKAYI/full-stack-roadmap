@@ -38,6 +38,7 @@ setxkbmap tr
 
 ```bash
 sudo ubuntu-drivers autoinstall -y
+# to install specific version of nvidia drivers for second monitor problem
 sudo apt install nvidia-driver-470 -y
 ```
 

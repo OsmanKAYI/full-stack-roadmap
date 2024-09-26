@@ -68,6 +68,7 @@ setxkbmap tr
 
 ## Check Drivers
 sudo ubuntu-drivers autoinstall -y
+# to install specific version of nvidia drivers for second monitor problem
 sudo apt install nvidia-driver-470 -y
 
 ## Guake
@@ -178,6 +179,7 @@ sudo apt update
 sudo apt install code -y
 # install extesions
 wget https://raw.githubusercontent.com/OsmanKAYI/full-stack-roadmap/main/vscode/extensions.sh -O - | sh
+rm -f extensions.sh
 
 ## WPS Office
 # download WPS Office v11.1.0
