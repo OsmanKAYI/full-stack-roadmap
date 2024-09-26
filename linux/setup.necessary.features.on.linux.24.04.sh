@@ -321,17 +321,6 @@ StartupNotify=true" | sudo tee /usr/share/applications/Postman.desktop
 ## AutoKey
 sudo apt install autokey-gtk -y
 
-## Knime
-# use "wget" to download the Knime tool
-wget https://download.knime.org/analytics-platform/linux/knime-latest-linux.gtk.x86_64.tar.gz
-# extract the compressed file
-tar -xvzf knime-latest-linux.gtk.x86_64.tar.gz
-# change the directory and move into the extracted folder
-cd knime_*/
-# run the executable file in the folder
-./knime
-rm -f knime-latest-linux.*
-
 ## VirtualBox
 wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --dearmor --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] http://download.virtualbox.org/virtualbox/debian $(. /etc/os-release && echo "$VERSION_CODENAME") contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
@@ -341,32 +330,13 @@ sudo apt install virtualbox-7.1 -y
 ## VLC Media Player
 sudo apt install vlc -y
 
-## Anydesk
-wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
-echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
-sudo apt install anydesk -y
-
 ## Telegram
 sudo add-apt-repository ppa:atareao/telegram -y
 sudo apt update
 sudo apt install telegram -y
 
-## Steam
-sudo dpkg --add-architecture i386
-sudo apt update
-sudo apt install libc6:i386 libgl1:i386 libstdc++6:i386 -y
-sudo apt clean
-sudo apt install steam-installer -y
-
 ## Fritzing
 sudo apt install fritzing -y
-
-## Sweet Home 3D
-sudo apt install flatpak -y
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub com.sweethome3d.Sweethome3d -y
-flatpak update com.sweethome3d.Sweethome3d
-sudo apt install sweethome3d -y
 
 ## gitHub Configurations
 cd ~/.ssh
