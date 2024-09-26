@@ -66,50 +66,15 @@ timedatectl status
 ## Set Keyboard Setting for Türkçe
 setxkbmap tr
 
-# Ubuntu Settings
-## appearance
-### style
-gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-gsettings set org.gnome.desktop.interface icon-theme  'Yaru-sage'
-### desktop icons
-gsettings set org.gnome.shell.extensions.ding icon-size 'standard'
-gsettings set org.gnome.shell.extensions.ding start-corner 'top-left'
-### dock
-gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
-gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
-gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 24
-gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
-gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
-gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button true
-## sound
-### system volume
-gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
-## power
-### power saving options
-gsettings set org.gnome.desktop.session idle-delay 900
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 900
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 1200
-### suspend & power button
-gsettings set org.gnome.desktop.interface show-battery-percentage true
-
 ## Check Drivers
 sudo ubuntu-drivers autoinstall -y
 
-## Desktop Configurations
-# to set the position of the dock to the left
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
-# to minimize/extend all windows of a folder/program with one click
-gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
-# to switch between windows of a folder/program with mouse rolling
-gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
-
 ## Guake
-sudo apt-get install guake -y
+sudo apt install guake -y
 
 ## The Fuck
-sudo apt install python3-dev python3-pip python3-setuptools -y
-pip3 install thefuck --user
+sudo apt install python3-dev python3-pip python3-setuptools pipx -y
+pipx install thefuck
 
 ## Necessary Packages
 sudo apt install axel bat boxes caffeine curl figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tmux tree unrar vim magic-wormhole xclip -y
@@ -140,7 +105,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 sudo chmod ugo+rwx /home/$USER/Pictures/*
 
 ## Master PDF Editor
-sudo snap install master-pdf-editor-5 -y
+sudo snap install master-pdf-editor-5
 
 ## GIMP Image Editor
 sudo apt install gimp -y
@@ -159,12 +124,30 @@ sudo wget https://deb.tuxedocomputers.com/0x54840598.pub.asc
 sudo apt update
 sudo apt install tuxedo-control-center -y
 
-## Firefox
-### Add Mozilla PPA
+## Thunderbird
+### add Mozilla PPA
 sudo add-apt-repository ppa:mozillateam/ppa -y
-### Remove existing Firefox Snap package
+echo '
+Package: *
+Pin: release o=LP-PPA-mozillateam
+Pin-Priority: 1001
+
+Package: thunderbird
+Pin: version 2:1snap*
+Pin-Priority: -1
+' | sudo tee /etc/apt/preferences.d/thunderbird
+### remove existing Firefox Snap package
+sudo snap remove thunderbird
+### install Thunderbird from repo
+sudo apt update
+sudo apt install thunderbird
+
+## Firefox
+### add Mozilla PPA
+sudo add-apt-repository ppa:mozillateam/ppa -y
+### remove existing Firefox Snap package
 sudo snap remove firefox
-### Install Firefox from the PPA
+### install Firefox from repo
 sudo apt update
 sudo apt install firefox -y
 
@@ -196,18 +179,11 @@ sudo apt install code -y
 wget https://raw.githubusercontent.com/OsmanKAYI/full-stack-roadmap/main/vscode/extensions.sh -O - | sh
 
 ## WPS Office
-# dive into download directory
-cd ~/Downloads/
-# download WPS Office
-wget https://wps-community.org/wps-office_11.1.0.11723.XA_amd64.deb
+# download WPS Office v11.1.0
+wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11723/wps-office_11.1.0.11723.XA_amd64.deb
 # install the downloaded file
 sudo dpkg -i wps-office_11.1.0.11723.XA_amd64.deb
-
-## Notion
-echo "deb [trusted=yes] https://apt.fury.io/notion-repackaged/ /" | sudo tee /etc/apt/sources.list.d/notion-repackaged.list
-sudo apt update
-sudo apt install notion-app-enhanced -y
-sudo apt install notion-app -y
+rm -f wps-office_*
 
 ## Git
 sudo apt-get install git -y
@@ -232,14 +208,20 @@ sudo service apache2 restart
 sudo systemctl restart apache2
 
 ## Composer
+#!/bin/bash
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
-# put the composer.phar into a directory on your PATH, so you can simply call composer from any directory (Global install)
-sudo mv composer.phar /usr/local/bin/composer
-## watch errors real-time
-sudo tail -f /var/log/apache2/error.log
+EXPECTED_HASH="$(curl -s https://composer.github.io/installer.sig)"
+ACTUAL_HASH="$(php -r "echo hash_file('sha384', 'composer-setup.php');")"
+
+if [ "$ACTUAL_HASH" = "$EXPECTED_HASH" ]; then
+    php composer-setup.php
+    rm composer-setup.php  # Use rm instead of unlink
+    sudo mv composer.phar /usr/local/bin/composer
+    echo 'Composer installed successfully'
+else
+    echo 'Installer corrupt'
+    rm composer-setup.php  # Use rm instead of unlink
+fi
 
 ## MySQL
 sudo apt install mariadb-server mariadb-client -y
@@ -299,16 +281,16 @@ curl -s https://api.github.com/repos/jgraph/drawio-desktop/releases/latest | gre
 sudo apt -f install ./drawio-amd64-*.deb
 
 ## gphotos-sync
-apt install python3-pip
+sudo apt install pipx
 # install gphotos-sync wih pip:
-python3 -m pip install gphotos-sync
+pipx install gphotos-sync
 # export ~/.local/bin in PATH if you haven't already (that's where the executables for packages installed using pip3 are stored)
 echo "export PATH=\"\$PATH:\$HOME/.local/bin\"" >> ~/.bashrc
 # run .bashrc for updated PATH
 source ~/.bashrc
 
 ## OpenSSH
-sudo apt-get install openssh-server -y
+sudo apt install openssh-server -y
 sudo systemctl enable ssh
 sudo systemctl start ssh
 
@@ -345,9 +327,13 @@ tar -xvzf knime-latest-linux.gtk.x86_64.tar.gz
 cd knime_*/
 # run the executable file in the folder
 ./knime
+rm -f knime-latest-linux.*
 
 ## VirtualBox
-sudo apt install virtualbox -y
+wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --dearmor --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] http://download.virtualbox.org/virtualbox/debian $(. /etc/os-release && echo "$VERSION_CODENAME") contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+sudo apt update
+sudo apt install virtualbox-7.1
 
 ## VLC Media Player
 sudo apt install vlc -y
@@ -355,7 +341,6 @@ sudo apt install vlc -y
 ## Anydesk
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
 echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
-cd ~/Downloads/
 sudo apt install anydesk -y
 
 ## Telegram
@@ -364,8 +349,11 @@ sudo apt update
 sudo apt install telegram
 
 ## Steam
-sudo add-apt-repository multiverse -y
-sudo apt install steam -y
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install libc6:i386 libgl1:i386 libstdc++6:i386
+sudo apt clean
+sudo apt install steam-installer -y
 
 ## Fritzing
 sudo apt install fritzing -y
@@ -417,6 +405,8 @@ echo "
 " > ~/.gitconfig
 
 # Startup Applications
+## create the directory (if it doesn’t exist):
+mkdir -p ~/.config/autostart
 ## guake.desktop
 echo -e '[Desktop Entry]\nName[tr]=Guake Uçbirim\nName=Guake Terminal\nComment=Use the command line in a Quake-like terminal\nTryExec=guake\nExec=guake\nIcon=guake\nType=Application\nCategories=GNOME;GTK;System;Utility;TerminalEmulator;\nStartupNotify=true\nX-Desktop-File-Install-Version=0.22\nX-GNOME-Autostart-enabled=true\nHidden=false\nNoDisplay=false' > ~/.config/autostart/guake.desktop
 ## caffeine.desktop
@@ -427,7 +417,7 @@ echo -e '[Desktop Entry]\nName=TUXEDO Control Center\nComment=Tray icon for TUXE
 echo -e '[Desktop Entry]\nName=Ulauncher\nComment=Application launcher for Linux\nExec=env GDK_BACKEND=x11 /usr/bin/ulauncher --hide-window --hide-window\nIcon=ulauncher\nTerminal=false\nType=Application\nCategories=Utility;Application;' > ~/.config/autostart/ulauncher.desktop
 
 # Favorite Applications
-gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'gnome-system-monitor-kde.desktop', 'virtualbox.desktop', 'thunderbird.desktop', 'firefox.desktop', 'chromium-browser.desktop', 'telegram.desktop', 'discord.desktop', 'Postman.desktop', 'code.desktop', 'wps-office-prometheus.desktop', 'org.fritzing.Fritzing.desktop', 'sweethome3d.desktop']"
+gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'org.gnome.SystemMonitor.desktop', 'virtualbox.desktop', 'thunderbird.desktop', 'firefox.desktop', 'chromium_chromium.desktop', 'telegram.desktop', 'Postman.desktop', 'code.desktop', 'wps-office-prometheus.desktop', 'org.fritzing.Fritzing.desktop', 'sweethome3d.desktop']"
 
 # Settings
 ## appearance
@@ -454,7 +444,6 @@ gsettings set org.gnome.desktop.interface cursor-size 24
 gsettings set org.gnome.desktop.interface cursor-blink true
 gsettings set org.gnome.desktop.interface cursor-blink-time 1200
 gsettings set org.gnome.desktop.interface cursor-blink-timeout 10
-gsettings set org.gnome.desktop.interface scaling-factor uint32 0
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.0
 ### desktop icons
 gsettings set org.gnome.shell.extensions.ding icon-size 'standard'
@@ -467,6 +456,10 @@ gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
 gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
 gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button true
+# to minimize/extend all windows of a folder/program with one click
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+# to switch between windows of a folder/program with mouse rolling
+gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 ## sound
 ### system volume
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
@@ -494,4 +487,10 @@ gsettings set org.gnome.desktop.interface toolbar-icons-size 'large'
 gsettings set org.gnome.desktop.interface toolbar-style 'both-horiz'
 gsettings set org.gnome.desktop.interface toolkit-accessibility false
 
+# install necessary drivers
+sudo apt install nvidia-driver-470
+
 sudo apt autoremove -y
+
+# reboot the machine
+sudo reboot
