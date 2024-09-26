@@ -49,6 +49,7 @@ For more detailed instructions and documentation, please visit the [Quasar docum
 
 ## Examples
 
+- [Budget App Example from Danny Connell](./examples/budget.example.md)
 - [Quasar HTML Ref Example (.vue)](./examples/quasar.html.ref.example.vue)
 
 ## Useful Links
