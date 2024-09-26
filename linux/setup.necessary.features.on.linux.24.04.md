@@ -410,8 +410,9 @@ Since you do not have necessary lines in your .ini file, you get this `Unknown s
 
 ```bash
 zend_extension=xdebug.so
-xdebug.mode=develop,debug
+xdebug.mode=debug
 xdebug.start_with_request=yes
+xdebug.log_level=0
 ```
 
 **_OR_**
@@ -423,8 +424,9 @@ xdebug.start_with_request=yes
 ```bash
 [XDebug]
 zend_extension=xdebug.so
-xdebug.mode=develop,debug
+xdebug.mode=debug
 xdebug.start_with_request=yes
+xdebug.log_level=0
 ```
 
 ### Restart Apache Service
