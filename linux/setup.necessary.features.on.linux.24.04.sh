@@ -491,7 +491,11 @@ gsettings set org.gnome.desktop.interface toolkit-accessibility false
 
 sudo apt autoremove -y
 
-echo "Remember to go '$USER.bashrc.sh' and 'php&mysql' to setup your new machine"
+clear
+echo -e -n "Remember to go '$USER.bashrc.sh' and 'php&mysql' to setup your new machine"
+echo ""
+echo ""
 read -n 1 -s -r -p "Press any key to continue and reboot your machine"
+echo ""
 # reboot the machine
 sudo reboot
