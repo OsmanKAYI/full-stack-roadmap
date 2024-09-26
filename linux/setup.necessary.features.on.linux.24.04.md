@@ -968,7 +968,7 @@ echo -e '[Desktop Entry]\nName=Ulauncher\nComment=Application launcher for Linux
 - These applications will be displayed on your system's dock.
 
 ```bash
-gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'org.gnome.SystemMonitor.desktop', 'virtualbox.desktop', 'thunderbird.desktop', 'firefox.desktop', 'chromium_chromium.desktop', 'telegram.desktop', 'Postman.desktop', 'code.desktop', 'wps-office-prometheus.desktop', 'org.fritzing.Fritzing.desktop', 'sweethome3d.desktop']"
+gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'org.gnome.SystemMonitor.desktop', 'virtualbox.desktop', 'thunderbird.desktop', 'firefox.desktop', 'chromium_chromium.desktop', 'telegram.desktop', 'Postman.desktop', 'code.desktop', 'wps-office-prometheus.desktop', 'org.fritzing.Fritzing.desktop']"
 ```
 
 ## Settings
