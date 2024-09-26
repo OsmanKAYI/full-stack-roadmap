@@ -37,7 +37,7 @@ setxkbmap tr
 ## Check Drivers
 
 ```bash
-sudo ubuntu-drivers autoinstall -y
+sudo ubuntu-drivers autoinstall
 # to install specific version of nvidia drivers for second monitor problem
 sudo apt install nvidia-driver-470 -y
 ```
@@ -249,7 +249,7 @@ sudo add-apt-repository ppa:mozillateam/ppa -y
 sudo snap remove firefox
 ### install Firefox from the PPA
 sudo apt update
-sudo apt install firefox -y
+sudo apt install firefox --allow-downgrades -y
 ```
 
 ## Chromium
@@ -308,10 +308,11 @@ sudo apt install code -y
 - As one of the best Microsoft Office alternatives of 2021, WPS Office is fully compatible with main Linux distributions, including Ubuntu and Linux Mint. Download [WPS Office](https://www.wps.com/) for Linux. After downloading latest version, follow the steps below.
 
 ```bash
+cd ~/Downloads/
 # download WPS Office v11.1.0
 wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11723/wps-office_11.1.0.11723.XA_amd64.deb
 # install the downloaded file
-sudo dpkg -i wps-office_11.1.0.11723.XA_amd64.deb
+sudo dpkg -i ~/Downloads/wps-office_11.1.0.11723.XA_amd64.deb
 rm -f wps-office_*
 ```
 
@@ -910,7 +911,7 @@ sudo vi /etc/gdm3/custom.conf
 ```bash
 sudo add-apt-repository ppa:atareao/telegram -y
 sudo apt update
-sudo apt install telegram
+sudo apt install telegram -y
 ```
 
 ## Steam
@@ -920,7 +921,7 @@ sudo apt install telegram
 ```bash
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install libc6:i386 libgl1:i386 libstdc++6:i386
+sudo apt install libc6:i386 libgl1:i386 libstdc++6:i386 -y
 sudo apt clean
 sudo apt install steam-installer -y
 ```

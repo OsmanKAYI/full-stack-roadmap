@@ -67,7 +67,7 @@ timedatectl status
 setxkbmap tr
 
 ## Check Drivers
-sudo ubuntu-drivers autoinstall -y
+sudo ubuntu-drivers autoinstall
 # to install specific version of nvidia drivers for second monitor problem
 sudo apt install nvidia-driver-470 -y
 
@@ -151,7 +151,7 @@ sudo add-apt-repository ppa:mozillateam/ppa -y
 sudo snap remove firefox
 ### install Firefox from repo
 sudo apt update
-sudo apt install firefox -y
+sudo apt install firefox --allow-downgrades -y
 
 ## Chromium
 sudo apt install chromium chromium-browser -y
@@ -182,10 +182,11 @@ wget https://raw.githubusercontent.com/OsmanKAYI/full-stack-roadmap/main/vscode/
 rm -f extensions.sh
 
 ## WPS Office
+cd ~/Downloads/
 # download WPS Office v11.1.0
 wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11723/wps-office_11.1.0.11723.XA_amd64.deb
 # install the downloaded file
-sudo dpkg -i wps-office_11.1.0.11723.XA_amd64.deb
+sudo dpkg -i ~/Downloads/wps-office_11.1.0.11723.XA_amd64.deb
 rm -f wps-office_*
 
 ## Git
@@ -335,7 +336,7 @@ rm -f knime-latest-linux.*
 wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --dearmor --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] http://download.virtualbox.org/virtualbox/debian $(. /etc/os-release && echo "$VERSION_CODENAME") contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
 sudo apt update
-sudo apt install virtualbox-7.1
+sudo apt install virtualbox-7.1 -y
 
 ## VLC Media Player
 sudo apt install vlc -y
@@ -348,12 +349,12 @@ sudo apt install anydesk -y
 ## Telegram
 sudo add-apt-repository ppa:atareao/telegram -y
 sudo apt update
-sudo apt install telegram
+sudo apt install telegram -y
 
 ## Steam
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install libc6:i386 libgl1:i386 libstdc++6:i386
+sudo apt install libc6:i386 libgl1:i386 libstdc++6:i386 -y
 sudo apt clean
 sudo apt install steam-installer -y
 
@@ -422,6 +423,12 @@ max_input_vars = 50000
 error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT & ~E_NOTICE & ~E_WARNING
 mbstring.language = Turkish
 mbstring.internal_encoding = UTF-8
+
+[XDebug]
+zend_extension=xdebug.so
+xdebug.mode=debug
+xdebug.start_with_request=yes
+xdebug.log_level=0
 EOF
 ELEPHANT=$(echo -e '\xf0\x9f\x90\x98')
 CHECK=$(echo -e '\xf0\x9f\x97\xb8')
@@ -539,7 +546,6 @@ gsettings set org.gnome.desktop.interface toolkit-accessibility false
 
 sudo apt autoremove -y
 
-clear
 echo -e -n "Remember to go '$USER.bashrc.sh' to setup your new machine"
 echo ""
 echo ""
