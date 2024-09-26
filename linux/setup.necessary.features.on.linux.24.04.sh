@@ -68,6 +68,7 @@ setxkbmap tr
 
 ## Check Drivers
 sudo ubuntu-drivers autoinstall -y
+sudo apt install nvidia-driver-470 -y
 
 ## Guake
 sudo apt install guake -y
@@ -208,7 +209,6 @@ sudo service apache2 restart
 sudo systemctl restart apache2
 
 ## Composer
-#!/bin/bash
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 EXPECTED_HASH="$(curl -s https://composer.github.io/installer.sig)"
 ACTUAL_HASH="$(php -r "echo hash_file('sha384', 'composer-setup.php');")"
@@ -486,9 +486,6 @@ gsettings set org.gnome.desktop.interface toolbar-detachable false
 gsettings set org.gnome.desktop.interface toolbar-icons-size 'large'
 gsettings set org.gnome.desktop.interface toolbar-style 'both-horiz'
 gsettings set org.gnome.desktop.interface toolkit-accessibility false
-
-# install necessary drivers
-sudo apt install nvidia-driver-470
 
 sudo apt autoremove -y
 
