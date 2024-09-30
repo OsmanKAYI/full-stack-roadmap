@@ -33,13 +33,13 @@ To extract data, use `JSON_EXTRACT(json_doc, path)`:
 
 - Extracting from an array:
   `sql
-    mysql> SELECT JSON_EXTRACT('[10, 20, 30, 40]', '$[0]');
-    `
+mysql> SELECT JSON_EXTRACT('[10, 20, 30, 40]', '$[0]');
+`
 
 - Extracting from an object:
   `sql
-    mysql> SELECT JSON_EXTRACT('{"name": "John", "age": 30}', '$.name');
-    `
+mysql> SELECT JSON_EXTRACT('{"name": "John", "age": 30}', '$.name');
+`
 
 ### -> Operator
 
@@ -109,5 +109,7 @@ FROM `data`.`ielts_scores`;
 - **$[index]** extracts values from JSON arrays.
 - **->** is a shortcut for `JSON_EXTRACT`, while **->>** is for `JSON_UNQUOTE(JSON_EXTRACT(...))`.
 - **JSON_EXTRACT** is needed for extracting from nested structures.
+
+**NOTE:** For further reading visit: [Fearlessly Using JSON in MySQL](json.in.mysql.md).
 
 **Ref:** [Lynn G. Kwong - Medium](https://towardsdatascience.com/how-to-work-with-json-data-in-mysql-11672e4da7e9)
