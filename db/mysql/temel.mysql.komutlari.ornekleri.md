@@ -13,7 +13,7 @@
 | [mysqli_affected_rows](http://php.net/mysqli-affected-rows)           | SQL sorgusundan kaç satırın etkilendiğini gösterir                                                        |
 | [mysqli_insert_id](http://php.net/mysqli_insert_id)                   | INSERT işlemi sonucunda eklenen yeni kaydın ID bilgisini gösterir                                         |
 
-# MySQL Sunucusuna Bağlanma
+## MySQL Sunucusuna Bağlanma
 
 ```php
 ## Veritabanına bağlantı kuralım...
@@ -27,7 +27,7 @@ if( mysqli_connect_error() ) die("Veritabanına bağlanılamadı...");
 $temp = mysqli_query($DB, "set names 'utf8'"); // Türkçe karakterlerle ilgili sorun yaşamamak için
 ```
 
-# Fonksiyon Kullanimi
+## Fonksiyon Kullanimi
 
 ```php
 function Temizle($DB, $val) {
@@ -36,7 +36,7 @@ function Temizle($DB, $val) {
 }
 ```
 
-# Kayıt Ekleme
+## Kayıt Ekleme
 
 ```php
 ## Veritabanına kayıt ekleme
@@ -61,7 +61,7 @@ $EklenenID = mysqli_insert_id($DB);
 echo "Yeni araç, tabloya $EklenenID kayıt numarası ile eklenmiştir.";
 ```
 
-# Kayıt Güncelleme
+## Kayıt Güncelleme
 
 ```php
 ## Veritabanına kayıt güncelleme
@@ -84,7 +84,7 @@ $SQL = "UPDATE araclar SET
 $rows = mysqli_query($DB, $SQL);
 ```
 
-# Kayıt Silme
+## Kayıt Silme
 
 ```php
 ## Veritabanından kayıt silme
@@ -92,7 +92,7 @@ $SQL = "DELETE FROM araclar WHERE id = 1";
 $rows = mysqli_query($DB, $SQL);
 ```
 
-# Kayıt Getirmeyi Sınırla
+## Kayıt Getirmeyi Sınırla
 
 150 nci kayıttan itibaren 20 kayıt getir.
 
@@ -101,7 +101,7 @@ $SQL = "SELECT * FROM araclar LIMIT 20 OFFSET 150";
 $rows = mysqli_query($DB, $SQL);
 ```
 
-# Kayıt Listeleme - Örnek 1
+### Kayıt Listeleme - Örnek 1
 
 ```php
 ## Veritabanından kayıt çekme ve listeleme örneği
@@ -123,7 +123,7 @@ if($RowCount == 0) { // Kayıt yok...
 } // Kayıt var
 ```
 
-# Kayıt Listeleme - Örnek 2
+### Kayıt Listeleme - Örnek 2
 
 ```php
 ## Veritabanından kayıt çekme ve TABLE ile listeleme örneği
@@ -157,7 +157,7 @@ if($RowCount == 0) { // Kayıt yok...
 } // Kayıt var
 ```
 
-# Kayıt Listeleme - Örnek 3
+### Kayıt Listeleme - Örnek 3
 
 ```php
 <?php
@@ -180,7 +180,7 @@ $rows = mysqli_query($DB, $SQL);
 </table>
 ```
 
-# HTML SELECT İçini Veritabanından Doldurma
+## HTML SELECT İçini Veritabanından Doldurma
 
 ```php
 <?php
@@ -206,7 +206,7 @@ MARKASI: <select name='marka_sec'> <?php echo $MARKALAR; ?> </select>
 MODELİ : <select name='model_sec'> <?php echo $MODELLER; ?> </select>
 ```
 
-# SQL Injection Nedir?
+## SQL Injection Nedir?
 
 Kullanıcıdan gelen değerin özel bir işleme tabi tutulup güvenli hale getirilmemesi durumunda oluşan güvenlik açığına `SQL injection` adı verilir.
 
@@ -230,13 +230,13 @@ $KullaniciID = mysqli_real_escape_string($DB, $_GET['id']);
 // NOT: mysqli_real_escape_string komutunun çalışabilmesi için bağlantının kurulmuş olması şarttır.
 ```
 
-# POST ve GET temizliği
+## POST ve GET temizliği
 
 Özellikle POST ve GET verilerinde toplu olarak `mysqli_real_escape_string` komutunun uygulanması çalışmaları burada derlenmeye çalışılmıştır.
 
 **NOT:** `mysqli_real_escape_string` komutunun çalışabilmesi için bağlantının kurulmuş olması şarttır.
 
-## Yöntem 1 TODO: Test Edilmeli!
+### Yöntem 1 TODO: Test Edilmeli
 
 ```php
 function GUVENLI_VERI($array, $DB) {
@@ -252,7 +252,7 @@ GUVENLI_VERI($_GET, $DB);
 GUVENLI_VERI($_POST, $DB);
 ```
 
-## Yöntem 2 TODO: Test Edilmeli!
+### Yöntem 2 TODO: Test Edilmeli
 
 ```php
 array_walk($_POST, function(&$string) use ($DB) {
@@ -262,7 +262,7 @@ array_walk($_POST, function(&$string) use ($DB) {
 
 TODO: POST verisi içinde dizi değişkenleri varsa durumunda nasıl davranıyor?
 
-## Yöntem 3 TODO: Test Edilmeli!
+### Yöntem 3 TODO: Test Edilmeli
 
 ```php
 $post = array_map('mysqli_real_escape_string', $_POST);
@@ -271,7 +271,7 @@ $POST = $post;
 
 TODO: POST verisi içinde dizi değişkenleri varsa durumunda nasıl davranıyor?
 
-## Yöntem 4 TODO: Test Edilmeli!
+### Yöntem 4 TODO: Test Edilmeli
 
 ```php
 foreach($_POST as $k => $v) {
@@ -280,7 +280,7 @@ foreach($_POST as $k => $v) {
 TODO: POST verisi içinde dizi değişkenleri varsa çalışmaz!
 ```
 
-# PHP7'den İtibaren Kaldırılmış Olan Komutlar
+## PHP7'den İtibaren Kaldırılmış Olan Komutlar
 
 Aşağıdaki mysql\_\* ile başlayan komutlar, PHP 7.0'dan itibarek artık kullanılmamaktadır.
 
@@ -319,9 +319,9 @@ Aşağıdaki mysql\_\* ile başlayan komutlar, PHP 7.0'dan itibarek artık kulla
 | mysql_result        | Sorgudan dönen sonuçları alır.                                            |
 | mysql_tablename     | Verilen alanın ait olduğu tablonun adını verir.                           |
 
-Kaynak: https://www.dahiweb.com/mysql-komutlari-fonksiyonlari/
+**Kaynak:** [mysql komutları - dahiweb](https://www.dahiweb.com/mysql-komutlari-fonksiyonlari/)
 
-# mysql ile yazılmış eski uygulamaların PHP7'de çalıştırılması
+## mysql ile yazılmış eski uygulamaların PHP7'de çalıştırılması
 
 mysql ile yazılmış eski uygulamaların PHP7'de çalıştırılması için geliştirilmiş faydalı bir proje var: [PHP MySQL to MySQLi: Replace mysql functions using the mysqli extension](https://www.phpclasses.org/package/9199-PHP-Replace-mysql-functions-using-the-mysqli-extension.html)
 
@@ -426,4 +426,4 @@ update stat set AY_ADET = if(ay_1>0,1 , 0)
 
 - MySQL sistemine çoklu dosyayı tek komutla yüklemek için: `time for i in *.sql; do mysql -u root -proot ornekler < $i; done;`
 
-**Ref:** https://github.com/OsmanKAYI/PHP-Egitimi/blob/master/konular/giris.konulari.mysql.md
+**Ref:** [nuriakman - GitHub](https://github.com/OsmanKAYI/PHP-Egitimi/blob/master/konular/giris.konulari.mysql.md)
