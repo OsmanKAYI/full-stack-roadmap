@@ -47,6 +47,7 @@ MySQL is an open-source relational database management system. Its name is a com
   - [Don’t Use JSON Columns in MySQL Here’s Why](./mysql/json.columns.in.mysql.md)
   - [How to Work with JSON Data in MySQL](./mysql/how.to.use.json.columns.md)
   - [Fearlessly Using JSON in MySQL](./mysql/json.in.mysql.md)
+  - [JSON in MySQL Example](./mysql/json.in.mysql.example.md)
 
 #### Basic MySQL
 
