@@ -38,6 +38,6 @@ Use traditional columns whenever possible, especially if performing calculations
 
 JSON is suitable when consistency enforcement isn't critical, or when the data is not used for statistical queries or filtering. However, even in these cases, the assumption of never needing such functionality often proves false. JSON can be advantageous when dealing with rarely changed information or applications that expect JSON, optimizing for read and load performance.
 
-**NOTE:** For further reading visit: [How to Work with JSON Data in MySQL](how.to.use.json.columns.md) and [Get JSON from table with PHP PDO](https://onelinerhub.com/php-pdo/get-json-from-table-with-php-pdo)
+**NOTE:** For further reading visit: [How to Work with JSON Data in MySQL](how.to.use.json.columns.md) and [Get JSON from table with PHP PDO](https://onelinerhub.com/php-pdo/get-json-from-table-with-php-pdo).
 
 **Ref:** [Code Axion The Security Breach - Medium](https://medium.com/@codeaxion77/dont-use-json-columns-in-mysql-here-s-why-efbb82aafffd)
