@@ -44,6 +44,7 @@ MySQL is an open-source relational database management system. Its name is a com
 - [Merge Rows in MySQL](./mysql/group.concat.md)
 - [MySQL Slow Log Analyze](./mysql/mysql.slow.log.md)
 - [Don’t Use JSON Columns in MySQL Here’s Why](./mysql/json.columns.in.mysql.md)
+- [How to Work with JSON Data in MySQL](./mysql/how.to.use.json.columns.md)
 
 #### Basic MySQL
 
