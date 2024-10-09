@@ -138,7 +138,7 @@ Package: thunderbird
 Pin: version 2:1snap*
 Pin-Priority: -1
 ' | sudo tee /etc/apt/preferences.d/thunderbird
-### remove existing Firefox Snap package
+### remove existing thunderbird Snap package
 sudo snap remove thunderbird
 ### install Thunderbird from repo
 sudo apt update

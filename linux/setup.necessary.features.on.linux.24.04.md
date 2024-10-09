@@ -231,7 +231,7 @@ Pin-Priority: -1
 ```
 
 ```bash
-### remove existing Firefox Snap package
+### remove existing thunderbird Snap package
 sudo snap remove thunderbird
 ### install Thunderbird from repo
 sudo apt update
