@@ -98,7 +98,7 @@ pip3 install thefuck --user
 - **pv** shows the progress of data through a pipeline by giving information such as time elapsed, percentage completed (with progress bar), current throughput rate, total data transferred, and ETA.
 - **ranger**, is a console file manager with VI key bindings.
 - **testdisk** checks and recovers lost partitions.
-- **tree**, is  used to display the directory structure in a tree-like format.
+- **tree**, is used to display the directory structure in a tree-like format.
 - **unrar** extracts RAR file archives.
 - **vim** is a free and open-source, screen-based text editor program.
 - **wormhole** lets you share files with end-to-end encryption and a link that automatically expires. So you can keep what you share private and make sure your stuff doesn't stay online forever.
@@ -113,7 +113,7 @@ sudo apt install axel bat boxes caffeine figlet gnome-tweaks gpustat hardinfo ha
 - `xclip -sel clip -o` # to paste
 - `gpustat -i 0.20` # to follow GPU usage as 5 measurements / second (or 1 measurement / milisecond)
 - `wormhole send "fileName"` # to send file
-- `figlet Osman Kayi|lolcat` # to see piped and colored text of "Osman Kayi" 
+- `figlet Osman Kayi|lolcat` # to see piped and colored text of "Osman Kayi"
 
 ## Ulauncher
 
@@ -249,7 +249,7 @@ sudo apt install firefox -y
 - Chromium is a free and open-source web browser project, mainly developed and maintained by Google. This codebase provides the vast majority of code for the Google Chrome browser, which is proprietary software and has some additional features.
 
 ```bash
-sudo apt install chromium-browser -y
+sudo apt install chromium -y
 ```
 
 ## Syncthing

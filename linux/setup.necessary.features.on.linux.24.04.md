@@ -257,7 +257,7 @@ sudo apt install firefox --allow-downgrades -y
 - Chromium is a free and open-source web browser project, mainly developed and maintained by Google. This codebase provides the vast majority of code for the Google Chrome browser, which is proprietary software and has some additional features.
 
 ```bash
-sudo apt install chromium-browser -y
+sudo apt install chromium -y
 ```
 
 ## Syncthing
@@ -968,7 +968,7 @@ echo -e '[Desktop Entry]\nName=Ulauncher\nComment=Application launcher for Linux
 - These applications will be displayed on your system's dock.
 
 ```bash
-gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'org.gnome.SystemMonitor.desktop', 'virtualbox.desktop', 'thunderbird.desktop', 'firefox.desktop', 'chromium_chromium.desktop', 'telegram.desktop', 'Postman.desktop', 'code.desktop', 'wps-office-prometheus.desktop', 'org.fritzing.Fritzing.desktop']"
+gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'org.gnome.SystemMonitor.desktop', 'virtualbox.desktop', 'thunderbird.desktop', 'firefox.desktop', 'chromium-browser.desktop', 'telegram.desktop', 'Postman.desktop', 'code.desktop', 'wps-office-prometheus.desktop', 'org.fritzing.Fritzing.desktop']"
 ```
 
 ## Settings

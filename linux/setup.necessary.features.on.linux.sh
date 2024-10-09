@@ -157,7 +157,7 @@ sudo apt update
 sudo apt install firefox -y
 
 ## Chromium
-sudo apt install chromium-browser -y
+sudo apt install chromium -y
 
 ## Syncthing
 
