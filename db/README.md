@@ -43,6 +43,7 @@ MySQL is an open-source relational database management system. Its name is a com
 - [CLI Connection Without Password](./mysql/cli.connection.without.password.md)
 - [Merge Rows in MySQL](./mysql/group.concat.md)
 - [MySQL Slow Log Analyze](./mysql/mysql.slow.log.md)
+- [Creating a Read-Only User for MySQL Backups](./mysql/create.user.for.backup.md)
 - **_JSON Columns in MySQL_**
   - [Don’t Use JSON Columns in MySQL Here’s Why](./mysql/json.columns.in.mysql.md)
   - [How to Work with JSON Data in MySQL](./mysql/how.to.use.json.columns.md)
