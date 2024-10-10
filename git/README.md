@@ -19,6 +19,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Git Branch](./git.branch.md)
   - [Git Branch Advanced Example](./git.branch.advanced.md)
 - [Git Merge vs. Git Rebase](./git.merge.vs.rebase.md)
+- [Comparing Two Git Branches](./compare.git.branches.md)
 
 ## Useful Links
 
