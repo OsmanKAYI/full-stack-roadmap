@@ -38,6 +38,7 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - [String, Array, and DOM Methods](./string.array.dom.methods.md)
 - [filter() Array Function](./filter.array.function.md)
 - [Console Commands](./console.commands.md)
+- [Variable Naming Best Practices in JavaScript](./variable.naming.md)
 - [JavaScript Tips](./js.tips.md)
 - [Most Essential JavaScript Functions and Usages](./most.essential.js.functions.md)
 - [18 JavaScript Tips for Clean and Efficient Code](./18.tips.for.clean.code.md)
@@ -70,6 +71,7 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - [The Modern JavaScript Tutorial](https://tr.javascript.info/)
 - [Modern Javascript (ES6+) Video Series](https://www.youtube.com/watch?v=4ynLm0TaK1w&list=PLFAU47Id44XElZTM3G8S8YydhPbfAJ-N0)
 - **Array Methods**
+
   - [Part 1](https://pbs.twimg.com/media/F1JMuvIWwAA6bIj?format=jpg&name=900x900)
   - [Part 2](https://pbs.twimg.com/media/F1JMvocWcAIDozh?format=jpg&name=small)
   - [Part 3](https://pbs.twimg.com/media/F1JMwXcXsAAoowX?format=jpg&name=small)
@@ -79,10 +81,12 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 ![String Methods](https://pbs.twimg.com/media/F92zI0pXcAAV3IV?format=jpg&name=large)
 
 - **Debug**
+
   - [Debug Code Like a Pro](https://www.youtube.com/watch?v=uUDRh7D5Z0c)
     - How to debug JavaScript Code in VsCode and Chrome. Learn VsCode Debugger and Chrome Debugger. Debugging with a VsCode Extension: [Console Ninja](https://console-ninja.com/)
 
 - [Sharp Image Editor](https://github.com/lovell/sharp)
+
   - The typical use case for this high speed Node-API module is to convert large images in common formats to smaller, web-friendly JPEG, PNG, WebP, GIF and AVIF images of varying dimensions.
 
 - [JavaScript Chart Demos - ApexCharts](https://apexcharts.com/javascript-chart-demos/)
