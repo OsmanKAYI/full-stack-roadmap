@@ -39,6 +39,7 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - [filter() Array Function](./filter.array.function.md)
 - [Console Commands](./console.commands.md)
 - [Variable Naming Best Practices in JavaScript](./variable.naming.md)
+- [9 Naming Tricks Every Developer Should Know to Avoid Headache](./9.naming.tricks.md)
 - [JavaScript Tips](./js.tips.md)
 - [Most Essential JavaScript Functions and Usages](./most.essential.js.functions.md)
 - [18 JavaScript Tips for Clean and Efficient Code](./18.tips.for.clean.code.md)
