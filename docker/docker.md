@@ -44,7 +44,7 @@ sudo docker run hello-world
 
 The output will be like the following which means that the installation is successful.
 
-```
+```bash
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
 719385e32844: Pull complete
@@ -73,4 +73,4 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
-**Ref:** https://docs.docker.com/engine/install/ubuntu/
+**Ref:** [Docker for Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
