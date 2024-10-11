@@ -28,19 +28,17 @@ docker run -d -p 80:80 --name $containername -v "$PWD":/var/www/html php:7.0-apa
 
 ## To Start
 
-```
+```bash
 # depends on what you used as a host in docker run command
-
 http://localhost:8888/
 
 # or
-
 http://localhost:80/
 ```
 
 ## To Stop
 
-```
+```bash
 docker stop $(docker ps -a -q)
 ```
 
@@ -123,4 +121,4 @@ docker compose down
 
 - Using this configuration, you can launch the entire project using the **docker-compose.yml** file. Docker Compose will create Docker images of all containers defined in the **docker-compose.yml** file and then launch Docker containers using these images.
 
-**Ref:** https://github.com/truthseekers/php-docker-simple
+**Ref:** [truthseekers - GitHub](https://github.com/truthseekers/php-docker-simple)

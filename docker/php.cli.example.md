@@ -1,6 +1,6 @@
 # PHP-CLI Example
 
-## Content of index.php:
+## Content of index.php
 
 ```php
 <?php
@@ -10,9 +10,9 @@ echo "<br>";
 echo "PHP version:" . phpversion();
 ```
 
-## Content of Dockerfile:
+## Content of Dockerfile
 
-```
+```text
 FROM php:7.0-cli
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
@@ -56,6 +56,6 @@ docker run -it --rm --name $containername $imagename
 
 **Refs:**
 
-- https://www.youtube.com/playlist?list=PL_f2F0Oyaj4_xkCDqnRWp4p5ypjDeC0kO
-- https://github.com/gkandemi/docker
-- https://github.com/truthseekers/php-docker-simple
+- [kablosuzkedi - YouTube](https://www.youtube.com/playlist?list=PL_f2F0Oyaj4_xkCDqnRWp4p5ypjDeC0kO)
+- [gkandemi - GitHub](https://github.com/gkandemi/docker)
+- [truthseekers - GitHub](https://github.com/truthseekers/php-docker-simple)
