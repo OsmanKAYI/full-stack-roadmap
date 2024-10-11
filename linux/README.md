@@ -64,6 +64,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Execute .run Files on Ubuntu](./execute..run.files.md)
 - [Execute .exe Programs on Ubuntu](./run.windows.programs.on.ubuntu.md)
 - [Install Office Programs on Linux](./office.on.linux.md)
+- [Install Mendeley for Citation with flatpak](./mendeley.for.citation.md)
 - [Ubuntu Second Monitor Problem](./second.monitor.problem.md)
 - [How to Track Changes on a Directory](./track.changes.on.directory.md)
 - [ScreenPen for Screen Annotation](./screenpen.md)
