@@ -44,7 +44,16 @@ dpkg --get-selections | grep php
 
 ## CLI Configuration for PHP Version
 
+### To Select PHP Version from Installed Versions
+
 ```bash
 sudo update-alternatives --config php
+php -v # will give you the selected php version
+```
+
+### To Select PHP Version Directly
+
+```bash
 sudo update-alternatives --set php /usr/bin/php7.4
+php -v # will give you the version 7.4
 ```
