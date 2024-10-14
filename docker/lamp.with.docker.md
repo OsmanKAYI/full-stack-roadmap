@@ -31,10 +31,12 @@ services:
     image: mysql:5.7
     container_name: my_lamp_db
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      # MYSQL_DATABASE: mydatabase
-      # MYSQL_USER: user
-      # MYSQL_PASSWORD: userpassword
+      MYSQL_ROOT_PASSWORD: root # MySQL root user password
+      MYSQL_DATABASE: mydb # Database name to be created (if desired)
+      MYSQL_USER: user # Username to be created (if desired)
+      MYSQL_PASSWORD: user # Password for the user (if desired)
+    volumes:
+      - ./mysql:/var/lib/mysql
     networks:
       - lamp_network
 
@@ -92,7 +94,7 @@ docker-compose down
 - To install LAMP docker directly, use the following command on terminal:
 
 ```bash
-wget -O https://github.com/OsmanKAYI/full-stack-roadmap/main/docker/lamp.with.docker.sh
+wget https://osmankayi.com/docker/lamp.with.docker.sh
 chmod +x lamp.with.docker.sh
 bash lamp.with.docker.sh
 ```

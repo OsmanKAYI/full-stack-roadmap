@@ -25,10 +25,12 @@ services:
     image: mysql:5.7
     container_name: my_lamp_db
     environment:
-      MYSQL_ROOT_PASSWORD: root                        # MySQL root user password
-      # MYSQL_DATABASE: mydatabase                     # Database name to be created (if desired)
-      # MYSQL_USER: user                               # Username to be created (if desired)
-      # MYSQL_PASSWORD: userpassword                   # Password for the user (if desired)
+      MYSQL_ROOT_PASSWORD: root # MySQL root user password
+      MYSQL_DATABASE: mydb # Database name to be created (if desired)
+      MYSQL_USER: user # Username to be created (if desired)
+      MYSQL_PASSWORD: user # Password for the user (if desired)
+    volumes:
+      - ./mysql:/var/lib/mysql
     networks:
       - lamp_network
 
@@ -44,6 +46,9 @@ networks:
   lamp_network:
     driver: bridge
 EOL
+
+# Create a simple MySQL Folder
+mkdir -p $PROJECT_DIR/mysql
 
 # Create a simple PHP file
 echo "<?php phpinfo(); ?>" > $PROJECT_DIR/html/index.php
