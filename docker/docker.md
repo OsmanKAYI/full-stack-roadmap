@@ -34,23 +34,22 @@ echo \
 ```bash
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose docker-compose-plugin
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+reboot
 ```
 
 ### Step 3: Verify Docker Installation
 
 ```bash
-sudo docker run hello-world
+docker pull hello-world
+docker run hello-world
 ```
 
 The output will be like the following which means that the installation is successful.
 
 ```bash
-Unable to find image 'hello-world:latest' locally
-latest: Pulling from library/hello-world
-719385e32844: Pull complete
-Digest: sha256:fc6cf906cbfa013e80938cdf0bb199fbdbb86d6e3e013783e5a766f50f5dbce0
-Status: Downloaded newer image for hello-world:latest
-
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
 
