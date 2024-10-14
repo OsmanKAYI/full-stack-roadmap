@@ -6,14 +6,18 @@ Docker is among the most popular platforms for developing and deploying containe
 
 ## Docker Installation
 
-### Step 1: Before Start
+### Step 1: Remove Docker Completely
 
 ```bash
-# lder versions of Docker went by the names of docker, docker.io, or docker-engine
+# older versions of Docker went by the names of docker, docker.io, or docker-engine
 # you might also have installations of containerd or runc
 # uninstall any such older versions before attempting to install a new version
-sudo apt purge docker docker-engine docker.io containerd runc
+sudo apt purge docker docker-engine docker.io containerd runc docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose docker-compose-plugin -y
+```
 
+### Step 2: Prepare to Install Docker
+
+```bash
 # install packages to allow apt to use a repository over HTTPS
 sudo apt install ca-certificates curl gnupg
 
@@ -29,7 +33,7 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
-### Step 2: Install Latest Version
+### Step 3: Install Latest Version of Docker
 
 ```bash
 sudo apt update
@@ -40,7 +44,7 @@ newgrp docker
 reboot
 ```
 
-### Step 3: Verify Docker Installation
+### Step 4: Verify Docker Installation
 
 ```bash
 docker pull hello-world
@@ -49,7 +53,7 @@ docker run hello-world
 
 The output will be like the following which means that the installation is successful.
 
-```bash
+```text
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
 
