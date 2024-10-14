@@ -1,5 +1,7 @@
 # LAMP with Docker
 
+- To install docker, refer to the [Docker Installation](./docker.md) section.
+
 ## 1. Create Project Directory
 
 ```bash
@@ -85,4 +87,12 @@ docker ps
 
 ```bash
 docker-compose down
+```
+
+- To install LAMP docker directly, use the following command on terminal:
+
+```bash
+wget -O https://github.com/OsmanKAYI/full-stack-roadmap/main/docker/lamp.with.docker.sh
+chmod +x lamp.with.docker.sh
+bash lamp.with.docker.sh
 ```
