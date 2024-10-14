@@ -98,3 +98,5 @@ wget https://osmankayi.com/docker/lamp.with.docker.sh
 chmod +x lamp.with.docker.sh
 bash lamp.with.docker.sh
 ```
+
+**Ref:** [LAMP Stack Built with Docker Compose](https://github.com/sprintcube/docker-compose-lamp)
