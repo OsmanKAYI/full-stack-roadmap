@@ -1,29 +1,35 @@
-# Use root/example user/password credentials
-version: "3.1"
+version: '3.8'
 
 services:
-  php:
-    image: php:7.0-apache
+  web:
+    image: php:7.4-apache
+    container_name: my_lamp_web
     ports:
-      - 80:80
+      - '8080:80'
     volumes:
-      - ./:/var/www/html/
+      - ./html:/var/www/html
+    networks:
+      - lamp_network
+
   db:
-    image: mysql:8.0
-    command: --default-authentication-plugin=mysql_native_password
-    restart: always
+    image: mysql:5.7
+    container_name: my_lamp_db
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: "test"
-      MYSQL_PASS: "test"
-    ports:
-      - 3306:3306
-  #    volumes:
-  #      - $volumename:/var/lib/mysql
+      # MYSQL_DATABASE: mydatabase
+      # MYSQL_USER: user
+      # MYSQL_PASSWORD: userpassword
+    networks:
+      - lamp_network
+
   adminer:
     image: adminer
-    restart: always
+    container_name: my_adminer
     ports:
-      - 8080:8080
-#volumes:
-#  $volumename:
+      - '8081:8080'
+    networks:
+      - lamp_network
+
+networks:
+  lamp_network:
+    driver: bridge
