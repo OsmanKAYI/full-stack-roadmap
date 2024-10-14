@@ -47,6 +47,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Creating Swap File](./creating.swap.md)
 - [Track File and Directory Changes in Linux with `fswatch`](./fswatch.md)
 - [Log Parsing Commands](./log.parsing.md)
+- [21 Linux Bash Scripting Lessons for Beginners](./bash.scripting.md)
 - [Data Gathering with Linux Terminal](./linux.terminal.ile.veri.toplama.md)
 - [Linux Zip Commands](./linux.zip.komutlari.md)
 - [Copy Commands (`tar`, `cp`) & Copy Between Servers](./copy.with.tar.cp.md)
