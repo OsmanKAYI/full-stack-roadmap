@@ -17,7 +17,7 @@ The Docker documentation is available online at [docker.com](https://docs.docker
 
 - [What is Docker?](./docker.md)
 - [PHP-CLI Example](./php.cli.example.md)
-- [PHP-Apache Example](./php.apache.example.md)
+- [LAMP Example](./lamp.example.md)
 
 ## Docker Hub
 

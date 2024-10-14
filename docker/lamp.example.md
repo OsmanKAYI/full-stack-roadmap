@@ -1,4 +1,4 @@
-# PHP-Apache Example
+# LAMP Example
 
 ```bash
 cd
