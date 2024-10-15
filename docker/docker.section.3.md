@@ -1,4 +1,4 @@
-# Docker Chapter 3: How and Why to Use Docker Compose?
+# Docker Part 3: How and Why to Use Docker Compose?
 
 **TL;DR:** This chapter covers practical use cases of Docker Compose in development, testing, and production environments. It provides steps to create a basic Docker Compose setup for serving static web pages using Nginx, along with essential prerequisites and commands.
 
