@@ -25,6 +25,8 @@ The Docker documentation is available online at [docker.com](https://docs.docker
 - [LAMP Example](./lamp.example.md)
 - [LAMP with Docker](./lamp.with.docker.md)
   - [LAMP with Docker (.sh)](./lamp.with.docker.sh)
+- [nginx Example](./prepare.nginx.dockerfile.md)
+  - [nginx Example (.sh)](./prepare.nginx.dockerfile.sh)
 
 ## Docker Hub
 
