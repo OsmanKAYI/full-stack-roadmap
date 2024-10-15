@@ -19,6 +19,7 @@ The Docker documentation is available online at [docker.com](https://docs.docker
 - [Understanding the Basic Concepts of Docker](./understanding.docker.md)
 - [Docker 101 🐳 — Step-by-Step Guide for Beginners](./docker.101.md)
 - [Docker Part 1: What is Docker, How Does it Work, and Where is it Used?](./docker.section.1.md)
+- [Docker Part 2: How to Prepare a New Docker Image?](./docker.section.2.md)
 - [PHP-CLI Example](./php.cli.example.md)
 - [LAMP Example](./lamp.example.md)
 - [LAMP with Docker](./lamp.with.docker.md)
