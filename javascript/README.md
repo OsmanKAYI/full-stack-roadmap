@@ -53,6 +53,7 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - [Top 30 JavaScript Interview Questions and Answers for 2024](./30.js.interview.ques.md)
 - [The 5 Most Transformative JavaScript Features from ES8](./5.js.features.es8.md)
 - [9 Powerful Features of ES2024 That Will Change How JavaScript is Written](./9.features.of.es2024.md)
+- [New JavaScript Operator (?=) is an Absolute Game Changer](./no.more.try-catch.md)
 - [AJAX Method](./ajax.md)
 - [Vue Framework](./vue/README.md)
 - [Quasar Framework](./quasar/README.md)
