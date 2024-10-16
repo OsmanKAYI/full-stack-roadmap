@@ -51,6 +51,7 @@ For more detailed instructions and documentation, please visit the [Quasar docum
 
 - [Budget App Example from Danny Connell](./examples/budget.example.md)
 - [Quasar HTML Ref Example (.vue)](./examples/quasar.html.ref.example.vue)
+- [Creating Browser Extensions with Quasar and Vue 3](./examples/browser.extension.example.md)
 
 ## Useful Links
 
