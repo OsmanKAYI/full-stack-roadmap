@@ -115,6 +115,12 @@ sudo apt install gimp -y
 ## LYNX
 sudo apt install lynx -y
 
+## LYNX
+# download the latest version of LocalSend
+wget $(curl -s https://api.github.com/repos/localsend/localsend/releases/latest | grep "browser_download_url" | grep "deb" | grep "x86-64" | cut -d '"' -f 4)
+# install the program
+sudo apt install ./LocalSend-*.deb
+
 ## TUXEDO Control Center
 # add repositories in apt list (my case it is "jammy" but it may subject to change depending on your condition)
 echo -e "deb https://deb.tuxedocomputers.com/ubuntu jammy main" | sudo tee -a /etc/apt/sources.list.d/tuxedocomputers.list

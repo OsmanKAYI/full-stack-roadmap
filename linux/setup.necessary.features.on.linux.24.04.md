@@ -188,6 +188,17 @@ sudo apt install gimp -y
 sudo apt install lynx -y
 ```
 
+## Localsend
+
+- Localsend is a free, open-source, cross-platform application that allows you to share files to nearby devices.
+
+```bash
+# download the latest version of LocalSend
+wget $(curl -s https://api.github.com/repos/localsend/localsend/releases/latest | grep "browser_download_url" | grep "deb" | grep "x86-64" | cut -d '"' -f 4)
+# install the program
+sudo apt install ./LocalSend-*.deb
+```
+
 ## TUXEDO Control Center
 
 - The TUXEDO Control Center (short: TCC) gives TUXEDO laptop users full control over their hardware like CPU cores, fan speed and more. To get more information about the project visit [TUXEDO Control Center Project](https://github.com/tuxedocomputers/tuxedo-control-center) on GitHub.
