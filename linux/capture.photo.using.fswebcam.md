@@ -38,21 +38,21 @@ done
 
 1. **Adjust Directory and Permissions:**
 
-- Modify the `output_directory` to an existing directory of your choice.
-- Ensure the script is executable by running:
+   - Modify the `output_directory` to an existing directory of your choice.
+   - Ensure the script is executable by running:
 
-  ```bash
-  chmod +x script_name.sh
-  ```
+     ```bash
+     chmod +x script_name.sh
+     ```
 
 2. **Run the Script:**
 
-- Execute the script using:
+   - Execute the script using:
 
-  ```bash
-  ./script_name.sh
-  ```
+     ```bash
+     ./script_name.sh
+     ```
 
 3. **Stopping the Script:**
 
-- To stop the script, use the `Ctrl + C` key combination in the terminal.
+   - To stop the script, use the `Ctrl + C` key combination in the terminal.

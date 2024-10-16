@@ -40,7 +40,7 @@ python3 silence_cutter.py [your video] [outfile] [silence dB border]
 
 **IMPORTANT** You need to specify the directory of the `python-video-silence` project which includes `silence_cutter.py`. If you don't, it will tell you
 
-```
+```bash
 python3: can't open file '/silence_cutter.py': [Errno 2] No such file or directory
 ```
 

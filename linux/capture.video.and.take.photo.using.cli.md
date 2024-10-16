@@ -39,7 +39,7 @@ guvcview --video /dev/video0 --format=yuv420 --resolution=640x480 --capture=read
 
 - This command captures video using guvcview and saves it to the default location (~/.config/guvcview2).
 
-### Capturing Video with guvcview
+### Capturing Video with ffmpeg
 
 ```bash
 # Use ffmpeg to capture video from /dev/video0, encode with libx264, and save to ~/Pictures/output.mp4
