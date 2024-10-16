@@ -25,6 +25,7 @@ This documentation gives reference material and guides for learning the basics o
 - [What is GitHub Hosting](./github.hosting.md)
 - [Analyse Web Server Logs with GoAccess](./goaccess.log.analysis.md)
 - [Cockpit Server Admin Interface](./cockpit.md)
+- [Setting Up a Free Personal Website with an Admin Panel](./setup.website.with.admin.panel.md)
 - [Step-by-Step Guide to Adding HTTPS with Cloudflare](./https.using.cloudflare.md)
 - [Scale From Zero to Millions of Users](./scale.or.design.system.for.big.data.md)
 - [Create a Backdoor with Ncat](./netcat.backdoor.md)
