@@ -10,6 +10,7 @@ Here, you will find out some usefull informations which I cannot group them in a
 - [JSON Tools for Every Developer](./json.tools.md)
 - [How to Become a Backend Engineer](./how.to.become.backend.eng.md)
 - [All You Need to Know About 3D Secure](./what.is.3d.secure.md)
+- [Virtual POS Payment Models: 3D Secure, 3D Pay, 3D Host, Non Secure](./virtual.pos.payment.models.md)
 - [Free SaaS Alternatives](./free.sass.md)
 - [Important Links for Education](./onemli.linkler.md)
 - [Free Certification Courses from Google](./courses.from.google.md)
