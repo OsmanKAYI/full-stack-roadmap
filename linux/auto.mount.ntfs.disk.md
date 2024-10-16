@@ -26,14 +26,14 @@ To automatically mount an NTFS disk at startup on Ubuntu, you need to configure 
    Open the `/etc/fstab` file to add the new mount entry:
 
    ```bash
-   sudo nano /etc/fstab
+   sudo vi /etc/fstab
    ```
 
 4. **Add the Disk to `/etc/fstab`**  
     Add the following line to `/etc/fstab` to ensure your NTFS disk mounts at boot:
 
    ```bash
-   UUID=F272D12672D0F079 /media/$USER ntfs-3g defaults,nofail,x-systemd.automount 0 0
+   UUID=F272D12672D0F079 /dev/nvme0n1p6 ntfs-3g defaults,nofail,x-systemd.automount 0 0
    ```
 
    - `F272D12672D0F079`: UUID of the disk.
