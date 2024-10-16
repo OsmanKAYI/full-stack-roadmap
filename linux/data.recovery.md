@@ -6,7 +6,7 @@ Data recovery is the process of retrieving lost or deleted data from various sto
 
 It is important to note that data recovery is not always possible, especially if the data has been overwritten or the storage device is severely damaged. Therefore, it is always recommended to backup important data regularly to prevent data loss.
 
-**Ref:** https://askubuntu.com/questions/3883/how-to-recover-deleted-files
+**Ref:** [AskUbuntu - How to recover deleted files](https://askubuntu.com/questions/3883/how-to-recover-deleted-files)
 
 **What can I do to recover deleted files from my USB drive?**
 
@@ -24,11 +24,11 @@ It is possible to recover your files using this method. However, it should be no
 
 There are several different programs available to recover deleted files on Ubuntu. Some of these programs are listed below:
 
-- [TestDisk](#detailed-information-for-testdisk) -- [Project Website](https://www.cgsecurity.org/wiki/TestDisk)
-- [PhotoRec](#detailed-information-for-photorec) -- [Project Website](https://www.cgsecurity.org/wiki/PhotoRec)
-- [Scalpel](#detailed-information-for-scalpel) -- [Project Website](https://github.com/sleuthkit/scalpel)
-- [Foremost](#detailed-information-for-foremost) -- [Project Website](https://github.com/gerryamurphy/Foremost)
-- [extundelete](#detailed-information-for-extundelete) -- [Project Website](https://github.com/cherojeong/extundelete)
+- TestDisk -- [Project Website](https://www.cgsecurity.org/wiki/TestDisk)
+- PhotoRec -- [Project Website](https://www.cgsecurity.org/wiki/PhotoRec)
+- Scalpel -- [Project Website](https://github.com/sleuthkit/scalpel)
+- Foremost -- [Project Website](https://github.com/gerryamurphy/Foremost)
+- extundelete -- [Project Website](https://github.com/cherojeong/extundelete)
 
 Among these programs, TestDisk and PhotoRec are the most popular. Besides these, Ubuntu may have other file recovery tools that you can use. However, an important point to remember is that deleted files should not be overwritten. If overwritten, recovering deleted files may become much more difficult or unrecoverable.
 
@@ -62,9 +62,9 @@ sudo foremost -v -t png,mp4,pdf -i /dev/sda1  -o /path/to/output/diretory/direct
 
 **Refs:**
 
-- https://github.com/jonstewart/foremost
-- https://linuxconfig.org/how-to-recover-deleted-files-with-foremost-on-linux
-- https://www.section.io/engineering-education/recover-deleted-files-with-foremost/
+- [jonstewart - GitHub](https://github.com/jonstewart/foremost)
+- [Linux Config](https://linuxconfig.org/how-to-recover-deleted-files-with-foremost-on-linux)
+- [section.io - Engineering Education](https://www.section.io/engineering-education/recover-deleted-files-with-foremost/)
 
 ## Scalpel
 
@@ -86,11 +86,11 @@ cd /path/to/output/diretory/
 scalpel -c /etc/scalpel/scalpel.conf -o /path/to/output/diretory/ /path/to/location/of/img/file/$filename.img
 ```
 
-#### mp4 Video Recovery Settings for Scalpel (for ~9.5GB File)
+### mp4 Video Recovery Settings for Scalpel (for ~9.5GB File)
 
 **/etc/scalpel/scalpel.conf** file content:
 
-```
+```text
 mp4 y 9500000000 # MPEG-4 video files
 mp4 y 9500000000 \x00\x00\x00\x18\x66\x74\x79\x70\x69\x73\x6F\x6D # MPEG-4 video files
 asf y 9500000000 \x30\x26\xB2\x75\x8E\x66\xCF\x11\xA6\xD9\x00\xAA\x00\x62\xCE\x6C
@@ -105,4 +105,4 @@ m4v y 9500000000 ????ftypqt
 3gp y 9500000000 ????ftyp3gp
 ```
 
-**Ref:** https://www.linux-magazine.com/Online/Features/Recovering-Deleted-Files-with-Scalpel
+**Ref:** [linux-magazine](https://www.linux-magazine.com/Online/Features/Recovering-Deleted-Files-with-Scalpel)
