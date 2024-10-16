@@ -13,4 +13,4 @@ sudo fdisk -l
 sudo ntfsfix -b /dev/sd[X]
 ```
 
-**Ref:** https://askubuntu.com/a/1043399/372193
+**Ref:** [AskUbuntu](https://askubuntu.com/a/1043399/372193)
