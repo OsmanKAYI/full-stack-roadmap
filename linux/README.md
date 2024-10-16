@@ -32,6 +32,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Basic Commands and Command Line Shortcuts](./basic.commands.and.shortcuts.md)
 - [Terminal](./terminal.md)
 - [11 Best Linux Console File Managers](./useful.linux.console.managers.md)
+- [Fixing NTFS Mount Issues in Ubuntu 24.04](./ntfs.mount.problem.md)
 - [Auto-Mounting an NTFS Disk at Boot on Ubuntu](./auto.mount.ntfs.disk.md)
 - [`awk` Command [ or Language :) ] on Linux](./awk.command.md)
 - [`Find` Command on Linux](./find.command.md)
