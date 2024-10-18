@@ -25,6 +25,7 @@ Web security refers to protecting networks and computer systems from damage to o
 - [What is Web?](./what.is.web.md)
 - [How Internet Works](./how.internet.works.md)
 - [What is DNS?](./dns.md)
+- [Create Constant IPv4 Adress](./create.constant.ip.address.md)
 - [Recursive & Authoritative DNS](./recursive.and.authoritative.dns.md)
 - [What's a Webhook in Web Development?](./what.is.webhook.md)
 - [What is Intranet and Extranet?](./intranet.and.extranet.md)
