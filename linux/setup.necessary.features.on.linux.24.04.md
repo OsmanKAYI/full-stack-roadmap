@@ -163,6 +163,14 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 sudo chmod ugo+rwx /home/$USER/Pictures/*
 ```
 
+## CUPS-PDF (PDF Printer)
+
+- This software is designed to produce PDF files in a heterogeneous network by providing a PDF printer on the central fileserver. It is available under the GPL and is packaged for many different distributions or can be built directly out of the source files.
+
+```bash
+sudo apt install printer-driver-cups-pdf
+```
+
 ## Master PDF Editor
 
 - Master PDF Editor is the optimal solution for editing PDF files in Linux. It enables you to create, edit, view, encrypt, sign and print interactive PDF documents.
