@@ -70,6 +70,9 @@ My prefered extensions and special settings for them in VSCode.
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
   },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
 
   // Terminal
   "terminal.integrated.env.linux": {},
