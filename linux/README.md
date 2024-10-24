@@ -65,6 +65,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [PDF Compression](./compress.pdf.md)
 - [Appimage Files on Ubuntu](./how.to.use.appimage.files.md)
 - [Execute .run Files on Ubuntu](./execute..run.files.md)
+- [How to Install CapCut on Ubuntu 24.04](./install.capcut.md)
 - [Execute .exe Programs on Ubuntu](./run.windows.programs.on.ubuntu.md)
 - [Install Office Programs on Linux](./office.on.linux.md)
 - [Install Mendeley for Citation with flatpak](./mendeley.for.citation.md)
