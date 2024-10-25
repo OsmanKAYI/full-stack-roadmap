@@ -15,7 +15,7 @@ sudo apt install lutris
 
 **Ref:** [Lutris - GitHub](https://github.com/lutris/lutris/releases)
 
-## Install CapCut.exe via [CapCut Installer v0.1.2.6](https://lf16-capcut.faceulv.com/obj/capcutpc-packages-us/installer/capcut_capcutpc_0_1.2.6_installer.exe)
+## Install CapCut.exe via [CapCut Installer v0.1.2.6](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2RSQTZ5QjRiSTNBdFZsRjJUTFpEZ3lJb1BDZ3xBQ3Jtc0ttQTJFMU1fZWR0b2JNcXBrWHc4QzdtMkd3WDBBNmNwd2dZUWhCU0J6aXlzdm1HRXd2S04xS0hzMUNhUHIxSlJLR1ltRUlNNGlHcEdOaEdpcDVQSnFBTUJNMDBNZC1nQUFOREIyX0VtQVZVWFBsZFp4WQ&q=https%3A%2F%2Flf16-capcut.faceulv.com%2Fobj%2Fcapcutpc-packages-us%2Fpackages%2FCapCut_1_0_4_58_capcutpc_0.exe&v=p05u2trbo44)
 
 - All the steps are explained in this video [Linux Brother - YouTube](https://www.youtube.com/watch?v=gT78ArWu5Eo)
 
