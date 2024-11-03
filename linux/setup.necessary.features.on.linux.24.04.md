@@ -348,6 +348,17 @@ sudo dpkg -i ~/Downloads/wps-office_11.1.0.11723.XA_amd64.deb
 rm -f wps-office_*
 ```
 
+## Zotero
+
+- Zotero is a free, easy-to-use tool to help you collect, organize, annotate, cite, and share research.
+
+```bash
+sudo apt install wget -y
+wget https://raw.githubusercontent.com/retorquere/zotero-deb/master/install.sh -O - | sudo bash
+sudo apt update
+sudo apt install zotero -y
+```
+
 ## Notion
 
 - Notion is a freemium productivity and note-taking web application developed by Notion Labs Inc. It offers organizational tools including task management, project tracking, to-do lists, bookmarking, and more.

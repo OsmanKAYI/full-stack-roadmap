@@ -203,6 +203,13 @@ wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11723/wps
 sudo dpkg -i ~/Downloads/wps-office_11.1.0.11723.XA_amd64.deb
 rm -f wps-office_*
 
+
+## Zotero
+sudo apt install wget -y
+wget https://raw.githubusercontent.com/retorquere/zotero-deb/master/install.sh -O - | sudo bash
+sudo apt update
+sudo apt install zotero -y
+
 ## Git
 sudo apt-get install git -y
 git config --global user.email "GIT_EMAIL"
