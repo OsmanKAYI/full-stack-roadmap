@@ -107,6 +107,18 @@ sudo apt install axel bat boxes caffeine curl ffmpeg figlet gnome-tweaks gpustat
 - `wormhole send "fileName"` # to send file
 - `figlet Osman Kayi|lolcat` # to see piped and colored text of "Osman Kayi"
 
+## Ezan Vakti
+
+- **Ezan Vakti** is a pray time reminder application for Linux.
+
+```bash
+sudo add-apt-repository ppa:fbostanci/distroguide -y
+sudo apt update
+sudo apt install ezanvakti -y
+```
+
+- Visit official [GitHub Page](https://github.com/fbostanci/ezanvakti) for more information.
+
 ## Ulauncher
 
 - **Ulauncher** is an application launcher for Linux
@@ -973,12 +985,12 @@ sudo apt install sweethome3d -y
 ```bash
 ## create the directory (if it doesn’t exist):
 mkdir -p ~/.config/autostart
+## ezanvakti.desktop
+echo -e '[Desktop Entry]\nType=Application\nExec=ezanvakti\nHidden=false\nNoDisplay=false\nX-GNOME-Autostart-enabled=true\nName=Ezan Vakti' > ~/.config/autostart/ezanvakti.desktop
 ## guake.desktop
 echo -e '[Desktop Entry]\nName[tr]=Guake Uçbirim\nName=Guake Terminal\nComment=Use the command line in a Quake-like terminal\nTryExec=guake\nExec=guake\nIcon=guake\nType=Application\nCategories=GNOME;GTK;System;Utility;TerminalEmulator;\nStartupNotify=true\nX-Desktop-File-Install-Version=0.22\nX-GNOME-Autostart-enabled=true\nHidden=false\nNoDisplay=false' > ~/.config/autostart/guake.desktop
 ## caffeine.desktop
 echo -e '[Desktop Entry]\nIcon=caffeine\nName=Caffeine\nComment=Temporarily deactivate the screensaver and sleep mode\nExec=caffeine-indicator\nTerminal=false\nType=Application\nCategories=Utility;\nKeywords=Screensaver,Power,Saving,Blank\nStartupNotify=false' > ~/.config/autostart/caffeine.desktop
-## tuxedo-control-center-tray.desktop
-echo -e '[Desktop Entry]\nName=TUXEDO Control Center\nComment=Tray icon for TUXEDO Control Center\nExec=/usr/bin/tuxedo-control-center --tray\nHidden=false\nTerminal=false\nType=Application\nIcon=tuxedo-control-center\nCategories=System;TrayIcon' > ~/.config/autostart/tuxedo-control-center-tray.desktop
 ## ulauncher
 echo -e '[Desktop Entry]\nName=Ulauncher\nComment=Application launcher for Linux\nExec=env GDK_BACKEND=x11 /usr/bin/ulauncher --hide-window --hide-window\nIcon=ulauncher\nTerminal=false\nType=Application\nCategories=Utility;Application;' > ~/.config/autostart/ulauncher.desktop
 ```
@@ -988,7 +1000,7 @@ echo -e '[Desktop Entry]\nName=Ulauncher\nComment=Application launcher for Linux
 - These applications will be displayed on your system's dock.
 
 ```bash
-gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'org.gnome.SystemMonitor.desktop', 'virtualbox.desktop', 'thunderbird.desktop', 'firefox.desktop', 'chromium-browser.desktop', 'telegram.desktop', 'Postman.desktop', 'code.desktop', 'wps-office-prometheus.desktop', 'com.elsevier.MendeleyDesktop.desktop', 'org.fritzing.Fritzing.desktop']"
+gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'org.gnome.SystemMonitor.desktop', 'virtualbox.desktop', 'thunderbird.desktop', 'firefox.desktop', 'chromium-browser.desktop', 'telegram.desktop', 'Postman.desktop', 'code.desktop', 'wps-office-prometheus.desktop', 'org.fritzing.Fritzing.desktop']"
 ```
 
 ## Settings
