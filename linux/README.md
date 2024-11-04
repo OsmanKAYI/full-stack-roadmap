@@ -123,6 +123,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [A Guide to Installing Applications on Linux (Ebook)](https://opensource.com/sites/default/files/gated-content/osdc_installing_applications_on_linux.pdf)
 - [Grep Cheatsheet for Sysadmins](https://pbs.twimg.com/media/F4AiJA1XAAEGdKN?format=jpg&name=4096x4096)
 - [File Permissions Cheatsheet](https://pbs.twimg.com/media/F4jI5nxawAIgI00?format=jpg&name=medium)
+- [Linux Application Iceberg (Türkçe)](https://www.youtube.com/watch?v=d7wmG6u45LQ)
 - [LAMP Stack Built with Docker Compose](https://github.com/sprintcube/docker-compose-lamp)
   - A basic LAMP stack environment built using Docker Compose. It consists of the following:
     - PHP
