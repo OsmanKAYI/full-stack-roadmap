@@ -16,10 +16,10 @@ sudo apt remove brltty
 
 ## Documentation
 
-- [Arduino Basics](./arduino.basics.md)
-- [Sample Projects](./sample.projects.md)
-- [MPU6050 Example with Arduino](./mpu6050.with.arduino.md)
-- [What is Kalman Filter?](./kalman.filter.md)
+- [Arduino Basics](./en/arduino.basics.md)
+- [Sample Projects](./en/sample.projects.md)
+- [MPU6050 Example with Arduino](./en/mpu6050.with.arduino.md)
+- [What is Kalman Filter?](./en/kalman.filter.md)
 
 ## Useful Links
 
@@ -28,8 +28,8 @@ sudo apt remove brltty
 
 ## Dokümantasyon
 
-- [Arduino Temelleri](./arduino.temelleri.md)
-- [Örnek Projeler](./ornek.projeler.md)
+- [Arduino Temelleri](./tr/arduino.temelleri.md)
+- [Örnek Projeler](./tr/ornek.projeler.md)
 
 ## Faydalı Linkler
 
