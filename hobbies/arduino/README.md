@@ -19,6 +19,7 @@ sudo apt remove brltty
 - [Arduino Basics](./arduino.basics.md)
 - [Sample Projects](./sample.projects.md)
 - [MPU6050 Example with Arduino](./mpu6050.with.arduino.md)
+- [What is Kalman Filter?](./kalman.filter.md)
 
 ## Useful Links
 
