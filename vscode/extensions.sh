@@ -12,6 +12,10 @@ code --install-extension formulahendry.auto-rename-tag
 ## it helps you to navigate in your code, moving between important positions easily and quickly.
 code --install-extension alefragnani.bookmarks
 
+# C/C++
+## C/C++ extension adds language support for C/C++ to Visual Studio Code, including editing (IntelliSense) and debugging features.
+code --install-extension ms-vscode.cpptools
+
 # Chronicler
 ## chronicler is a cross-platform plugin for recording screens (windows) within VS Code. The application relies upon FFmpeg as the base for recording.
 code --install-extension arcsine.chronicler
