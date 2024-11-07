@@ -167,6 +167,10 @@ code --install-extension equinusocio.vsc-material-theme
 ## Preserves case when editing with multiple cursors.
 code --install-extension cardinal90.multi-cursor-case-preserve
 
+# Pandoc Citer
+## autocomplete bibtex citations for markdown/pandoc
+code --install-extension notzaki.pandocciter
+
 # Path Intellisense
 ## autocompletes filenames.
 code --install-extension christian-kohler.path-intellisense
