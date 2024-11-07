@@ -91,6 +91,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Repair Damaged Video Files](./repairing.damaged.videos.md)
 - [Site Mirroring Using `wget`](./site.mirroring.md)
 - [Translate Websites with GTranslate](./website.translation.md)
+- [Use Pandoc for Markdown to LaTeX Conversion](./pandoc.md)
 
 ## Linux Command Line Tutorials
 
