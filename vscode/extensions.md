@@ -122,6 +122,10 @@ code --install-extension aykutsarac.jsoncrack-vscode
 ## converts a JSON from clipboard to TypeScript interfaces. (Ctrl+Alt+V)
 code --install-extension gregorbiswanger.json2ts
 
+# LaTeX Workshop
+## LaTeX Workshop is an extension for Visual Studio Code, aiming to provide core features for LaTeX typesetting with Visual Studio Code.
+code --install-extension james-yu.latex-workshop
+
 # Linter
 ## extension for code linting, all in one package. New linters can be easily added through an extension framework.
 code --install-extension fnando.linter
