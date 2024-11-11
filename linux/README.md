@@ -76,6 +76,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Screen Capture & Record](./screen.capture.md)
 - [Capture Photos Using `fswebcam`](./capture.photo.using.fswebcam.md)
 - [Video Capture And Take Photo Using Cli](./capture.video.and.take.photo.using.cli.md)
+- [Extract, Filter, and Compile Video Frames with FFmpeg](./video.frames.with.ffmpeg.md)
 - [Cut Video Silence](./delete.video.silence.md)
 - [Trim White Spaces From an Image](./image.operations.md)
 - [Configure System Time & Timezone](./set.system.time.md)
