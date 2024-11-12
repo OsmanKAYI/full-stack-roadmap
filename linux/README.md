@@ -68,6 +68,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [How to Install CapCut on Ubuntu 24.04](./install.capcut.md)
 - [Execute .exe Programs on Ubuntu](./run.windows.programs.on.ubuntu.md)
 - [Install Office Programs on Linux](./office.on.linux.md)
+- [Use Pandoc for Markdown to LaTeX Conversion](./pandoc.md)
 - [Install Mendeley for Citation with flatpak](./mendeley.for.citation.md)
 - [Ubuntu Second Monitor Problem](./second.monitor.problem.md)
 - [How to Track Changes on a Directory](./track.changes.on.directory.md)
@@ -92,7 +93,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Repair Damaged Video Files](./repairing.damaged.videos.md)
 - [Site Mirroring Using `wget`](./site.mirroring.md)
 - [Translate Websites with GTranslate](./website.translation.md)
-- [Use Pandoc for Markdown to LaTeX Conversion](./pandoc.md)
+- [Automate iPhone Mounting and Photo Sync with `ifuse` and `rsync`](./iPhone.photo.sync.md)
 
 ## Linux Command Line Tutorials
 
