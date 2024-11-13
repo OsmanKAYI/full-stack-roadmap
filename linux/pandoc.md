@@ -35,17 +35,34 @@ To install Pandoc:
 sudo apt install pandoc
 ```
 
-### 1.3. Zotero Setup
+### 1.3. Pandoc-Crossref Installation
+
+Pandoc-Crossref is a plugin for Pandoc that allows you to automatically generate citations and references in your Markdown file.
+
+To install Pandoc-Crossref:
+
+- Go to [lierdakil - Pandoc-Crossref Releases](https://github.com/lierdakil/pandoc-crossref/releases/tag/v0.3.16.0a) web page. Downoload the version which is compatible with your Pandoc version.
+- Extract the downloaded `.zip` file.
+- Navigate to the extracted folder and run the following command:
+
+```bash
+# Copy the `pandoc-crossref` file to your `/usr/local/bin` directory
+sudo mv pandoc-crossref* /usr/local/bin/
+# Make the `pandoc-crossref` file executable
+sudo chmod +x /usr/local/bin/pandoc-crossref`
+```
+
+### 1.4. Zotero Setup
 
 Zotero is a free reference management tool that can store, organize, and format citations for your thesis. You will need the **Better BibTeX for Zotero** plugin for smooth integration with Pandoc.
 
-#### 1.3.1. Installing Better BibTeX for Zotero
+#### 1.4.1. Installing Better BibTeX for Zotero
 
 1. Go to [Better BibTeX for Zotero](https://github.com/retorquere/zotero-better-bibtex/releases) and download the latest release.
 2. In Zotero, navigate to **Tools** > **Plugins**, then click **gear icon** and **Install Plugin From File** and select the downloaded `.xpi` file.
 3. Restart Zotero to complete the installation.
 
-#### 1.3.2. Exporting a Collection from Zotero
+#### 1.4.2. Exporting a Collection from Zotero
 
 Once the Better BibTeX plugin is installed, you can export your Zotero collections to a `.bib` file.
 
@@ -55,19 +72,19 @@ Once the Better BibTeX plugin is installed, you can export your Zotero collectio
 
 **Note:** Remember to check the **keepUpdated** option to keep your references up-to-date. This will be done one-time for each work.
 
-### 1.4. VSCode Pandoc Plugin Installation
+### 1.5. VSCode Pandoc Plugin Installation
 
 To integrate Pandoc directly into your workflow in **VSCode**, use the **Pandoc Citer** extension. With the **Pandoc Citer** extension installed in VSCode, you can add references by searching your Zotero library directly within the editor.
 
 This allows you to easily manage citations and format them using the CSL style when writing your thesis in Markdown.
 
-#### 1.4.1. Installing Pandoc Citer in VSCode: Way 1
+#### 1.5.1. Installing Pandoc Citer in VSCode: Way 1
 
 1. Open **VSCode** and go to the **Extensions** tab.
 2. Search for **Pandoc Citer** and click **Install**.
 3. This extension will help you easily cite references stored in your `.bib` file while writing.
 
-#### 1.4.1. Installing Pandoc Citer in VSCode: Way 2
+#### 1.5.2. Installing Pandoc Citer in VSCode: Way 2
 
 Directly use the following command from terminal:
 
@@ -75,7 +92,7 @@ Directly use the following command from terminal:
 code --install-extension notzaki.pandocciter
 ```
 
-#### 1.4.1. Installing Pandoc Citer in VSCode: Way 3
+#### 1.5.3. Installing Pandoc Citer in VSCode: Way 3
 
 Press `CTRL+P` and paste the following code:
 
@@ -83,7 +100,16 @@ Press `CTRL+P` and paste the following code:
 ext install notzaki.pandocciter
 ```
 
-### 1.5. IEEE CSL Style
+### 1.6. Font Installation
+
+```bash
+# install microsoft fonts
+sudo apt install ttf-mscorefonts-installer
+# install nanum fonts for Korean
+sudo apt install fonts-nanum
+```
+
+### 1.7. IEEE CSL Style
 
 For IEEE style citations, you'll need the **ieee.csl** file, which defines how references are formatted in your thesis.
 
@@ -132,25 +158,37 @@ A `Makefile` is an efficient way to automate the conversion of Markdown to Word,
 
 ```makefile
 # File variables
-INPUT = example.md
-OUTPUT = result.docx
-TEMPLATE = template.docx
 BIBLIOGRAPHY = ref.bib
 CSL = ieee.csl
+TEMPLATE = template.docx
+INPUT = example.md
+OUTPUT_DOC = result.docx
+OUTPUT_PDF = result.pdf
 
 # Target: docx output
-all:
-pandoc -s $(INPUT) -o $(OUTPUT) -M link-citations=true --reference-doc=$(TEMPLATE) --bibliography=$(BIBLIOGRAPHY) --csl=$(CSL) --citeproc
+all: $(OUTPUT_DOC) $(OUTPUT_PDF)
+
+$(OUTPUT_DOC): $(INPUT)
+  pandoc --filter=pandoc-crossref --citeproc -M link-citations=true --bibliography=$(BIBLIOGRAPHY) --csl=$(CSL) --reference-doc=$(TEMPLATE) -s $(INPUT) -o $(OUTPUT_DOC)
+
+$(OUTPUT_PDF): $(INPUT)
+  pandoc --filter=pandoc-crossref --citeproc -M link-citations=true --bibliography=$(BIBLIOGRAPHY) --csl=$(CSL) --reference-doc=$(TEMPLATE) --number-sections -s $(INPUT) -o $(OUTPUT_PDF) --pdf-engine=lualatex -V mainfont="Times New Roman" -V CJKmainfont="Nanum Gothic"
 ```
 
 #### Explanation
 
-- `INPUT` specifies the Markdown file to be converted.
-- `OUTPUT` specifies the output file name.
-- `TEMPLATE` is the Word document template for reference formatting.
-- `BIBLIOGRAPHY` points to the `.bib` file containing the citations.
-- `CSL` is the **IEEE CSL file** for citation formatting.
-- `--citeproc` enables citation processing using the CSL file.
+- `--toc --toc-depth=6` is used for table of contents
+- `--filter=pandoc-crossref` specifies the cross-reference filter
+- `--citeproc` specifies the CSL style file to be used in the bibliography
+- `-M link-citations=true` is used for citation links to work in pdf output
+- `--bibliography=$(BIBLIOGRAPHY)` uses the value of `BIBLIOGRAPHY` variable as bibliography file
+- `--csl=$(CSL)` uses the value of `CSL` variable as CSL style file
+- `--reference-doc=$(TEMPLATE)` uses the value of `TEMPLATE` variable as reference file
+- `-s` specifies the input file
+- `-o` specifies the output file
+- `--pdf-engine=lualatex` specifies the pdf engine for lualatex
+- `-V mainfont="Times New Roman"` specifies the main font
+- `-V CJKmainfont="Nanum Gothic"` specifies the CJK main font
 
 ### 3.2. Running the Makefile
 
@@ -199,3 +237,5 @@ This will process your Markdown file, include citations, and format the output a
 
 - [The Pandoc Manual](https://pandoc.org/MANUAL.html)
 - [Zotero](https://www.zotero.org/styles)
+- [pandoc-crossref - GitHub](https://github.com/lierdakil/pandoc-crossref)
+- [pandoc-crossref - Manual](https://lierdakil.github.io/pandoc-crossref/)
