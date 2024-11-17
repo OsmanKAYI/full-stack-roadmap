@@ -267,7 +267,7 @@ Pin-Priority: -1
 sudo snap remove thunderbird
 ### install Thunderbird from repo
 sudo apt update
-sudo apt install thunderbird
+sudo apt install thunderbird -y
 ```
 
 ## Firefox
