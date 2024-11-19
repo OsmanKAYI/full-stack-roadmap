@@ -1043,10 +1043,13 @@ gsettings set org.gnome.desktop.interface cursor-size 24
 gsettings set org.gnome.desktop.interface cursor-blink true
 gsettings set org.gnome.desktop.interface cursor-blink-time 1200
 gsettings set org.gnome.desktop.interface cursor-blink-timeout 10
+gsettings set org.gnome.desktop.interface scaling-factor 0
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.0
+
 ### desktop icons
 gsettings set org.gnome.shell.extensions.ding icon-size 'standard'
 gsettings set org.gnome.shell.extensions.ding start-corner 'top-left'
+
 ### dock
 gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
@@ -1055,20 +1058,20 @@ gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
 gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
 gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button true
-# to minimize/extend all windows of a folder/program with one click
-gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
-# to switch between windows of a folder/program with mouse rolling
-gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
+
 ## sound
 ### system volume
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
+
 ## power
 ### power saving options
 gsettings set org.gnome.desktop.session idle-delay 900
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 900
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 1200
+
 ### suspend & power button
 gsettings set org.gnome.desktop.interface show-battery-percentage true
+
 ### additional
 gsettings set org.gnome.desktop.interface can-change-accels false
 gsettings set org.gnome.desktop.interface clock-format '24h'
@@ -1085,4 +1088,11 @@ gsettings set org.gnome.desktop.interface toolbar-detachable false
 gsettings set org.gnome.desktop.interface toolbar-icons-size 'large'
 gsettings set org.gnome.desktop.interface toolbar-style 'both-horiz'
 gsettings set org.gnome.desktop.interface toolkit-accessibility false
+
+## window manager
+### keybindings
+gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
+gsettings set org.gnome.desktop.wm.keybindings unmaximize "['<Super>Down']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-side-w "['<Super>Left']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-side-e "['<Super>Right']"
 ```

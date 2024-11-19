@@ -538,6 +538,13 @@ gsettings set org.gnome.desktop.interface toolbar-icons-size 'large'
 gsettings set org.gnome.desktop.interface toolbar-style 'both-horiz'
 gsettings set org.gnome.desktop.interface toolkit-accessibility false
 
+## window manager
+### keybindings
+gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
+gsettings set org.gnome.desktop.wm.keybindings unmaximize "['<Super>Down']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-side-w "['<Super>Left']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-side-e "['<Super>Right']"
+
 sudo apt autoremove -y
 
 echo -e -n "Remember to go '$USER.bashrc.sh' to setup your new machine"
