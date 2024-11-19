@@ -40,6 +40,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [The Key Features of `tmux`](./tmux.md)
 - [Tmux 101 Cheat Sheet](./tmux.cheatsheet.md)
 - [Highlight Cursor Position with Jiggle](./gnome.extensions.jiggle.md)
+- [Application Icons Missing in Ubuntu System Tray](./missing.app.icon.in.tray.md)
 - [Use Touchpad Like MacOS](./gnome.extensions.x11.md)
 - [Create New User & Delete the Old One](./create.new.user.md)
 - [How to Install a Desktop (GUI) on an Ubuntu Server](./install.desktop.gui.md)
