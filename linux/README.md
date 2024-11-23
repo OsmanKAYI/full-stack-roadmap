@@ -35,6 +35,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [System Graphical User Interface (GUI) Error and Solutions](./gui.error.md)
 - [Fixing NTFS Mount Issues in Ubuntu 24.04](./ntfs.mount.problem.md)
 - [Auto-Mounting an NTFS Disk at Boot on Ubuntu](./auto.mount.ntfs.disk.md)
+- [Resolving Mount Error: Unable to Access "yourHarddisk"](./mount.error.md)
 - [`awk` Command [ or Language :) ] on Linux](./awk.command.md)
 - [`Find` Command on Linux](./find.command.md)
 - [The Key Features of `tmux`](./tmux.md)
