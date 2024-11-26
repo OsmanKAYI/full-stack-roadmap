@@ -184,6 +184,14 @@ sudo apt-get install syncthing -y
 . /etc/os-release
 sudo apt install -t ${VERSION_CODENAME}-backports cockpit -y
 
+## Windsurf
+# Add the release PGP keys
+curl -fsSL "https://windsurf-stable.codeiumdata.com/wVxQEIWkwPUEAGf3/windsurf.gpg" | sudo gpg --dearmor -o /usr/share/keyrings/windsurf-stable-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/windsurf-stable-archive-keyring.gpg arch=amd64] https://windsurf-stable.codeiumdata.com/wVxQEIWkwPUEAGf3/apt stable main" | sudo tee /etc/apt/sources.list.d/windsurf.list > /dev/null
+# Update and install syncthing:
+sudo apt update
+sudo apt upgrade windsurf -y
+
 ## Visual Studio Code
 sudo rm /etc/apt/sources.list.d/vscode.list
 sudo rm /usr/share/keyrings/vscode.gpg
