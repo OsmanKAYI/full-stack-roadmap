@@ -11,6 +11,10 @@
   - [TaskMatrix](https://github.com/microsoft/visual-chatgpt): Connects ChatGPT and Visual Foundation Models for image exchange.
   - [Sider AI](https://sider.ai/): ChatGPT Sidebar with o1-preview & o1-mini.
 
+## Vercel
+
+- [v0 by Vercel](https://v0.dev/): Generative user interface system powered by natural language and AI. v0 is like having an expert programmer sitting next to you.
+
 ## AI Prompt
 
 - [MyBib](https://www.mybib.com/#/projects/Q3BwkW/citations): Free bibliography and citation generator.
