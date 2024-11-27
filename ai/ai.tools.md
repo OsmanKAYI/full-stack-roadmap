@@ -15,6 +15,10 @@
 
 - [v0 by Vercel](https://v0.dev/): Generative user interface system powered by natural language and AI. v0 is like having an expert programmer sitting next to you.
 
+## Perplexity
+
+- [Perplexity](https://www.perplexity.ai/): AI search engine designed to revolutionize the way you discover information. Ask any question, and it searches the internet to give you an accessible, conversational, and verifiable answer. Free users can enjoy up to 5 Pro Searches per day.
+
 ## AI Prompt
 
 - [MyBib](https://www.mybib.com/#/projects/Q3BwkW/citations): Free bibliography and citation generator.
