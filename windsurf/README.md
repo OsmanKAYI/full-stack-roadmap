@@ -38,3 +38,4 @@ Here are some useful commands and shortcuts in Windsurf:
 ## Documentation
 
 - [Usefull Windsurf Extensions](./extensions.md)
+  - [Usefull Windsurf Extensions(.sh)](./extensions.sh)
