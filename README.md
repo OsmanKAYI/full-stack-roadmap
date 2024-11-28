@@ -9,6 +9,7 @@ These notes are a collection of useful information, tips, and tricks related to 
 - [IP](./ip/)
 - [Markdown](./markdown/)
 - [Git](./git/)
+- [Windsurf](./windsurf/)
 - [Visual Studio Code](./vscode/)
 - [Database (DB)](./db/)
 - [DB Monitoring](./db.monitoring/)
