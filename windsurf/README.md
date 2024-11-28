@@ -39,3 +39,4 @@ Here are some useful commands and shortcuts in Windsurf:
 
 - [Usefull Windsurf Extensions](./extensions.md)
   - [Usefull Windsurf Extensions(.sh)](./extensions.sh)
+- [Settings](./settings.md)
