@@ -12,6 +12,10 @@ My prefered extensions and special settings for them in Windsurf.
   // VSCode session protection settings.
   "files.hotExit": "onExitAndWindowClose",
 
+  "editor.unicodeHighlight.allowedLocales": {
+    "tr": true // Allow Unicode highlight for Turkish locale.
+  },
+
   // Tab Size and Indentation
   "editor.tabSize": 2, // Number of spaces a tab is equal to.
   "editor.insertSpaces": true, // Detect indentation based on file contents.
@@ -83,93 +87,13 @@ My prefered extensions and special settings for them in Windsurf.
 
   // Git
   "git.openRepositoryInParentFolders": "always",
-  "git.suggestSmartCommit": true,
+  "git.suggestSmartCommit": false,
   "git.ignoreRebaseWarning": true,
 
-  ///////////////////////// Alignment /////////////////////////
-  ///////////////////////// Alignment /////////////////////////
-  ///////////////////////// Alignment /////////////////////////
-  "alignment.chars": {
-    ":": {
-      "spaceBefore": 0,
-      "spaceAfter": 0
-    },
-    "::": {
-      "spaceBefore": 0,
-      "spaceAfter": 0
-    },
-    "=": {
-      "spaceBefore": 1,
-      "spaceAfter": 1
-    },
-    "===": {
-      "spaceBefore": 1,
-      "spaceAfter": 1
-    },
-    "==": {
-      "spaceBefore": 1,
-      "spaceAfter": 1
-    },
-    "=>": {
-      "spaceBefore": 1,
-      "spaceAfter": 1
-    },
-    "+=": {
-      "spaceBefore": 1,
-      "spaceAfter": 1
-    },
-    "-=": {
-      "spaceBefore": 1,
-      "spaceAfter": 1
-    },
-    "*=": {
-      "spaceBefore": 1,
-      "spaceAfter": 1
-    },
-    "/=": {
-      "spaceBefore": 1,
-      "spaceAfter": 1
-    },
-    ",": {
-      "spaceBefore": 1,
-      "spaceAfter": 1
-    }
-  },
-
-  ///////////////////////// Code Runner /////////////////////////
-  ///////////////////////// Code Runner /////////////////////////
-  ///////////////////////// Code Runner /////////////////////////
-  "code-runner.executorMap": {
-    "javascript": "node",
-    "php": "C:\\php\\php.exe",
-    "python": "python",
-    "perl": "perl",
-    "ruby": "C:\\Ruby23-x64\\bin\\ruby.exe",
-    "go": "go run",
-    "html": "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"",
-    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
-  },
-
-  ///////////////////////// Chronicler /////////////////////////
-  ///////////////////////// Chronicler /////////////////////////
-  ///////////////////////// Chronicler /////////////////////////
-  "chronicler.ffmpeg-binary": "/usr/bin/ffmpeg",
-
-  ///////////////////////// Codeium /////////////////////////
-  ///////////////////////// Codeium /////////////////////////
-  ///////////////////////// Codeium /////////////////////////
-  "codeium.enableConfig": {
-    "*": true,
-    "markdown": true
-  },
-  "codeium.enableCodeLens": false,
-
   ///////////////////////// Community Material Theme /////////////////////////
   ///////////////////////// Community Material Theme /////////////////////////
   ///////////////////////// Community Material Theme /////////////////////////
-  "git.confirmSync": false, // Git sync confirmation settings.
-  "workbench.iconTheme": "material-icon-theme", // Material icon theme.
+  "git.confirmSync": false, // Material icon theme.
   "editor.lineHeight": 30, // Editor line height.
 
   ///////////////////////// Console Ninja /////////////////////////
@@ -182,42 +106,10 @@ My prefered extensions and special settings for them in Windsurf.
   ///////////////////////// Draw.io Integration /////////////////////////
   ///////////////////////// Draw.io Integration /////////////////////////
   // Associate `.svg` files with Draw.io extension (uncomment if needed)
-  //"workbench.editorAssociations": {
-  //  "*.svg": "hediet.vscode-drawio-text"
-  //},
-  //"hediet.vscode-drawio.resizeImages": null,
-
-  ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
-  ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
-  ///////////////////////// GitHub Pull Requests and Issues /////////////////////////
-  "githubPullRequests.createOnPublishBranch": "never",
-  "githubPullRequests.queries": [
-    {
-      "label": "Waiting For My Review",
-      "query": "is:open review-requested:${user}"
-    },
-    {
-      "label": "Assigned To Me",
-      "query": "is:open assignee:${user}"
-    },
-    {
-      "label": "Created By Me",
-      "query": "is:open author:${user}"
-    },
-    {
-      "label": "Mentioned Me",
-      "query": "is:open mentions:${user}"
-    }
-  ],
-
-  ///////////////////////// Incrementor /////////////////////////
-  ///////////////////////// Incrementor /////////////////////////
-  ///////////////////////// Incrementor /////////////////////////
-  "incrementor.enums.values": [
-    ["false", "true"],
-    ["let", "const"],
-    ["public", "private", "protected"]
-  ],
+  "workbench.editorAssociations": {
+    "*.svg": "hediet.vscode-drawio-text"
+  },
+  "hediet.vscode-drawio.resizeImages": null,
 
   ///////////////////////// indent-rainbow /////////////////////////
   ///////////////////////// indent-rainbow /////////////////////////
@@ -234,46 +126,12 @@ My prefered extensions and special settings for them in Windsurf.
   "indentRainbow.errorColor": "rgba(128,32,32,0.6)", // Color for indent errors.
   "indentRainbow.tabmixColor": "rgba(128,32,96,0.6)", // Color for mixed tabs and spaces.
 
-  ///////////////////////// Inline fold /////////////////////////
-  ///////////////////////// Inline fold /////////////////////////
-  ///////////////////////// Inline fold /////////////////////////
-  "inlineFold.regex": "(class|className)=[`'{\"](https://github.com/moalamri/vscode-inline-fold/blob/HEAD/[^`'\"}]{30,})[`'\"}]",
-  "inlineFold.regexFlags": "g",
-  "inlineFold.regexGroup": 2,
-  "inlineFold.unfoldedOpacity": 0.6,
-  "inlineFold.maskChar": "…",
-  "inlineFold.maskColor": "#000",
-  "inlineFold.supportedLanguages": ["javascriptreact", "typescriptreact"],
-  "inlineFold.unfoldOnLineSelect": true,
-  "inlineFold.autoFold": true,
-
   ///////////////////////// Jupyter Notebook /////////////////////////
   ///////////////////////// Jupyter Notebook /////////////////////////
   ///////////////////////// Jupyter Notebook /////////////////////////
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "right"
-  },
-
-  ///////////////////////// Live Server /////////////////////////
-  ///////////////////////// Live Server /////////////////////////
-  ///////////////////////// Live Server /////////////////////////
-  "liveServer.settings.donotShowInfoMsg": true,
-
-  ///////////////////////// Marp for VS Code /////////////////////////
-  ///////////////////////// Marp for VS Code /////////////////////////
-  ///////////////////////// Marp for VS Code /////////////////////////
-  "markdown.marp.themes": ["https://example.com/foo/bar/custom-theme.css", "./themes/your-theme.css"],
-
-  ///////////////////////// Material Icon Theme /////////////////////////
-  ///////////////////////// Material Icon Theme /////////////////////////
-  ///////////////////////// Material Icon Theme /////////////////////////
-  "material-icon-theme.folders.color": "#ef5350", // Color for folder icons.
-  "material-icon-theme.folders.theme": "specific", // Folder icon theme.
-  "material-icon-theme.opacity": 1, // Icon opacity.
-  "material-icon-theme.saturation": 1, // Icon saturation.
-  "editor.unicodeHighlight.allowedLocales": {
-    "tr": true // Allow Unicode highlight for Turkish locale.
   },
 
   ///////////////////////// PHP Debug /////////////////////////
@@ -382,7 +240,8 @@ My prefered extensions and special settings for them in Windsurf.
       "iconColour": "#ff0000"
     }
   },
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.unicodeHighlight.invisibleCharacters": false
 
   ///////////////////////// END /////////////////////////
   ///////////////////////// END /////////////////////////
