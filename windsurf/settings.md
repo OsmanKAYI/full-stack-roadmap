@@ -9,7 +9,7 @@ My prefered extensions and special settings for them in Windsurf.
 {
   "windsurf.autocompleteSpeed": "fast",
   "workbench.colorTheme": "Monokai",
-  // VSCode session protection settings.
+  // Windsurf session protection settings.
   "files.hotExit": "onExitAndWindowClose",
 
   "editor.unicodeHighlight.allowedLocales": {
