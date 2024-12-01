@@ -98,6 +98,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Site Mirroring Using `wget`](./site.mirroring.md)
 - [Translate Websites with GTranslate](./website.translation.md)
 - [Automate iPhone Mounting and Photo Sync with `ifuse` and `rsync`](./iPhone.photo.sync.md)
+- [Complete Guide to VirtualBox Installation and USB Configuration on Ubuntu](./windows.virtualbox.md)
 
 ## Linux Command Line Tutorials
 
