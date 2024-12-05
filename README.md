@@ -20,6 +20,7 @@ These notes are a collection of useful information, tips, and tricks related to 
 - [TypeScript](./typescript/)
 - [JavaScript](./javascript/)
 - [Node.js](./node.js/)
+- [Mapping](./mapping/)
 - [Jupyter Notebook](./jupyter.notebook/)
 - [Python](./python/)
 - [Data Analysis](./data.analysis/)
