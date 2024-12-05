@@ -24,6 +24,7 @@ These notes are a collection of useful information, tips, and tricks related to 
 - [Jupyter Notebook](./jupyter.notebook/)
 - [Python](./python/)
 - [Data Analysis](./data.analysis/)
+- [Machine Learning](./machine.learning/)
 - [Docker](./docker/)
 - [Embedded Systems](./embedded.systems/)
 - [Hosting](./hosting/)
