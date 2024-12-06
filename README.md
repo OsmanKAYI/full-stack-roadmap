@@ -63,6 +63,7 @@ These notes are a collection of useful information, tips, and tricks related to 
     - Search, explore and edit the best-fitting free icons or vectors for your projects using a wide variety vector library. Download free SVG vectors and icons for commercial use.
 
 - _[9 Open-Source Repos That Will Make Your SaaS Gold](https://dev.to/nathan_tarbert/9-open-source-repos-that-will-make-your-saas-gold-54h7)_
+- [Screen Resolutions Cheatsheet](https://quickref.me/resolutions)
 
 ## Contributing
 
