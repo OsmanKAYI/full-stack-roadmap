@@ -6,6 +6,7 @@ These notes are a collection of useful information, tips, and tricks related to 
 
 - [Linux (Ubuntu)](./linux/)
 - [Internet](./internet/)
+- [Search Engine Optimization (SEO)](./seo/)
 - [IP](./ip/)
 - [Markdown](./markdown/)
 - [Git](./git/)
@@ -36,6 +37,7 @@ These notes are a collection of useful information, tips, and tricks related to 
 - [Useful Tips](./useful.tips//)
 - [Hobbies](./hobbies//)
 - [Windows](./windows/)
+- [SEO](./seo/)
 
 ## Useful Links
 

@@ -30,8 +30,6 @@ Web security refers to protecting networks and computer systems from damage to o
 - [What's a Webhook in Web Development?](./what.is.webhook.md)
 - [What is Intranet and Extranet?](./intranet.and.extranet.md)
 - [Hard & Soft Links](./hard.and.soft.links.md)
-- [Monitoring Website Visitors with Google Analytics](./google.analytics.monitoring.md)
-- [Monitoring Website Visitors with Yandex Metrica](./yandex.metrica.monitoring.md)
 - [Organic Traffic and Its Background](./what.is.organic.traffic.md)
 - [Open Graph Protocol](./open.graph.protocol.md)
 - [What is Session?](./session.md)
