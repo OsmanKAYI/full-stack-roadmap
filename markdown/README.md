@@ -22,5 +22,6 @@ The official Markdown documentation is available at [daringfireball.net](https:/
 
 ## Useful Links
 
+- [Markdown Cheatsheet](https://quickref.me/markdown)
 - [kbd Generator](https://kbd.hsuan.xyz/)
   - kbd is a keyboard layout generator. It can generate a keyboard layout for any language.
