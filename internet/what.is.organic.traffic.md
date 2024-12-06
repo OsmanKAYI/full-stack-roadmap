@@ -10,9 +10,9 @@ Users of SERP Empire have reported significant improvements in site traffic afte
 
 - **Results After Using SERP Empire**
 
-![](https://miro.medium.com/v2/resize:fit:700/0*vasQRvyAbnH8MLTV)
+![SERP Empire](https://miro.medium.com/v2/resize:fit:700/0*vasQRvyAbnH8MLTV)
 
-![](https://miro.medium.com/v2/resize:fit:700/0*vr2J6q9N-62dEEMV)
+![SERP Empire](https://miro.medium.com/v2/resize:fit:700/0*vr2J6q9N-62dEEMV)
 
 These results are substantial. Being number one in Google’s organic search results averages a 31.7% CTR, with the top-ranked page being 10 times more likely to be clicked on than the tenth-ranked page.
 
@@ -24,7 +24,7 @@ SERP tools like SERP Empire support modern SEO strategies by emulating signals s
 
 Daily bot activity is generally normal, encompassing search engine crawlers, SEO tool crawlers, copywriting bots, and more. Understanding the nature of bot traffic is crucial in managing and leveraging it effectively for SEO purposes.
 
-![](https://miro.medium.com/v2/resize:fit:529/0*PgCQf8rBukL6MHHs)
+![Crawl Stats](https://miro.medium.com/v2/resize:fit:529/0*PgCQf8rBukL6MHHs)
 
 Example: page views of a website by Googlebot
 
