@@ -8,16 +8,16 @@ Here's an HTML example of Open Graph tag implementation:
 
 ```html
 <html prefix="og: http://ogp.me/ns#">
-<head>
-  <meta property="og:title" content="Your Page Title">
-  <meta property="og:description" content="Your Page Description">
-  <meta property="og:image" content="http://example.com/image.jpg">
-  <meta property="og:url" content="http://example.com/page">
-  <meta property="og:type" content="website">
-</head>
-<body>
-  <!-- Your webpage content goes here -->
-</body>
+  <head>
+    <meta property="og:title" content="Your Page Title" />
+    <meta property="og:description" content="Your Page Description" />
+    <meta property="og:image" content="http://example.com/image.jpg" />
+    <meta property="og:url" content="http://example.com/page" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <!-- Your webpage content goes here -->
+  </body>
 </html>
 ```
 
@@ -34,6 +34,4 @@ By integrating Open Graph tags, content creators enjoy several benefits:
 
 Implementing the Open Graph Protocol empowers content control, enhances engagement, reinforces branding, and potentially boosts website visibility in search results.
 
-**Refs:**
-
-- [The Open Graph Protocol](https://ogp.me/)
+**Refs:** [The Open Graph Protocol](https://ogp.me/)

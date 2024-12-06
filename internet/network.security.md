@@ -8,7 +8,7 @@ Wireshark, widely used by professional network administrators and security exper
 
 Wireshark is an open-source network protocol analysis software. It was developed as a continuation of a project called Ethereal, which was first released in 1998. Wireshark is available for various operating systems such as Windows, macOS, and Linux. This software can capture and analyze network traffic and examine packets across various protocols.
 
-## The Role of Wireshark in Network Security:
+## The Role of Wireshark in Network Security
 
 Wireshark plays an important role in network security. Here are some of its uses in network security:
 
