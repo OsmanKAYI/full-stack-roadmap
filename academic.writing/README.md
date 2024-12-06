@@ -1,4 +1,4 @@
-# Academic Writing with Pandoc and LaTeX
+# ACADEMIC WRITING WITH PANDOC AND LATEX
 
 This guide provides comprehensive information about using Pandoc and LaTeX for academic writing, including research papers, theses, and academic documentation.
 
