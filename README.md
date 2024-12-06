@@ -11,6 +11,7 @@ These notes are a collection of useful information, tips, and tricks related to 
 - [Git](./git/)
 - [Windsurf](./windsurf/)
 - [Visual Studio Code](./vscode/)
+- [Academic Writing with Pandoc and LaTeX](./academic.writing/)
 - [Database (DB)](./db/)
 - [DB Monitoring](./db.monitoring/)
 - [HTML](./html/)
