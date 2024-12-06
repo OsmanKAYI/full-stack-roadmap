@@ -128,14 +128,18 @@ Search Engine Optimization (SEO) is the practice of optimizing websites and web 
   - Moz
   - Screaming Frog
 
-### Documentation
-
-- [Google Analytics](./google.analytics.monitoring.md)
-- [Yandex Metrica](./yandex.metrica.monitoring.md)
-
 ## Learning Resources
 
 - [Google SEO Guide](https://developers.google.com/search/docs)
 - [Moz SEO Learning Center](https://moz.com/learn/seo)
 - [Ahrefs Academy](https://ahrefs.com/academy)
 - [SEMrush Academy](https://www.semrush.com/academy/)
+
+## Documentation
+
+- [Google Analytics](./google.analytics.monitoring.md)
+- [Yandex Metrica](./yandex.metrica.monitoring.md)
+
+## Useful Links
+
+- [What is Screaming Frog? (Türkçe)](https://mobitek.com/screaming-frog-nedir/#elementor-toc__heading-anchor-2)
