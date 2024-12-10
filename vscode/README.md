@@ -11,6 +11,19 @@ To get started with Visual Studio Code, you can follow these steps:
 - Create a new project or open an existing project folder.
 - Write your code, and use Visual Studio Code's powerful debugging and code navigation features to improve your workflow.
 
+## Installing Visual Studio Code
+
+To install Visual Studio Code on your Ubuntu system, you can follow these steps:
+
+```bash
+sudo rm /etc/apt/sources.list.d/vscode.list
+sudo rm /usr/share/keyrings/vscode.gpg
+sudo wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg > /dev/null
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
+sudo apt update
+sudo apt install code -y
+```
+
 ## Extensions
 
 Visual Studio Code has a large and active extension marketplace, which allows developers to extend the functionality of the editor. These extensions can be found in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/).
