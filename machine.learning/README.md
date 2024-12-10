@@ -48,6 +48,7 @@ Machine Learning (ML) is a subset of artificial intelligence that focuses on dev
 ## Documentation
 
 - [Machine Learning and Data Analysis Guide](./machine.learning.and.data.analysis.md)
+- [Machine Learning with PyTorch](./pytorch.md)
 
 ## Useful Links
 
