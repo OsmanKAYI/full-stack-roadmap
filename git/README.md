@@ -6,6 +6,18 @@ Git is a free and open-source distributed version control system designed to han
 
 Git repositories can be hosted on a variety of platforms, including GitHub, GitLab, and Bitbucket. These platforms provide additional functionality like issue tracking, pull requests, and continuous integration.
 
+## Installing Git
+
+To install Git on your Ubuntu system, you can use the following command:
+
+```bash
+sudo apt-get install git -y
+git config --global user.email "osmankayi06@gmail.com"
+git config --global user.name "OsmanKAYI"
+# to set the default branch name as "main"
+git config --global init.defaultBranch main
+```
+
 ## Documentation
 
 This documentation includes guides, tutorials, and reference material for learning Git and using it effectively.
