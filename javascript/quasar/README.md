@@ -59,3 +59,4 @@ For more detailed instructions and documentation, please visit the [Quasar docum
   - Quasar Framework is an open-source Vue JS framework for building apps, with a single codebase, and deploy it on to Mobile, Web, or Desktop. This app is using the Quasar Framework with the Vue 3 composition API to create a note-taking app. This app will allow users to create, update and delete notes using a rich text editor that comes preconfigured with quasar. I'll also show you how you can run the app on the web, desktop, and mobile app.
 - [Quasar Markdown v2](https://www.npmjs.com/package/quasar-ui-qmarkdown-v2) - This is a Quasar UI component for Markdown.
   - [Add Math to Markdown with markdown-it-mathjax3](https://github.com/tani/markdown-it-mathjax3) - This is a markdown-it-mathjax3 plugin to add Math to Markdown.
+  - [MathLive - Cortex.js](https://cortexjs.io/mathlive/) - This is a live editor for Math.
