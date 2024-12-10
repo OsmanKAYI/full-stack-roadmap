@@ -9,6 +9,21 @@ Node.js is an open-source, cross-platform JavaScript runtime environment that al
 - **Vast Ecosystem**: Node.js has a rich ecosystem of packages available through npm, allowing developers to easily extend the functionality of their applications.
 - **Community Support**: Node.js has a large and active community of developers who contribute to its development, provide support, and share knowledge.
 
+## Installaing Node.js with NVM
+
+NVM is a Node.js version manager. It allows you to install and switch between different versions of Node.js. To see what is the latest version, visit [nvm-sh on Github](https://github.com/nvm-sh/nvm/releases).
+
+```bash
+# install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+# start nvm
+source ~/.bashrc
+# list remote versions
+nvm ls-remote
+# install latest node version
+nvm install node  # "node" is an alias for the latest version
+```
+
 ## Documentation
 
 The official Node.js documentation provides comprehensive guides, APIs reference, and tutorials. You can access it [here](https://nodejs.org/en/docs/).
