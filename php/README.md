@@ -6,6 +6,27 @@ PHP is a popular server-side scripting language designed for web development. It
 
 PHP has a variety of frameworks available that can be used to build web applications more quickly and efficiently. Popular PHP frameworks include Laravel, Symfony, and CodeIgniter.
 
+## Installing PHP & Apache
+
+Apache is the most commonly used Web server on Linux systems. Web servers are used to serve Web pages requested by client computers.
+
+```bash
+sudo apt install apache2 apache2-utils -y
+sudo rm -f /var/www/html/index.html
+sudo systemctl enable apache2
+sudo service apache2 restart
+# Apache Configurations
+sudo adduser $USER www-data
+sudo chown -R $USER:www-data /var/www/html/
+```
+
+PHP is a general-purpose scripting language geared toward web development.
+
+```bash
+sudo apt install php -y
+sudo service apache2 restart
+```
+
 ## Documentation
 
 The PHP documentation is available online at [php.net](https://www.php.net/). This documentation includes guides, tutorials, and reference material for learning PHP and using it effectively.
