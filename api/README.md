@@ -10,6 +10,7 @@ This documentation provides a reference for the available endpoints, parameters,
 - [Create API](./creating.api.md)
 - [Telegram Message Bot](./telegram.message.bot.md)
 - [API Pagination Basics](./api.pagination.md)
+- [Importance of API Key Security](./env.usage.md)
 
 ## Useful Links
 
