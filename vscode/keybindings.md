@@ -6,7 +6,7 @@ My prefered keybindings in VSCode.
 ///////////////////////// KEYBINDINGS /////////////////////////
 ///////////////////////// KEYBINDINGS /////////////////////////
 ///////////////////////// KEYBINDINGS /////////////////////////
-// Place your key bindings in this file to override the defaults
+// Place your key bindings in this file to override the defaultsauto[]
 [
   {
     "key": "ctrl+j",
@@ -389,33 +389,29 @@ My prefered keybindings in VSCode.
   ///////////////////////// Bookmarks /////////////////////////
   ///////////////////////// Bookmarks /////////////////////////
   {
-    "key": "ctrl+f3",
-    "command": "bookmarks.toggle",
+    "key": "f2",
+    "command": "bookmarks.jumpToNext",
     "when": "editorTextFocus"
   },
   {
-    "command": "incrementor.incrementByOne",
-    "key": "ctrl+up"
+    "key": "ctrl+alt+l",
+    "command": "-bookmarks.jumpToNext",
+    "when": "editorTextFocus"
   },
   {
-    "command": "incrementor.decrementByOne",
-    "key": "ctrl+down"
+    "key": "shift+f2",
+    "command": "bookmarks.jumpToPrevious",
+    "when": "editorTextFocus"
   },
   {
-    "command": "incrementor.incrementByTenth",
-    "key": "ctrl+shift+alt+up"
+    "key": "ctrl+alt+j",
+    "command": "-bookmarks.jumpToPrevious",
+    "when": "editorTextFocus"
   },
   {
-    "command": "incrementor.decrementByTenth",
-    "key": "ctrl+shift+alt+down"
-  },
-  {
-    "command": "incrementor.incrementByTen",
-    "key": "ctrl+shift+up"
-  },
-  {
-    "command": "incrementor.decrementByTen",
-    "key": "ctrl+shift+down"
+    "key": "ctrl+f3",
+    "command": "bookmarks.toggle",
+    "when": "editorTextFocus"
   },
 
   ///////////////////////// DOM Selection /////////////////////////
@@ -521,26 +517,6 @@ My prefered keybindings in VSCode.
     "key": "shift+pageup",
     "command": "-workbench.action.terminal.scrollUpPage",
     "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
-  },
-  {
-    "key": "f2",
-    "command": "bookmarks.jumpToNext",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+alt+l",
-    "command": "-bookmarks.jumpToNext",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+f2",
-    "command": "bookmarks.jumpToPrevious",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+alt+j",
-    "command": "-bookmarks.jumpToPrevious",
-    "when": "editorTextFocus"
   }
 ]
 ```
