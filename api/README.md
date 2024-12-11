@@ -9,6 +9,7 @@ This documentation provides a reference for the available endpoints, parameters,
 - [Introduction to API](./api.md)
 - [Create API](./creating.api.md)
 - [Telegram Message Bot](./telegram.message.bot.md)
+- [Push Notifications Using PHP, MySQL, and Firebase Cloud Messaging](./push.notifications.php.mysql.js.md)
 - [API Pagination Basics](./api.pagination.md)
 - [Importance of API Key Security](./env.usage.md)
 
