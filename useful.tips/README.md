@@ -15,6 +15,7 @@ Here, you will find out some usefull informations which I cannot group them in a
 - [Important Links for Education](./onemli.linkler.md)
 - [Free Certification Courses from Google](./courses.from.google.md)
 - [10 Work-Life Hacks](./10.worklife.hacks.md)
+- [5 Tips for Effective Communication](./5.tips.for.effective.communication.md) - Efective communication tips
 - [Business Logic](./business.logic.md)
 - [Semantic Versioning](./semantic.versioning.md)
 - [Guide to Earning Money on X](./make.money.on.x.md)
