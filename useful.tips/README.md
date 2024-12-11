@@ -3,6 +3,7 @@
 Here, you will find out some usefull informations which I cannot group them in a specific topic. They are listed as below.
 
 - [A Comprehensive Guide to Types of Software Development](./types.of.software.development.md)
+- [How Stopping Coding Transformed Me into a Better Developer](./stop.coding.like.this.md)
 - [Understanding the 10 Key Roles in a Software Development Team](./10.key.roles.in.software.dev.team.md)
 - [10 Must-Have Skills to Become a Top 1% Web Developer](./10.must-have.skills.md)
 - [6 Underrated Developer Tools That Will Blow Your Mind](./useful.dev.tools.md)
