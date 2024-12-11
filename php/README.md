@@ -52,6 +52,7 @@ The PHP documentation is available online at [php.net](https://www.php.net/). Th
 - [PHP Session)](./php.session.md)
 - [Set Server Date Time Property](./set.server.datetime.property.md)
 - [Optimizing PHP for High Traffic Websites](./optimize.php.md)
+- [Understanding WebSockets in PHP](./websockets.in.php.md)
 
 ## Useful Links
 
