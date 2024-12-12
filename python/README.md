@@ -20,6 +20,7 @@ The official Python documentation is an excellent resource for learning the lang
 
 - [Object Oriented Programming (OOP)](./oop.md)
 - [Streamlit](./streamlit.io.md)
+- [5 Python Automation Projects](./5.pythom.automation.projects.md) - Python Automation Projects You Can Build This Weekend
 
 ## Package Management
 
