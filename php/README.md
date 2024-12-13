@@ -51,6 +51,7 @@ The PHP documentation is available online at [php.net](https://www.php.net/). Th
 - [PHP Cookie)](./php.cookie.md)
 - [PHP Session)](./php.session.md)
 - [Set Server Date Time Property](./set.server.datetime.property.md)
+- [8 PHP Performance Tips Every Developer Should Know](./8.php.performance.tips.md)
 - [Optimizing PHP for High Traffic Websites](./optimize.php.md)
 - [Understanding WebSockets in PHP](./websockets.in.php.md)
 
