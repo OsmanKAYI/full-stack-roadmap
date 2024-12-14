@@ -41,6 +41,8 @@ Machine Learning (ML) is a subset of artificial intelligence that focuses on dev
 
 - [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course)
 - [Stanford CS229: Machine Learning](https://cs229.stanford.edu/syllabus-fall2020.html)
+- [Dataquest Courses](https://app.dataquest.io/dashboard)
+- [Scikit-learn Courses](https://scikit-learn.org/stable/)
 - [Fast.ai](https://www.fast.ai/)
 - [TensorFlow Documentation](https://www.tensorflow.org/learn)
 - [PyTorch Tutorials](https://pytorch.org/tutorials/)
