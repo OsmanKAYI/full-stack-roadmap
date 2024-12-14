@@ -61,3 +61,4 @@ Machine Learning (ML) is a subset of artificial intelligence that focuses on dev
   - [OpenAI Gym](https://gym.openai.com/): Toolkit for developing reinforcement learning algorithms
 - [How I’d learn ML in 2024 (if I could start over) - Boris Meinardus](https://www.youtube.com/watch?v=gUmagAluXpk)
 - [Introduction To Machine Learning - Simplilearn](https://www.youtube.com/watch?v=ukzFI9rgwfU)
+- [Build Your First Machine Learning Project - Dataquest](https://www.youtube.com/watch?v=Hr06nSA-qww)
