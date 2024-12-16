@@ -85,6 +85,10 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 
 ![String Methods](https://pbs.twimg.com/media/F92zI0pXcAAV3IV?format=jpg&name=large)
 
+- **Mutable and Immutable Objects**
+
+![Immutable Objects](https://en.wikipedia.org/wiki/Immutable_object) - Objects that cannot be changed after creation
+
 - **Debug**
 
   - [Debug Code Like a Pro](https://www.youtube.com/watch?v=uUDRh7D5Z0c)
