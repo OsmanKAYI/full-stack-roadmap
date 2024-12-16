@@ -49,12 +49,14 @@ JavaScript has a rich ecosystem of frameworks and libraries that can streamline 
 - [10 Tricks You Don't Know](./10.tricks.md)
 - [21 Pro Tricks](./21.pro.tricks.md)
 - [10 Advanced JavaScript Tricks for Experienced Developers](./10.advanced.tricks.md)
-- [53 JavaScript Frontend Interview Questions](./53.js.interview.ques.md)
-- [Top 30 JavaScript Interview Questions and Answers for 2024](./30.js.interview.ques.md)
+- [JavaScript Debugging](./js.debugging.md)
+  - [Google Lighthouse Extension for Firefox](https://addons.mozilla.org/en-US/firefox/addon/google-lighthouse/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) - It's a browser extension that provides real-time performance insights and suggestions for optimizing your web pages.
 - [The 5 Most Transformative JavaScript Features from ES8](./5.js.features.es8.md)
 - [9 Powerful Features of ES2024 That Will Change How JavaScript is Written](./9.features.of.es2024.md)
 - [New JavaScript Operator (?=) is an Absolute Game Changer](./no.more.try-catch.md)
 - [AJAX Method](./ajax.md)
+- [Top 30 JavaScript Interview Questions and Answers for 2024](./30.js.interview.ques.md)
+- [53 JavaScript Frontend Interview Questions](./53.js.interview.ques.md)
 - [Vue Framework](./vue/README.md)
 - [Quasar Framework](./quasar/README.md)
 
