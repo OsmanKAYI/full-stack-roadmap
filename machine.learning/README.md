@@ -53,6 +53,13 @@ Machine Learning (ML) is a subset of artificial intelligence that focuses on dev
 - [Machine Learning and Data Analysis Guide](./machine.learning.and.data.analysis.md)
 - [Machine Learning with PyTorch](./pytorch.md)
 
+## Data Scientist in Python Lectures by [Dataquest](https://app.dataquest.io/dashboard)
+
+### Python Introduction
+
+- [Introduction to Python Programming for Data Science](./data.scientist.in.python/python.introduction/intro.to.python.for.data.science.md)
+- [Basic Operators and Data Structures in Python](./data.scientist.in.python/python.introduction/basic.operators.and.data.structures.md)
+
 ## Useful Links
 
 - [Kaggle](https://www.kaggle.com/): Platform for data science competitions and datasets
