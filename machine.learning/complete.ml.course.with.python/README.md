@@ -214,3 +214,5 @@ These are the links to the notebooks for Machine Learning section. These noteboo
 [Features Extraction with VGG16](https://www.google.com/url?q=https://colab.research.google.com/drive/10iPTQaaPwaNAemG9blhO12ItHB3ZJaxc&sa=D&source=editors&ust=1734537109507063&usg=AOvVaw1uwBD9IsH8fvRSkxgxyxKW)
 
 [Transfer Learning with ResNet50](https://www.google.com/url?q=https://colab.research.google.com/drive/1pHBNxFNZKN9IQCC89OV0VIiisRY4Kf6d&sa=D&source=editors&ust=1734537109507198&usg=AOvVaw3TBDUMefjq-BwP8xGAZgHX)
+
+**Ref:** [Machine Learning Course with Python - Udemy](https://turksat.udemy.com/course/machine-learning-course-with-python/)
