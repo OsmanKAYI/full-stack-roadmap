@@ -52,6 +52,7 @@ Machine Learning (ML) is a subset of artificial intelligence that focuses on dev
 - [An Ideal Roadmap for Beginners](./perfect.roadmap.for.ml.md)
 - [Machine Learning and Data Analysis Guide](./machine.learning.and.data.analysis.md)
 - [Machine Learning with PyTorch](./pytorch.md)
+- [The Complete Machine Learning Course with Python](./complete.ml.course.with.python/README.md)
 
 ## Data Scientist in Python Lectures by [Dataquest](https://app.dataquest.io/dashboard)
 
