@@ -921,6 +921,31 @@ flatpak update com.sweethome3d.Sweethome3d
 sudo apt install sweethome3d -y
 ```
 
+## Startup Applications
+
+- These applications will be started automatically on your system.
+
+```bash
+## create the directory (if it doesn’t exist):
+mkdir -p ~/.config/autostart
+## ezanvakti.desktop
+echo -e '[Desktop Entry]\nType=Application\nExec=ezanvakti\nHidden=false\nNoDisplay=false\nX-GNOME-Autostart-enabled=true\nName=Ezan Vakti' > ~/.config/autostart/ezanvakti.desktop
+## guake.desktop
+echo -e '[Desktop Entry]\nName[tr]=Guake Uçbirim\nName=Guake Terminal\nComment=Use the command line in a Quake-like terminal\nTryExec=guake\nExec=guake\nIcon=guake\nType=Application\nCategories=GNOME;GTK;System;Utility;TerminalEmulator;\nStartupNotify=true\nX-Desktop-File-Install-Version=0.22\nX-GNOME-Autostart-enabled=true\nHidden=false\nNoDisplay=false' > ~/.config/autostart/guake.desktop
+## caffeine.desktop
+echo -e '[Desktop Entry]\nIcon=caffeine\nName=Caffeine\nComment=Temporarily deactivate the screensaver and sleep mode\nExec=caffeine-indicator\nTerminal=false\nType=Application\nCategories=Utility;\nKeywords=Screensaver,Power,Saving,Blank\nStartupNotify=false' > ~/.config/autostart/caffeine.desktop
+## ulauncher
+echo -e '[Desktop Entry]\nName=Ulauncher\nComment=Application launcher for Linux\nExec=env GDK_BACKEND=x11 /usr/bin/ulauncher --hide-window --hide-window\nIcon=ulauncher\nTerminal=false\nType=Application\nCategories=Utility;Application;' > ~/.config/autostart/ulauncher.desktop
+```
+
+## Favorite Applications
+
+- These applications will be displayed on your system's dock.
+
+```bash
+gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'org.gnome.SystemMonitor.desktop', 'virtualbox.desktop', 'thunderbird.desktop', 'firefox_firefox.desktop', 'chromium-browser.desktop', 'telegram.desktop', 'Postman.desktop', 'code.desktop', 'wps-office-prometheus.desktop', 'zotero.desktop', 'org.fritzing.Fritzing.desktop']"
+```
+
 ## Settings
 
 ```bash
