@@ -335,6 +335,8 @@ sudo apt upgrade windsurf -y
 
 **Ref:** [Windsurf - Codeium](https://codeium.com/windsurf/download_linux)
 
+**NOTE:** Useful Windsurf extensions and related setting.json file can be found from [here](https://github.com/OsmanKAYI/full-stack-roadmap/blob/master/windsurf/extensions.md)
+
 ## Visual Studio Code
 
 - Visual Studio Code, also commonly referred to as VSCode, is a source-code editor made by Microsoft with the Electron Framework, for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.
@@ -350,7 +352,7 @@ sudo apt install code -y
 
 **Ref:** [linuxhint](https://linuxhint.com/install-visual-studio-code-ubuntu22-04/)
 
-**NOTE:** Other useful VSCode extensions and related setting.json file can be found from [here](https://github.com/OsmanKAYI/full-stack-roadmap/blob/master/vscode/extensions.md)
+**NOTE:** Useful VSCode extensions and related setting.json file can be found from [here](https://github.com/OsmanKAYI/full-stack-roadmap/blob/master/vscode/extensions.md)
 
 ## WPS Office
 

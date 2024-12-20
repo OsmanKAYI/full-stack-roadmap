@@ -297,6 +297,25 @@ sudo apt install -t ${VERSION_CODENAME}-backports cockpit -y
 
 After that, type `localhost:9090` on your browser and login with your system's username and password.
 
+## Windsurf
+
+- Windsurf is an open-source application that enables you to transfer your files directly between two (or more) devices.
+
+```bash
+# Add the release PGP keys
+curl -fsSL "https://windsurf-stable.codeiumdata.com/wVxQEIWkwPUEAGf3/windsurf.gpg" | sudo gpg --dearmor -o /usr/share/keyrings/windsurf-stable-archive-keyring.gpg
+# Add the "stable" channel to your APT sources
+echo "deb [signed-by=/usr/share/keyrings/windsurf-stable-archive-keyring.gpg arch=amd64] https://windsurf-stable.codeiumdata.com/wVxQEIWkwPUEAGf3/apt stable main" | sudo tee /etc/apt/sources.list.d/windsurf.list > /dev/null
+# Update the system
+sudo apt update
+# Install Windsurf
+sudo apt upgrade windsurf -y
+```
+
+**Ref:** [Windsurf - Codeium](https://codeium.com/windsurf/download_linux)
+
+**NOTE:** Useful Windsurf extensions and related setting.json file can be found from [here](https://github.com/OsmanKAYI/full-stack-roadmap/blob/master/windsurf/extensions.md)
+
 ## Visual Studio Code
 
 - Visual Studio Code, also commonly referred to as VSCode, is a source-code editor made by Microsoft with the Electron Framework, for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.

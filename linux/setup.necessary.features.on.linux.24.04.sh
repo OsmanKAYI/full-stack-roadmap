@@ -193,6 +193,9 @@ echo "deb [signed-by=/usr/share/keyrings/windsurf-stable-archive-keyring.gpg arc
 sudo apt update
 # Install Windsurf
 sudo apt upgrade windsurf -y
+# install extesions
+wget https://raw.githubusercontent.com/OsmanKAYI/full-stack-roadmap/main/vscode/extensions.sh -O - | sh
+rm -f extensions.sh
 
 ## Visual Studio Code
 sudo rm /etc/apt/sources.list.d/vscode.list
