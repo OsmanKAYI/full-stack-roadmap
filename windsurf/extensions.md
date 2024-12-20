@@ -17,13 +17,13 @@ windsurf --install-extension alefragnani.bookmarks
 ### Console Ninja Windsurf Extension - Coding in Public
 ### https://www.youtube.com/watch?v=OC-_fcJyz_c
 
-# Draw.io Integration
-## unofficial extension integrates Draw.io into Windsurf.
-windsurf --install-extension hediet.vscode-drawio
-
 # DotENV
 ## enables support for dotenv file syntax
 windsurf --install-extension mikestead.dotenv
+
+# Draw.io Integration
+## unofficial extension integrates Draw.io into Windsurf.
+windsurf --install-extension hediet.vscode-drawio
 
 # Edit csv
 ## this extensions allows you to edit csv files with an excel like table ui
@@ -69,9 +69,9 @@ windsurf --install-extension ms-vscode.vscode-typescript-next
 ## converts a JSON from clipboard to TypeScript interfaces. (Ctrl+Alt+V)
 #NOT WORKING FOR WINDSURF# windsurf --install-extension gregorbiswanger.json2ts
 
-# Live Server
+# Live Server (Five Server)
 ## automatically reloads webpage when you save the code.
-windsurf --install-extension ritwickdey.liveserver
+windsurf --install-extension yandeu.five-server
 
 # Markdown All in One
 ## all you need to write Markdown (keyboard shortcuts, table of contents, auto preview and more)

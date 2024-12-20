@@ -8,19 +8,23 @@ code --install-extension alefragnani.bookmarks
 ## C/C++ extension adds language support for C/C++ to Visual Studio Code, including editing (IntelliSense) and debugging features.
 code --install-extension ms-vscode.cpptools
 
+# Codeium
+## codeium is an ai coding autocomplete and chat for Python, Javascript, Typescript, Java, Go, and more.
+code --install-extension codeium.codeium
+
 # Console Ninja
 ## console Ninja is a VS Code extension that displays console.log output and runtime errors directly in your editor from your running browser or node application.
 code --install-extension wallabyjs.console-ninja
 ### Console Ninja VSCode Extension - Coding in Public
 ### https://www.youtube.com/watch?v=OC-_fcJyz_c
 
-# Draw.io Integration
-## unofficial extension integrates Draw.io into VS Code.
-code --install-extension hediet.vscode-drawio
-
 # DotENV
 ## enables support for dotenv file syntax
 code --install-extension mikestead.dotenv
+
+# Draw.io Integration
+## unofficial extension integrates Draw.io into VS Code.
+code --install-extension hediet.vscode-drawio
 
 # Edit csv
 ## this extensions allows you to edit csv files with an excel like table ui
@@ -66,9 +70,9 @@ code --install-extension ms-vscode.vscode-typescript-next
 ## converts a JSON from clipboard to TypeScript interfaces. (Ctrl+Alt+V)
 code --install-extension gregorbiswanger.json2ts
 
-# Live Server
+# Live Server (Five Server)
 ## automatically reloads webpage when you save the code.
-code --install-extension ritwickdey.liveserver
+code --install-extension yandeu.five-server
 
 # Markdown All in One
 ## all you need to write Markdown (keyboard shortcuts, table of contents, auto preview and more)
