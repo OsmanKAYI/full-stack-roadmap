@@ -54,6 +54,14 @@ code --install-extension pomber.git-file-history
 ## views a Git Graph of your repository, and easily perform Git actions from the graph. Configurable to look the way you want!
 code --install-extension mhutchie.git-graph
 
+# GitHub Copilot
+## is an AI pair programmer tool that helps you write code faster and smarter.
+code --install-extension github.copilot
+
+# GitHub Copilot Chat
+## is an AI pair programmer tool that helps you write code faster and smarter.
+code --install-extension github.copilot-chat
+
 # Image preview
 ## shows image preview in the gutter and on hover.
 code --install-extension kisstkondoros.vscode-gutter-preview
