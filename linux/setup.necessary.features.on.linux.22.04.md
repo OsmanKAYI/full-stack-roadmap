@@ -446,6 +446,19 @@ xdebug.start_with_request=yes
 sudo systemctl restart apache2
 ```
 
+**NOTE:** When you run the `php -v` command, it will show you the version of PHP you are using. Check the line which starts with `with Xdebug v...`. If you see this line, it means Xdebug is installed and working properly.
+
+```bash
+# sample code block
+php -v
+PHP 8.3.15 (cli) (built: Dec 24 2024 06:10:28) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.3.15, Copyright (c) Zend Technologies
+    with Zend OPcache v8.3.15, Copyright (c), by Zend Technologies
+    with Xdebug v3.4.0, Copyright (c) 2002-2024, by Derick Rethans
+# last line includes Xdebug so working properly
+```
+
 ### How To Use Xdebug with VSCode
 
 - You can follow the steps described in [Xdebug Configuration for VSCode](https://github.com/OsmanKAYI/osmankayi.com/blob/main/php/xdebug.md)
