@@ -477,6 +477,10 @@ php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
 ```
 
+- To be able to run the composer, you need to run `source ~/.bashrc`.
+
+**NOTE:** To update composer, run `composer self-update`.
+
 ### How To Watch Errors Real-time
 
 ```bash
