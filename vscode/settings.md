@@ -51,6 +51,9 @@ My prefered extensions and special settings for them in VSCode.
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "markdownlint.config": {
+    "MD024": false
+  },
   "html.format.wrapAttributes": "force-expand-multiline", // HTML formatter settings.
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
