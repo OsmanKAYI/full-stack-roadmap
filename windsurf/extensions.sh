@@ -74,6 +74,10 @@ windsurf --install-extension yandeu.five-server
 ## all you need to write Markdown (keyboard shortcuts, table of contents, auto preview and more)
 windsurf --install-extension yzhang.markdown-all-in-one
 
+# Markdown PDF
+## this extension allows you to preview your markdown files as pdf.
+windsurf --install-extension yzane.markdown-pdf
+
 # Markdown Preview Mermaid Support
 ## adds Mermaid diagram and flowchart support to Windsurf's builtin markdown preview
 windsurf --install-extension bierner.markdown-mermaid
