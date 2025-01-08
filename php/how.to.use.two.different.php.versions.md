@@ -12,14 +12,14 @@ sudo apt upgrade
 
 ## Setup and Use Two Different PHP Versions
 
-- In this case, versions 7.4 and 8.1 are installed and version 7.4 is setup as current version. It could be reversed.
+- In this case, versions 7.4 and 8.3 are installed and version 7.4 is setup as current version. It could be reversed.
 
 ```bash
 sudo apt install php7.4-fpm php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl php7.4-xmlrpc php7.4-sqlite3 php7.4-gd php7.4-mysql php7.4-mbstring php7.4-xml libapache2-mod-php7.4 -y
 
-sudo apt install php8.1-fpm php8.1-intl php8.1-imagick php8.1-dev php8.1-zip php8.1-curl php8.1-xmlrpc php8.1-sqlite3 php8.1-gd php8.1-mysql php8.1-mbstring php8.1-xml libapache2-mod-php8.1 -y
+sudo apt install php8.3-fpm php8.3-intl php8.3-imagick php8.3-dev php8.3-zip php8.3-curl php8.3-xmlrpc php8.3-sqlite3 php8.3-gd php8.3-mysql php8.3-mbstring php8.3-xml libapache2-mod-php8.3 -y
 
-sudo a2dismod php8.1
+sudo a2dismod php8.3
 
 sudo a2enmod php7.4
 
@@ -56,4 +56,18 @@ php -v # will give you the selected php version
 ```bash
 sudo update-alternatives --set php /usr/bin/php7.4
 php -v # will give you the version 7.4
+```
+
+## Summary
+
+- To activate PHP 7.4,
+
+```bash
+sudo a2dismod php8.3;sudo a2dismod php7.4;sudo service apache2 restart;sudo a2enmod php7.4;sudo service apache2 restart;sudo update-alternatives --set php /usr/bin/php7.4;sudo service apache2 restart
+```
+
+- To activate PHP 8.3,
+
+```bash
+sudo a2dismod php8.3;sudo a2dismod php7.4;sudo service apache2 restart;sudo a2enmod php8.3;sudo service apache2 restart;sudo update-alternatives --set php /usr/bin/php8.3;sudo service apache2 restart
 ```
