@@ -62,6 +62,18 @@ windsurf --install-extension oderwat.indent-rainbow
 ## Enables typescript@next to power Windsurf's built-in JavaScript and TypeScript support
 windsurf --install-extension ms-vscode.vscode-typescript-next
 
+# Laravel Blade formatter
+## Laravel Blade formatter for VSCode
+windsurf --install-extension shufo.vscode-blade-formatter
+
+# Laravel Blade Snippets
+## Laravel blade snippets and syntax highlight support
+windsurf --install-extension onecentlin.laravel-blade
+
+# Laravel Extra Intellisense
+## better intellisense for laravel projects
+windsurf --install-extension amiralizadeh9480.laravel-extra-intellisense
+
 # json2ts
 ## converts a JSON from clipboard to TypeScript interfaces. (Ctrl+Alt+V)
 #NOT WORKING FOR WINDSURF# windsurf --install-extension gregorbiswanger.json2ts

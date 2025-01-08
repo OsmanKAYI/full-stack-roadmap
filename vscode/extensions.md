@@ -77,6 +77,18 @@ code --install-extension oderwat.indent-rainbow
 ## Enables typescript@next to power VS Code's built-in JavaScript and TypeScript support
 code --install-extension ms-vscode.vscode-typescript-next
 
+# Laravel Blade formatter
+## Laravel Blade formatter for VSCode
+code --install-extension shufo.vscode-blade-formatter
+
+# Laravel Blade Snippets
+## Laravel blade snippets and syntax highlight support
+code --install-extension onecentlin.laravel-blade
+
+# Laravel Extra Intellisense
+## better intellisense for laravel projects
+code --install-extension amiralizadeh9480.laravel-extra-intellisense
+
 # json2ts
 ## converts a JSON from clipboard to TypeScript interfaces. (Ctrl+Alt+V)
 code --install-extension gregorbiswanger.json2ts
