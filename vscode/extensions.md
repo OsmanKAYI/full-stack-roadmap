@@ -91,7 +91,7 @@ code --install-extension yzhang.markdown-all-in-one
 
 # Markdown PDF
 ## this extension allows you to preview your markdown files as pdf.
-windsurf --install-extension yzane.markdown-pdf
+code --install-extension yzane.markdown-pdf
 
 # Markdown Preview Mermaid Support
 ## adds Mermaid diagram and flowchart support to VS Code's builtin markdown preview
