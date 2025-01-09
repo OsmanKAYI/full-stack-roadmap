@@ -49,3 +49,91 @@ Http status codes are used to indicate the success or failure of a HTTP request.
       ];
   }
 ```
+
+Laravel provides a helper class to use the above codes.
+
+```php
+use Illuminate\Http\Response;
+
+// You can use it like this
+Response::HTTP_OK  // 200
+Response::HTTP_CREATED // 201
+Response::HTTP_BAD_REQUEST // 400
+Response::HTTP_UNAUTHORIZED // 401
+Response::HTTP_NOT_FOUND // 404
+Response::HTTP_INTERNAL_SERVER_ERROR // 500
+
+return response()->json([
+    'status' => 'success',
+    'message' => 'Test Api route'
+], Response::HTTP_OK);
+```
+
+For CRUD requests, you can use the helper class `Response::HTTP_STATUS_CODES` to get the success and error codes for each operation.
+
+```php
+use Illuminate\Http\Response;
+
+// For example, you can use it like this for all CRUD operations
+public function index()
+{
+    return response()->json([
+        'status' => 'success',
+        'message' => 'Test Api route'
+    ], Response::HTTP_OK);
+}
+
+public function store(Request $request)
+{
+    if ($request->isMethod('post')) {
+        // Validate and store the blog post...
+        return response()->json([
+            'status' => 'error',
+            'message' => 'Failed to create blog post'
+        ], Response::HTTP_UNPROCESSABLE_ENTITY);
+    }
+
+    return response()->json([
+        'status' => 'success',
+        'message' => 'Blog post created successfully'
+    ], Response::HTTP_CREATED);
+}
+
+public function show($id)
+{
+    // Retrieve the blog post...
+
+    return response()->json([
+        'status' => 'success',
+        'message' => 'Blog post retrieved successfully'
+    ], Response::HTTP_OK);
+}
+
+public function update(Request $request, $id)
+{
+    if ($request->isMethod('put')) {
+        // Validate and update the blog post...
+        return response()->json([
+            'status' => 'error',
+            'message' => 'Failed to update blog post'
+        ], Response::HTTP_UNPROCESSABLE_ENTITY);
+    }
+
+    return response()->json([
+        'status' => 'success',
+        'message' => 'Blog post updated successfully'
+    ], Response::HTTP_OK);
+}
+
+public function destroy($id)
+{
+    // Retrieve the blog post...
+
+    // Delete the blog post...
+
+    return response()->json([
+        'status' => 'success',
+        'message' => 'Blog post deleted successfully'
+    ], Response::HTTP_NO_CONTENT);
+}
+```
