@@ -301,4 +301,12 @@ done
   - Shows the distribution information.
 
 - `sudo ln -s originalDirectory shortcutDirectory`
+
   - Creates a symbolic link.
+
+- `lsof -i :8000-8010`
+
+  - Lists the things that are using port 8000-8010.
+
+- `for port in {8000..8010}; do kill -9 $port; done`
+  - Kills the things that are using ports being between 8000-8010.
