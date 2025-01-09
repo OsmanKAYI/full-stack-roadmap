@@ -2,6 +2,16 @@
 
 This comprehensive guide walks through creating a RESTful API using Laravel 11, from initial setup to testing.
 
+## TLDR
+
+All you need to know to build a REST API using Laravel 11.
+
+- Create a new Laravel project.
+- Create a Product model and migration.
+- Create an API controller.
+- Implement API endpoints (routes & providers).
+- Test the API with Postman.
+
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
@@ -478,13 +488,14 @@ Content-Type: application/json
 ## Next Steps
 
 1. Adding relationships between models
-2. Implement JWT authentication
-3. Add authentication (Laravel Sanctum)
-4. Google Authentication
-5. Implement caching
-6. Add API documentation (e.g., Swagger)
-7. Add more complex validation
-8. Implement API versioning
+2. Implement caching
+3. Implement JWT authentication
+4. Add authentication ([Laravel Sanctum](https://laravel.com/docs/11.x/sanctum))
+5. Social Authentication with [Laravel Socialite](https://laravel.com/docs/11.x/socialite)
+6. WebSocket with [Laravel Echo](https://laravel.com/docs/11.x/broadcasting)
+7. Add API documentation (e.g., Swagger)
+8. Add more complex validation
+9. Implement API versioning
 
 ## Additional Resources
 
