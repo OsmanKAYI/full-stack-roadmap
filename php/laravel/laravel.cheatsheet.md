@@ -11,6 +11,8 @@
 7. [Model and Resource Generation](#model-and-resource-generation)
 8. [Mail Configuration](#mail-configuration)
 9. [Event Handling](#event-handling)
+10. [Best Practices](#best-practices)
+11. [Common Issues and Solutions](#common-issues-and-solutions)
 
 ## Initial Setup
 
@@ -117,6 +119,13 @@ Laravel automatically creates:
 - jobs_table
 
 ## Component Generation
+
+### Provider Generation
+
+```bash
+# Generate a new service provider
+php artisan make:provider RouteServiceProvider
+```
 
 ### View Components
 
@@ -236,6 +245,19 @@ php artisan make:controller ResetPasswordController
 5. Use artisan commands for generating boilerplate code
 6. Implement proper localization from the start
 7. Always secure your routes and controllers with proper middleware
+
+### Cache Management
+
+```bash
+# Clear route cache
+php artisan route:clear
+
+# Clear application cache
+php artisan cache:clear
+
+# Clear config cache
+php artisan config:clear
+```
 
 ## Common Issues and Solutions
 

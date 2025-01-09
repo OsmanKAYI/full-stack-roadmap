@@ -39,7 +39,7 @@ Laravel is a free, open-source PHP web framework designed for building web appli
 
 ## Documentation
 
-- [Laravel Cheatsheet](./laravel.cheatsheet.md)
+- [Comprehensive Laravel Development Guide](./laravel.cheatsheet.md)
 
 ## Resources
 
