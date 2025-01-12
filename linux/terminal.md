@@ -309,4 +309,8 @@ done
   - Lists the things that are using port 8000-8010.
 
 - `for port in {8000..8010}; do kill -9 $port; done`
+
   - Kills the things that are using ports being between 8000-8010.
+
+- `find . -name "*.pdf" -exec pdfinfo {} \; | awk '/Pages:/ {total += $2} END {print "Toplam sayfa sayısı:", total}'`
+  - Shows the total number of pages in the pdf files in the current directory.
