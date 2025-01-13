@@ -312,5 +312,10 @@ done
 
   - Kills the things that are using ports being between 8000-8010.
 
-- `find . -name "*.pdf" -exec pdfinfo {} \; | awk '/Pages:/ {total += $2} END {print "Toplam sayfa sayısı:", total}'`
+- `find . -name "*.pdf" -exec pdfinfo {} \; | awk '/Pages:/ {total += $2} END {print "Total pages:", total}'`
+
   - Shows the total number of pages in the pdf files in the current directory.
+
+- `pdftk *.pdf cat output merged.pdf`
+
+  - Merges the pdf files in the current directory.
