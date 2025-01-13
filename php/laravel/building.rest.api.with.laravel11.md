@@ -37,8 +37,8 @@ All you need to know to build a REST API using Laravel 11.
 ### 1. Create New Laravel Project
 
 ```bash
-composer create-project laravel/laravel test-api
-cd test-api
+composer create-project laravel/laravel test-api-jwt
+cd test-api-jwt
 ```
 
 ### 2. Configure Environment
@@ -49,7 +49,7 @@ php artisan key:generate
 #this will generate a random encryption key for your application.
 ```
 
-Update `.env` file for SQLite:
+#### WAY 1: Update `.env` file for SQLite
 
 ```env
 DB_CONNECTION=sqlite
@@ -61,174 +61,356 @@ Create SQLite database:
 touch database/database.sqlite
 ```
 
+#### WAY 2: Update `.env` file for MySQL
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=test_api_jwt
+DB_USERNAME=root
+DB_PASSWORD=
+# Set your MySQL password above
+```
+
 ## Creating the API
 
-### 1. Create Product Model with Migration
+### 1. Edit `app/Models/User.php` Model
+
+```php
+<?php
+
+namespace App\Models;
+
+// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class User extends Authenticatable
+{
+    /** @use HasFactory<\Database\Factories\UserFactory> */
+    use HasFactory, Notifiable, SoftDeletes;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var list<string>
+     */
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+        "user_level",
+    ];
+
+    /**
+     * The attributes that should be hidden for serialization.
+     *
+     * @var list<string>
+     */
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'email_verified_at' => 'datetime',
+            'password' => 'hashed',
+        ];
+    }
+}
+```
+
+### 2. Edit `database/migrations/0001_01_01_000000_create_users_table.php` Migration
+
+```php
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('users', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table->rememberToken();
+            $table->integer('user_level')->default(1);
+            $table->softDeletes();
+            $table->timestamps();
+        });
+
+        Schema::create('password_reset_tokens', function (Blueprint $table) {
+            $table->string('email')->primary();
+            $table->string('token');
+            $table->timestamp('created_at')->nullable();
+        });
+
+        Schema::create('sessions', function (Blueprint $table) {
+            $table->string('id')->primary();
+            $table->foreignId('user_id')->nullable()->index();
+            $table->string('ip_address', 45)->nullable();
+            $table->text('user_agent')->nullable();
+            $table->longText('payload');
+            $table->integer('last_activity')->index();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('users');
+        Schema::dropIfExists('password_reset_tokens');
+        Schema::dropIfExists('sessions');
+    }
+};
+```
+
+### 3. Edit `database/factories/UserFactory.php` Factory
+
+```php
+<?php
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
+
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
+ */
+class UserFactory extends Factory
+{
+  /**
+   * The current password being used by the factory.
+   */
+  protected static ?string $password;
+
+  /**
+   * Define the model's default state.
+   *
+   * @return array<string, mixed>
+   */
+  public function definition(): array
+  {
+    return [
+      'name' => fake()->name(),
+      'email' => fake()->unique()->safeEmail(),
+      'email_verified_at' => now(),
+      'password' => static::$password ??= Hash::make('password'),
+      'remember_token' => Str::random(10),
+      'user_level' => fake()->numberBetween(1, 3),
+    ];
+  }
+
+  /**
+   * Indicate that the model's email address should be unverified.
+   */
+  public function unverified(): static
+  {
+    return $this->state(fn(array $attributes) => [
+      'email_verified_at' => null,
+    ]);
+  }
+}
+```
+
+### 4. Create Database Seeders
 
 ```bash
-php artisan make:model Product -m
+php artisan make:seeder SuperAdminSeeder
+php artisan make:seeder UserSeeder
+```
+
+- Edit `database/seeders/SuperAdminSeeder.php`:
+
+```php
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\User;
+use Illuminate\Database\Seeder;
+
+class SuperAdminSeeder extends Seeder
+{
+    public function run(): void
+    {
+        User::factory()->create([
+            'name' => 'Super Admin',
+            'email' => 'sa@example.com',
+            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'user_level' => 0
+        ]);
+    }
+};
+```
+
+- Edit `database/seeders/UserSeeder.php`:
+
+```php
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\User;
+use Illuminate\Database\Seeder;
+
+class UserSeeder extends Seeder
+{
+  public function run(): void
+  {
+    User::factory()->count(15)->create();
+  }
+};
+```
+
+### 5. Create Product Model, Migration, Factory, Seeder, and Controller
+
+```bash
+php artisan make:model Product -mfsc --api
+# -m for migration
+# -f for factory
+# -s for seeder
+# -c for controller
+# --api for API resources on controller
 ```
 
 This creates:
 
 - `app/Models/Product.php`
 - `database/migrations/[timestamp]_create_products_table.php`
+- `database/factories/ProductFactory.php`
+- `database/seeders/ProductSeeder.php`
+- `app/Http/Controllers/ProductController.php`
 
-### 2. Define Migration Schema
+### 6. Edit Product Model, Migration, Factory, Seeder, and Controller
 
-Edit the migration file:
-
-```php
-public function up(): void
-{
-    Schema::create('products', function (Blueprint $table) {
-        $table->id();
-        $table->string('name');
-        $table->text('description');
-        $table->decimal('price', 10, 2);
-        $table->integer('stock');
-        $table->timestamps();
-    });
-}
-```
-
-### 3. Configure Product Model
-
-Edit `app/Models/Product.php`:
+- Edit `app/Models/Product.php`:
 
 ```php
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
 class Product extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     protected $fillable = [
+        'user_id',
         'name',
-        'description',
         'price',
+        'description',
         'stock'
     ];
-}
+};
 ```
 
-### 4. Create API Controller
-
-```bash
-php artisan make:controller Api/ProductController --api
-```
-
-### 5. Implement Controller Methods
-
-Edit `app/Http/Controllers/Api/ProductController.php`:
+- Edit the migration file `database/migrations/[timestamp]_create_products_table.php`:
 
 ```php
-namespace App\Http\Controllers\Api;
+<?php
 
-use App\Http\Controllers\Controller;
-use App\Models\Product;
-use Illuminate\Http\Request;
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Validator;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
-class ProductController extends Controller
+return new class extends Migration
 {
-    public function index()
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
     {
-        return response()->json([
-            'success' => true,
-            'data' => Product::all()
-        ], Response::HTTP_OK);
+        Schema::create('products', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('user_id')->constrained();
+            $table->string('name');
+            $table->text('description');
+            $table->decimal('price', 10, 2);
+            $table->integer('stock');
+            $table->timestamps();
+            $table->softDeletes();
+        });
     }
 
-    public function store(Request $request)
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
     {
-        $validator = Validator::make($request->all(), [
-            'name' => 'required|string|max:255',
-            'description' => 'required|string',
-            'price' => 'required|numeric|min:0',
-            'stock' => 'required|integer|min:0'
-        ]);
-
-        if ($validator->fails()) {
-            return response()->json([
-                'success' => false,
-                'message' => 'Validation failed',
-                'errors' => $validator->errors()
-            ], Response::HTTP_BAD_REQUEST);
-        }
-
-        $product = Product::create($validator->validated());
-
-        return response()->json([
-            'success' => true,
-            'data' => $product
-        ], Response::HTTP_CREATED);
+        Schema::dropIfExists('products');
     }
+};
+```
 
-    public function show(Product $product)
-    {
-        return response()->json([
-            'success' => true,
-            'data' => $product
-        ], Response::HTTP_OK);
-    }
+- Edit `database/factories/ProductFactory.php`:
 
-    public function update(Request $request, Product $product)
-    {
-        $validator = Validator::make($request->all(), [
-            'name' => 'sometimes|string|max:255',
-            'description' => 'sometimes|string',
-            'price' => 'sometimes|numeric|min:0',
-            'stock' => 'sometimes|integer|min:0'
-        ]);
+```php
+<?php
 
-        if ($validator->fails()) {
-            return response()->json([
-                'success' => false,
-                'message' => 'Validation failed',
-                'errors' => $validator->errors()
-            ], Response::HTTP_BAD_REQUEST);
-        }
+namespace Database\Factories;
 
-        $product->update($validator->validated());
+use App\Models\Product;
+use App\Models\User;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
-        return response()->json([
-            'success' => true,
-            'data' => $product
-        ], Response::HTTP_OK);
-    }
-
-    public function destroy(Product $product)
-    {
-        $product->delete();
-
-        return response()->json([
-            'success' => true,
-            'message' => 'Product deleted successfully'
-        ], Response::HTTP_NO_CONTENT);
-    }
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Product>
+ */
+class ProductFactory extends Factory
+{
+  /**
+   * Define the model's default state.
+   *
+   * @return array<string, mixed>
+   */
+  public function definition(): array
+  {
+    return [
+      'user_id' => User::inRandomOrder()->first()->id,
+      'name' => fake()->unique()->words(3, true),
+      'description' => fake()->paragraph(),
+      'price' => fake()->randomFloat(2, 10, 1000),
+      'stock' => fake()->numberBetween(0, 100),
+      'created_at' => fake()->dateTimeBetween('-1 year'),
+      'updated_at' => fake()->dateTimeBetween('-6 months'),
+    ];
+  }
 }
 ```
 
-### 6. Create API Routes
-
-Edit `routes/api.php`:
+- Edit `database/seeders/ProductSeeder.php`:
 
 ```php
-use App\Http\Controllers\Api\ProductController;
-use Illuminate\Support\Facades\Route;
+<?php
 
-Route::apiResource('products', ProductController::class);
-```
-
-### 7. Create Database Seeder
-
-```bash
-php artisan make:seeder ProductSeeder
-```
-
-Edit `database/seeders/ProductSeeder.php`:
-
-```php
 namespace Database\Seeders;
 
 use App\Models\Product;
@@ -239,41 +421,149 @@ class ProductSeeder extends Seeder
 {
     public function run(): void
     {
-        $faker = Factory::create();
-
-        for ($i = 0; $i < 100; $i++) {
-            Product::create([
-                'name' => $faker->unique()->word(3),
-                'description' => $faker->paragraph(1),
-                'price' => $faker->numberBetween(2, 100, 1000),
-                'stock' => $faker->numberBetween(0, 1000)
-            ]);
-        }
+        // Create 100 products using the factory
+        Product::factory()->count(100)->create();
     }
-}
+};
 ```
 
-### 8. Register Seeder
-
-Edit `database/seeders/DatabaseSeeder.php`:
+- Edit `app/Http/Controllers/ProductController.php`:
 
 ```php
-public function run(): void
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Product;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Validator;
+
+class ProductController extends Controller
 {
-    $this->call([
-        ProductSeeder::class
+  // GetAllData
+  public function index()
+  {
+    return response()->json([
+      'success' => true,
+      'data' => Product::all()
+    ], Response::HTTP_OK);
+  }
+
+  //InsertData
+  public function store(Request $request)
+  {
+    $validator = Validator::make($request->all(), [
+      'user_id' => 'required|integer|exists:users,id',
+      'name' => 'required|string|max:255',
+      'description' => 'required|string',
+      'price' => 'required|numeric|min:0',
+      'stock' => 'required|integer|min:0'
     ]);
+
+    if ($validator->fails()) {
+      return response()->json([
+        'success' => false,
+        'message' => 'Validation failed',
+        'errors' => $validator->errors()
+      ], Response::HTTP_BAD_REQUEST);
+    }
+
+    $product = Product::create($validator->validated());
+
+    return response()->json([
+      'success' => true,
+      'data' => $product
+    ], Response::HTTP_CREATED);
+  }
+
+  //GetSingleData
+  public function show(Product $product)
+  {
+    return response()->json([
+      'success' => true,
+      'data' => $product
+    ], Response::HTTP_OK);
+  }
+
+  //UpdateData
+  public function update(Request $request, Product $product)
+  {
+    $validator = Validator::make($request->all(), [
+      'user_id' => 'sometimes|integer|exists:users,id',
+      'name' => 'sometimes|string|max:255',
+      'description' => 'sometimes|string',
+      'price' => 'sometimes|numeric|min:0',
+      'stock' => 'sometimes|integer|min:0'
+    ]);
+
+    if ($validator->fails()) {
+      return response()->json([
+        'success' => false,
+        'message' => 'Validation failed',
+        'errors' => $validator->errors()
+      ], Response::HTTP_BAD_REQUEST);
+    }
+
+    $product->update($validator->validated());
+
+    return response()->json([
+      'success' => true,
+      'data' => $product
+    ], Response::HTTP_OK);
+  }
+
+  //DeleteData
+  public function destroy(Product $product)
+  {
+    $product->delete();
+
+    return response()->json([
+      'success' => true,
+      'message' => 'Product deleted successfully'
+    ], Response::HTTP_NO_CONTENT);
+  }
+};
+```
+
+### 7. Database Seeder
+
+- Edit `database/seeders/DatabaseSeeder.php`:
+
+```php
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\User;
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+  /**
+   * Seed the application's database.
+   */
+  public function run(): void
+  {
+    $this->call([
+      SuperAdminSeeder::class,
+      UserSeeder::class,
+      ProductSeeder::class
+    ]);
+  }
 }
 ```
 
-### 9. Run Migrations and Seeders
+### 8. Run Migrations and Seeders
 
 ```bash
-php artisan migrate:rollback
 php artisan migrate:fresh --seed
 ```
 
-### 10. Configure Route Provider
+**NOTE:** To run specific seeder: `php artisan db:seed ProductSeeder` or `php artisan db:seed --class=ProductSeeder`
+
+### 9. Configure Route Provider
 
 ```bash
 php artisan make:provider RouteServiceProvider
@@ -281,9 +571,11 @@ php artisan make:provider RouteServiceProvider
 
 **NOTE:** This will create `app/Providers/RouteServiceProvider.php` and also add `App\Providers\RouteServiceProvider::class` line to `bootstrap/providers.php`.
 
-Edit `app/Providers/RouteServiceProvider.php`:
+- Edit `app/Providers/RouteServiceProvider.php`:
 
 ```php
+<?php
+
 namespace App\Providers;
 
 use Illuminate\Cache\RateLimiting\Limit;
@@ -294,22 +586,39 @@ use Illuminate\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
 {
-    public function boot(): void
-    {
-        RateLimiter::for('api', function (Request $request) {
-            return Limit::perMinute(60)->by($request->user()?->id ?: $request->ip());
-        });
+  public function boot(): void
+  {
+    RateLimiter::for('api', function (Request $request) {
+      return Limit::perMinute(60)->by($request->user()?->id ?: $request->ip());
+    });
 
-        $this->routes(function () {
-            Route::middleware('api')
-                ->prefix('api')
-                ->group(base_path('routes/api.php'));
+    $this->routes(function () {
+      Route::middleware('api')
+        ->prefix('api')
+        ->group(base_path('routes/web.php'));
 
-            Route::middleware('web')
-                ->group(base_path('routes/web.php'));
-        });
-    }
+      Route::middleware('web')
+        ->group(base_path('routes/web.php'));
+    });
+  }
 }
+```
+
+### 10. Create API Routes
+
+```bash
+touch routes/api.php
+```
+
+- Edit `routes/api.php`:
+
+```php
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
+
+Route::apiResource('products', ProductController::class);
 ```
 
 ## Testing with Postman
@@ -319,8 +628,8 @@ class RouteServiceProvider extends ServiceProvider
 | Method    | Endpoint             | Description        |
 | --------- | -------------------- | ------------------ |
 | GET       | `/api/products`      | List all products  |
-| POST      | `/api/products`      | Create new product |
 | GET       | `/api/products/{id}` | Get single product |
+| POST      | `/api/products`      | Create new product |
 | PUT/PATCH | `/api/products/{id}` | Update product     |
 | DELETE    | `/api/products/{id}` | Delete product     |
 
