@@ -324,3 +324,19 @@ done
   ```
 
   - Merges the pdf files in the current directory.
+
+- ```bash
+  # File to rotate
+  pdf="input.pdf"
+  # Check if the file exists
+  if [[ -e "$pdf" ]]; then
+      echo "Rotating: $pdf"
+      # Rotate the PDF and overwrite the original file
+      pdftk "$pdf" cat 1-endeast output "rotated_$pdf" && mv "rotated_$pdf" "$pdf"
+      echo "Successfully rotated: $pdf"
+  else
+      echo "File not found: $pdf"
+  fi
+  ```
+
+  - Rotates the selected pdf file in the current directory.
