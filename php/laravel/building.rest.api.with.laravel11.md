@@ -457,6 +457,8 @@ class ProductController extends Controller
     return response()->json([
       'success' => true,
       'data' => Product::all()
+      // 'data' => Product::orderBy('created_at', 'desc')->limit(10)->get()  // Get the last 10 products
+      // 'data' => Product::with('user:id,name,user_level')->limit(10)->get(['id', 'name', 'user_id'])  // Get the last 10 products with user
     ], Response::HTTP_OK);
   }
 
