@@ -316,6 +316,11 @@ done
 
   - Shows the total number of pages in the pdf files in the current directory.
 
-- `pdftk *.pdf cat output merged.pdf`
+- ```bash
+  # Get the name of the current directory
+  folder_name=$(basename "$PWD")
+  # Merge PDF files and name the output file
+  pdftk *.pdf cat output "0.${folder_name}.pdf"
+  ```
 
   - Merges the pdf files in the current directory.
