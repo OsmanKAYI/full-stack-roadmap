@@ -812,3 +812,39 @@ Content-Type: application/json
 - [Laravel API Tutorial](https://laravel.com/docs/11.x/eloquent-resources)
 - [REST API Best Practices](https://restfulapi.net/)
 - [Postman Learning Center](https://learning.postman.com/)
+
+## Suppress All Errors and Return JSON
+
+- Create `App\Exceptions\Handler.php` file:
+
+```bash
+mkdir app/Exceptions
+touch app/Exceptions/Handler.php
+```
+
+- Edit `app/Exceptions/Handler.php`:
+
+```php
+<?php
+
+namespace App\Exceptions;
+
+use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Throwable;
+use Illuminate\Http\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
+
+class Handler extends ExceptionHandler
+{
+  public function register(): void
+  {
+    $this->renderable(function (Throwable $e) {
+      return new JsonResponse([
+        'success' => false,
+        'message' => $e->getMessage(),
+        'code' => $e->getCode() ?: Response::HTTP_INTERNAL_SERVER_ERROR
+      ], Response::HTTP_INTERNAL_SERVER_ERROR);
+    });
+  }
+}
+```
