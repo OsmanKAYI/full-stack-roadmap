@@ -77,6 +77,10 @@ DB_PASSWORD=
 
 ### 1. Edit `app/Models/User.php` Model
 
+- Note that, to active the 'soft delete', add the following lines in the model file,
+  - `use SoftDeletes;` inside class and
+  - import as `use Illuminate\Database\Eloquent\SoftDeletes;`
+
 ```php
 <?php
 
