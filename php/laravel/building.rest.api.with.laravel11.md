@@ -455,27 +455,27 @@ use Illuminate\Support\Facades\Validator;
 
 class ProductController extends Controller
 {
+  private array $rules = [
+    'name' => 'required|string|max:255',
+    'description' => 'required|string',
+    'price' => 'required|numeric|min:0',
+    'stock' => 'required|integer|min:0',
+    'user_id' => 'required|exists:users,id'
+  ];
+
   // GetAllData
   public function index()
   {
     return response()->json([
       'success' => true,
-      'data' => Product::all()
-      // 'data' => Product::orderBy('created_at', 'desc')->limit(10)->get()  // Get the last 10 products
-      // 'data' => Product::with('user:id,name,user_level')->limit(10)->get(['id', 'name', 'user_id'])  // Get the last 10 products with user
+      'data' => Product::orderBy('id', 'desc')->limit(10)->get()  // Get the last 10 products
     ], Response::HTTP_OK);
   }
 
   //InsertData
   public function store(Request $request)
   {
-    $validator = Validator::make($request->all(), [
-      'user_id' => 'required|integer|exists:users,id',
-      'name' => 'required|string|max:255',
-      'description' => 'required|string',
-      'price' => 'required|numeric|min:0',
-      'stock' => 'required|integer|min:0'
-    ]);
+    $validator = Validator::make($request->all(), $this->rules);
 
     if ($validator->fails()) {
       return response()->json([
@@ -505,13 +505,9 @@ class ProductController extends Controller
   //UpdateData
   public function update(Request $request, Product $product)
   {
-    $validator = Validator::make($request->all(), [
-      'user_id' => 'sometimes|integer|exists:users,id',
-      'name' => 'sometimes|string|max:255',
-      'description' => 'sometimes|string',
-      'price' => 'sometimes|numeric|min:0',
-      'stock' => 'sometimes|integer|min:0'
-    ]);
+    // Get the rules of the fields coming from the Request
+    $updateRules = array_intersect_key($this->rules, $request->all());
+    $validator = Validator::make($request->all(), $updateRules);
 
     if ($validator->fails()) {
       return response()->json([
