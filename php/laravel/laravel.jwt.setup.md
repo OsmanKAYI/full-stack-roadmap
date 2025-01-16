@@ -413,16 +413,18 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\Api\AuthController;
 use Illuminate\Http\Response;
 
-// Products
-Route::apiResource('products', ProductController::class);
 
 // JWT protected routes
 Route::middleware('auth:api')->group(function () {
+  // Authantication
   Route::controller(AuthController::class)->group(function () {
     Route::post('logout', 'logout')->name('auth.logout');
     Route::post('refresh', 'refresh')->name('auth.refresh');
     Route::get('profile', 'profile')->name('auth.profile');
   });
+
+  // Products
+  Route::apiResource('products', ProductController::class);
 });
 
 // not JWT protected routes
