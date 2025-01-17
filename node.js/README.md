@@ -22,6 +22,7 @@ source ~/.bashrc
 nvm ls-remote
 # install latest node version
 nvm install node  # "node" is an alias for the latest version
+nvm use v20.11.0 # if you want to use specific version
 ```
 
 ## Documentation
