@@ -1,4 +1,4 @@
-# LARAVEL
+# LARAVEL 11
 
 Laravel is a free, open-source PHP web framework designed for building web applications following the model–view–controller (MVC) architectural pattern. It emphasizes elegant syntax, modern tooling, and developer productivity.
 
@@ -6,7 +6,7 @@ Laravel is a free, open-source PHP web framework designed for building web appli
 
 1. Prerequisites
 
-   - PHP >= 8.1
+   - PHP >= 8.3
    - Composer
    - Node.js & NPM
    - Database (MySQL, PostgreSQL, SQLite)
