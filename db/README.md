@@ -18,6 +18,7 @@ Security is an important consideration when using databases. You should take ste
 
 Each database management system will have its own documentation and support resources available. This site mostly cover the MySQL Database.
 
+- [SQLite vs. MySQL: Key Differences](./mysql.vs.sqlite.md)
 - [What are KEYS?](./keys.md)
 - [Get Data From Database As a Json Jbject](./get.data.from.db.as.json.md)
 
