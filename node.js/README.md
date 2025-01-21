@@ -23,6 +23,7 @@ nvm ls-remote
 # install latest node version
 nvm install node  # "node" is an alias for the latest version
 nvm use v20.11.0 # if you want to use specific version
+nvm use v20.11.0 --default # if you want to use specific version as default
 ```
 
 ## Documentation
