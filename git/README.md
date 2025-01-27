@@ -22,7 +22,7 @@ git config --global init.defaultBranch main
 
 This documentation includes guides, tutorials, and reference material for learning Git and using it effectively.
 
-- [Introdution to Git](./git.md)
+- [Introduction to Git](./git.md)
 - [Perfect Git Tips](./git.tips.md)
 - [Navigate Through Git Commits](./navigate.through.git.commits.md)
 - [11 Expert Tips for Efficient Committing](./expert.tips.for.efficient.committing.md)
