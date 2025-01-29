@@ -51,11 +51,9 @@ composer create-project laravel/laravel first-app
 
 ```bash
 # Install Laravel installer globally
-
 composer global require laravel/installer
 
 # Create new project
-
 laravel new second-app
 
 ```
@@ -67,22 +65,18 @@ laravel new second-app
 ```bash
 cd first-app
 composer install && npm install
-
 ```
 
 ### Starting Development Server
 
 ```bash
 # Standard development server
-
 php artisan serve
 
 # Custom host and port
-
 php artisan serve --host=192.168.85.138 --port=8000
 
 # Development with Vite
-
 composer run dev
 
 ```
@@ -93,19 +87,15 @@ composer run dev
 
 ```bash
 # Create new migration
-
 php artisan make:migration create_users_table
 
 # Run migrations
-
 php artisan migrate
 
 # Reset Database
-
 php artisan db:wipe          # Drop all tables
 php artisan migrate:fresh    # Drop all tables and re-run migrations
 php artisan migrate:rollback # Rollback last migration
-
 ```
 
 ### Default Migrations
@@ -131,7 +121,6 @@ php artisan make:provider RouteServiceProvider
 
 ```bash
 php artisan make:component layout --view
-
 ```
 
 ## Localization
@@ -140,11 +129,9 @@ php artisan make:component layout --view
 
 ```bash
 # Install language package
-
 composer require laravel-lang/common --dev
 
 # Add new language (e.g., Turkish)
-
 php artisan lang:add tr
 
 ```
@@ -158,15 +145,12 @@ php artisan lang:add tr
 
 php artisan make:model Post -a
 # This creates:
-
-# - Model
-# - Factory
-
-# - Migration
-# - Seeder
-
-# - Controller
-# - Policy
+## - Model
+## - Factory
+## - Migration
+## - Seeder
+## - Controller
+## - Policy
 
 ```
 
@@ -174,36 +158,28 @@ php artisan make:model Post -a
 
 ```bash
 # View all registered routes
-
 php artisan route:list
 
 # Create storage symbolic link
-
 php artisan storage:link
-
 ```
 
 ## Mail Configuration
 
 ```bash
 # Generate mail class
-
 php artisan make:mail WelcomeMail
-
 ```
 
 ### Timezone Configuration
 
 ```bash
 # Set timezone in .env
-
 APP_TIMEZONE=Europe/Istanbul
 
 # Clear configuration cache
-
 php artisan config:clear
 php artisan optimize:clear
-
 ```
 
 ## Event Handling
@@ -212,28 +188,22 @@ php artisan optimize:clear
 
 ```bash
 # Create event
-
 php artisan make:event UserSubscribed
 
 # Create listeners
-
 php artisan make:listener SendSubscriberEmail
 php artisan make:listener UpdateSubscribersTable
 
 # Create subscriber table
-
 php artisan make:migration create_subscribers_table
 php artisan migrate
-
 ```
 
 ### Controller Generation
 
 ```bash
 # Create new controller
-
 php artisan make:controller ResetPasswordController
-
 ```
 
 ## Best Practices
