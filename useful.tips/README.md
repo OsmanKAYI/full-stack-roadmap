@@ -3,6 +3,7 @@
 Here, you will find out some usefull informations which I cannot group them in a specific topic. They are listed as below.
 
 - [Could You Be the Biggest Obstacle to Your Own Success?](./biggest.obstacle.to.be.successful.md)
+- [What to Do If Your Horse Is Dead?](./dead.horse.md)
 - [A Comprehensive Guide to Types of Software Development](./types.of.software.development.md)
 - [How Stopping Coding Transformed Me into a Better Developer](./stop.coding.like.this.md)
 - [Understanding the 10 Key Roles in a Software Development Team](./10.key.roles.in.software.dev.team.md)
