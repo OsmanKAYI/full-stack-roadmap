@@ -37,6 +37,13 @@ Machine Learning (ML) is a subset of artificial intelligence that focuses on dev
 - [Machine Learning Specialization - Coursera](https://www.coursera.org/specializations/machine-learning-introduction)
 - [Deep Learning Specialization - Coursera](https://www.coursera.org/specializations/deep-learning?irclickid=x-U2gpTSJxyLTxPwUx0Mo3EoUkDXeu01jUFXWo0&irgwc=1#courses)
 
+## Documentation
+
+- [An Ideal Roadmap for Beginners](./perfect.roadmap.for.ml.md)
+- [Machine Learning and Data Analysis Guide](./machine.learning.and.data.analysis.md)
+- [Machine Learning with PyTorch](./pytorch.md)
+- [The Complete Machine Learning Course with Python](./complete.ml.course.with.python/README.md)
+
 ## Resources
 
 - [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course)
@@ -45,14 +52,8 @@ Machine Learning (ML) is a subset of artificial intelligence that focuses on dev
 - [Scikit-learn Courses](https://scikit-learn.org/stable/)
 - [Fast.ai](https://www.fast.ai/)
 - [TensorFlow Documentation](https://www.tensorflow.org/learn)
+- [NumPy Tutorial](https://realpython.com/numpy-tutorial/) - First Steps Into Data Science in Python
 - [PyTorch Tutorials](https://pytorch.org/tutorials/)
-
-## Documentation
-
-- [An Ideal Roadmap for Beginners](./perfect.roadmap.for.ml.md)
-- [Machine Learning and Data Analysis Guide](./machine.learning.and.data.analysis.md)
-- [Machine Learning with PyTorch](./pytorch.md)
-- [The Complete Machine Learning Course with Python](./complete.ml.course.with.python/README.md)
 
 ## Data Scientist in Python Lectures by [Dataquest](https://app.dataquest.io/dashboard)
 
