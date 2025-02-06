@@ -61,6 +61,14 @@ My prefered extensions and special settings for them in Windsurf.
     "editor.defaultFormatter": "vscode.html-language-features",
     "editor.formatOnSave": true
   },
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+    "editor.formatOnSave": true
+  },
+  "[blade.php]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+    "editor.formatOnSave": true
+  },
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
     "editor.formatOnSave": true
@@ -259,7 +267,8 @@ My prefered extensions and special settings for them in Windsurf.
     "*.db3": "${capture}.${extname}-*",
     "*.sdb": "${capture}.${extname}-*",
     "*.s3db": "${capture}.${extname}-*"
-  }
+  },
+  "windsurf.autoExecutionPolicy": "off"
 
   ///////////////////////// END /////////////////////////
   ///////////////////////// END /////////////////////////
