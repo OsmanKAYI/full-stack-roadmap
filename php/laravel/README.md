@@ -60,6 +60,7 @@ Laravel is a free, open-source PHP web framework designed for building web appli
 - [Laravel Horizon](https://laravel.com/docs/horizon): Queue Monitoring
   - [Laravel Telescope](https://laravel.com/docs/telescope): Debugging
   - [Laravel Sanctum](https://laravel.com/docs/sanctum): API Authentication
+- [Orion for Laravel](https://orion.tailflow.org/): REST API with Laravel
 
 ## Community and Support
 
