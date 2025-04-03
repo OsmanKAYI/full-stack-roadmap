@@ -280,6 +280,10 @@ done
 
   - Converts all of the .php files in the current directory to unix format.
 
+- `find /var/www/html -type f -name "*.php" -exec dos2unix {} \;`
+
+  - Converts all `.php` files in `/var/www/html` and its subdirectories to Unix format.
+
 - `curl wttr.in/Ankara`
 
   - Shows the weather in Ankara
