@@ -5,7 +5,7 @@
 - Below commands are used to make the system up to date. Both commands should be run before installing any app.
 
 ```bash
-sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo snap refresh
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove --purge -y && sudo snap refresh
 ```
 
 ## Set System Time
@@ -561,7 +561,7 @@ mysql --user="root" --password="" --execute="use mysql; SET PASSWORD FOR 'root'@
 ### MariaDB Password Reset (if you forgot your password)
 
 ```bash
-sudo service mariadb vstop
+sudo service mariadb stop
 sudo mysqld_safe --skip-grant-tables --skip-networking --skip-networking &
 mysql -u root
   use mysql;
@@ -641,7 +641,7 @@ wget -O index.php https://www.adminer.org/latest.php
 
 ```bash
 # install nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
 # start nvm
 source ~/.bashrc
 # list remote versions
