@@ -84,7 +84,7 @@ sudo apt install axel bat boxes caffeine curl ffmpeg figlet gnome-tweaks gpustat
 ## Ezan Vakti
 sudo add-apt-repository ppa:fbostanci/distroguide -y
 sudo apt update
-sudo apt install ezanvakti -y
+sudo apt install ezanvakti-qt-gui -y
 
 ## Ulauncher
 sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher -y
