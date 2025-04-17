@@ -431,6 +431,20 @@ xdebug.mode=develop,debug
 xdebug.start_with_request=yes
 ```
 
+**_OR_**
+
+#### Add following 3 lines at the end of php.ini
+
+`sudo vi /etc/php/7.4/apache2/php.ini`
+
+```bash
+[XDebug]
+zend_extension=xdebug.so
+xdebug.mode=debug
+xdebug.start_with_request=yes
+xdebug.log_level=0
+```
+
 ### Restart Apache Service
 
 ```bash
