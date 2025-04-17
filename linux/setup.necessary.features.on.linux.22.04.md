@@ -45,7 +45,7 @@ gsettings set org.gnome.desktop.interface icon-theme  'Yaru-sage'
 gsettings set org.gnome.shell.extensions.ding icon-size 'standard'
 gsettings set org.gnome.shell.extensions.ding start-corner 'top-left'
 ### dock
-gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 30
 gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
