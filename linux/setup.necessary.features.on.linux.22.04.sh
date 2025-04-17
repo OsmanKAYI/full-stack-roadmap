@@ -90,7 +90,7 @@ sudo apt install axel bat boxes caffeine curl figlet gnome-tweaks gpustat hardin
 ## Ezan Vakti
 sudo add-apt-repository ppa:fbostanci/distroguide -y
 sudo apt update
-sudo apt install ezanvakti -y
+sudo apt install ezanvakti-qt-gui -y
 
 ## Ulauncher
 sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher -y
@@ -350,12 +350,6 @@ sudo apt install virtualbox -y
 ## VLC Media Player
 sudo apt install vlc -y
 
-## Anydesk
-wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
-echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
-cd ~/Downloads/
-sudo apt install anydesk -y
-
 ## Telegram
 sudo apt install telegram-desktop -y
 
@@ -412,6 +406,7 @@ echo -e '[Desktop Entry]\nName[tr]=Guake Uçbirim\nName=Guake Terminal\nComment=
 echo -e '[Desktop Entry]\nIcon=caffeine\nName=Caffeine\nComment=Temporarily deactivate the screensaver and sleep mode\nExec=caffeine-indicator\nTerminal=false\nType=Application\nCategories=Utility;\nKeywords=Screensaver,Power,Saving,Blank\nStartupNotify=false' > ~/.config/autostart/caffeine.desktop
 ## ulauncher
 echo -e '[Desktop Entry]\nName=Ulauncher\nComment=Application launcher for Linux\nExec=env GDK_BACKEND=x11 /usr/bin/ulauncher --hide-window --hide-window\nIcon=ulauncher\nTerminal=false\nType=Application\nCategories=Utility;Application;' > ~/.config/autostart/ulauncher.desktop
+
 # Favorite Applications
 gsettings get org.gnome.shell favorite-apps ['org.gnome.Nautilus.desktop', 'gnome-system-monitor.desktop', 'virtualbox.desktop', 'thunderbird.desktop', 'firefox_firefox.desktop', 'chromium_chromium.desktop', 'telegramdesktop.desktop', 'code.desktop', 'windsurf.desktop', 'zotero.desktop', 'Postman.desktop', 'wps-office-prometheus.desktop', 'org.fritzing.Fritzing.desktop']
 
