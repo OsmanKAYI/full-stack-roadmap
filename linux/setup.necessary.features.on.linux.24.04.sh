@@ -331,6 +331,11 @@ sudo apt install openssh-server -y
 sudo systemctl enable ssh
 sudo systemctl start ssh
 
+sudo ufw allow ssh
+sudo ufw enable  # Activate Firewall
+# append to /etc/ssh/sshd_config
+echo -e "\nClientAliveInterval 300\nPermitRootLogin yes\nPasswordAuthentication yes" | sudo tee -a /etc/ssh/sshd_config
+
 ## Postman
 # download postman app on ubuntu
 wget https://dl.pstmn.io/download/latest/linux64

@@ -817,10 +817,10 @@ sudo systemctl enable ssh
 sudo systemctl start ssh
 
 sudo ufw allow ssh
-sudo ufw enable  # Firewall'u etkinleştir
+sudo ufw enable  # Activate Firewall
 ```
 
-`etc/ssh/sshd_config` Dosyası sonuna eklenecekler:
+The followings will be added at the end of `etc/ssh/sshd_config` file:
 
 ```bash
 ClientAliveInterval 300

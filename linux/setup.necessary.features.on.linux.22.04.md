@@ -748,6 +748,17 @@ source ~/.bashrc
 sudo apt-get install openssh-server -y
 sudo systemctl enable ssh
 sudo systemctl start ssh
+
+sudo ufw allow ssh
+sudo ufw enable  # Activate Firewall
+```
+
+The followings will be added at the end of `etc/ssh/sshd_config` file:
+
+```bash
+ClientAliveInterval 300
+PermitRootLogin yes
+PasswordAuthentication yes
 ```
 
 ### Copy SSH Public Key To Remote Server
