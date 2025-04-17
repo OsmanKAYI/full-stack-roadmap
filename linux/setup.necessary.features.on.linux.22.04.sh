@@ -382,13 +382,6 @@ sudo apt install steam -y
 ## Fritzing
 sudo apt install fritzing -y
 
-## Sweet Home 3D
-sudo apt install flatpak -y
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub com.sweethome3d.Sweethome3d -y
-flatpak update com.sweethome3d.Sweethome3d
-sudo apt install sweethome3d -y
-
 ## gitHub Configurations
 cd ~/.ssh
 if [ -n "$SSH_FILENAME" ]; then
@@ -439,7 +432,7 @@ echo -e '[Desktop Entry]\nName=TUXEDO Control Center\nComment=Tray icon for TUXE
 echo -e '[Desktop Entry]\nName=Ulauncher\nComment=Application launcher for Linux\nExec=env GDK_BACKEND=x11 /usr/bin/ulauncher --hide-window --hide-window\nIcon=ulauncher\nTerminal=false\nType=Application\nCategories=Utility;Application;' > ~/.config/autostart/ulauncher.desktop
 
 # Favorite Applications
-gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'org.gnome.SystemMonitor.desktop', 'virtualbox.desktop', 'thunderbird.desktop', 'firefox.desktop', 'chromium-browser.desktop', 'telegram.desktop', 'Postman.desktop', 'code.desktop', 'wps-office-prometheus.desktop', 'zotero.desktop', 'org.fritzing.Fritzing.desktop']"
+gsettings get org.gnome.shell favorite-apps ['org.gnome.Nautilus.desktop', 'gnome-system-monitor.desktop', 'virtualbox.desktop', 'thunderbird.desktop', 'firefox_firefox.desktop', 'chromium_chromium.desktop', 'telegramdesktop.desktop', 'code.desktop', 'windsurf.desktop', 'zotero.desktop', 'Postman.desktop', 'wps-office-prometheus.desktop', 'org.fritzing.Fritzing.desktop']
 
 # Settings
 ## appearance
