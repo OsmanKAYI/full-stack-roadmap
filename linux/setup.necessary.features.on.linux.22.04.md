@@ -124,7 +124,7 @@ sudo apt install axel bat boxes caffeine curl figlet gnome-tweaks gpustat hardin
 ```bash
 sudo add-apt-repository ppa:fbostanci/distroguide -y
 sudo apt update
-sudo apt install ezanvakti -y
+sudo apt install ezanvakti-qt-gui -y
 ```
 
 - Visit official [GitHub Page](https://github.com/fbostanci/ezanvakti) for more information.
