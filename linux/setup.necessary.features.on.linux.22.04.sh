@@ -217,6 +217,12 @@ wget https://wps-community.org/wps-office_11.1.0.11723.XA_amd64.deb
 # install the downloaded file
 sudo dpkg -i wps-office_11.1.0.11723.XA_amd64.deb
 
+## Zotero
+sudo apt install wget -y
+wget https://raw.githubusercontent.com/retorquere/zotero-deb/master/install.sh -O - | sudo bash
+sudo apt update
+sudo apt install zotero -y
+
 ## Notion
 echo "deb [trusted=yes] https://apt.fury.io/notion-repackaged/ /" | sudo tee /etc/apt/sources.list.d/notion-repackaged.list
 sudo apt update
