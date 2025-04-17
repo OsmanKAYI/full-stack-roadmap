@@ -122,9 +122,7 @@ sudo apt install axel bat boxes caffeine curl figlet gnome-tweaks gpustat hardin
 - **Ezan Vakti** is a pray time reminder application for Linux.
 
 ```bash
-sudo add-apt-repository ppa:fbostanci/distroguide -y
-sudo apt update
-sudo apt install ezanvakti-qt-gui -y
+sudo make PREFIX=/usr sysconfdir=/etc install
 ```
 
 - Visit official [GitHub Page](https://github.com/fbostanci/ezanvakti) for more information.
