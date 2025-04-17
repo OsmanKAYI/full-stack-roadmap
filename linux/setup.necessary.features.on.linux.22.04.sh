@@ -66,33 +66,6 @@ timedatectl status
 ## Set Keyboard Setting for Türkçe
 setxkbmap tr
 
-# Ubuntu Settings
-## appearance
-### style
-gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-gsettings set org.gnome.desktop.interface icon-theme  'Yaru-sage'
-### desktop icons
-gsettings set org.gnome.shell.extensions.ding icon-size 'standard'
-gsettings set org.gnome.shell.extensions.ding start-corner 'top-left'
-### dock
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
-gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
-gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 30
-gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
-gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
-gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button true
-## sound
-### system volume
-gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
-## power
-### power saving options
-gsettings set org.gnome.desktop.session idle-delay 900
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 900
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 1200
-### suspend & power button
-gsettings set org.gnome.desktop.interface show-battery-percentage true
-
 ## Check Drivers
 sudo ubuntu-drivers autoinstall -y
 
@@ -463,27 +436,33 @@ gsettings set org.gnome.desktop.interface cursor-blink-time 1200
 gsettings set org.gnome.desktop.interface cursor-blink-timeout 10
 gsettings set org.gnome.desktop.interface scaling-factor uint32 0
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.0
+
 ### desktop icons
 gsettings set org.gnome.shell.extensions.ding icon-size 'standard'
 gsettings set org.gnome.shell.extensions.ding start-corner 'top-left'
+
 ### dock
-gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
-gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 24
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 30
 gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
 gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
 gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button true
+
 ## sound
 ### system volume
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
+
 ## power
 ### power saving options
 gsettings set org.gnome.desktop.session idle-delay 900
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 900
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 1200
+
 ### suspend & power button
 gsettings set org.gnome.desktop.interface show-battery-percentage true
+
 ### additional
 gsettings set org.gnome.desktop.interface can-change-accels false
 gsettings set org.gnome.desktop.interface clock-format '24h'
