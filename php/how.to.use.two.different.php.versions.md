@@ -15,14 +15,22 @@ sudo apt upgrade
 - In this case, versions 7.4 and 8.3 are installed and version 7.4 is setup as current version. It could be reversed.
 
 ```bash
-sudo apt install php7.4-fpm php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl php7.4-xmlrpc php7.4-sqlite3 php7.4-gd php7.4-mysql php7.4-mbstring php7.4-xml libapache2-mod-php7.4 -y
+# install php7.4 with common packages
+sudo apt install php7.4-xdebug php7.4-fpm php7.4-intl php7.4-imagick php7.4-dev php7.4-zip php7.4-curl php7.4-xmlrpc php7.4-sqlite3 php7.4-gd php7.4-mysql php7.4-mbstring php7.4-xml libapache2-mod-php7.4 -y
 
-sudo apt install php8.3-fpm php8.3-intl php8.3-imagick php8.3-dev php8.3-zip php8.3-curl php8.3-xmlrpc php8.3-sqlite3 php8.3-gd php8.3-mysql php8.3-mbstring php8.3-xml libapache2-mod-php8.3 -y
+# install php8.3 with common packages
+sudo apt install php8.3-xdebug php8.3-fpm php8.3-intl php8.3-imagick php8.3-dev php8.3-zip php8.3-curl php8.3-xmlrpc php8.3-sqlite3 php8.3-gd php8.3-mysql php8.3-mbstring php8.3-xml libapache2-mod-php8.3 -y
 
+# enable rewrite module
+sudo a2enmod rewrite
+
+# disable php8.3
 sudo a2dismod php8.3
 
+# enable php7.4
 sudo a2enmod php7.4
 
+# restart apache
 sudo service apache2 restart
 ```
 
