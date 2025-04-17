@@ -30,6 +30,7 @@ These notes are a collection of useful information, tips, and tricks related to 
 - [Docker](./docker/)
 - [Embedded Systems](./embedded.systems/)
 - [Hosting](./hosting/)
+- [WordPress](./wordpress/)
 - [Artificial Intelligence (AI)](./ai/)
 - [Algorithms](./algorithms/)
 - [Presentation Tools](./presentation/)
