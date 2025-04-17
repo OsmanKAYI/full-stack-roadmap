@@ -815,6 +815,17 @@ source ~/.bashrc
 sudo apt install openssh-server -y
 sudo systemctl enable ssh
 sudo systemctl start ssh
+
+sudo ufw allow ssh
+sudo ufw enable  # Firewall'u etkinleştir
+```
+
+`etc/ssh/sshd_config` Dosyası sonuna eklenecekler:
+
+```bash
+ClientAliveInterval 300
+PermitRootLogin yes
+PasswordAuthentication yes
 ```
 
 ### Copy SSH Public Key To Remote Server
