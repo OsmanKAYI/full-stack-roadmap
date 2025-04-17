@@ -88,9 +88,7 @@ pip3 install thefuck --user
 sudo apt install axel bat boxes caffeine curl figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tmux tree unrar vim magic-wormhole xclip -y
 
 ## Ezan Vakti
-sudo add-apt-repository ppa:fbostanci/distroguide -y
-sudo apt update
-sudo apt install ezanvakti-qt-gui -y
+sudo make PREFIX=/usr sysconfdir=/etc install
 
 ## Ulauncher
 sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher -y
