@@ -444,7 +444,7 @@ mysql --user="root" --password="" --execute="use mysql; SET PASSWORD FOR 'root'@
 ### MariaDB Password Reset (if you forgot your password)
 
 ```bash
-sudo service mariadb vstop
+sudo service mariadb stop
 sudo mysqld_safe --skip-grant-tables --skip-networking --skip-networking &
 mysql -u root
   use mysql;
