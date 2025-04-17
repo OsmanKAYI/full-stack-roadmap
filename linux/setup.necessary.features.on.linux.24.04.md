@@ -552,24 +552,19 @@ sudo tail -f /var/log/apache2/error.log
 ```bash
 sudo apt install mariadb-server mariadb-client -y
 sudo systemctl enable mariadb
-sudo service mariadb restart
-### sudo mysql_secure_installation
-## mysql password reset
-mysql --user="root" --password="" --execute="use mysql; SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root'); flush privileges;"
+sudo systemctl start mariadb
+# (Optional) Run security script
+sudo mysql_secure_installation
 ```
 
-### MariaDB Password Reset (if you forgot your password)
+### Fix: Access denied for user 'root'@'localhost'
 
 ```bash
-sudo service mariadb stop
-sudo mysqld_safe --skip-grant-tables --skip-networking --skip-networking &
-mysql -u root
-  use mysql;
-  update user set password=PASSWORD("root") where User='root';
-  flush privileges;
-  quit;
-sudo kill `sudo cat /var/run/mysqld/mysqld.pid`
-sudo service mariadb start
+# Set native password auth and define root password:
+sudo mariadb -e "ALTER USER 'root'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('root'); FLUSH PRIVILEGES;"
+# Login with password:
+mysql -u root -p
+# password: root
 ```
 
 ## Redis

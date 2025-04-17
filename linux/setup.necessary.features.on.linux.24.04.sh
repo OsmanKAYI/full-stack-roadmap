@@ -260,13 +260,12 @@ else
     rm composer-setup.php  # Use rm instead of unlink
 fi
 
-## MySQL
+## MariaDB
 sudo apt install mariadb-server mariadb-client -y
 sudo systemctl enable mariadb
-sudo service mariadb restart
-### sudo mysql_secure_installation
-## mysql password reset
-mysql --user="root" --password="" --execute="use mysql; SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root'); flush privileges;"
+sudo systemctl start mariadb
+# Set native password auth and define root password:
+sudo mariadb -e "ALTER USER 'root'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('root'); FLUSH PRIVILEGES;"
 
 ## Redis
 sudo apt install redis-server php-redis -y
