@@ -47,6 +47,14 @@ To import VSCode settings and extensions:
 - Follow consistent coding standards
 - Leverage AI suggestions while maintaining code quality
 
+## Documentation
+
+- [Usefull Windsurf Extensions](./extensions.md)
+  - [Usefull Windsurf Extensions(.sh)](./extensions.sh)
+- [Settings](./settings.md)
+- [Keybindings](./keybindings.md)
+- [How to Build and Install VSIX Extension from GitHub](./install.vsix.extension.md)
+
 ## Common Commands
 
 Here are some useful commands and shortcuts in Windsurf:
@@ -54,10 +62,3 @@ Here are some useful commands and shortcuts in Windsurf:
 - `Ctrl + Space`: Trigger AI suggestions
 - `Ctrl + Enter`: Execute AI commands
 - `Ctrl + Shift + P`: Open command palette
-
-## Documentation
-
-- [Usefull Windsurf Extensions](./extensions.md)
-- [Usefull Windsurf Extensions(.sh)](./extensions.sh)
-- [Settings](./settings.md)
-- [Keybindings](./keybindings.md)
