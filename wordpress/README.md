@@ -1,4 +1,4 @@
-# WordPress Installation and Usage
+# WORDPRESS
 
 This guide contains information about installing and basic usage of WordPress on Ubuntu 22.04.
 
