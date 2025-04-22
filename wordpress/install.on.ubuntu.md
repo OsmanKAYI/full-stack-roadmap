@@ -38,9 +38,9 @@ sudo systemctl restart apache2
 - Configure proper ownership and permissions:
 
 ```bash
-sudo chown -R $USER:www-data wordpress/
+sudo chown -R $USER:www-data /var/www/html/wordpress/
 sudo usermod -aG www-data $USER
-sudo chown -R www-data:www-data wp-content/
+sudo chown -R www-data:www-data /var/www/html/wordpress/wp-content/
 ```
 
 These steps will install and configure WordPress with proper permissions on your Ubuntu 22.04 system.
