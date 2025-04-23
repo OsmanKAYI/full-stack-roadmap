@@ -20,6 +20,7 @@ This guide contains information about installing and basic usage of WordPress on
 
 - [Install WordPress on Ubuntu](./install.on.ubuntu.md)
   - [Install WordPress using WP-CLI (.sh)](./install-wordpress.sh)
+- [WordPress CLI Installation Guide](./wp.cli.md)
 
 ## Security Measures
 
