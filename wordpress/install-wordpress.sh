@@ -88,6 +88,10 @@ fi
 echo -n "Enter site title: "
 read SITE_TITLE
 
+# Ask for site slogan
+echo -n "Enter site slogan: "
+read SITE_SLOGAN
+
 # Ask for admin username
 echo -n "Enter admin username: "
 read ADMIN_USER
@@ -107,6 +111,16 @@ fi
 echo -n "Enter admin email: "
 read ADMIN_EMAIL
 
+# Ask for theme preference
+echo -n "Enter theme name (leave blank for default twentytwentyfive): "
+read THEME_NAME
+
+# Set default theme if not provided
+if [ -z "$THEME_NAME" ]; then
+    THEME_NAME="twentytwentyfive"
+    echo_message "Using default theme: twentytwentyfive."
+fi
+
 echo_message "Project name: $PROJECT_NAME"
 echo_message "WordPress directory will be: /var/www/html/$WP_DIR"
 echo_message "Database name will be: $DB_NAME"
@@ -116,6 +130,8 @@ echo_message "Site title will be: $SITE_TITLE"
 echo_message "Admin username will be: $ADMIN_USER"
 echo_message "Admin password will be: $ADMIN_PASS"
 echo_message "Admin email will be: $ADMIN_EMAIL"
+echo_message "Site slogan will be: $SITE_SLOGAN"
+echo_message "Theme will be: $THEME_NAME"
 
 # Confirm installation
 echo -n "Continue with installation? (y/n): "
@@ -222,6 +238,10 @@ echo_success "wp-config.php created and configured successfully."
 # Step 7: Install WordPress using WP-CLI
 echo_message "Installing WordPress..."
 sudo wp core install --url=http://localhost/$WP_DIR --title="$SITE_TITLE" --admin_user=$ADMIN_USER --admin_password=$ADMIN_PASS --admin_email=$ADMIN_EMAIL --allow-root
+
+# Set site tagline (slogan)
+echo_message "Setting site tagline..."
+sudo wp option update blogdescription "$SITE_SLOGAN" --allow-root
 echo_success "WordPress installed successfully."
 
 # Step 8: Set file permissions
@@ -248,9 +268,9 @@ sudo chmod -R 775 /var/www/html/$WP_DIR/wp-content/themes
 
 echo_success "File permissions set successfully."
 
-# Step 9: Install and activate a default theme (optional)
-echo_message "Installing and activating Twenty Twenty-Four theme..."
-sudo wp theme install twentytwentyfour --activate --allow-root
+# Step 9: Install and activate the selected theme
+echo_message "Installing and activating $THEME_NAME theme..."
+sudo wp theme install $THEME_NAME --activate --allow-root
 echo_success "Theme installed and activated successfully."
 
 # Step 10: Install some useful plugins (optional)
