@@ -199,12 +199,6 @@ wget https://raw.githubusercontent.com/retorquere/zotero-deb/master/install.sh -
 sudo apt update
 sudo apt install zotero -y
 
-## Notion
-echo "deb [trusted=yes] https://apt.fury.io/notion-repackaged/ /" | sudo tee /etc/apt/sources.list.d/notion-repackaged.list
-sudo apt update
-sudo apt install notion-app-enhanced -y
-sudo apt install notion-app -y
-
 ## Git
 sudo apt-get install git -y
 git config --global user.email "GIT_EMAIL"
