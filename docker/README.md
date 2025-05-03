@@ -27,6 +27,8 @@ The Docker documentation is available online at [docker.com](https://docs.docker
   - [LAMP with Docker (.sh)](./lamp.with.docker.sh)
 - [nginx Example](./prepare.nginx.dockerfile.md)
   - [nginx Example (.sh)](./prepare.nginx.dockerfile.sh)
+- [MinerU Docker Tutorial](./mineru.docker.tutorial.md)
+  - [MinerU Install and Run Script (.sh)](./mineru.install.and.run.sh)
 
 ## Docker Hub
 
