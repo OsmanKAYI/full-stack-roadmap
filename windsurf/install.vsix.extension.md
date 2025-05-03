@@ -52,8 +52,22 @@ After running these commands, you will have a .vsix file in the gistpad director
 
 ### 4. Install the VSIX Extension
 
+#### GUI Method
+
 - In WindSurf or VSCode, go to the Extensions panel.
 - Select "Install from VSIX..." and choose your packaged `.vsix` file.
+
+#### Terminal Method
+
+```bash
+# For VSCode
+code --install-extension path/to/your/extension.vsix
+
+# For WindSurf
+windsurf --install-extension path/to/your/extension.vsix
+```
+
+Note: Replace `path/to/your/extension.vsix` with the actual path to your VSIX file.
 
 ### Summary
 
