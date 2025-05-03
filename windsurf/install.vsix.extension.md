@@ -34,7 +34,7 @@ npm -v
 npm install -g @vscode/vsce
 ```
 
-### 3. Clone and Build GistPad
+### 3. Clone and Build GistPad (you can use any other extension)
 
 ```bash
 # Clone the repository
