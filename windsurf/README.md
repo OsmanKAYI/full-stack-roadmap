@@ -54,6 +54,7 @@ To import VSCode settings and extensions:
 - [Settings](./settings.md)
 - [Keybindings](./keybindings.md)
 - [How to Build and Install VSIX Extension from GitHub](./install.vsix.extension.md)
+  - [How to Build and Install VSIX Extension from GitHub(.sh)](./install.vsix.extension.sh)
 
 ## Common Commands
 
