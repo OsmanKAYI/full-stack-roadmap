@@ -40,21 +40,6 @@ setxkbmap tr
 sudo ubuntu-drivers autoinstall
 ```
 
-## Desktop Configurations
-
-```bash
-# to set the position of the dock to the left
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
-
-# to minimize/extend all windows of a folder/program with one click
-gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
-
-# to switch between windows of a folder/program with mouse rolling
-gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
-```
-
-**NOTE:** To see more configurations about dock [visit](https://github.com/micheleg/dash-to-dock/blob/master/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml)
-
 ## Guake
 
 - Guake is a dropdown terminal made for the GNOME desktop environment.
@@ -1028,11 +1013,13 @@ gsettings set org.gnome.shell.extensions.ding icon-size 'standard'
 gsettings set org.gnome.shell.extensions.ding start-corner 'top-left'
 
 ### dock
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 30
 gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
 gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
 gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button true
 
