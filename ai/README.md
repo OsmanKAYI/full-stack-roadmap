@@ -35,6 +35,7 @@ This repository is dedicated to exploring and developing AI solutions. It includ
 - [AI Car Mechanic — Diagnose Car Issues with new Chat Assistant | OBD Codes, JavaScript, ChatGPT (GPT-3)](https://matemarschalko.medium.com/ai-car-mechanic-diagnose-car-issues-with-new-chat-assistant-obd-codes-javascript-chatgpt-d69b77405c39)
 - [Creating Samantha from “Her” by Fine-tuning GPT-3 on the Movie Script](https://matemarschalko.medium.com/creating-samantha-from-her-by-fine-tuning-gpt-3-on-the-movie-script-dabdbf78b883)
 - [Stable Diffusion ile Görsel Üretmek](https://www.youtube.com/watch?v=DcwH_95F_pU)
+- [ChatGPT-4o: 10 Best Design Prompts To Copy and Paste](https://x.com/heypearlai/status/1920081125751288275?t=__ZHck0dmT4Bt0fBKkpndQ&s=35)
 
 ## Projects
 
