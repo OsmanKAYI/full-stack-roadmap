@@ -49,7 +49,7 @@ To install Pandoc-Crossref:
 # Copy the `pandoc-crossref` file to your `/usr/local/bin` directory
 sudo mv pandoc-crossref* /usr/local/bin/
 # Make the `pandoc-crossref` file executable
-sudo chmod +x /usr/local/bin/pandoc-crossref`
+sudo chmod +x /usr/local/bin/pandoc-crossref
 ```
 
 ### 1.4. Zotero Setup
