@@ -117,6 +117,10 @@ This documentation includes guides, tutorials, and reference material for learni
 
 ![Apt Command](https://pbs.twimg.com/media/GUIn4A7WkAAOWfj?format=jpg&name=large)
 
+- **Bash Scripting Basics**
+
+![Bash Scripting Basics](https://pbs.twimg.com/media/GqrgsnzXsAAhQqK?format=jpg&name=4096x4096)
+
 - **Cron Cheatsheet**
 
 ![Cron Cheatsheet](https://pbs.twimg.com/media/FvxSYknagAEzE1F?format=jpg&name=4096x4096)
