@@ -17,6 +17,10 @@ windsurf --install-extension alefragnani.bookmarks
 ### Console Ninja Windsurf Extension - Coding in Public
 ### https://www.youtube.com/watch?v=OC-_fcJyz_c
 
+# Docker
+## makes it easy to create, manage, and debug containerized applications.
+windsurf --install-extension ms-azuretools.vscode-docker
+
 # DotENV
 ## enables support for dotenv file syntax
 windsurf --install-extension mikestead.dotenv

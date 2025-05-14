@@ -21,6 +21,10 @@ code --install-extension wallabyjs.console-ninja
 ### Console Ninja VSCode Extension - Coding in Public
 ### https://www.youtube.com/watch?v=OC-_fcJyz_c
 
+# Docker
+## makes it easy to create, manage, and debug containerized applications.
+code --install-extension ms-azuretools.vscode-docker
+
 # DotENV
 ## enables support for dotenv file syntax
 code --install-extension mikestead.dotenv
