@@ -344,3 +344,11 @@ done
   ```
 
   - Rotates the selected pdf file in the current directory.
+
+- ```bash
+  for img in $(find . -type f -iname "*.jpg"); do
+    convert "$img" -gravity center -crop "$(identify -format '%[fx:min(w,h)]x%[fx:min(w,h)]' "$img")+0+0" +repage "$img"
+  done
+  ```
+
+  - Resizes the selected jpg files in the current directory to the square shape.
