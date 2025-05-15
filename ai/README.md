@@ -11,6 +11,7 @@ This repository is dedicated to exploring and developing AI solutions. It includ
 - [Useful AI Tools](./useful.ai.tools.md)
 - [Best AI Extensions](./extensions.md)
 - [ChatGPT Prompts](./chatgpt.prompts.md)
+- [When to Use Which AI Model - OpenAI Models Guide](./openai.models.guide.md)
 - [Improving Accuracy in AI Responses](./improving.ai.accuracy.md)
 - [Use Uncensored AI on Your Local Machine](./uncensored.ai.md)
 - [Creating Flowcharts and Diagrams with ChatGPT](./chatgpt.flowcharts.md)
