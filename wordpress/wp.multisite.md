@@ -116,9 +116,13 @@ sed -i "/\/\* That's all, stop editing! Happy publishing. \*\//i \
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
+
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /
+RewriteBase SITE_PATH_PLACEHOLDER
 RewriteRule ^index\.php$ - [L]
+
+# uploaded files for multisite (critical!)
+RewriteRule ^([_0-9a-zA-Z-]+/)?files/(.+) SITE_PATH_PLACEHOLDERwp-includes/ms-files.php?file=$2 [L]
 
 # add a trailing slash to /wp-admin
 RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
@@ -126,8 +130,11 @@ RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
+
 RewriteRule ^([_0-9a-zA-Z-]+/)?(wp-(content|admin|includes).*) $2 [L]
+
 RewriteRule ^([_0-9a-zA-Z-]+/)?(.*\.php)$ $2 [L]
+
 RewriteRule . index.php [L]
 </IfModule>
 # END WordPress
@@ -139,18 +146,25 @@ RewriteRule . index.php [L]
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
+
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /
+RewriteBase SITE_PATH_PLACEHOLDER
 RewriteRule ^index\.php$ - [L]
 
 # add a trailing slash to /wp-admin
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
+# uploaded files for multisite (critical!)
+RewriteRule ^([_0-9a-zA-Z-]+/)?files/(.+) SITE_PATH_PLACEHOLDERwp-includes/ms-files.php?file=$2 [L]
+
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
+
 RewriteRule ^(wp-(content|admin|includes).*) $1 [L]
+
 RewriteRule ^(.*\.php)$ $1 [L]
+
 RewriteRule . index.php [L]
 </IfModule>
 # END WordPress
@@ -165,9 +179,13 @@ sudo bash -c 'cat > /path/to/wordpress/.htaccess << "EOL"
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
+
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /
+RewriteBase SITE_PATH_PLACEHOLDER
 RewriteRule ^index\.php$ - [L]
+
+# uploaded files for multisite (critical!)
+RewriteRule ^([_0-9a-zA-Z-]+/)?files/(.+) SITE_PATH_PLACEHOLDERwp-includes/ms-files.php?file=$2 [L]
 
 # add a trailing slash to /wp-admin
 RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
@@ -175,8 +193,11 @@ RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
+
 RewriteRule ^([_0-9a-zA-Z-]+/)?(wp-(content|admin|includes).*) $2 [L]
+
 RewriteRule ^([_0-9a-zA-Z-]+/)?(.*\.php)$ $2 [L]
+
 RewriteRule . index.php [L]
 </IfModule>
 # END WordPress
@@ -190,31 +211,38 @@ sudo bash -c 'cat > /path/to/wordpress/.htaccess << "EOL"
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
+
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /
+RewriteBase SITE_PATH_PLACEHOLDER
 RewriteRule ^index\.php$ - [L]
 
 # add a trailing slash to /wp-admin
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
+# uploaded files for multisite (critical!)
+RewriteRule ^([_0-9a-zA-Z-]+/)?files/(.+) SITE_PATH_PLACEHOLDERwp-includes/ms-files.php?file=$2 [L]
+
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
+
 RewriteRule ^(wp-(content|admin|includes).*) $1 [L]
+
 RewriteRule ^(.*\.php)$ $1 [L]
+
 RewriteRule . index.php [L]
 </IfModule>
 # END WordPress
 EOL'
 ```
 
-- Not: Bu komut sudo şifrenizi soracaktır. Ayrıca, `.htaccess` dosyasını ana WordPress dizinine yazıyoruz, çünkü Multisite için ana dizindeki `.htaccess` dosyasını düzenlemeniz gerekir, eklenti dizinindeki değil.
+- **Note:** This command will prompt you for your sudo password. Also, we're writing the `.htaccess` file in the main WordPress directory, because for Multisite you need to modify the `.htaccess` in the main directory, not in the plugins directory.
 
 - Just replace `/path/to/wordpress/` with your actual WordPress installation path.
 
-**WordPress Alt Dizinde Kuruluysa:**
+**If WordPress is installed in a subdirectory:**
 
-Eğer WordPress bir alt dizinde kuruluysa (örneğin, `/blog/` veya `/wordpress/`), `.htaccess` dosyasındaki `RewriteBase` değerini buna göre ayarlamanız gerekir:
+If WordPress is installed in a subdirectory (e.g., `/blog/` or `/wordpress/`), you need to update the `RewriteBase` value in the `.htaccess` file accordingly:
 
 ```apache
 RewriteBase /wordpress/

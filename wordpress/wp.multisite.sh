@@ -66,9 +66,12 @@ TABLE_PREFIX=$(grep table_prefix "$WP_DIR/wp-config.php" | cut -d "'" -f 2)
 echo "Database Name: $DB_NAME"
 echo "Table Prefix: $TABLE_PREFIX"
 
-# Ask for domain information if not provided as parameter
+# Set default domain if not provided as parameter
 if [ -z "$DOMAIN" ]; then
-    read -p "Enter your domain (e.g., localhost or example.com): " DOMAIN
+    # Default to localhost for local development
+    DEFAULT_DOMAIN="localhost"
+    read -p "Enter your domain [${DEFAULT_DOMAIN}]: " DOMAIN_INPUT
+    DOMAIN=${DOMAIN_INPUT:-$DEFAULT_DOMAIN}
 fi
 
 # Ask for site path if not provided as parameter
@@ -87,7 +90,8 @@ fi
 echo "\nChoose your network structure:"
 echo "1) Subdirectories (example.com/site1)"
 echo "2) Subdomains (site1.example.com)"
-read -p "Enter your choice (1 or 2): " NETWORK_TYPE
+read -p "Enter your choice (1 or 2) [1]: " NETWORK_TYPE
+NETWORK_TYPE=${NETWORK_TYPE:-1}
 
 if [ "$NETWORK_TYPE" == "1" ]; then
     SUBDOMAIN_INSTALL="false"
@@ -137,6 +141,7 @@ if [ "$SUBDOMAIN_INSTALL" == "true" ]; then
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
+
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 RewriteBase SITE_PATH_PLACEHOLDER
 RewriteRule ^index\.php$ - [L]
@@ -144,11 +149,17 @@ RewriteRule ^index\.php$ - [L]
 # add a trailing slash to /wp-admin
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
+# uploaded files for multisite (critical!)
+RewriteRule ^([_0-9a-zA-Z-]+/)?files/(.+) SITE_PATH_PLACEHOLDERwp-includes/ms-files.php?file=$2 [L]
+
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
+
 RewriteRule ^(wp-(content|admin|includes).*) $1 [L]
+
 RewriteRule ^(.*\.php)$ $1 [L]
+
 RewriteRule . index.php [L]
 </IfModule>
 # END WordPress
@@ -161,9 +172,13 @@ else
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
+
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 RewriteBase SITE_PATH_PLACEHOLDER
 RewriteRule ^index\.php$ - [L]
+
+# uploaded files for multisite (critical!)
+RewriteRule ^([_0-9a-zA-Z-]+/)?files/(.+) SITE_PATH_PLACEHOLDERwp-includes/ms-files.php?file=$2 [L]
 
 # add a trailing slash to /wp-admin
 RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
@@ -171,8 +186,11 @@ RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
+
 RewriteRule ^([_0-9a-zA-Z-]+/)?(wp-(content|admin|includes).*) $2 [L]
+
 RewriteRule ^([_0-9a-zA-Z-]+/)?(.*\.php)$ $2 [L]
+
 RewriteRule . index.php [L]
 </IfModule>
 # END WordPress
@@ -183,11 +201,19 @@ fi
 
 echo ".htaccess file created with appropriate rewrite rules."
 
-# Step 3: Create multisite database tables
-echo "\nStep 3: Creating multisite database tables..."
+# Step 3: Create multisite database tables and fixing user table structure
+echo "\n# Step 3: Creating multisite database tables and fixing user table structure..."
 
 # Create SQL file for multisite tables
 cat > /tmp/multisite-tables.sql << EOL
+-- Fix users table structure by adding missing columns
+ALTER TABLE ${TABLE_PREFIX}users ADD COLUMN IF NOT EXISTS spam TINYINT(2) DEFAULT 0;
+ALTER TABLE ${TABLE_PREFIX}users ADD COLUMN IF NOT EXISTS deleted TINYINT(2) DEFAULT 0;
+
+-- Add indexes for the new columns
+ALTER TABLE ${TABLE_PREFIX}users ADD INDEX IF NOT EXISTS spam (spam);
+ALTER TABLE ${TABLE_PREFIX}users ADD INDEX IF NOT EXISTS deleted (deleted);
+
 CREATE TABLE IF NOT EXISTS ${TABLE_PREFIX}blogs (
   blog_id bigint(20) NOT NULL auto_increment,
   site_id bigint(20) NOT NULL default '0',
@@ -387,6 +413,28 @@ else
     service apache2 restart || service httpd restart || echo "Could not restart web server automatically. Please restart it manually."
 fi
 
+# Create a credentials.md file with installation details
+WP_SITE_NAME=$(basename "$WP_DIR")
+cat > "$WP_DIR/credentials.md" << EOL
+# $WP_SITE_NAME
+
+## Site Information
+
+- **Site URL:** [http://$DOMAIN$SITE_PATH](http://$DOMAIN$SITE_PATH)
+- **Admin URL:** [http://$DOMAIN$SITE_PATH/wp-admin/](http://$DOMAIN$SITE_PATH/wp-admin/)
+
+## Admin Credentials
+
+- **Username:** $ADMIN_USER
+- **Password:** [Password not stored for security reasons]
+
+## Database Information
+
+- **Database Name:** $DB_NAME
+- **Database User:** $DB_USER
+- **Database Password:** $DB_PASSWORD
+EOL
+
 echo "\n========================================"
 echo "WordPress Multisite Setup Complete!"
 echo "========================================"
@@ -406,4 +454,5 @@ echo "- Check your wp-config.php and .htaccess files"
 echo ""
 echo "Note: If you're using subdomains, make sure wildcard"
 echo "subdomains are configured on your server."
+echo "[INFO] Credentials saved to: $WP_DIR/credentials.md"
 echo "========================================"
