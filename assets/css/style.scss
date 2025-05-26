@@ -13,12 +13,12 @@ li {
 
 // Header styles
 header {
-  padding-top: 1rem;
-  padding-bottom: 0rem;
+  padding-top: 1rem !important;
+  padding-bottom: 0rem !important;
 }
 
 // Breadcrumb styles
 .breadcrumb-item i.fa-home {
-  font-size: 1.25em; // Makes the icon 25% larger
-  vertical-align: middle; // Aligns the icon properly with the text
+  font-size: 1.5em !important; // Makes the icon 50% larger
+  vertical-align: middle !important; // Aligns the icon properly with the text
 }
