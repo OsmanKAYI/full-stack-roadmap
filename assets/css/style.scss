@@ -1,12 +1,23 @@
----
----
+// Import Jekyll configuration
+@import 'config';
 
-@import "{{ site.theme }}";
-
+// Base styles
 body {
   line-height: 200%;
 }
 
 li {
   line-height: 250%;
+}
+
+// Header styles
+header {
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+}
+
+// Breadcrumb styles
+.breadcrumb-item i.fa-home {
+  font-size: 1.5em; // Makes the icon 25% larger
+  vertical-align: middle; // Aligns the icon properly with the text
 }
