@@ -12,3 +12,4 @@ The Windows documentation is available online at [docs.microsoft.com](https://le
 - [Xampp Installation](./xampp.installation.md)
 - [Windows Download History Cleaner](./down.hist.cleaner.bat)
   - Intall this .bat file and run it. It will clean up your system's unnecessary files and your system will be fast.
+- [WSL Setup (Ubuntu on Windows)](./wsl-setup.md)
