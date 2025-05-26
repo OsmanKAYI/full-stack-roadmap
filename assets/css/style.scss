@@ -1,5 +1,6 @@
 // Import Jekyll configuration
-@import 'config';
+
+@import '{{ site.theme }}';
 
 // Base styles
 body {
@@ -18,6 +19,6 @@ header {
 
 // Breadcrumb styles
 .breadcrumb-item i.fa-home {
-  font-size: 1.5em; // Makes the icon 25% larger
+  font-size: 1.25em; // Makes the icon 25% larger
   vertical-align: middle; // Aligns the icon properly with the text
 }
