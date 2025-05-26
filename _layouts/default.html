@@ -135,70 +135,41 @@
       class="btn"
     >Download .tar.gz</a>
     {% endif %}
-    
+  </header>
+
+  <main
+    id="content"
+    class="main-content"
+    role="main"
+  >
     <div class="breadcrumb-container">
-      <nav class="breadcrumb" aria-label="breadcrumb">
-        <a href="{{ '/' | relative_url }}" class="breadcrumb-item" title="Home">
-          <i class="fas fa-home"></i>
-        </a>
-      {% assign crumbs = page.url | split: '/' %}
-      {% for crumb in crumbs offset: 1 %}
-      {% if forloop.last %}
-      <span class="breadcrumb-separator">/</span>
-      <span class="breadcrumb-item active">{{ page.title | default: crumb | replace:'-',' ' | capitalize }}</span>
-      {% else %}
-      <span class="breadcrumb-separator">/</span>
-      <a
-        href="{{ site.baseurl }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'//','/' }}{% endfor %}"
-        class="breadcrumb-item"
+      <nav
+        class="breadcrumb"
+        aria-label="breadcrumb"
       >
+        <a
+          href="{{ '/' | relative_url }}"
+          class="breadcrumb-item"
+          title="Home"
+        ><i class="fas fa-home"></i></a>
+        {% assign crumbs = page.url | split: '/' %}
+        {% for crumb in crumbs offset: 1 %}
+        {% if forloop.last %}
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-item active">{{ page.title | default: crumb | replace:'-',' ' | capitalize }}</span>
+        {% else %}
+        <span class="breadcrumb-separator">/</span>
+        <a
+          href="{{ site.baseurl }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'//','/' }}{% endfor %}"
+          class="breadcrumb-item"
+        >
           {{ crumb | replace:'-',' ' | capitalize }}
         </a>
         {% endif %}
         {% endfor %}
       </nav>
     </div>
-  </header>
-  
-  <style>
-    .breadcrumb-container {
-      padding: 8px 0;
-      background-color: #1e4a8a;
-    }
-    
-    .breadcrumb {
-      max-width: 64rem;
-      margin: 0 auto;
-      padding: 0 6rem;
-    }
-    
-    .breadcrumb i {
-      font-size: 1.2rem;
-      color: #fff;
-      vertical-align: middle;
-    }
-    
-    .breadcrumb-item {
-      color: #fff !important;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-    
-    .breadcrumb-separator {
-      color: rgba(255,255,255,0.7) !important;
-      margin: 0 6px;
-    }
-    
-    .breadcrumb .active {
-      opacity: 0.8;
-    }
-  </style>
-  
-  <main
-    id="content"
-    class="main-content"
-    role="main"
-  >
+
     {{ content }}
 
     <footer class="site-footer">
