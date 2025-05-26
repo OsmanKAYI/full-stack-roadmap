@@ -128,47 +128,47 @@
       class="btn"
     >Download .tar.gz</a>
     {% endif %}
-
-    <main
-      id="content"
-      class="main-content"
-      role="main"
-    >
-      <nav
-        class="breadcrumb"
-        aria-label="breadcrumb"
-      >
-        <a
-          href="{{ '/' | relative_url }}"
-          class="breadcrumb-item"
-          title="Home"
-        ><i class="fas fa-home"></i></a>
-        {% assign crumbs = page.url | split: '/' %}
-        {% for crumb in crumbs offset: 1 %}
-        {% if forloop.last %}
-        <span class="breadcrumb-separator">/</span>
-        <span class="breadcrumb-item active">{{ page.title | default: crumb | replace:'-',' ' | capitalize }}</span>
-        {% else %}
-        <span class="breadcrumb-separator">/</span>
-        <a
-          href="{{ site.baseurl }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'//','/' }}{% endfor %}"
-          class="breadcrumb-item"
-        >
-          {{ crumb | replace:'-',' ' | capitalize }}
-        </a>
-        {% endif %}
-        {% endfor %}
-      </nav>
   </header>
-  {{ content }}
 
-  <footer class="site-footer">
-    {% if site.github.is_project_page %}
-    <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a>
-      is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-    <span> <a href="https://osmankayi.com">HOME</a> </span>
-    {% endif %}
-  </footer>
+  <main
+    id="content"
+    class="main-content"
+    role="main"
+  >
+    <nav
+      class="breadcrumb"
+      aria-label="breadcrumb"
+    >
+      <a
+        href="{{ '/' | relative_url }}"
+        class="breadcrumb-item"
+        title="Home"
+      ><i class="fas fa-home"></i></a>
+      {% assign crumbs = page.url | split: '/' %}
+      {% for crumb in crumbs offset: 1 %}
+      {% if forloop.last %}
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-item active">{{ page.title | default: crumb | replace:'-',' ' | capitalize }}</span>
+      {% else %}
+      <span class="breadcrumb-separator">/</span>
+      <a
+        href="{{ site.baseurl }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'//','/' }}{% endfor %}"
+        class="breadcrumb-item"
+      >
+        {{ crumb | replace:'-',' ' | capitalize }}
+      </a>
+      {% endif %}
+      {% endfor %}
+    </nav>
+    {{ content }}
+
+    <footer class="site-footer">
+      {% if site.github.is_project_page %}
+      <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a>
+        is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+      <span> <a href="https://osmankayi.com">HOME</a> </span>
+      {% endif %}
+    </footer>
   </main>
 </body>
 
