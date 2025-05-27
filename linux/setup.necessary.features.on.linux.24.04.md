@@ -74,6 +74,7 @@ pipx install thefuck
 - **boxes** is a text filter which can draw any kind of box around its input text. Box design choices range from simple boxes to complex ASCII art.
 - **caffeine** prevents the desktop from becoming idle when an application is running full-screen. A desktop indicator ‘caffeine-indicator’ supplies a manual toggle, and the command ‘caffeinate’ can be used to prevent idleness for the duration of any command.
 - **curl** is a command line tool for transferring data from or to a server.
+- **feh** is a lightweight image viewer for Linux.
 - **ffmpeg** is a video conversion tool.
 - **figlet** is a a computer program that generates text banners, in a variety of typefaces, composed of letters made up of conglomerations of smaller ASCII characters.
 - **gnome Tweak Tool** is software that allows us to change the general appearance and behavior of components in the Gnome Desktop Environment.
@@ -97,7 +98,7 @@ pipx install thefuck
 - **wormhole** lets you share files with end-to-end encryption and a link that automatically expires. So you can keep what you share private and make sure your stuff doesn't stay online forever.
 
 ```bash
-sudo apt install axel bat boxes caffeine curl ffmpeg figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tmux tree unrar xclip vim magic-wormhole -y
+sudo apt install axel bat boxes caffeine curl ffmpeg feh figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tmux tree unrar xclip vim magic-wormhole -y
 ```
 
 - `batcat $fileName` # to see and arrange the content of any file.
