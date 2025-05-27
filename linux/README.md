@@ -48,6 +48,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Linux File Permissions](./linux.permissions.md)
 - [Changing Disk Permissions](./changing.disk.permissions.md)
 - [Vim Editor](./vim.md)
+- [View Images with feh](./view.images.with.feh.md)
 - [Viewing and Monitoring Log Files](./view.and.monitor.logs.md)
 - [Creating Swap File](./creating.swap.md)
 - [Track File and Directory Changes in Linux with `fswatch`](./fswatch.md)
