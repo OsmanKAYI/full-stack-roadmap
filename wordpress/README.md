@@ -32,6 +32,20 @@ This guide contains information about installing and basic usage of WordPress on
 4. Regular backups
 5. Use SSL certificate
 
+## Common Tasks
+
+### Update WordPress Site URLs
+
+If you need to update your WordPress site URLs after installation (for example, when moving to a different domain or IP address), you can use the following WP-CLI commands:
+
+```bash
+cd /path/to/wordpress
+wp option update siteurl "http://192.168.0.97/wordpress_project_name"
+wp option update home "http://192.168.0.97/wordpress_project_name"
+```
+
+Replace the URL with your actual site URL.
+
 ## Useful Resources
 
 - [WordPress Official Documentation](https://wordpress.org/documentation/)
