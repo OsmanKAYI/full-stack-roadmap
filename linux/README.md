@@ -79,6 +79,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [ScreenPen for Screen Annotation](./screenpen.md)
 - [Fix for Missing Video Thumbnails in Nautilus](./fix.missing.thumbnails.md)
 - [Screen Capture & Record](./screen.capture.md)
+- [Merge Video and Audio with FFmpeg](./merge.video.audio.ffmpeg.md)
 - [Capture Photos Using `fswebcam`](./capture.photo.using.fswebcam.md)
 - [Video Capture And Take Photo Using Cli](./capture.video.and.take.photo.using.cli.md)
 - [Extract, Filter, and Compile Video Frames with FFmpeg](./video.frames.with.ffmpeg.md)
