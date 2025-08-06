@@ -30,4 +30,12 @@ IPv4 is an Internet Protocol used to identify devices on a network. It uses a 32
 
 **NOTE:** For Wi-fi connections, each connection should be configured separately.
 
+**IMPORTANT:** DNS should not be left empty.Ex: `8.8.8.8, 8.8.4.4`
+
 **Extra:** To configure, secure internet connections, you can use `DNS` to `1.1.1.3, 1.0.0.3`.
+
+## Check IP Address
+
+```bash
+ip a | grep inet
+```
