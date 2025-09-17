@@ -16,6 +16,9 @@ My prefered extensions and special settings for them in Windsurf.
     "tr": true // Allow Unicode highlight for Turkish locale.
   },
 
+  "window.zoomLevel": 0,
+  "window.titleBarStyle": "custom",
+
   // Tab Size and Indentation
   "editor.tabSize": 2, // Number of spaces a tab is equal to.
   "editor.insertSpaces": true, // Detect indentation based on file contents.
@@ -23,6 +26,10 @@ My prefered extensions and special settings for them in Windsurf.
 
   // Editor Behavior
   "editor.linkedEditing": true,
+
+  // Cascade Settings
+  "windsurf.cascade.soundsEnabled": true, // Play sound when Cascade finishes generating a response
+  "windsurf.cascade.autoGenerateMemories": false, // Only create memories when explicitly asked
   "editor.formatOnType": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -45,13 +52,19 @@ My prefered extensions and special settings for them in Windsurf.
   // Workbench Customizations
   "workbench.startupEditor": "none", // Startup editor settings.
   "workbench.colorCustomizations": {
-    "tab.activeBorder": "#ffffff", // Border color of active tab.
-    "tab.activeBackground": "#02eeff7c" // Background color of active tab.
+    "titleBar.activeBackground": "#6d7edd",
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveBackground": "#4c568d",
+    "titleBar.inactiveForeground": "#aaaaaa",
+    "tab.activeBorder": "#ffffff",
+    "tab.activeBorderTop": "#ffd900",
+    "tab.activeBackground": "#3d615f"
   },
 
   // Format
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "diffEditor.ignoreTrimWhitespace": false
   },
   "markdownlint.config": {
     "MD024": false
@@ -268,7 +281,12 @@ My prefered extensions and special settings for them in Windsurf.
     "*.sdb": "${capture}.${extname}-*",
     "*.s3db": "${capture}.${extname}-*"
   },
-  "windsurf.autoExecutionPolicy": "off"
+  "windsurf.autoExecutionPolicy": "off",
+  "builder.serverUrl": "http://localhost:9000",
+  "builder.command": "quasar dev",
+  "builder.openInBrowser": true,
+  "editor.minimap.maxColumn": 75,
+  "workbench.editor.empty.hint": "hidden"
 
   ///////////////////////// END /////////////////////////
   ///////////////////////// END /////////////////////////
