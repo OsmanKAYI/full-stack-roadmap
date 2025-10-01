@@ -100,6 +100,8 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Translate Websites with GTranslate](./website.translation.md)
 - [Automate iPhone Mounting and Photo Sync with `ifuse` and `rsync`](./iPhone.photo.sync.md)
 - [Complete Guide to VirtualBox Installation and USB Configuration on Ubuntu](./windows.virtualbox.md)
+- [PlayStation Remote Play on Ubuntu (Chiaki‑NG)](./ps-remote-play-ubuntu-en.md)
+- [Ubuntu'da PlayStation Remote Play (Chiaki‑NG)](./ps-remote-play-ubuntu-tr.md)
 
 ## Linux Command Line Tutorials
 
