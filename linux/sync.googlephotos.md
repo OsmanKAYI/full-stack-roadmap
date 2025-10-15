@@ -29,7 +29,7 @@ The gphotos-sync manual has an up to date version of these instructions. At the 
 - In the menu bar, go to **Credentials**, **Create Credentials**, **OAuth ClientID**.
 - Select type **Desktop Application** and give the client a name (I've used _get-photos-client_).
 - You'll see a confirmation screen. Afterwards, use the **DOWNLOAD JSON** button to save the file as **client_secret.json**.
-- Go to **OAuth Consent Screen** and under **Publishing Status | Testing**, click on **PUBLISH APP** and **CONFIRM**.
+- Go to **OAuth Consent Screen** and under **Audience -> Publishing Status -> Testing**, click on **PUBLISH APP** and **CONFIRM**.
 
 I saved it in my _~/Downloads_ folder and then moved it to the correct folder for gphotos-sync, creating it if it does not exist:
 
@@ -65,9 +65,11 @@ Your pictures will be in **~/gphotos-sync/photos**.
 
 The next time you sync, only new photos will be downloaded. The tool is not able to detect changed photos, due to API limitations, so changes will not be detected. It will also not delete local pictures.
 
-**Ref:** https://unix.stackexchange.com/questions/711221/how-can-i-download-and-sync-my-google-photos-to-linux <br>
-**Ref:** https://raymii.org/s/tutorials/Local_incremental_Google_Photos_backup_on_Ubuntu.html <br>
-**Ref:** https://docs.google.com/document/d/1ck1679H8ifmZ_4eVbDeD_-jezIcZ-j6MlaNaeQiz7y0/edit <br>
+**Refs:**
+
+- [How can I download and sync my Google Photos to Linux?](https://unix.stackexchange.com/questions/711221/how-can-i-download-and-sync-my-google-photos-to-linux)
+- [Local incremental Google Photos backup on Ubuntu](https://raymii.org/s/tutorials/Local_incremental_Google_Photos_backup_on_Ubuntu.html)
+- [Google Photos API](https://docs.google.com/document/d/1ck1679H8ifmZ_4eVbDeD_-jezIcZ-j6MlaNaeQiz7y0/edit)
 
 ## Usage Scenarios
 
@@ -77,14 +79,13 @@ Some of the gphotos-sync features/options are as follows:
 
 - Download all your images and videos from Google Photos, including those created automatically by Google Photos (animations, panoramas, movies, enhanced photos, or collages)
 - Grab all new photos added to your Google Photos account since the previous sync
-
-* Optionally only download and synchronize a single album (using `--album "ALBUM NAME"`)
-* Compare the images in your Google Photos account with a local folder, like a previous backup. The comparison does not require that the files are arranged in the same folders, it uses meta-data in the files such as create date and exif UID to match pairs of items (use `--compare-folder "COMPARE_FOLDER"`)
-* Delete the index database and re-scan everything (`--flush-index`)
-* Optionally re-scan the entire library, ignoring the last scan date (`--rescan`)
-* Check for the existence of files marked as already downloaded and re-download any missing ones. Use this if you have deleted some local files (`--retry-download`)
-* Skip videos when syncing (`--skip-video`)
-* Set the start and end date of the files to sync in the format YYYY-MM-DD (`--start-date START_DATE / --end-date END_DATE`)
+  - Optionally only download and synchronize a single album (using `--album "ALBUM NAME"`)
+  - Compare the images in your Google Photos account with a local folder, like a previous backup. The comparison does not require that the files are arranged in the same folders, it uses meta-data in the files such as create date and exif UID to match pairs of items (use `--compare-folder "COMPARE_FOLDER"`)
+  - Delete the index database and re-scan everything (`--flush-index`)
+  - Optionally re-scan the entire library, ignoring the last scan date (`--rescan`)
+  - Check for the existence of files marked as already downloaded and re-download any missing ones. Use this if you have deleted some local files (`--retry-download`)
+  - Skip videos when syncing (`--skip-video`)
+  - Set the start and end date of the files to sync in the format YYYY-MM-DD (`--start-date START_DATE / --end-date END_DATE`)
 
 ### Dowload Latest Photos on Your Account
 
@@ -116,4 +117,4 @@ gphotos-sync ~/gphotos-sync/$accountname/ --progress --skip-albums
 gphotos-sync ~/gphotos-sync/$accountname/ --progress --rescan --retry-download --skip-albums --port 8081
 ```
 
-**Ref:** https://www.linuxuprising.com/2019/06/how-to-backup-google-photos-to-your.html
+**Ref:** [How to backup Google Photos to your Linux computer](https://www.linuxuprising.com/2019/06/how-to-backup-google-photos-to-your.html)
