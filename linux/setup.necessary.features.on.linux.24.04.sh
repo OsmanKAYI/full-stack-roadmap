@@ -79,7 +79,7 @@ sudo apt install python3-dev python3-pip python3-setuptools pipx -y
 pipx install thefuck
 
 ## Necessary Packages
-sudo apt install axel bat boxes caffeine curl ffmpeg feh figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tmux tree unrar vim magic-wormhole xclip -y
+sudo apt install axel bat boxes caffeine calc curl ffmpeg feh figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tmux tree unrar vim magic-wormhole xclip -y
 
 ## Ezan Vakti
 sudo add-apt-repository ppa:fbostanci/distroguide -y

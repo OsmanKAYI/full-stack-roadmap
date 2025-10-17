@@ -77,7 +77,7 @@ sudo apt install python3-dev python3-pip python3-setuptools -y
 pip3 install thefuck --user
 
 ## Necessary Packages
-sudo apt install axel bat boxes caffeine curl feh ffmpeg figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tmux tree unrar vim magic-wormhole xclip -y
+sudo apt install axel bat boxes caffeine calc curl feh ffmpeg figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tmux tree unrar vim magic-wormhole xclip -y
 
 ## Ezan Vakti
 sudo make PREFIX=/usr sysconfdir=/etc install
