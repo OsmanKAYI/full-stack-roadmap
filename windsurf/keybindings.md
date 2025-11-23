@@ -3,9 +3,6 @@
 My prefered keybindings in Windsurf.
 
 ```config
-///////////////////////// KEYBINDINGS /////////////////////////
-///////////////////////// KEYBINDINGS /////////////////////////
-///////////////////////// KEYBINDINGS /////////////////////////
 // Place your key bindings in this file to override the defaultsauto[]
 [
   {
@@ -541,6 +538,16 @@ My prefered keybindings in Windsurf.
     "key": "ctrl+l",
     "command": "-windsurf.prioritized.chat.openFromTerminal",
     "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+m ctrl+shift+p",
+    "command": "windsurf.openCodeMapView",
+    "when": "codemapsEnabled"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "-windsurf.openCodeMapView",
+    "when": "codemapsEnabled"
   }
 ]
 ```
