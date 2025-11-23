@@ -98,6 +98,16 @@ My prefered extensions and special settings for them in Windsurf.
     "editor.defaultFormatter": "vscode.typescript-language-features",
     "editor.formatOnSave": true
   },
+  "typescript.inlayHints.enumMemberValues.enabled": false,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
+  "typescript.inlayHints.parameterNames.enabled": "none",
+  "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+  "typescript.inlayHints.parameterTypes.enabled": false,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": false,
+  "typescript.inlayHints.variableTypes.enabled": false,
+  "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
+  "typescript.tsdk": "",
+
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
   },
@@ -286,7 +296,9 @@ My prefered extensions and special settings for them in Windsurf.
   "builder.command": "quasar dev",
   "builder.openInBrowser": true,
   "editor.minimap.maxColumn": 75,
-  "workbench.editor.empty.hint": "hidden"
+  "workbench.editor.empty.hint": "hidden",
+  "files.autoSaveDelay": 10000,
+  "editor.unicodeHighlight.ambiguousCharacters": false
 
   ///////////////////////// END /////////////////////////
   ///////////////////////// END /////////////////////////
