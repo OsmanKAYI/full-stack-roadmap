@@ -197,6 +197,18 @@ sudo apt upgrade windsurf -y
 wget https://raw.githubusercontent.com/OsmanKAYI/full-stack-roadmap/main/vscode/extensions.sh -O - | sh
 rm -f extensions.sh
 
+## Antigravity
+# Add the repository to sources.list.d
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://us-central1-apt.pkg.dev/doc/repo-signing-key.gpg | \
+  sudo gpg --dearmor -o /etc/apt/keyrings/antigravity-repo-key.gpg
+echo "deb [signed-by=/etc/apt/keyrings/antigravity-repo-key.gpg] https://us-central1-apt.pkg.dev/projects/antigravity-auto-updater-dev/ antigravity-debian main" | \
+  sudo tee /etc/apt/sources.list.d/antigravity.list > /dev/null
+# Update the package cache
+sudo apt update
+# Install the package
+sudo apt install antigravity -y
+
 ## Visual Studio Code
 sudo rm /etc/apt/sources.list.d/vscode.list
 sudo rm /usr/share/keyrings/vscode.gpg

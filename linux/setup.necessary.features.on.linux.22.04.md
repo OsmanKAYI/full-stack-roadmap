@@ -284,6 +284,23 @@ sudo apt upgrade windsurf -y
 
 **NOTE:** Useful Windsurf extensions and related setting.json file can be found from [here](https://github.com/OsmanKAYI/full-stack-roadmap/blob/master/windsurf/extensions.md)
 
+## Antigravity
+
+- Google Antigravity is an agentic development platform, evolving the IDE into the agent-first era. Antigravity enables developers to operate at a higher, task-oriented level managing agents across workspaces, while retaining a familiar AI IDE experience at its core.
+
+```bash
+# Add the repository to sources.list.d
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://us-central1-apt.pkg.dev/doc/repo-signing-key.gpg | \
+  sudo gpg --dearmor -o /etc/apt/keyrings/antigravity-repo-key.gpg
+echo "deb [signed-by=/etc/apt/keyrings/antigravity-repo-key.gpg] https://us-central1-apt.pkg.dev/projects/antigravity-auto-updater-dev/ antigravity-debian main" | \
+  sudo tee /etc/apt/sources.list.d/antigravity.list > /dev/null
+# Update the package cache
+sudo apt update
+# Install the package
+sudo apt install antigravity -y
+```
+
 ## Visual Studio Code
 
 - Visual Studio Code, also commonly referred to as VSCode, is a source-code editor made by Microsoft with the Electron Framework, for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.
