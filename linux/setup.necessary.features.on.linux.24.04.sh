@@ -81,6 +81,31 @@ pipx install thefuck
 ## Necessary Packages
 sudo apt install axel bat boxes caffeine calc curl ffmpeg feh figlet gnome-tweaks gpustat hardinfo hashcat locate lolcat meld net-tools nvtop pdftk pv ranger testdisk tmux tree unrar vim magic-wormhole xclip -y
 
+## Vim Configuration
+# Ensure essential Vim settings in ~/.vimrc (idempotent)
+echo "Vim ayarları uygulanıyor..."
+VIMRC="$HOME/.vimrc"
+if [ -f "$VIMRC" ]; then
+  cp "$VIMRC" "$VIMRC.bak.$(date +%Y%m%d%H%M%S)"
+  echo "Mevcut ~/.vimrc yedeklendi."
+fi
+touch "$VIMRC"
+# Helper to ensure a line exists exactly once
+ensure_vim_setting() { local line="$1"; grep -qxF "$line" "$VIMRC" || echo "$line" >> "$VIMRC"; }
+# Basic settings
+ensure_vim_setting '" Basic settings'
+ensure_vim_setting 'set number            " Show line numbers'
+ensure_vim_setting 'set ruler             " Show line/column'
+ensure_vim_setting 'set showcmd           " Show (partial) command in status line'
+ensure_vim_setting 'set incsearch         " Incremental search'
+ensure_vim_setting 'set hlsearch          " Highlight search matches'
+ensure_vim_setting 'syntax on'
+# Colors and appearance
+ensure_vim_setting '" Colors and appearance'
+ensure_vim_setting 'set t_Co=256          " 256-color support'
+ensure_vim_setting 'set termguicolors     " True color support (for modern terminals)'
+echo "Vim ayarları tamamlandı."
+
 ## Ezan Vakti
 sudo add-apt-repository ppa:fbostanci/distroguide -y
 sudo apt update

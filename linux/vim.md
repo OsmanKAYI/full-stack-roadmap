@@ -1,32 +1,52 @@
-# Basic vim Codes
+# Vim Editor
+
+`vi` or `vim` is an editor which uses cli interface for editing files interactively.
+
+## Vim Configuration (~/.vimrc)
+
+```bash
+vi ~/.vimrc
+```
+
+```vim
+" Basic settings
+set number            " Show line numbers
+set ruler             " Show line/column
+set showcmd           " Show (partial) command in status line
+set incsearch         " Incremental search
+set hlsearch          " Highlight search matches
+syntax on
+
+" Colors and appearance
+set t_Co=256          " 256-color support
+set termguicolors     " True color support (for modern terminals)
+```
 
 - `vim /etc/hosts` # enables us to change the IP numbers of websites.
 
-**NOTE:** `vi` or `vim` is an editor.
-
-- <kbd>ESC</kbd> + <kbd>:</kbd><kbd>q</kbd><kbd>!</kbd> + <kbd>Enter</kbd> # to quit.
+- `ESC` + `q` + `Enter` # to quit.
 - `yy` # copy 1 row
 - `y4y` # copy 4 rows
 - `p` # paste
 - `dd` # delete 1 row
-- `d3d` # deete 3 rows
+- `d3d` # delete 3 rows
 - `i` # insert
 - `:wq` # save and quit
 - `:q!` # cancel and quit
 - `:q` # quit
 
-- `/etc/hosts`: file content:<br>
+- `/etc/hosts`: file content:
 
-  - `127.0.0.1 localhost` : Making a site unusable in your computer.<br>
-  - `127.0.0.1 mysite.com`: Making a site unusable in your computer.<br>
+  - `127.0.0.1 localhost` : Making a site unusable in your computer.
+  - `127.0.0.1 mysite.com`: Making a site unusable in your computer.
 
-- `/phrase/to/search` + <kbd>ENTER</kbd> # to search anything in a document
-  - Use <kbd>N</kbd> to search forward
-  - <kbd>SHIFT</kbd> + <kbd>N</kbd> to search backward
+- `/phrase/to/search` + `ENTER` # to search anything in a document
+  - Use `N` to search forward
+  - `SHIFT` + `N` to search backward
 
-## On Terminal Connection Freeze:
+## On Terminal Connection Freeze
 
-- <kbd>ENTER</kbd> + <kbd>~</kbd> + <kbd>.</kbd> # to close the connection
+- `ENTER` + `+` # to close the connection
 
 ### Example: Add Domain To Apache Config File
 

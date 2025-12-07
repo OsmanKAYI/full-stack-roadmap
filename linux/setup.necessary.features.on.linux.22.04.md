@@ -105,6 +105,28 @@ sudo apt install axel bat boxes caffeine calc curl feh ffmpeg figlet gnome-tweak
 - `wormhole send "fileName"` # to send file
 - `figlet Osman Kayi|lolcat` # to see piped and colored text of "Osman Kayi"
 
+### Vim Configuration
+
+[The setup script](./setup.necessary.features.on.linux.22.04.sh) automatically applies the following essential Vim settings to your `~/.vimrc`. You can also add them manually:
+
+```bash
+vi ~/.vimrc
+```
+
+```vim
+" Basic settings
+set number            " Show line numbers
+set ruler             " Show line/column
+set showcmd           " Show (partial) command in status line
+set incsearch         " Incremental search
+set hlsearch          " Highlight search matches
+syntax on
+
+" Colors and appearance
+set t_Co=256          " 256-color support
+set termguicolors     " True color support (for modern terminals)
+```
+
 ## Ezan Vakti
 
 - **Ezan Vakti** is a pray time reminder application for Linux.
