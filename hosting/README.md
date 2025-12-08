@@ -22,6 +22,7 @@ This documentation gives reference material and guides for learning the basics o
 
 - [Assignment for Remote Server Connection](./sunucuya.baglanma.odev.md)
 - [Remote Server Connection](./sunucuya.baglanma.md)
+- [SSH Keepalive Configuration to Prevent Session Timeouts](./ssh-keepalive.md)
 - [Nginx Reverse Proxy Setup](./nginx.setup.md)
 - [How to Install CyberPanel on Remote Server](./cyberpanel.md)
 - [What is GitHub Hosting](./github.hosting.md)
