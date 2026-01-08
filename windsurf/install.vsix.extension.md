@@ -65,6 +65,9 @@ code --install-extension path/to/your/extension.vsix
 
 # For WindSurf
 windsurf --install-extension path/to/your/extension.vsix
+
+# For Antigravity
+antigravity --install-extension path/to/your/extension.vsix
 ```
 
 Note: Replace `path/to/your/extension.vsix` with the actual path to your VSIX file.

@@ -54,16 +54,29 @@ repo_name=${repo_name:-$default_repo_name}
 echo -e "${BLUE}Install extension for:${NC}"
 echo "1) VSCode"
 echo "2) WindSurf"
+echo "3) Antigravity"
 read -r editor_choice
 
 # Set the editor command based on user choice
-if [ "$editor_choice" == "1" ]; then
-    editor_cmd="code"
-    editor_name="VSCode"
-else
-    editor_cmd="windsurf"
-    editor_name="WindSurf"
-fi
+case "$editor_choice" in
+    1)
+        editor_cmd="code"
+        editor_name="VSCode"
+        ;;
+    2)
+        editor_cmd="windsurf"
+        editor_name="WindSurf"
+        ;;
+    3)
+        editor_cmd="antigravity"
+        editor_name="Antigravity"
+        ;;
+    *)
+        echo -e "${RED}Invalid choice. Defaulting to Antigravity.${NC}"
+        editor_cmd="antigravity"
+        editor_name="Antigravity"
+        ;;
+esac
 
 # Create a temporary directory for the build
 temp_dir=$(mktemp -d)
