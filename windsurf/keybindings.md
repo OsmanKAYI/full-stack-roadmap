@@ -3,7 +3,7 @@
 My prefered keybindings in Windsurf.
 
 ```config
-// Place your key bindings in this file to override the defaultsauto[]
+// Place your key bindings in this file to override the defaults
 [
   {
     "key": "ctrl+j",
