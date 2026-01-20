@@ -1,4 +1,4 @@
-# How to Execute Windows Programs on Ubuntu 22.04
+# How to Execute Windows Programs on Ubuntu 22.04 using Lutris
 
 Wine is as a kind of tool to execute .exe programs on ubuntu.
 
