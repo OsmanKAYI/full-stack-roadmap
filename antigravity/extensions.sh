@@ -5,6 +5,7 @@
 echo "🚀 Antigravity Uzantı Kurulumu Başlıyor..."
 
 # Mevcut uzantılar
+antigravity --install-extension astro-build.astro-vscode
 antigravity --install-extension alefragnani.bookmarks
 antigravity --install-extension alefragnani.project-manager
 antigravity --install-extension amiralizadeh9480.laravel-extra-intellisense
