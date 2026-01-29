@@ -3,6 +3,10 @@
 ## Usefull Windsurf Extensions
 
 ```bash
+# Astro
+## Adds language support for Astro to Windsurf, including editing (IntelliSense) and debugging features.
+windsurf --install-extension astro-build.astro-vscode
+
 # Bookmarks ( <kbd>CTRL</kbd> + <kbd>F2</kbd> & <kbd>F2</kbd> )
 ## it helps you to navigate in your code, moving between important positions easily and quickly.
 windsurf --install-extension alefragnani.bookmarks
