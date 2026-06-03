@@ -813,7 +813,6 @@ chmod +x gpt4all-installer-linux.run
 ```
 
 - After that,
-
   - Click on `Next`, three times
   - Check the box of `I accept the licence` and press `Next`
   - Click on `Install` button and press `Finish`
@@ -1015,7 +1014,6 @@ sudo vi /etc/gdm3/custom.conf
 ## Discord
 
 - Discord is a VoIP and instant messaging social platform. Users have the ability to communicate with voice calls, video calls, text messaging, media and files in private chats or as part of communities called "servers".
-
   - Download the DEB installer from [Discord](https://discord.com/download)
   - Open the dowload location in Terminal and type the following command.
 
@@ -1024,7 +1022,6 @@ sudo vi /etc/gdm3/custom.conf
 ## Zoom
 
 - Zoom, stylized as zoom or Zoom Meetings is a proprietary videotelephony software program developed by Zoom Video Communications.
-
   - Download the DEB installer from [Zoom](https://zoom.us/download?os=linux)
   - Open the dowload location in Terminal and type the following command.
 
@@ -1094,7 +1091,7 @@ echo -e '[Desktop Entry]\nName=Ulauncher\nComment=Application launcher for Linux
 - These applications will be displayed on your system's dock.
 
 ```bash
-gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'org.gnome.SystemMonitor.desktop', 'virtualbox.desktop', 'thunderbird.desktop', 'firefox.desktop', 'chromium-browser.desktop', 'telegram.desktop', 'Postman.desktop', 'windsurf.desktop', 'code.desktop', 'wps-office-prometheus.desktop', 'zotero.desktop', 'org.fritzing.Fritzing.desktop']"
+gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'org.gnome.SystemMonitor.desktop', 'virtualbox.desktop', 'thunderbird.desktop', 'firefox.desktop', 'chromium-browser.desktop', 'io.github.mimbrero.WhatsAppDesktop.desktop', 'telegram.desktop', 'devin-desktop.desktop', 'antigravity.desktop', 'code.desktop', 'zotero.desktop', 'Postman.desktop', 'wps-office-prometheus.desktop', 'org.fritzing.Fritzing.desktop']"
 
 ```
 
