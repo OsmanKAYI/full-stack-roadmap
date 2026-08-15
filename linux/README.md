@@ -31,6 +31,7 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Basic Linux Commands II](./temel.linux.komutlari2.md)
 - [Basic Commands and Command Line Shortcuts](./basic.commands.and.shortcuts.md)
 - [Terminal](./terminal.md)
+- [Boot Time Optimization](./boot-time-optimization.md)
 - [Boot Issue Analysis](./boot-issue-analysis.md)
 - [Working with CSV Files in Terminal](./working.with.csv.files.md)
 - [11 Best Linux Console File Managers](./useful.linux.console.managers.md)
