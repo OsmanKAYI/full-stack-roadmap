@@ -220,6 +220,57 @@ MSRs or WMI interfaces that the specific hardware does not support.
 power button not working). In that case, update BIOS firmware from the
 manufacturer's website.
 
+### 5.7 Crash Report Accumulation in /var/crash
+
+**Symptom:**
+
+```text
+apport-autoreport.service runs for 13-15 seconds during/after boot
+whoopsie-upload-all: Collecting info for /var/crash/_opt_kingsoft_wps-office_...crash
+```
+
+**Root cause:** When applications crash (Firefox, WPS Office, etc.), Apport
+writes a `.crash` file to `/var/crash/`. The `apport-autoreport.path` unit
+monitors this directory and triggers `apport-autoreport.service` whenever a new
+file appears. The service then tries to upload each report via `whoopsie`,
+waiting up to 20 seconds per file.
+
+Over time, `/var/crash/` can accumulate hundreds of MB of stale crash reports
+that trigger the service on every boot.
+
+**Diagnosis:**
+
+```bash
+# Check if apport-autoreport is being triggered
+systemctl status apport-autoreport.service --no-pager
+journalctl -u apport-autoreport.service -b --no-pager | tail -20
+
+# Check both trigger mechanisms
+systemctl is-enabled apport-autoreport.timer apport-autoreport.path
+
+# Check crash report accumulation
+ls -la /var/crash/
+du -sh /var/crash/
+```
+
+**Fix:**
+
+```bash
+# Disable both triggers (timer = time-based, path = file-based)
+sudo systemctl disable --now apport-autoreport.timer
+sudo systemctl disable --now apport-autoreport.path
+
+# Clean up accumulated crash reports
+sudo rm -f /var/crash/*.crash /var/crash/*.upload /var/crash/*.uploaded
+
+# Verify
+systemctl is-enabled apport-autoreport.timer apport-autoreport.path
+# Both should say: disabled
+```
+
+> If you only disable `.timer`, the `.path` unit will still fire whenever a new
+> crash file appears. Always disable **both** triggers.
+
 ## 6. Analyzing a Specific Boot
 
 Step-by-step workflow to diagnose a problematic boot:

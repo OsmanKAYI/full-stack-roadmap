@@ -61,13 +61,39 @@ sudo systemctl disable NetworkManager-wait-online.service
 
 > Note: This does NOT disable NetworkManager itself. WiFi still connects after login. It only removes the "block boot until online" requirement.
 
-### 3.2 apport-autoreport.timer
+### 3.2 apport-autoreport (timer + path)
 
 Uploads crash reports to Ubuntu servers during boot. Can wait up to 20 seconds for the upload daemon.
 
+`apport-autoreport` has **two** trigger mechanisms — you must disable both, or the `.path` trigger will restart the service whenever a new crash file appears in `/var/crash/`:
+
 ```bash
+# Disable the timer (time-based trigger)
 sudo systemctl disable --now apport-autoreport.timer
+
+# Disable the path trigger (file-based trigger — fires when /var/crash/ gets a new .crash file)
+sudo systemctl disable --now apport-autoreport.path
 ```
+
+> If you only disable `.timer`, the `.path` unit will still activate the service
+> every time an application crashes. Check both with:
+>
+> ```bash
+> systemctl is-enabled apport-autoreport.timer apport-autoreport.path
+> ```
+
+**Clean up accumulated crash reports** in `/var/crash/` (can grow to hundreds of MB over time):
+
+```bash
+# Check size first
+du -sh /var/crash/
+
+# Remove all crash reports and upload markers
+sudo rm -f /var/crash/*.crash /var/crash/*.upload /var/crash/*.uploaded
+```
+
+> Crash reports are only useful if you plan to submit them to Ubuntu. If
+> `apport-autoreport` is disabled, they just accumulate and waste disk space.
 
 ### 3.3 plymouth-quit-wait.service
 
