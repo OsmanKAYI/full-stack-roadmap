@@ -271,6 +271,119 @@ systemctl is-enabled apport-autoreport.timer apport-autoreport.path
 > If you only disable `.timer`, the `.path` unit will still fire whenever a new
 > crash file appears. Always disable **both** triggers.
 
+### 5.8 Hybrid-Sleep / Hibernation Crash (System Won't Wake Up)
+
+**Symptom:**
+
+The system goes to sleep fine the first time (manual `systemctl suspend`), but
+on the second sleep (often triggered by GNOME idle timeout) the system freezes
+and cannot be woken up — requires a forced power-off (holding power button 5+ seconds).
+
+Journal shows the system entering `hybrid-sleep` instead of `suspend`, then
+freezing during hibernation:
+
+```text
+systemd-logind: The system will enter hybrid sleep now!
+systemd-hybrid-sleep.service - System Hybrid Suspend+Hibernate...
+PM: Image not found (code -16)
+PM: hibernation: hibernation entry
+Filesystems sync: 0.011 seconds
+  ← NO MORE LOGS — system frozen
+```
+
+**Root cause:** `hybrid-sleep` tries to do both suspend (RAM) and hibernate
+(disk) simultaneously. Hibernation requires swap space **at least as large as
+RAM**. When swap < RAM, the hibernation image cannot be written and the system
+freezes.
+
+Common on laptops with large RAM and small swap:
+
+```text
+RAM:   32 GB
+Swap:   8 GB   ← too small for hibernation
+```
+
+systemd-logind may auto-upgrade a `suspend` request to `hybrid-sleep` when on
+AC power, if `AllowHybridSleep=yes` (the default). This means even
+`systemctl suspend` can trigger hybrid-sleep without the user knowing.
+
+> Note: `systemctl suspend -i` (the `-i` / `--check-inhibitors=no` flag) does
+> NOT cause this. `-i` only skips inhibitor checks from applications. The
+> sleep mode (suspend vs hybrid-sleep) is determined by systemd-logind, not
+> by the `-i` flag.
+
+**Diagnosis:**
+
+```bash
+# Check RAM vs Swap sizes
+free -h
+swapon --show
+
+# Hibernation requires swap >= RAM. If swap < RAM, hibernation will fail.
+
+# Check what sleep states the kernel supports
+cat /sys/power/state
+# "freeze mem disk" — "disk" means hibernation is supported by the kernel
+
+# Check if hybrid-sleep was triggered instead of suspend
+journalctl -b <boot-id> --no-pager | grep -iE "suspend|hybrid|hibernate" | \
+  grep -iE "Performing|Starting|enter"
+
+# Look for: "Performing sleep operation 'hybrid-sleep'" (bad)
+# vs:       "Performing sleep operation 'suspend'" (good)
+
+# Check GNOME idle sleep settings (auto-sleep after inactivity)
+gsettings list-recursively org.gnome.settings-daemon.plugins.power | \
+  grep -iE "sleep-inactive|lid-close"
+```
+
+**Fix — Disable hibernation and hybrid-sleep entirely:**
+
+```bash
+# 1) Create systemd sleep config drop-in
+sudo mkdir -p /etc/systemd/sleep.conf.d
+sudo tee /etc/systemd/sleep.conf.d/disable-hibernate.conf > /dev/null << 'EOF'
+[Sleep]
+AllowHibernation=no
+AllowHybridSleep=no
+AllowSuspendThenHibernate=no
+EOF
+
+# 2) Mask the hibernation and hybrid-sleep services (they can never start)
+sudo systemctl mask \
+  systemd-hybrid-sleep.service \
+  systemd-hibernate.service \
+  systemd-suspend-then-hibernate.service
+
+# 3) Reload systemd
+sudo systemctl daemon-reload
+
+# 4) Verify
+cat /etc/systemd/sleep.conf.d/disable-hibernate.conf
+systemctl is-enabled \
+  systemd-hybrid-sleep.service \
+  systemd-hibernate.service \
+  systemd-suspend-then-hibernate.service
+# All three should say: masked
+```
+
+After this fix, both manual `systemctl suspend` and GNOME auto-sleep will use
+regular `suspend` (RAM-only), which works reliably regardless of swap size.
+
+> If you actually need hibernation (e.g. battery drain during sleep is a
+> concern), increase swap to at least match RAM:
+>
+> ```bash
+> sudo swapoff /swap.img
+> sudo fallocate -l 36G /swap.img   # RAM size + a few GB buffer
+> sudo chmod 600 /swap.img
+> sudo mkswap /swap.img
+> sudo swapon /swap.img
+> ```
+>
+> But hibernation on NVIDIA systems can still be unreliable — test thoroughly
+> before relying on it.
+
 ## 6. Analyzing a Specific Boot
 
 Step-by-step workflow to diagnose a problematic boot:
