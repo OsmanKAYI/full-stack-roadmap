@@ -384,6 +384,151 @@ regular `suspend` (RAM-only), which works reliably regardless of swap size.
 > But hibernation on NVIDIA systems can still be unreliable — test thoroughly
 > before relying on it.
 
+### 5.9 Suspend Mode: s2idle vs S3 Deep Sleep (Platform Won't Wake from S3)
+
+**Symptom:**
+
+After disabling hybrid-sleep (section 5.8), the system still won't wake from
+suspend. Journal shows `PM: suspend entry (deep)` as the last log — no
+`suspend exit`, no resume, system completely frozen.
+
+```text
+systemd-suspend.service - System Suspend...
+Performing sleep operation 'suspend'...
+PM: suspend entry (deep)
+  ← NO MORE LOGS — system frozen, requires forced power-off
+```
+
+**Root cause:** Modern Intel/AMD platforms support two suspend modes:
+
+| Mode   | Kernel name         | Description                                                             |
+| ------ | ------------------- | ----------------------------------------------------------------------- |
+| s2idle | Modern Standby      | CPU enters low-power idle, devices stay partially powered. Faster wake. |
+| deep   | S3 (Suspend-to-RAM) | Full power-off of most components. Slower wake, more power savings.     |
+
+Some platforms (especially Alder Lake-P laptops with NVIDIA PRIME) **do not
+properly support S3 deep sleep** — the firmware/BIOS claims to support it, but
+the system cannot resume. This is increasingly common on modern laptops where
+the manufacturer only tests s2idle (Modern Standby).
+
+**Diagnosis:**
+
+```bash
+# Check available suspend modes (bracket = currently selected)
+cat /sys/power/mem_sleep
+# Output: [s2idle] deep    ← s2idle is default
+# Output: s2idle [deep]    ← deep is default (may cause wake failure)
+
+# Check which mode was used in a failed suspend
+journalctl -b <boot-id> --no-pager | grep "PM: suspend entry"
+# "PM: suspend entry (s2idle)"  ← Modern Standby (usually works)
+# "PM: suspend entry (deep)"    ← S3 (may not wake on some platforms)
+
+# Check if the system woke up at all
+journalctl -b <boot-id> --no-pager | grep -iE "suspend exit|returned from sleep"
+# If empty — the system never resumed (frozen in sleep)
+```
+
+**Fix — Force s2idle (Modern Standby):**
+
+```bash
+# 1) Set s2idle as default in GRUB
+#    Add mem_sleep_default=s2idle to GRUB_CMDLINE_LINUX_DEFAULT
+sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="/GRUB_CMDLINE_LINUX_DEFAULT="mem_sleep_default=s2idle /' \
+  /etc/default/grub
+
+# Or if you previously set mem_sleep_default=deep, remove it:
+sudo sed -i 's/ mem_sleep_default=deep//' /etc/default/grub
+
+# 2) Rebuild GRUB config
+sudo update-grub
+
+# 3) Reboot and verify
+sudo reboot
+# After reboot:
+cat /sys/power/mem_sleep
+# Expected: [s2idle] deep
+```
+
+> Do NOT set `mem_sleep_default=deep` on platforms that don't support S3 properly.
+> The kernel will enter deep sleep but the firmware cannot resume — the system
+> appears dead and requires a forced power-off.
+
+**Testing suspend reliability:**
+
+```bash
+# Suspend and check if it wakes
+systemctl suspend
+
+# After waking, verify
+journalctl -b 0 --no-pager | grep -iE "suspend entry|suspend exit|returned from"
+# Should show both entry AND exit
+```
+
+### 5.10 i915 Type-C PHY Warnings on Resume (Harmless)
+
+**Symptom:**
+
+After waking from s2idle suspend, the kernel log shows repeated i915 Type-C
+PHY warnings:
+
+```text
+i915 0000:00:02.0: [drm] *ERROR* Port D/TC#1: timeout waiting for PHY ready
+i915 0000:00:02.0: [drm] drm_WARN_ON(tc->mode == TC_PORT_LEGACY)
+WARNING: drivers/gpu/drm/i915/display/intel_tc.c:934 at adlp_tc_phy_connect
+GPU process exited unexpectedly: exit_code=8704
+```
+
+These may also appear during **every boot**, not just after resume.
+
+**Root cause:** On Alder Lake-P (adlp) platforms with NVIDIA PRIME (NVIDIA
+drives the internal display, Intel i915 is idle), the i915 driver still probes
+Type-C PHY ports during boot and resume. Since no display is connected to the
+Intel GPU, the PHY probe times out.
+
+This is a **known i915 driver bug** on adlp platforms and is **harmless** when
+NVIDIA PRIME is the active GPU. The warnings are noise — they do not affect
+display output (which is handled by NVIDIA) or system stability.
+
+**Diagnosis:**
+
+```bash
+# Check which GPU drives the display
+prime-select query
+# "nvidia" — NVIDIA drives display, i915 is idle
+
+# Check Intel GPU connectors (all should be disconnected)
+for c in /sys/class/drm/card0-*/status; do
+  connector=$(echo $c | sed 's|/status||')
+  echo "$connector: $(cat $c)"
+done
+# card0-eDP-2: disconnected
+# card0-HDMI-A-1: disconnected
+
+# Check NVIDIA GPU connectors (eDP should be connected)
+for c in /sys/class/drm/card1-*/status; do
+  connector=$(echo $c | sed 's|/status||')
+  echo "$connector: $(cat $c)"
+done
+# card1-eDP-1: connected    ← NVIDIA drives the internal display
+```
+
+**Action:** No action needed. These warnings are cosmetic noise from the i915
+driver probing unused Type-C PHY ports. They do not cause wake failures or
+display problems when NVIDIA PRIME is active.
+
+> **Warning:** Do NOT use `i915.disable_display=1` to suppress these warnings
+> on NVIDIA PRIME laptops. On some platforms, the Intel i915 GPU handles the
+> display during early boot (before the NVIDIA driver loads). Disabling i915
+> display output can result in a **black screen on boot** — the system boots
+> but nothing is visible until the NVIDIA driver takes over, which may not
+> happen without a working display handshake.
+>
+> If you must suppress the warnings, use `i915.enable_dc=0 i915.enable_psr=0`
+> instead (these disable display power-saving features that trigger PHY probe,
+> without disabling the display entirely). But in most cases, simply ignoring
+> the warnings is the correct approach.
+
 ## 6. Analyzing a Specific Boot
 
 Step-by-step workflow to diagnose a problematic boot:
