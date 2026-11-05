@@ -406,6 +406,21 @@ ssh-add ~/.ssh/osmankayi
 - After that go to "Settings > SSH and GPG keys > New SSH key".
 - Give it a unique name and paste the copied Github ssh key here.
 
+## GitHub Desktop
+
+- GitHub Desktop is a GUI application that simplifies Git operations. Since GitHub does not provide an official Linux build, the community-maintained [shiftkey/desktop](https://github.com/shiftkey/desktop) fork is used.
+
+```bash
+# add the GPG key
+wget -qO - https://mirror.mwt.me/shiftkey-desktop/gpgkey | gpg --dearmor | sudo tee /usr/share/keyrings/mwt-desktop.gpg > /dev/null
+# add the @mwt APT package feed
+sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/mwt-desktop.gpg] https://mirror.mwt.me/shiftkey-desktop/deb/ any main" > /etc/apt/sources.list.d/mwt-desktop.list'
+# update and install
+sudo apt update && sudo apt install github-desktop -y
+```
+
+**NOTE:** The official @shiftkey feed (`apt.packages.shiftkey.dev`) currently has a broken SSL certificate ([issue #1062](https://github.com/shiftkey/desktop/issues/1062)), so the alternative @mwt feed is used. Both feeds are documented in the official README and serve the same releases.
+
 ## Apache
 
 - Apache is the most commonly used Web server on Linux systems. Web servers are used to serve Web pages requested by client computers.

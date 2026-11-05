@@ -235,6 +235,13 @@ git config --global user.name "GIT_USERNAME"
 # to set the default branch name as "main"
 git config --global init.defaultBranch main 
 
+## GitHub Desktop
+# NOTE: https://apt.packages.shiftkey.dev has a broken SSL certificate (see shiftkey/desktop#1062),
+# so the @mwt package feed is used instead (both feeds are listed in the official README)
+wget -qO - https://mirror.mwt.me/shiftkey-desktop/gpgkey | gpg --dearmor | sudo tee /usr/share/keyrings/mwt-desktop.gpg > /dev/null
+sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/mwt-desktop.gpg] https://mirror.mwt.me/shiftkey-desktop/deb/ any main" > /etc/apt/sources.list.d/mwt-desktop.list'
+sudo apt update && sudo apt install github-desktop -y
+
 ## Apache
 sudo apt install apache2 apache2-utils -y
 sudo rm -f /var/www/html/index.html
