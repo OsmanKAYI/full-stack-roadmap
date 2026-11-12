@@ -11,6 +11,7 @@ This documentation provides a reference for the available endpoints, parameters,
 - [Telegram Message Bot](./telegram.message.bot.md)
 - [Push Notifications Using PHP, MySQL, and Firebase Cloud Messaging](./push.notifications.php.mysql.js.md)
 - [API Pagination Basics](./api.pagination.md)
+- [Idempotency in REST APIs](./api.idempotency.md)
 - [Importance of API Key Security](./env.usage.md)
 
 ## Useful Links
