@@ -17,6 +17,7 @@ This repository is dedicated to exploring and developing AI solutions. It includ
 - [Creating Flowcharts and Diagrams with ChatGPT](./chatgpt.flowcharts.md)
 - [Create Logo](./create.logo.md)
 - [Create a Virtual Employee with Droxy AI](./create.virtual.employee.with.droxy.md)
+- [Cua Driver — Let an AI Agent Use Your Apps](./cua.driver.md)
 - [AI Model Comparison: Claude vs Cascade vs GPT-4](./ai.comparison.md)
   - [Claude](./claude.explanation.md)
   - [Cascade](./cascade.explanation.md)
