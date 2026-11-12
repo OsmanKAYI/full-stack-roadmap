@@ -107,6 +107,8 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Complete Guide to VirtualBox Installation and USB Configuration on Ubuntu](./windows.virtualbox.md)
 - [PlayStation Remote Play on Ubuntu (Chiaki‑NG)](./ps-remote-play-ubuntu-en.md)
 - [Ubuntu'da PlayStation Remote Play (Chiaki‑NG)](./ps-remote-play-ubuntu-tr.md)
+- [Game Streaming on Ubuntu with Sunshine + Moonlight](./sunshine-moonlight-ubuntu-en.md)
+- [Ubuntu'da Sunshine + Moonlight ile Oyun Yayını](./sunshine-moonlight-ubuntu-tr.md)
 
 ## Linux Command Line Tutorials
 
