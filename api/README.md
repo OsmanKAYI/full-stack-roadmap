@@ -13,6 +13,7 @@ This documentation provides a reference for the available endpoints, parameters,
 - [API Pagination Basics](./api.pagination.md)
 - [Idempotency in REST APIs](./api.idempotency.md)
 - [Importance of API Key Security](./env.usage.md)
+- [Push Notifications with ntfy](./ntfy.push.notifications.md)
 
 ## Useful Links
 
