@@ -109,6 +109,8 @@ This documentation includes guides, tutorials, and reference material for learni
 - [Ubuntu'da PlayStation Remote Play (Chiaki‑NG)](./ps-remote-play-ubuntu-tr.md)
 - [Game Streaming on Ubuntu with Sunshine + Moonlight](./sunshine-moonlight-ubuntu-en.md)
 - [Ubuntu'da Sunshine + Moonlight ile Oyun Yayını](./sunshine-moonlight-ubuntu-tr.md)
+- [TURKTRUST Qualified Electronic Signature: Palma Installation, PIN Unblock & WinBoat](./turktrust.e-imza-en.md)
+- [TÜRKTRUST e-İmza: Palma Kurulumu, PIN Blokaj Kaldırma & WinBoat](./turktrust.e-imza.md)
 
 ## Linux Command Line Tutorials
 
