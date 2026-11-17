@@ -7,6 +7,8 @@ Here, you will find out some usefull informations which I cannot group them in a
 - [Bluetooth](./bluetooth.md)
 - [Excel](./excel.md)
 - [Installing Third-Party Apps on a Samsung Tizen TV](./install.apps.on.samsung.tizen.tv.md)
+- [Remapping Remote Buttons on a Samsung Tizen TV (Vetro)](./remap.remote.buttons.on.samsung.tizen.tv-en.md)
+- [Samsung Tizen TV'de Kumanda Tuşlarını Yeniden Programlama (Vetro)](./samsung.tizen.tv.kumanda.tuslari.yeniden.programlama.md)
 
 ## Useful Links
 
