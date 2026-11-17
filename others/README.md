@@ -6,11 +6,11 @@ Here, you will find out some usefull informations which I cannot group them in a
 - [Free Certification Courses from Google](./courses.from.google.md)
 - [Bluetooth](./bluetooth.md)
 - [Excel](./excel.md)
+- [Installing Third-Party Apps on a Samsung Tizen TV](./install.apps.on.samsung.tizen.tv.md)
 
 ## Useful Links
 
 - [End of Life (EOL)](https://endoflife.software/)
-
   - "End-of-life" or EOL is a term used by software vendors indicating that it is ending or limiting it’s support on the product and/or version to shift focus on their newer products and/or version. Most vendors define a product lifecycle which consists of several phases during which a product moves where ‘end-of-life’ usually means the last phase (depending on the software vendor).
 
 - [Gmail Forwarding](https://www.youtube.com/watch?v=Vg3DiBrY0-Y)
