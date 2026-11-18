@@ -10,6 +10,8 @@ Here, you will find out some usefull informations which I cannot group them in a
 - [Samsung Tizen TV'ye Üçüncü Parti Uygulama Kurma](./samsung.tizen.tv.ucuncu.parti.uygulama.kurma.md)
 - [Remapping Remote Buttons on a Samsung Tizen TV (Vetro)](./remap.remote.buttons.on.samsung.tizen.tv.md)
 - [Samsung Tizen TV'de Kumanda Tuşlarını Yeniden Programlama (Vetro)](./samsung.tizen.tv.kumanda.tuslari.yeniden.programlama.md)
+- [Android Device Debugging Guide (USB/Wireless ADB, APK install, WebView CDP)](./android.device.debugging.guide.md)
+- [Android Cihaz Hata Ayıklama Rehberi (USB/Kablosuz ADB, APK kurulumu, WebView CDP)](./android.cihaz.hata.ayiklama.rehberi.md)
 
 ## Useful Links
 
